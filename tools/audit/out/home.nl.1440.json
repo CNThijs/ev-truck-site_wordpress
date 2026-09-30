@@ -1,0 +1,1537 @@
+{
+ "path": "/",
+ "lang": "nl",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/CCS2-cable.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-Driver-App.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Seb.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Thijs.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Piotr.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/projects/ChargeNetMvS.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/svg+xml"
+  },
+  {
+   "url": "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/projects/ChargeNetJTFIJmondAanZet.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/bg-truck.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/projects/ChargeNetEmissionFreeConstructionSites.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/projects/ChargeBase.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-Den-Hartog.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeAndConnect2026.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet · Keep Charging Ahead",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "author": [
+    "ChargeNet B.V.",
+    "ChargeNet"
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP",
+    "EV trucks, EV truck charging, charging network, eMSP"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/ChargeNet-icon.png"
+   ],
+   "og:image:width": [
+    "1200",
+    "1200"
+   ],
+   "og:image:height": [
+    "630",
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy",
+    "https://chargenet.energy/"
+   ],
+   "og:type": [
+    "website",
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet",
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US",
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image",
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/ChargeNet-icon.png"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies",
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/ChargeNet-icon.png"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead",
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/ChargeNet-icon.png"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ],
+   "twitter:url": [
+    "https://chargenet.energy/"
+   ],
+   "twitter:creator": [
+    "@wrldstechnologies"
+   ],
+   "theme-color": [
+    "#000000"
+   ],
+   "msapplication-TileColor": [
+    "#000000"
+   ]
+  },
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"ChargeNet\",\"url\":\"https://chargenet.energy\",\"logo\":\"https://chargenet.energy/img/ChargeNet-icon.png\",\"description\":\"ChargeNet is the platform for location owners & carrier managers to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination.\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"email\":\"info@chargenet.energy\"},\"sameAs\":[\"https://www.linkedin.com/company/chargenet-eu/\"]}"
+  ],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Betaalbaar & betrouwbaar uw EV vrachtwagen laden op bestemming"
+   },
+   {
+    "l": "H2",
+    "t": "Wat ChargeNet voor u doet"
+   },
+   {
+    "l": "H3",
+    "t": "Locaties"
+   },
+   {
+    "l": "H4",
+    "t": "Key Benefits"
+   },
+   {
+    "l": "H4",
+    "t": "Platform Features"
+   },
+   {
+    "l": "H3",
+    "t": "Vervoerders"
+   },
+   {
+    "l": "H4",
+    "t": "Key Benefits"
+   },
+   {
+    "l": "H4",
+    "t": "Platform Features"
+   },
+   {
+    "l": "H2",
+    "t": "Waarom ChargeNet?"
+   },
+   {
+    "l": "H3",
+    "t": "3.8Mrd ton CO₂"
+   },
+   {
+    "l": "H3",
+    "t": "18%"
+   },
+   {
+    "l": "H3",
+    "t": "80%"
+   },
+   {
+    "l": "H3",
+    "t": "80%"
+   },
+   {
+    "l": "H3",
+    "t": "Wat ChargeNet voor jou betekent"
+   },
+   {
+    "l": "H4",
+    "t": "Verlaag laadkosten"
+   },
+   {
+    "l": "H4",
+    "t": "Eén platform"
+   },
+   {
+    "l": "H4",
+    "t": "Controle & flexibiliteit"
+   },
+   {
+    "l": "H4",
+    "t": "Gebruiksvriendelijk"
+   },
+   {
+    "l": "H4",
+    "t": "Privétoegang"
+   },
+   {
+    "l": "H4",
+    "t": "Digitaal veilig vanaf de start"
+   },
+   {
+    "l": "H2",
+    "t": "Laadinfrastructuur voor EV delen"
+   },
+   {
+    "l": "H3",
+    "t": "Toegankelijke EV-infrastructuur op uw bestemming"
+   },
+   {
+    "l": "H3",
+    "t": "Toegankelijke EV-infrastructuur op uw bestemming"
+   },
+   {
+    "l": "H3",
+    "t": "Emissievrij bouwen met zwaar materieel"
+   },
+   {
+    "l": "H3",
+    "t": "Emissievrij bouwen met zwaar materieel"
+   },
+   {
+    "l": "H3",
+    "t": "Toegankelijke EV-infrastructuur voor logistiek"
+   },
+   {
+    "l": "H3",
+    "t": "Toegankelijke EV-infrastructuur voor logistiek"
+   },
+   {
+    "l": "H3",
+    "t": "Zorg voor toegankelijke EV-infrastructuur op bouwplaatsen"
+   },
+   {
+    "l": "H3",
+    "t": "Zorg voor toegankelijke EV-infrastructuur op bouwplaatsen"
+   },
+   {
+    "l": "H2",
+    "t": "Hoe begint u?"
+   },
+   {
+    "l": "H3",
+    "t": "Locaties"
+   },
+   {
+    "l": "H4",
+    "t": "Registratie"
+   },
+   {
+    "l": "H4",
+    "t": "Configuratie"
+   },
+   {
+    "l": "H4",
+    "t": "Monitizatie"
+   },
+   {
+    "l": "H3",
+    "t": "Vervoerders"
+   },
+   {
+    "l": "H4",
+    "t": "Word lid van ons netwerk"
+   },
+   {
+    "l": "H4",
+    "t": "Plan uw Routes"
+   },
+   {
+    "l": "H4",
+    "t": "Begin met laden"
+   },
+   {
+    "l": "H2",
+    "t": "Laatste Nieuws"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+   },
+   {
+    "l": "H2",
+    "t": "Neem vandaag contact op"
+   },
+   {
+    "l": "H3",
+    "t": "Sebastiaan de Vries"
+   },
+   {
+    "l": "H3",
+    "t": "Thijs Verwaal"
+   },
+   {
+    "l": "H3",
+    "t": "Piotr Krzepczak"
+   },
+   {
+    "l": "H3",
+    "t": "Bedrijf"
+   },
+   {
+    "l": "H3",
+    "t": "Neem Contact Op"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Klanten",
+    "h": "/location-owners"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "Lees meer over locaties",
+    "h": "/locations"
+   },
+   {
+    "t": "Lees meer over vervoerders",
+    "h": "/carriers"
+   },
+   {
+    "t": "Lees meer over ons platform",
+    "h": "/locations"
+   },
+   {
+    "t": "Lees Meer",
+    "h": "/projects/destination-charging"
+   },
+   {
+    "t": "Lees Meer",
+    "h": "/projects/chargebase"
+   },
+   {
+    "t": "Lees Meer",
+    "h": "/projects/ijmondaanzet"
+   },
+   {
+    "t": "Lees Meer",
+    "h": "/projects/bouw-pow"
+   },
+   {
+    "t": "",
+    "h": "https://apps.apple.com/us/app/chargenet-driver/id6745788861"
+   },
+   {
+    "t": "",
+    "h": "https://play.google.com/store/apps/details?id=energy.chargenet.app"
+   },
+   {
+    "t": "Lees meer over locaties",
+    "h": "/locations"
+   },
+   {
+    "t": "Lees meer over vervoerders",
+    "h": "/carriers"
+   },
+   {
+    "t": "Zie alle posts",
+    "h": "/blog"
+   },
+   {
+    "t": "AccelererenJun 30, 2026ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucksChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.Lees meer",
+    "h": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership"
+   },
+   {
+    "t": "AccelererenMay 28, 2026ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinenAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.Lees meer",
+    "h": "/blog/chargenet-and-den-hartog-start-a-partnership"
+   },
+   {
+    "t": "EventMay 19, 2026ChargeNet op Charge & Connect: van route naar concreet laadplanTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.Lees meer",
+    "h": "/blog/chargenet-present-at-charge-and-connect-event"
+   },
+   {
+    "t": "Accelereren\nJun 30, 2026\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer",
+    "h": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership"
+   },
+   {
+    "t": "Accelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer",
+    "h": "/blog/chargenet-and-den-hartog-start-a-partnership"
+   },
+   {
+    "t": "Event\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer",
+    "h": "/blog/chargenet-present-at-charge-and-connect-event"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Veelgestelde Vragen (FAQ)",
+    "h": "/faq"
+   },
+   {
+    "t": "Carriere",
+    "h": "/careers"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱\nNL",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Log in",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱NL",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full relative",
+    "height": 456,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Betaalbaar & betrouwbaar uw EV vrachtwagen laden op bestemming"
+     }
+    ],
+    "text": "9:41\nBetaalbaar & betrouwbaar uw EV vrachtwagen laden op bestemming\nChargeNet is het platform voor locatie-eigenaren & vervoerders om samen te werken aan decarbonisatie van wegtransport door het delen van laadinfrastructuur op bestemming.\nMet ChargeNet kunt u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nMeer weten\nNeem Contact Op",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/CCS2-cable.jpg",
+      "alt": "EV truck charging with CCS2 connector"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-Driver-App.png",
+      "alt": "ChargeNet Driver App"
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Meer weten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Neem Contact Op",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "features",
+    "cls": "bg-gray-50 py-10 md:py-16",
+    "height": 1036,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Wat ChargeNet voor u doet"
+     },
+     {
+      "l": "H3",
+      "t": "Locaties"
+     },
+     {
+      "l": "H4",
+      "t": "Key Benefits"
+     },
+     {
+      "l": "H4",
+      "t": "Platform Features"
+     },
+     {
+      "l": "H3",
+      "t": "Vervoerders"
+     },
+     {
+      "l": "H4",
+      "t": "Key Benefits"
+     },
+     {
+      "l": "H4",
+      "t": "Platform Features"
+     }
+    ],
+    "text": "Wat ChargeNet voor u doet\nWij brengen locaties met laadinfrastructuur en EV-vloten samen op één platform.\nLocaties\nMonetariseer uw laadinfrastructuur efficiënt\nKey Benefits\n→\nMaak private laadinfrastructuur bereikbaar: Geef beperkt toegang tot uw private laadinfrastructuur aan uw partners\n→\nToegangsbeheer: Volledige controle over de toegang van gebruikers van verschillende partners\n→\nPrijsvoorstellen voor frequente bezoekers: Contractuele prijsafspraken voor nog betere prijzen per kWh tegen een vaste minimale capaciteit\n→\nGeautomatiseerde back-office processen: Gautomatiseerde rapportages en facturatie\nPlatform Features\nLocation Dashboard\nAccess Management\nRevenue Tracking\nPricing Proposals\nUsage Analytics\nBilling Automation\nLees meer over locaties\nVervoerders\nVolledig wagenpark overzicht en optimalisatie\nKey Benefits\n→\nToegang tot private laadinfrastructuur: Krijg toegang tot private laadinfrastructuur uit ons netwerk\n→\nKostenbeheersing: Gedetailleerde analyses van energieverbruik, laadkosten en operationele efficiëntie\n→\nPrijsvoorstellen voor frequente bezoekers: Contractuele prijsafspraken voor nog betere prijzen per kWh tegen een vaste minimale capaciteit\n→\nGeautomatiseerde back-office processen: Gautomatiseerde rapportages en facturatie\nPlatform Features\nFleet Dashboard\nMobile Driver App\nCost Analytics\nPricing Proposals\nReporting Tools\nBilling Automation\nLees meer over vervoerders",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Lees meer over locaties",
+      "href": "/locations",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees meer over vervoerders",
+      "href": "/carriers",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "whyChargeNet",
+    "cls": "relative py-16 md:py-24 bg-white overflow-hidden",
+    "height": 1372,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Waarom ChargeNet?"
+     },
+     {
+      "l": "H3",
+      "t": "3.8Mrd ton CO₂"
+     },
+     {
+      "l": "H3",
+      "t": "18%"
+     },
+     {
+      "l": "H3",
+      "t": "80%"
+     },
+     {
+      "l": "H3",
+      "t": "80%"
+     },
+     {
+      "l": "H3",
+      "t": "Wat ChargeNet voor jou betekent"
+     },
+     {
+      "l": "H4",
+      "t": "Verlaag laadkosten"
+     },
+     {
+      "l": "H4",
+      "t": "Eén platform"
+     },
+     {
+      "l": "H4",
+      "t": "Controle & flexibiliteit"
+     },
+     {
+      "l": "H4",
+      "t": "Gebruiksvriendelijk"
+     },
+     {
+      "l": "H4",
+      "t": "Privétoegang"
+     },
+     {
+      "l": "H4",
+      "t": "Digitaal veilig vanaf de start"
+     }
+    ],
+    "text": "Waarom ChargeNet?\nWij brengen locaties met private laadinfrastructuur en EV-vloten samen op één platform.\n3.8Mrd ton CO₂\nGemiddelde vrachtwagenuitstoot van 7,0 g/mi NOx – 100 keer meer dan een benzineauto\n18%\nvan alle emissies in de EU komt van wegvervoer van goederen\n80%\nBrandstofkosten stijgen en worden steeds onvoorspelbaarder\n80%\nDieseltrucks zijn goedkoop in aanschaf, maar hebben hogere onderhouds- en gebruikskosten over hun levensduur\nWat ChargeNet voor jou betekent\nWij koppelen een vloot EV trucks aan nabijgelegen locaties met private laadinfrastructuur op bestemming.\nVerlaag laadkosten\nBespaar tot 60% op uw laadkosten vergeleken met roaming of publiek laden.\nEén platform\nWerk met een onbeperkt aantal partners, allemaal op één platform voor uw volledige supply chain.\nControle & flexibiliteit\nVolledig aanpasbaar aan jouw wensen op locatie- en partnerniveau, elke samenwerking is uniek.\nGebruiksvriendelijk\nOns platform is speciaal ontwikkeld voor samenwerking binnen 3PL-wegtransport.\nPrivétoegang\nKrijg toegang tot privélaadlocaties binnen het ChargeNet-netwerk.\nDigitaal veilig vanaf de start\nWij passen de nieuwste cybersecurity-standaarden toe om risico’s voor jouw operatie te minimaliseren.\nLees meer over ons platform",
+    "images": [],
+    "bgImages": [
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Lees meer over ons platform",
+      "href": "/locations",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "projects",
+    "cls": "bg-white py-[50px] w-full",
+    "height": 822,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Laadinfrastructuur voor EV delen"
+     },
+     {
+      "l": "H3",
+      "t": "Toegankelijke EV-infrastructuur op uw bestemming"
+     },
+     {
+      "l": "H3",
+      "t": "Toegankelijke EV-infrastructuur op uw bestemming"
+     },
+     {
+      "l": "H3",
+      "t": "Emissievrij bouwen met zwaar materieel"
+     },
+     {
+      "l": "H3",
+      "t": "Emissievrij bouwen met zwaar materieel"
+     },
+     {
+      "l": "H3",
+      "t": "Toegankelijke EV-infrastructuur voor logistiek"
+     },
+     {
+      "l": "H3",
+      "t": "Toegankelijke EV-infrastructuur voor logistiek"
+     },
+     {
+      "l": "H3",
+      "t": "Zorg voor toegankelijke EV-infrastructuur op bouwplaatsen"
+     },
+     {
+      "l": "H3",
+      "t": "Zorg voor toegankelijke EV-infrastructuur op bouwplaatsen"
+     }
+    ],
+    "text": "Projecten\nLaadinfrastructuur voor EV delen\nOntdek hoe ons ChargeNet-platform sectoren helpt bij de versnelde adoptie van elektrische trucks en zwaar elektrisch materieel – afgestemd op hun specifieke behoeften.\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nChargeNet integreert met uw laadpunten, zodat logistieke partners op hun bestemming kunnen opladen met behulp van uw EV-infrastructuur.\nChargeNet\nMillenaar van Schaik\nSchiphol\nLees Meer\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nMobiel, duurzaam en krachtig: DÉ oplossing voor emissievrij bouwen met zwaar materieel.\nChargeNet\nVolta Energy\nAVIA Volt\nConstruction\nArnhem Electricity Week\nLees Meer\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nChargeNet integreert met uw laadpunten, zodat logistieke partners op hun bestemming kunnen opladen met behulp van uw EV-infrastructuur.\nChargeNet\nBrankenhoff\nJTF: Kansen voor West\nLees Meer\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nChargeNet maakt open elektrische infrastructuur mogelijk voor emissievrije bouw met zwaar materieel.\nChargeNet\nUnitial\nEV infrastructure\nConstruction\nLees Meer",
+    "images": [],
+    "bgImages": [
+     "url(\"https://chargenet.energy/uploads/projects/ChargeNetMvS.jpg\")",
+     "url(\"https://chargenet.energy/uploads/projects/ChargeBase.jpg\")",
+     "url(\"https://chargenet.energy/uploads/projects/ChargeNetJTFIJmondAanZet.jpg\")",
+     "url(\"https://chargenet.energy/uploads/projects/ChargeNetEmissionFreeConstructionSites.jpg\")"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Lees Meer",
+      "href": "/projects/destination-charging",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees Meer",
+      "href": "/projects/chargebase",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees Meer",
+      "href": "/projects/ijmondaanzet",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees Meer",
+      "href": "/projects/bouw-pow",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Previous project",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Next project",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Go to project 1",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Go to project 2",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Go to project 3",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Go to project 4",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "getStarted",
+    "cls": "bg-gray-50 py-10 md:py-16",
+    "height": 993,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Hoe begint u?"
+     },
+     {
+      "l": "H3",
+      "t": "Locaties"
+     },
+     {
+      "l": "H4",
+      "t": "Registratie"
+     },
+     {
+      "l": "H4",
+      "t": "Configuratie"
+     },
+     {
+      "l": "H4",
+      "t": "Monitizatie"
+     },
+     {
+      "l": "H3",
+      "t": "Vervoerders"
+     },
+     {
+      "l": "H4",
+      "t": "Word lid van ons netwerk"
+     },
+     {
+      "l": "H4",
+      "t": "Plan uw Routes"
+     },
+     {
+      "l": "H4",
+      "t": "Begin met laden"
+     }
+    ],
+    "text": "Aan de slag\nHoe begint u?\nOntdek hoe ons ChargeNet-platform sectoren helpt bij de versnelde adoptie van elektrische trucks en zwaar elektrisch materieel – afgestemd op hun specifieke behoeften.\nLocaties\nMonetize your existing charging infrastructure efficiently.\n01\nRegistratie\nMeld u aan en registreer uw locaties.\n02\nConfiguratie\nConfigureer uw laadinfrastructuur op ons netwerk.\n03\nMonitizatie\nStart met geld verdienen met met uw bestaande laadinfrastructuur.\nVervoerders\nAccess charging network and optimize fleet operations.\n01\nWord lid van ons netwerk\nMaak verbinding met het ChargeNet-platform.\n02\nPlan uw Routes\nOptimaliseer het opladen op de bestemming van uw routes.\n03\nBegin met laden\nKrijg toegang tot laadpunten in het hele netwerk.\nLees meer over locaties\nLees meer over vervoerders",
+    "images": [
+     {
+      "src": "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",
+      "alt": "Download on the App Store"
+     },
+     {
+      "src": "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
+      "alt": "Get it on Google Play"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://apps.apple.com/us/app/chargenet-driver/id6745788861",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "https://play.google.com/store/apps/details?id=energy.chargenet.app",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Lees meer over locaties",
+      "href": "/locations",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees meer over vervoerders",
+      "href": "/carriers",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "blog",
+    "cls": "py-12 md:py-24 px-4 md:px-12 bg-white",
+    "height": 872,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Laatste Nieuws"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+     }
+    ],
+    "text": "Nieuws\nLaatste Nieuws\nOntdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie.\nZie alle posts\nAccelereren\nJun 30, 2026\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer\nAccelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer\nEvent\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer",
+    "images": [],
+    "bgImages": [
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Den-Hartog.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeAndConnect2026.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Den-Hartog.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeAndConnect2026.jpg\")"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Zie alle posts",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Zie alle posts",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "AccelererenJun 30, 2026ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucksChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.Lees meer",
+      "href": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "AccelererenMay 28, 2026ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinenAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.Lees meer",
+      "href": "/blog/chargenet-and-den-hartog-start-a-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "EventMay 19, 2026ChargeNet op Charge & Connect: van route naar concreet laadplanTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.Lees meer",
+      "href": "/blog/chargenet-present-at-charge-and-connect-event",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nJun 30, 2026\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer",
+      "href": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer",
+      "href": "/blog/chargenet-and-den-hartog-start-a-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Event\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer",
+      "href": "/blog/chargenet-present-at-charge-and-connect-event",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "contact-info",
+    "cls": "bg-gradient-to-b from-white to-green text-white relative py-[15px] md:py-[25px]",
+    "height": 620,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Neem vandaag contact op"
+     },
+     {
+      "l": "H3",
+      "t": "Sebastiaan de Vries"
+     },
+     {
+      "l": "H3",
+      "t": "Thijs Verwaal"
+     },
+     {
+      "l": "H3",
+      "t": "Piotr Krzepczak"
+     }
+    ],
+    "text": "Neem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/team/Seb.jpg",
+      "alt": "Sebastiaan de Vries"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Thijs.jpg",
+      "alt": "Thijs Verwaal"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Piotr.jpg",
+      "alt": "Piotr Krzepczak"
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(rgb(255, 255, 255), rgb(8, 58, 11))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Bedrijf"
+     },
+     {
+      "l": "H3",
+      "t": "Neem Contact Op"
+     }
+    ],
+    "text": "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Veelgestelde Vragen (FAQ)",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Carriere",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL\n9:41\nBetaalbaar & betrouwbaar uw EV vrachtwagen laden op bestemming\nChargeNet is het platform voor locatie-eigenaren & vervoerders om samen te werken aan decarbonisatie van wegtransport door het delen van laadinfrastructuur op bestemming.\nMet ChargeNet kunt u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nMeer weten\nNeem Contact Op\nWat ChargeNet voor u doet\nWij brengen locaties met laadinfrastructuur en EV-vloten samen op één platform.\nLocaties\nMonetariseer uw laadinfrastructuur efficiënt\nKey Benefits\n→\nMaak private laadinfrastructuur bereikbaar: Geef beperkt toegang tot uw private laadinfrastructuur aan uw partners\n→\nToegangsbeheer: Volledige controle over de toegang van gebruikers van verschillende partners\n→\nPrijsvoorstellen voor frequente bezoekers: Contractuele prijsafspraken voor nog betere prijzen per kWh tegen een vaste minimale capaciteit\n→\nGeautomatiseerde back-office processen: Gautomatiseerde rapportages en facturatie\nPlatform Features\nLocation Dashboard\nAccess Management\nRevenue Tracking\nPricing Proposals\nUsage Analytics\nBilling Automation\nLees meer over locaties\nVervoerders\nVolledig wagenpark overzicht en optimalisatie\nKey Benefits\n→\nToegang tot private laadinfrastructuur: Krijg toegang tot private laadinfrastructuur uit ons netwerk\n→\nKostenbeheersing: Gedetailleerde analyses van energieverbruik, laadkosten en operationele efficiëntie\n→\nPrijsvoorstellen voor frequente bezoekers: Contractuele prijsafspraken voor nog betere prijzen per kWh tegen een vaste minimale capaciteit\n→\nGeautomatiseerde back-office processen: Gautomatiseerde rapportages en facturatie\nPlatform Features\nFleet Dashboard\nMobile Driver App\nCost Analytics\nPricing Proposals\nReporting Tools\nBilling Automation\nLees meer over vervoerders\nWaarom ChargeNet?\nWij brengen locaties met private laadinfrastructuur en EV-vloten samen op één platform.\n3.8Mrd ton CO₂\nGemiddelde vrachtwagenuitstoot van 7,0 g/mi NOx – 100 keer meer dan een benzineauto\n18%\nvan alle emissies in de EU komt van wegvervoer van goederen\n80%\nBrandstofkosten stijgen en worden steeds onvoorspelbaarder\n80%\nDieseltrucks zijn goedkoop in aanschaf, maar hebben hogere onderhouds- en gebruikskosten over hun levensduur\nWat ChargeNet voor jou betekent\nWij koppelen een vloot EV trucks aan nabijgelegen locaties met private laadinfrastructuur op bestemming.\nVerlaag laadkosten\nBespaar tot 60% op uw laadkosten vergeleken met roaming of publiek laden.\nEén platform\nWerk met een onbeperkt aantal partners, allemaal op één platform voor uw volledige supply chain.\nControle & flexibiliteit\nVolledig aanpasbaar aan jouw wensen op locatie- en partnerniveau, elke samenwerking is uniek.\nGebruiksvriendelijk\nOns platform is speciaal ontwikkeld voor samenwerking binnen 3PL-wegtransport.\nPrivétoegang\nKrijg toegang tot privélaadlocaties binnen het ChargeNet-netwerk.\nDigitaal veilig vanaf de start\nWij passen de nieuwste cybersecurity-standaarden toe om risico’s voor jouw operatie te minimaliseren.\nLees meer over ons platform\nProjecten\nLaadinfrastructuur voor EV delen\nOntdek hoe ons ChargeNet-platform sectoren helpt bij de versnelde adoptie van elektrische trucks en zwaar elektrisch materieel – afgestemd op hun specifieke behoeften.\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nToegankelijke EV-infrastructuur op uw bestemming\nChargeNet integreert met uw laadpunten, zodat logistieke partners op hun bestemming kunnen opladen met behulp van uw EV-infrastructuur.\nChargeNet\nMillenaar van Schaik\nSchiphol\nLees Meer\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nEmissievrij bouwen met zwaar materieel\nMobiel, duurzaam en krachtig: DÉ oplossing voor emissievrij bouwen met zwaar materieel.\nChargeNet\nVolta Energy\nAVIA Volt\nConstruction\nArnhem Electricity Week\nLees Meer\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nToegankelijke EV-infrastructuur voor logistiek\nChargeNet integreert met uw laadpunten, zodat logistieke partners op hun bestemming kunnen opladen met behulp van uw EV-infrastructuur.\nChargeNet\nBrankenhoff\nJTF: Kansen voor West\nLees Meer\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nZorg voor toegankelijke EV-infrastructuur op bouwplaatsen\nChargeNet maakt open elektrische infrastructuur mogelijk voor emissievrije bouw met zwaar materieel.\nChargeNet\nUnitial\nEV infrastructure\nConstruction\nLees Meer\nAan de slag\nHoe begint u?\nOntdek hoe ons ChargeNet-platform sectoren helpt bij de versnelde adoptie van elektrische trucks en zwaar elektrisch materieel – afgestemd op hun specifieke behoeften.\nLocaties\nMonetize your existing charging infrastructure efficiently.\n01\nRegistratie\nMeld u aan en registreer uw locaties.\n02\nConfiguratie\nConfigureer uw laadinfrastructuur op ons netwerk.\n03\nMonitizatie\nStart met geld verdienen met met uw bestaande laadinfrastructuur.\nVervoerders\nAccess charging network and optimize fleet operations.\n01\nWord lid van ons netwerk\nMaak verbinding met het ChargeNet-platform.\n02\nPlan uw Routes\nOptimaliseer het opladen op de bestemming van uw routes.\n03\nBegin met laden\nKrijg toegang tot laadpunten in het hele netwerk.\nLees meer over locaties\nLees meer over vervoerders\nNieuws\nLaatste Nieuws\nOntdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie.\nZie alle posts\nAccelereren\nJun 30, 2026\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer\nAccelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer\nEvent\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer\nNeem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy\nChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+  "height": 6792
+ }
+}

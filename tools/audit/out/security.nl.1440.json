@@ -1,0 +1,650 @@
+{
+ "path": "/security",
+ "lang": "nl",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/security",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/security",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/map-connectr.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet · Keep Charging Ahead",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "author": [
+    "ChargeNet B.V."
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "og:image:width": [
+    "1200"
+   ],
+   "og:image:height": [
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy"
+   ],
+   "og:type": [
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ]
+  },
+  "jsonld": [],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Security"
+   },
+   {
+    "l": "H2",
+    "t": "ISO 27001 Compliant Information Security Management System"
+   },
+   {
+    "l": "H2",
+    "t": "Veilige Productontwikkeling"
+   },
+   {
+    "l": "H2",
+    "t": "Risicobeperking en Continuïteit"
+   },
+   {
+    "l": "H2",
+    "t": "Continue Verbetering"
+   },
+   {
+    "l": "H3",
+    "t": "Bedrijf"
+   },
+   {
+    "l": "H3",
+    "t": "Neem Contact Op"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Klanten",
+    "h": "/location-owners"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "Back to Home",
+    "h": "/"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Veelgestelde Vragen (FAQ)",
+    "h": "/faq"
+   },
+   {
+    "t": "Carriere",
+    "h": "/careers"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱\nNL",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Log in",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱NL",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "max-w-4xl mx-auto text-center",
+    "height": 92,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Security"
+     }
+    ],
+    "text": "Security\nSecurity is important to us at ChargeNet.",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "",
+    "cls": "pt-24 pb-16 px-4 sm:px-6 lg:px-8",
+    "height": 1116,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "ISO 27001 Compliant Information Security Management System"
+     },
+     {
+      "l": "H2",
+      "t": "Veilige Productontwikkeling"
+     },
+     {
+      "l": "H2",
+      "t": "Risicobeperking en Continuïteit"
+     },
+     {
+      "l": "H2",
+      "t": "Continue Verbetering"
+     }
+    ],
+    "text": "Back to Home\nBeveiliging staat centraal in de manier waarop wij ons platform ontwerpen, ontwikkelen en beheren. Wij begrijpen dat onze klanten op ons vertrouwen voor de bescherming van gevoelige gegevens en de continuïteit van hun bedrijfsvoering. Daarom is cybersecurity integraal onderdeel van al onze ontwikkel en operationele processen.\nISO 27001 Compliant Information Security Management System\nWij werken met een Information Security Management System dat compliant met de ISO27001 principes. Dit gestructureerde raamwerk stelt ons in staat om informatiebeveiligingsrisico’s systematisch te identificeren, beoordelen en beheersen. Ons ISMS omvat mensen, processen en technologie, en wordt continu geëvalueerd om in te spelen op nieuwe dreigingen en regelgeving.\nVeilige Productontwikkeling\nTijdens de volledige productontwikkelingscyclus passen wij de nieuwste cybersecurity standaarden en best practices toe. Beveiliging wordt vanaf de ontwerpfase meegenomen, waaronder veilige architectuur, toegangsbeheer en databescherming. Door middel van code reviews, geautomatiseerde tests en kwetsbaarheidsanalyses verkleinen wij het risico op beveiligingsproblemen.\nRisicobeperking en Continuïteit\nOnze beveiligingsmaatregelen zijn gericht op het minimaliseren van risico’s voor uw bedrijfsvoering. Dit omvat preventieve maatregelen, monitoring en duidelijke procedures voor incidentrespons, zodat potentiële dreigingen tijdig worden gedetecteerd en aangepakt. Door technische beveiliging te combineren met interne richtlijnen en bewustwording bij medewerkers, waarborgen wij stabiliteit en betrouwbaarheid.\nContinue Verbetering\nCybersecurity is een continu proces. Wij verbeteren onze beveiligingsmaatregelen voortdurend op basis van risicoanalyses, technologische ontwikkelingen en veranderingen in het dreigingslandschap. Zo blijft ons platform veilig, betrouwbaar en in lijn met actuele beveiligingsstandaarden.\nLast Updated: January 16th, 2026",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Back to Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Bedrijf"
+     },
+     {
+      "l": "H3",
+      "t": "Neem Contact Op"
+     }
+    ],
+    "text": "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Veelgestelde Vragen (FAQ)",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Carriere",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL\nSecurity\nSecurity is important to us at ChargeNet.\nBack to Home\nBeveiliging staat centraal in de manier waarop wij ons platform ontwerpen, ontwikkelen en beheren. Wij begrijpen dat onze klanten op ons vertrouwen voor de bescherming van gevoelige gegevens en de continuïteit van hun bedrijfsvoering. Daarom is cybersecurity integraal onderdeel van al onze ontwikkel en operationele processen.\nISO 27001 Compliant Information Security Management System\nWij werken met een Information Security Management System dat compliant met de ISO27001 principes. Dit gestructureerde raamwerk stelt ons in staat om informatiebeveiligingsrisico’s systematisch te identificeren, beoordelen en beheersen. Ons ISMS omvat mensen, processen en technologie, en wordt continu geëvalueerd om in te spelen op nieuwe dreigingen en regelgeving.\nVeilige Productontwikkeling\nTijdens de volledige productontwikkelingscyclus passen wij de nieuwste cybersecurity standaarden en best practices toe. Beveiliging wordt vanaf de ontwerpfase meegenomen, waaronder veilige architectuur, toegangsbeheer en databescherming. Door middel van code reviews, geautomatiseerde tests en kwetsbaarheidsanalyses verkleinen wij het risico op beveiligingsproblemen.\nRisicobeperking en Continuïteit\nOnze beveiligingsmaatregelen zijn gericht op het minimaliseren van risico’s voor uw bedrijfsvoering. Dit omvat preventieve maatregelen, monitoring en duidelijke procedures voor incidentrespons, zodat potentiële dreigingen tijdig worden gedetecteerd en aangepakt. Door technische beveiliging te combineren met interne richtlijnen en bewustwording bij medewerkers, waarborgen wij stabiliteit en betrouwbaarheid.\nContinue Verbetering\nCybersecurity is een continu proces. Wij verbeteren onze beveiligingsmaatregelen voortdurend op basis van risicoanalyses, technologische ontwikkelingen en veranderingen in het dreigingslandschap. Zo blijft ons platform veilig, betrouwbaar en in lijn met actuele beveiligingsstandaarden.\nLast Updated: January 16th, 2026\nChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+  "height": 1853
+ }
+}

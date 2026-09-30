@@ -1,0 +1,49 @@
+{
+  "id": "5",
+  "slug": "chargebase-at-arhem-electricity-week-2025",
+  "url": "https://chargenet.energy/blog/chargebase-at-arhem-electricity-week-2025",
+  "date": "May 8, 2025",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeBase @ Arnhem Electricity Week",
+    "nl": "ChargeBase @ Arnhem Electricity Week"
+  },
+  "category": {
+    "en": "Collaboration",
+    "nl": "Samenwerking"
+  },
+  "excerpt": {
+    "en": "ChargeNet is part of the Euro Demo Days, together with Volta Energy, and AVIA VOLT NL as part of the Arnhem Electricity Week 2025 in Arnhem to present ChargeBase.",
+    "nl": "ChargeNet neemt samen met Volta Energy en AVIA VOLT NL deel aan de Euro Demo Days tijdens de Arnhem Electricity Week 2025 in Arnhem om ChargeBase te presenteren."
+  },
+  "keywords": [
+    "funding",
+    "construction",
+    "emission-free",
+    "sustainability"
+  ],
+  "metaTitle": {
+    "en": "ChargeBase @ Arnhem Electricity Week - ChargeNet",
+    "nl": "ChargeBase @ Arnhem Electricity Week - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet, Volta Energy & AVIA VOLT Join Forces to Showcase ChargeBase at Euro Demo Days",
+    "nl": "ChargeNet, Volta Energy en AVIA VOLT bundelen hun krachten om ChargeBase te presenteren op de Euro Demo Days"
+  },
+  "externalUrl": "https://www.linkedin.com/posts/arnhem-electricity-week_eurodemodays-chargenet-voltaenergy-activity-7320423945470439424-Op2G",
+  "featuredImage": "/uploads/blog/ArnhemElectricityWeek2025Stand.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/ArnhemElectricityWeek2025Stand.jpg",
+      "file": "ArnhemElectricityWeek2025Stand.jpg",
+      "bytes": 356948
+    }
+  ],
+  "sectionTypes": [
+    "heading",
+    "paragraph",
+    "subheading",
+    "table",
+    "quote"
+  ]
+}

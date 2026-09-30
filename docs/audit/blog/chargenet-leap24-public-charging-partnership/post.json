@@ -1,0 +1,47 @@
+{
+  "id": "15",
+  "slug": "chargenet-leap24-public-charging-partnership",
+  "url": "https://chargenet.energy/blog/chargenet-leap24-public-charging-partnership",
+  "date": "Apr 7, 2026",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeNet and LEAP24: Affordable Access to Public E-Truck Charging",
+    "nl": "ChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel"
+  },
+  "category": {
+    "en": "Partnership",
+    "nl": "Partnerschap"
+  },
+  "excerpt": {
+    "en": "Our network now includes affordable access to LEAP24`s public e-truck charging sites, giving transport companies more flexibility on the road.",
+    "nl": "Ons netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg."
+  },
+  "keywords": [
+    "public e-truck charging locations",
+    "semi-public charging network",
+    "LEAP24",
+    "one charging card logistics"
+  ],
+  "metaTitle": {
+    "en": "ChargeNet and LEAP24: Affordable Access to Public E-Truck Charging - ChargeNet",
+    "nl": "ChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet`s network now includes affordable access to LEAP24`s public e-truck charging sites, giving transport companies more flexibility on the road.",
+    "nl": "Het ChargeNet-netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg."
+  },
+  "externalUrl": "https://www.linkedin.com/posts/emobility-laadinfrastructuur-logistiek-share-7446931875333349376-T71_/",
+  "featuredImage": "/uploads/blog/ChargeNet-and-LEAP24.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/ChargeNet-and-LEAP24.jpg",
+      "file": "ChargeNet-and-LEAP24.jpg",
+      "bytes": 236351
+    }
+  ],
+  "sectionTypes": [
+    "paragraph",
+    "subheading",
+    "list"
+  ]
+}

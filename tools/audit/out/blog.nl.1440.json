@@ -1,0 +1,1233 @@
+{
+ "path": "/blog",
+ "lang": "nl",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/blog",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/blog",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Seb.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Piotr.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Thijs.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-LEAP24.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/Location-Nieuwegein-Arsenaaldok.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-Equans-E-Mobility.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeAndConnect2026.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/map-connectr.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/TLN-interview-seb.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNet-and-Den-Hartog.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/SchoonEnEmissieloosBouwenMarktbijeenkomstUtrecht102025.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/GroeiversnellerDemonstratieEnergie2025.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/MvStesting02.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/OostNLGroeiversneller.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ChargeNetJTFIJmondAanZet.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ArnhemElectricityWeek2025Interview.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/MoveEast.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/ArnhemElectricityWeek2025Stand.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/OostNLFinancing.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/Connectr-Arnhem.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet - ChargeNet Nieuws & Inzichten",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "Ontdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie."
+   ],
+   "author": [
+    "ChargeNet B.V.",
+    "ChargeNet"
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP",
+    "charging network, destination charging, EV trucks, electric logistics, electric construction, network of private charge points"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "ChargeNet - ChargeNet Nieuws & Inzichten"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "Ontdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg"
+   ],
+   "og:image:width": [
+    "1200",
+    "1200"
+   ],
+   "og:image:height": [
+    "630",
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy",
+    "https://chargenet.energy/blog"
+   ],
+   "og:type": [
+    "website",
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet",
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US",
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image",
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "ChargeNet - ChargeNet Nieuws & Inzichten"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "Ontdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies",
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead",
+    "Ontdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie."
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ],
+   "twitter:url": [
+    "https://chargenet.energy/blog"
+   ],
+   "twitter:creator": [
+    "@wrldstechnologies"
+   ],
+   "theme-color": [
+    "#000000"
+   ],
+   "msapplication-TileColor": [
+    "#000000"
+   ]
+  },
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"ChargeNet\",\"url\":\"https://chargenet.energy\",\"logo\":\"https://chargenet.energy/img/ChargeNet-icon.png\",\"description\":\"ChargeNet is the platform for location owners & carrier managers to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination.\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"email\":\"info@chargenet.energy\"},\"sameAs\":[\"https://www.linkedin.com/company/chargenet-eu/\"]}"
+  ],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "ChargeNet Nieuws & Inzichten"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel"
+   },
+   {
+    "l": "H3",
+    "t": "Nieuw laadplein voor e-trucks in Nieuwegein"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet geïnterviewd door Transport & Logistiek Nederlan"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher"
+   },
+   {
+    "l": "H3",
+    "t": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet start met pilot testen bij MvS"
+   },
+   {
+    "l": "H3",
+    "t": "Groei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet in de spotlight tijdens de Arnhem Electricity Week"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeBase @ Arnhem Electricity Week"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen"
+   },
+   {
+    "l": "H3",
+    "t": "Kick-off JTF IJmond aan zet"
+   },
+   {
+    "l": "H3",
+    "t": "Loop bij ons langs @ MoveEast"
+   },
+   {
+    "l": "H3",
+    "t": "ChargeNet verhuisd naar het Connectr office in Arnhem"
+   },
+   {
+    "l": "H2",
+    "t": "Neem vandaag contact op"
+   },
+   {
+    "l": "H3",
+    "t": "Sebastiaan de Vries"
+   },
+   {
+    "l": "H3",
+    "t": "Thijs Verwaal"
+   },
+   {
+    "l": "H3",
+    "t": "Piotr Krzepczak"
+   },
+   {
+    "l": "H3",
+    "t": "Bedrijf"
+   },
+   {
+    "l": "H3",
+    "t": "Neem Contact Op"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Klanten",
+    "h": "/location-owners"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "Uitgelicht\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nGepubliceerd: Jun 30, 2026\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer",
+    "h": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership"
+   },
+   {
+    "t": "Accelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer",
+    "h": "/blog/chargenet-and-den-hartog-start-a-partnership"
+   },
+   {
+    "t": "Event\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer",
+    "h": "/blog/chargenet-present-at-charge-and-connect-event"
+   },
+   {
+    "t": "Partnerschap\nApr 7, 2026\nChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel\nOns netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg.\nLees meer",
+    "h": "/blog/chargenet-leap24-public-charging-partnership"
+   },
+   {
+    "t": "Accelereren\nFeb 5, 2026\nNieuw laadplein voor e-trucks in Nieuwegein\nNieuw laadplein voor e-trucks nu beschikbaar op Arsenaaldok 9 in Nieuwegein.\nLees meer",
+    "h": "/blog/chargenet-adding-new-nieuwegein-charging-site"
+   },
+   {
+    "t": "Partnerschap\nFeb 4, 2026\nChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen\nChargeNet werkt samen met Equans E-Mobility om eigenaren van Equans-laadpleinen deze selectief open te laten stellen, met hogere bezetting en extra inkomsten.\nLees meer",
+    "h": "/blog/chargenet-and-equans-e-mobility-partnership"
+   },
+   {
+    "t": "Accelereren\nDec 27, 2025\nChargeNet geïnterviewd door Transport & Logistiek Nederlan\nSebastiaan sprak met Transport & Logistiek Nederland over het model achter ChargeNet`s netwerk van private e-truck laadpleinen.\nLees meer",
+    "h": "/blog/chargenet-featured-by-transport-and-logistiek-nederland"
+   },
+   {
+    "t": "Event\nOct 13, 2025\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst van de Gemeente Utrecht\nLees meer",
+    "h": "/blog/chargenet-pitches-at-the-clean-emissionless-construction-market-meeting-of-utrecht"
+   },
+   {
+    "t": "Accelereren\nSept 1, 2025\nChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher\nDe Groeiversneller Demonstratie Energie werd in mei uitgereikt aan ChargeNet. Een terugblik wat deze subsidie ons voor een mogelijkheden heeft geboden.\nLees meer",
+    "h": "/blog/expand-use-cases-with-the-growth-accelerator-demonstration-energy-voucher"
+   },
+   {
+    "t": "Zakelijk\nJune 12, 2025\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nLees meer",
+    "h": "/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects"
+   },
+   {
+    "t": "Product\nJuly 17, 2025\nChargeNet start met pilot testen bij MvS\nChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur uitgevoerd als onderdeel van project Connect & Charge.\nLees meer",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs"
+   },
+   {
+    "t": "Accelereren\nJune 11, 2025\nGroei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet\nChargeNet heeft de Demonstratie Energy Innovation Voucher ontvangen van Connectr & OostNL.\nLees meer",
+    "h": "/blog/growth-accelerator-demo-voucher-energy-awarded-to-chargenet"
+   },
+   {
+    "t": "Event\nMay 15, 2025\nChargeNet in de spotlight tijdens de Arnhem Electricity Week\nChargeNet presenteert ChargeBase als gezamenlijke demonstratie tijdens de Arnhem Electricity Week.\nLees meer",
+    "h": "/blog/chargenet-in-the-spotlight-during-the-arnhem-electricity-week-2025"
+   },
+   {
+    "t": "Samenwerking\nMay 8, 2025\nChargeBase @ Arnhem Electricity Week\nChargeNet neemt samen met Volta Energy en AVIA VOLT NL deel aan de Euro Demo Days tijdens de Arnhem Electricity Week 2025 in Arnhem om ChargeBase te presenteren.\nLees meer",
+    "h": "/blog/chargebase-at-arhem-electricity-week-2025"
+   },
+   {
+    "t": "Accelereren\nMay 20, 2025\nChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen\nChargeNet heeft vroegefasefinanciering (VFF) ontvangen van Oost NL’s Vroegefasefonds Gelderland.\nLees meer",
+    "h": "/blog/chargenet-secures-funding-oostnl"
+   },
+   {
+    "t": "Samenwerking\nJanuary 31, 2025\nKick-off JTF IJmond aan zet\nChargeNet versnelt de e-logistieke transitie in IJmond met gedeeld laadnetwerk voor elektrische trucks.\nLees meer",
+    "h": "/blog/kick-off-jtf-ijmond-aan-zet"
+   },
+   {
+    "t": "Event\nOctober 11, 2024\nLoop bij ons langs @ MoveEast\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer",
+    "h": "/blog/move-east-2025"
+   },
+   {
+    "t": "Update\nSeptember 1, 2024\nChargeNet verhuisd naar het Connectr office in Arnhem\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer",
+    "h": "/blog/chargenet-moves-to-the-connectr-office-in-arnhem"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Veelgestelde Vragen (FAQ)",
+    "h": "/faq"
+   },
+   {
+    "t": "Carriere",
+    "h": "/careers"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱\nNL",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Log in",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱NL",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "max-w-4xl mx-auto text-center",
+    "height": 120,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "ChargeNet Nieuws & Inzichten"
+     }
+    ],
+    "text": "ChargeNet Nieuws & Inzichten\nOntdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie.",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+    "height": 3166,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel"
+     },
+     {
+      "l": "H3",
+      "t": "Nieuw laadplein voor e-trucks in Nieuwegein"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet geïnterviewd door Transport & Logistiek Nederlan"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher"
+     },
+     {
+      "l": "H3",
+      "t": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet start met pilot testen bij MvS"
+     },
+     {
+      "l": "H3",
+      "t": "Groei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet in de spotlight tijdens de Arnhem Electricity Week"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeBase @ Arnhem Electricity Week"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen"
+     },
+     {
+      "l": "H3",
+      "t": "Kick-off JTF IJmond aan zet"
+     },
+     {
+      "l": "H3",
+      "t": "Loop bij ons langs @ MoveEast"
+     },
+     {
+      "l": "H3",
+      "t": "ChargeNet verhuisd naar het Connectr office in Arnhem"
+     }
+    ],
+    "text": "Uitgelicht\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nGepubliceerd: Jun 30, 2026\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer\nAccelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer\nEvent\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer\nPartnerschap\nApr 7, 2026\nChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel\nOns netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg.\nLees meer\nAccelereren\nFeb 5, 2026\nNieuw laadplein voor e-trucks in Nieuwegein\nNieuw laadplein voor e-trucks nu beschikbaar op Arsenaaldok 9 in Nieuwegein.\nLees meer\nPartnerschap\nFeb 4, 2026\nChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen\nChargeNet werkt samen met Equans E-Mobility om eigenaren van Equans-laadpleinen deze selectief open te laten stellen, met hogere bezetting en extra inkomsten.\nLees meer\nAccelereren\nDec 27, 2025\nChargeNet geïnterviewd door Transport & Logistiek Nederlan\nSebastiaan sprak met Transport & Logistiek Nederland over het model achter ChargeNet`s netwerk van private e-truck laadpleinen.\nLees meer\nEvent\nOct 13, 2025\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst van de Gemeente Utrecht\nLees meer\nAccelereren\nSept 1, 2025\nChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher\nDe Groeiversneller Demonstratie Energie werd in mei uitgereikt aan ChargeNet. Een terugblik wat deze subsidie ons voor een mogelijkheden heeft geboden.\nLees meer\nZakelijk\nJune 12, 2025\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nLees meer\nProduct\nJuly 17, 2025\nChargeNet start met pilot testen bij MvS\nChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur uitgevoerd als onderdeel van project Connect & Charge.\nLees meer\nAccelereren\nJune 11, 2025\nGroei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet\nChargeNet heeft de Demonstratie Energy Innovation Voucher ontvangen van Connectr & OostNL.\nLees meer\nEvent\nMay 15, 2025\nChargeNet in de spotlight tijdens de Arnhem Electricity Week\nChargeNet presenteert ChargeBase als gezamenlijke demonstratie tijdens de Arnhem Electricity Week.\nLees meer\nSamenwerking\nMay 8, 2025\nChargeBase @ Arnhem Electricity Week\nChargeNet neemt samen met Volta Energy en AVIA VOLT NL deel aan de Euro Demo Days tijdens de Arnhem Electricity Week 2025 in Arnhem om ChargeBase te presenteren.\nLees meer\nAccelereren\nMay 20, 2025\nChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen\nChargeNet heeft vroegefasefinanciering (VFF) ontvangen van Oost NL’s Vroegefasefonds Gelderland.\nLees meer\nSamenwerking\nJanuary 31, 2025\nKick-off JTF IJmond aan zet\nChargeNet versnelt de e-logistieke transitie in IJmond met gedeeld laadnetwerk voor elektrische trucks.\nLees meer\nEvent\nOctober 11, 2024\nLoop bij ons langs @ MoveEast\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer\nUpdate\nSeptember 1, 2024\nChargeNet verhuisd naar het Connectr office in Arnhem\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer",
+    "images": [],
+    "bgImages": [
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Maxem.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Den-Hartog.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeAndConnect2026.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-LEAP24.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/Location-Nieuwegein-Arsenaaldok.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNet-and-Equans-E-Mobility.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/TLN-interview-seb.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/SchoonEnEmissieloosBouwenMarktbijeenkomstUtrecht102025.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/GroeiversnellerDemonstratieEnergie2025.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/MvStesting02.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/OostNLGroeiversneller.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ArnhemElectricityWeek2025Interview.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ArnhemElectricityWeek2025Stand.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/OostNLFinancing.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/ChargeNetJTFIJmondAanZet.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/MoveEast.jpg\")",
+     "url(\"https://chargenet.energy/uploads/blog/Connectr-Arnhem.jpg\")"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Uitgelicht\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nGepubliceerd: Jun 30, 2026\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer",
+      "href": "/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Lees meer",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Accelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer",
+      "href": "/blog/chargenet-and-den-hartog-start-a-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Event\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer",
+      "href": "/blog/chargenet-present-at-charge-and-connect-event",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Partnerschap\nApr 7, 2026\nChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel\nOns netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg.\nLees meer",
+      "href": "/blog/chargenet-leap24-public-charging-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nFeb 5, 2026\nNieuw laadplein voor e-trucks in Nieuwegein\nNieuw laadplein voor e-trucks nu beschikbaar op Arsenaaldok 9 in Nieuwegein.\nLees meer",
+      "href": "/blog/chargenet-adding-new-nieuwegein-charging-site",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Partnerschap\nFeb 4, 2026\nChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen\nChargeNet werkt samen met Equans E-Mobility om eigenaren van Equans-laadpleinen deze selectief open te laten stellen, met hogere bezetting en extra inkomsten.\nLees meer",
+      "href": "/blog/chargenet-and-equans-e-mobility-partnership",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nDec 27, 2025\nChargeNet geïnterviewd door Transport & Logistiek Nederlan\nSebastiaan sprak met Transport & Logistiek Nederland over het model achter ChargeNet`s netwerk van private e-truck laadpleinen.\nLees meer",
+      "href": "/blog/chargenet-featured-by-transport-and-logistiek-nederland",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Event\nOct 13, 2025\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst van de Gemeente Utrecht\nLees meer",
+      "href": "/blog/chargenet-pitches-at-the-clean-emissionless-construction-market-meeting-of-utrecht",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nSept 1, 2025\nChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher\nDe Groeiversneller Demonstratie Energie werd in mei uitgereikt aan ChargeNet. Een terugblik wat deze subsidie ons voor een mogelijkheden heeft geboden.\nLees meer",
+      "href": "/blog/expand-use-cases-with-the-growth-accelerator-demonstration-energy-voucher",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Zakelijk\nJune 12, 2025\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nLees meer",
+      "href": "/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Product\nJuly 17, 2025\nChargeNet start met pilot testen bij MvS\nChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur uitgevoerd als onderdeel van project Connect & Charge.\nLees meer",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nJune 11, 2025\nGroei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet\nChargeNet heeft de Demonstratie Energy Innovation Voucher ontvangen van Connectr & OostNL.\nLees meer",
+      "href": "/blog/growth-accelerator-demo-voucher-energy-awarded-to-chargenet",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Event\nMay 15, 2025\nChargeNet in de spotlight tijdens de Arnhem Electricity Week\nChargeNet presenteert ChargeBase als gezamenlijke demonstratie tijdens de Arnhem Electricity Week.\nLees meer",
+      "href": "/blog/chargenet-in-the-spotlight-during-the-arnhem-electricity-week-2025",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Samenwerking\nMay 8, 2025\nChargeBase @ Arnhem Electricity Week\nChargeNet neemt samen met Volta Energy en AVIA VOLT NL deel aan de Euro Demo Days tijdens de Arnhem Electricity Week 2025 in Arnhem om ChargeBase te presenteren.\nLees meer",
+      "href": "/blog/chargebase-at-arhem-electricity-week-2025",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Accelereren\nMay 20, 2025\nChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen\nChargeNet heeft vroegefasefinanciering (VFF) ontvangen van Oost NL’s Vroegefasefonds Gelderland.\nLees meer",
+      "href": "/blog/chargenet-secures-funding-oostnl",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Samenwerking\nJanuary 31, 2025\nKick-off JTF IJmond aan zet\nChargeNet versnelt de e-logistieke transitie in IJmond met gedeeld laadnetwerk voor elektrische trucks.\nLees meer",
+      "href": "/blog/kick-off-jtf-ijmond-aan-zet",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Event\nOctober 11, 2024\nLoop bij ons langs @ MoveEast\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer",
+      "href": "/blog/move-east-2025",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Update\nSeptember 1, 2024\nChargeNet verhuisd naar het Connectr office in Arnhem\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer",
+      "href": "/blog/chargenet-moves-to-the-connectr-office-in-arnhem",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "contact-info",
+    "cls": "bg-gradient-to-b from-white to-green text-white relative py-[15px] md:py-[25px]",
+    "height": 620,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Neem vandaag contact op"
+     },
+     {
+      "l": "H3",
+      "t": "Sebastiaan de Vries"
+     },
+     {
+      "l": "H3",
+      "t": "Thijs Verwaal"
+     },
+     {
+      "l": "H3",
+      "t": "Piotr Krzepczak"
+     }
+    ],
+    "text": "Neem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/team/Seb.jpg",
+      "alt": "Sebastiaan de Vries"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Thijs.jpg",
+      "alt": "Thijs Verwaal"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Piotr.jpg",
+      "alt": "Piotr Krzepczak"
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(rgb(255, 255, 255), rgb(8, 58, 11))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Bedrijf"
+     },
+     {
+      "l": "H3",
+      "t": "Neem Contact Op"
+     }
+    ],
+    "text": "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Veelgestelde Vragen (FAQ)",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Carriere",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL\nChargeNet Nieuws & Inzichten\nOntdek de laatste trends, updates en nieuws uit ons netwerk: nieuwe laadlocaties, ChargeNet-mijlpalen en belangrijke ontwikkelingen op het gebied van elektrische vrachtwagens en laadtechnologie.\nUitgelicht\nChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks\nGepubliceerd: Jun 30, 2026\nChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren.\nLees meer\nAccelereren\nMay 28, 2026\nChargeNet en Den Hartog Zero-Emission bundelen krachten voor meer waarde uit logistieke laadpleinen\nAlle Den Hartog Zero-Emission e-truck laadinfrastructuur maakt nu deel uit van het ChargeNet-netwerk. Hogere bezetting en extra inkomsten.\nLees meer\nEvent\nMay 19, 2026\nChargeNet op Charge & Connect: van route naar concreet laadplan\nTijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk.\nLees meer\nPartnerschap\nApr 7, 2026\nChargeNet en LEAP24: toegang tot publieke laadpleinen met voordeel\nOns netwerk breidt uit met voordelige toegang tot de publieke e-truck laadpleinen van LEAP24. Meer flexibiliteit en lagere laadkosten onderweg.\nLees meer\nAccelereren\nFeb 5, 2026\nNieuw laadplein voor e-trucks in Nieuwegein\nNieuw laadplein voor e-trucks nu beschikbaar op Arsenaaldok 9 in Nieuwegein.\nLees meer\nPartnerschap\nFeb 4, 2026\nChargeNet en Equans E-Mobility: samen meer halen uit laadpleinen\nChargeNet werkt samen met Equans E-Mobility om eigenaren van Equans-laadpleinen deze selectief open te laten stellen, met hogere bezetting en extra inkomsten.\nLees meer\nAccelereren\nDec 27, 2025\nChargeNet geïnterviewd door Transport & Logistiek Nederlan\nSebastiaan sprak met Transport & Logistiek Nederland over het model achter ChargeNet`s netwerk van private e-truck laadpleinen.\nLees meer\nEvent\nOct 13, 2025\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst\nChargeNet pitcht tijdens de “Schoon & Emissieloos Bouwen” Marktbijeenkomst van de Gemeente Utrecht\nLees meer\nAccelereren\nSept 1, 2025\nChargeNet breidt use cases uit met behulp van de Groeiversneller Demonstratie Energie Voucher\nDe Groeiversneller Demonstratie Energie werd in mei uitgereikt aan ChargeNet. Een terugblik wat deze subsidie ons voor een mogelijkheden heeft geboden.\nLees meer\nZakelijk\nJune 12, 2025\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nLees meer\nProduct\nJuly 17, 2025\nChargeNet start met pilot testen bij MvS\nChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur uitgevoerd als onderdeel van project Connect & Charge.\nLees meer\nAccelereren\nJune 11, 2025\nGroei Acceleratie Demonstratie Voucher Energie uitgereikt aan ChargeNet\nChargeNet heeft de Demonstratie Energy Innovation Voucher ontvangen van Connectr & OostNL.\nLees meer\nEvent\nMay 15, 2025\nChargeNet in de spotlight tijdens de Arnhem Electricity Week\nChargeNet presenteert ChargeBase als gezamenlijke demonstratie tijdens de Arnhem Electricity Week.\nLees meer\nSamenwerking\nMay 8, 2025\nChargeBase @ Arnhem Electricity Week\nChargeNet neemt samen met Volta Energy en AVIA VOLT NL deel aan de Euro Demo Days tijdens de Arnhem Electricity Week 2025 in Arnhem om ChargeBase te presenteren.\nLees meer\nAccelereren\nMay 20, 2025\nChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen\nChargeNet heeft vroegefasefinanciering (VFF) ontvangen van Oost NL’s Vroegefasefonds Gelderland.\nLees meer\nSamenwerking\nJanuary 31, 2025\nKick-off JTF IJmond aan zet\nChargeNet versnelt de e-logistieke transitie in IJmond met gedeeld laadnetwerk voor elektrische trucks.\nLees meer\nEvent\nOctober 11, 2024\nLoop bij ons langs @ MoveEast\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer\nUpdate\nSeptember 1, 2024\nChargeNet verhuisd naar het Connectr office in Arnhem\nChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken.\nLees meer\nNeem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy\nChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+  "height": 4679
+ }
+}

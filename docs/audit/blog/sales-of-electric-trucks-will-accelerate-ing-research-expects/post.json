@@ -1,0 +1,58 @@
+{
+  "id": "9",
+  "slug": "sales-of-electric-trucks-will-accelerate-ing-research-expects",
+  "url": "https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects",
+  "date": "June 12, 2025",
+  "author": "External: ING Research",
+  "title": {
+    "en": "Electric Trucks are Gaining Momentum, ING research sees Tipping Point Ahead",
+    "nl": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+  },
+  "category": {
+    "en": "Business",
+    "nl": "Zakelijk"
+  },
+  "excerpt": {
+    "en": "ING Research predicts that transport costs for diesel trucks will rise by up to 12% in 2027. The number of electric trucks will increase from 1500 now to 25000 in 2030, representing 15% of the total.",
+    "nl": "ING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt."
+  },
+  "keywords": [
+    "electric trucks",
+    "logistics",
+    "sustainability",
+    "ING research"
+  ],
+  "metaTitle": {
+    "en": "Electric Trucks are Gaining Momentum, ING research sees Tipping Point Ahead - ChargeNet",
+    "nl": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ING research shows electric truck adoption will accelerate significantly by 2030, with transport costs for diesel rising up to 12%.",
+    "nl": "ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen."
+  },
+  "externalUrl": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+  "featuredImage": "/uploads/blog/INGresearchEVTrucks.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/INGresearchEVTrucks.jpg",
+      "file": "INGresearchEVTrucks.jpg",
+      "bytes": 404170
+    },
+    {
+      "url": "/uploads/blog/INGresearchEVTrucks-graph-EN.svg",
+      "file": "INGresearchEVTrucks-graph-EN.svg",
+      "bytes": 9763
+    },
+    {
+      "url": "/uploads/blog/INGresearchEVTrucks-graph-NL.svg",
+      "file": "INGresearchEVTrucks-graph-NL.svg",
+      "bytes": 9762
+    }
+  ],
+  "sectionTypes": [
+    "paragraph",
+    "subheading",
+    "image",
+    "heading"
+  ]
+}

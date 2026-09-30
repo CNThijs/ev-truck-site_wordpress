@@ -1,0 +1,851 @@
+{
+ "path": "/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects",
+ "lang": "nl",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Seb.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Thijs.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Piotr.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/blog/INGresearchEVTrucks-graph-NL.svg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/svg+xml"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  }
+ ],
+ "data": {
+  "title": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen - ChargeNet",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen."
+   ],
+   "author": [
+    "ChargeNet B.V.",
+    "External: ING Research"
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP",
+    "electric trucks, logistics, sustainability, ING research, zakelijk"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen - ChargeNet"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg"
+   ],
+   "og:image:width": [
+    "1200",
+    "1200"
+   ],
+   "og:image:height": [
+    "630",
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy",
+    "https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects"
+   ],
+   "og:type": [
+    "website",
+    "article"
+   ],
+   "og:site_name": [
+    "ChargeNet",
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US",
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image",
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead",
+    "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen - ChargeNet"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time.",
+    "ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies",
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead",
+    "ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen."
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png",
+    "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ],
+   "article:section": [
+    "Zakelijk"
+   ],
+   "article:published_time": [
+    "2025-06-11T22:00:00.000Z"
+   ],
+   "article:publisher": [
+    "https://chargenet.energy"
+   ],
+   "twitter:url": [
+    "https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects"
+   ],
+   "twitter:creator": [
+    "@wrldstechnologies"
+   ],
+   "theme-color": [
+    "#000000"
+   ],
+   "msapplication-TileColor": [
+    "#000000"
+   ]
+  },
+  "jsonld": [
+   "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"ChargeNet\",\"url\":\"https://chargenet.energy\",\"logo\":\"https://chargenet.energy/img/ChargeNet-icon.png\",\"description\":\"ChargeNet is the platform for location owners & carrier managers to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination.\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"email\":\"info@chargenet.energy\"},\"sameAs\":[\"https://www.linkedin.com/company/chargenet-eu/\"]}",
+   "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://chargenet.energy/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects\"},\"headline\":\"Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen - ChargeNet\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg\",\"width\":1200,\"height\":630},\"datePublished\":\"2025-06-11T22:00:00.000Z\",\"dateModified\":\"2025-06-11T22:00:00.000Z\",\"author\":{\"@type\":\"Organization\",\"name\":\"External: ING Research\",\"url\":\"https://chargenet.energy\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"ChargeNet\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://chargenet.energy/img/ChargeNet-icon.png\",\"width\":512,\"height\":512},\"url\":\"https://chargenet.energy\"},\"description\":\"ING-onderzoek toont aan dat de adoptie van elektrische vrachtwagens tegen 2030 aanzienlijk zal versnellen, met transportkosten voor diesel die tot 12% stijgen.\",\"keywords\":\"electric trucks, logistics, sustainability, ING research\",\"articleSection\":\"Zakelijk\",\"inLanguage\":\"en-US\",\"isAccessibleForFree\":true}"
+  ],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+   },
+   {
+    "l": "H3",
+    "t": "Diesel wordt fors duurder, elektrische trucks relatief aantrekkelijker"
+   },
+   {
+    "l": "H3",
+    "t": "Elektrische truckvloot gaat groeien, van 1.500 naar 25.000 in 2030"
+   },
+   {
+    "l": "H4",
+    "t": "Aantal elektrische trucks op de Nederlandse wegen gaat fors groeien met de dieselheffingen en terugsluis voor subsidie"
+   },
+   {
+    "l": "H3",
+    "t": "Laadinfrastructuur is nog een uitdaging, maar depotladen biedt kansen"
+   },
+   {
+    "l": "H3",
+    "t": "Nieuwe technologie, wennen aan nieuw rijden"
+   },
+   {
+    "l": "H3",
+    "t": "Vervangingsgolf op komst, investeringen trekken aan"
+   },
+   {
+    "l": "H2",
+    "t": "🚀 De versnelling is begonnen"
+   },
+   {
+    "l": "H2",
+    "t": "Neem vandaag contact op"
+   },
+   {
+    "l": "H3",
+    "t": "Sebastiaan de Vries"
+   },
+   {
+    "l": "H3",
+    "t": "Thijs Verwaal"
+   },
+   {
+    "l": "H3",
+    "t": "Piotr Krzepczak"
+   },
+   {
+    "l": "H3",
+    "t": "Bedrijf"
+   },
+   {
+    "l": "H3",
+    "t": "Neem Contact Op"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Klanten",
+    "h": "/location-owners"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "Terug naar Blog",
+    "h": "/blog"
+   },
+   {
+    "t": "Gerelateerd artikel",
+    "h": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025"
+   },
+   {
+    "t": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+    "h": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Veelgestelde Vragen (FAQ)",
+    "h": "/faq"
+   },
+   {
+    "t": "Carriere",
+    "h": "/careers"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱\nNL",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Log in",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱NL",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "article",
+    "id": "",
+    "cls": "w-full pb-16",
+    "height": 3111,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+     },
+     {
+      "l": "H3",
+      "t": "Diesel wordt fors duurder, elektrische trucks relatief aantrekkelijker"
+     },
+     {
+      "l": "H3",
+      "t": "Elektrische truckvloot gaat groeien, van 1.500 naar 25.000 in 2030"
+     },
+     {
+      "l": "H4",
+      "t": "Aantal elektrische trucks op de Nederlandse wegen gaat fors groeien met de dieselheffingen en terugsluis voor subsidie"
+     },
+     {
+      "l": "H3",
+      "t": "Laadinfrastructuur is nog een uitdaging, maar depotladen biedt kansen"
+     },
+     {
+      "l": "H3",
+      "t": "Nieuwe technologie, wennen aan nieuw rijden"
+     },
+     {
+      "l": "H3",
+      "t": "Vervangingsgolf op komst, investeringen trekken aan"
+     },
+     {
+      "l": "H2",
+      "t": "🚀 De versnelling is begonnen"
+     }
+    ],
+    "text": "Terug naar Blog\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nJune 12, 2025\nExternal: ING Research\nGerelateerd artikel\nZakelijk\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nDe verkoop van elektrische trucks in Nederland en Europa staat aan de vooravond van een duidelijke versnelling. Volgens een recent rapport van ING Research komt dit niet zomaar: het is het resultaat van een samenloop van beleid, technologische ontwikkeling en economische druk. Wat ooit een niche was, groeit uit tot een serieuze optie voor transportbedrijven. Hieronder leggen we uit waarom, volgens ING, de e-truck binnenkort doorbreekt.\nDiesel wordt fors duurder, elektrische trucks relatief aantrekkelijker\nEen belangrijk keerpunt is de vrachtwagenheffing die in Nederland vanaf juli 2026 wordt ingevoerd. Deze heffing maakt rijden op diesel al snel 7,5% duurder. Elektrische trucks worden daarentegen gesubsidieerd via een korting van 80% op diezelfde heffing. Dit prijsverschil wordt nog groter in 2027, wanneer ook het Europese emissiehandelssysteem (ETS 2) van kracht wordt, wat neerkomt op zo’n 13 cent per liter extra dieselbelasting. Alles bij elkaar stijgen de dieseltransportkosten in 2027 met 10 tot 12%, stelt ING.\nDe opbrengsten van de vrachtwagenheffing worden grotendeels teruggesluisd naar subsidies voor de aanschaf van elektrische trucks. Hierdoor daalt de totale gebruikskosten (TCO) van e-trucks, en wordt de overstap voor veel transporteurs financieel haalbaarder.\nElektrische truckvloot gaat groeien, van 1.500 naar 25.000 in 2030\nHoewel er momenteel nog slechts 1.500 elektrische trucks in Nederland rondrijden – minder dan 1% van de totale vloot – verwacht ING dat dit aantal zal oplopen naar bijna 25.000 in 2030, goed voor 15% van het wagenpark.\nAantal elektrische trucks op de Nederlandse wegen gaat fors groeien met de dieselheffingen en terugsluis voor subsidie\nAantal zero-emissie trucks (>3,5 ton) in Nederland per einde periode\nDe groei komt niet in één klap, maar zal vooral versnellen tussen 2026 en 2030. Dat is het moment waarop regelgeving, infrastructuur en ervaring samenkomen. De supermarkten (zoals AH en Lidl) en grote logistieke partijen (zoals DSV en Amazon) nemen hierin het voortouw. Zij hebben duidelijke ambities om hun logistiek voor 2030 emissievrij te maken.\nLaadinfrastructuur is nog een uitdaging, maar depotladen biedt kansen\nDe beperkte publieke laadinfrastructuur blijft een obstakel. Toch is Nederland door zijn korte gemiddelde ritafstanden (80% <150 km) juist bijzonder geschikt voor e-trucks. Volgens ING zal dan ook circa 85% van de laadbeurten op depot plaatsvinden, veel hoger dan het Europese gemiddelde van 60-70%.\nBedrijven kunnen dus flink besparen door op eigen terrein op te laden, zeker met zonnepanelen, batterijen of dynamische energiecontracten. Maar netcongestie vormt hier nog een rem. Sommige bedrijven krijgen pas in 2030 een zwaardere aansluiting. Toch verwachten velen dat depotladen in combinatie met verplichte rustpauzes voor chauffeurs een logische en efficiënte oplossing wordt.\nNieuwe technologie, wennen aan nieuw rijden\nEén van de redenen waarom de adoptie nu nog traag verloopt, is de aanpassing die e-trucks vergen in de bedrijfsvoering. Opladen duurt langer dan tanken, en vraagt om slim plannen rond rusttijden. Daarbij komt dat transporteurs meer kennis moeten hebben van energiemanagement – van kilowattuurprijzen tot laadstrategieën.\nToch wordt de leercurve kleiner. De actieradius van elektrische trekkers ligt al op 450–600 km, met nieuwe generaties richting 800 km. Er zijn dus steeds meer routes waarop elektrisch rijden niet alleen mogelijk, maar ook kosteneffectief wordt.\nVervangingsgolf op komst, investeringen trekken aan\nDe dieselhausse eind 2024, waarbij bedrijven nog snel dieseltrucks kochten vóór de zero-emissiezones van 2025, leidt tot een correctie in 2025. Maar daarna komt een nieuwe investeringsgolf. De truckvloot is verouderd, en met de combinatie van hogere dieselkosten, dalende prijzen voor elektrische trucks en aantrekkelijkere deals van fabrikanten (zoals de recente fleet deals bij Volvo en MAN), wordt vervanging steeds logischer.\nVolgens ING gaan steeds meer bedrijven bij nieuwe orders ook letten op de CO₂-classificatie van trucks, die invloed heeft op de kilometerheffing. Slimme investeerders houden nu al rekening met hoe ze straks zo goedkoop mogelijk per kilometer kunnen rijden.\n🚀 De versnelling is begonnen\nDe elektrische truck is op weg om een vast onderdeel te worden van het Nederlandse wegtransport. Het speelveld verandert snel: diesel wordt duurder, elektrisch wordt goedkoper – en de regelgeving duwt de sector richting zero-emissie.\nVolgens ING Research is het omslagpunt bereikt. De komende jaren zullen steeds meer transporteurs niet of maar wanneer overstappen naar elektrisch moeten afwegen.\nMet de juiste laadinfrastructuur, slimme planning en samenwerking tussen stakeholders is het moment nu. De versnelling is gestart en de weg vooruit is elektrisch.\nGerelateerd artikel: https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/blog/INGresearchEVTrucks.jpg",
+      "alt": "Elektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/blog/INGresearchEVTrucks-graph-NL.svg",
+      "alt": ""
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(rgba(8, 58, 11, 0.8), rgba(8, 58, 11, 0))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Terug naar Blog",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Gerelateerd artikel",
+      "href": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+      "href": "https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025",
+      "tag": "a",
+      "target": "_blank"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "contact-info",
+    "cls": "bg-gradient-to-b from-white to-green text-white relative py-[15px] md:py-[25px]",
+    "height": 620,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Neem vandaag contact op"
+     },
+     {
+      "l": "H3",
+      "t": "Sebastiaan de Vries"
+     },
+     {
+      "l": "H3",
+      "t": "Thijs Verwaal"
+     },
+     {
+      "l": "H3",
+      "t": "Piotr Krzepczak"
+     }
+    ],
+    "text": "Neem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/team/Seb.jpg",
+      "alt": "Sebastiaan de Vries"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Thijs.jpg",
+      "alt": "Thijs Verwaal"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Piotr.jpg",
+      "alt": "Piotr Krzepczak"
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(rgb(255, 255, 255), rgb(8, 58, 11))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Bedrijf"
+     },
+     {
+      "l": "H3",
+      "t": "Neem Contact Op"
+     }
+    ],
+    "text": "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Veelgestelde Vragen (FAQ)",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Carriere",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL\nTerug naar Blog\nElektrische trucks versnellen de toekomst van transport, ING research ziet omslagpunt naderen\nJune 12, 2025\nExternal: ING Research\nGerelateerd artikel\nZakelijk\nING Research voorspelt dat transportkosten voor dieselvrachtwagens zullen stijgen met tot 12% in 2027. Het aantal elektrische vrachtwagens zal toenemen van 1500 nu tot 25000 in 2030, wat 15% van het totaal vertegenwoordigt.\nDe verkoop van elektrische trucks in Nederland en Europa staat aan de vooravond van een duidelijke versnelling. Volgens een recent rapport van ING Research komt dit niet zomaar: het is het resultaat van een samenloop van beleid, technologische ontwikkeling en economische druk. Wat ooit een niche was, groeit uit tot een serieuze optie voor transportbedrijven. Hieronder leggen we uit waarom, volgens ING, de e-truck binnenkort doorbreekt.\nDiesel wordt fors duurder, elektrische trucks relatief aantrekkelijker\nEen belangrijk keerpunt is de vrachtwagenheffing die in Nederland vanaf juli 2026 wordt ingevoerd. Deze heffing maakt rijden op diesel al snel 7,5% duurder. Elektrische trucks worden daarentegen gesubsidieerd via een korting van 80% op diezelfde heffing. Dit prijsverschil wordt nog groter in 2027, wanneer ook het Europese emissiehandelssysteem (ETS 2) van kracht wordt, wat neerkomt op zo’n 13 cent per liter extra dieselbelasting. Alles bij elkaar stijgen de dieseltransportkosten in 2027 met 10 tot 12%, stelt ING.\nDe opbrengsten van de vrachtwagenheffing worden grotendeels teruggesluisd naar subsidies voor de aanschaf van elektrische trucks. Hierdoor daalt de totale gebruikskosten (TCO) van e-trucks, en wordt de overstap voor veel transporteurs financieel haalbaarder.\nElektrische truckvloot gaat groeien, van 1.500 naar 25.000 in 2030\nHoewel er momenteel nog slechts 1.500 elektrische trucks in Nederland rondrijden – minder dan 1% van de totale vloot – verwacht ING dat dit aantal zal oplopen naar bijna 25.000 in 2030, goed voor 15% van het wagenpark.\nAantal elektrische trucks op de Nederlandse wegen gaat fors groeien met de dieselheffingen en terugsluis voor subsidie\nAantal zero-emissie trucks (>3,5 ton) in Nederland per einde periode\nDe groei komt niet in één klap, maar zal vooral versnellen tussen 2026 en 2030. Dat is het moment waarop regelgeving, infrastructuur en ervaring samenkomen. De supermarkten (zoals AH en Lidl) en grote logistieke partijen (zoals DSV en Amazon) nemen hierin het voortouw. Zij hebben duidelijke ambities om hun logistiek voor 2030 emissievrij te maken.\nLaadinfrastructuur is nog een uitdaging, maar depotladen biedt kansen\nDe beperkte publieke laadinfrastructuur blijft een obstakel. Toch is Nederland door zijn korte gemiddelde ritafstanden (80% <150 km) juist bijzonder geschikt voor e-trucks. Volgens ING zal dan ook circa 85% van de laadbeurten op depot plaatsvinden, veel hoger dan het Europese gemiddelde van 60-70%.\nBedrijven kunnen dus flink besparen door op eigen terrein op te laden, zeker met zonnepanelen, batterijen of dynamische energiecontracten. Maar netcongestie vormt hier nog een rem. Sommige bedrijven krijgen pas in 2030 een zwaardere aansluiting. Toch verwachten velen dat depotladen in combinatie met verplichte rustpauzes voor chauffeurs een logische en efficiënte oplossing wordt.\nNieuwe technologie, wennen aan nieuw rijden\nEén van de redenen waarom de adoptie nu nog traag verloopt, is de aanpassing die e-trucks vergen in de bedrijfsvoering. Opladen duurt langer dan tanken, en vraagt om slim plannen rond rusttijden. Daarbij komt dat transporteurs meer kennis moeten hebben van energiemanagement – van kilowattuurprijzen tot laadstrategieën.\nToch wordt de leercurve kleiner. De actieradius van elektrische trekkers ligt al op 450–600 km, met nieuwe generaties richting 800 km. Er zijn dus steeds meer routes waarop elektrisch rijden niet alleen mogelijk, maar ook kosteneffectief wordt.\nVervangingsgolf op komst, investeringen trekken aan\nDe dieselhausse eind 2024, waarbij bedrijven nog snel dieseltrucks kochten vóór de zero-emissiezones van 2025, leidt tot een correctie in 2025. Maar daarna komt een nieuwe investeringsgolf. De truckvloot is verouderd, en met de combinatie van hogere dieselkosten, dalende prijzen voor elektrische trucks en aantrekkelijkere deals van fabrikanten (zoals de recente fleet deals bij Volvo en MAN), wordt vervanging steeds logischer.\nVolgens ING gaan steeds meer bedrijven bij nieuwe orders ook letten op de CO₂-classificatie van trucks, die invloed heeft op de kilometerheffing. Slimme investeerders houden nu al rekening met hoe ze straks zo goedkoop mogelijk per kilometer kunnen rijden.\n🚀 De versnelling is begonnen\nDe elektrische truck is op weg om een vast onderdeel te worden van het Nederlandse wegtransport. Het speelveld verandert snel: diesel wordt duurder, elektrisch wordt goedkoper – en de regelgeving duwt de sector richting zero-emissie.\nVolgens ING Research is het omslagpunt bereikt. De komende jaren zullen steeds meer transporteurs niet of maar wanneer overstappen naar elektrisch moeten afwegen.\nMet de juiste laadinfrastructuur, slimme planning en samenwerking tussen stakeholders is het moment nu. De versnelling is gestart en de weg vooruit is elektrisch.\nGerelateerd artikel: https://www.ing.nl/zakelijk/sector/transport-logistics-mobility/assetvisie-trucks-2025\nNeem Contact Op\nNeem vandaag contact op\nOf u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy\nChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+  "height": 4208
+ }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "4",
+  "slug": "chargenet-secures-funding-oostnl",
+  "url": "https://chargenet.energy/blog/chargenet-secures-funding-oostnl",
+  "date": "May 20, 2025",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeNet Secures Funding to Accelerate Smart Charging for Electric Trucks",
+    "nl": "ChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen"
+  },
+  "category": {
+    "en": "Accelerate",
+    "nl": "Accelereren"
+  },
+  "excerpt": {
+    "en": "ChargeNet has received early-stage funding from Oost NL’s Vroegefasefonds Gelderland.",
+    "nl": "ChargeNet heeft vroegefasefinanciering (VFF) ontvangen van Oost NL’s Vroegefasefonds Gelderland."
+  },
+  "keywords": [
+    "funding",
+    "construction",
+    "emission-free",
+    "sustainability"
+  ],
+  "metaTitle": {
+    "en": "ChargeNet Secures Funding to Accelerate Smart Charging for Electric Trucks - ChargeNet",
+    "nl": "ChargeNet krijgt financiering om slim opladen voor elektrische vrachtwagens te versnellen - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet receives JTFIJM funding to develop emission-free construction sites, advancing sustainable building practices.",
+    "nl": "ChargeNet ontvangt JTFIJM-financiering om emissievrije bouwplaatsen te ontwikkelen, wat duurzame bouwpraktijken bevordert."
+  },
+  "externalUrl": "https://oostnl.nl/nieuws-overzicht/financiering-voor-chargenet",
+  "featuredImage": "/uploads/blog/OostNLFinancing.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/OostNLFinancing.jpg",
+      "file": "OostNLFinancing.jpg",
+      "bytes": 139646
+    }
+  ],
+  "sectionTypes": [
+    "heading",
+    "paragraph",
+    "subheading",
+    "list"
+  ]
+}

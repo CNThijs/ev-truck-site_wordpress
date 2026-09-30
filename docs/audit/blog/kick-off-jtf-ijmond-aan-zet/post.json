@@ -1,0 +1,64 @@
+{
+  "id": "3",
+  "slug": "kick-off-jtf-ijmond-aan-zet",
+  "url": "https://chargenet.energy/blog/kick-off-jtf-ijmond-aan-zet",
+  "date": "January 31, 2025",
+  "author": "SIRA",
+  "title": {
+    "en": "Kick-off JTF IJmond aan zet",
+    "nl": "Kick-off JTF IJmond aan zet"
+  },
+  "category": {
+    "en": "Collaboration",
+    "nl": "Samenwerking"
+  },
+  "excerpt": {
+    "en": "ChargeNet accelerates the e-logistic transition in IJmond with a shared chargingnetwork for electric trucks.",
+    "nl": "ChargeNet versnelt de e-logistieke transitie in IJmond met gedeeld laadnetwerk voor elektrische trucks."
+  },
+  "keywords": [
+    "funding",
+    "construction",
+    "emission-free",
+    "sustainability"
+  ],
+  "metaTitle": {
+    "en": "Kick-off JTF IJmond aan zet - ChargeNet",
+    "nl": "Kick-off JTF IJmond aan zet - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet receives JTF funding to develop emission-free construction sites, advancing sustainable building practices.",
+    "nl": "ChargeNet ontvangt JTF-financiering om emissievrije bouwplaatsen te ontwikkelen, wat duurzame bouwpraktijken bevordert."
+  },
+  "externalUrl": null,
+  "featuredImage": "/uploads/blog/ChargeNetJTFIJmondAanZet.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/ChargeNetJTFIJmondAanZet.jpg",
+      "file": "ChargeNetJTFIJmondAanZet.jpg",
+      "bytes": 309007
+    },
+    {
+      "url": "/uploads/blog/JTFIJmond-graph.png",
+      "file": "JTFIJmond-graph.png",
+      "bytes": 171895
+    },
+    {
+      "url": "/uploads/blog/EU-financed-project.jpeg",
+      "file": "EU-financed-project.jpeg",
+      "bytes": 35945
+    },
+    {
+      "url": "/uploads/blog/JTF-project.png",
+      "file": "JTF-project.png",
+      "bytes": 33438
+    }
+  ],
+  "sectionTypes": [
+    "paragraph",
+    "heading",
+    "image",
+    "Wat doet ChargeNet concreet?",
+    "icon-list"
+  ]
+}

@@ -1,0 +1,730 @@
+{
+ "path": "/privacy",
+ "lang": "en",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/privacy",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/privacy",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/map-connectr.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet · Keep Charging Ahead",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "author": [
+    "ChargeNet B.V."
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "og:image:width": [
+    "1200"
+   ],
+   "og:image:height": [
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy"
+   ],
+   "og:type": [
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ]
+  },
+  "jsonld": [],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Privacy Policy"
+   },
+   {
+    "l": "H2",
+    "t": "About us"
+   },
+   {
+    "l": "H2",
+    "t": "Scope us"
+   },
+   {
+    "l": "H2",
+    "t": "Responsibility"
+   },
+   {
+    "l": "H2",
+    "t": "How we obtain your personal data"
+   },
+   {
+    "l": "H2",
+    "t": "Details of processing"
+   },
+   {
+    "l": "H2",
+    "t": "Cookies"
+   },
+   {
+    "l": "H2",
+    "t": "Sharing with third parties"
+   },
+   {
+    "l": "H2",
+    "t": "Transfer to countries outside the EEA"
+   },
+   {
+    "l": "H2",
+    "t": "Security"
+   },
+   {
+    "l": "H2",
+    "t": "Retention periods"
+   },
+   {
+    "l": "H2",
+    "t": "Your rights (incl. the right to object)"
+   },
+   {
+    "l": "H2",
+    "t": "Contact details"
+   },
+   {
+    "l": "H2",
+    "t": "Miscellaneous"
+   },
+   {
+    "l": "H2",
+    "t": "Definitions"
+   },
+   {
+    "l": "H3",
+    "t": "Company"
+   },
+   {
+    "l": "H3",
+    "t": "Get in Touch"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "News",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "Customers",
+    "h": "/location-owners"
+   },
+   {
+    "t": "News",
+    "h": "/blog"
+   },
+   {
+    "t": "Back to Home",
+    "h": "/"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "FAQ",
+    "h": "/faq"
+   },
+   {
+    "t": "Careers",
+    "h": "/careers"
+   },
+   {
+    "t": "Security",
+    "h": "/security"
+   },
+   {
+    "t": "Privacy Policy",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacy Policy",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Security",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nAbout Us\nCustomers\nNews\nContact Us\n🇬🇧\nEN",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Customers",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "News",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "News",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇬🇧\nEN",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Customers",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "News",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Login",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇬🇧EN",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "max-w-4xl mx-auto text-center",
+    "height": 92,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Privacy Policy"
+     }
+    ],
+    "text": "Privacy Policy\nYour privacy is important to us at ChargeNet.",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "",
+    "cls": "pt-24 pb-16 px-4 sm:px-6 lg:px-8",
+    "height": 5665,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "About us"
+     },
+     {
+      "l": "H2",
+      "t": "Scope us"
+     },
+     {
+      "l": "H2",
+      "t": "Responsibility"
+     },
+     {
+      "l": "H2",
+      "t": "How we obtain your personal data"
+     },
+     {
+      "l": "H2",
+      "t": "Details of processing"
+     },
+     {
+      "l": "H2",
+      "t": "Cookies"
+     },
+     {
+      "l": "H2",
+      "t": "Sharing with third parties"
+     },
+     {
+      "l": "H2",
+      "t": "Transfer to countries outside the EEA"
+     },
+     {
+      "l": "H2",
+      "t": "Security"
+     },
+     {
+      "l": "H2",
+      "t": "Retention periods"
+     },
+     {
+      "l": "H2",
+      "t": "Your rights (incl. the right to object)"
+     },
+     {
+      "l": "H2",
+      "t": "Contact details"
+     },
+     {
+      "l": "H2",
+      "t": "Miscellaneous"
+     },
+     {
+      "l": "H2",
+      "t": "Definitions"
+     }
+    ],
+    "text": "Back to Home\nThis privacy statement contains important information as it sets out how ChargeNet handles personal data of app users (“user” or “you”). Please read this privacy statement carefully before you use our services. If you have any questions, please feel free to contact us.\nAbout us\nChargenet B.V. (“ChargeNet”, \"we\", \"us\" or \"our\") attaches great importance to the protection of its users privacy and personal data. We collect and use your personal data when you use our services. This privacy statement explains to you how we collect, use, save, share, transfer or otherwise process your personal data when you, or in the case of business users any individuals acting on your behalf (your “personnel”), use(s) our services.\nReferences to personnel below are relevant only to business users’ use. Any references to “your” personal data shall be read as references to personnel personal data for business users.\nScope us\nThe scope of this privacy statement is limited to processing activities to which the General Data Protection Regulation (“GDPR”) and its national implementation acts apply.\nResponsibility\nWe will only process personal data in accordance with applicable data protection legislation and as described in this privacy statement.\nOur app may include links to website of third parties. We are not responsible for the content of these websites, services provided by these third parties, or their compliance with applicable privacy legislation.\nHow we obtain your personal data\nWe obtain your personal data in various ways:\nIt may be that providing certain personal data to us is a statutory or contractual requirement, a requirement necessary to enter into a contract, or that you are otherwise obliged to provide the data to us. If that is the case, we will inform you thereof separately, and will also explain the possible consequences if you fail to provide such personal data to us.\nDetails of processing\nIt depends on the processing activity, which personal data we process about you, for which purposes and based on which legal ground. Please find an overview below.\nActivity\tCategories of personal data processed\tLegal ground(s) for processing and purposes for processing\nAccessing our app\tIP address, Browsing history, Cookie preferences, Movements on our app, Jointly referred to as “cookie information”, For detailed information about our use of cookies, we refer to Article 6.\nWe collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.\nWe process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience.\nUsing our app\nLogin information such as username and password\nContact details such as your name\ne-mail address and telephone number\nLicense plate numbers\nInformation with regard to your use of private charge points\nPayment information\nInformation provided through reviews\nWe collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.\nWe process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience.\nCustomer service or otherwise corresponding with you\nYour name, e-mail address and telephone number\nContent of your message, for instance a complaint or pictures of a damaged product\nDetails with regard to the follow-up\nWe collect these personal data as this is necessary for the performance of a contract or on the basis of our legitimate interests, namely verifying your identity for reasons of security, improving our services and providing customer service.\nWe process your personal data for the purposes of (i) following up on your questions, complaints and claims, (ii) providing information with regard to services that are relevant to you, and (iii) enhancing our security and protecting your information.\nOther general purposes\nAny information we possibly have of you that is necessary for the relevant purpose of processing.\nWe collect these personal data as this might be necessary for compliance with a legal obligation that is applicable to us as a data controller or for purposes of our legitimate interests, namely carrying out our regular business activities and protecting our interests.\nWe process your personal data for purposes of (i) following requests of public authorities, (ii) conducting criminal investigations, prosecutions, trails and the execution of judgments, (iii) protecting rights of third parties, (iv) conducting statistical or academic researches, or (v) other circumstances as stipulated by relevant laws and regulations.\nIf and insofar your personal data is processed on the basis of legitimate interests, information can be obtained by you as to the so-called balancing test that was carried out to allow us to rely on this processing ground. This test shows why our legitimate interests outweigh your right to privacy in those specific cases. Please find our contact details below\nIt may be that we intend to further process your personal data for a purpose other than those for which the personal data have been collected. In such case, we will provide you with information about the(se) other purpose(s) and all relevant further information prior to that further processing.\nCookies\nPlease see below an overview of the cookies that we use:\n\tName cookie\tPurpose of the cookie\tIs this cookie placed by a third-party or is the cookie information shared with third parties?\tValidity period\tConsent required?\nFunctional cookies\nAnalytical cookies\nAffiliate cookies\nTracking cookies\nYou can change your cookie settings in general – for all apps or websites you visit – via your device settings. If differs per operating system which sort of choices you can make, such as denying all third-party cookies. For further information on how you can change your settings, please be referred to: https://allaboutcookies.org/how-to-manage-cookies.\nPlease note that if you refuse certain cookies, this may reduce the functionality of some parts of our app.\nSharing with third parties\nFor the provision of our services, we share your personal data on a strictly need-to-know-basis with:\nActivity\tRecipients\tLocation\nAccessing our app\nData processors engaged by us, such as hosting providers.\n\tEU\nUsing our app\nCharge point providers;\nSubcontractors or service providers such as, consulting and law firms, insurance companies and payment providers;\nData processors engaged by us, such as payroll companies and hosting providers.\n\tEU\nCustomer service or otherwise corresponding with you\nData processors engaged by us, such as hosting providers.\n\tEU\nOther general purposes\tDepends on the purpose for processing.\tEU\nTransfer to countries outside the EEA\nWe do not involve parties that are located outside the European Economic Area (“EEA”) for the processing of your personal data. If this will be the case in the future, we will duly inform you of that matter and the procedure as explained below will apply.\nTransfers of your personal data to a country outside the EEA may in the first place be legitimized on the basis of a so-called adequacy decision. This is a decision in which the European Commission states that e.g. a certain country offers a level of data protection similar to the GDPR. See this link for the current list of adequacy decisions. If and insofar as we transfer personal data with parties in countries outside the EEA to which no adequacy decision applies, we will agree with these parties to data protection provisions set by the European Commission, so called standard contractual clauses (‘SCC’s’). These SCC’s guarantee appropriate data protection safeguards for transfers. A copy of the agreed standard contractual clauses can be requested by you.\nSecurity\nWe take appropriate organizational and technical security measures to protect your personal data and to prevent misuse, loss or alteration thereof. In addition, we limit access to personal data to those employees, agents, contractors and other third parties who need to have access in view of their work/services. Also, the aforementioned persons involved are bound by a confidentiality obligation, either in their employment agreements or (data processing) agreements.\nWe have internal security policies in place in which it is further described how we ensure an appropriate level of technical and organizational security measures. We also have a data breach policy in place in which it is described how we deal with a (possible) data breach.\nRetention periods\nWe have the following retention terms in place:\nActivity\tRetention term\nAccessing our app\t365 days\nUsing our app\t365 days\nCustomer service or otherwise corresponding with you\t365 days\nOther general purposes\tDepends on the purpose for processing.\nYour rights (incl. the right to object)\nIn relation to our processing of your personal data, you have the below privacy rights. For more information on your privacy rights, please be referred to this webpage of the European Commission.\nThe exercise of the above mentioned rights is free of charge and can be carried out by phone or by e-mail via the contact details displayed below. If requests are manifestly unfounded or excessive, in particular because of the repetitive character, we will either charge you a reasonable fee or refuse to comply with the request.\nWe may request specific information from you to help us confirm your identity before we comply with a request from you concerning one of your rights.\nWe will provide you with information about the follow-up to the request without undue delay and in principle within one month of receipt of the request. Depending on the complexity of the request and on the number of requests, this period can be extended by another two months. We will notify you of such an extension within one month of receipt of the request. The applicable privacy legislation may allow or require us to refuse your request. If we cannot comply with your request, we will inform you of the reasons why, subject to any legal or regulatory restrictions.\nContact details\nFor any questions, comments or requests on how we handle your personal data, please contact us at privacy@chargenet.energy.\nMiscellaneous\nWe are entitled at all times to delete your personal data without notice. In such a case, we owe no compensation to you as a result of the termination of the account.\nIf provisions from this privacy statement are in conflict with the law, they will be replaced by provisions of the same purport that reflects the original intention of the provision, all this to the extent legally permissible. In that case, the remaining provisions remain applicable unchanged.\nWe reserve the right to change this privacy statement on a regular basis. Where required, we will inform you of updates made to this privacy statement. The current version is always available on our app. This privacy policy was last amended and revised in November 2024.\nDefinitions\nIn this privacy statement, the following definitions apply:\nDefinition\tMeaning\nApp\tChargeNet Driver app, developed by ChargeNet B.V.\nApplicable privacy legislation\tAll applicable privacy legislation, including the General Data Protection Regulation (“GDPR”) and the relevant national implementation acts.\nPrivacy statement\tThis present privacy statement.\nOther terms that are defined in the Applicable privacy legislation, such as personal data, (joint) controller, processor, data subject and processing will have the meaning as described in the applicable privacy legislation.\nLast Updated: November 6th, 2024",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Back to Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Company"
+     },
+     {
+      "l": "H3",
+      "t": "Get in Touch"
+     }
+    ],
+    "text": "ChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time.\nIndustrial Park Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, The Netherlands\nCompany\nAbout Us\nFAQ\nCareers\nSecurity\nPrivacy Policy\nGet in Touch\nConnect with Us\n© 2026 ChargeNet. All rights reserved.\nPrivacy Policy\nSecurity",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "FAQ",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Careers",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Security",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacy Policy",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacy Policy",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Security",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nAbout Us\nCustomers\nNews\nContact Us\n🇬🇧\nEN\nPrivacy Policy\nYour privacy is important to us at ChargeNet.\nBack to Home\nThis privacy statement contains important information as it sets out how ChargeNet handles personal data of app users (“user” or “you”). Please read this privacy statement carefully before you use our services. If you have any questions, please feel free to contact us.\nAbout us\nChargenet B.V. (“ChargeNet”, \"we\", \"us\" or \"our\") attaches great importance to the protection of its users privacy and personal data. We collect and use your personal data when you use our services. This privacy statement explains to you how we collect, use, save, share, transfer or otherwise process your personal data when you, or in the case of business users any individuals acting on your behalf (your “personnel”), use(s) our services.\nReferences to personnel below are relevant only to business users’ use. Any references to “your” personal data shall be read as references to personnel personal data for business users.\nScope us\nThe scope of this privacy statement is limited to processing activities to which the General Data Protection Regulation (“GDPR”) and its national implementation acts apply.\nResponsibility\nWe will only process personal data in accordance with applicable data protection legislation and as described in this privacy statement.\nOur app may include links to website of third parties. We are not responsible for the content of these websites, services provided by these third parties, or their compliance with applicable privacy legislation.\nHow we obtain your personal data\nWe obtain your personal data in various ways:\nIt may be that providing certain personal data to us is a statutory or contractual requirement, a requirement necessary to enter into a contract, or that you are otherwise obliged to provide the data to us. If that is the case, we will inform you thereof separately, and will also explain the possible consequences if you fail to provide such personal data to us.\nDetails of processing\nIt depends on the processing activity, which personal data we process about you, for which purposes and based on which legal ground. Please find an overview below.\nActivity\tCategories of personal data processed\tLegal ground(s) for processing and purposes for processing\nAccessing our app\tIP address, Browsing history, Cookie preferences, Movements on our app, Jointly referred to as “cookie information”, For detailed information about our use of cookies, we refer to Article 6.\nWe collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.\nWe process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience.\nUsing our app\nLogin information such as username and password\nContact details such as your name\ne-mail address and telephone number\nLicense plate numbers\nInformation with regard to your use of private charge points\nPayment information\nInformation provided through reviews\nWe collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.\nWe process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience.\nCustomer service or otherwise corresponding with you\nYour name, e-mail address and telephone number\nContent of your message, for instance a complaint or pictures of a damaged product\nDetails with regard to the follow-up\nWe collect these personal data as this is necessary for the performance of a contract or on the basis of our legitimate interests, namely verifying your identity for reasons of security, improving our services and providing customer service.\nWe process your personal data for the purposes of (i) following up on your questions, complaints and claims, (ii) providing information with regard to services that are relevant to you, and (iii) enhancing our security and protecting your information.\nOther general purposes\nAny information we possibly have of you that is necessary for the relevant purpose of processing.\nWe collect these personal data as this might be necessary for compliance with a legal obligation that is applicable to us as a data controller or for purposes of our legitimate interests, namely carrying out our regular business activities and protecting our interests.\nWe process your personal data for purposes of (i) following requests of public authorities, (ii) conducting criminal investigations, prosecutions, trails and the execution of judgments, (iii) protecting rights of third parties, (iv) conducting statistical or academic researches, or (v) other circumstances as stipulated by relevant laws and regulations.\nIf and insofar your personal data is processed on the basis of legitimate interests, information can be obtained by you as to the so-called balancing test that was carried out to allow us to rely on this processing ground. This test shows why our legitimate interests outweigh your right to privacy in those specific cases. Please find our contact details below\nIt may be that we intend to further process your personal data for a purpose other than those for which the personal data have been collected. In such case, we will provide you with information about the(se) other purpose(s) and all relevant further information prior to that further processing.\nCookies\nPlease see below an overview of the cookies that we use:\n\tName cookie\tPurpose of the cookie\tIs this cookie placed by a third-party or is the cookie information shared with third parties?\tValidity period\tConsent required?\nFunctional cookies\nAnalytical cookies\nAffiliate cookies\nTracking cookies\nYou can change your cookie settings in general – for all apps or websites you visit – via your device settings. If differs per operating system which sort of choices you can make, such as denying all third-party cookies. For further information on how you can change your settings, please be referred to: https://allaboutcookies.org/how-to-manage-cookies.\nPlease note that if you refuse certain cookies, this may reduce the functionality of some parts of our app.\nSharing with third parties\nFor the provision of our services, we share your personal data on a strictly need-to-know-basis with:\nActivity\tRecipients\tLocation\nAccessing our app\nData processors engaged by us, such as hosting providers.\n\tEU\nUsing our app\nCharge point providers;\nSubcontractors or service providers such as, consulting and law firms, insurance companies and payment providers;\nData processors engaged by us, such as payroll companies and hosting providers.\n\tEU\nCustomer service or otherwise corresponding with you\nData processors engaged by us, such as hosting providers.\n\tEU\nOther general purposes\tDepends on the purpose for processing.\tEU\nTransfer to countries outside the EEA\nWe do not involve parties that are located outside the European Economic Area (“EEA”) for the processing of your personal data. If this will be the case in the future, we will duly inform you of that matter and the procedure as explained below will apply.\nTransfers of your personal data to a country outside the EEA may in the first place be legitimized on the basis of a so-called adequacy decision. This is a decision in which the European Commission states that e.g. a certain country offers a level of data protection similar to the GDPR. See this link for the current list of adequacy decisions. If and insofar as we transfer personal data with parties in countries outside the EEA to which no adequacy decision applies, we will agree with these parties to data protection provisions set by the European Commission, so called standard contractual clauses (‘SCC’s’). These SCC’s guarantee appropriate data protection safeguards for transfers. A copy of the agreed standard contractual clauses can be requested by you.\nSecurity\nWe take appropriate organizational and technical security measures to protect your personal data and to prevent misuse, loss or alteration thereof. In addition, we limit access to personal data to those employees, agents, contractors and other third parties who need to have access in view of their work/services. Also, the aforementioned persons involved are bound by a confidentiality obligation, either in their employment agreements or (data processing) agreements.\nWe have internal security policies in place in which it is further described how we ensure an appropriate level of technical and organizational security measures. We also have a data breach policy in place in which it is described how we deal with a (possible) data breach.\nRetention periods\nWe have the following retention terms in place:\nActivity\tRetention term\nAccessing our app\t365 days\nUsing our app\t365 days\nCustomer service or otherwise corresponding with you\t365 days\nOther general purposes\tDepends on the purpose for processing.\nYour rights (incl. the right to object)\nIn relation to our processing of your personal data, you have the below privacy rights. For more information on your privacy rights, please be referred to this webpage of the European Commission.\nThe exercise of the above mentioned rights is free of charge and can be carried out by phone or by e-mail via the contact details displayed below. If requests are manifestly unfounded or excessive, in particular because of the repetitive character, we will either charge you a reasonable fee or refuse to comply with the request.\nWe may request specific information from you to help us confirm your identity before we comply with a request from you concerning one of your rights.\nWe will provide you with information about the follow-up to the request without undue delay and in principle within one month of receipt of the request. Depending on the complexity of the request and on the number of requests, this period can be extended by another two months. We will notify you of such an extension within one month of receipt of the request. The applicable privacy legislation may allow or require us to refuse your request. If we cannot comply with your request, we will inform you of the reasons why, subject to any legal or regulatory restrictions.\nContact details\nFor any questions, comments or requests on how we handle your personal data, please contact us at privacy@chargenet.energy.\nMiscellaneous\nWe are entitled at all times to delete your personal data without notice. In such a case, we owe no compensation to you as a result of the termination of the account.\nIf provisions from this privacy statement are in conflict with the law, they will be replaced by provisions of the same purport that reflects the original intention of the provision, all this to the extent legally permissible. In that case, the remaining provisions remain applicable unchanged.\nWe reserve the right to change this privacy statement on a regular basis. Where required, we will inform you of updates made to this privacy statement. The current version is always available on our app. This privacy policy was last amended and revised in November 2024.\nDefinitions\nIn this privacy statement, the following definitions apply:\nDefinition\tMeaning\nApp\tChargeNet Driver app, developed by ChargeNet B.V.\nApplicable privacy legislation\tAll applicable privacy legislation, including the General Data Protection Regulation (“GDPR”) and the relevant national implementation acts.\nPrivacy statement\tThis present privacy statement.\nOther terms that are defined in the Applicable privacy legislation, such as personal data, (joint) controller, processor, data subject and processing will have the meaning as described in the applicable privacy legislation.\nLast Updated: November 6th, 2024\nChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time.\nIndustrial Park Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, The Netherlands\nCompany\nAbout Us\nFAQ\nCareers\nSecurity\nPrivacy Policy\nGet in Touch\nConnect with Us\n© 2026 ChargeNet. All rights reserved.\nPrivacy Policy\nSecurity",
+  "height": 6402
+ }
+}

@@ -1,0 +1,936 @@
+{
+ "path": "/vervoerder",
+ "lang": "en",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/vervoerder",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/vervoerder",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-map.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Piotr.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Thijs.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/team/Seb.jpg",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/jpeg"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/map-connectr.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet · Keep Charging Ahead",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "author": [
+    "ChargeNet B.V."
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "og:image:width": [
+    "1200"
+   ],
+   "og:image:height": [
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy"
+   ],
+   "og:type": [
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ]
+  },
+  "jsonld": [],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Expand your charging opportunities today"
+   },
+   {
+    "l": "H2",
+    "t": "Reduce your down-time: Start charging on you destination!"
+   },
+   {
+    "l": "H2",
+    "t": "Our Benefits"
+   },
+   {
+    "l": "H4",
+    "t": "Reduce charging costs"
+   },
+   {
+    "l": "H4",
+    "t": "One Platform"
+   },
+   {
+    "l": "H4",
+    "t": "Control & Flexibility"
+   },
+   {
+    "l": "H4",
+    "t": "Easy to Use"
+   },
+   {
+    "l": "H4",
+    "t": "Private access"
+   },
+   {
+    "l": "H4",
+    "t": "Security by Design"
+   },
+   {
+    "l": "H2",
+    "t": "How it works"
+   },
+   {
+    "l": "H3",
+    "t": "Sign Up to Join our Network"
+   },
+   {
+    "l": "H4",
+    "t": "Key Activities:"
+   },
+   {
+    "l": "H3",
+    "t": "Add your Drivers & Plan their Routes"
+   },
+   {
+    "l": "H4",
+    "t": "Key Activities:"
+   },
+   {
+    "l": "H3",
+    "t": "Download the app & Start Charging"
+   },
+   {
+    "l": "H4",
+    "t": "Key Activities:"
+   },
+   {
+    "l": "H3",
+    "t": "Optimize costs with pricing proposals"
+   },
+   {
+    "l": "H4",
+    "t": "Key Activities:"
+   },
+   {
+    "l": "H3",
+    "t": "Automated administration & billing process"
+   },
+   {
+    "l": "H4",
+    "t": "Key Activities:"
+   },
+   {
+    "l": "H2",
+    "t": "ChargeNet; the private charging network for you!"
+   },
+   {
+    "l": "H3",
+    "t": "Join today & start charging on your destination!"
+   },
+   {
+    "l": "H2",
+    "t": "Contact Us Today"
+   },
+   {
+    "l": "H3",
+    "t": "Sebastiaan de Vries"
+   },
+   {
+    "l": "H3",
+    "t": "Thijs Verwaal"
+   },
+   {
+    "l": "H3",
+    "t": "Piotr Krzepczak"
+   },
+   {
+    "l": "H3",
+    "t": "Company"
+   },
+   {
+    "l": "H3",
+    "t": "Get in Touch"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "News",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "Customers",
+    "h": "/location-owners"
+   },
+   {
+    "t": "News",
+    "h": "/blog"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "info@chargenet.energy",
+    "h": "mailto:info@chargenet.energy"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "About Us",
+    "h": "/about"
+   },
+   {
+    "t": "FAQ",
+    "h": "/faq"
+   },
+   {
+    "t": "Careers",
+    "h": "/careers"
+   },
+   {
+    "t": "Security",
+    "h": "/security"
+   },
+   {
+    "t": "Privacy Policy",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacy Policy",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Security",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nAbout Us\nCustomers\nNews\nContact Us\n🇬🇧\nEN",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Customers",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "News",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "News",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇬🇧\nEN",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Customers",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "News",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Login",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇬🇧EN",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "max-w-4xl mx-auto text-center",
+    "height": 120,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Expand your charging opportunities today"
+     }
+    ],
+    "text": "Expand your charging opportunities today\nGet access to our network of privately-owned charging locations, to charge your EV trucks on your destination against a lower price.",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "",
+    "cls": "pt-10 pb-10 px-4 sm:px-6 lg:px-8",
+    "height": 3050,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Reduce your down-time: Start charging on you destination!"
+     },
+     {
+      "l": "H2",
+      "t": "Our Benefits"
+     },
+     {
+      "l": "H4",
+      "t": "Reduce charging costs"
+     },
+     {
+      "l": "H4",
+      "t": "One Platform"
+     },
+     {
+      "l": "H4",
+      "t": "Control & Flexibility"
+     },
+     {
+      "l": "H4",
+      "t": "Easy to Use"
+     },
+     {
+      "l": "H4",
+      "t": "Private access"
+     },
+     {
+      "l": "H4",
+      "t": "Security by Design"
+     },
+     {
+      "l": "H2",
+      "t": "How it works"
+     },
+     {
+      "l": "H3",
+      "t": "Sign Up to Join our Network"
+     },
+     {
+      "l": "H4",
+      "t": "Key Activities:"
+     },
+     {
+      "l": "H3",
+      "t": "Add your Drivers & Plan their Routes"
+     },
+     {
+      "l": "H4",
+      "t": "Key Activities:"
+     },
+     {
+      "l": "H3",
+      "t": "Download the app & Start Charging"
+     },
+     {
+      "l": "H4",
+      "t": "Key Activities:"
+     },
+     {
+      "l": "H3",
+      "t": "Optimize costs with pricing proposals"
+     },
+     {
+      "l": "H4",
+      "t": "Key Activities:"
+     },
+     {
+      "l": "H3",
+      "t": "Automated administration & billing process"
+     },
+     {
+      "l": "H4",
+      "t": "Key Activities:"
+     },
+     {
+      "l": "H2",
+      "t": "ChargeNet; the private charging network for you!"
+     },
+     {
+      "l": "H3",
+      "t": "Join today & start charging on your destination!"
+     }
+    ],
+    "text": "Reduce your down-time: Start charging on you destination!\nAre you limited by netcongestion? Do you need to stop during your trip to charge your EV truck at an expensive charging station next to the highway?\nWe have build a nationwide charging network of privately-owned chargers for EV trucks, so that you can charge at the right price, at the right place, at the right time.\nYou can find find charging locations on your destionation using our mobile app and get access to start charging by a push of a button.\nFor frequent visits, we offer the opportunity to create pricing proposals with the location owners, to contractually agree on even better pricing per kWh for a fixed minimum of capacity.\nOur Benefits\nReduce charging costs\nReduce up to 60% of your charging costs compared to roaming or public charging.\nOne Platform\nWork with an unlimited number of partners, all on one platform for your whole supply chain.\nControl & Flexibility\nFully adaptable to your wishes on location and partner level, as each relation is unique.\nEasy to Use\nOur platform is uniquely developed to collaborate in the 3PL road transport relationship.\nPrivate access\nGet access to privately-owned charging locations that are part of the ChargeNet network.\nSecurity by Design\nWe apply the latest cybersecurity standards in our product development to minimise risk to your operations.\nHow it works\n1\nSign Up to Join our Network\nContact us to sign up for the ChargeNet Network.\nCurrently Viewing\nKey Activities:\nContact us to Sign Up\nCreate your organisation administrator account\nConfigure your organisation\n2\nAdd your Drivers & Plan their Routes\nAfter sign up, your organisation administrator can add all the drivers and plan their routes.\nView Details\nKey Activities:\nInvite your drivers\nPlan their routes, to identify the best charging locations\n3\nDownload the app & Start Charging\nAfter the drivers have been invited, they can download the app, complete their registration and start charging.\nView Details\nKey Activities:\nDrivers receive invite per email\nThey download the app & complete their registration\nThey can start charging\n4\nOptimize costs with pricing proposals\nFor frequent visits, we offer the opportunity to create pricing proposals with the location owners, to contractually agree on even better pricing per kWh for a fixed minimum of capacity.\nView Details\nKey Activities:\nIdentify frequently used charging locations\nCreate a pricing proposal\nReach pricing & volume agreement\nImmidiately charge against new pricing\n5\nAutomated administration & billing process\nThe organisation admin will automatically recieve periodic overviews of the charging behaviour as well as the invioces.\nView Details\nKey Activities:\nAutomated charging reporting\nAutomated invoicing\nChargeNet; the private charging network for you!\nContact us today to learn more about the benefits of ChargeNet for your fleet of EV trucks.\nJoin today & start charging on your destination!\nWide Coverage – Access a nationwide growing CCS2 charging network.\nOptimized for Trucks – Locations designed for heavy vehicles (turning radius, parking space).\nSimple Payments – One app, one invoice, transparent pricing.\nReduced Downtime – Don't stop during your trip, but charge on your destination.",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-map.png",
+      "alt": ""
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))",
+     "linear-gradient(to right, rgb(249, 250, 251), rgb(243, 244, 246))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Currently Viewing",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "View Details",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "View Details",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "View Details",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "View Details",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "contact-info",
+    "cls": "bg-gradient-to-b from-white to-green text-white relative py-[15px] md:py-[25px]",
+    "height": 592,
+    "headings": [
+     {
+      "l": "H2",
+      "t": "Contact Us Today"
+     },
+     {
+      "l": "H3",
+      "t": "Sebastiaan de Vries"
+     },
+     {
+      "l": "H3",
+      "t": "Thijs Verwaal"
+     },
+     {
+      "l": "H3",
+      "t": "Piotr Krzepczak"
+     }
+    ],
+    "text": "Get In Touch\nContact Us Today\nHave questions about our ChargeNet network? Reach out to our team and let us discuss how we can help you to electrify your logistics.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/team/Seb.jpg",
+      "alt": "Sebastiaan de Vries"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Thijs.jpg",
+      "alt": "Thijs Verwaal"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/team/Piotr.jpg",
+      "alt": "Piotr Krzepczak"
+     }
+    ],
+    "bgImages": [
+     "linear-gradient(rgb(255, 255, 255), rgb(8, 58, 11))"
+    ],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "info@chargenet.energy",
+      "href": "mailto:info@chargenet.energy",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Company"
+     },
+     {
+      "l": "H3",
+      "t": "Get in Touch"
+     }
+    ],
+    "text": "ChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time.\nIndustrial Park Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, The Netherlands\nCompany\nAbout Us\nFAQ\nCareers\nSecurity\nPrivacy Policy\nGet in Touch\nConnect with Us\n© 2026 ChargeNet. All rights reserved.\nPrivacy Policy\nSecurity",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "About Us",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "FAQ",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Careers",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Security",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacy Policy",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacy Policy",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Security",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nAbout Us\nCustomers\nNews\nContact Us\n🇬🇧\nEN\nExpand your charging opportunities today\nGet access to our network of privately-owned charging locations, to charge your EV trucks on your destination against a lower price.\nReduce your down-time: Start charging on you destination!\nAre you limited by netcongestion? Do you need to stop during your trip to charge your EV truck at an expensive charging station next to the highway?\nWe have build a nationwide charging network of privately-owned chargers for EV trucks, so that you can charge at the right price, at the right place, at the right time.\nYou can find find charging locations on your destionation using our mobile app and get access to start charging by a push of a button.\nFor frequent visits, we offer the opportunity to create pricing proposals with the location owners, to contractually agree on even better pricing per kWh for a fixed minimum of capacity.\nOur Benefits\nReduce charging costs\nReduce up to 60% of your charging costs compared to roaming or public charging.\nOne Platform\nWork with an unlimited number of partners, all on one platform for your whole supply chain.\nControl & Flexibility\nFully adaptable to your wishes on location and partner level, as each relation is unique.\nEasy to Use\nOur platform is uniquely developed to collaborate in the 3PL road transport relationship.\nPrivate access\nGet access to privately-owned charging locations that are part of the ChargeNet network.\nSecurity by Design\nWe apply the latest cybersecurity standards in our product development to minimise risk to your operations.\nHow it works\n1\nSign Up to Join our Network\nContact us to sign up for the ChargeNet Network.\nCurrently Viewing\nKey Activities:\nContact us to Sign Up\nCreate your organisation administrator account\nConfigure your organisation\n2\nAdd your Drivers & Plan their Routes\nAfter sign up, your organisation administrator can add all the drivers and plan their routes.\nView Details\nKey Activities:\nInvite your drivers\nPlan their routes, to identify the best charging locations\n3\nDownload the app & Start Charging\nAfter the drivers have been invited, they can download the app, complete their registration and start charging.\nView Details\nKey Activities:\nDrivers receive invite per email\nThey download the app & complete their registration\nThey can start charging\n4\nOptimize costs with pricing proposals\nFor frequent visits, we offer the opportunity to create pricing proposals with the location owners, to contractually agree on even better pricing per kWh for a fixed minimum of capacity.\nView Details\nKey Activities:\nIdentify frequently used charging locations\nCreate a pricing proposal\nReach pricing & volume agreement\nImmidiately charge against new pricing\n5\nAutomated administration & billing process\nThe organisation admin will automatically recieve periodic overviews of the charging behaviour as well as the invioces.\nView Details\nKey Activities:\nAutomated charging reporting\nAutomated invoicing\nChargeNet; the private charging network for you!\nContact us today to learn more about the benefits of ChargeNet for your fleet of EV trucks.\nJoin today & start charging on your destination!\nWide Coverage – Access a nationwide growing CCS2 charging network.\nOptimized for Trucks – Locations designed for heavy vehicles (turning radius, parking space).\nSimple Payments – One app, one invoice, transparent pricing.\nReduced Downtime – Don't stop during your trip, but charge on your destination.\nGet In Touch\nContact Us Today\nHave questions about our ChargeNet network? Reach out to our team and let us discuss how we can help you to electrify your logistics.\nSebastiaan de Vries\nCEO & CoFounder\ninfo@chargenet.energy\nThijs Verwaal\nCISO & CoFounder\ninfo@chargenet.energy\nPiotr Krzepczak\nCTO & CoFounder\ninfo@chargenet.energy\nChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time.\nIndustrial Park Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, The Netherlands\nCompany\nAbout Us\nFAQ\nCareers\nSecurity\nPrivacy Policy\nGet in Touch\nConnect with Us\n© 2026 ChargeNet. All rights reserved.\nPrivacy Policy\nSecurity",
+  "height": 4407
+ }
+}

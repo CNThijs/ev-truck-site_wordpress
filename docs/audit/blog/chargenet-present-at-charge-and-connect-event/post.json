@@ -1,0 +1,45 @@
+{
+  "id": "16",
+  "slug": "chargenet-present-at-charge-and-connect-event",
+  "url": "https://chargenet.energy/blog/chargenet-present-at-charge-and-connect-event",
+  "date": "May 19, 2026",
+  "author": "External: Connectr",
+  "title": {
+    "en": "ChargeNet at Charge & Connect: Turning Routes Into Real Charging Plans",
+    "nl": "ChargeNet op Charge & Connect: van route naar concreet laadplan"
+  },
+  "category": {
+    "en": "Event",
+    "nl": "Event"
+  },
+  "excerpt": {
+    "en": "At the Charge & Connect event by Connectr, offering transport companies a live analysis of their e-routes and access to the ChargeNet charging network.",
+    "nl": "Tijdens Charge & Connect van Connectr bood ChargeNet transporteurs een live analyse aan van hun e-routes en toegang tot het ChargeNet-laadnetwerk."
+  },
+  "keywords": [
+    "charge & connect",
+    "connectr",
+    "e-route analysis"
+  ],
+  "metaTitle": {
+    "en": "ChargeNet at Charge & Connect: Turning Routes Into Real Charging Plans - ChargeNet",
+    "nl": "ChargeNet op Charge & Connect: van route naar concreet laadplan - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet joined the Charge & Connect event by Connectr, offering transport companies a live analysis of their e-routes and access to the ChargeNet charging network.",
+    "nl": "ChargeNet aanwezig op Charge & Connect van Connectr en bood transporteurs een live analyse van hun e-routes en toegang tot het ChargeNet-laadnetwerk."
+  },
+  "externalUrl": "https://www.connectr.nu/events/charge-connect/",
+  "featuredImage": "/uploads/blog/ChargeAndConnect2026.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/ChargeAndConnect2026.jpg",
+      "file": "ChargeAndConnect2026.jpg",
+      "bytes": 293939
+    }
+  ],
+  "sectionTypes": [
+    "paragraph",
+    "subheading"
+  ]
+}

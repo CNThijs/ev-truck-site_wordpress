@@ -1,0 +1,67 @@
+{
+  "id": "8",
+  "slug": "chargenet-starts-pilot-testing-at-mvs",
+  "url": "https://chargenet.energy/blog/chargenet-starts-pilot-testing-at-mvs",
+  "date": "July 17, 2025",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeNet starts pilot testing at MvS",
+    "nl": "ChargeNet start met pilot testen bij MvS"
+  },
+  "category": {
+    "en": "Product",
+    "nl": "Product"
+  },
+  "excerpt": {
+    "en": "After thorough preparation, ChargeNet and Millenaar van Schaik has carried out the first charging sessions on shared charging infrastructure as part of the project Connect & Charge.",
+    "nl": "ChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur uitgevoerd als onderdeel van project Connect & Charge."
+  },
+  "keywords": [
+    "charging",
+    "EV trucks",
+    "emission-free",
+    "sustainability"
+  ],
+  "metaTitle": {
+    "en": "ChargeNet starts pilot testing at MvS - ChargeNet",
+    "nl": "ChargeNet start met pilot testen bij MvS - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "After thorough preparation, ChargeNet and Millenaar van Schaik has carried out the first charging sessions on shared charging infrastructure with electric trucks from MvS.",
+    "nl": "ChargeNet heeft na grondige voorbereiding samen met Millenaar van Schaik de eerste laadsessies op gedeelde private laadinfrastructuur met elektrische trucks van MvS uitgevoerd."
+  },
+  "externalUrl": null,
+  "featuredImage": "/uploads/blog/MvStesting02.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/MvStesting02.jpg",
+      "file": "MvStesting02.jpg",
+      "bytes": 338238
+    },
+    {
+      "url": "/uploads/blog/MvStesting01.jpg",
+      "file": "MvStesting01.jpg",
+      "bytes": 206025
+    },
+    {
+      "url": "/uploads/blog/MvStesting03.jpg",
+      "file": "MvStesting03.jpg",
+      "bytes": 143407
+    },
+    {
+      "url": "/uploads/blog/Cofunded_by_EU_EN.png",
+      "file": "Cofunded_by_EU_EN.png",
+      "bytes": 126200
+    },
+    {
+      "url": "/uploads/blog/Cofunded_by_EU_NL.png",
+      "file": "Cofunded_by_EU_NL.png",
+      "bytes": 33193
+    }
+  ],
+  "sectionTypes": [
+    "heading",
+    "image",
+    "paragraph"
+  ]
+}

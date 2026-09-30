@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chargenet.energy/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 10

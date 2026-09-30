@@ -1,0 +1,792 @@
+{
+ "path": "/faq",
+ "lang": "nl",
+ "vw": "1440",
+ "status": 200,
+ "finalUrl": "https://chargenet.energy/faq",
+ "reqs": [
+  {
+   "url": "https://chargenet.energy/faq",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "ct": "text/html"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://assets.calendly.com/assets/external/widget.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtm.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://cdn.gpteng.co/gptengineer.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript"
+  },
+  {
+   "url": "https://www.googletagmanager.com/gtag/js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "application/javascript; charset=UTF-8"
+  },
+  {
+   "url": "https://region1.google-analytics.com/g/collect",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "ct": "text/plain"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-is00oGQR.css",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css"
+  },
+  {
+   "url": "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "method": "GET",
+   "type": "script",
+   "status": 200,
+   "ct": "text/javascript"
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2",
+   "method": "GET",
+   "type": "stylesheet",
+   "status": 200,
+   "ct": "text/css; charset=utf-8"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/map-connectr.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/logo-OostNL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+   "method": "GET",
+   "type": "image",
+   "status": 200,
+   "ct": "image/png"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+   "method": "GET",
+   "type": "font",
+   "status": 200,
+   "ct": "font/woff2"
+  }
+ ],
+ "data": {
+  "title": "ChargeNet · Keep Charging Ahead",
+  "lang": "en",
+  "canonical": "https://chargenet.energy/",
+  "hreflang": [],
+  "meta": {
+   "viewport": [
+    "width=device-width, initial-scale=1.0"
+   ],
+   "description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "author": [
+    "ChargeNet B.V."
+   ],
+   "keywords": [
+    "EV trucks, EV truck charging, charging network, eMSP"
+   ],
+   "og:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "og:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "og:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "og:image:width": [
+    "1200"
+   ],
+   "og:image:height": [
+    "630"
+   ],
+   "og:url": [
+    "https://chargenet.energy"
+   ],
+   "og:type": [
+    "website"
+   ],
+   "og:site_name": [
+    "ChargeNet"
+   ],
+   "og:locale": [
+    "en_US"
+   ],
+   "twitter:card": [
+    "summary_large_image"
+   ],
+   "twitter:title": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "twitter:description": [
+    "ChargeNet is revolutionizing the electrification of the trucking industry, one charge at a time."
+   ],
+   "twitter:image": [
+    "/uploads/ChargeNet-icon.png"
+   ],
+   "twitter:site": [
+    "@wrldstechnologies"
+   ],
+   "og:image:secure_url": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "pinterest:description": [
+    "ChargeNet · Keep Charging Ahead"
+   ],
+   "pinterest:image": [
+    "https://chargenet.energy/img/ChargeNet-icon.png"
+   ],
+   "robots": [
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+   ]
+  },
+  "jsonld": [],
+  "headings": [
+   {
+    "l": "H1",
+    "t": "Veelgestelde vragen voor elektrische vrachtwagenchauffeurs"
+   },
+   {
+    "l": "H3",
+    "t": "Waar kan ik de ChargeNet driver app downloaden?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe krijg ik toegang tot de ChargeNet driver app?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe vind ik laadstations die compatibel zijn met mijn elektrische vrachtwagen?"
+   },
+   {
+    "l": "H3",
+    "t": "Kan ik een laadstation vooraf reserveren voor mijn bezorgroute?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe houd ik mijn laadkosten bij en maak ik onkostendeclaraties?"
+   },
+   {
+    "l": "H3",
+    "t": "Wat moet ik doen als een laadstation als beschikbaar wordt weergegeven in de app, maar defect blijkt te zijn?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe lang duurt het meestal om een elektrische vrachtwagen op te laden?"
+   },
+   {
+    "l": "H3",
+    "t": "Kan ik op afstand de voortgang van het laden van mijn vrachtwagen volgen?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe stel ik wagenparkfacturatie in voor meerdere vrachtwagens?"
+   },
+   {
+    "l": "H3",
+    "t": "Welke betaalmethoden worden via de app geaccepteerd?"
+   },
+   {
+    "l": "H3",
+    "t": "Welke ondersteuning is beschikbaar als ik hulp nodig heb tijdens het laden?"
+   },
+   {
+    "l": "H3",
+    "t": "Hoe kan ik verzoeken mijn account en bijbehorende gegevens te verwijderen?"
+   },
+   {
+    "l": "H3",
+    "t": "Heeft u nog vragen?"
+   },
+   {
+    "l": "H3",
+    "t": "Bedrijf"
+   },
+   {
+    "l": "H3",
+    "t": "Neem Contact Op"
+   }
+  ],
+  "links": [
+   {
+    "t": "",
+    "h": "/"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "",
+    "h": "https://portal.chargenet.energy"
+   },
+   {
+    "t": "Home",
+    "h": "/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Klanten",
+    "h": "/location-owners"
+   },
+   {
+    "t": "Nieuws",
+    "h": "/blog"
+   },
+   {
+    "t": "Terug naar Home",
+    "h": "/"
+   },
+   {
+    "t": "",
+    "h": "https://www.linkedin.com/company/chargenet-eu/"
+   },
+   {
+    "t": "Over Ons",
+    "h": "/about"
+   },
+   {
+    "t": "Veelgestelde Vragen (FAQ)",
+    "h": "/faq"
+   },
+   {
+    "t": "Carriere",
+    "h": "/careers"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-starts-pilot-testing-at-mvs/"
+   },
+   {
+    "t": "",
+    "h": "/blog/chargenet-secures-funding-oostnl/"
+   },
+   {
+    "t": "Privacybeleid",
+    "h": "/privacy-policy"
+   },
+   {
+    "t": "Beveiliging",
+    "h": "/security"
+   }
+  ],
+  "forms": [],
+  "scripts": [
+   "https://www.googletagmanager.com/gtag/js",
+   "https://www.googletagmanager.com/gtm.js",
+   "https://www.googletagmanager.com/gtag/js",
+   "https://chargenet.energy/assets/index-BxIGrRbs.js",
+   "https://cdn.gpteng.co/gptengineer.js",
+   "https://assets.calendly.com/assets/external/widget.js"
+  ],
+  "stylesheets": [
+   "https://assets.calendly.com/assets/external/widget.css",
+   "https://chargenet.energy/assets/index-is00oGQR.css"
+  ],
+  "sections": [
+   {
+    "tag": "nav",
+    "id": "",
+    "cls": "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-transparent",
+    "height": 64,
+    "headings": [],
+    "text": "Home\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Home",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱\nNL",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "https://portal.chargenet.energy",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Klanten",
+      "href": "/location-owners",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Nieuws",
+      "href": "/blog",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Contact",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Log in",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "🇳🇱NL",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 3,
+     "tabs": 0,
+     "selects": 2,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "div",
+    "id": "",
+    "cls": "max-w-4xl mx-auto text-center",
+    "height": 168,
+    "headings": [
+     {
+      "l": "H1",
+      "t": "Veelgestelde vragen voor elektrische vrachtwagenchauffeurs"
+     }
+    ],
+    "text": "Veelgestelde vragen voor elektrische vrachtwagenchauffeurs\nVind uw antwoord op veelgestelde vragen over het gebruik van onze mobiele app voor het opladen van elektrische vrachtwagens.",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "section",
+    "id": "",
+    "cls": "pt-24 pb-16 px-4 sm:px-6 lg:px-8",
+    "height": 1616,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Waar kan ik de ChargeNet driver app downloaden?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe krijg ik toegang tot de ChargeNet driver app?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe vind ik laadstations die compatibel zijn met mijn elektrische vrachtwagen?"
+     },
+     {
+      "l": "H3",
+      "t": "Kan ik een laadstation vooraf reserveren voor mijn bezorgroute?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe houd ik mijn laadkosten bij en maak ik onkostendeclaraties?"
+     },
+     {
+      "l": "H3",
+      "t": "Wat moet ik doen als een laadstation als beschikbaar wordt weergegeven in de app, maar defect blijkt te zijn?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe lang duurt het meestal om een elektrische vrachtwagen op te laden?"
+     },
+     {
+      "l": "H3",
+      "t": "Kan ik op afstand de voortgang van het laden van mijn vrachtwagen volgen?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe stel ik wagenparkfacturatie in voor meerdere vrachtwagens?"
+     },
+     {
+      "l": "H3",
+      "t": "Welke betaalmethoden worden via de app geaccepteerd?"
+     },
+     {
+      "l": "H3",
+      "t": "Welke ondersteuning is beschikbaar als ik hulp nodig heb tijdens het laden?"
+     },
+     {
+      "l": "H3",
+      "t": "Hoe kan ik verzoeken mijn account en bijbehorende gegevens te verwijderen?"
+     },
+     {
+      "l": "H3",
+      "t": "Heeft u nog vragen?"
+     }
+    ],
+    "text": "Terug naar Home\nWaar kan ik de ChargeNet driver app downloaden?\nHoe krijg ik toegang tot de ChargeNet driver app?\nHoe vind ik laadstations die compatibel zijn met mijn elektrische vrachtwagen?\nKan ik een laadstation vooraf reserveren voor mijn bezorgroute?\nHoe houd ik mijn laadkosten bij en maak ik onkostendeclaraties?\nWat moet ik doen als een laadstation als beschikbaar wordt weergegeven in de app, maar defect blijkt te zijn?\nHoe lang duurt het meestal om een elektrische vrachtwagen op te laden?\nKan ik op afstand de voortgang van het laden van mijn vrachtwagen volgen?\nHoe stel ik wagenparkfacturatie in voor meerdere vrachtwagens?\nWelke betaalmethoden worden via de app geaccepteerd?\nWelke ondersteuning is beschikbaar als ik hulp nodig heb tijdens het laden?\nHoe kan ik verzoeken mijn account en bijbehorende gegevens te verwijderen?\nHeeft u nog vragen?\nOns support team staat voor u klaar om u te helpen met eventuele problemen of vragen bij het verbinden met ChargeNet.\nContact Support\nDownload Mobiele App",
+    "images": [],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "Terug naar Home",
+      "href": "/",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Waar kan ik de ChargeNet driver app downloaden?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe krijg ik toegang tot de ChargeNet driver app?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe vind ik laadstations die compatibel zijn met mijn elektrische vrachtwagen?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Kan ik een laadstation vooraf reserveren voor mijn bezorgroute?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe houd ik mijn laadkosten bij en maak ik onkostendeclaraties?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Wat moet ik doen als een laadstation als beschikbaar wordt weergegeven in de app, maar defect blijkt te zijn?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe lang duurt het meestal om een elektrische vrachtwagen op te laden?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Kan ik op afstand de voortgang van het laden van mijn vrachtwagen volgen?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe stel ik wagenparkfacturatie in voor meerdere vrachtwagens?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Welke betaalmethoden worden via de app geaccepteerd?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Welke ondersteuning is beschikbaar als ik hulp nodig heb tijdens het laden?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Hoe kan ik verzoeken mijn account en bijbehorende gegevens te verwijderen?",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Contact Support",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "Download Mobiele App",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": null,
+      "tag": "button"
+     }
+    ],
+    "interactive": {
+     "accordions": 12,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   },
+   {
+    "tag": "footer",
+    "id": "contact",
+    "cls": "bg-green text-white pt-16 pb-8 w-full",
+    "height": 477,
+    "headings": [
+     {
+      "l": "H3",
+      "t": "Bedrijf"
+     },
+     {
+      "l": "H3",
+      "t": "Neem Contact Op"
+     }
+    ],
+    "text": "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+    "images": [
+     {
+      "src": "https://chargenet.energy/uploads/ChargeNet-logo.png",
+      "alt": "ChargeNet Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/co-funded-EU_NL.png",
+      "alt": "EU Logo"
+     },
+     {
+      "src": "https://chargenet.energy/uploads/logo-OostNL.png",
+      "alt": "EU Logo"
+     }
+    ],
+    "bgImages": [],
+    "videos": [],
+    "ctas": [
+     {
+      "t": "",
+      "href": "https://www.linkedin.com/company/chargenet-eu/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Over Ons",
+      "href": "/about",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Veelgestelde Vragen (FAQ)",
+      "href": "/faq",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Carriere",
+      "href": "/careers",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Connect with Us",
+      "href": null,
+      "tag": "button"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-starts-pilot-testing-at-mvs/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "",
+      "href": "/blog/chargenet-secures-funding-oostnl/",
+      "tag": "a",
+      "target": "_blank"
+     },
+     {
+      "t": "Privacybeleid",
+      "href": "/privacy-policy",
+      "tag": "a",
+      "target": ""
+     },
+     {
+      "t": "Beveiliging",
+      "href": "/security",
+      "tag": "a",
+      "target": ""
+     }
+    ],
+    "interactive": {
+     "accordions": 0,
+     "tabs": 0,
+     "selects": 0,
+     "maps": 0,
+     "carousels": 0,
+     "forms": 0,
+     "marquee": 0
+    }
+   }
+  ],
+  "bodyText": "Schedule time with us\nHome\nOver Ons\nKlanten\nNieuws\nContact\n🇳🇱\nNL\nVeelgestelde vragen voor elektrische vrachtwagenchauffeurs\nVind uw antwoord op veelgestelde vragen over het gebruik van onze mobiele app voor het opladen van elektrische vrachtwagens.\nTerug naar Home\nWaar kan ik de ChargeNet driver app downloaden?\nHoe krijg ik toegang tot de ChargeNet driver app?\nHoe vind ik laadstations die compatibel zijn met mijn elektrische vrachtwagen?\nKan ik een laadstation vooraf reserveren voor mijn bezorgroute?\nHoe houd ik mijn laadkosten bij en maak ik onkostendeclaraties?\nWat moet ik doen als een laadstation als beschikbaar wordt weergegeven in de app, maar defect blijkt te zijn?\nHoe lang duurt het meestal om een elektrische vrachtwagen op te laden?\nKan ik op afstand de voortgang van het laden van mijn vrachtwagen volgen?\nHoe stel ik wagenparkfacturatie in voor meerdere vrachtwagens?\nWelke betaalmethoden worden via de app geaccepteerd?\nWelke ondersteuning is beschikbaar als ik hulp nodig heb tijdens het laden?\nHoe kan ik verzoeken mijn account en bijbehorende gegevens te verwijderen?\nHeeft u nog vragen?\nOns support team staat voor u klaar om u te helpen met eventuele problemen of vragen bij het verbinden met ChargeNet.\nContact Support\nDownload Mobiele App\nChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.\nIndustrieterrein Kleefsewaard\nWestervoortsedijk 73\n6827 AV, Arnhem, Nederland\nBedrijf\nOver Ons\nVeelgestelde Vragen (FAQ)\nCarriere\nBeveiliging\nPrivacybeleid\nNeem Contact Op\nConnect with Us\n© 2026 ChargeNet. Alle rechten voorbehouden.\nPrivacybeleid\nBeveiliging",
+  "height": 2429
+ }
+}
