@@ -1,0 +1,6 @@
+@use 'base';
+
+// Block editor only. Fonts load from the main bundle on the front end; the editor falls back to sans-serif until a font is added here.
+.editor-styles-wrapper {
+	max-width: 75rem;
+}

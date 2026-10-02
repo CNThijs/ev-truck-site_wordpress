@@ -1,0 +1,25 @@
+# Dependencies and build output
+/vendor/
+node_modules/
+/dist/
+.phpcs-cache
+
+# WordPress: only the custom theme is versioned
+/web/*
+!/web/wp-content/
+/web/wp-content/*
+!/web/wp-content/themes/
+/web/wp-content/themes/*
+!/web/wp-content/themes/chargenet/
+/web/wp-content/themes/chargenet/assets/dist/
+/web/wp-content/themes/chargenet/hot
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.local
+.ddev/.ddev-docker-compose-*.yaml
+.ddev/db_snapshots/
+
+.DS_Store

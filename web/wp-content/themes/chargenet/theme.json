@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "48rem",
+      "wideSize": "75rem"
+    },
+    "color": {
+      "custom": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "brand-dark",
+          "name": "Brand dark green",
+          "color": "#083a0b"
+        },
+        {
+          "slug": "green-700",
+          "name": "Green 700",
+          "color": "#15803d"
+        },
+        {
+          "slug": "green-500",
+          "name": "Green 500",
+          "color": "#22c55e"
+        },
+        {
+          "slug": "green-50",
+          "name": "Green 50",
+          "color": "#f0fdf4"
+        },
+        {
+          "slug": "ink",
+          "name": "Ink",
+          "color": "#111827"
+        },
+        {
+          "slug": "grey-600",
+          "name": "Grey 600",
+          "color": "#4b5563"
+        },
+        {
+          "slug": "grey-100",
+          "name": "Grey 100",
+          "color": "#f3f4f6"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "fontSizes": [],
+      "fontFamilies": [
+        {
+          "slug": "source-sans-3",
+          "name": "Source Sans 3",
+          "fontFamily": "\"Source Sans 3 Variable\", sans-serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "link": {
+        "color": {
+          "text": "inherit"
+        }
+      }
+    },
+    "color": {
+      "text": "var(--wp--preset--color--ink)",
+      "background": "var(--wp--preset--color--white)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--source-sans-3)"
+    }
+  }
+}

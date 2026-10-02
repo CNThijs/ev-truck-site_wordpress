@@ -1,0 +1,118 @@
+# Copyright (C) 2026 ChargeNet
+# This file is distributed under the Proprietary.
+msgid ""
+msgstr ""
+"Project-Id-Version: ChargeNet 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-01T22:38:58+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: chargenet\n"
+
+#. Theme Name of the theme
+#. Author of the theme
+#: style.css
+msgid "ChargeNet"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://chargenet.energy"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Custom theme for chargenet.energy. Styles are built from assets/src (see assets/dist)."
+msgstr ""
+
+#: 404.php:15
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:16
+msgid "The page you are looking for does not exist."
+msgstr ""
+
+#: 404.php:17
+msgid "Back to home"
+msgstr ""
+
+#: header.php:21
+msgid "Skip to content"
+msgstr ""
+
+#: inc/setup.php:26
+msgid "Primary menu"
+msgstr ""
+
+#: inc/setup.php:27
+msgid "Footer menu"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:18
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:17
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing found"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand dark green"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Green 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Green 500"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Green 50"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grey 600"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grey 100"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Sans 3"
+msgstr ""

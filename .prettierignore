@@ -1,0 +1,10 @@
+vendor/
+node_modules/
+dist/
+web/wp-content/plugins/
+web/wp-content/themes/chargenet/assets/dist/
+docs/audit/
+tools/audit/
+package-lock.json
+composer.lock
+*.php
