@@ -6,18 +6,22 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "npm run tokens && vite",
-    "build": "npm run tokens && vite build",
+    "dev": "npm run tokens && concurrently -n vite,blocks \"vite\" \"npm run dev:blocks\"",
+    "build": "npm run tokens && npm run build:blocks && vite build",
     "lint": "npm run lint:php && npm run lint:js && npm run lint:css && npm run format:check",
     "lint:php": "vendor/bin/phpcs",
-    "lint:js": "eslint web/wp-content/themes/chargenet/assets/src vite.config.js eslint.config.js",
-    "lint:css": "stylelint \"web/wp-content/themes/chargenet/assets/src/**/*.scss\"",
+    "lint:js": "eslint web/wp-content/themes/chargenet/assets/src web/wp-content/themes/chargenet/blocks bin/*.mjs vite.config.js eslint.config.js",
+    "lint:css": "stylelint \"web/wp-content/themes/chargenet/assets/src/**/*.scss\" \"web/wp-content/themes/chargenet/blocks/**/*.scss\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "package": "bash bin/package.sh",
     "prepare": "git config core.hooksPath .githooks",
     "i18n": "ddev wp i18n make-pot web/wp-content/themes/chargenet web/wp-content/themes/chargenet/languages/chargenet.pot --domain=chargenet",
-    "tokens": "node bin/build-tokens.mjs"
+    "tokens": "node bin/build-tokens.mjs",
+    "make:section": "node bin/make-section.mjs",
+    "dev:blocks": "wp-scripts start --webpack-src-dir=web/wp-content/themes/chargenet/blocks --output-path=web/wp-content/themes/chargenet/build/blocks --webpack-copy-php --experimental-modules",
+    "build:blocks": "wp-scripts build --webpack-src-dir=web/wp-content/themes/chargenet/blocks --output-path=web/wp-content/themes/chargenet/build/blocks --webpack-copy-php --experimental-modules",
+    "translations": "node bin/build-translations.mjs"
   },
   "lint-staged": {
     "*.php": "vendor/bin/phpcs",
@@ -36,6 +40,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@wordpress/scripts": "^36.0.0",
+    "concurrently": "^10.0.5",
     "eslint": "^10.11.0",
     "globals": "^17.13.0",
     "lint-staged": "^17.6.0",

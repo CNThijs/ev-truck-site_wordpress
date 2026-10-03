@@ -1,9 +1,16 @@
 @use 'sass:map';
-@use 'tokens.generated' as t;
+@use 'breakpoints.generated' as t;
 
 // Min-width media query from the generated breakpoints.
 @mixin up($name) {
 	@media (min-width: map.get(t.$breakpoints, $name)) {
+		@content;
+	}
+}
+
+// Max-width media query, one hair below the breakpoint so up() and down() never overlap.
+@mixin down($name) {
+	@media (width <= calc(#{map.get(t.$breakpoints, $name)} - 0.02rem)) {
 		@content;
 	}
 }

@@ -4,6 +4,7 @@
 
 	<file>web/wp-content/themes/chargenet</file>
 	<exclude-pattern>*/assets/dist/*</exclude-pattern>
+	<exclude-pattern>*/build/*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 
 	<arg name="extensions" value="php"/>

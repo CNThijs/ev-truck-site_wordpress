@@ -10,6 +10,8 @@ You install and maintain WordPress yourself. This repo ships only the theme zip;
 
 ## Build the theme zip
 
+The machine that builds the zip needs Node 22 or newer. To change translations it also needs `msgfmt` from gettext (`brew install gettext` on macOS, `sudo apt install gettext` on Debian/Ubuntu). STRATO needs neither.
+
 ```sh
 npm ci
 npm run package
@@ -38,4 +40,4 @@ Install from Plugins → Add New (search the name) and activate.
 - Settings → General: site language and title.
 - Settings → Reading: choose the homepage and posts page once those pages exist.
 - Polylang → Languages: add English (default) and Dutch (local DDEV does this automatically; the live site needs it done by hand). Language URLs as directory (`/nl/…`) is the default.
-- Appearance → Menus: assign menus to the Primary and Footer locations.
+- Appearance → Menus: create a menu per language for each location (Primary, Header utility, Footer, Footer legal) and assign each in the Manage Locations tab; with Polylang active the tab has one column per language. Local DDEV seeds English and Dutch starter menus with placeholder URLs.

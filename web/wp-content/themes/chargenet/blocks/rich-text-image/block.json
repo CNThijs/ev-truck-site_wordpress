@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/rich-text-image",
+  "title": "Rich Text and Image",
+  "category": "chargenet-sections",
+  "icon": "align-pull-left",
+  "description": "Heading and text next to an image. The image sits left or right on wide screens and below the text on mobile.",
+  "keywords": ["text", "image", "feature", "split"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" },
+    "imageAlt": { "type": "string", "default": "" },
+    "imagePosition": { "type": "string", "enum": ["left", "right"], "default": "right" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "sectionBackground": "paper",
+      "eyebrow": "How it works",
+      "heading": "Charge at the right price, in the right place"
+    },
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "ChargeNet connects location owners and carriers on one private charging network."
+        }
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

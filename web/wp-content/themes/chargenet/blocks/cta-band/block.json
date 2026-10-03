@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/cta-band",
+  "title": "Call To Action Band",
+  "category": "chargenet-sections",
+  "icon": "megaphone",
+  "description": "A full-width band with a heading, short text and one or more buttons. Dark by default.",
+  "keywords": ["cta", "call to action", "banner", "contact"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "sectionBackground": {
+      "type": "string",
+      "enum": ["light", "paper", "dark"],
+      "default": "dark"
+    },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "text": { "type": "string", "default": "" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "heading": "ChargeNet: the private charging network for you",
+      "text": "Join today and charge at the right price, in the right place."
+    },
+    "innerBlocks": [
+      { "name": "chargenet/button", "attributes": { "label": "Contact us", "url": "#contact" } }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

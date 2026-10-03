@@ -61,3 +61,43 @@
 [data-reveal] {
 	will-change: transform, opacity;
 }
+
+// Section settings from the block editor (set by chargenet_section_open() in inc/section.php).
+.section {
+	&[data-space-top='none'] {
+		padding-top: 0;
+	}
+
+	&[data-space-top='sm'] {
+		padding-top: var(--space-6);
+	}
+
+	&[data-space-top='md'] {
+		padding-top: var(--space-block);
+	}
+
+	&[data-space-bottom='none'] {
+		padding-bottom: 0;
+	}
+
+	&[data-space-bottom='sm'] {
+		padding-bottom: var(--space-6);
+	}
+
+	&[data-space-bottom='md'] {
+		padding-bottom: var(--space-block);
+	}
+}
+
+// Front end only: the editor never gets these classes, so hidden sections stay editable.
+.hide-mobile {
+	@include down(md) {
+		display: none;
+	}
+}
+
+.hide-desktop {
+	@include up(md) {
+		display: none;
+	}
+}

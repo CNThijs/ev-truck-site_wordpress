@@ -1,0 +1,13 @@
+.cta-band {
+	max-width: var(--container-narrow);
+	margin-inline: auto;
+	text-align: center;
+
+	&__actions {
+		justify-content: center;
+	}
+
+	.t-lead {
+		margin-inline: auto;
+	}
+}

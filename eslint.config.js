@@ -18,7 +18,14 @@ export default [
 		languageOptions: { globals: globals.browser },
 	},
 	{
-		files: ['vite.config.js', 'eslint.config.js'],
+		files: ['web/wp-content/themes/chargenet/blocks/**/*.js'],
+		languageOptions: {
+			globals: globals.browser,
+			parserOptions: { ecmaFeatures: { jsx: true } },
+		},
+	},
+	{
+		files: ['vite.config.js', 'eslint.config.js', 'bin/**/*.mjs'],
 		languageOptions: { globals: globals.node },
 	},
 ];

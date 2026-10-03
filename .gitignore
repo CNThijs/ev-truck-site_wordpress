@@ -12,6 +12,7 @@ node_modules/
 /web/wp-content/themes/*
 !/web/wp-content/themes/chargenet/
 /web/wp-content/themes/chargenet/assets/dist/
+/web/wp-content/themes/chargenet/build/
 /web/wp-content/themes/chargenet/hot
 
 # Secrets and local config

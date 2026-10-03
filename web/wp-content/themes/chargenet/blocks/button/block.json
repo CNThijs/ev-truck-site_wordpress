@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/button",
+  "title": "Button",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/cta-band", "chargenet/rich-text-image", "chargenet/rich-text"],
+  "icon": "button",
+  "description": "A button using the ChargeNet design system. Only available inside sections.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "label": { "type": "string", "default": "" },
+    "url": { "type": "string", "default": "" },
+    "variant": {
+      "type": "string",
+      "enum": ["primary", "secondary", "ghost"],
+      "default": "primary"
+    },
+    "opensInNewTab": { "type": "boolean", "default": false }
+  },
+  "supports": { "html": false, "reusable": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

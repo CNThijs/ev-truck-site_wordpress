@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "chargenet/{{slug}}",
+	"title": "{{Title}}",
+	"category": "chargenet-sections",
+	"icon": "layout",
+	"description": "TODO: describe this section for editors.",
+	"textdomain": "chargenet",
+	"attributes": {
+		"heading": { "type": "string", "default": "" },
+		"headingLevel": { "type": "number", "default": 2 }
+	},
+	"supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+	"example": {
+		"attributes": { "heading": "{{Title}}" }
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"{{view}}
+}

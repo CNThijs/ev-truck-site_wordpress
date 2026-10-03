@@ -20,4 +20,4 @@ jobs:
       - run: npm run lint
       - run: npm run build
       # Generated token files must be committed in sync with tokens.json.
-      - run: git diff --exit-code -- web/wp-content/themes/chargenet/theme.json web/wp-content/themes/chargenet/assets/src/scss/_tokens.generated.scss
+      - run: git diff --exit-code -- web/wp-content/themes/chargenet/theme.json web/wp-content/themes/chargenet/assets/src/scss/_tokens.generated.scss web/wp-content/themes/chargenet/assets/src/scss/_breakpoints.generated.scss

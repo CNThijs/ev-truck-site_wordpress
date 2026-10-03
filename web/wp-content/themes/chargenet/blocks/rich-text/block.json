@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/rich-text",
+  "title": "Rich text",
+  "category": "chargenet-sections",
+  "icon": "editor-paragraph",
+  "description": "A plain section for headings, paragraphs, lists and quotes in a readable column.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": { "heading": "A heading" },
+    "innerBlocks": [
+      { "name": "core/paragraph", "attributes": { "content": "Plain text in a readable column." } }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

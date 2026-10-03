@@ -14,15 +14,16 @@ New WordPress site for https://chargenet.energy replacing a React SPA. Audit of 
 
 ## Commands
 
-| Command                         | What                                                                             |
-| ------------------------------- | -------------------------------------------------------------------------------- |
-| `npm ci && ddev start`          | Local site at https://chargenet.ddev.site (admin / admin, local only)            |
-| `npm run dev`                   | Vite dev server with hot reload (port 5273) (theme reads `themes/chargenet/hot`) |
-| `npm run build`                 | Hashed production build to `assets/dist`                                         |
-| `npm run lint`                  | PHPCS, ESLint, Stylelint, Prettier check                                         |
-| `npm run format`                | Prettier write                                                                   |
-| `npm run package`               | `dist/chargenet-<version>.zip`                                                   |
-| `ddev wp …` / `ddev composer …` | WP-CLI / Composer in the container                                               |
+| Command                         | What                                                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `npm ci && ddev start`          | Local site at https://chargenet.ddev.site (admin / admin, local only)                                         |
+| `npm run dev`                   | Vite dev server with hot reload (port 5273, theme reads `themes/chargenet/hot`) plus block rebuilds on change |
+| `npm run build`                 | Tokens, block build (`build/blocks`) and hashed Vite build (`assets/dist`)                                    |
+| `npm run make:section <name>`   | Scaffold a new section block                                                                                  |
+| `npm run lint`                  | PHPCS, ESLint, Stylelint, Prettier check                                                                      |
+| `npm run format`                | Prettier write                                                                                                |
+| `npm run package`               | `dist/chargenet-<version>.zip`                                                                                |
+| `ddev wp …` / `ddev composer …` | WP-CLI / Composer in the container                                                                            |
 
 `ddev start` also creates the Polylang languages (en default, nl). Pre-commit hook (`.githooks`, set by `npm install`) runs lint-staged.
 
@@ -39,6 +40,8 @@ web/                     docroot; only wp-content/themes/chargenet is versioned
     inc/                 small includes (setup, assets)
     template-parts/      partials
     assets/src/{js,scss} sources; assets/dist is build output (ignored)
+    blocks/              section block sources; build/blocks is build output (ignored)
+    patterns/            starter page patterns
 docs/                    install.md, audit/
 ```
 
@@ -46,13 +49,21 @@ Not committed: WordPress core, uploads, vendor plugins, `vendor/`, `node_modules
 
 ## Design system (direction A, "Deep Green")
 
-- Source of truth: `web/wp-content/themes/chargenet/tokens.json`. `npm run tokens` (also run by `dev` and `build`) generates `assets/src/scss/_tokens.generated.scss` (CSS custom properties, `$breakpoints`) and mirrors tokens into `theme.json`. Never edit those two files by hand; commit them. CI fails on drift. It also fails if a contrast pair in `tokens.json` drops below WCAG AA.
+- Source of truth: `web/wp-content/themes/chargenet/tokens.json`. `npm run tokens` (also run by `dev` and `build`) generates `assets/src/scss/_tokens.generated.scss` (CSS custom properties) and `_breakpoints.generated.scss` (`$breakpoints`) and mirrors tokens into `theme.json`. Never edit generated files by hand; commit them. CI fails on drift. It also fails if a contrast pair in `tokens.json` drops below WCAG AA.
 - Palette: dark forest green `#083A0B` surfaces, logo yellow `#FAE104` as accent on dark, green `#0F5F1A` for interactive elements on light. The logo is yellow/orange and only readable on dark: header and footer are always `is-dark`.
 - Section variants `is-light`, `is-paper`, `is-dark` set the semantic variables (`--bg`, `--fg`, `--accent`, `--btn-*`, `--focus`). Components read those, not raw colours.
 - Type: Source Sans 3, self-hosted variable woff2 (Latin + Latin Extended) in `assets/fonts/`, declared inline in `inc/fonts.php` with preload and a metric-matched fallback. Weights: 700 headings, 400 body, 600 labels, 300 stat numbers. No Google Fonts.
 - Motion tokens live in CSS and collapse under `prefers-reduced-motion`; JS reads them via `assets/src/js/motion.js`. Reveal-on-scroll: `data-reveal`.
 - Style guide: `/style-guide/`, administrators only (everyone else gets 404, noindex). Update `page-templates/style-guide.php` when adding a component.
 - Menus: locations `primary`, `utility` (Login), `footer`, `legal`. `bin/setup-wp.sh` seeds English starter menus with placeholder URLs.
+
+## Sections (blocks)
+
+Every page section is a dynamic block in `web/wp-content/themes/chargenet/blocks/<name>/` (block.json apiVersion 3, `render.php`, `index.js`, `style.scss`), built by `@wordpress/scripts` into `build/blocks/` (git-ignored). Vite builds only the global theme assets. Shared settings, the PHP wrapper (`chargenet_section_open/close`), page restrictions and Polylang notes: `docs/sections.md`. New section: `npm run make:section <name>`. Keep `render.php` and the editor `edit()` markup identical.
+
+## Languages
+
+English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.
 
 ## Open questions from the audit
 

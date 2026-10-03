@@ -12,7 +12,7 @@ stage=$(mktemp -d)
 trap 'rm -rf "$stage"' EXIT
 
 rsync -a \
-	--exclude 'assets/src' --exclude 'hot' --exclude 'node_modules' \
+	--exclude 'assets/src' --exclude '/blocks' --exclude 'hot' --exclude 'node_modules' \
 	--exclude '*.map' --exclude '.DS_Store' --exclude '.env*' --exclude '*.local' \
 	"$theme/" "$stage/chargenet/"
 

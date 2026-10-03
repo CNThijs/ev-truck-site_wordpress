@@ -19,3 +19,4 @@ require_once CHARGENET_DIR . '/inc/fonts.php';
 require_once CHARGENET_DIR . '/inc/head.php';
 require_once CHARGENET_DIR . '/inc/nav.php';
 require_once CHARGENET_DIR . '/inc/style-guide.php';
+require_once CHARGENET_DIR . '/inc/blocks.php';

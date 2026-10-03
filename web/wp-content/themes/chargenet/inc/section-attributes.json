@@ -1,0 +1,7 @@
+{
+  "sectionBackground": { "type": "string", "enum": ["light", "paper", "dark"], "default": "light" },
+  "spaceTop": { "type": "string", "enum": ["none", "sm", "md", "lg"], "default": "lg" },
+  "spaceBottom": { "type": "string", "enum": ["none", "sm", "md", "lg"], "default": "lg" },
+  "hideOn": { "type": "string", "enum": ["none", "mobile", "desktop"], "default": "none" },
+  "animation": { "type": "string", "default": "" }
+}

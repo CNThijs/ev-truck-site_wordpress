@@ -1,0 +1,38 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.rti {
+	display: grid;
+	gap: var(--space-block);
+	align-items: center;
+
+	@include up(md) {
+		grid-template-columns: 1fr 1fr;
+		gap: var(--space-8);
+	}
+
+	&--image-left &__media {
+		@include up(md) {
+			order: -1;
+		}
+	}
+
+	&__media {
+		margin: 0;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: var(--radius-lg);
+		}
+	}
+
+	&__content ul,
+	&__content ol {
+		margin: 0;
+		padding-left: 1.25em;
+	}
+
+	&__content .btn {
+		margin-top: var(--space-2);
+	}
+}

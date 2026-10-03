@@ -1,8 +1,13 @@
+// Block editor canvas: same tokens, base and components as the front end (no header/footer).
 @use 'tokens.generated';
+@use 'base/reset';
 @use 'base/typography';
+@use 'base/layout';
+@use 'components/button';
+@use 'components/form';
+@use 'components/badge';
+@use 'components/card';
 
-// Block editor only. The editor canvas uses the same type tokens as the front end; fonts are
-// declared inline by PHP (inc/fonts.php) on the front end, so the editor falls back to system-ui.
 .editor-styles-wrapper {
-	max-width: var(--container-default);
+	font-family: var(--font-sans);
 }
