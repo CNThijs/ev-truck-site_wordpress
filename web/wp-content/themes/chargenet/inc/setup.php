@@ -24,7 +24,9 @@ function chargenet_setup(): void {
 	register_nav_menus(
 		array(
 			'primary' => __( 'Primary menu', 'chargenet' ),
+			'utility' => __( 'Header utility menu (Login)', 'chargenet' ),
 			'footer'  => __( 'Footer menu', 'chargenet' ),
+			'legal'   => __( 'Footer legal menu', 'chargenet' ),
 		)
 	);
 }

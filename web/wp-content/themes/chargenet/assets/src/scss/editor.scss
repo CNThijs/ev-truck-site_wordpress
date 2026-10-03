@@ -1,6 +1,8 @@
-@use 'base';
+@use 'tokens.generated';
+@use 'base/typography';
 
-// Block editor only. Fonts load from the main bundle on the front end; the editor falls back to sans-serif until a font is added here.
+// Block editor only. The editor canvas uses the same type tokens as the front end; fonts are
+// declared inline by PHP (inc/fonts.php) on the front end, so the editor falls back to system-ui.
 .editor-styles-wrapper {
-	max-width: 75rem;
+	max-width: var(--container-default);
 }

@@ -1,0 +1,63 @@
+@use '../mixins' as *;
+
+.container {
+	width: 100%;
+	max-width: calc(var(--container-default) + 2 * var(--space-gutter));
+	margin-inline: auto;
+	padding-inline: var(--space-gutter);
+
+	&--narrow {
+		max-width: calc(var(--container-narrow) + 2 * var(--space-gutter));
+	}
+
+	&--wide {
+		max-width: calc(var(--container-wide) + 2 * var(--space-gutter));
+	}
+}
+
+.section {
+	padding-block: var(--space-section);
+	background: var(--bg);
+	color: var(--fg);
+}
+
+// Vertical rhythm between direct children.
+.stack > * + * {
+	margin-top: var(--stack-gap, var(--space-5));
+}
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--cluster-gap, var(--space-4));
+}
+
+.grid {
+	display: grid;
+	gap: var(--space-block);
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+
+	&--2 {
+		@include up(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&--3 {
+		@include up(md) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	&--4 {
+		@include up(lg) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
+
+// Content that fades up on scroll (assets/src/js/animations.js).
+[data-reveal] {
+	will-change: transform, opacity;
+}

@@ -15,3 +15,7 @@ define( 'CHARGENET_URI', get_template_directory_uri() );
 
 require_once CHARGENET_DIR . '/inc/setup.php';
 require_once CHARGENET_DIR . '/inc/assets.php';
+require_once CHARGENET_DIR . '/inc/fonts.php';
+require_once CHARGENET_DIR . '/inc/head.php';
+require_once CHARGENET_DIR . '/inc/nav.php';
+require_once CHARGENET_DIR . '/inc/style-guide.php';

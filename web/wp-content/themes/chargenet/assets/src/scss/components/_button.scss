@@ -1,0 +1,80 @@
+@use '../mixins' as *;
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-2);
+	min-height: 2.75rem;
+	padding: var(--space-3) var(--space-5);
+	border: 2px solid transparent;
+	border-radius: var(--radius-pill);
+	font: inherit;
+	font-weight: var(--weight-semibold);
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+
+	@include motion(background-color, color, border-color, transform, box-shadow);
+
+	&:hover {
+		transform: translateY(-1px);
+	}
+
+	&:active {
+		transform: none;
+	}
+
+	&[disabled],
+	&[aria-disabled='true'] {
+		opacity: 0.55;
+		pointer-events: none;
+	}
+
+	// Primary: filled. Green on light sections, yellow on dark (set by the section variant).
+	&--primary {
+		background: var(--btn-bg);
+		color: var(--btn-fg);
+
+		&:hover {
+			background: var(--btn-bg-hover);
+			color: var(--btn-fg);
+			box-shadow: var(--shadow-md);
+		}
+
+		.is-dark &:hover {
+			color: var(--color-forest-900);
+		}
+	}
+
+	// Secondary: outlined.
+	&--secondary {
+		border-color: currentcolor;
+		background: transparent;
+		color: var(--fg);
+
+		&:hover {
+			background: var(--fg);
+			color: var(--bg);
+		}
+	}
+
+	// Ghost: text only.
+	&--ghost {
+		min-height: 2.75rem;
+		padding-inline: var(--space-3);
+		background: transparent;
+		color: var(--link);
+
+		&:hover {
+			background: rgb(128 128 128 / 14%);
+			transform: none;
+		}
+	}
+
+	&--sm {
+		min-height: 2.25rem;
+		padding: var(--space-2) var(--space-4);
+		font-size: var(--text-sm);
+	}
+}

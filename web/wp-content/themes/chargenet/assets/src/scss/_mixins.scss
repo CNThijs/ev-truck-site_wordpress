@@ -1,0 +1,21 @@
+@use 'sass:map';
+@use 'tokens.generated' as t;
+
+// Min-width media query from the generated breakpoints.
+@mixin up($name) {
+	@media (min-width: map.get(t.$breakpoints, $name)) {
+		@content;
+	}
+}
+
+@mixin focus-ring {
+	outline: 3px solid var(--focus);
+	outline-offset: 3px;
+}
+
+// Wraps motion so it is off for users who ask for less.
+@mixin motion($props...) {
+	transition-property: $props;
+	transition-duration: var(--duration-base);
+	transition-timing-function: var(--ease-out);
+}

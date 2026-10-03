@@ -1,0 +1,21 @@
+.badge {
+	display: inline-flex;
+	align-items: center;
+	padding: var(--space-1) var(--space-3);
+	border-radius: var(--radius-pill);
+	background: var(--color-forest-100);
+	color: var(--color-forest-700);
+	font-size: var(--text-sm);
+	font-weight: var(--weight-semibold);
+	line-height: 1.4;
+
+	.is-dark & {
+		background: rgb(255 255 255 / 12%);
+		color: var(--color-volt-400);
+	}
+
+	&--outline {
+		border: 1px solid currentcolor;
+		background: transparent;
+	}
+}

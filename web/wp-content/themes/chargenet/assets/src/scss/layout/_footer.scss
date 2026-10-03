@@ -1,0 +1,73 @@
+@use '../mixins' as *;
+
+.site-footer {
+	padding-block: var(--space-section) var(--space-6);
+	background: var(--bg);
+	color: var(--fg);
+
+	&__grid {
+		display: grid;
+		gap: var(--space-8) var(--space-7);
+
+		@include up(md) {
+			grid-template-columns: 1.4fr 1fr 1fr;
+		}
+	}
+
+	&__brand img {
+		width: auto;
+		height: 2.5rem;
+		margin-bottom: var(--space-5);
+	}
+
+	&__title {
+		margin-bottom: var(--space-4);
+		font-size: var(--text-sm);
+		font-weight: var(--weight-semibold);
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--accent);
+	}
+
+	address {
+		font-style: normal;
+	}
+
+	ul {
+		display: grid;
+		gap: var(--space-1);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li a,
+	address a {
+		display: inline-block;
+		padding-block: var(--space-1);
+		color: var(--fg);
+	}
+
+	&__bottom {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-4);
+		margin-top: var(--space-8);
+		padding-top: var(--space-5);
+		border-top: 1px solid var(--border);
+		color: var(--fg-muted);
+		font-size: var(--text-sm);
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--space-2) var(--space-5);
+		}
+
+		a {
+			color: var(--fg-muted);
+		}
+	}
+}

@@ -1,0 +1,79 @@
+@use '../mixins' as *;
+
+// Only used by the admin-only style guide template.
+.sg {
+	&__swatches {
+		display: grid;
+		gap: var(--space-4);
+		grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+	}
+
+	&__swatch {
+		overflow: hidden;
+		border: 1px solid var(--border);
+		border-radius: var(--radius-md);
+		background: var(--color-white);
+		color: var(--color-ink-900);
+		font-size: var(--text-sm);
+	}
+
+	&__chip {
+		height: 4.5rem;
+	}
+
+	&__swatch-body {
+		padding: var(--space-3);
+	}
+
+	&__swatch-body code,
+	&__table code {
+		font-size: 0.85em;
+	}
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--text-sm);
+
+		th,
+		td {
+			padding: var(--space-2) var(--space-3);
+			border-bottom: 1px solid var(--border);
+			text-align: left;
+			vertical-align: middle;
+		}
+	}
+
+	&__demo {
+		padding: var(--space-6);
+		border: 1px dashed var(--border);
+		border-radius: var(--radius-lg);
+	}
+
+	&__bar {
+		height: 1rem;
+		border-radius: var(--radius-sm);
+		background: var(--accent);
+	}
+
+	&__box {
+		display: grid;
+		place-items: center;
+		min-height: 6rem;
+		background: var(--color-white);
+		color: var(--color-ink-900);
+	}
+
+	&__motion {
+		width: 4rem;
+		height: 4rem;
+		border-radius: var(--radius-md);
+		background: var(--accent);
+		transition: transform var(--sg-duration, var(--duration-base)) var(--sg-ease, var(--ease-out));
+	}
+
+	&__motion-row:hover &__motion,
+	&__motion-row:focus-within &__motion {
+		transform: translateX(8rem);
+	}
+}

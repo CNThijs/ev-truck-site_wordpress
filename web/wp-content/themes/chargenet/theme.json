@@ -1,87 +1,290 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3,
-  "settings": {
-    "appearanceTools": true,
-    "layout": {
-      "contentSize": "48rem",
-      "wideSize": "75rem"
-    },
-    "color": {
-      "custom": false,
-      "customGradient": false,
-      "defaultPalette": false,
-      "defaultGradients": false,
-      "palette": [
-        {
-          "slug": "brand-dark",
-          "name": "Brand dark green",
-          "color": "#083a0b"
-        },
-        {
-          "slug": "green-700",
-          "name": "Green 700",
-          "color": "#15803d"
-        },
-        {
-          "slug": "green-500",
-          "name": "Green 500",
-          "color": "#22c55e"
-        },
-        {
-          "slug": "green-50",
-          "name": "Green 50",
-          "color": "#f0fdf4"
-        },
-        {
-          "slug": "ink",
-          "name": "Ink",
-          "color": "#111827"
-        },
-        {
-          "slug": "grey-600",
-          "name": "Grey 600",
-          "color": "#4b5563"
-        },
-        {
-          "slug": "grey-100",
-          "name": "Grey 100",
-          "color": "#f3f4f6"
-        },
-        {
-          "slug": "white",
-          "name": "White",
-          "color": "#ffffff"
-        }
-      ]
-    },
-    "typography": {
-      "customFontSize": false,
-      "defaultFontSizes": false,
-      "fontSizes": [],
-      "fontFamilies": [
-        {
-          "slug": "source-sans-3",
-          "name": "Source Sans 3",
-          "fontFamily": "\"Source Sans 3 Variable\", sans-serif"
-        }
-      ]
-    }
-  },
-  "styles": {
-    "elements": {
-      "link": {
-        "color": {
-          "text": "inherit"
-        }
-      }
-    },
-    "color": {
-      "text": "var(--wp--preset--color--ink)",
-      "background": "var(--wp--preset--color--white)"
-    },
-    "typography": {
-      "fontFamily": "var(--wp--preset--font-family--source-sans-3)"
-    }
-  }
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "48rem",
+			"wideSize": "75rem"
+		},
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{
+					"slug": "forest-900",
+					"name": "Forest 900",
+					"color": "#083A0B"
+				},
+				{
+					"slug": "forest-800",
+					"name": "Forest 800",
+					"color": "#0E4A14"
+				},
+				{
+					"slug": "forest-700",
+					"name": "Forest 700",
+					"color": "#0F5F1A"
+				},
+				{
+					"slug": "forest-600",
+					"name": "Forest 600",
+					"color": "#15803D"
+				},
+				{
+					"slug": "forest-100",
+					"name": "Forest 100",
+					"color": "#DDEFE0"
+				},
+				{
+					"slug": "forest-50",
+					"name": "Forest 50",
+					"color": "#F0FAF2"
+				},
+				{
+					"slug": "volt-400",
+					"name": "Volt 400",
+					"color": "#FAE104"
+				},
+				{
+					"slug": "amber-500",
+					"name": "Amber 500",
+					"color": "#F89920"
+				},
+				{
+					"slug": "paper",
+					"name": "Paper",
+					"color": "#F7F6F0"
+				},
+				{
+					"slug": "white",
+					"name": "White",
+					"color": "#FFFFFF"
+				},
+				{
+					"slug": "ink-900",
+					"name": "Ink 900",
+					"color": "#111827"
+				},
+				{
+					"slug": "ink-700",
+					"name": "Ink 700",
+					"color": "#374151"
+				},
+				{
+					"slug": "ink-600",
+					"name": "Ink 600",
+					"color": "#4B5563"
+				},
+				{
+					"slug": "ink-300",
+					"name": "Ink 300",
+					"color": "#D1D5DB"
+				},
+				{
+					"slug": "ink-200",
+					"name": "Ink 200",
+					"color": "#E5E7EB"
+				},
+				{
+					"slug": "mist-200",
+					"name": "Mist 200",
+					"color": "#C9DCCB"
+				},
+				{
+					"slug": "error-700",
+					"name": "Error 700",
+					"color": "#B91C1C"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{
+					"slug": "sm",
+					"name": "sm",
+					"size": "clamp(0.8854rem, 0.8639rem + 0.0957vw, 0.95rem)",
+					"fluid": false
+				},
+				{
+					"slug": "base",
+					"name": "base",
+					"size": "clamp(1.0625rem, 1.0208rem + 0.1852vw, 1.1875rem)",
+					"fluid": false
+				},
+				{
+					"slug": "lg",
+					"name": "lg",
+					"size": "clamp(1.275rem, 1.2052rem + 0.3102vw, 1.4844rem)",
+					"fluid": false
+				},
+				{
+					"slug": "xl",
+					"name": "xl",
+					"size": "clamp(1.53rem, 1.4215rem + 0.4822vw, 1.8555rem)",
+					"fluid": false
+				},
+				{
+					"slug": "2xl",
+					"name": "2xl",
+					"size": "clamp(1.836rem, 1.6749rem + 0.7161vw, 2.3193rem)",
+					"fluid": false
+				},
+				{
+					"slug": "3xl",
+					"name": "3xl",
+					"size": "clamp(2.2032rem, 1.9712rem + 1.0311vw, 2.8992rem)",
+					"fluid": false
+				},
+				{
+					"slug": "4xl",
+					"name": "4xl",
+					"size": "clamp(2.6438rem, 2.3171rem + 1.452vw, 3.624rem)",
+					"fluid": false
+				},
+				{
+					"slug": "5xl",
+					"name": "5xl",
+					"size": "clamp(3.1726rem, 2.7202rem + 2.0109vw, 4.53rem)",
+					"fluid": false
+				}
+			],
+			"fontFamilies": [
+				{
+					"slug": "sans",
+					"name": "Source Sans 3",
+					"fontFamily": "\"Source Sans 3\", \"Source Sans 3 Fallback\", system-ui, sans-serif"
+				}
+			]
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			},
+			"spacingSizes": [
+				{
+					"slug": "1",
+					"name": "1",
+					"size": "0.25rem"
+				},
+				{
+					"slug": "2",
+					"name": "2",
+					"size": "0.5rem"
+				},
+				{
+					"slug": "3",
+					"name": "3",
+					"size": "0.75rem"
+				},
+				{
+					"slug": "4",
+					"name": "4",
+					"size": "1rem"
+				},
+				{
+					"slug": "5",
+					"name": "5",
+					"size": "1.5rem"
+				},
+				{
+					"slug": "6",
+					"name": "6",
+					"size": "2rem"
+				},
+				{
+					"slug": "7",
+					"name": "7",
+					"size": "3rem"
+				},
+				{
+					"slug": "8",
+					"name": "8",
+					"size": "4rem"
+				},
+				{
+					"slug": "9",
+					"name": "9",
+					"size": "6rem"
+				},
+				{
+					"slug": "10",
+					"name": "10",
+					"size": "8rem"
+				},
+				{
+					"slug": "gutter",
+					"name": "gutter",
+					"size": "clamp(1rem, 0.6667rem + 1.4815vw, 2rem)"
+				},
+				{
+					"slug": "block",
+					"name": "block",
+					"size": "clamp(2rem, 1.3333rem + 2.963vw, 4rem)"
+				},
+				{
+					"slug": "section",
+					"name": "section",
+					"size": "clamp(4rem, 2.6667rem + 5.9259vw, 8rem)"
+				}
+			]
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"slug": "sm",
+					"name": "sm",
+					"shadow": "0 1px 2px rgb(8 58 11 / 0.08)"
+				},
+				{
+					"slug": "md",
+					"name": "md",
+					"shadow": "0 4px 12px rgb(8 58 11 / 0.1)"
+				},
+				{
+					"slug": "lg",
+					"name": "lg",
+					"shadow": "0 16px 40px rgb(8 58 11 / 0.16)"
+				}
+			]
+		},
+		"custom": {
+			"radius": {
+				"sm": "0.25rem",
+				"md": "0.5rem",
+				"lg": "1rem",
+				"pill": "9999px"
+			},
+			"duration": {
+				"fast": "150ms",
+				"base": "250ms",
+				"slow": "500ms"
+			},
+			"ease": {
+				"out": "cubic-bezier(0.22, 1, 0.36, 1)",
+				"in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+			},
+			"breakpoint": {
+				"sm": "40rem",
+				"md": "48rem",
+				"lg": "64rem",
+				"xl": "80rem"
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--ink-900)",
+			"background": "var(--wp--preset--color--white)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--sans)",
+			"lineHeight": "1.6"
+		}
+	}
 }

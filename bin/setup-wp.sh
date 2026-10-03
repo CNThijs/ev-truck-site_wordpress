@@ -26,3 +26,33 @@ if ( ! PLL()->model->get_languages_list() ) {
 	PLL()->model->add_language( array( "name" => "English", "slug" => "en", "locale" => "en_US", "rtl" => 0, "term_group" => 0, "flag" => "gb" ) );
 	PLL()->model->add_language( array( "name" => "Nederlands", "slug" => "nl", "locale" => "nl_NL", "rtl" => 0, "term_group" => 1, "flag" => "nl" ) );
 }'
+
+# Starter menus (English). Custom links only: the pages are built in later epics, so these URLs are placeholders.
+if ! wp menu list --path=web --fields=name --format=csv | grep -qx 'Primary'; then
+	home=$(wp option get home --path=web)
+	wp menu create Primary --path=web >/dev/null
+	wp menu item add-custom Primary Home "$home/" --path=web >/dev/null
+	wp menu item add-custom Primary About "$home/about/" --path=web >/dev/null
+	wp menu item add-custom Primary Customers '#' --path=web >/dev/null
+	parent=$(wp menu item list Primary --path=web --fields=db_id,title --format=csv | awk -F, '$2=="Customers"{print $1}')
+	wp menu item add-custom Primary Locations "$home/locations/" --parent-id="$parent" --path=web >/dev/null
+	wp menu item add-custom Primary Carriers "$home/carriers/" --parent-id="$parent" --path=web >/dev/null
+	wp menu item add-custom Primary News "$home/blog/" --path=web >/dev/null
+	wp menu location assign Primary primary --path=web
+
+	wp menu create Utility --path=web >/dev/null
+	wp menu item add-custom Utility Login https://portal.chargenet.energy --target=_blank --path=web >/dev/null
+	wp menu location assign Utility utility --path=web
+
+	wp menu create Footer --path=web >/dev/null
+	wp menu item add-custom Footer 'About Us' "$home/about/" --path=web >/dev/null
+	wp menu item add-custom Footer FAQ "$home/faq/" --path=web >/dev/null
+	wp menu item add-custom Footer Careers "$home/careers/" --path=web >/dev/null
+	wp menu item add-custom Footer Security "$home/security/" --path=web >/dev/null
+	wp menu location assign Footer footer --path=web
+
+	wp menu create Legal --path=web >/dev/null
+	wp menu item add-custom Legal 'Privacy Policy' "$home/privacy-policy/" --path=web >/dev/null
+	wp menu item add-custom Legal Security "$home/security/" --path=web >/dev/null
+	wp menu location assign Legal legal --path=web
+fi

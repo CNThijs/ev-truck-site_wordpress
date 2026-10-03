@@ -44,9 +44,15 @@ docs/                    install.md, audit/
 
 Not committed: WordPress core, uploads, vendor plugins, `vendor/`, `node_modules/`, `dist/`.
 
-## Design tokens
+## Design system (direction A, "Deep Green")
 
-`theme.json` holds a starter palette and Source Sans 3 (self-hosted via `@fontsource-variable/source-sans-3`), taken from `docs/audit/design-baseline.md`. Provisional until the new design is decided.
+- Source of truth: `web/wp-content/themes/chargenet/tokens.json`. `npm run tokens` (also run by `dev` and `build`) generates `assets/src/scss/_tokens.generated.scss` (CSS custom properties, `$breakpoints`) and mirrors tokens into `theme.json`. Never edit those two files by hand; commit them. CI fails on drift. It also fails if a contrast pair in `tokens.json` drops below WCAG AA.
+- Palette: dark forest green `#083A0B` surfaces, logo yellow `#FAE104` as accent on dark, green `#0F5F1A` for interactive elements on light. The logo is yellow/orange and only readable on dark: header and footer are always `is-dark`.
+- Section variants `is-light`, `is-paper`, `is-dark` set the semantic variables (`--bg`, `--fg`, `--accent`, `--btn-*`, `--focus`). Components read those, not raw colours.
+- Type: Source Sans 3, self-hosted variable woff2 (Latin + Latin Extended) in `assets/fonts/`, declared inline in `inc/fonts.php` with preload and a metric-matched fallback. Weights: 700 headings, 400 body, 600 labels, 300 stat numbers. No Google Fonts.
+- Motion tokens live in CSS and collapse under `prefers-reduced-motion`; JS reads them via `assets/src/js/motion.js`. Reveal-on-scroll: `data-reveal`.
+- Style guide: `/style-guide/`, administrators only (everyone else gets 404, noindex). Update `page-templates/style-guide.php` when adding a component.
+- Menus: locations `primary`, `utility` (Login), `footer`, `legal`. `bin/setup-wp.sh` seeds English starter menus with placeholder URLs.
 
 ## Open questions from the audit
 

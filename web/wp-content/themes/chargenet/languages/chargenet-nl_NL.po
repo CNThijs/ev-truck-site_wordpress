@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ChargeNet\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Skip to content"
+msgstr "Ga naar inhoud"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Primary"
+msgstr "Hoofdmenu"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "Footer"
+msgstr "Voettekst"
+
+msgid "Legal"
+msgstr "Juridisch"
+
+msgid "Company"
+msgstr "Bedrijf"
+
+msgid "Get in Touch"
+msgstr "Neem contact op"
+
+msgid "(opens in a new tab)"
+msgstr "(opent in een nieuw tabblad)"
+
+msgid "ChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time."
+msgstr "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment."
+
+msgid "Industrial Park Kleefsewaard"
+msgstr "Industrieterrein Kleefsewaard"
+
+msgid "6827 AV, Arnhem, The Netherlands"
+msgstr "6827 AV, Arnhem, Nederland"
+
+#, php-format
+msgid "© %s ChargeNet. All rights reserved."
+msgstr "© %s ChargeNet. Alle rechten voorbehouden."
+
+msgid "Contact Us"
+msgstr "Contact"
+
+#, php-format
+msgid "Show submenu for %s"
+msgstr "Submenu van %s tonen"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Footer language"
+msgstr "Taal (voettekst)"
+
