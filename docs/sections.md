@@ -89,4 +89,4 @@ Block content is stored in the post, so **each translation is its own page**:
 3. To start from the English layout, use "Copy content to translation" in the Languages box, then translate the text of each section.
 4. Translate section settings only if they should differ (usually not), and the **anchor IDs** if you link to them (anchors can stay the same).
 
-Media: with Polylang's default "Media translation" off, one media library item serves all languages. The image block stores the attachment ID, so translated pages share the file. Alt text comes from the media item (one language); in a section, the **Alt text override** field replaces it per page, so fill it in on the Dutch page.
+Media: "Media translation" is on (`bin/setup-polylang.php`), so each language has its own copy of a media item with its own title, caption and alt text. Use "Create translation" in the media library, or the Languages box when editing an item. A section stores the attachment ID, so on the Dutch page pick the Dutch copy of the image; its alt text is then Dutch. The **Alt text override** field in a section still wins over the media item.

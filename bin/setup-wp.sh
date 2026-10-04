@@ -16,16 +16,14 @@ if ! wp core is-installed --path=web 2>/dev/null; then
 		--admin_user=admin --admin_password=admin --admin_email=admin@chargenet.test --skip-email
 fi
 
-wp rewrite structure '/%postname%/' --path=web >/dev/null
+wp rewrite structure '/blog/%postname%/' --path=web >/dev/null
 wp theme activate chargenet --path=web
 wp plugin activate polylang --path=web
 
-# Polylang languages (English default, Dutch). Skipped if already created.
-wp eval --path=web '
-if ( ! PLL()->model->get_languages_list() ) {
-	PLL()->model->add_language( array( "name" => "English", "slug" => "en", "locale" => "en_US", "rtl" => 0, "term_group" => 0, "flag" => "gb" ) );
-	PLL()->model->add_language( array( "name" => "Nederlands", "slug" => "nl", "locale" => "nl_NL", "rtl" => 0, "term_group" => 1, "flag" => "nl" ) );
-}'
+# Polylang languages and settings (en default, nl; /en/ and /nl/ URLs), then the Home pages.
+wp eval-file bin/setup-polylang.php --path=web
+wp eval-file bin/seed-pages.php --path=web
 
 # Starter menus in English and Dutch (custom links; the pages are built in later epics, so the URLs are placeholders).
 wp eval-file bin/seed-menus.php --path=web
+wp rewrite flush --path=web >/dev/null

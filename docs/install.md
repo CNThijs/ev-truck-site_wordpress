@@ -36,8 +36,9 @@ Install from Plugins → Add New (search the name) and activate.
 
 ## Settings to apply
 
-- Settings → Permalinks: Post name (`/%postname%/`).
+- Settings → Permalinks: Custom structure `/blog/%postname%/` (posts live under `/blog/`, pages stay at the top level).
 - Settings → General: site language and title.
 - Settings → Reading: choose the homepage and posts page once those pages exist.
-- Polylang → Languages: add English (default) and Dutch (local DDEV does this automatically; the live site needs it done by hand). Language URLs as directory (`/nl/…`) is the default.
+- Polylang: with WP-CLI over SSH, run `wp eval-file bin/setup-polylang.php` from the repo (needs the file on the server; copy just that one file). It creates English (default, `en_US`) and Dutch (`nl_NL`) and sets every option below. By hand, in Polylang → Languages and Settings: add the two languages; URL modifications "The language is set from the directory name in pretty permalinks", "Remove /language/ in pretty permalinks" on, "Hide URL language information for default language" **off**, "The front page URL contains the language code" on, "Detect browser language" **off**, "Media translation" on; Synchronisation: featured image and publication date. Then Settings → Permalinks → Save (flushes rewrites). The bare `/` then redirects to `/en/`.
+- Settings → Reading: a static front page per language (Polylang uses the translation of the page you pick). `bin/seed-pages.php` creates linked English and Dutch "Home" pages locally.
 - Appearance → Menus: create a menu per language for each location (Primary, Header utility, Footer, Footer legal) and assign each in the Manage Locations tab; with Polylang active the tab has one column per language. Local DDEV seeds English and Dutch starter menus with placeholder URLs.

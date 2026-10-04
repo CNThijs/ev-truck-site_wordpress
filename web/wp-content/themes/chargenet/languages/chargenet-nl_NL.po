@@ -1,6 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
+"POT-Creation-Date: 2026-10-04T12:44:26+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -10,213 +12,697 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "(opens in a new tab)"
-msgstr "(opent in een nieuw tabblad)"
+#. Theme Name of the theme
+#. Author of the theme
+#: style.css
+msgid "ChargeNet"
+msgstr "ChargeNet"
 
-msgid "6827 AV, Arnhem, The Netherlands"
-msgstr "6827 AV, Arnhem, Nederland"
+#. Theme URI of the theme
+#: style.css
+msgid "https://chargenet.energy"
+msgstr ""
 
-msgid "Account"
-msgstr "Account"
+#. Description of the theme
+#: style.css
+msgid ""
+"Custom theme for chargenet.energy. Styles are built from assets/src (see "
+"assets/dist)."
+msgstr ""
 
-msgid "Alt text override"
-msgstr "Alternatieve tekst overschrijven"
-
-msgid "Animation"
-msgstr "Animatie"
-
-msgid "Back to home"
-msgstr "Terug naar home"
-
-msgid "Background"
-msgstr "Achtergrond"
-
-msgid "Button"
-msgstr "Knop"
-
-msgid "Button label"
-msgstr "Knoplabel"
-
-msgid "Buttons without a URL are not shown on the site."
-msgstr "Knoppen zonder URL worden niet op de site getoond."
-
-msgid "Call to action heading"
-msgstr "Kop van de call-to-action"
-
-msgid "ChargeNet Sections"
-msgstr "ChargeNet-secties"
-
-msgid "ChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time."
-msgstr "ChargeNet is het platform voor verladers & transportbedrijven om samen te werken aan decarbonisatie van weglogistiek door het delen van laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste prijs, op de juiste plaats, op het juiste moment."
-
-msgid "ChargeNet pages"
-msgstr "ChargeNet-pagina’s"
-
-msgid "ChargeNet section blocks are not built. Run npm run build (or npm run dev) in the repository."
-msgstr "De ChargeNet-sectieblokken zijn niet gebouwd. Voer npm run build (of npm run dev) uit in de repository."
-
-msgid "Company"
-msgstr "Bedrijf"
-
-msgid "Connect with Us"
-msgstr "Connect with Us"
-
-msgid "Contact Us"
-msgstr "Contact"
-
-msgid "Dark (forest green)"
-msgstr "Donker (bosgroen)"
-
-msgid "Eyebrow (optional)"
-msgstr "Bovenkopje (optioneel)"
-
-msgid "Footer"
-msgstr "Voettekst"
-
-msgid "Footer language"
-msgstr "Taal (voettekst)"
-
-msgid "Footer legal menu"
-msgstr "Juridisch menu in voettekst"
-
-msgid "Footer menu"
-msgstr "Menu in voettekst"
-
-msgid "Get in Touch"
-msgstr "Neem contact op"
-
-msgid "Ghost"
-msgstr "Tekstknop"
-
-msgid "Header utility menu (Login)"
-msgstr "Hulpmenu in header (Login)"
-
-msgid "Heading"
-msgstr "Kop"
-
-msgid "Heading level"
-msgstr "Kopniveau"
-
-msgid "Hide on desktop"
-msgstr "Verbergen op desktop"
-
-msgid "Hide on mobile"
-msgstr "Verbergen op mobiel"
-
-msgid "Image"
-msgstr "Afbeelding"
-
-msgid "Image position (wide screens)"
-msgstr "Positie van de afbeelding (brede schermen)"
-
-msgid "Industrial Park Kleefsewaard"
-msgstr "Industrieterrein Kleefsewaard"
-
-msgid "Language"
-msgstr "Taal"
-
-msgid "Large (default)"
-msgstr "Groot (standaard)"
-
-msgid "Leave empty to use the alt text of the media library item. Fill it in per language."
-msgstr "Laat leeg om de alternatieve tekst van het mediabibliotheek-item te gebruiken. Vul dit per taal in."
-
-msgid "Left"
-msgstr "Links"
-
-msgid "Legal"
-msgstr "Juridisch"
-
-msgid "Light (white)"
-msgstr "Licht (wit)"
-
-msgid "Link URL"
-msgstr "Link-URL"
-
-msgid "Medium"
-msgstr "Middel"
-
-msgid "Menu"
-msgstr "Menu"
-
-msgid "None"
-msgstr "Geen"
-
-msgid "Nothing found"
-msgstr "Niets gevonden"
-
-msgid "Open in a new tab"
-msgstr "Openen in een nieuw tabblad"
-
+#: 404.php:15
 msgid "Page not found"
 msgstr "Pagina niet gevonden"
 
-msgid "Paper (warm off-white)"
-msgstr "Papier (warm gebroken wit)"
-
-msgid "Primary"
-msgstr "Primair"
-
-msgid "Primary menu"
-msgstr "Hoofdmenu"
-
-msgid "Right"
-msgstr "Rechts"
-
-msgid "Search"
-msgstr "Zoeken"
-
-msgid "Search for:"
-msgstr "Zoeken naar:"
-
-#, php-format
-msgid "Search results for: %s"
-msgstr "Zoekresultaten voor: %s"
-
-msgid "Secondary"
-msgstr "Secundair"
-
-msgid "Section heading"
-msgstr "Sectiekop"
-
-msgid "Section settings"
-msgstr "Sectie-instellingen"
-
-msgid "Short supporting text (optional)"
-msgstr "Korte ondersteunende tekst (optioneel)"
-
-msgid "Show everywhere"
-msgstr "Overal tonen"
-
-#, php-format
-msgid "Show submenu for %s"
-msgstr "Submenu van %s tonen"
-
-msgid "Skip to content"
-msgstr "Ga naar inhoud"
-
-msgid "Small"
-msgstr "Klein"
-
-msgid "Space above"
-msgstr "Ruimte boven"
-
-msgid "Space below"
-msgstr "Ruimte onder"
-
-msgid "Style"
-msgstr "Stijl"
-
+#: 404.php:16
 msgid "The page you are looking for does not exist."
 msgstr "De pagina die u zoekt bestaat niet."
 
-msgid "Visibility"
-msgstr "Zichtbaarheid"
+#: 404.php:17
+msgid "Back to home"
+msgstr "Terug naar home"
 
-msgid "Write the text…"
-msgstr "Schrijf de tekst…"
+#: blocks/button/render.php:24 build/blocks/button/render.php:24 footer.php:43
+msgid "(opens in a new tab)"
+msgstr "(opent in een nieuw tabblad)"
 
+#: footer.php:20
+msgid ""
+"ChargeNet is the platform for shippers & transport companies to collaborate "
+"on decarbonisation of road logistics by sharing charging infrastructure at "
+"destination. With ChargeNet you can charge at the right price, at the right "
+"place, at the right time."
+msgstr ""
+"ChargeNet is het platform voor verladers & transportbedrijven om samen te "
+"werken aan decarbonisatie van weglogistiek door het delen van "
+"laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste "
+"prijs, op de juiste plaats, op het juiste moment."
+
+#: footer.php:22
+msgid "Industrial Park Kleefsewaard"
+msgstr "Industrieterrein Kleefsewaard"
+
+#: footer.php:24
+msgid "6827 AV, Arnhem, The Netherlands"
+msgstr "6827 AV, Arnhem, Nederland"
+
+#: footer.php:27
+msgid "Footer"
+msgstr "Voettekst"
+
+#: footer.php:28
+msgid "Company"
+msgstr "Bedrijf"
+
+#: footer.php:41
+msgid "Get in Touch"
+msgstr "Neem contact op"
+
+#: footer.php:43
+msgid "Connect with Us"
+msgstr "Connect with Us"
+
+#. translators: %s: year.
+#: footer.php:50
 #, php-format
 msgid "© %s ChargeNet. All rights reserved."
 msgstr "© %s ChargeNet. Alle rechten voorbehouden."
 
+#: footer.php:53
+msgid "Legal"
+msgstr "Juridisch"
+
+#: footer.php:65
+msgid "Footer language"
+msgstr "Taal (voettekst)"
+
+#: header.php:21
+msgid "Skip to content"
+msgstr "Ga naar inhoud"
+
+#: header.php:28
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:32 blocks/button/index.js:25 build/blocks/button/index.js:1
+msgid "Primary"
+msgstr "Primair"
+
+#: header.php:44
+msgid "Account"
+msgstr "Account"
+
+#: inc/blocks.php:27
+msgid "ChargeNet Sections"
+msgstr "ChargeNet-secties"
+
+#: inc/blocks.php:108
+msgid "ChargeNet pages"
+msgstr "ChargeNet-pagina’s"
+
+#: inc/blocks.php:129
+msgid ""
+"ChargeNet section blocks are not built. Run npm run build (or npm run dev) "
+"in the repository."
+msgstr ""
+"De ChargeNet-sectieblokken zijn niet gebouwd. Voer npm run build (of npm run "
+"dev) uit in de repository."
+
+#. translators: %s: menu item title.
+#: inc/nav.php:42
+#, php-format
+msgid "Show submenu for %s"
+msgstr "Submenu van %s tonen"
+
+#: inc/nav.php:53
+msgid "Language"
+msgstr "Taal"
+
+#: inc/nav.php:88
+msgid "Contact Us"
+msgstr "Contact"
+
+#: inc/setup.php:26
+msgid "Primary menu"
+msgstr "Hoofdmenu"
+
+#: inc/setup.php:27
+msgid "Header utility menu (Login)"
+msgstr "Hulpmenu in header (Login)"
+
+#: inc/setup.php:28
+msgid "Footer menu"
+msgstr "Menu in voettekst"
+
+#: inc/setup.php:29
+msgid "Footer legal menu"
+msgstr "Juridisch menu in voettekst"
+
+#: patterns/page-landing-nl.php
+msgctxt "Pattern title"
+msgid "Landingspagina (Nederlands)"
+msgstr "Landingspagina (Nederlands)"
+
+#: patterns/page-landing-nl.php
+msgctxt "Pattern description"
+msgid ""
+"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
+"afsluitende call-to-action. Nederlands."
+msgstr ""
+"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
+"afsluitende call-to-action. Nederlands."
+
+#: patterns/page-landing.php
+msgctxt "Pattern title"
+msgid "Landing page"
+msgstr "Landingspagina (Engels)"
+
+#: patterns/page-landing.php
+msgctxt "Pattern description"
+msgid ""
+"A call to action, two alternating text-and-image sections and a closing call "
+"to action. English."
+msgstr ""
+"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
+"afsluitende call-to-action. Engels."
+
+#: patterns/page-standard-nl.php
+msgctxt "Pattern title"
+msgid "Standaardpagina (Nederlands)"
+msgstr "Standaardpagina (Nederlands)"
+
+#: patterns/page-standard-nl.php
+msgctxt "Pattern description"
+msgid ""
+"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
+"Nederlands."
+msgstr ""
+"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
+"Nederlands."
+
+#: patterns/page-standard.php
+msgctxt "Pattern title"
+msgid "Standard page"
+msgstr "Standaardpagina (Engels)"
+
+#: patterns/page-standard.php
+msgctxt "Pattern description"
+msgid "Intro text, a text-and-image section and a call to action. English."
+msgstr ""
+"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
+"Engels."
+
+#. translators: %s: search query.
+#: search.php:18
+#, php-format
+msgid "Search results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: searchform.php:14
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:17
+msgid "Search"
+msgstr "Zoeken"
+
+#: template-parts/content-none.php:13
+msgid "Nothing found"
+msgstr "Niets gevonden"
+
+#: blocks/button/index.js:13 build/blocks/button/index.js:1
+msgid "Button"
+msgstr "Knop"
+
+#: blocks/button/index.js:15 build/blocks/button/index.js:1
+msgid "Link URL"
+msgstr "Link-URL"
+
+#: blocks/button/index.js:19 build/blocks/button/index.js:1
+msgid "Buttons without a URL are not shown on the site."
+msgstr "Knoppen zonder URL worden niet op de site getoond."
+
+#: blocks/button/index.js:22 build/blocks/button/index.js:1
+msgid "Style"
+msgstr "Stijl"
+
+#: blocks/button/index.js:26 build/blocks/button/index.js:1
+msgid "Secondary"
+msgstr "Secundair"
+
+#: blocks/button/index.js:27 build/blocks/button/index.js:1
+msgid "Ghost"
+msgstr "Tekstknop"
+
+#: blocks/button/index.js:32 build/blocks/button/index.js:1
+msgid "Open in a new tab"
+msgstr "Openen in een nieuw tabblad"
+
+#: blocks/button/index.js:43 build/blocks/button/index.js:1
+msgid "Button label"
+msgstr "Knoplabel"
+
+#: blocks/cta-band/index.js:31 build/blocks/cta-band/index.js:1
+msgid "Call to action heading"
+msgstr "Kop van de call-to-action"
+
+#: blocks/cta-band/index.js:39 build/blocks/cta-band/index.js:1
+msgid "Short supporting text (optional)"
+msgstr "Korte ondersteunende tekst (optioneel)"
+
+#: blocks/rich-text-image/index.js:36 blocks/rich-text-image/index.js:102
+#: build/blocks/rich-text-image/index.js:1
+msgid "Image"
+msgstr "Afbeelding"
+
+#: blocks/rich-text-image/index.js:38 build/blocks/rich-text-image/index.js:1
+msgid "Image position (wide screens)"
+msgstr "Positie van de afbeelding (brede schermen)"
+
+#: blocks/rich-text-image/index.js:41 build/blocks/rich-text-image/index.js:1
+msgid "Right"
+msgstr "Rechts"
+
+#: blocks/rich-text-image/index.js:42 build/blocks/rich-text-image/index.js:1
+msgid "Left"
+msgstr "Links"
+
+#: blocks/rich-text-image/index.js:47 build/blocks/rich-text-image/index.js:1
+msgid "Alt text override"
+msgstr "Alternatieve tekst overschrijven"
+
+#: blocks/rich-text-image/index.js:48 build/blocks/rich-text-image/index.js:1
+msgid ""
+"Leave empty to use the alt text of the media library item. Fill it in per "
+"language."
+msgstr ""
+"Laat leeg om de alternatieve tekst van het mediabibliotheek-item te "
+"gebruiken. Vul dit per taal in."
+
+#: blocks/rich-text-image/index.js:77 build/blocks/rich-text-image/index.js:1
+msgid "Eyebrow (optional)"
+msgstr "Bovenkopje (optioneel)"
+
+#: blocks/rich-text-image/index.js:84 blocks/rich-text/index.js:32
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Section heading"
+msgstr "Sectiekop"
+
+#: blocks/rich-text-image/index.js:91 blocks/rich-text/index.js:43
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Write the text…"
+msgstr "Schrijf de tekst…"
+
+#: blocks/_shared/section.js:11 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Light (white)"
+msgstr "Licht (wit)"
+
+#: blocks/_shared/section.js:12 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Paper (warm off-white)"
+msgstr "Papier (warm gebroken wit)"
+
+#: blocks/_shared/section.js:13 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Dark (forest green)"
+msgstr "Donker (bosgroen)"
+
+#: blocks/_shared/section.js:17 blocks/_shared/section.js:31
+#: build/blocks/cta-band/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "None"
+msgstr "Geen"
+
+#: blocks/_shared/section.js:18 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Small"
+msgstr "Klein"
+
+#: blocks/_shared/section.js:19 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Medium"
+msgstr "Middel"
+
+#: blocks/_shared/section.js:20 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Large (default)"
+msgstr "Groot (standaard)"
+
+#: blocks/_shared/section.js:24 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Show everywhere"
+msgstr "Overal tonen"
+
+#: blocks/_shared/section.js:25 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Hide on mobile"
+msgstr "Verbergen op mobiel"
+
+#: blocks/_shared/section.js:26 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Hide on desktop"
+msgstr "Verbergen op desktop"
+
+#: blocks/_shared/section.js:55 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Section settings"
+msgstr "Sectie-instellingen"
+
+#: blocks/_shared/section.js:57 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Background"
+msgstr "Achtergrond"
+
+#: blocks/_shared/section.js:63 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Space above"
+msgstr "Ruimte boven"
+
+#: blocks/_shared/section.js:69 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Space below"
+msgstr "Ruimte onder"
+
+#: blocks/_shared/section.js:75 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+#: blocks/_shared/section.js:81 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Animation"
+msgstr "Animatie"
+
+#: blocks/_shared/section.js:95 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Heading"
+msgstr "Kop"
+
+#: blocks/_shared/section.js:97 build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+msgid "Heading level"
+msgstr "Kopniveau"
+
+#: blocks/button/block.json build/blocks/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr "Knop"
+
+#: blocks/button/block.json build/blocks/button/block.json
+msgctxt "block description"
+msgid ""
+"A button using the ChargeNet design system. Only available inside sections."
+msgstr "Een knop in de ChargeNet-huisstijl. Alleen beschikbaar binnen secties."
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block title"
+msgid "Call To Action Band"
+msgstr "Call-to-action-balk"
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block description"
+msgid ""
+"A full-width band with a heading, short text and one or more buttons. Dark "
+"by default."
+msgstr ""
+"Een balk over de volle breedte met een kop, korte tekst en een of meer "
+"knoppen. Standaard donker."
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr "cta"
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "call to action"
+msgstr "call-to-action"
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "banner"
+msgstr "banner"
+
+#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr "contact"
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block title"
+msgid "Rich Text and Image"
+msgstr "Rijke tekst en afbeelding"
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block description"
+msgid ""
+"Heading and text next to an image. The image sits left or right on wide "
+"screens and below the text on mobile."
+msgstr ""
+"Kop en tekst naast een afbeelding. De afbeelding staat op brede schermen "
+"links of rechts en op mobiel onder de tekst."
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr "tekst"
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr "afbeelding"
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "feature"
+msgstr "kenmerk"
+
+#: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "split"
+msgstr "gesplitst"
+
+#: blocks/rich-text/block.json build/blocks/rich-text/block.json
+msgctxt "block title"
+msgid "Rich text"
+msgstr "Rijke tekst"
+
+#: blocks/rich-text/block.json build/blocks/rich-text/block.json
+msgctxt "block description"
+msgid ""
+"A plain section for headings, paragraphs, lists and quotes in a readable "
+"column."
+msgstr ""
+"Een eenvoudige sectie voor koppen, alinea’s, lijsten en citaten in een "
+"leesbare kolom."
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 900"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 800"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 600"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 100"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Forest 50"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Volt 400"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Amber 500"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Paper"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 900"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 600"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 300"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 200"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Mist 200"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Error 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "sm"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "base"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "lg"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "5xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Sans 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "7"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "8"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "9"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "10"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "gutter"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "block"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "section"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "sm"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "md"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "lg"
+msgstr ""

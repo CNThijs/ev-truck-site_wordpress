@@ -12,7 +12,7 @@ $languages = array(
 			array( 'Home', '/' ),
 			array( 'About', '/about/' ),
 			array( 'Customers', '#', array( array( 'Locations', '/locations/' ), array( 'Carriers', '/carriers/' ) ) ),
-			array( 'News', '/news/' ),
+			array( 'News', '/blog/' ),
 		),
 		'utility' => array( array( 'Login', 'https://portal.chargenet.energy', array(), true ) ),
 		'footer'  => array(
@@ -31,7 +31,7 @@ $languages = array(
 			array( 'Home', '/' ),
 			array( 'Over Ons', '/over-ons/' ),
 			array( 'Klanten', '#', array( array( 'Locaties', '/locaties/' ), array( 'Vervoerders', '/vervoerders/' ) ) ),
-			array( 'Nieuws', '/nieuws/' ),
+			array( 'Nieuws', '/blog/' ),
 		),
 		'utility' => array( array( 'Login', 'https://portal.chargenet.energy', array(), true ) ),
 		'footer'  => array(

@@ -57,16 +57,19 @@ function chargenet_language_switcher( string $label = '' ): void {
 		$languages = pll_the_languages(
 			array(
 				'raw'                    => 1,
-				'hide_if_no_translation' => 0,
+				'hide_if_no_translation' => 0, // No translation: Polylang links to that language's home page.
+				'hide_if_empty'          => 0,
 			)
 		);
 		foreach ( (array) $languages as $language ) {
 			printf(
-				'<li><a href="%1$s" lang="%2$s" hreflang="%2$s"%3$s>%4$s</a></li>',
+				'<li><a href="%1$s" lang="%2$s" hreflang="%5$s" aria-label="%6$s"%3$s>%4$s</a></li>',
 				esc_url( $language['url'] ),
 				esc_attr( $language['locale'] ? str_replace( '_', '-', $language['locale'] ) : $language['slug'] ),
 				$language['current_lang'] ? ' aria-current="true"' : '',
-				esc_html( strtoupper( $language['slug'] ) )
+				esc_html( strtoupper( $language['slug'] ) ),
+				esc_attr( $language['slug'] ),
+				esc_attr( $language['name'] )
 			);
 		}
 	} else {

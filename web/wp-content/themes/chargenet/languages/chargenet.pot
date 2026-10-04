@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-01T22:38:58+02:00\n"
+"POT-Creation-Date: 2026-10-04T12:44:26+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: chargenet\n"
@@ -42,8 +42,96 @@ msgstr ""
 msgid "Back to home"
 msgstr ""
 
+#: blocks/button/render.php:24
+#: build/blocks/button/render.php:24
+#: footer.php:43
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: footer.php:20
+msgid "ChargeNet is the platform for shippers & transport companies to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination. With ChargeNet you can charge at the right price, at the right place, at the right time."
+msgstr ""
+
+#: footer.php:22
+msgid "Industrial Park Kleefsewaard"
+msgstr ""
+
+#: footer.php:24
+msgid "6827 AV, Arnhem, The Netherlands"
+msgstr ""
+
+#: footer.php:27
+msgid "Footer"
+msgstr ""
+
+#: footer.php:28
+msgid "Company"
+msgstr ""
+
+#: footer.php:41
+msgid "Get in Touch"
+msgstr ""
+
+#: footer.php:43
+msgid "Connect with Us"
+msgstr ""
+
+#. translators: %s: year.
+#: footer.php:50
+#, php-format
+msgid "© %s ChargeNet. All rights reserved."
+msgstr ""
+
+#: footer.php:53
+msgid "Legal"
+msgstr ""
+
+#: footer.php:65
+msgid "Footer language"
+msgstr ""
+
 #: header.php:21
 msgid "Skip to content"
+msgstr ""
+
+#: header.php:28
+msgid "Menu"
+msgstr ""
+
+#: header.php:32
+#: blocks/button/index.js:25
+#: build/blocks/button/index.js:1
+msgid "Primary"
+msgstr ""
+
+#: header.php:44
+msgid "Account"
+msgstr ""
+
+#: inc/blocks.php:27
+msgid "ChargeNet Sections"
+msgstr ""
+
+#: inc/blocks.php:108
+msgid "ChargeNet pages"
+msgstr ""
+
+#: inc/blocks.php:129
+msgid "ChargeNet section blocks are not built. Run npm run build (or npm run dev) in the repository."
+msgstr ""
+
+#. translators: %s: menu item title.
+#: inc/nav.php:42
+#, php-format
+msgid "Show submenu for %s"
+msgstr ""
+
+#: inc/nav.php:53
+msgid "Language"
+msgstr ""
+
+#: inc/nav.php:88
+msgid "Contact Us"
 msgstr ""
 
 #: inc/setup.php:26
@@ -51,7 +139,55 @@ msgid "Primary menu"
 msgstr ""
 
 #: inc/setup.php:27
+msgid "Header utility menu (Login)"
+msgstr ""
+
+#: inc/setup.php:28
 msgid "Footer menu"
+msgstr ""
+
+#: inc/setup.php:29
+msgid "Footer legal menu"
+msgstr ""
+
+#: patterns/page-landing-nl.php
+msgctxt "Pattern title"
+msgid "Landingspagina (Nederlands)"
+msgstr ""
+
+#: patterns/page-landing-nl.php
+msgctxt "Pattern description"
+msgid "Een call-to-action, twee wisselende secties met tekst en afbeelding en een afsluitende call-to-action. Nederlands."
+msgstr ""
+
+#: patterns/page-landing.php
+msgctxt "Pattern title"
+msgid "Landing page"
+msgstr ""
+
+#: patterns/page-landing.php
+msgctxt "Pattern description"
+msgid "A call to action, two alternating text-and-image sections and a closing call to action. English."
+msgstr ""
+
+#: patterns/page-standard-nl.php
+msgctxt "Pattern title"
+msgid "Standaardpagina (Nederlands)"
+msgstr ""
+
+#: patterns/page-standard-nl.php
+msgctxt "Pattern description"
+msgid "Introductietekst, een sectie met tekst en afbeelding en een call-to-action. Nederlands."
+msgstr ""
+
+#: patterns/page-standard.php
+msgctxt "Pattern title"
+msgid "Standard page"
+msgstr ""
+
+#: patterns/page-standard.php
+msgctxt "Pattern description"
+msgid "Intro text, a text-and-image section and a call to action. English."
 msgstr ""
 
 #. translators: %s: search query.
@@ -72,39 +208,372 @@ msgstr ""
 msgid "Nothing found"
 msgstr ""
 
-#: theme.json
-msgctxt "Color name"
-msgid "Brand dark green"
+#: blocks/button/index.js:13
+#: build/blocks/button/index.js:1
+msgid "Button"
+msgstr ""
+
+#: blocks/button/index.js:15
+#: build/blocks/button/index.js:1
+msgid "Link URL"
+msgstr ""
+
+#: blocks/button/index.js:19
+#: build/blocks/button/index.js:1
+msgid "Buttons without a URL are not shown on the site."
+msgstr ""
+
+#: blocks/button/index.js:22
+#: build/blocks/button/index.js:1
+msgid "Style"
+msgstr ""
+
+#: blocks/button/index.js:26
+#: build/blocks/button/index.js:1
+msgid "Secondary"
+msgstr ""
+
+#: blocks/button/index.js:27
+#: build/blocks/button/index.js:1
+msgid "Ghost"
+msgstr ""
+
+#: blocks/button/index.js:32
+#: build/blocks/button/index.js:1
+msgid "Open in a new tab"
+msgstr ""
+
+#: blocks/button/index.js:43
+#: build/blocks/button/index.js:1
+msgid "Button label"
+msgstr ""
+
+#: blocks/cta-band/index.js:31
+#: build/blocks/cta-band/index.js:1
+msgid "Call to action heading"
+msgstr ""
+
+#: blocks/cta-band/index.js:39
+#: build/blocks/cta-band/index.js:1
+msgid "Short supporting text (optional)"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:36
+#: blocks/rich-text-image/index.js:102
+#: build/blocks/rich-text-image/index.js:1
+msgid "Image"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:38
+#: build/blocks/rich-text-image/index.js:1
+msgid "Image position (wide screens)"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:41
+#: build/blocks/rich-text-image/index.js:1
+msgid "Right"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:42
+#: build/blocks/rich-text-image/index.js:1
+msgid "Left"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:47
+#: build/blocks/rich-text-image/index.js:1
+msgid "Alt text override"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:48
+#: build/blocks/rich-text-image/index.js:1
+msgid "Leave empty to use the alt text of the media library item. Fill it in per language."
+msgstr ""
+
+#: blocks/rich-text-image/index.js:77
+#: build/blocks/rich-text-image/index.js:1
+msgid "Eyebrow (optional)"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:84
+#: blocks/rich-text/index.js:32
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Section heading"
+msgstr ""
+
+#: blocks/rich-text-image/index.js:91
+#: blocks/rich-text/index.js:43
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Write the text…"
+msgstr ""
+
+#: blocks/_shared/section.js:11
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Light (white)"
+msgstr ""
+
+#: blocks/_shared/section.js:12
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Paper (warm off-white)"
+msgstr ""
+
+#: blocks/_shared/section.js:13
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Dark (forest green)"
+msgstr ""
+
+#: blocks/_shared/section.js:17
+#: blocks/_shared/section.js:31
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "None"
+msgstr ""
+
+#: blocks/_shared/section.js:18
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Small"
+msgstr ""
+
+#: blocks/_shared/section.js:19
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Medium"
+msgstr ""
+
+#: blocks/_shared/section.js:20
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Large (default)"
+msgstr ""
+
+#: blocks/_shared/section.js:24
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Show everywhere"
+msgstr ""
+
+#: blocks/_shared/section.js:25
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Hide on mobile"
+msgstr ""
+
+#: blocks/_shared/section.js:26
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Hide on desktop"
+msgstr ""
+
+#: blocks/_shared/section.js:55
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Section settings"
+msgstr ""
+
+#: blocks/_shared/section.js:57
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Background"
+msgstr ""
+
+#: blocks/_shared/section.js:63
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Space above"
+msgstr ""
+
+#: blocks/_shared/section.js:69
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Space below"
+msgstr ""
+
+#: blocks/_shared/section.js:75
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Visibility"
+msgstr ""
+
+#: blocks/_shared/section.js:81
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Animation"
+msgstr ""
+
+#: blocks/_shared/section.js:95
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Heading"
+msgstr ""
+
+#: blocks/_shared/section.js:97
+#: build/blocks/cta-band/index.js:1
+#: build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1
+msgid "Heading level"
+msgstr ""
+
+#: blocks/button/block.json
+#: build/blocks/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr ""
+
+#: blocks/button/block.json
+#: build/blocks/button/block.json
+msgctxt "block description"
+msgid "A button using the ChargeNet design system. Only available inside sections."
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block title"
+msgid "Call To Action Band"
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block description"
+msgid "A full-width band with a heading, short text and one or more buttons. Dark by default."
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "call to action"
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "banner"
+msgstr ""
+
+#: blocks/cta-band/block.json
+#: build/blocks/cta-band/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block title"
+msgid "Rich Text and Image"
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block description"
+msgid "Heading and text next to an image. The image sits left or right on wide screens and below the text on mobile."
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "feature"
+msgstr ""
+
+#: blocks/rich-text-image/block.json
+#: build/blocks/rich-text-image/block.json
+msgctxt "block keyword"
+msgid "split"
+msgstr ""
+
+#: blocks/rich-text/block.json
+#: build/blocks/rich-text/block.json
+msgctxt "block title"
+msgid "Rich text"
+msgstr ""
+
+#: blocks/rich-text/block.json
+#: build/blocks/rich-text/block.json
+msgctxt "block description"
+msgid "A plain section for headings, paragraphs, lists and quotes in a readable column."
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Green 700"
+msgid "Forest 900"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Green 500"
+msgid "Forest 800"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Green 50"
+msgid "Forest 700"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Ink"
+msgid "Forest 600"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Grey 600"
+msgid "Forest 100"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Grey 100"
+msgid "Forest 50"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Volt 400"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Amber 500"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Paper"
 msgstr ""
 
 #: theme.json
@@ -113,6 +582,161 @@ msgid "White"
 msgstr ""
 
 #: theme.json
+msgctxt "Color name"
+msgid "Ink 900"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 600"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 300"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink 200"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Mist 200"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Error 700"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "sm"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "base"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "lg"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4xl"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "5xl"
+msgstr ""
+
+#: theme.json
 msgctxt "Font family name"
 msgid "Source Sans 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "7"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "8"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "9"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "10"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "gutter"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "block"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "section"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "sm"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "md"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "lg"
 msgstr ""

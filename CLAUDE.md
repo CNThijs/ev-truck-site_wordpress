@@ -8,6 +8,7 @@ New WordPress site for https://chargenet.energy replacing a React SPA. Audit of 
 - Sections are native Gutenberg blocks rendered in PHP (server-side).
 - English + Dutch with free Polylang. Rank Math (free) for SEO. A free cookie-consent plugin. GSAP + ScrollTrigger for animation.
 - Free plugins only. No paid plugin or licence anywhere.
+- Language URLs: `/en/` (default) and `/nl/`, both prefixed; `/` redirects to `/en/`; no browser-language redirect. Settings live in `bin/setup-polylang.php`. Dutch uses u/uw.
 - Local env: DDEV (Docker). CSS: SCSS, component partials. Bundler: Vite. Node 22, PHP 8.4 target, code compatible with 8.2+.
 - Repo: https://github.com/CNThijs/ev-truck-site_wordpress. CI: GitHub Actions.
 - No deployment or hosting automation. Ever. Delivery is a theme zip the owner uploads.

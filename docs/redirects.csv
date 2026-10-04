@@ -1,0 +1,41 @@
+old_path,new_path,status,note
+/,/en/,301,Root. No browser-language redirect.
+/about,/en/about/,301,
+/over-ons,/nl/over-ons/,301,Old NL alias; page was identical to /about
+/locations,/en/locations/,301,
+/locaties,/nl/locaties/,301,Old NL alias
+/locatie,/nl/locaties/,301,Old NL alias
+/carriers,/en/carriers/,301,
+/vervoerder,/nl/vervoerders/,301,Old NL alias
+/vervoerders,/nl/vervoerders/,301,Old NL alias
+/privacy,/en/privacy-policy/,301,Duplicate of /privacy-policy
+/privacy-policy,/en/privacy-policy/,301,
+/faq,/en/faq/,301,
+/careers,/en/careers/,301,
+/security,/en/security/,301,
+/blog,/en/blog/,301,
+/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership,/en/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership/
+/blog/chargenet-and-den-hartog-start-a-partnership,/en/blog/chargenet-and-den-hartog-start-a-partnership/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-and-den-hartog-start-a-partnership/
+/blog/chargenet-present-at-charge-and-connect-event,/en/blog/chargenet-present-at-charge-and-connect-event/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-present-at-charge-and-connect-event/
+/blog/chargenet-leap24-public-charging-partnership,/en/blog/chargenet-leap24-public-charging-partnership/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-leap24-public-charging-partnership/
+/blog/chargenet-adding-new-nieuwegein-charging-site,/en/blog/chargenet-adding-new-nieuwegein-charging-site/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-adding-new-nieuwegein-charging-site/
+/blog/chargenet-and-equans-e-mobility-partnership,/en/blog/chargenet-and-equans-e-mobility-partnership/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-and-equans-e-mobility-partnership/
+/blog/chargenet-featured-by-transport-and-logistiek-nederland,/en/blog/chargenet-featured-by-transport-and-logistiek-nederland/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-featured-by-transport-and-logistiek-nederland/
+/blog/chargenet-pitches-at-the-clean-emissionless-construction-market-meeting-of-utrecht,/en/blog/chargenet-pitches-at-the-clean-emissionless-construction-market-meeting-of-utrecht/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-pitches-at-the-clean-emissionless-construction-market-meeting-of-utrecht/
+/blog/expand-use-cases-with-the-growth-accelerator-demonstration-energy-voucher,/en/blog/expand-use-cases-with-the-growth-accelerator-demonstration-energy-voucher/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/expand-use-cases-with-the-growth-accelerator-demonstration-energy-voucher/
+/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects,/en/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/sales-of-electric-trucks-will-accelerate-ing-research-expects/
+/blog/chargenet-starts-pilot-testing-at-mvs,/en/blog/chargenet-starts-pilot-testing-at-mvs/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-starts-pilot-testing-at-mvs/
+/blog/growth-accelerator-demo-voucher-energy-awarded-to-chargenet,/en/blog/growth-accelerator-demo-voucher-energy-awarded-to-chargenet/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/growth-accelerator-demo-voucher-energy-awarded-to-chargenet/
+/blog/chargenet-in-the-spotlight-during-the-arnhem-electricity-week-2025,/en/blog/chargenet-in-the-spotlight-during-the-arnhem-electricity-week-2025/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-in-the-spotlight-during-the-arnhem-electricity-week-2025/
+/blog/chargebase-at-arhem-electricity-week-2025,/en/blog/chargebase-at-arhem-electricity-week-2025/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargebase-at-arhem-electricity-week-2025/
+/blog/chargenet-secures-funding-oostnl,/en/blog/chargenet-secures-funding-oostnl/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-secures-funding-oostnl/
+/blog/kick-off-jtf-ijmond-aan-zet,/en/blog/kick-off-jtf-ijmond-aan-zet/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/kick-off-jtf-ijmond-aan-zet/
+/blog/move-east-2025,/en/blog/move-east-2025/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/move-east-2025/
+/blog/chargenet-moves-to-the-connectr-office-in-arnhem,/en/blog/chargenet-moves-to-the-connectr-office-in-arnhem/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-moves-to-the-connectr-office-in-arnhem/
+/rapport2027,/nl/rapport2027/,301,PROVISIONAL: campaign URL undecided (audit question 2); report is Dutch only. Keep UTM query string.
+/routecheck,/en/carriers/,301,PROVISIONAL: old shortlink went to /carriers with UTMs; confirm in campaign epic
+/opbrengst,/en/locations/,301,PROVISIONAL: old shortlink went to /locations with UTMs; confirm in campaign epic
+/terms-and-conditions,/en/,301,Soft 404 on old site; page not rebuilt. Better a 410 if never built
+/trend2026,/nl/rapport2027/,301,PROVISIONAL: soft 404 on old site; brief calls campaign /trend2026
+/location-owners,/en/locations/,301,Linked from old mobile menu but was a 404; confirm target
+/fleet-managers,/en/carriers/,301,Linked from old mobile menu but was a 404; confirm target
