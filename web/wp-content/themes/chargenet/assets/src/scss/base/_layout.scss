@@ -57,11 +57,6 @@
 	}
 }
 
-// Content that fades up on scroll (assets/src/js/animations.js).
-[data-reveal] {
-	will-change: transform, opacity;
-}
-
 // Section settings from the block editor (set by chargenet_section_open() in inc/section.php).
 .section {
 	&[data-space-top='none'] {

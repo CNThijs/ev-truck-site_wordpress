@@ -1,0 +1,55 @@
+@use '../mixins' as *;
+
+// Start states for the "fade-rise" and "stagger" presets (set in Section Settings, printed as data-animation).
+// They apply only while the early inline script has marked the page as JS-capable (html.js) and the motion code has
+// not yet taken over (no data-motion attribute), so without JavaScript nothing is ever hidden. The first section is
+// never touched, so the largest contentful paint is not delayed. Opacity and transform only: no layout shift.
+// The motion code releases the state by setting html[data-motion]; head.php does it after 4 seconds as a safety net.
+@media (prefers-reduced-motion: no-preference) {
+	html.js:not([data-motion], [data-motion-simulate='reduce'])
+		:is([data-animation='fade-rise'], [data-animation='stagger']):not(.is-first-section)
+		[data-reveal] {
+		opacity: 0;
+		transform: translateY(var(--distance-md));
+	}
+}
+
+// Parallax: the background image gets room to drift inside its frame. Harmless without JavaScript (just more crop).
+.section[data-animation='parallax'] [data-hero-media] {
+	inset-block: -10%;
+}
+
+// Scroll progress bar (motion/features/progress.js): hidden until the page is long and JavaScript runs.
+.scroll-progress {
+	position: fixed;
+	inset: 0 0 auto;
+	z-index: 110;
+	height: 3px;
+	pointer-events: none;
+
+	&[hidden] {
+		display: none;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		height: 100%;
+		background: var(--color-volt-400);
+		transform: scaleX(var(--progress, 0));
+		transform-origin: left;
+	}
+}
+
+// Horizontal scroll (preset "horizontal"): the section is pinned and the track moves sideways, so the native
+// scrolling row, its snapping and its buttons step aside while it runs.
+.card-slider.is-pinned {
+	.card-slider__viewport {
+		overflow: clip;
+		scroll-snap-type: none;
+	}
+
+	.card-slider__controls {
+		display: none;
+	}
+}

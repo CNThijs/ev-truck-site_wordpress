@@ -28,13 +28,13 @@ web/wp-content/themes/chargenet/
 
 Every top-level section gets these attributes without declaring them (merged in by the `block_type_metadata` filter):
 
-| Setting             | Attribute                                                             | Output                                                                                  |
-| ------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Background          | `sectionBackground`: light, paper, dark                               | class `is-light` / `is-paper` / `is-dark` on the section                                |
-| Space above / below | `spaceTop`, `spaceBottom`: none, sm, md, lg                           | `data-space-top`, `data-space-bottom`                                                   |
-| Visibility          | `hideOn`: none, mobile, desktop                                       | class `hide-mobile` / `hide-desktop` (front end only, so hidden sections stay editable) |
-| Animation           | `animation`: free string, provisional presets in `_shared/section.js` | `data-animation="…"` (no behaviour yet)                                                 |
-| Anchor ID           | native `supports.anchor`                                              | `id="…"`                                                                                |
+| Setting             | Attribute                                                                                                | Output                                                                                           |
+| ------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Background          | `sectionBackground`: light, paper, dark                                                                  | class `is-light` / `is-paper` / `is-dark` on the section                                         |
+| Space above / below | `spaceTop`, `spaceBottom`: none, sm, md, lg                                                              | `data-space-top`, `data-space-bottom`                                                            |
+| Visibility          | `hideOn`: none, mobile, desktop                                                                          | class `hide-mobile` / `hide-desktop` (front end only, so hidden sections stay editable)          |
+| Animation           | `animation`: `fade-rise`, `stagger`, `text-lines`, `counters`, `parallax`, `draw`, `horizontal` or empty | `data-animation="…"` and the class `is-first-section` on the first section; see `docs/motion.md` |
+| Anchor ID           | native `supports.anchor`                                                                                 | `id="…"`                                                                                         |
 
 A block can override a default by declaring the attribute itself (the CTA band defaults to dark). To add a shared setting: add it to `inc/section-attributes.json`, to the inspector in `blocks/_shared/section.js`, and to `chargenet_section_open()` in `inc/section.php`.
 
@@ -96,7 +96,7 @@ Every section also has the shared settings above. Items with `data-reveal`, list
 - **Steps:** the number is a decorative CSS counter on a real ordered list, so assistive technology announces the numbering once. Buttons are not part of the section; put a `cta-band` after it.
 - **Team:** photos are treated as decoration (the name is printed beside them) unless the editor fills in the alt text. Email and LinkedIn are icon links with visually hidden text. Without a photo the initials are shown.
 - **Logo strip:** the organisation name is the alt text of the logo (translate it per language page); a linked logo opens in a new tab and says so for screen readers. Add logos by adding Logo items; with none, the section prints nothing.
-- **Card slider:** a scroll-snap row that works by scrolling, swiping and keyboard (the row is a focusable region). `view.js` shows previous and next buttons only when the cards overflow; there is no auto-rotation. The title is the card's one link and covers the whole card; the "read more" label is a visual cue. Project detail pages arrive in Epic 15, until then the link field takes any URL.
+- **Card slider:** a scroll-snap row that works by scrolling, swiping and keyboard (the row is a focusable region). `view.js` shows previous and next buttons only when the cards overflow; there is no auto-rotation. The title is the card's one link and covers the whole card; the "read more" label is a visual cue. With the `horizontal` animation preset a slider shows at most 10 cards (10 random ones when there are more). Project detail pages arrive in Epic 15, until then the link field takes any URL.
 - **Post grid:** dynamic. `chargenet_post_grid_items()` (`inc/post-grid.php`) turns the newest posts of the current language into a plain array, and `render.php` only prints that array; the Section Gallery swaps in sample posts through the `chargenet_post_grid_items` filter. Categories belong to one language, so pick the Dutch category on the Dutch page. The editor preview is the real server output. The cards always link to the post itself; the original source is shown on the post (see below).
 - **Section intro:** new sections print their eyebrow, heading and introduction through `chargenet_section_header()` (PHP) and `SectionHeaderFields` (`blocks/_shared/header.js`, editor), so the two stay identical.
 

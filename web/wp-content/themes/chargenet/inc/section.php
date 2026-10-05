@@ -36,6 +36,11 @@ function chargenet_section_option( array $attributes, string $key ): string {
 }
 
 /**
+ * Most cards a Card Slider with the horizontal scroll preset shows (docs/motion.md).
+ */
+const CHARGENET_HORIZONTAL_MAX_CARDS = 10;
+
+/**
  * Number of sections opened so far on this page (1 inside the first section). Used to tell first-viewport images apart.
  *
  * @param bool $increment Count a newly opened section.
@@ -66,6 +71,9 @@ function chargenet_section_open( array $attributes, array $args = array() ): voi
 	);
 	if ( 'none' !== $hide ) {
 		$classes[] = 'hide-' . $hide;
+	}
+	if ( chargenet_in_first_section() ) {
+		$classes[] = 'is-first-section'; // Motion never hides or moves content here (largest contentful paint).
 	}
 	if ( ! empty( $args['class'] ) ) {
 		$classes[] = $args['class'];
@@ -112,8 +120,9 @@ function chargenet_heading( string $text, int $level = 2, string $id = '', strin
 		return;
 	}
 	$level = max( 2, min( 4, $level ) );
+	// data-split: hook for the "text-lines" animation preset (docs/motion.md).
 	printf(
-		'<h%1$d%2$s%3$s>%4$s</h%1$d>',
+		'<h%1$d%2$s%3$s data-split>%4$s</h%1$d>',
 		(int) $level,
 		'' !== $id ? ' id="' . esc_attr( $id ) . '"' : '',
 		'' !== $css_class ? ' class="' . esc_attr( $css_class ) . '"' : '',

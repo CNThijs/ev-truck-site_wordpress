@@ -23,7 +23,7 @@ chargenet_section_open(
 	)
 );
 ?>
-<div class="rich-text stack">
+<div class="rich-text stack" data-reveal>
 	<?php chargenet_heading( $chargenet_heading, (int) ( $attributes['headingLevel'] ?? 2 ), $chargenet_title_id ); ?>
 	<?php echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered inner blocks. ?>
 </div>

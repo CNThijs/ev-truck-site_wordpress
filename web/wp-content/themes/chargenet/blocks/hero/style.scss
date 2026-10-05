@@ -92,10 +92,4 @@
 			box-shadow: var(--shadow-lg);
 		}
 	}
-
-	@media (prefers-reduced-motion: no-preference) {
-		&__bg-img {
-			will-change: transform;
-		}
-	}
 }

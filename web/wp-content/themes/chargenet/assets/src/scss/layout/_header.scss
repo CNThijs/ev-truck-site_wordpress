@@ -7,10 +7,15 @@
 	background: var(--bg);
 	color: var(--fg);
 
-	@include motion(box-shadow);
+	@include motion(box-shadow, transform);
 
 	&.is-scrolled {
 		box-shadow: var(--shadow-md);
+	}
+
+	// Slides away while reading down the page, returns on scroll up (header.js).
+	&.is-hidden {
+		transform: translateY(-100%);
 	}
 
 	&__inner {

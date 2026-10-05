@@ -26,13 +26,17 @@ const hideOptions = [
 	{ value: 'desktop', label: __('Hide on desktop', 'chargenet') },
 ];
 
-// Provisional presets; the real set comes with the animation epic. The value is stored and output as data-animation.
+// Animation presets (docs/motion.md). The value is stored and printed as data-animation; assets/src/js/motion/core.js
+// loads the matching preset. Without JavaScript or with reduced motion the section is simply shown as it is.
 const animations = [
 	{ value: '', label: __('None', 'chargenet') },
-	{ value: 'fade-up', label: 'fade-up' },
-	{ value: 'fade-in', label: 'fade-in' },
-	{ value: 'slide-left', label: 'slide-left' },
-	{ value: 'slide-right', label: 'slide-right' },
+	{ value: 'fade-rise', label: __('Fade and rise on enter', 'chargenet') },
+	{ value: 'stagger', label: __('Staggered reveal of items', 'chargenet') },
+	{ value: 'text-lines', label: __('Headline line reveal', 'chargenet') },
+	{ value: 'counters', label: __('Counting numbers (Statistics)', 'chargenet') },
+	{ value: 'parallax', label: __('Parallax background image', 'chargenet') },
+	{ value: 'draw', label: __('Line drawing (Steps connector)', 'chargenet') },
+	{ value: 'horizontal', label: __('Horizontal scroll (Card Slider)', 'chargenet') },
 ];
 
 // Attributes for registerBlockType: shared ones first so a block's own definition wins.
@@ -79,6 +83,10 @@ export function SectionInspector({ attributes, setAttributes }) {
 				/>
 				<SelectControl
 					label={__('Animation', 'chargenet')}
+					help={__(
+						'The first section of a page is never animated, except parallax. Parallax needs a background image, counting needs Statistics, line drawing needs Steps and horizontal scroll needs a Card Slider.',
+						'chargenet',
+					)}
 					value={attributes.animation}
 					options={animations}
 					onChange={(animation) => setAttributes({ animation })}

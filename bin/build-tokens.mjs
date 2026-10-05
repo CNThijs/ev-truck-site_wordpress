@@ -64,6 +64,7 @@ add('radius', t.radius);
 add('shadow', t.shadow);
 add('duration', t.motion.duration);
 add('ease', t.motion.ease);
+add('distance', t.motion.distance);
 
 const bps = Object.entries(t.breakpoints)
 	.map(([k, v]) => `\t${k}: ${v},`)
@@ -111,6 +112,7 @@ s.custom = {
 	radius: t.radius,
 	duration: t.motion.duration,
 	ease: t.motion.ease,
+	distance: t.motion.distance,
 	breakpoint: t.breakpoints,
 };
 json.styles = {

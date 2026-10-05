@@ -1,6 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks, InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, SelectControl } from '@wordpress/components';
+import { Notice, PanelBody, SelectControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 import {
@@ -15,8 +16,12 @@ import './editor.scss';
 
 registerBlockType(metadata, {
 	attributes: withSectionAttributes(metadata),
-	edit({ attributes, setAttributes }) {
-		const { variant } = attributes;
+	edit({ attributes, setAttributes, clientId }) {
+		const { variant, animation } = attributes;
+		const cardCount = useSelect(
+			(select) => select('core/block-editor').getBlockCount(clientId),
+			[clientId],
+		);
 		const blockProps = useBlockProps(sectionProps(attributes, 'card-slider'));
 
 		return (
@@ -34,6 +39,14 @@ registerBlockType(metadata, {
 							]}
 							onChange={(value) => setAttributes({ variant: value })}
 						/>
+						{animation === 'horizontal' && cardCount > 10 && (
+							<Notice status="warning" isDismissible={false}>
+								{__(
+									'Horizontal scroll shows at most 10 cards: with more, 10 are picked at random on the page.',
+									'chargenet',
+								)}
+							</Notice>
+						)}
 					</PanelBody>
 				</InspectorControls>
 				<section {...blockProps}>

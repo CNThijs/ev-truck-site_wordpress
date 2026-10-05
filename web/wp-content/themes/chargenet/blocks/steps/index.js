@@ -40,16 +40,27 @@ registerBlockType(metadata, {
 					<div className="container">
 						<div className={`steps steps--${variant} stack`}>
 							<SectionHeaderFields attributes={attributes} setAttributes={setAttributes} />
-							<div className="steps__list">
-								<InnerBlocks
-									allowedBlocks={['chargenet/step-item']}
-									template={[
-										['chargenet/step-item'],
-										['chargenet/step-item'],
-										['chargenet/step-item'],
-									]}
-									orientation="horizontal"
-								/>
+							<div className="steps__track">
+								<svg
+									className="steps__line"
+									aria-hidden="true"
+									focusable="false"
+									viewBox={variant === 'vertical' ? '0 0 2 100' : '0 0 100 2'}
+									preserveAspectRatio="none"
+								>
+									<path d={variant === 'vertical' ? 'M1 0V100' : 'M0 1H100'} pathLength="1" />
+								</svg>
+								<div className="steps__list">
+									<InnerBlocks
+										allowedBlocks={['chargenet/step-item']}
+										template={[
+											['chargenet/step-item'],
+											['chargenet/step-item'],
+											['chargenet/step-item'],
+										]}
+										orientation="horizontal"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>

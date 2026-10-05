@@ -26,7 +26,7 @@ chargenet_section_open(
 	)
 );
 ?>
-<div class="rti rti--image-<?php echo esc_attr( $chargenet_position ); ?>">
+<div class="rti rti--image-<?php echo esc_attr( $chargenet_position ); ?>" data-reveal>
 	<div class="rti__body stack">
 		<?php if ( '' !== $chargenet_eyebrow ) : ?>
 			<p class="t-eyebrow"><?php echo esc_html( $chargenet_eyebrow ); ?></p>

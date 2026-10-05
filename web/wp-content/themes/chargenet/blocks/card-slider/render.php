@@ -12,8 +12,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Horizontal scroll pins the page for as long as the row is wide, so it shows at most 10 cards: with more, 10 are
+// picked at random on each render (original order kept). Page caching keeps one pick until the cache is cleared.
+$chargenet_content = $content;
+if ( 'horizontal' === ( $attributes['animation'] ?? '' ) && count( $block->inner_blocks ) > CHARGENET_HORIZONTAL_MAX_CARDS ) {
+	$chargenet_cards = iterator_to_array( $block->inner_blocks );
+	$chargenet_keep  = (array) array_rand( $chargenet_cards, CHARGENET_HORIZONTAL_MAX_CARDS );
+	sort( $chargenet_keep );
+	$chargenet_content = '';
+	foreach ( $chargenet_keep as $chargenet_index ) {
+		$chargenet_content .= $chargenet_cards[ $chargenet_index ]->render();
+	}
+}
+
 // Empty state: no cards, nothing to show.
-if ( '' === trim( $content ) ) {
+if ( '' === trim( $chargenet_content ) ) {
 	return;
 }
 
@@ -32,7 +45,7 @@ chargenet_section_open(
 	<?php chargenet_section_header( $attributes, $chargenet_title_id ); ?>
 	<div class="card-slider__viewport" tabindex="0" role="region"<?php echo '' !== $chargenet_title_id ? ' aria-labelledby="' . esc_attr( $chargenet_title_id ) . '"' : ' aria-label="' . esc_attr__( 'Cards', 'chargenet' ) . '"'; ?>>
 		<ul class="card-slider__track" role="list" data-reveal-group>
-			<?php echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered inner blocks. ?>
+			<?php echo $chargenet_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered inner blocks. ?>
 		</ul>
 	</div>
 	<div class="card-slider__controls" hidden>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-05T09:44:15+02:00\n"
+"POT-Creation-Date: 2026-10-05T10:14:24+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -49,16 +49,16 @@ msgstr "Terug naar home"
 msgid "(opens in a new tab)"
 msgstr "(opent in een nieuw tabblad)"
 
-#: blocks/card-slider/render.php:33 build/blocks/card-slider/render.php:33
+#: blocks/card-slider/render.php:45 build/blocks/card-slider/render.php:45
 #: blocks/feature-grid/index.js:31 build/blocks/feature-grid/index.js:1
 msgid "Cards"
 msgstr "Kaarten"
 
-#: blocks/card-slider/render.php:41 build/blocks/card-slider/render.php:41
+#: blocks/card-slider/render.php:53 build/blocks/card-slider/render.php:53
 msgid "Previous cards"
 msgstr "Vorige kaarten"
 
-#: blocks/card-slider/render.php:45 build/blocks/card-slider/render.php:45
+#: blocks/card-slider/render.php:57 build/blocks/card-slider/render.php:57
 msgid "Next cards"
 msgstr "Volgende kaarten"
 
@@ -217,11 +217,13 @@ msgstr "Landingspagina (Nederlands)"
 #: patterns/page-landing-nl.php
 msgctxt "Pattern description"
 msgid ""
-"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
-"afsluitende call-to-action. Nederlands."
+"Hero met parallax, tellende statistieken, kenmerkenraster, stappen, tekst "
+"met afbeelding, laatste nieuws en een afsluitende call-to-action, met "
+"animaties ingesteld. Nederlands."
 msgstr ""
-"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
-"afsluitende call-to-action. Nederlands."
+"Hero met parallax, tellende statistieken, kenmerkenraster, stappen, tekst "
+"met afbeelding, laatste nieuws en een afsluitende call-to-action, met "
+"animaties ingesteld. Nederlands."
 
 #: patterns/page-landing.php
 msgctxt "Pattern title"
@@ -231,11 +233,13 @@ msgstr "Landingspagina (Engels)"
 #: patterns/page-landing.php
 msgctxt "Pattern description"
 msgid ""
-"A call to action, two alternating text-and-image sections and a closing call "
-"to action. English."
+"Hero with parallax, counting statistics, feature grid, steps, text with "
+"image, latest news and a closing call to action, with animations set. "
+"English."
 msgstr ""
-"Een call-to-action, twee wisselende secties met tekst en afbeelding en een "
-"afsluitende call-to-action. Engels."
+"Hero met parallax, tellende statistieken, kenmerkenraster, stappen, tekst "
+"met afbeelding, laatste nieuws en een afsluitende call-to-action, met "
+"animaties ingesteld. Engels."
 
 #: patterns/page-standard-nl.php
 msgctxt "Pattern title"
@@ -245,11 +249,11 @@ msgstr "Standaardpagina (Nederlands)"
 #: patterns/page-standard-nl.php
 msgctxt "Pattern description"
 msgid ""
-"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
-"Nederlands."
+"Titelbalk, introductietekst, een sectie met tekst en afbeelding en een call-"
+"to-action, met animaties ingesteld. Nederlands."
 msgstr ""
-"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
-"Nederlands."
+"Titelbalk, introductietekst, een sectie met tekst en afbeelding en een call-"
+"to-action, met animaties ingesteld. Nederlands."
 
 #: patterns/page-standard.php
 msgctxt "Pattern title"
@@ -258,10 +262,12 @@ msgstr "Standaardpagina (Engels)"
 
 #: patterns/page-standard.php
 msgctxt "Pattern description"
-msgid "Intro text, a text-and-image section and a call to action. English."
+msgid ""
+"Title band, intro text, a text-and-image section and a call to action, with "
+"animations set. English."
 msgstr ""
-"Introductietekst, een sectie met tekst en afbeelding en een call-to-action. "
-"Engels."
+"Titelbalk, introductietekst, een sectie met tekst en afbeelding en een call-"
+"to-action, met animaties ingesteld. Engels."
 
 #. translators: %s: search query.
 #: search.php:18
@@ -293,7 +299,7 @@ msgstr "Antwoord…"
 msgid "Accordion"
 msgstr "Accordeon"
 
-#: blocks/accordion/index.js:31 blocks/card-slider/index.js:29
+#: blocks/accordion/index.js:31 blocks/card-slider/index.js:34
 #: blocks/feature-grid/index.js:28 blocks/hero/index.js:26
 #: blocks/logo-strip/index.js:29 blocks/post-grid/index.js:40
 #: blocks/stats/index.js:30 blocks/steps/index.js:29 blocks/team/index.js:29
@@ -375,17 +381,25 @@ msgstr "Tekstknop"
 msgid "Open in a new tab"
 msgstr "Openen in een nieuw tabblad"
 
-#: blocks/card-slider/index.js:27 build/blocks/card-slider/index.js:1
+#: blocks/card-slider/index.js:32 build/blocks/card-slider/index.js:1
 msgid "Card slider"
 msgstr "Kaartenslider"
 
-#: blocks/card-slider/index.js:32 build/blocks/card-slider/index.js:1
+#: blocks/card-slider/index.js:37 build/blocks/card-slider/index.js:1
 msgid "Image as background"
 msgstr "Afbeelding als achtergrond"
 
-#: blocks/card-slider/index.js:33 build/blocks/card-slider/index.js:1
+#: blocks/card-slider/index.js:38 build/blocks/card-slider/index.js:1
 msgid "Image on top"
 msgstr "Afbeelding bovenaan"
+
+#: blocks/card-slider/index.js:44 build/blocks/card-slider/index.js:1
+msgid ""
+"Horizontal scroll shows at most 10 cards: with more, 10 are picked at random "
+"on the page."
+msgstr ""
+"Horizontaal scrollen toont maximaal 10 kaarten: bij meer worden er 10 "
+"willekeurig gekozen op de pagina."
 
 #: blocks/cta-band/index.js:31 build/blocks/cta-band/index.js:1
 msgid "Call to action heading"
@@ -858,7 +872,7 @@ msgstr "Papier (warm gebroken wit)"
 msgid "Dark (forest green)"
 msgstr "Donker (bosgroen)"
 
-#: blocks/_shared/section.js:17 blocks/_shared/section.js:31
+#: blocks/_shared/section.js:17 blocks/_shared/section.js:32
 #: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
 #: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
 #: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
@@ -929,7 +943,77 @@ msgstr "Verbergen op mobiel"
 msgid "Hide on desktop"
 msgstr "Verbergen op desktop"
 
-#: blocks/_shared/section.js:55 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:33 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Fade and rise on enter"
+msgstr "Infaden en omhoog bij binnenkomst"
+
+#: blocks/_shared/section.js:34 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Staggered reveal of items"
+msgstr "Items na elkaar tonen"
+
+#: blocks/_shared/section.js:35 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Headline line reveal"
+msgstr "Kop regel voor regel tonen"
+
+#: blocks/_shared/section.js:36 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Counting numbers (Statistics)"
+msgstr "Tellende getallen (Statistieken)"
+
+#: blocks/_shared/section.js:37 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Parallax background image"
+msgstr "Parallax-achtergrondafbeelding"
+
+#: blocks/_shared/section.js:38 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Line drawing (Steps connector)"
+msgstr "Lijn tekenen (verbindingslijn bij Stappen)"
+
+#: blocks/_shared/section.js:39 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Horizontal scroll (Card Slider)"
+msgstr "Horizontaal scrollen (Kaartenslider)"
+
+#: blocks/_shared/section.js:59 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -939,7 +1023,7 @@ msgstr "Verbergen op desktop"
 msgid "Section settings"
 msgstr "Sectie-instellingen"
 
-#: blocks/_shared/section.js:57 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:61 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -949,7 +1033,7 @@ msgstr "Sectie-instellingen"
 msgid "Background"
 msgstr "Achtergrond"
 
-#: blocks/_shared/section.js:63 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:67 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -959,7 +1043,7 @@ msgstr "Achtergrond"
 msgid "Space above"
 msgstr "Ruimte boven"
 
-#: blocks/_shared/section.js:69 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:73 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -969,7 +1053,7 @@ msgstr "Ruimte boven"
 msgid "Space below"
 msgstr "Ruimte onder"
 
-#: blocks/_shared/section.js:75 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:79 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -979,7 +1063,7 @@ msgstr "Ruimte onder"
 msgid "Visibility"
 msgstr "Zichtbaarheid"
 
-#: blocks/_shared/section.js:81 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:85 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
@@ -989,7 +1073,24 @@ msgstr "Zichtbaarheid"
 msgid "Animation"
 msgstr "Animatie"
 
-#: blocks/_shared/section.js:95 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:86 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid ""
+"The first section of a page is never animated, except parallax. Parallax "
+"needs a background image, counting needs Statistics, line drawing needs "
+"Steps and horizontal scroll needs a Card Slider."
+msgstr ""
+"De eerste sectie van een pagina wordt nooit geanimeerd, behalve met "
+"parallax. Parallax heeft een achtergrondafbeelding nodig, tellen werkt met "
+"Statistieken, lijn tekenen met Stappen en horizontaal scrollen met een "
+"Kaartenslider."
+
+#: blocks/_shared/section.js:103 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
@@ -999,7 +1100,7 @@ msgstr "Animatie"
 msgid "Heading"
 msgstr "Kop"
 
-#: blocks/_shared/section.js:97 build/blocks/accordion/index.js:1
+#: blocks/_shared/section.js:105 build/blocks/accordion/index.js:1
 #: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
@@ -1786,3 +1887,19 @@ msgstr ""
 msgctxt "Shadow name"
 msgid "lg"
 msgstr ""
+
+#~ msgctxt "Pattern description"
+#~ msgid ""
+#~ "A call to action, two alternating text-and-image sections and a closing "
+#~ "call to action. English."
+#~ msgstr ""
+#~ "Een call-to-action, twee wisselende secties met tekst en afbeelding en "
+#~ "een afsluitende call-to-action. Engels."
+
+#~ msgid ""
+#~ "Fade and rise skips the first section of a page. Parallax needs a "
+#~ "background image; line drawing needs the Steps section."
+#~ msgstr ""
+#~ "Infaden en omhoog slaat de eerste sectie van een pagina over. Parallax "
+#~ "heeft een achtergrondafbeelding nodig; lijn tekenen werkt met de sectie "
+#~ "Stappen."

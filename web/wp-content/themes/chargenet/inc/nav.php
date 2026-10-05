@@ -69,7 +69,7 @@ function chargenet_language_switcher( string $label = '' ): void {
 				$language['current_lang'] ? ' aria-current="true"' : '',
 				esc_html( strtoupper( $language['slug'] ) ),
 				esc_attr( $language['slug'] ),
-				esc_attr( $language['name'] )
+				esc_attr( strtoupper( $language['slug'] ) . ' – ' . $language['name'] ) // Accessible name starts with the visible text (WCAG 2.5.3).
 			);
 		}
 	} else {

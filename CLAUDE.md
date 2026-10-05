@@ -54,7 +54,7 @@ Not committed: WordPress core, uploads, vendor plugins, `vendor/`, `node_modules
 - Palette: dark forest green `#083A0B` surfaces, logo yellow `#FAE104` as accent on dark, green `#0F5F1A` for interactive elements on light. The logo is yellow/orange and only readable on dark: header and footer are always `is-dark`.
 - Section variants `is-light`, `is-paper`, `is-dark` set the semantic variables (`--bg`, `--fg`, `--accent`, `--btn-*`, `--focus`). Components read those, not raw colours.
 - Type: Source Sans 3, self-hosted variable woff2 (Latin + Latin Extended) in `assets/fonts/`, declared inline in `inc/fonts.php` with preload and a metric-matched fallback. Weights: 700 headings, 400 body, 600 labels, 300 stat numbers. No Google Fonts.
-- Motion tokens live in CSS and collapse under `prefers-reduced-motion`; JS reads them via `assets/src/js/motion.js`. Reveal-on-scroll: `data-reveal`.
+- Motion tokens live in CSS and collapse under `prefers-reduced-motion`; JS reads them via `assets/src/js/motion.js`. Presets (fade-rise, parallax, draw) are chosen per section in Section Settings; reveal targets carry `data-reveal`. System, budget (`npm run check:budget`, CI) and admin-only Motion Lab (`/motion-lab/`): `docs/motion.md`.
 - Style guide: `/style-guide/`, administrators only (everyone else gets 404, noindex). Update `page-templates/style-guide.php` when adding a component.
 - Menus: locations `primary`, `utility` (Login), `footer`, `legal`. `bin/setup-wp.sh` seeds English starter menus with placeholder URLs.
 
@@ -74,7 +74,7 @@ Planned for later epics: see `docs/audit/README.md` (language URLs, campaign `/r
 
 - PHP: WordPress Coding Standards (`phpcs.xml.dist`), prefix `chargenet_`, text domain `chargenet`, escape late, PHP 8.2 compatible.
 - JS: ESLint recommended, ES modules. SCSS: stylelint-config-standard-scss, one partial per component. Prettier for the rest. Tabs.
-- Prefer server-rendered HTML; JS only for enhancement and animation. Respect `prefers-reduced-motion`.
+- Prefer server-rendered HTML; JS only for enhancement and animation. Respect `prefers-reduced-motion`. Animation system, presets, budget and Motion Lab (`/motion-lab/`): `docs/motion.md`.
 - Enqueue assets only through `inc/assets.php` (Vite manifest).
 
 ## Rules

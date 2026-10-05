@@ -1,3 +1,5 @@
+import { prefersReducedMotion } from './motion.js';
+
 const header = document.querySelector('[data-header]');
 const toggle = document.querySelector('[data-nav-toggle]');
 const panel = document.querySelector('[data-nav-panel]');
@@ -63,4 +65,33 @@ if (header && toggle && panel) {
 			setMenu(false);
 		}
 	});
+
+	// Hide on scroll down, return on scroll up. Never while the menu or a submenu is open, while focus is inside the
+	// header, near the top of the page, or when the visitor prefers reduced motion. Transform only.
+	let lastY = window.scrollY;
+	let frame = 0;
+	const onScroll = () => {
+		frame = 0;
+		const y = window.scrollY;
+		const delta = y - lastY;
+		const locked =
+			prefersReducedMotion() ||
+			toggle.getAttribute('aria-expanded') === 'true' ||
+			header.contains(document.activeElement) ||
+			panel.querySelector('.is-open');
+		if (locked || y < 160 || delta < -6) {
+			header.classList.remove('is-hidden');
+		} else if (delta > 6) {
+			header.classList.add('is-hidden');
+		}
+		lastY = y;
+	};
+	window.addEventListener(
+		'scroll',
+		() => {
+			frame ||= requestAnimationFrame(onScroll);
+		},
+		{ passive: true },
+	);
+	header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
 }

@@ -23,7 +23,7 @@ chargenet_section_open(
 	)
 );
 ?>
-<div class="cta-band stack">
+<div class="cta-band stack" data-reveal>
 	<?php chargenet_heading( $chargenet_heading, (int) ( $attributes['headingLevel'] ?? 2 ), $chargenet_title_id ); ?>
 	<?php if ( '' !== trim( wp_strip_all_tags( $chargenet_text ) ) ) : ?>
 		<p class="t-lead"><?php echo wp_kses_post( $chargenet_text ); ?></p>

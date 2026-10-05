@@ -14,12 +14,47 @@
 		display: contents;
 	}
 
-	// Horizontal: side by side on wide screens, joined by a dashed line between the numbers.
+	// The line behind the numbers is an SVG path (so the "draw" animation preset can draw it).
+	&__track {
+		position: relative;
+	}
+
+	&__line {
+		position: absolute;
+		z-index: 0;
+		pointer-events: none;
+
+		path {
+			fill: none;
+			stroke: var(--border);
+			stroke-width: 2;
+		}
+	}
+
+	&__list {
+		position: relative;
+		z-index: 1;
+	}
+
+	// Horizontal: side by side on wide screens, joined by a line through the numbers. Stacked on small screens,
+	// where there is no line.
 	&--horizontal .steps__list {
 		@include up(md) {
 			grid-auto-flow: column;
 			grid-auto-columns: minmax(0, 1fr);
 			gap: var(--space-5);
+		}
+	}
+
+	&--horizontal .steps__line {
+		display: none;
+
+		@include up(md) {
+			top: calc(1.5rem - 1px);
+			left: 1.5rem;
+			display: block;
+			width: calc(100% - 3rem);
+			height: 2px;
 		}
 	}
 
@@ -29,24 +64,20 @@
 			flex-direction: column;
 			gap: var(--space-4);
 		}
-
-		&:not(:last-child)::after {
-			@include up(md) {
-				content: '';
-				position: absolute;
-				top: 1.5rem;
-				left: calc(3rem + var(--space-3));
-				right: calc(var(--space-3) - var(--space-5));
-				border-top: 2px dashed var(--border);
-			}
-		}
 	}
 
 	// Vertical: a line down the left with the numbers sitting on it.
 	&--vertical .steps__list {
 		margin-left: 1.5rem;
-		border-left: 2px solid var(--border);
 		gap: var(--space-7);
+	}
+
+	&--vertical .steps__line {
+		top: 1.5rem;
+		bottom: 1.5rem;
+		left: calc(1.5rem - 1px);
+		width: 2px;
+		height: auto;
 	}
 
 	&--vertical .step {
@@ -56,7 +87,7 @@
 		.step__number {
 			position: absolute;
 			top: 0;
-			left: calc(-1.5rem - 1px);
+			left: -1.5rem;
 		}
 	}
 }

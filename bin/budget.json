@@ -1,0 +1,5 @@
+{
+  "_comment": "Gzip budgets in kilobytes for the built theme JavaScript (docs/motion.md). Raise a number only with a reason in the commit message.",
+  "initialJsKb": 6,
+  "motionJsKb": 50
+}

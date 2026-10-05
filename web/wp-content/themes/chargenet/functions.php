@@ -26,3 +26,4 @@ require_once CHARGENET_DIR . '/inc/post-grid.php';
 require_once CHARGENET_DIR . '/inc/post-source.php';
 require_once CHARGENET_DIR . '/inc/blocks.php';
 require_once CHARGENET_DIR . '/inc/gallery.php';
+require_once CHARGENET_DIR . '/inc/motion-lab.php';

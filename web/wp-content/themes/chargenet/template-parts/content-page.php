@@ -10,6 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <article <?php post_class(); ?>>
-	<h1><?php the_title(); ?></h1>
+	<?php if ( ! has_block( 'chargenet/hero' ) ) : // The Hero section carries the page's one h1. ?>
+		<h1><?php the_title(); ?></h1>
+	<?php endif; ?>
 	<?php the_content(); ?>
 </article>
