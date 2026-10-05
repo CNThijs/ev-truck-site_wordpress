@@ -31,7 +31,7 @@ function chargenet_render_style_guide(): void {
 		<h1 class="t-hero">Style guide</h1>
 		<p class="t-lead">Every token and component of the ChargeNet theme. Source of truth: <code>tokens.json</code>. Not public, not indexed.</p>
 		<nav aria-label="Style guide sections" class="cluster">
-			<?php foreach ( array( 'colours', 'contrast', 'variants', 'type', 'buttons', 'forms', 'badges', 'cards', 'layout', 'spacing', 'shape', 'motion', 'focus' ) as $sg_id ) : ?>
+			<?php foreach ( array( 'colours', 'contrast', 'variants', 'type', 'buttons', 'forms', 'badges', 'cards', 'layout', 'spacing', 'shape', 'motion', 'icons', 'focus' ) as $sg_id ) : ?>
 				<a class="btn btn--secondary btn--sm" href="#<?php echo esc_attr( $sg_id ); ?>"><?php echo esc_html( ucfirst( $sg_id ) ); ?></a>
 			<?php endforeach; ?>
 		</nav>
@@ -284,6 +284,19 @@ function chargenet_render_style_guide(): void {
 					<div class="sg__motion"></div><code>--ease-<?php echo esc_html( $name ); ?></code> <?php echo esc_html( $value ); ?>
 				</div>
 			<?php endforeach; ?>
+		</section>
+
+		<section class="stack" aria-labelledby="icons">
+			<?php chargenet_sg_heading( 'icons', 'Icons' ); ?>
+			<p>Built-in outline icons (<code>chargenet_the_icon( 'name' )</code>, set in <code>inc/icons.json</code>). They take the current text colour and are decorative: always pair them with visible text.</p>
+			<ul class="sg__icons" role="list">
+				<?php foreach ( array_keys( chargenet_icons() ) as $sg_icon ) : ?>
+					<li class="sg__icon">
+						<?php chargenet_the_icon( $sg_icon ); ?>
+						<code><?php echo esc_html( $sg_icon ); ?></code>
+					</li>
+				<?php endforeach; ?>
+			</ul>
 		</section>
 
 		<section class="stack" aria-labelledby="focus">

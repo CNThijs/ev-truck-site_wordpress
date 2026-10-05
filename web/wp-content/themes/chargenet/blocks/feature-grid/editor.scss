@@ -1,0 +1,4 @@
+// Editor-only tweaks. Front-end styles (style.scss) also load in the editor.
+.feature-grid__list > .block-editor-inner-blocks {
+	display: contents;
+}

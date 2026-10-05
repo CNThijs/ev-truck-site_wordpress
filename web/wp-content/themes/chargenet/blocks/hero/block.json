@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/hero",
+  "title": "Hero",
+  "category": "chargenet-sections",
+  "icon": "cover-image",
+  "description": "Opening section of a page and the only place for its h1. Variants: banner with background image, short title band, campaign with cover image.",
+  "keywords": ["hero", "banner", "header", "title", "campaign"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "sectionBackground": {
+      "type": "string",
+      "enum": ["light", "paper", "dark"],
+      "default": "dark"
+    },
+    "variant": {
+      "type": "string",
+      "enum": ["banner", "title-band", "campaign"],
+      "default": "banner"
+    },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "intro": { "type": "string", "default": "" },
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" },
+    "overlay": { "type": "string", "enum": ["standard", "strong"], "default": "standard" },
+    "coverId": { "type": "number", "default": 0 },
+    "coverUrl": { "type": "string", "default": "" },
+    "coverAlt": { "type": "string", "default": "" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "variant": "title-band",
+      "heading": "About ChargeNet",
+      "intro": "The private charging network for electric trucks."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

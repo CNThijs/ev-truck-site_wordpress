@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/feature-column",
+  "title": "Feature Column",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/feature-columns"],
+  "icon": "align-pull-left",
+  "description": "One column: title, sub-headings with lists, and a link.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "url": { "type": "string", "default": "" },
+    "linkLabel": { "type": "string", "default": "" }
+  },
+  "usesContext": ["chargenet/headingLevel"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

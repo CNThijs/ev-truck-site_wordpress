@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/logo-item",
+  "title": "Logo",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/logo-strip"],
+  "icon": "format-image",
+  "description": "One logo with the organisation's name and an optional link.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" },
+    "name": { "type": "string", "default": "" },
+    "url": { "type": "string", "default": "" }
+  },
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

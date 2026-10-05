@@ -1,0 +1,193 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.card-slider {
+	// The row scrolls on its own and snaps card by card. The padding keeps focus rings and shadows from being clipped.
+	&__viewport {
+		margin-inline: calc(-1 * var(--space-gutter));
+		padding: var(--space-3) var(--space-gutter) var(--space-5);
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		scroll-padding-inline: var(--space-gutter);
+		scroll-snap-type: x mandatory;
+		scrollbar-color: var(--accent) transparent;
+		scrollbar-width: thin;
+
+		&:focus-visible {
+			@include focus-ring;
+		}
+	}
+
+	&__track {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: min(85%, 22rem);
+		gap: var(--space-5);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include up(md) {
+			grid-auto-columns: calc((100% - var(--space-5)) / 2);
+		}
+
+		@include up(lg) {
+			grid-auto-columns: calc((100% - 2 * var(--space-5)) / 3);
+		}
+	}
+
+	// Editor: the inner blocks wrapper becomes the track.
+	.block-editor-block-list__layout {
+		display: contents;
+	}
+
+	&__controls {
+		display: flex;
+		gap: var(--space-3);
+		justify-content: flex-end;
+
+		&[hidden] {
+			display: none;
+		}
+	}
+
+	&__button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		padding: 0;
+		border: 2px solid currentcolor;
+		border-radius: var(--radius-pill);
+		background: transparent;
+		color: var(--fg);
+		cursor: pointer;
+
+		@include motion(background-color, color, opacity);
+
+		&:hover {
+			background: var(--fg);
+			color: var(--bg);
+		}
+
+		&:focus-visible {
+			@include focus-ring;
+		}
+
+		&[aria-disabled='true'] {
+			opacity: 0.4;
+			cursor: default;
+		}
+
+		&[aria-disabled='true']:hover {
+			background: transparent;
+			color: var(--fg);
+		}
+
+		&--prev .icon {
+			transform: scaleX(-1);
+		}
+	}
+}
+
+.slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	overflow: hidden;
+	border-radius: var(--radius-lg);
+	scroll-snap-align: start;
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		padding: var(--space-5);
+	}
+
+	&__title {
+		font-size: var(--text-xl);
+	}
+
+	&__link {
+		color: inherit;
+		text-decoration: none;
+
+		// The title link covers the whole card: one tab stop, big click target.
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	&:has(.slide__link:focus-visible) {
+		@include focus-ring;
+	}
+
+	&__more {
+		margin-top: auto;
+		font-weight: var(--weight-semibold);
+		color: var(--accent);
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+// Image as background: text over a dark overlay, always white on forest green.
+.card-slider--image-bg .slide {
+	justify-content: flex-end;
+	min-height: 26rem;
+	isolation: isolate;
+	background: var(--surface);
+	color: var(--fg);
+
+	.slide__media {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		margin: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(
+				0deg,
+				rgb(8 58 11 / 92%) 0%,
+				rgb(8 58 11 / 45%) 60%,
+				rgb(8 58 11 / 20%) 100%
+			);
+		}
+	}
+
+	.slide__text {
+		color: var(--fg-muted);
+	}
+}
+
+// Image on top: a regular card.
+.card-slider--image-top .slide {
+	border: 1px solid var(--border);
+	background: var(--surface);
+	box-shadow: var(--shadow-sm);
+
+	.slide__media {
+		margin: 0;
+		aspect-ratio: 16 / 10;
+		background: color-mix(in srgb, var(--accent) 14%, transparent);
+	}
+
+	.slide__text {
+		color: var(--fg-muted);
+	}
+}

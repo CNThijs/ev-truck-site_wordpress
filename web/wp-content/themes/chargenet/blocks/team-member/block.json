@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/team-member",
+  "title": "Team Member",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/team"],
+  "icon": "admin-users",
+  "description": "One person: photo, name, role, and optional email and LinkedIn links.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" },
+    "imageAlt": { "type": "string", "default": "" },
+    "name": { "type": "string", "default": "" },
+    "role": { "type": "string", "default": "" },
+    "email": { "type": "string", "default": "" },
+    "linkedin": { "type": "string", "default": "" }
+  },
+  "usesContext": ["chargenet/headingLevel", "chargenet/teamVariant"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

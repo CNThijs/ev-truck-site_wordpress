@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/card-slider",
+  "title": "Card Slider",
+  "category": "chargenet-sections",
+  "icon": "slides",
+  "description": "A row of image cards you can swipe or scroll, with previous and next buttons added by JavaScript. Variants: image as background, image on top.",
+  "keywords": ["slider", "carousel", "cards", "projects", "cases"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["image-bg", "image-top"], "default": "image-bg" },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "intro": { "type": "string", "default": "" }
+  },
+  "providesContext": {
+    "chargenet/headingLevel": "headingLevel",
+    "chargenet/sliderVariant": "variant"
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": { "sectionBackground": "paper", "heading": "Projects" },
+    "innerBlocks": [
+      {
+        "name": "chargenet/slide-card",
+        "attributes": {
+          "title": "Destination charging",
+          "text": "Charging where trucks already stop."
+        }
+      },
+      {
+        "name": "chargenet/slide-card",
+        "attributes": { "title": "ChargeBase", "text": "Mobile charging, anywhere." }
+      },
+      {
+        "name": "chargenet/slide-card",
+        "attributes": { "title": "IJmond aan zet", "text": "Regional programme." }
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php"
+}

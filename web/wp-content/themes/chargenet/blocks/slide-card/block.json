@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/slide-card",
+  "title": "Slide Card",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/card-slider"],
+  "icon": "format-image",
+  "description": "One card: image, title, text and an optional link to a detail page.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" },
+    "imageAlt": { "type": "string", "default": "" },
+    "title": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" },
+    "url": { "type": "string", "default": "" },
+    "linkLabel": { "type": "string", "default": "" }
+  },
+  "usesContext": ["chargenet/headingLevel", "chargenet/sliderVariant"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

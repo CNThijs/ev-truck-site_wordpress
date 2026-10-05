@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/step-item",
+  "title": "Step",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/steps"],
+  "icon": "editor-ol",
+  "description": "One step: a title and a short text or list.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "title": { "type": "string", "default": "" }
+  },
+  "usesContext": ["chargenet/headingLevel"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

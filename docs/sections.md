@@ -68,6 +68,58 @@ This creates `blocks/faq-list/` from `bin/templates/section/`. Then:
 
 Use InnerBlocks with a small child block (see `blocks/button`: `parent` lists the sections it may sit in, `save: () => null`, server-rendered). Editors add, remove and reorder items directly in the editor. For simple fixed lists, an array attribute edited with `RichText` also works; prefer InnerBlocks for anything with rich content.
 
+## Section library
+
+Built in batches; each section is in the [Section Gallery](#section-gallery) with every variant. Fields are edited in the block (text) and the inspector (settings). Items are child blocks you add, remove and reorder in the editor.
+
+| Section (`chargenet/…`) | Fields                                                                                                                            | Variants                                                                               | Empty state                            |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------- |
+| `hero`                  | eyebrow, heading (the page's h1), intro, background image, overlay (standard/strong), cover image + alt (campaign), buttons       | `banner` (background image), `title-band` (text only), `campaign` (text + cover image) | No heading: nothing is printed         |
+| `feature-grid`          | eyebrow, heading, intro, columns (2 to 4); items (`feature-grid-item`): icon, title, text, optional link URL and label            | `cards`, `plain`, `numbered` (CSS counter)                                             | No items: nothing is printed           |
+| `feature-columns`       | eyebrow, heading, intro; columns (`feature-column`): title, sub-headings and lists, optional link                                 | 2 or 3 columns (by number of columns, wraps on small screens)                          | No columns: nothing is printed         |
+| `stats`                 | eyebrow, heading, text, optional background image; items (`stat-item`): number, text before and after, label                      | `row` (heading above), `with-text` (text beside)                                       | No items: nothing is printed           |
+| `steps`                 | eyebrow, heading, intro; steps (`step-item`): title, text and lists                                                               | `horizontal` (side by side, dashed connector), `vertical` (timeline)                   | No steps: nothing is printed           |
+| `accordion`             | eyebrow, heading, intro, FAQ structured data toggle, help box (heading, text, button); items (`accordion-item`): question, answer | `single`, `with-aside` (help box beside the list)                                      | No items: nothing is printed           |
+| `team`                  | eyebrow, heading, intro; people (`team-member`): photo + alt, name, role, email, LinkedIn                                         | `cards` (portrait photos), `compact` (small round photos, contact cards)               | No people: nothing; no photo: initials |
+| `logo-strip`            | eyebrow, heading, intro; logos (`logo-item`): image, name (alt text), optional link                                               | `grayscale` (colour on hover, white on dark sections), `colour`                        | No logos: nothing is printed           |
+| `card-slider`           | eyebrow, heading, intro; cards (`slide-card`): image + alt, title, text, optional link URL and "read more" label                  | `image-bg` (text over a dark overlay), `image-top`                                     | No cards: nothing is printed           |
+| `post-grid`             | eyebrow, heading, intro, number of posts (1 to 12), category, optional "view all" label and URL (default: the posts page)         | `latest` (equal cards), `featured-grid` (first post across the row)                    | No posts: nothing is printed           |
+| `rich-text`             | heading, text blocks                                                                                                              |                                                                                        |                                        |
+| `rich-text-image`       | eyebrow, heading, text blocks, image + alt override, image position                                                               | image left or right                                                                    |                                        |
+| `cta-band`              | heading, text, buttons                                                                                                            | background dark (default), light, paper                                                |                                        |
+
+Every section also has the shared settings above. Items with `data-reveal`, lists with `data-reveal-group` and numbers with `data-count` are hooks for the animation epic: nothing depends on them.
+
+### Notes per section
+
+- **Accordion:** built on native `<details>`/`<summary>`: keyboard operable, no JavaScript, all closed on load. The FAQ structured data toggle prints `FAQPage` JSON-LD from the items; leave it off when an SEO plugin already does it.
+- **Steps:** the number is a decorative CSS counter on a real ordered list, so assistive technology announces the numbering once. Buttons are not part of the section; put a `cta-band` after it.
+- **Team:** photos are treated as decoration (the name is printed beside them) unless the editor fills in the alt text. Email and LinkedIn are icon links with visually hidden text. Without a photo the initials are shown.
+- **Logo strip:** the organisation name is the alt text of the logo (translate it per language page); a linked logo opens in a new tab and says so for screen readers. Add logos by adding Logo items; with none, the section prints nothing.
+- **Card slider:** a scroll-snap row that works by scrolling, swiping and keyboard (the row is a focusable region). `view.js` shows previous and next buttons only when the cards overflow; there is no auto-rotation. The title is the card's one link and covers the whole card; the "read more" label is a visual cue. Project detail pages arrive in Epic 15, until then the link field takes any URL.
+- **Post grid:** dynamic. `chargenet_post_grid_items()` (`inc/post-grid.php`) turns the newest posts of the current language into a plain array, and `render.php` only prints that array; the Section Gallery swaps in sample posts through the `chargenet_post_grid_items` filter. Categories belong to one language, so pick the Dutch category on the Dutch page. The editor preview is the real server output. The cards always link to the post itself; the original source is shown on the post (see below).
+- **Section intro:** new sections print their eyebrow, heading and introduction through `chargenet_section_header()` (PHP) and `SectionHeaderFields` (`blocks/_shared/header.js`, editor), so the two stay identical.
+
+### Heading levels
+
+Only `hero` prints an h1 (its own heading field; use one per page). Other sections let the editor pick h2 to h4; item titles inside a section are one level below the section heading, capped at h4.
+
+### Images
+
+Always use `chargenet_image( $attachment_id, $args )` (`inc/image.php`): it prints `srcset`, `sizes`, `width` and `height` from the media library and sets `loading`. Images in the first section on the page load eagerly with `fetchpriority="high"`, all others lazy; the hero background always counts as first-viewport. Uploads are resized to WebP (PNG and JPEG) or AVIF (JPEG, when the server's image library can write it; STRATO has to be checked) by the `image_editor_output_format` filter. Background images are decorative (`alt=""`); content images take the media item's alt text, or the section's alt override.
+
+### Icons
+
+`chargenet_the_icon( 'zap' )` prints an inline, `aria-hidden` SVG from the built-in set in `inc/icons.json` (outline icons from Lucide, ISC licence; the same file feeds the editor icon picker). Add an icon by adding its inner SVG markup to that file. Icons are decoration: the item always has visible text.
+
+## Original source of a post
+
+News posts can link to the article, LinkedIn post or report they are based on. Editors fill in **Source URL** in the "Original source" box on the post screen (`inc/post-source.php`, meta key `_chargenet_source_url`, also readable and writable through the REST API for the blog import). The single post prints "Read the original on <site>" under the text, opening in a new tab and saying so for screen readers. Polylang copies the URL when a translation is created, it is not kept in sync afterwards. The audit's `externalUrl` of the 15 imported posts maps to this field.
+
+## Section Gallery
+
+Administrators get every section and variant with sample content at `/section-gallery/` (everyone else a 404, noindex). It renders through the same block code as a real page, so it is the place to check a new variant. Add a section's variants to `inc/gallery-samples.php` when you add the section. The first visit generates three sample images with PHP GD and stores them in the media library as "ChargeNet gallery sample" (delete them whenever; they are recreated on the next visit).
+
 ## Which blocks editors can use
 
 On **pages** (landing pages are ordinary pages) the inserter offers only `chargenet/*` sections. Paragraph, heading, list and quote exist only inside sections: `chargenet_allowed_blocks()` (`inc/blocks.php`) gives them a `parent` rule listing the section blocks, so they are never offered at the root of a page. Child blocks such as `chargenet/button` are placed from inside their section. Posts keep the normal editor.

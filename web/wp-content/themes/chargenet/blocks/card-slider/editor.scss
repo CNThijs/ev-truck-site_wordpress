@@ -1,0 +1,4 @@
+// Editor-only tweaks. Front-end styles (style.scss) also load in the editor.
+.card-slider__track > .block-editor-inner-blocks {
+	display: contents;
+}

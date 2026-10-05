@@ -1,0 +1,125 @@
+@use '../../assets/src/scss/mixins' as *;
+
+// Shared by sections with a heading block above their content.
+.section-intro {
+	max-width: var(--container-narrow);
+	margin-bottom: var(--space-block);
+}
+
+.feature-grid {
+	&__list {
+		display: grid;
+		gap: var(--space-5);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: feature;
+		grid-template-columns: 1fr;
+
+		@include up(sm) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include up(lg) {
+			&[data-columns='3'] {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			&[data-columns='4'] {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+	}
+
+	// The editor wraps the list one level deeper; the item rules below also apply there.
+	.block-editor-block-list__layout {
+		display: contents;
+	}
+}
+
+.feature-grid__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--space-3);
+	min-width: 0;
+
+	// The card look comes from components/_card.scss; plain and numbered items have no box.
+	&:not(.card) {
+		padding: 0;
+	}
+
+	&.has-link:hover,
+	&.has-link:focus-within {
+		.feature-grid__title {
+			text-decoration: underline;
+			text-decoration-thickness: 0.08em;
+			text-underline-offset: 0.2em;
+		}
+	}
+}
+
+.feature-grid__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: var(--radius-md);
+	background: color-mix(in srgb, var(--accent) 14%, transparent);
+	color: var(--accent);
+
+	.icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.feature-grid__title {
+	font-size: var(--text-xl);
+}
+
+.feature-grid__text {
+	color: var(--fg-muted);
+}
+
+// A linked title stretches over the whole item: one tab stop, big click target.
+.feature-grid__item.has-link .feature-grid__link::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+}
+
+.feature-grid__link {
+	color: inherit;
+	text-decoration: none;
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+.feature-grid__item.has-link:has(.feature-grid__link:focus-visible) {
+	@include focus-ring;
+}
+
+// A separate "learn more" link keeps the link colour.
+.link-arrow.feature-grid__link {
+	color: var(--link);
+	margin-top: auto;
+}
+
+// Numbered: a big counter instead of an icon.
+.feature-grid--numbered .feature-grid__item {
+	counter-increment: feature;
+
+	&::before {
+		content: counter(feature, decimal-leading-zero);
+		color: var(--accent);
+		font-size: var(--text-3xl);
+		font-weight: var(--weight-light);
+		line-height: 1;
+	}
+}

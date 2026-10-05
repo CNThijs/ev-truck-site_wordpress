@@ -1,0 +1,101 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+	}
+
+	&__bg-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// Keeps text readable over any photo. Strong adds weight for busy images.
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(90deg, rgb(8 58 11 / 88%) 0%, rgb(8 58 11 / 55%) 100%);
+
+		&[data-overlay='strong'] {
+			background: linear-gradient(90deg, rgb(8 58 11 / 95%) 0%, rgb(8 58 11 / 78%) 100%);
+		}
+	}
+
+	&__inner {
+		display: grid;
+		gap: var(--space-block);
+		align-items: center;
+	}
+
+	&__body {
+		max-width: 46rem;
+	}
+
+	&__actions {
+		margin-top: var(--space-6);
+	}
+
+	&__intro {
+		max-width: 40rem;
+	}
+
+	// Banner: tall, text on the image.
+	&--banner {
+		display: grid;
+		align-items: center;
+		min-height: clamp(26rem, 62vh, 40rem);
+
+		.hero__title {
+			font-size: var(--text-5xl);
+			letter-spacing: -0.025em;
+		}
+	}
+
+	// Title band: short, text only.
+	&--title-band {
+		padding-block: clamp(3rem, 2rem + 4vw, 5.5rem);
+
+		.hero__intro {
+			color: var(--fg-muted);
+		}
+	}
+
+	// Campaign: text beside a cover image.
+	&--campaign {
+		display: grid;
+		align-items: center;
+		min-height: clamp(30rem, 70vh, 42rem);
+
+		@include up(md) {
+			.hero__inner {
+				grid-template-columns: 1.2fr 0.8fr;
+			}
+		}
+	}
+
+	&__cover {
+		margin: 0;
+		justify-self: center;
+		max-width: 26rem;
+
+		&-img {
+			width: 100%;
+			height: auto;
+			border-radius: var(--radius-lg);
+			box-shadow: var(--shadow-lg);
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		&__bg-img {
+			will-change: transform;
+		}
+	}
+}

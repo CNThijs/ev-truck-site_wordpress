@@ -4,7 +4,12 @@
   "name": "chargenet/button",
   "title": "Button",
   "category": "chargenet-sections",
-  "parent": ["chargenet/cta-band", "chargenet/rich-text-image", "chargenet/rich-text"],
+  "parent": [
+    "chargenet/cta-band",
+    "chargenet/rich-text-image",
+    "chargenet/rich-text",
+    "chargenet/hero"
+  ],
   "icon": "button",
   "description": "A button using the ChargeNet design system. Only available inside sections.",
   "textdomain": "chargenet",

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/stat-item",
+  "title": "Statistic",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/stats"],
+  "icon": "chart-line",
+  "description": "One number with a label, for example 80 % of trucks charge at their destination.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "value": { "type": "string", "default": "" },
+    "prefix": { "type": "string", "default": "" },
+    "suffix": { "type": "string", "default": "" },
+    "label": { "type": "string", "default": "" }
+  },
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

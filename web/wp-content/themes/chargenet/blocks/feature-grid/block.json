@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/feature-grid",
+  "title": "Feature Grid",
+  "category": "chargenet-sections",
+  "icon": "grid-view",
+  "description": "A heading and a grid of items with icon, title and text. Variants: cards, plain, numbered.",
+  "keywords": ["features", "benefits", "grid", "cards", "icons", "values"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["cards", "plain", "numbered"], "default": "cards" },
+    "columns": { "type": "number", "default": 3 },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "intro": { "type": "string", "default": "" }
+  },
+  "providesContext": {
+    "chargenet/headingLevel": "headingLevel",
+    "chargenet/gridVariant": "variant"
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "sectionBackground": "paper",
+      "heading": "Why ChargeNet",
+      "intro": "Everything you need to charge your fleet where it already stops."
+    },
+    "innerBlocks": [
+      {
+        "name": "chargenet/feature-grid-item",
+        "attributes": {
+          "icon": "euro",
+          "title": "Competitive pricing",
+          "text": "Charge at the right price."
+        }
+      },
+      {
+        "name": "chargenet/feature-grid-item",
+        "attributes": {
+          "icon": "lock",
+          "title": "Private access",
+          "text": "Only for your network."
+        }
+      },
+      {
+        "name": "chargenet/feature-grid-item",
+        "attributes": {
+          "icon": "zap",
+          "title": "Easy to use",
+          "text": "One platform for everything."
+        }
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

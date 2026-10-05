@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/stats",
+  "title": "Statistics",
+  "category": "chargenet-sections",
+  "icon": "chart-bar",
+  "description": "Headline numbers with labels, optionally with a heading, text and background image. Variants: row, with text beside.",
+  "keywords": ["stats", "numbers", "counters", "figures", "impact"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "sectionBackground": {
+      "type": "string",
+      "enum": ["light", "paper", "dark"],
+      "default": "dark"
+    },
+    "variant": { "type": "string", "enum": ["row", "with-text"], "default": "row" },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "text": { "type": "string", "default": "" },
+    "imageId": { "type": "number", "default": 0 },
+    "imageUrl": { "type": "string", "default": "" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": { "heading": "Why ChargeNet" },
+    "innerBlocks": [
+      {
+        "name": "chargenet/stat-item",
+        "attributes": {
+          "value": "80",
+          "suffix": "%",
+          "label": "of trucks charge at their destination"
+        }
+      },
+      {
+        "name": "chargenet/stat-item",
+        "attributes": { "value": "18", "suffix": "%", "label": "lower charging cost" }
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

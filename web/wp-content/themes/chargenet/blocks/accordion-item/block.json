@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/accordion-item",
+  "title": "Accordion Item",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/accordion"],
+  "icon": "editor-help",
+  "description": "One question with its answer.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "question": { "type": "string", "default": "" }
+  },
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

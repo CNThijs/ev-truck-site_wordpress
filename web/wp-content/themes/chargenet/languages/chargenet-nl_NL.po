@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-04T12:44:26+02:00\n"
+"POT-Creation-Date: 2026-10-05T09:44:15+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -42,9 +42,44 @@ msgstr "De pagina die u zoekt bestaat niet."
 msgid "Back to home"
 msgstr "Terug naar home"
 
-#: blocks/button/render.php:24 build/blocks/button/render.php:24 footer.php:43
+#: blocks/button/render.php:24 blocks/logo-item/render.php:33
+#: blocks/post-grid/render.php:81 build/blocks/button/render.php:24
+#: build/blocks/logo-item/render.php:33 build/blocks/post-grid/render.php:81
+#: footer.php:43 inc/post-source.php:125
 msgid "(opens in a new tab)"
 msgstr "(opent in een nieuw tabblad)"
+
+#: blocks/card-slider/render.php:33 build/blocks/card-slider/render.php:33
+#: blocks/feature-grid/index.js:31 build/blocks/feature-grid/index.js:1
+msgid "Cards"
+msgstr "Kaarten"
+
+#: blocks/card-slider/render.php:41 build/blocks/card-slider/render.php:41
+msgid "Previous cards"
+msgstr "Vorige kaarten"
+
+#: blocks/card-slider/render.php:45 build/blocks/card-slider/render.php:45
+msgid "Next cards"
+msgstr "Volgende kaarten"
+
+#. translators: %s: website of the original source, for example linkedin.com.
+#: blocks/post-grid/render.php:79 build/blocks/post-grid/render.php:79
+#: inc/post-source.php:123
+#, php-format
+msgid "Read the original on %s"
+msgstr "Lees het origineel op %s"
+
+#. translators: %s: person's name.
+#: blocks/team-member/render.php:62 build/blocks/team-member/render.php:62
+#, php-format
+msgid "Email %s"
+msgstr "E-mail %s"
+
+#. translators: %s: person's name.
+#: blocks/team-member/render.php:75 build/blocks/team-member/render.php:75
+#, php-format
+msgid "%s on LinkedIn (opens in a new tab)"
+msgstr "%s op LinkedIn (opent in een nieuw tabblad)"
 
 #: footer.php:20
 msgid ""
@@ -142,6 +177,22 @@ msgstr "Taal"
 msgid "Contact Us"
 msgstr "Contact"
 
+#: inc/post-source.php:37 inc/post-source.php:119
+msgid "Original source"
+msgstr "Oorspronkelijke bron"
+
+#: inc/post-source.php:50
+msgid "Source URL"
+msgstr "Bron-URL"
+
+#: inc/post-source.php:52
+msgid ""
+"Link to the article, post or report this news item is based on. Readers see "
+"it as \"Read the original on …\" under the post."
+msgstr ""
+"Link naar het artikel, bericht of rapport waarop dit nieuwsbericht is "
+"gebaseerd. Lezers zien dit onder het bericht als ‘Lees het origineel op …’."
+
 #: inc/setup.php:26
 msgid "Primary menu"
 msgstr "Hoofdmenu"
@@ -230,11 +281,77 @@ msgstr "Zoeken"
 msgid "Nothing found"
 msgstr "Niets gevonden"
 
+#: blocks/accordion-item/index.js:18 build/blocks/accordion-item/index.js:1
+msgid "Question"
+msgstr "Vraag"
+
+#: blocks/accordion-item/index.js:24 build/blocks/accordion-item/index.js:1
+msgid "Answer…"
+msgstr "Antwoord…"
+
+#: blocks/accordion/index.js:29 build/blocks/accordion/index.js:1
+msgid "Accordion"
+msgstr "Accordeon"
+
+#: blocks/accordion/index.js:31 blocks/card-slider/index.js:29
+#: blocks/feature-grid/index.js:28 blocks/hero/index.js:26
+#: blocks/logo-strip/index.js:29 blocks/post-grid/index.js:40
+#: blocks/stats/index.js:30 blocks/steps/index.js:29 blocks/team/index.js:29
+#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1
+msgid "Variant"
+msgstr "Variant"
+
+#: blocks/accordion/index.js:34 build/blocks/accordion/index.js:1
+msgid "Single column"
+msgstr "Eén kolom"
+
+#: blocks/accordion/index.js:35 build/blocks/accordion/index.js:1
+msgid "With help box beside it"
+msgstr "Met hulpvak ernaast"
+
+#: blocks/accordion/index.js:40 build/blocks/accordion/index.js:1
+msgid "Add FAQ structured data"
+msgstr "FAQ-gestructureerde gegevens toevoegen"
+
+#: blocks/accordion/index.js:41 build/blocks/accordion/index.js:1
+msgid ""
+"Prints schema.org FAQPage data for search engines. Leave off if an SEO "
+"plugin handles it."
+msgstr ""
+"Voegt schema.org FAQPage-gegevens toe voor zoekmachines. Laat uit als een "
+"SEO-plugin dit al doet."
+
+#: blocks/accordion/index.js:50 build/blocks/accordion/index.js:1
+msgid "Help box button"
+msgstr "Knop in hulpvak"
+
+#: blocks/accordion/index.js:52 blocks/button/index.js:43
+#: build/blocks/accordion/index.js:1 build/blocks/button/index.js:1
+msgid "Button label"
+msgstr "Knoplabel"
+
+#: blocks/accordion/index.js:57 build/blocks/accordion/index.js:1
+msgid "Button URL"
+msgstr "Knop-URL"
+
+#: blocks/accordion/index.js:83 build/blocks/accordion/index.js:1
+msgid "Help box heading"
+msgstr "Kop in hulpvak"
+
+#: blocks/accordion/index.js:90 build/blocks/accordion/index.js:1
+msgid "Help box text"
+msgstr "Tekst in hulpvak"
+
 #: blocks/button/index.js:13 build/blocks/button/index.js:1
 msgid "Button"
 msgstr "Knop"
 
-#: blocks/button/index.js:15 build/blocks/button/index.js:1
+#: blocks/button/index.js:15 blocks/feature-column/index.js:18
+#: build/blocks/button/index.js:1 build/blocks/feature-column/index.js:1
 msgid "Link URL"
 msgstr "Link-URL"
 
@@ -258,9 +375,17 @@ msgstr "Tekstknop"
 msgid "Open in a new tab"
 msgstr "Openen in een nieuw tabblad"
 
-#: blocks/button/index.js:43 build/blocks/button/index.js:1
-msgid "Button label"
-msgstr "Knoplabel"
+#: blocks/card-slider/index.js:27 build/blocks/card-slider/index.js:1
+msgid "Card slider"
+msgstr "Kaartenslider"
+
+#: blocks/card-slider/index.js:32 build/blocks/card-slider/index.js:1
+msgid "Image as background"
+msgstr "Afbeelding als achtergrond"
+
+#: blocks/card-slider/index.js:33 build/blocks/card-slider/index.js:1
+msgid "Image on top"
+msgstr "Afbeelding bovenaan"
 
 #: blocks/cta-band/index.js:31 build/blocks/cta-band/index.js:1
 msgid "Call to action heading"
@@ -270,8 +395,244 @@ msgstr "Kop van de call-to-action"
 msgid "Short supporting text (optional)"
 msgstr "Korte ondersteunende tekst (optioneel)"
 
+#: blocks/feature-column/index.js:16 build/blocks/feature-column/index.js:1
+msgid "Column link"
+msgstr "Kolomlink"
+
+#: blocks/feature-column/index.js:24 blocks/post-grid/index.js:88
+#: build/blocks/feature-column/index.js:1 build/blocks/post-grid/index.js:1
+msgid "Link label"
+msgstr "Linklabel"
+
+#: blocks/feature-column/index.js:36 build/blocks/feature-column/index.js:1
+msgid "Column title"
+msgstr "Kolomtitel"
+
+#: blocks/feature-column/index.js:43 build/blocks/feature-column/index.js:1
+msgid "Sub-heading"
+msgstr "Subkop"
+
+#: blocks/feature-columns/index.js:33 blocks/feature-grid/index.js:55
+#: blocks/hero/index.js:83 blocks/post-grid/index.js:71
+#: blocks/rich-text-image/index.js:77 blocks/stats/index.js:62
+#: blocks/_shared/header.js:14 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Eyebrow (optional)"
+msgstr "Bovenkopje (optioneel)"
+
+#: blocks/feature-columns/index.js:40 blocks/feature-grid/index.js:62
+#: blocks/post-grid/index.js:76 blocks/rich-text-image/index.js:84
+#: blocks/rich-text/index.js:32 blocks/_shared/header.js:21
+#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Section heading"
+msgstr "Sectiekop"
+
+#: blocks/feature-columns/index.js:48 blocks/feature-grid/index.js:70
+#: blocks/post-grid/index.js:81 blocks/_shared/header.js:29
+#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+msgid "Introduction (optional)"
+msgstr "Inleiding (optioneel)"
+
+#: blocks/feature-grid-item/index.js:20
+#: build/blocks/feature-grid-item/index.js:1
+msgid "Item"
+msgstr "Item"
+
+#: blocks/feature-grid-item/index.js:23 blocks/logo-item/index.js:34
+#: blocks/post-grid/index.js:94 blocks/slide-card/index.js:33
+#: build/blocks/feature-grid-item/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/slide-card/index.js:1
+msgid "Link URL (optional)"
+msgstr "Link-URL (optioneel)"
+
+#: blocks/feature-grid-item/index.js:29 blocks/slide-card/index.js:39
+#: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
+msgid "Link label (optional)"
+msgstr "Linklabel (optioneel)"
+
+#: blocks/feature-grid-item/index.js:30
+#: build/blocks/feature-grid-item/index.js:1
+msgid ""
+"Empty: the title is the link. Filled: a separate \"learn more\" link below "
+"the text."
+msgstr ""
+"Leeg: de titel is de link. Ingevuld: een aparte ‘lees meer’-link onder de "
+"tekst."
+
+#: blocks/feature-grid-item/index.js:50
+#: build/blocks/feature-grid-item/index.js:1
+msgid "Title"
+msgstr "Titel"
+
+#: blocks/feature-grid-item/index.js:58 blocks/slide-card/index.js:69
+#: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
+msgid "Short text"
+msgstr "Korte tekst"
+
+#: blocks/feature-grid/index.js:26 build/blocks/feature-grid/index.js:1
+msgid "Grid"
+msgstr "Raster"
+
+#: blocks/feature-grid/index.js:32 build/blocks/feature-grid/index.js:1
+msgid "Plain (no boxes)"
+msgstr "Eenvoudig (zonder kaders)"
+
+#: blocks/feature-grid/index.js:33 build/blocks/feature-grid/index.js:1
+msgid "Numbered"
+msgstr "Genummerd"
+
+#: blocks/feature-grid/index.js:38 build/blocks/feature-grid/index.js:1
+msgid "Columns (wide screens)"
+msgstr "Kolommen (brede schermen)"
+
+#: blocks/hero/index.js:24 build/blocks/hero/index.js:1
+msgid "Hero"
+msgstr "Hero"
+
+#: blocks/hero/index.js:29 build/blocks/hero/index.js:1
+msgid "Banner (background image)"
+msgstr "Banner (achtergrondafbeelding)"
+
+#: blocks/hero/index.js:30 build/blocks/hero/index.js:1
+msgid "Title band (short)"
+msgstr "Titelbalk (kort)"
+
+#: blocks/hero/index.js:31 build/blocks/hero/index.js:1
+msgid "Campaign (cover image)"
+msgstr "Campagne (omslagafbeelding)"
+
+#: blocks/hero/index.js:37 build/blocks/hero/index.js:1
+msgid "Image overlay"
+msgstr "Overlay op afbeelding"
+
+#: blocks/hero/index.js:40 build/blocks/hero/index.js:1
+msgid "Standard"
+msgstr "Standaard"
+
+#: blocks/hero/index.js:41 build/blocks/hero/index.js:1
+msgid "Strong (busy photos)"
+msgstr "Sterk (drukke foto’s)"
+
+#: blocks/hero/index.js:50 build/blocks/hero/index.js:1
+msgid "Background image"
+msgstr "Achtergrondafbeelding"
+
+#: blocks/hero/index.js:59 build/blocks/hero/index.js:1
+msgid "Cover image"
+msgstr "Omslagafbeelding"
+
+#: blocks/hero/index.js:91 build/blocks/hero/index.js:1
+msgid "Page heading (h1)"
+msgstr "Paginakop (h1)"
+
+#: blocks/hero/index.js:99 build/blocks/hero/index.js:1
+msgid "Short introduction (optional)"
+msgstr "Korte inleiding (optioneel)"
+
+#: blocks/hero/index.js:117 build/blocks/hero/index.js:1
+msgid "Choose a cover image"
+msgstr "Kies een omslagafbeelding"
+
+#: blocks/logo-item/index.js:16 build/blocks/logo-item/index.js:1
+msgid "Logo image"
+msgstr "Logo-afbeelding"
+
+#: blocks/logo-item/index.js:23 build/blocks/logo-item/index.js:1
+msgid "Organisation"
+msgstr "Organisatie"
+
+#: blocks/logo-item/index.js:25 blocks/team-member/index.js:68
+#: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
+msgid "Name"
+msgstr "Naam"
+
+#: blocks/logo-item/index.js:26 build/blocks/logo-item/index.js:1
+msgid "Used as the alt text of the logo. Required for a linked logo."
+msgstr ""
+"Wordt gebruikt als alternatieve tekst van het logo. Verplicht voor een logo "
+"met link."
+
+#: blocks/logo-item/index.js:45 build/blocks/logo-item/index.js:1
+msgid "Choose a logo"
+msgstr "Kies een logo"
+
+#: blocks/logo-strip/index.js:27 build/blocks/logo-strip/index.js:1
+msgid "Logo strip"
+msgstr "Logostrook"
+
+#: blocks/logo-strip/index.js:32 build/blocks/logo-strip/index.js:1
+msgid "Grayscale (colour on hover)"
+msgstr "Grijstinten (kleur bij aanwijzen)"
+
+#: blocks/logo-strip/index.js:33 build/blocks/logo-strip/index.js:1
+msgid "Colour"
+msgstr "Kleur"
+
+#: blocks/post-grid/index.js:38 build/blocks/post-grid/index.js:1
+msgid "Posts"
+msgstr "Berichten"
+
+#: blocks/post-grid/index.js:43 build/blocks/post-grid/index.js:1
+msgid "Latest (equal cards)"
+msgstr "Nieuwste (gelijke kaarten)"
+
+#: blocks/post-grid/index.js:44 build/blocks/post-grid/index.js:1
+msgid "Featured plus grid"
+msgstr "Uitgelicht plus raster"
+
+#: blocks/post-grid/index.js:49 build/blocks/post-grid/index.js:1
+msgid "Number of posts"
+msgstr "Aantal berichten"
+
+#: blocks/post-grid/index.js:56 build/blocks/post-grid/index.js:1
+msgid "Category"
+msgstr "Categorie"
+
+#: blocks/post-grid/index.js:57 build/blocks/post-grid/index.js:1
+msgid ""
+"Categories belong to one language: on the Dutch page pick the Dutch category."
+msgstr ""
+"Categorieën horen bij één taal: kies op de Nederlandse pagina de Nederlandse "
+"categorie."
+
+#: blocks/post-grid/index.js:63 build/blocks/post-grid/index.js:1
+msgid "All categories"
+msgstr "Alle categorieën"
+
+#: blocks/post-grid/index.js:69 build/blocks/post-grid/index.js:1
+msgid "Text above the posts"
+msgstr "Tekst boven de berichten"
+
+#: blocks/post-grid/index.js:86 build/blocks/post-grid/index.js:1
+msgid "\"View all\" link"
+msgstr "Link ‘Alles bekijken’"
+
+#: blocks/post-grid/index.js:89 build/blocks/post-grid/index.js:1
+msgid "Leave empty for no link."
+msgstr "Laat leeg voor geen link."
+
+#: blocks/post-grid/index.js:95 build/blocks/post-grid/index.js:1
+msgid "Empty: the posts page from Settings → Reading."
+msgstr "Leeg: de berichtenpagina uit Instellingen → Lezen."
+
+#: blocks/post-grid/index.js:108 build/blocks/post-grid/index.js:1
+msgid "No posts to show yet in this language and category."
+msgstr "Nog geen berichten om te tonen in deze taal en categorie."
+
 #: blocks/rich-text-image/index.js:36 blocks/rich-text-image/index.js:102
-#: build/blocks/rich-text-image/index.js:1
+#: blocks/slide-card/index.js:18 build/blocks/rich-text-image/index.js:1
+#: build/blocks/slide-card/index.js:1
 msgid "Image"
 msgstr "Afbeelding"
 
@@ -287,11 +648,17 @@ msgstr "Rechts"
 msgid "Left"
 msgstr "Links"
 
-#: blocks/rich-text-image/index.js:47 build/blocks/rich-text-image/index.js:1
+#: blocks/rich-text-image/index.js:47 blocks/_shared/media.js:36
+#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/slide-card/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
 msgid "Alt text override"
 msgstr "Alternatieve tekst overschrijven"
 
-#: blocks/rich-text-image/index.js:48 build/blocks/rich-text-image/index.js:1
+#: blocks/rich-text-image/index.js:48 blocks/_shared/media.js:39
+#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/slide-card/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
 msgid ""
 "Leave empty to use the alt text of the media library item. Fill it in per "
 "language."
@@ -299,110 +666,399 @@ msgstr ""
 "Laat leeg om de alternatieve tekst van het mediabibliotheek-item te "
 "gebruiken. Vul dit per taal in."
 
-#: blocks/rich-text-image/index.js:77 build/blocks/rich-text-image/index.js:1
-msgid "Eyebrow (optional)"
-msgstr "Bovenkopje (optioneel)"
-
-#: blocks/rich-text-image/index.js:84 blocks/rich-text/index.js:32
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-msgid "Section heading"
-msgstr "Sectiekop"
-
 #: blocks/rich-text-image/index.js:91 blocks/rich-text/index.js:43
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
 msgid "Write the text…"
 msgstr "Schrijf de tekst…"
 
-#: blocks/_shared/section.js:11 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/slide-card/index.js:25 build/blocks/slide-card/index.js:1
+msgid ""
+"Leave empty: the title sits next to the image, so the image is treated as "
+"decoration."
+msgstr ""
+"Laat leeg: de titel staat naast de afbeelding, dus de afbeelding geldt als "
+"decoratie."
+
+#: blocks/slide-card/index.js:31 build/blocks/slide-card/index.js:1
+msgid "Card link"
+msgstr "Kaartlink"
+
+#: blocks/slide-card/index.js:40 build/blocks/slide-card/index.js:1
+msgid ""
+"Shown as a visual cue, for example \"Read more\". The title is the link."
+msgstr ""
+"Getoond als visuele aanwijzing, bijvoorbeeld ‘Lees meer’. De titel is de "
+"link."
+
+#: blocks/slide-card/index.js:61 build/blocks/slide-card/index.js:1
+msgid "Card title"
+msgstr "Kaarttitel"
+
+#: blocks/stat-item/index.js:15 blocks/stat-item/index.js:17
+#: build/blocks/stat-item/index.js:1
+msgid "Number"
+msgstr "Getal"
+
+#: blocks/stat-item/index.js:18 build/blocks/stat-item/index.js:1
+msgid "Plain number such as 80 or 3.8, so it can count up."
+msgstr "Gewoon getal zoals 80 of 3.8, zodat het kan oplopen."
+
+#: blocks/stat-item/index.js:23 build/blocks/stat-item/index.js:1
+msgid "Before the number"
+msgstr "Voor het getal"
+
+#: blocks/stat-item/index.js:28 build/blocks/stat-item/index.js:1
+msgid "After the number"
+msgstr "Na het getal"
+
+#: blocks/stat-item/index.js:29 build/blocks/stat-item/index.js:1
+msgid "For example % or Bn."
+msgstr "Bijvoorbeeld % of mld."
+
+#: blocks/stat-item/index.js:46 build/blocks/stat-item/index.js:1
+msgid "Label"
+msgstr "Label"
+
+#: blocks/stats/index.js:28 build/blocks/stats/index.js:1
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: blocks/stats/index.js:33 build/blocks/stats/index.js:1
+msgid "Row (heading above)"
+msgstr "Rij (kop erboven)"
+
+#: blocks/stats/index.js:34 build/blocks/stats/index.js:1
+msgid "Text beside the numbers"
+msgstr "Tekst naast de cijfers"
+
+#: blocks/stats/index.js:41 build/blocks/stats/index.js:1
+msgid "Background image (optional)"
+msgstr "Achtergrondafbeelding (optioneel)"
+
+#: blocks/stats/index.js:69 build/blocks/stats/index.js:1
+msgid "Section heading (optional)"
+msgstr "Sectiekop (optioneel)"
+
+#: blocks/stats/index.js:77 build/blocks/stats/index.js:1
+msgid "Supporting text (optional)"
+msgstr "Ondersteunende tekst (optioneel)"
+
+#: blocks/step-item/index.js:21 build/blocks/step-item/index.js:1
+msgid "Step title"
+msgstr "Staptitel"
+
+#: blocks/step-item/index.js:28 build/blocks/step-item/index.js:1
+msgid "Describe the step…"
+msgstr "Beschrijf de stap…"
+
+#: blocks/steps/index.js:27 build/blocks/steps/index.js:1
+msgid "Steps"
+msgstr "Stappen"
+
+#: blocks/steps/index.js:32 build/blocks/steps/index.js:1
+msgid "Horizontal"
+msgstr "Horizontaal"
+
+#: blocks/steps/index.js:33 build/blocks/steps/index.js:1
+msgid "Vertical (timeline)"
+msgstr "Verticaal (tijdlijn)"
+
+#: blocks/team-member/index.js:25 build/blocks/team-member/index.js:1
+msgid "Photo"
+msgstr "Foto"
+
+#: blocks/team-member/index.js:32 build/blocks/team-member/index.js:1
+msgid ""
+"Leave empty: the name sits next to the photo, so the photo is treated as "
+"decoration."
+msgstr ""
+"Laat leeg: de naam staat naast de foto, dus de foto geldt als decoratie."
+
+#: blocks/team-member/index.js:38 build/blocks/team-member/index.js:1
+msgid "Contact links"
+msgstr "Contactlinks"
+
+#: blocks/team-member/index.js:40 build/blocks/team-member/index.js:1
+msgid "Email"
+msgstr "E-mail"
+
+#: blocks/team-member/index.js:46 build/blocks/team-member/index.js:1
+msgid "LinkedIn URL"
+msgstr "LinkedIn-URL"
+
+#: blocks/team-member/index.js:76 build/blocks/team-member/index.js:1
+msgid "Role"
+msgstr "Functie"
+
+#: blocks/team/index.js:27 build/blocks/team/index.js:1
+msgid "Team"
+msgstr "Team"
+
+#: blocks/team/index.js:32 build/blocks/team/index.js:1
+msgid "Cards (portrait photos)"
+msgstr "Kaarten (staande foto’s)"
+
+#: blocks/team/index.js:33 build/blocks/team/index.js:1
+msgid "Compact (small round photos)"
+msgstr "Compact (kleine ronde foto’s)"
+
+#: blocks/_shared/icons.js:36 build/blocks/feature-grid-item/index.js:1
+msgid "Icon"
+msgstr "Pictogram"
+
+#: blocks/_shared/icons.js:39 build/blocks/feature-grid-item/index.js:1
+msgid "No icon"
+msgstr "Geen pictogram"
+
+#: blocks/_shared/media.js:19 build/blocks/hero/index.js:1
+#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+msgid "Replace image"
+msgstr "Afbeelding vervangen"
+
+#: blocks/_shared/media.js:19 build/blocks/hero/index.js:1
+#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+msgid "Choose image"
+msgstr "Afbeelding kiezen"
+
+#: blocks/_shared/media.js:31 build/blocks/hero/index.js:1
+#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: blocks/_shared/section.js:11 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Light (white)"
 msgstr "Licht (wit)"
 
-#: blocks/_shared/section.js:12 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:12 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Paper (warm off-white)"
 msgstr "Papier (warm gebroken wit)"
 
-#: blocks/_shared/section.js:13 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:13 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Dark (forest green)"
 msgstr "Donker (bosgroen)"
 
 #: blocks/_shared/section.js:17 blocks/_shared/section.js:31
-#: build/blocks/cta-band/index.js:1 build/blocks/rich-text-image/index.js:1
-#: build/blocks/rich-text/index.js:1
+#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1
 msgid "None"
 msgstr "Geen"
 
-#: blocks/_shared/section.js:18 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:18 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Small"
 msgstr "Klein"
 
-#: blocks/_shared/section.js:19 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:19 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Medium"
 msgstr "Middel"
 
-#: blocks/_shared/section.js:20 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:20 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Large (default)"
 msgstr "Groot (standaard)"
 
-#: blocks/_shared/section.js:24 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:24 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Show everywhere"
 msgstr "Overal tonen"
 
-#: blocks/_shared/section.js:25 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:25 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Hide on mobile"
 msgstr "Verbergen op mobiel"
 
-#: blocks/_shared/section.js:26 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:26 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Hide on desktop"
 msgstr "Verbergen op desktop"
 
-#: blocks/_shared/section.js:55 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:55 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Section settings"
 msgstr "Sectie-instellingen"
 
-#: blocks/_shared/section.js:57 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:57 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Background"
 msgstr "Achtergrond"
 
-#: blocks/_shared/section.js:63 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:63 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Space above"
 msgstr "Ruimte boven"
 
-#: blocks/_shared/section.js:69 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:69 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Space below"
 msgstr "Ruimte onder"
 
-#: blocks/_shared/section.js:75 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:75 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Visibility"
 msgstr "Zichtbaarheid"
 
-#: blocks/_shared/section.js:81 build/blocks/cta-band/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: blocks/_shared/section.js:81 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
 msgid "Animation"
 msgstr "Animatie"
 
-#: blocks/_shared/section.js:95 build/blocks/cta-band/index.js:1
+#: blocks/_shared/section.js:95 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1
 msgid "Heading"
 msgstr "Kop"
 
-#: blocks/_shared/section.js:97 build/blocks/cta-band/index.js:1
+#: blocks/_shared/section.js:97 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1
 msgid "Heading level"
 msgstr "Kopniveau"
+
+#: blocks/accordion-item/block.json build/blocks/accordion-item/block.json
+msgctxt "block title"
+msgid "Accordion Item"
+msgstr "Accordeon-item"
+
+#: blocks/accordion-item/block.json build/blocks/accordion-item/block.json
+msgctxt "block description"
+msgid "One question with its answer."
+msgstr "Eén vraag met het antwoord."
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block title"
+msgid "Accordion (FAQ)"
+msgstr "Accordeon (FAQ)"
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block description"
+msgid ""
+"Questions and answers that open and close, built on native details elements "
+"(works without JavaScript). Variants: single column, with a help box beside "
+"it."
+msgstr ""
+"Vragen en antwoorden die open- en dichtklappen, gebouwd op native details-"
+"elementen (werkt zonder JavaScript). Varianten: één kolom, met een hulpvak "
+"ernaast."
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr "faq"
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr "accordeon"
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "questions"
+msgstr "vragen"
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "answers"
+msgstr "antwoorden"
+
+#: blocks/accordion/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "collapse"
+msgstr "inklappen"
 
 #: blocks/button/block.json build/blocks/button/block.json
 msgctxt "block title"
@@ -414,6 +1070,47 @@ msgctxt "block description"
 msgid ""
 "A button using the ChargeNet design system. Only available inside sections."
 msgstr "Een knop in de ChargeNet-huisstijl. Alleen beschikbaar binnen secties."
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block title"
+msgid "Card Slider"
+msgstr "Kaartenslider"
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block description"
+msgid ""
+"A row of image cards you can swipe or scroll, with previous and next buttons "
+"added by JavaScript. Variants: image as background, image on top."
+msgstr ""
+"Een rij afbeeldingskaarten om te vegen of scrollen, met knoppen voor vorige "
+"en volgende die JavaScript toevoegt. Varianten: afbeelding als achtergrond, "
+"afbeelding bovenaan."
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr "slider"
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr "carrousel"
+
+#: blocks/card-slider/block.json blocks/feature-grid/block.json
+#: build/blocks/card-slider/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "cards"
+msgstr "kaarten"
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block keyword"
+msgid "projects"
+msgstr "projecten"
+
+#: blocks/card-slider/block.json build/blocks/card-slider/block.json
+msgctxt "block keyword"
+msgid "cases"
+msgstr "cases"
 
 #: blocks/cta-band/block.json build/blocks/cta-band/block.json
 msgctxt "block title"
@@ -439,15 +1136,239 @@ msgctxt "block keyword"
 msgid "call to action"
 msgstr "call-to-action"
 
-#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+#: blocks/cta-band/block.json blocks/hero/block.json
+#: build/blocks/cta-band/block.json build/blocks/hero/block.json
 msgctxt "block keyword"
 msgid "banner"
 msgstr "banner"
 
-#: blocks/cta-band/block.json build/blocks/cta-band/block.json
+#: blocks/cta-band/block.json blocks/team/block.json
+#: build/blocks/cta-band/block.json build/blocks/team/block.json
 msgctxt "block keyword"
 msgid "contact"
 msgstr "contact"
+
+#: blocks/feature-column/block.json build/blocks/feature-column/block.json
+msgctxt "block title"
+msgid "Feature Column"
+msgstr "Kenmerkkolom"
+
+#: blocks/feature-column/block.json build/blocks/feature-column/block.json
+msgctxt "block description"
+msgid "One column: title, sub-headings with lists, and a link."
+msgstr "Eén kolom: titel, subkoppen met lijsten en een link."
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block title"
+msgid "Feature Columns"
+msgstr "Kenmerkkolommen"
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block description"
+msgid ""
+"Two or three columns, each with a title, sub-headings with bullet lists and "
+"a link. For audience comparisons such as location owners and fleet managers."
+msgstr ""
+"Twee of drie kolommen, elk met een titel, subkoppen met opsommingen en een "
+"link. Voor doelgroepvergelijkingen zoals locatie-eigenaren en "
+"vlootbeheerders."
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block keyword"
+msgid "columns"
+msgstr "kolommen"
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block keyword"
+msgid "audience"
+msgstr "doelgroep"
+
+#: blocks/feature-columns/block.json blocks/feature-grid/block.json
+#: build/blocks/feature-columns/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "benefits"
+msgstr "voordelen"
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block keyword"
+msgid "lists"
+msgstr "lijsten"
+
+#: blocks/feature-columns/block.json build/blocks/feature-columns/block.json
+msgctxt "block keyword"
+msgid "comparison"
+msgstr "vergelijking"
+
+#: blocks/feature-grid-item/block.json
+#: build/blocks/feature-grid-item/block.json
+msgctxt "block title"
+msgid "Feature Item"
+msgstr "Kenmerk"
+
+#: blocks/feature-grid-item/block.json
+#: build/blocks/feature-grid-item/block.json
+msgctxt "block description"
+msgid "One item of a feature grid: icon, title, text and an optional link."
+msgstr ""
+"Eén item van een kenmerkenraster: pictogram, titel, tekst en een optionele "
+"link."
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block title"
+msgid "Feature Grid"
+msgstr "Kenmerkenraster"
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block description"
+msgid ""
+"A heading and a grid of items with icon, title and text. Variants: cards, "
+"plain, numbered."
+msgstr ""
+"Een kop en een raster van items met pictogram, titel en tekst. Varianten: "
+"kaarten, eenvoudig, genummerd."
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr "kenmerken"
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr "raster"
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "icons"
+msgstr "pictogrammen"
+
+#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "values"
+msgstr "waarden"
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block title"
+msgid "Hero"
+msgstr "Hero"
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block description"
+msgid ""
+"Opening section of a page and the only place for its h1. Variants: banner "
+"with background image, short title band, campaign with cover image."
+msgstr ""
+"Openingssectie van een pagina en de enige plek voor de h1. Varianten: banner "
+"met achtergrondafbeelding, korte titelbalk, campagne met omslagafbeelding."
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block keyword"
+msgid "hero"
+msgstr "hero"
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block keyword"
+msgid "header"
+msgstr "header"
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr "titel"
+
+#: blocks/hero/block.json build/blocks/hero/block.json
+msgctxt "block keyword"
+msgid "campaign"
+msgstr "campagne"
+
+#: blocks/logo-item/block.json build/blocks/logo-item/block.json
+msgctxt "block title"
+msgid "Logo"
+msgstr "Logo"
+
+#: blocks/logo-item/block.json build/blocks/logo-item/block.json
+msgctxt "block description"
+msgid "One logo with the organisation's name and an optional link."
+msgstr "Eén logo met de naam van de organisatie en een optionele link."
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block title"
+msgid "Logo Strip"
+msgstr "Logostrook"
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block description"
+msgid ""
+"A row of partner, funder or customer logos, each optionally linked. "
+"Variants: grayscale and colour."
+msgstr ""
+"Een rij logo’s van partners, financiers of klanten, elk eventueel met een "
+"link. Varianten: grijstinten en kleur."
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block keyword"
+msgid "logos"
+msgstr "logo’s"
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block keyword"
+msgid "partners"
+msgstr "partners"
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block keyword"
+msgid "clients"
+msgstr "klanten"
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block keyword"
+msgid "funders"
+msgstr "financiers"
+
+#: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+msgctxt "block keyword"
+msgid "brands"
+msgstr "merken"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block title"
+msgid "Post Grid"
+msgstr "Berichtenraster"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block description"
+msgid ""
+"The newest blog posts in the page's language as cards. Variants: latest "
+"(equal cards), featured plus grid (the first post larger)."
+msgstr ""
+"De nieuwste blogberichten in de taal van de pagina als kaarten. Varianten: "
+"nieuwste (gelijke kaarten), uitgelicht plus raster (het eerste bericht "
+"groter)."
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "berichten"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block keyword"
+msgid "news"
+msgstr "nieuws"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block keyword"
+msgid "blog"
+msgstr "blog"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block keyword"
+msgid "latest"
+msgstr "nieuwste"
+
+#: blocks/post-grid/block.json build/blocks/post-grid/block.json
+msgctxt "block keyword"
+msgid "articles"
+msgstr "artikelen"
 
 #: blocks/rich-text-image/block.json build/blocks/rich-text-image/block.json
 msgctxt "block title"
@@ -496,6 +1417,165 @@ msgid ""
 msgstr ""
 "Een eenvoudige sectie voor koppen, alinea’s, lijsten en citaten in een "
 "leesbare kolom."
+
+#: blocks/slide-card/block.json build/blocks/slide-card/block.json
+msgctxt "block title"
+msgid "Slide Card"
+msgstr "Slidekaart"
+
+#: blocks/slide-card/block.json build/blocks/slide-card/block.json
+msgctxt "block description"
+msgid "One card: image, title, text and an optional link to a detail page."
+msgstr ""
+"Eén kaart: afbeelding, titel, tekst en een optionele link naar een "
+"detailpagina."
+
+#: blocks/stat-item/block.json build/blocks/stat-item/block.json
+msgctxt "block title"
+msgid "Statistic"
+msgstr "Statistiek"
+
+#: blocks/stat-item/block.json build/blocks/stat-item/block.json
+msgctxt "block description"
+msgid ""
+"One number with a label, for example 80 % of trucks charge at their "
+"destination."
+msgstr ""
+"Eén getal met een label, bijvoorbeeld 80 % van de trucks laadt op de "
+"bestemming."
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block title"
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block description"
+msgid ""
+"Headline numbers with labels, optionally with a heading, text and background "
+"image. Variants: row, with text beside."
+msgstr ""
+"Opvallende cijfers met labels, eventueel met een kop, tekst en "
+"achtergrondafbeelding. Varianten: rij, met tekst ernaast."
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "stats"
+msgstr "statistieken"
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "numbers"
+msgstr "cijfers"
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "counters"
+msgstr "tellers"
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "figures"
+msgstr "cijfers"
+
+#: blocks/stats/block.json build/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "impact"
+msgstr "impact"
+
+#: blocks/step-item/block.json build/blocks/step-item/block.json
+msgctxt "block title"
+msgid "Step"
+msgstr "Stap"
+
+#: blocks/step-item/block.json build/blocks/step-item/block.json
+msgctxt "block description"
+msgid "One step: a title and a short text or list."
+msgstr "Eén stap: een titel en een korte tekst of lijst."
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block title"
+msgid "Steps"
+msgstr "Stappen"
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block description"
+msgid ""
+"A numbered process. Variants: horizontal (side by side on wide screens) and "
+"vertical (a timeline down the page)."
+msgstr ""
+"Een genummerd proces. Varianten: horizontaal (naast elkaar op brede "
+"schermen) en verticaal (een tijdlijn over de pagina)."
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block keyword"
+msgid "steps"
+msgstr "stappen"
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block keyword"
+msgid "process"
+msgstr "proces"
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block keyword"
+msgid "how it works"
+msgstr "hoe het werkt"
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block keyword"
+msgid "timeline"
+msgstr "tijdlijn"
+
+#: blocks/steps/block.json build/blocks/steps/block.json
+msgctxt "block keyword"
+msgid "numbered"
+msgstr "genummerd"
+
+#: blocks/team-member/block.json build/blocks/team-member/block.json
+msgctxt "block title"
+msgid "Team Member"
+msgstr "Teamlid"
+
+#: blocks/team-member/block.json build/blocks/team-member/block.json
+msgctxt "block description"
+msgid "One person: photo, name, role, and optional email and LinkedIn links."
+msgstr ""
+"Eén persoon: foto, naam, functie en optionele e-mail- en LinkedIn-links."
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block title"
+msgid "Team"
+msgstr "Team"
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block description"
+msgid ""
+"People with photo, name, role and contact links. Variants: cards (portrait "
+"photos) and compact (small round photos, for contact cards)."
+msgstr ""
+"Mensen met foto, naam, functie en contactlinks. Varianten: kaarten (staande "
+"foto’s) en compact (kleine ronde foto’s, voor contactkaarten)."
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block keyword"
+msgid "team"
+msgstr "team"
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block keyword"
+msgid "people"
+msgstr "mensen"
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block keyword"
+msgid "staff"
+msgstr "medewerkers"
+
+#: blocks/team/block.json build/blocks/team/block.json
+msgctxt "block keyword"
+msgid "advisors"
+msgstr "adviseurs"
 
 #: theme.json
 msgctxt "Color name"

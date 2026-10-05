@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/accordion",
+  "title": "Accordion (FAQ)",
+  "category": "chargenet-sections",
+  "icon": "list-view",
+  "description": "Questions and answers that open and close, built on native details elements (works without JavaScript). Variants: single column, with a help box beside it.",
+  "keywords": ["faq", "accordion", "questions", "answers", "collapse"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["single", "with-aside"], "default": "single" },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "intro": { "type": "string", "default": "" },
+    "asideHeading": { "type": "string", "default": "" },
+    "asideText": { "type": "string", "default": "" },
+    "asideLabel": { "type": "string", "default": "" },
+    "asideUrl": { "type": "string", "default": "" },
+    "faqSchema": { "type": "boolean", "default": false }
+  },
+  "providesContext": { "chargenet/headingLevel": "headingLevel" },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": { "heading": "Frequently asked questions" },
+    "innerBlocks": [
+      {
+        "name": "chargenet/accordion-item",
+        "attributes": { "question": "How do I start charging?" },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": { "content": "Open the app, pick a site and start." }
+          }
+        ]
+      },
+      {
+        "name": "chargenet/accordion-item",
+        "attributes": { "question": "Who can use a private site?" },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": { "content": "Only drivers the site owner approved." }
+          }
+        ]
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

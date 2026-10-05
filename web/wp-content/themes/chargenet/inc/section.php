@@ -36,6 +36,19 @@ function chargenet_section_option( array $attributes, string $key ): string {
 }
 
 /**
+ * Number of sections opened so far on this page (1 inside the first section). Used to tell first-viewport images apart.
+ *
+ * @param bool $increment Count a newly opened section.
+ */
+function chargenet_section_counter( bool $increment = false ): int {
+	static $count = 0;
+	if ( $increment ) {
+		++$count;
+	}
+	return $count;
+}
+
+/**
  * Open a section: <section> (with anchor id, classes and data attributes) and the inner container.
  *
  * Pair with chargenet_section_close(). Call from a block's render.php, where block supports are available.
@@ -44,6 +57,7 @@ function chargenet_section_option( array $attributes, string $key ): string {
  * @param array<string, mixed> $args       name (string, required), labelledby (heading id), label (aria-label), container (narrow|wide|'' ), class.
  */
 function chargenet_section_open( array $attributes, array $args = array() ): void {
+	chargenet_section_counter( true );
 	$hide    = chargenet_section_option( $attributes, 'hideOn' );
 	$classes = array(
 		'section',
@@ -105,4 +119,37 @@ function chargenet_heading( string $text, int $level = 2, string $id = '', strin
 		'' !== $css_class ? ' class="' . esc_attr( $css_class ) . '"' : '',
 		wp_kses_post( $text )
 	);
+}
+
+/**
+ * Id for a section's heading when it has one (for aria-labelledby), else an empty string.
+ *
+ * @param array<string, mixed> $attributes Block attributes.
+ */
+function chargenet_section_title_id( array $attributes ): string {
+	return '' !== trim( wp_strip_all_tags( (string) ( $attributes['heading'] ?? '' ) ) ) ? wp_unique_id( 'section-title-' ) : '';
+}
+
+/**
+ * Intro block above a section's content: eyebrow, heading, introduction. Prints nothing when all three are empty.
+ *
+ * @param array<string, mixed> $attributes Block attributes (eyebrow, heading, headingLevel, intro).
+ * @param string               $title_id   Id from chargenet_section_title_id().
+ */
+function chargenet_section_header( array $attributes, string $title_id ): void {
+	$eyebrow = trim( wp_strip_all_tags( (string) ( $attributes['eyebrow'] ?? '' ) ) );
+	$intro   = (string) ( $attributes['intro'] ?? '' );
+	$has_in  = '' !== trim( wp_strip_all_tags( $intro ) );
+	if ( '' === $eyebrow && '' === $title_id && ! $has_in ) {
+		return;
+	}
+	echo '<header class="section-intro stack">';
+	if ( '' !== $eyebrow ) {
+		echo '<p class="t-eyebrow">' . esc_html( $eyebrow ) . '</p>';
+	}
+	chargenet_heading( (string) ( $attributes['heading'] ?? '' ), (int) ( $attributes['headingLevel'] ?? 2 ), $title_id );
+	if ( $has_in ) {
+		echo '<p class="t-lead">' . wp_kses_post( $intro ) . '</p>';
+	}
+	echo '</header>';
 }

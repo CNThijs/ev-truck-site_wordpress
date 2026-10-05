@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/post-grid",
+  "title": "Post Grid",
+  "category": "chargenet-sections",
+  "icon": "screenoptions",
+  "description": "The newest blog posts in the page's language as cards. Variants: latest (equal cards), featured plus grid (the first post larger).",
+  "keywords": ["posts", "news", "blog", "latest", "articles"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["latest", "featured-grid"], "default": "latest" },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "intro": { "type": "string", "default": "" },
+    "count": { "type": "number", "default": 3 },
+    "categoryId": { "type": "number", "default": 0 },
+    "linkLabel": { "type": "string", "default": "" },
+    "linkUrl": { "type": "string", "default": "" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "sectionBackground": "paper",
+      "heading": "Latest news",
+      "linkLabel": "View all news"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

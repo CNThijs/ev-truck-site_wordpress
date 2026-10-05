@@ -1,0 +1,9 @@
+// Editor-only tweaks. Front-end styles (style.scss) also load in the editor.
+.accordion__list > .block-editor-inner-blocks {
+	display: block;
+}
+
+// In the editor every answer stays visible so it can be edited.
+.accordion-item .accordion-item__panel {
+	display: flex;
+}

@@ -1,0 +1,13 @@
+// Editor-only tweaks. Front-end styles (style.scss) also load in the editor.
+.hero__actions .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4);
+}
+
+.hero__cover-empty {
+	padding: var(--space-6);
+	border: 2px dashed currentcolor;
+	border-radius: var(--radius-lg);
+	text-align: center;
+}

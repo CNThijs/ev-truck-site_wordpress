@@ -1,0 +1,98 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.accordion {
+	&__layout {
+		display: grid;
+		gap: var(--space-block);
+
+		&--aside {
+			@include up(md) {
+				grid-template-columns: 2fr 1fr;
+				align-items: start;
+			}
+		}
+	}
+
+	&__list {
+		border-top: 1px solid var(--border);
+	}
+
+	&__aside {
+		@include up(md) {
+			position: sticky;
+			top: 7rem;
+		}
+	}
+
+	&__aside-title {
+		font-size: var(--text-xl);
+	}
+
+	.block-editor-block-list__layout {
+		display: block;
+	}
+}
+
+.accordion-item {
+	border-bottom: 1px solid var(--border);
+
+	&__summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-4);
+		min-height: 3.5rem;
+		padding-block: var(--space-4);
+		font-size: var(--text-lg);
+		font-weight: var(--weight-semibold);
+		list-style: none;
+		cursor: pointer;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		// Plus that turns into a minus when open: two bars, no icon file.
+		&::after {
+			content: '';
+			flex: none;
+			width: 0.75rem;
+			height: 0.75rem;
+			background:
+				linear-gradient(currentcolor, currentcolor) center / 100% 2px no-repeat,
+				linear-gradient(currentcolor, currentcolor) center / 2px 100% no-repeat;
+			color: var(--accent);
+
+			@include motion(transform);
+		}
+
+		&:focus-visible {
+			@include focus-ring;
+
+			border-radius: var(--radius-sm);
+		}
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&[open] &__summary::after {
+		background: linear-gradient(currentcolor, currentcolor) center / 100% 2px no-repeat;
+		transform: rotate(180deg);
+	}
+
+	&__panel {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		padding-bottom: var(--space-5);
+		color: var(--fg-muted);
+	}
+
+	&__panel ul,
+	&__panel ol {
+		margin: 0;
+		padding-left: 1.25em;
+	}
+}

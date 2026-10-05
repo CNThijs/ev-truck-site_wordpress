@@ -1,0 +1,116 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.team {
+	&__list {
+		display: grid;
+		gap: var(--space-6) var(--space-5);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+	}
+
+	&--compact &__list {
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+	}
+
+	.block-editor-block-list__layout {
+		display: contents;
+	}
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+	min-width: 0;
+
+	&__photo {
+		overflow: hidden;
+		margin: 0;
+		aspect-ratio: 4 / 5;
+		border-radius: var(--radius-lg);
+		background: color-mix(in srgb, var(--accent) 14%, transparent);
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// No photo: the initials on the accent tint.
+	&__initials {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		color: var(--accent);
+		font-size: var(--text-4xl);
+		font-weight: var(--weight-light);
+	}
+
+	&__name {
+		font-size: var(--text-xl);
+	}
+
+	&__role {
+		color: var(--fg-muted);
+	}
+
+	&__links {
+		display: flex;
+		gap: var(--space-2);
+		margin: var(--space-1) 0 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.75rem;
+		height: 2.75rem;
+		border-radius: var(--radius-pill);
+		color: var(--accent);
+
+		@include motion(background-color);
+
+		&:hover {
+			background: color-mix(in srgb, var(--accent) 14%, transparent);
+		}
+
+		&:focus-visible {
+			@include focus-ring;
+		}
+
+		.icon {
+			width: 1.375rem;
+			height: 1.375rem;
+		}
+	}
+}
+
+// Compact: a small round photo beside the text.
+.team--compact .person {
+	display: grid;
+	grid-template-columns: 5rem 1fr;
+	align-items: center;
+	gap: var(--space-4);
+
+	&__photo {
+		grid-row: span 3;
+		aspect-ratio: 1;
+		border-radius: var(--radius-pill);
+	}
+
+	&__initials {
+		font-size: var(--text-2xl);
+	}
+
+	&__name {
+		font-size: var(--text-lg);
+	}
+}

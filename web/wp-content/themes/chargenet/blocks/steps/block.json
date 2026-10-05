@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/steps",
+  "title": "Steps",
+  "category": "chargenet-sections",
+  "icon": "editor-ol",
+  "description": "A numbered process. Variants: horizontal (side by side on wide screens) and vertical (a timeline down the page).",
+  "keywords": ["steps", "process", "how it works", "timeline", "numbered"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["horizontal", "vertical"], "default": "horizontal" },
+    "eyebrow": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "headingLevel": { "type": "number", "default": 2 },
+    "intro": { "type": "string", "default": "" }
+  },
+  "providesContext": { "chargenet/headingLevel": "headingLevel" },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": { "sectionBackground": "paper", "heading": "How it works" },
+    "innerBlocks": [
+      { "name": "chargenet/step-item", "attributes": { "title": "Register" } },
+      { "name": "chargenet/step-item", "attributes": { "title": "Configure" } },
+      { "name": "chargenet/step-item", "attributes": { "title": "Start earning" } }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,125 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.steps {
+	&__list {
+		display: grid;
+		gap: var(--space-6);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: step;
+	}
+
+	.block-editor-block-list__layout {
+		display: contents;
+	}
+
+	// Horizontal: side by side on wide screens, joined by a dashed line between the numbers.
+	&--horizontal .steps__list {
+		@include up(md) {
+			grid-auto-flow: column;
+			grid-auto-columns: minmax(0, 1fr);
+			gap: var(--space-5);
+		}
+	}
+
+	&--horizontal .step {
+		@include up(md) {
+			display: flex;
+			flex-direction: column;
+			gap: var(--space-4);
+		}
+
+		&:not(:last-child)::after {
+			@include up(md) {
+				content: '';
+				position: absolute;
+				top: 1.5rem;
+				left: calc(3rem + var(--space-3));
+				right: calc(var(--space-3) - var(--space-5));
+				border-top: 2px dashed var(--border);
+			}
+		}
+	}
+
+	// Vertical: a line down the left with the numbers sitting on it.
+	&--vertical .steps__list {
+		margin-left: 1.5rem;
+		border-left: 2px solid var(--border);
+		gap: var(--space-7);
+	}
+
+	&--vertical .step {
+		display: block;
+		padding-left: var(--space-7);
+
+		.step__number {
+			position: absolute;
+			top: 0;
+			left: calc(-1.5rem - 1px);
+		}
+	}
+}
+
+.step {
+	position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: var(--space-4);
+	counter-increment: step;
+
+	&__number {
+		position: relative;
+		display: inline-flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		border-radius: var(--radius-pill);
+		background: var(--accent);
+		color: var(--bg);
+		font-size: var(--text-lg);
+		font-weight: var(--weight-bold);
+
+		// Decorative counter: the list is already numbered for assistive technology.
+		&::before {
+			content: counter(step);
+			content: counter(step) / '';
+		}
+	}
+
+	&__title {
+		font-size: var(--text-xl);
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		min-width: 0;
+		padding-top: var(--space-2);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		color: var(--fg-muted);
+	}
+
+	&__content ul,
+	&__content ol {
+		margin: 0;
+		padding-left: 1.25em;
+		list-style: disc;
+
+		li + li {
+			margin-top: var(--space-2);
+		}
+
+		li::marker {
+			color: var(--accent);
+		}
+	}
+}

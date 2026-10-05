@@ -1,0 +1,57 @@
+@use '../../assets/src/scss/mixins' as *;
+
+.feature-columns {
+	&__list {
+		display: grid;
+		gap: var(--space-block);
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	}
+
+	.block-editor-block-list__layout {
+		display: contents;
+	}
+}
+
+.feature-column {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+	min-width: 0;
+
+	&__title {
+		padding-bottom: var(--space-3);
+		border-bottom: 2px solid var(--accent);
+		font-size: var(--text-2xl);
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+	}
+
+	&__body h4,
+	&__body h5 {
+		margin-top: var(--space-3);
+		font-size: var(--text-lg);
+	}
+
+	&__body ul,
+	&__body ol {
+		margin: 0;
+		padding-left: 1.25em;
+
+		li + li {
+			margin-top: var(--space-2);
+		}
+
+		li::marker {
+			color: var(--accent);
+		}
+	}
+
+	&__link {
+		margin-top: auto;
+		padding-top: var(--space-3);
+	}
+}
