@@ -6,7 +6,7 @@
   "category": "chargenet-sections",
   "parent": ["chargenet/team"],
   "icon": "admin-users",
-  "description": "One person: photo, name, role, and optional email and LinkedIn links.",
+  "description": "One person: photo, name, role, optional short bio and email and LinkedIn links.",
   "textdomain": "chargenet",
   "attributes": {
     "imageId": { "type": "number", "default": 0 },
@@ -14,6 +14,7 @@
     "imageAlt": { "type": "string", "default": "" },
     "name": { "type": "string", "default": "" },
     "role": { "type": "string", "default": "" },
+    "bio": { "type": "string", "default": "" },
     "email": { "type": "string", "default": "" },
     "linkedin": { "type": "string", "default": "" }
   },

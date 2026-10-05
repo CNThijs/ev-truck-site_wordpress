@@ -21,6 +21,7 @@ if ( '' === $chargenet_title ) {
 $chargenet_text  = (string) ( $attributes['text'] ?? '' );
 $chargenet_url   = (string) ( $attributes['url'] ?? '' );
 $chargenet_label = trim( wp_strip_all_tags( (string) ( $attributes['linkLabel'] ?? '' ) ) );
+$chargenet_tags  = array_filter( array_map( 'trim', explode( ',', wp_strip_all_tags( (string) ( $attributes['tags'] ?? '' ) ) ) ) );
 $chargenet_level = max( 3, min( 4, (int) ( $block->context['chargenet/headingLevel'] ?? 2 ) + 1 ) );
 $chargenet_is_bg = 'image-bg' === ( $block->context['chargenet/sliderVariant'] ?? 'image-bg' );
 $chargenet_alt   = trim( (string) ( $attributes['imageAlt'] ?? '' ) );
@@ -50,6 +51,13 @@ $chargenet_image = chargenet_image(
 		</h<?php echo (int) $chargenet_level; ?>>
 		<?php if ( '' !== trim( wp_strip_all_tags( $chargenet_text ) ) ) : ?>
 			<p class="slide__text"><?php echo wp_kses_post( $chargenet_text ); ?></p>
+		<?php endif; ?>
+		<?php if ( $chargenet_tags ) : ?>
+			<ul class="slide__tags" role="list">
+				<?php foreach ( $chargenet_tags as $chargenet_tag ) : ?>
+					<li class="badge badge--outline"><?php echo esc_html( $chargenet_tag ); ?></li>
+				<?php endforeach; ?>
+			</ul>
 		<?php endif; ?>
 		<?php if ( '' !== $chargenet_url && '' !== $chargenet_label ) : ?>
 			<span class="slide__more" aria-hidden="true"><?php echo esc_html( $chargenet_label ); ?> →</span>

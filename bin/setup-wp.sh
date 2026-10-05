@@ -14,16 +14,15 @@ fi
 if ! wp core is-installed --path=web 2>/dev/null; then
 	wp core install --path=web --url="$DDEV_PRIMARY_URL" --title=ChargeNet \
 		--admin_user=admin --admin_password=admin --admin_email=admin@chargenet.test --skip-email
+	# WordPress sample page and draft privacy page (their slugs would clash with the seeded pages).
+	wp post delete 2 3 --force --path=web
 fi
 
 wp rewrite structure '/blog/%postname%/' --path=web >/dev/null
 wp theme activate chargenet --path=web
 wp plugin activate polylang --path=web
 
-# Polylang languages and settings (en default, nl; /en/ and /nl/ URLs), then the Home pages.
+# Polylang languages and settings (en default, nl; /en/ and /nl/ URLs), then media, pages, front page and menus.
 wp eval-file bin/setup-polylang.php --path=web
-wp eval-file bin/seed-pages.php --path=web
-
-# Starter menus in English and Dutch (custom links; the pages are built in later epics, so the URLs are placeholders).
-wp eval-file bin/seed-menus.php --path=web
+wp eval-file bin/seed-content.php --path=web
 wp rewrite flush --path=web >/dev/null

@@ -1,0 +1,330 @@
+{
+  "intro": "Deze privacyverklaring bevat belangrijke informatie, omdat hierin staat hoe ChargeNet omgaat met persoonsgegevens van app-gebruikers (“gebruiker” of “u”). Lees deze privacyverklaring zorgvuldig door voordat u onze diensten gebruikt. Als u vragen heeft, neem dan gerust contact met ons op.",
+  "updated": "Laatst bijgewerkt: 6 november 2024",
+  "sections": [
+    {
+      "title": "Over ons",
+      "nodes": [
+        {
+          "p": "Chargenet B.V. (“ChargeNet”, “wij”, “ons” of “onze”) hecht veel belang aan de bescherming van de privacy en de persoonsgegevens van haar gebruikers. Wij verzamelen en gebruiken uw persoonsgegevens wanneer u onze diensten gebruikt. Deze privacyverklaring legt uit hoe wij uw persoonsgegevens verzamelen, gebruiken, opslaan, delen, doorgeven of anderszins verwerken wanneer u, of in het geval van zakelijke gebruikers de personen die namens u handelen (uw “personeel”), onze diensten gebruikt of gebruiken."
+        },
+        {
+          "p": "Verwijzingen naar personeel hieronder zijn alleen van belang voor het gebruik door zakelijke gebruikers. Elke verwijzing naar “uw” persoonsgegevens moet voor zakelijke gebruikers worden gelezen als een verwijzing naar de persoonsgegevens van personeel."
+        }
+      ]
+    },
+    {
+      "title": "Reikwijdte",
+      "nodes": [
+        {
+          "p": "De reikwijdte van deze privacyverklaring is beperkt tot verwerkingsactiviteiten waarop de Algemene Verordening Gegevensbescherming (“AVG”) en de nationale uitvoeringswetten van toepassing zijn."
+        }
+      ]
+    },
+    {
+      "title": "Verantwoordelijkheid",
+      "nodes": [
+        {
+          "p": "Wij verwerken persoonsgegevens uitsluitend in overeenstemming met de toepasselijke wetgeving inzake gegevensbescherming en zoals beschreven in deze privacyverklaring."
+        },
+        {
+          "p": "Onze app kan links bevatten naar websites van derden. Wij zijn niet verantwoordelijk voor de inhoud van deze websites, voor de diensten die deze derden verlenen, of voor de naleving van de toepasselijke privacywetgeving door deze derden."
+        }
+      ]
+    },
+    {
+      "title": "Hoe wij uw persoonsgegevens verkrijgen",
+      "nodes": [
+        {
+          "p": "Wij verkrijgen uw persoonsgegevens op verschillende manieren:"
+        },
+        {
+          "ul": [
+            "Wij verkrijgen informatie die u actief aan ons verstrekt. Bijvoorbeeld wanneer u contact met ons opneemt, wanneer u zich aanmeldt of wanneer u ons informatie geeft in het kader van onze diensten.",
+            "Wij verkrijgen sommige informatie automatisch wanneer u onze app gebruikt. Bijvoorbeeld via cookies wanneer u de app gebruikt.",
+            "Wij verkrijgen ook informatie van derden. Wij kunnen bijvoorbeeld informatie over uw bedrijf opvragen bij het handelsregister van de Kamer van Koophandel.",
+            "Wij kunnen analyses uitvoeren op persoonsgegevens over u. De daaruit voortvloeiende gegevens kunnen ook als persoonsgegevens over u gelden. Wij kunnen bijvoorbeeld analyseren welke pagina’s het vaakst worden bezocht."
+          ]
+        },
+        {
+          "p": "Het kan zijn dat het verstrekken van bepaalde persoonsgegevens aan ons een wettelijke of contractuele verplichting is, een vereiste om een overeenkomst te kunnen sluiten, of dat u anderszins verplicht bent ons de gegevens te verstrekken. Als dat het geval is, informeren wij u daar afzonderlijk over en leggen wij ook de mogelijke gevolgen uit als u deze persoonsgegevens niet aan ons verstrekt."
+        }
+      ]
+    },
+    {
+      "title": "Details van de verwerking",
+      "nodes": [
+        {
+          "p": "Het hangt van de verwerkingsactiviteit af welke persoonsgegevens wij over u verwerken, voor welke doeleinden en op welke grondslag. Hieronder vindt u een overzicht."
+        },
+        {
+          "table": {
+            "headers": [
+              "Activiteit",
+              "Categorieën verwerkte persoonsgegevens",
+              "Grondslag/grondslagen en doeleinden van de verwerking"
+            ],
+            "rows": [
+              [
+                "Toegang tot onze app",
+                "IP-adres, browsegeschiedenis, cookievoorkeuren, bewegingen in onze app, tezamen aangeduid als “cookie-informatie”. Voor gedetailleerde informatie over ons gebruik van cookies verwijzen wij naar artikel 6.",
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens op basis van uw toestemming of, indien wij wettelijk niet verplicht zijn om toestemming te vragen, op basis van onze gerechtvaardigde belangen, namelijk het verbeteren van onze online diensten. Dit is het geval bij technische cookies die nodig zijn voor het functioneren van de app en bij enkele analytische cookies die niet worden gebruikt om u anders te behandelen dan andere gebruikers.",
+                    "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het verbeteren van onze app, (ii) u de diensten kunnen tonen die bij uw voorkeuren passen, (iii) u op al uw apparaten een consistente service kunnen bieden, (iv) het verbeteren van onze beveiliging en het beschermen van uw gegevens en (v) het verbeteren van uw gebruikservaring."
+                  ]
+                }
+              ],
+              [
+                "Gebruik van onze app",
+                {
+                  "ul": [
+                    "Inloggegevens zoals gebruikersnaam en wachtwoord",
+                    "Contactgegevens zoals uw naam",
+                    "E-mailadres en telefoonnummer",
+                    "Kentekens",
+                    "Informatie over uw gebruik van private laadpunten",
+                    "Betalingsgegevens",
+                    "Informatie die via beoordelingen is verstrekt"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens op basis van uw toestemming of, indien wij wettelijk niet verplicht zijn om toestemming te vragen, op basis van onze gerechtvaardigde belangen, namelijk het verbeteren van onze online diensten. Dit is het geval bij technische cookies die nodig zijn voor het functioneren van de app en bij enkele analytische cookies die niet worden gebruikt om u anders te behandelen dan andere gebruikers.",
+                    "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het verbeteren van onze app, (ii) u de diensten kunnen tonen die bij uw voorkeuren passen, (iii) u op al uw apparaten een consistente service kunnen bieden, (iv) het verbeteren van onze beveiliging en het beschermen van uw gegevens en (v) het verbeteren van uw gebruikservaring."
+                  ]
+                }
+              ],
+              [
+                "Klantenservice of anderszins met u corresponderen",
+                {
+                  "ul": [
+                    "Uw naam, e-mailadres en telefoonnummer",
+                    "Inhoud van uw bericht, bijvoorbeeld een klacht of foto’s van een beschadigd product",
+                    "Gegevens over de opvolging"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens omdat dit nodig is voor de uitvoering van een overeenkomst of op basis van onze gerechtvaardigde belangen, namelijk het controleren van uw identiteit om veiligheidsredenen, het verbeteren van onze diensten en het verlenen van klantenservice.",
+                    "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het opvolgen van uw vragen, klachten en claims, (ii) het verstrekken van informatie over diensten die voor u relevant zijn en (iii) het verbeteren van onze beveiliging en het beschermen van uw gegevens."
+                  ]
+                }
+              ],
+              [
+                "Overige algemene doeleinden",
+                {
+                  "ul": [
+                    "Alle informatie die wij mogelijk over u hebben en die nodig is voor het betreffende verwerkingsdoel."
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens omdat dit nodig kan zijn om te voldoen aan een wettelijke verplichting die op ons als verwerkingsverantwoordelijke van toepassing is, of ter behartiging van onze gerechtvaardigde belangen, namelijk het uitvoeren van onze reguliere bedrijfsactiviteiten en het beschermen van onze belangen.",
+                    "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het opvolgen van verzoeken van overheidsinstanties, (ii) het voeren van strafrechtelijke onderzoeken, vervolgingen, processen en de tenuitvoerlegging van vonnissen, (iii) het beschermen van de rechten van derden, (iv) het verrichten van statistisch of wetenschappelijk onderzoek, of (v) andere omstandigheden zoals bepaald in de relevante wet- en regelgeving."
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Als en voor zover uw persoonsgegevens worden verwerkt op basis van gerechtvaardigde belangen, kunt u informatie krijgen over de zogenoemde belangenafweging die is uitgevoerd om ons op deze verwerkingsgrondslag te kunnen beroepen. Uit deze afweging blijkt waarom onze gerechtvaardigde belangen in die specifieke gevallen zwaarder wegen dan uw recht op privacy. Onze contactgegevens vindt u hieronder."
+        },
+        {
+          "p": "Het kan zijn dat wij uw persoonsgegevens verder willen verwerken voor een ander doel dan waarvoor ze zijn verzameld. In dat geval verstrekken wij u vóór die verdere verwerking informatie over dat andere doel of die andere doelen en alle relevante aanvullende informatie."
+        }
+      ]
+    },
+    {
+      "title": "Cookies",
+      "nodes": [
+        {
+          "p": "Hieronder vindt u een overzicht van de cookies die wij gebruiken:"
+        },
+        {
+          "table": {
+            "headers": [
+              "",
+              "Naam van de cookie",
+              "Doel van de cookie",
+              "Wordt deze cookie door een derde geplaatst of wordt de cookie-informatie met derden gedeeld?",
+              "Geldigheidsduur",
+              "Toestemming vereist?"
+            ],
+            "rows": [
+              ["Functionele cookies", "", "", "", "", ""],
+              ["Analytische cookies", "", "", "", "", ""],
+              ["Affiliate-cookies", "", "", "", "", ""],
+              ["Trackingcookies", "", "", "", "", ""]
+            ]
+          }
+        },
+        {
+          "p": "U kunt uw cookie-instellingen in het algemeen – voor alle apps of websites die u bezoekt – wijzigen via de instellingen van uw apparaat. Per besturingssysteem verschilt welke keuzes u kunt maken, zoals het weigeren van alle cookies van derden. Voor meer informatie over het wijzigen van uw instellingen verwijzen wij u naar: https://allaboutcookies.org/how-to-manage-cookies."
+        },
+        {
+          "p": "Houd er rekening mee dat als u bepaalde cookies weigert, sommige onderdelen van onze app minder goed kunnen functioneren."
+        }
+      ]
+    },
+    {
+      "title": "Delen met derden",
+      "nodes": [
+        {
+          "p": "Voor het verlenen van onze diensten delen wij uw persoonsgegevens, uitsluitend voor zover noodzakelijk, met:"
+        },
+        {
+          "table": {
+            "headers": ["Activiteit", "Ontvangers", "Locatie"],
+            "rows": [
+              [
+                "Toegang tot onze app",
+                {
+                  "ul": ["Door ons ingeschakelde verwerkers, zoals hostingproviders."]
+                },
+                "EU"
+              ],
+              [
+                "Gebruik van onze app",
+                {
+                  "ul": [
+                    "Laadpuntaanbieders;",
+                    "Onderaannemers of dienstverleners, zoals adviesbureaus, advocatenkantoren, verzekeringsmaatschappijen en betaaldienstverleners;",
+                    "Door ons ingeschakelde verwerkers, zoals salarisadministrateurs en hostingproviders."
+                  ]
+                },
+                "EU"
+              ],
+              [
+                "Klantenservice of anderszins met u corresponderen",
+                {
+                  "ul": ["Door ons ingeschakelde verwerkers, zoals hostingproviders."]
+                },
+                "EU"
+              ],
+              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Doorgifte naar landen buiten de EER",
+      "nodes": [
+        {
+          "p": "Wij schakelen voor de verwerking van uw persoonsgegevens geen partijen in die buiten de Europese Economische Ruimte (“EER”) zijn gevestigd. Mocht dit in de toekomst wel het geval zijn, dan informeren wij u daar naar behoren over en is de hieronder beschreven procedure van toepassing."
+        },
+        {
+          "p": "Doorgifte van uw persoonsgegevens naar een land buiten de EER kan in de eerste plaats worden gelegitimeerd op basis van een zogenoemd adequaatheidsbesluit. Dit is een besluit waarin de Europese Commissie vaststelt dat bijvoorbeeld een bepaald land een niveau van gegevensbescherming biedt dat vergelijkbaar is met de AVG. Zie deze link voor de actuele lijst van adequaatheidsbesluiten. Als en voor zover wij persoonsgegevens delen met partijen in landen buiten de EER waarvoor geen adequaatheidsbesluit geldt, spreken wij met deze partijen de door de Europese Commissie vastgestelde gegevensbeschermingsbepalingen af, de zogenoemde standaardcontractbepalingen (“SCC’s”). Deze SCC’s waarborgen passende beschermingsmaatregelen voor de doorgifte. U kunt een kopie van de overeengekomen standaardcontractbepalingen bij ons opvragen."
+        }
+      ]
+    },
+    {
+      "title": "Beveiliging",
+      "nodes": [
+        {
+          "p": "Wij nemen passende organisatorische en technische beveiligingsmaatregelen om uw persoonsgegevens te beschermen en misbruik, verlies of wijziging ervan te voorkomen. Daarnaast beperken wij de toegang tot persoonsgegevens tot de medewerkers, vertegenwoordigers, aannemers en andere derden die in verband met hun werkzaamheden of diensten toegang nodig hebben. Ook zijn de bovengenoemde betrokken personen gebonden aan een geheimhoudingsplicht, hetzij in hun arbeidsovereenkomst, hetzij in (verwerkers)overeenkomsten."
+        },
+        {
+          "p": "Wij hebben intern beveiligingsbeleid waarin verder wordt beschreven hoe wij zorgen voor een passend niveau van technische en organisatorische beveiligingsmaatregelen. Ook hebben wij een beleid voor datalekken waarin wordt beschreven hoe wij omgaan met een (mogelijk) datalek."
+        }
+      ]
+    },
+    {
+      "title": "Bewaartermijnen",
+      "nodes": [
+        {
+          "p": "Wij hanteren de volgende bewaartermijnen:"
+        },
+        {
+          "table": {
+            "headers": ["Activiteit", "Bewaartermijn"],
+            "rows": [
+              ["Toegang tot onze app", "365 dagen"],
+              ["Gebruik van onze app", "365 dagen"],
+              ["Klantenservice of anderszins met u corresponderen", "365 dagen"],
+              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking."]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Uw rechten (waaronder het recht van bezwaar)",
+      "nodes": [
+        {
+          "p": "Met betrekking tot onze verwerking van uw persoonsgegevens heeft u de onderstaande privacyrechten. Voor meer informatie over uw privacyrechten verwijzen wij u naar deze webpagina van de Europese Commissie."
+        },
+        {
+          "ul": [
+            "Recht om toestemming in te trekken: voor zover onze verwerking van uw persoonsgegevens is gebaseerd op uw toestemming (zie hierboven), heeft u het recht om uw toestemming op elk moment in te trekken.",
+            "Recht op inzage: u heeft het recht om inzage te vragen in uw persoonsgegevens. Hiermee kunt u een kopie ontvangen van de persoonsgegevens die wij over u bewaren (maar niet noodzakelijkerwijs van de documenten zelf). Wij verstrekken u dan ook nadere specificaties over onze verwerking van uw persoonsgegevens.",
+            "Recht op rectificatie: u heeft het recht om rectificatie te vragen van de persoonsgegevens die wij over u bewaren. Hiermee kunt u onvolledige of onjuiste gegevens die wij over u hebben laten corrigeren.",
+            "Recht op wissing: u heeft het recht om wissing van uw persoonsgegevens te vragen. Hiermee kunt u ons vragen persoonsgegevens te verwijderen wanneer: (i) de persoonsgegevens niet langer nodig zijn, (ii) u uw toestemming heeft ingetrokken, (iii) u bezwaar heeft gemaakt tegen de verwerkingsactiviteiten, (iv) de persoonsgegevens onrechtmatig zijn verwerkt, (v) de persoonsgegevens op grond van een wettelijke verplichting moeten worden gewist, of (vi) de persoonsgegevens zijn verzameld in verband met het aanbod van diensten van de informatiemaatschappij. Wij hoeven niet aan uw verzoek te voldoen voor zover de verwerking noodzakelijk is: (i) voor het uitoefenen van het recht op vrijheid van meningsuiting en van informatie, (ii) om te voldoen aan een wettelijke verplichting die verwerking vereist, (iii) om redenen van algemeen belang op het gebied van de volksgezondheid, (iv) voor archiveringsdoeleinden, of (v) voor de instelling, uitoefening of onderbouwing van een rechtsvordering.",
+            "Recht van bezwaar: u heeft het recht om bezwaar te maken tegen de verwerking van uw persoonsgegevens wanneer wij ons beroepen op gerechtvaardigde belangen als verwerkingsgrondslag (zie hierboven). Voor zover de verwerking van uw persoonsgegevens plaatsvindt voor direct-marketingdoeleinden, honoreren wij uw verzoek altijd. Voor verwerking voor andere doeleinden staken wij de verwerking eveneens, tenzij wij dwingende gerechtvaardigde gronden voor de verwerking hebben die zwaarder wegen dan uw belangen, rechten en vrijheden of die verband houden met de instelling, uitoefening of onderbouwing van een rechtsvordering.",
+            "Recht op beperking: u heeft het recht om beperking van de verwerking van uw persoonsgegevens te vragen wanneer: (i) u de juistheid van de persoonsgegevens betwist, gedurende de periode waarin wij uw verzoek controleren, (ii) de verwerking onrechtmatig is en u beperking vraagt in plaats van wissing, (iii) wij de persoonsgegevens niet langer nodig hebben, maar u ze nodig heeft voor de instelling, uitoefening of onderbouwing van een rechtsvordering, of (iv) u bezwaar heeft gemaakt tegen de verwerking, gedurende de periode waarin wij uw verzoek controleren. Als wij de verwerking van uw persoonsgegevens hebben beperkt, betekent dit dat wij ze alleen nog opslaan en niet meer op andere wijze verwerken, tenzij: (i) met uw toestemming, (ii) voor de instelling, uitoefening of onderbouwing van een rechtsvordering, (iii) ter bescherming van de rechten van een andere natuurlijke of rechtspersoon, (iv) of om redenen van zwaarwegend algemeen belang.",
+            "Recht op gegevensoverdraagbaarheid: u heeft het recht om te verzoeken dat uw persoonsgegevens aan u of aan een derde van uw keuze worden overgedragen (recht op gegevensoverdraagbaarheid). Wij verstrekken u of die derde uw persoonsgegevens in een gestructureerde, gangbare en machineleesbare vorm. Houd er rekening mee dat dit recht alleen geldt voor verwerking die wij met geautomatiseerde middelen uitvoeren, en alleen als de grondslag voor die verwerking uw toestemming is of de uitvoering van een overeenkomst waarbij u partij bent (zie hierboven).",
+            "Geautomatiseerde besluitvorming: u heeft het recht om niet te worden onderworpen aan een besluit dat uitsluitend op geautomatiseerde verwerking is gebaseerd en dat u in aanmerkelijke mate treft (“waaraan voor u rechtsgevolgen zijn verbonden of dat u anderszins in aanmerkelijke mate treft”). Wij maken bij de verwerking van uw persoonsgegevens geen gebruik van geautomatiseerde besluitvorming.",
+            "Recht om een klacht in te dienen: naast de hierboven genoemde rechten heeft u het recht om te allen tijde een klacht in te dienen bij een toezichthoudende autoriteit, in het bijzonder in de EU-lidstaat van uw gewone verblijfplaats, uw werkplek of de plaats van de vermeende inbreuk op de AVG. Op deze webpagina vindt u een overzicht van de toezichthoudende autoriteiten en hun contactgegevens. Wij stellen het echter op prijs als wij de kans krijgen uw zorgen weg te nemen voordat u zich tot de toezichthoudende autoriteit wendt, dus neem vooraf contact met ons op."
+          ]
+        },
+        {
+          "p": "Het uitoefenen van de hierboven genoemde rechten is kosteloos en kan telefonisch of per e-mail via de hieronder vermelde contactgegevens. Als verzoeken kennelijk ongegrond of buitensporig zijn, in het bijzonder vanwege hun repetitieve karakter, brengen wij u een redelijke vergoeding in rekening of weigeren wij aan het verzoek te voldoen."
+        },
+        {
+          "p": "Wij kunnen u om specifieke informatie vragen om uw identiteit te bevestigen voordat wij voldoen aan een verzoek van u met betrekking tot een van uw rechten."
+        },
+        {
+          "p": "Wij informeren u zonder onredelijke vertraging en in beginsel binnen een maand na ontvangst van het verzoek over de opvolging van het verzoek. Afhankelijk van de complexiteit van het verzoek en het aantal verzoeken kan deze termijn met nog eens twee maanden worden verlengd. Wij stellen u binnen een maand na ontvangst van het verzoek op de hoogte van een dergelijke verlenging. De toepasselijke privacywetgeving kan ons toestaan of verplichten uw verzoek af te wijzen. Als wij niet aan uw verzoek kunnen voldoen, informeren wij u over de redenen, met inachtneming van eventuele wettelijke of regelgevende beperkingen."
+        }
+      ]
+    },
+    {
+      "title": "Contactgegevens",
+      "nodes": [
+        {
+          "p": "Voor vragen, opmerkingen of verzoeken over hoe wij met uw persoonsgegevens omgaan, kunt u contact met ons opnemen via privacy@chargenet.energy."
+        }
+      ]
+    },
+    {
+      "title": "Overig",
+      "nodes": [
+        {
+          "p": "Wij zijn te allen tijde gerechtigd uw persoonsgegevens zonder voorafgaande kennisgeving te verwijderen. In dat geval zijn wij u geen vergoeding verschuldigd als gevolg van de beëindiging van het account."
+        },
+        {
+          "p": "Indien bepalingen uit deze privacyverklaring in strijd zijn met de wet, worden zij vervangen door bepalingen van dezelfde strekking die de oorspronkelijke bedoeling van de bepaling weerspiegelen, een en ander voor zover wettelijk toegestaan. De overige bepalingen blijven in dat geval ongewijzigd van toepassing."
+        },
+        {
+          "p": "Wij behouden ons het recht voor deze privacyverklaring regelmatig te wijzigen. Waar nodig informeren wij u over aanpassingen van deze privacyverklaring. De actuele versie is altijd beschikbaar in onze app. Dit privacybeleid is voor het laatst gewijzigd en herzien in november 2024."
+        }
+      ]
+    },
+    {
+      "title": "Definities",
+      "nodes": [
+        {
+          "p": "In deze privacyverklaring gelden de volgende definities:"
+        },
+        {
+          "table": {
+            "headers": ["Definitie", "Betekenis"],
+            "rows": [
+              ["App", "ChargeNet Driver-app, ontwikkeld door ChargeNet B.V."],
+              [
+                "Toepasselijke privacywetgeving",
+                "Alle toepasselijke privacywetgeving, waaronder de Algemene Verordening Gegevensbescherming (“AVG”) en de relevante nationale uitvoeringswetten."
+              ],
+              ["Privacyverklaring", "Deze privacyverklaring."]
+            ]
+          }
+        },
+        {
+          "p": "Andere begrippen die in de toepasselijke privacywetgeving zijn gedefinieerd, zoals persoonsgegevens, (gezamenlijk) verwerkingsverantwoordelijke, verwerker, betrokkene en verwerking, hebben de betekenis zoals beschreven in de toepasselijke privacywetgeving."
+        }
+      ]
+    }
+  ]
+}

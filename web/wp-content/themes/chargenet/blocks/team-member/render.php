@@ -19,6 +19,7 @@ if ( '' === $chargenet_name ) {
 
 $chargenet_level    = max( 3, min( 4, (int) ( $block->context['chargenet/headingLevel'] ?? 2 ) + 1 ) );
 $chargenet_role     = trim( wp_strip_all_tags( (string) ( $attributes['role'] ?? '' ) ) );
+$chargenet_bio      = preg_split( '/\R+/', trim( (string) ( $attributes['bio'] ?? '' ) ), -1, PREG_SPLIT_NO_EMPTY );
 $chargenet_email    = sanitize_email( (string) ( $attributes['email'] ?? '' ) );
 $chargenet_linkedin = (string) ( $attributes['linkedin'] ?? '' );
 $chargenet_photo    = chargenet_image(
@@ -49,6 +50,13 @@ foreach ( array_slice( false === $chargenet_words ? array() : $chargenet_words, 
 	<h<?php echo (int) $chargenet_level; ?> class="person__name"><?php echo esc_html( $chargenet_name ); ?></h<?php echo (int) $chargenet_level; ?>>
 	<?php if ( '' !== $chargenet_role ) : ?>
 		<p class="person__role"><?php echo esc_html( $chargenet_role ); ?></p>
+	<?php endif; ?>
+	<?php if ( $chargenet_bio ) : ?>
+		<div class="person__bio stack">
+			<?php foreach ( $chargenet_bio as $chargenet_line ) : ?>
+				<p><?php echo esc_html( $chargenet_line ); ?></p>
+			<?php endforeach; ?>
+		</div>
 	<?php endif; ?>
 	<?php if ( '' !== $chargenet_email || '' !== $chargenet_linkedin ) : ?>
 		<ul class="person__links" role="list">

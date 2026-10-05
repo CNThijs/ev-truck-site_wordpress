@@ -1,0 +1,38 @@
+{
+  "id": "2",
+  "slug": "move-east-2025",
+  "url": "https://chargenet.energy/blog/move-east-2025",
+  "date": "October 11, 2024",
+  "author": "ChargeNet",
+  "title": {
+    "en": "Visit us @ MoveEast",
+    "nl": "Loop bij ons langs @ MoveEast"
+  },
+  "category": {
+    "en": "Event",
+    "nl": "Event"
+  },
+  "excerpt": {
+    "en": "ChargeNet attends MoveEast - Sustainable Business Mobility, addressing topics such as charging infrastructure in grid congestion, fuel transition, and zero-emission entrepreneurship.",
+    "nl": "ChargeNet is aanwezig op MoveEast - Sustainable Business Mobility, waar onderwerpen als laadinfrastructuur bij stroomcongestie, brandstoftransitie en emissievrij ondernemerschap worden besproken."
+  },
+  "keywords": ["funding", "construction", "emission-free", "sustainability"],
+  "metaTitle": {
+    "en": "Visit us @ MoveEast - ChargeNet",
+    "nl": "Loop bij ons langs @ MoveEast - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet receives JTFIJM funding to develop emission-free construction sites, advancing sustainable building practices.",
+    "nl": "ChargeNet ontvangt JTFIJM-financiering om emissievrije bouwplaatsen te ontwikkelen, wat duurzame bouwpraktijken bevordert."
+  },
+  "externalUrl": "https://www.gelderland.nl/nieuws/move-east-focus-op-duurzame-zakelijke-mobiliteit",
+  "featuredImage": "/uploads/blog/MoveEast.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/MoveEast.jpg",
+      "file": "MoveEast.jpg",
+      "bytes": 208140
+    }
+  ],
+  "sectionTypes": ["heading", "paragraph"]
+}

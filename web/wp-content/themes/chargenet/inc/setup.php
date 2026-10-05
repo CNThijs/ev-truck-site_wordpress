@@ -13,7 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register theme supports and nav menus.
  */
 function chargenet_setup(): void {
-	load_theme_textdomain( 'chargenet', CHARGENET_DIR . '/languages' );
+	// Explicit path: just-in-time loading did not find the file under Polylang.
+	load_textdomain( 'chargenet', CHARGENET_DIR . '/languages/chargenet-' . determine_locale() . '.mo' );
 
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );

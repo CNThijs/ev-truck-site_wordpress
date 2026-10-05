@@ -7,7 +7,7 @@ import { ImagePanel } from '../_shared/media.js';
 
 registerBlockType(metadata, {
 	edit({ attributes, setAttributes, context }) {
-		const { imageId, imageUrl, imageAlt, title, text, url, linkLabel } = attributes;
+		const { imageId, imageUrl, imageAlt, title, text, url, linkLabel, tags } = attributes;
 		const level = Math.max(3, Math.min(4, (context['chargenet/headingLevel'] ?? 2) + 1));
 		const isBg = (context['chargenet/sliderVariant'] ?? 'image-bg') === 'image-bg';
 		const blockProps = useBlockProps({ className: `slide${isBg ? ' is-dark' : ''}` });
@@ -28,6 +28,14 @@ registerBlockType(metadata, {
 					)}
 				/>
 				<InspectorControls>
+					<PanelBody title={__('Tags', 'chargenet')} initialOpen={!!tags}>
+						<TextControl
+							label={__('Tags (comma separated)', 'chargenet')}
+							help={__('Small labels under the text, for example partner names.', 'chargenet')}
+							value={tags}
+							onChange={(value) => setAttributes({ tags: value })}
+						/>
+					</PanelBody>
 					<PanelBody title={__('Card link', 'chargenet')}>
 						<TextControl
 							label={__('Link URL (optional)', 'chargenet')}
@@ -69,6 +77,19 @@ registerBlockType(metadata, {
 							placeholder={__('Short text', 'chargenet')}
 							allowedFormats={['core/bold', 'core/italic']}
 						/>
+						{tags && (
+							<ul className="slide__tags">
+								{tags
+									.split(',')
+									.map((tag) => tag.trim())
+									.filter(Boolean)
+									.map((tag) => (
+										<li key={tag} className="badge badge--outline">
+											{tag}
+										</li>
+									))}
+							</ul>
+						)}
 						{url && linkLabel && <span className="slide__more">{linkLabel} →</span>}
 					</div>
 				</div>

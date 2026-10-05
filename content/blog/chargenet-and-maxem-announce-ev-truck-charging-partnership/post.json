@@ -1,0 +1,38 @@
+{
+  "id": "18",
+  "slug": "chargenet-and-maxem-announce-ev-truck-charging-partnership",
+  "url": "https://chargenet.energy/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership",
+  "date": "Jun 30, 2026",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeNet and Maxem Partner to Unlock More EV Truck Charging Capacity",
+    "nl": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks"
+  },
+  "category": {
+    "en": "Accelerate",
+    "nl": "Accelereren"
+  },
+  "excerpt": {
+    "en": "ChargeNet and Maxem partner to help transport companies share EV truck charging capacity, cut costs, and speed up fleet electrification.",
+    "nl": "ChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren."
+  },
+  "keywords": ["charging capacity", "shared charging infrastructure"],
+  "metaTitle": {
+    "en": "ChargeNet and Maxem Partner to Unlock More EV Truck Charging Capacity - ChargeNet",
+    "nl": "ChargeNet en Maxem bundelen krachten voor meer laadcapaciteit voor e-trucks - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet and Maxem partner to help transport companies share EV truck charging capacity, cut costs, and speed up fleet electrification.",
+    "nl": "ChargeNet en Maxem werken samen om transportbedrijven te helpen laadcapaciteit voor e-trucks te delen, kosten te verlagen en sneller te elektrificeren."
+  },
+  "externalUrl": "https://www.linkedin.com/posts/energietransitie-evcharging-laadinfrastructuur-share-7477989899967655938-kz5b/",
+  "featuredImage": "/uploads/blog/ChargeNet-and-Maxem.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/ChargeNet-and-Maxem.jpg",
+      "file": "ChargeNet-and-Maxem.jpg",
+      "bytes": 100971
+    }
+  ],
+  "sectionTypes": ["paragraph", "subheading", "list"]
+}

@@ -89,13 +89,13 @@ function chargenet_allowed_blocks( $allowed, WP_Block_Editor_Context $context ) 
 	// core/* text blocks are only for use inside sections: give them a parent rule so the inserter
 	// never offers them at the root of a page. Runs before the editor serialises block definitions.
 	$parents = array_merge( $sections, $children );
-	foreach ( array( 'core/paragraph', 'core/heading', 'core/list', 'core/quote' ) as $name ) {
+	foreach ( array( 'core/paragraph', 'core/heading', 'core/list', 'core/quote', 'core/table' ) as $name ) {
 		$type = $registry->get_registered( $name );
 		if ( $type ) {
 			$type->parent = 'core/paragraph' === $name ? array_merge( $parents, array( 'core/quote' ) ) : $parents;
 		}
 	}
-	return array_values( array_merge( $sections, $children, array( 'core/paragraph', 'core/heading', 'core/list', 'core/list-item', 'core/quote' ) ) );
+	return array_values( array_merge( $sections, $children, array( 'core/paragraph', 'core/heading', 'core/list', 'core/list-item', 'core/quote', 'core/table' ) ) );
 }
 add_filter( 'allowed_block_types_all', 'chargenet_allowed_blocks', 10, 2 );
 

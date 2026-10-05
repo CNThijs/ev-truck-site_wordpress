@@ -85,9 +85,12 @@
 		justify-self: center;
 		max-width: 26rem;
 
+		// Never upscaled: a small image (an app screenshot) stays sharp at its own size.
 		&-img {
-			width: 100%;
+			width: auto;
+			max-width: 100%;
 			height: auto;
+			max-height: min(70vh, 30rem);
 			border-radius: var(--radius-lg);
 			box-shadow: var(--shadow-lg);
 		}

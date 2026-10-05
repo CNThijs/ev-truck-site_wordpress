@@ -1,0 +1,43 @@
+{
+  "id": "12",
+  "slug": "chargenet-featured-by-transport-and-logistiek-nederland",
+  "url": "https://chargenet.energy/blog/chargenet-featured-by-transport-and-logistiek-nederland",
+  "date": "Dec 27, 2025",
+  "author": "ChargeNet",
+  "title": {
+    "en": "ChargeNet Featured in Transport & Logistiek Nederland",
+    "nl": "ChargeNet geïnterviewd door Transport & Logistiek Nederlan"
+  },
+  "category": {
+    "en": "Accelerate",
+    "nl": "Accelereren"
+  },
+  "excerpt": {
+    "en": "Sebastiaan spoke to Transport & Logistiek Nederland about the model behind ChargeNet`s network of private e-truck charging sites.",
+    "nl": "Sebastiaan sprak met Transport & Logistiek Nederland over het model achter ChargeNet`s netwerk van private e-truck laadpleinen."
+  },
+  "keywords": [
+    "ChargeNet founder interview",
+    "private truck charging network Netherlands",
+    "semi-public charging network",
+    "shared charging sites logistics"
+  ],
+  "metaTitle": {
+    "en": "ChargeNet Featured in Transport & Logistiek Nederland - ChargeNet",
+    "nl": "ChargeNet geïnterviewd door Transport & Logistiek Nederlan - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "ChargeNet co-founder Sebastiaan spoke to Transport & Logistiek Nederland about the model behind ChargeNet`s network of private e-truck charging sites.",
+    "nl": "ChargeNet"
+  },
+  "externalUrl": "https://www.nt.nl/voorpagina/2025/12/27/chargenet-op-elkaars-laadplein-je-e-truck-laden/?utm_source=chargenet&utm_medium=social&utm_campaign=transport-logistiek",
+  "featuredImage": "/uploads/blog/TLN-interview-seb.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/TLN-interview-seb.jpg",
+      "file": "TLN-interview-seb.jpg",
+      "bytes": 56923
+    }
+  ],
+  "sectionTypes": ["paragraph", "subheading"]
+}

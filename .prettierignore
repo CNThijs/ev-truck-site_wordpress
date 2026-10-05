@@ -16,3 +16,9 @@ web/wp-content/themes/chargenet/theme.json
 web/wp-content/themes/chargenet/build/
 bin/templates/
 web/wp-content/themes/chargenet/languages/
+
+# Generated and managed by DDEV
+.ddev/
+
+# Imported news post data (kept as exported from the old site)
+content/blog/

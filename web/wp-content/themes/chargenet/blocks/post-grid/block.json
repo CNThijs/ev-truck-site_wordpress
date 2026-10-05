@@ -17,7 +17,8 @@
     "count": { "type": "number", "default": 3 },
     "categoryId": { "type": "number", "default": 0 },
     "linkLabel": { "type": "string", "default": "" },
-    "linkUrl": { "type": "string", "default": "" }
+    "linkUrl": { "type": "string", "default": "" },
+    "paginate": { "type": "boolean", "default": false }
   },
   "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
   "example": {

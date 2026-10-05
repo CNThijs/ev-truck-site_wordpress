@@ -1,0 +1,54 @@
+// A single news post: image and text in a narrow column.
+.post-single {
+	&__image {
+		margin: 0;
+		overflow: hidden;
+		border-radius: var(--radius-lg);
+
+		img {
+			width: 100%;
+			max-height: 28rem;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		h2,
+		h3 {
+			margin-top: var(--space-6);
+		}
+
+		ul,
+		ol {
+			margin: 0;
+			padding-left: 1.25em;
+		}
+
+		blockquote {
+			margin: 0;
+			padding-left: var(--space-5);
+			border-left: 4px solid var(--accent);
+			font-size: var(--text-lg);
+		}
+
+		figure {
+			margin: 0;
+		}
+
+		// Portrait photos stay a sensible size.
+		img {
+			display: block;
+			max-width: 100%;
+			max-height: 30rem;
+			width: auto;
+			height: auto;
+			border-radius: var(--radius-md);
+		}
+
+		figcaption {
+			margin-top: var(--space-2);
+			color: var(--fg-muted);
+			font-size: var(--text-sm);
+		}
+	}
+}

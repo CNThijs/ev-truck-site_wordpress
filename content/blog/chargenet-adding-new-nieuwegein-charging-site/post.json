@@ -1,0 +1,43 @@
+{
+  "id": "14",
+  "slug": "chargenet-adding-new-nieuwegein-charging-site",
+  "url": "https://chargenet.energy/blog/chargenet-adding-new-nieuwegein-charging-site",
+  "date": "Feb 5, 2026",
+  "author": "ChargeNet",
+  "title": {
+    "en": "Adding a New Equans E-Mobility E-Truck Charging Site in Nieuwegein",
+    "nl": "Nieuw laadplein voor e-trucks in Nieuwegein"
+  },
+  "category": {
+    "en": "Accelerate",
+    "nl": "Accelereren"
+  },
+  "excerpt": {
+    "en": "New E-Truck Charging Site now available at Arsenaaldok 9 in Nieuwegein.",
+    "nl": "Nieuw laadplein voor e-trucks nu beschikbaar op Arsenaaldok 9 in Nieuwegein."
+  },
+  "keywords": [
+    "semi-public charging network",
+    "Equans E-Mobility",
+    "Velian",
+    "Velian charging site"
+  ],
+  "metaTitle": {
+    "en": "Adding a New Equans E-Mobility E-Truck Charging Site in Nieuwegein - ChargeNet",
+    "nl": "Nieuw laadplein voor e-trucks in Nieuwegein - ChargeNet"
+  },
+  "metaDescription": {
+    "en": "New Equans E-Mobility fast chargers in Nieuwegein are now part of the ChargeNet network. Transport companies can find and book the site directly through the ChargeNet app.",
+    "nl": "Nieuwe snelladers van Equans E-Mobility in Nieuwegein maken nu deel uit van het ChargeNet-netwerk. Transporteurs vinden en boeken de locatie direct via de ChargeNet app."
+  },
+  "externalUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7424757223597301760/?rcm=ACoAAALZZuEBCxwRl9dFw21jKpid-4dKbw3fEdU",
+  "featuredImage": "/uploads/blog/Location-Nieuwegein-Arsenaaldok.jpg",
+  "images": [
+    {
+      "url": "/uploads/blog/Location-Nieuwegein-Arsenaaldok.jpg",
+      "file": "Location-Nieuwegein-Arsenaaldok.jpg",
+      "bytes": 215627
+    }
+  ],
+  "sectionTypes": ["paragraph", "subheading"]
+}

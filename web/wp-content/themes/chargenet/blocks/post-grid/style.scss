@@ -52,6 +52,27 @@
 		margin: 0;
 	}
 
+	&__pages {
+		.page-numbers {
+			display: inline-block;
+			min-width: 2.75rem;
+			margin-right: var(--space-1);
+			padding: var(--space-2) var(--space-3);
+			border-radius: var(--radius-md);
+			text-align: center;
+			text-decoration: none;
+
+			&.current {
+				background: var(--accent);
+				color: var(--bg);
+			}
+
+			&:focus-visible {
+				@include focus-ring;
+			}
+		}
+	}
+
 	&__empty {
 		padding: var(--space-5);
 		border: 2px dashed var(--color-ink-300);

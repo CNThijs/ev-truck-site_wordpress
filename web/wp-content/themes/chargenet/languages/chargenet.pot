@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-05T10:14:24+02:00\n"
+"POT-Creation-Date: 2026-10-05T16:22:04+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: chargenet\n"
@@ -44,50 +44,65 @@ msgstr ""
 
 #: blocks/button/render.php:24
 #: blocks/logo-item/render.php:33
-#: blocks/post-grid/render.php:81
+#: blocks/post-grid/render.php:82
 #: build/blocks/button/render.php:24
 #: build/blocks/logo-item/render.php:33
-#: build/blocks/post-grid/render.php:81
+#: build/blocks/post-grid/render.php:82
 #: footer.php:43
 #: inc/post-source.php:125
 msgid "(opens in a new tab)"
 msgstr ""
 
-#: blocks/card-slider/render.php:45
-#: build/blocks/card-slider/render.php:45
+#: blocks/card-slider/render.php:46
+#: build/blocks/card-slider/render.php:46
 #: blocks/feature-grid/index.js:31
 #: build/blocks/feature-grid/index.js:1
 msgid "Cards"
 msgstr ""
 
-#: blocks/card-slider/render.php:53
-#: build/blocks/card-slider/render.php:53
+#: blocks/card-slider/render.php:54
+#: build/blocks/card-slider/render.php:54
 msgid "Previous cards"
 msgstr ""
 
-#: blocks/card-slider/render.php:57
-#: build/blocks/card-slider/render.php:57
+#: blocks/card-slider/render.php:58
+#: build/blocks/card-slider/render.php:58
 msgid "Next cards"
 msgstr ""
 
 #. translators: %s: website of the original source, for example linkedin.com.
-#: blocks/post-grid/render.php:79
-#: build/blocks/post-grid/render.php:79
+#: blocks/post-grid/render.php:80
+#: build/blocks/post-grid/render.php:80
 #: inc/post-source.php:123
 #, php-format
 msgid "Read the original on %s"
 msgstr ""
 
+#: blocks/post-grid/render.php:91
+#: build/blocks/post-grid/render.php:91
+msgid "Pages"
+msgstr ""
+
+#: blocks/post-grid/render.php:97
+#: build/blocks/post-grid/render.php:97
+msgid "Previous"
+msgstr ""
+
+#: blocks/post-grid/render.php:98
+#: build/blocks/post-grid/render.php:98
+msgid "Next"
+msgstr ""
+
 #. translators: %s: person's name.
-#: blocks/team-member/render.php:62
-#: build/blocks/team-member/render.php:62
+#: blocks/team-member/render.php:70
+#: build/blocks/team-member/render.php:70
 #, php-format
 msgid "Email %s"
 msgstr ""
 
 #. translators: %s: person's name.
-#: blocks/team-member/render.php:75
-#: build/blocks/team-member/render.php:75
+#: blocks/team-member/render.php:83
+#: build/blocks/team-member/render.php:83
 #, php-format
 msgid "%s on LinkedIn (opens in a new tab)"
 msgstr ""
@@ -191,19 +206,19 @@ msgstr ""
 msgid "Link to the article, post or report this news item is based on. Readers see it as \"Read the original on …\" under the post."
 msgstr ""
 
-#: inc/setup.php:26
+#: inc/setup.php:27
 msgid "Primary menu"
 msgstr ""
 
-#: inc/setup.php:27
+#: inc/setup.php:28
 msgid "Header utility menu (Login)"
 msgstr ""
 
-#: inc/setup.php:28
+#: inc/setup.php:29
 msgid "Footer menu"
 msgstr ""
 
-#: inc/setup.php:29
+#: inc/setup.php:30
 msgid "Footer legal menu"
 msgstr ""
 
@@ -263,6 +278,10 @@ msgstr ""
 
 #: template-parts/content-none.php:13
 msgid "Nothing found"
+msgstr ""
+
+#: template-parts/content-single.php:48
+msgid "Back to news"
 msgstr ""
 
 #: blocks/accordion-item/index.js:18
@@ -500,7 +519,7 @@ msgstr ""
 #: blocks/feature-grid-item/index.js:23
 #: blocks/logo-item/index.js:34
 #: blocks/post-grid/index.js:94
-#: blocks/slide-card/index.js:33
+#: blocks/slide-card/index.js:41
 #: build/blocks/feature-grid-item/index.js:1
 #: build/blocks/logo-item/index.js:1
 #: build/blocks/post-grid/index.js:1
@@ -509,7 +528,7 @@ msgid "Link URL (optional)"
 msgstr ""
 
 #: blocks/feature-grid-item/index.js:29
-#: blocks/slide-card/index.js:39
+#: blocks/slide-card/index.js:47
 #: build/blocks/feature-grid-item/index.js:1
 #: build/blocks/slide-card/index.js:1
 msgid "Link label (optional)"
@@ -526,7 +545,7 @@ msgid "Title"
 msgstr ""
 
 #: blocks/feature-grid-item/index.js:58
-#: blocks/slide-card/index.js:69
+#: blocks/slide-card/index.js:77
 #: build/blocks/feature-grid-item/index.js:1
 #: build/blocks/slide-card/index.js:1
 msgid "Short text"
@@ -623,7 +642,7 @@ msgid "Organisation"
 msgstr ""
 
 #: blocks/logo-item/index.js:25
-#: blocks/team-member/index.js:68
+#: blocks/team-member/index.js:76
 #: build/blocks/logo-item/index.js:1
 #: build/blocks/team-member/index.js:1
 msgid "Name"
@@ -760,7 +779,7 @@ msgid "Leave empty to use the alt text of the media library item. Fill it in per
 msgstr ""
 
 #: blocks/rich-text-image/index.js:91
-#: blocks/rich-text/index.js:43
+#: blocks/rich-text/index.js:44
 #: build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1
 msgid "Write the text…"
@@ -773,15 +792,30 @@ msgstr ""
 
 #: blocks/slide-card/index.js:31
 #: build/blocks/slide-card/index.js:1
+msgid "Tags"
+msgstr ""
+
+#: blocks/slide-card/index.js:33
+#: build/blocks/slide-card/index.js:1
+msgid "Tags (comma separated)"
+msgstr ""
+
+#: blocks/slide-card/index.js:34
+#: build/blocks/slide-card/index.js:1
+msgid "Small labels under the text, for example partner names."
+msgstr ""
+
+#: blocks/slide-card/index.js:39
+#: build/blocks/slide-card/index.js:1
 msgid "Card link"
 msgstr ""
 
-#: blocks/slide-card/index.js:40
+#: blocks/slide-card/index.js:48
 #: build/blocks/slide-card/index.js:1
 msgid "Shown as a visual cue, for example \"Read more\". The title is the link."
 msgstr ""
 
-#: blocks/slide-card/index.js:61
+#: blocks/slide-card/index.js:69
 #: build/blocks/slide-card/index.js:1
 msgid "Card title"
 msgstr ""
@@ -884,20 +918,35 @@ msgstr ""
 
 #: blocks/team-member/index.js:38
 #: build/blocks/team-member/index.js:1
-msgid "Contact links"
+msgid "Short bio"
 msgstr ""
 
 #: blocks/team-member/index.js:40
 #: build/blocks/team-member/index.js:1
-msgid "Email"
+msgid "Bio"
+msgstr ""
+
+#: blocks/team-member/index.js:41
+#: build/blocks/team-member/index.js:1
+msgid "One paragraph per line. Optional."
 msgstr ""
 
 #: blocks/team-member/index.js:46
 #: build/blocks/team-member/index.js:1
+msgid "Contact links"
+msgstr ""
+
+#: blocks/team-member/index.js:48
+#: build/blocks/team-member/index.js:1
+msgid "Email"
+msgstr ""
+
+#: blocks/team-member/index.js:54
+#: build/blocks/team-member/index.js:1
 msgid "LinkedIn URL"
 msgstr ""
 
-#: blocks/team-member/index.js:76
+#: blocks/team-member/index.js:84
 #: build/blocks/team-member/index.js:1
 msgid "Role"
 msgstr ""
@@ -1958,7 +2007,7 @@ msgstr ""
 #: blocks/team-member/block.json
 #: build/blocks/team-member/block.json
 msgctxt "block description"
-msgid "One person: photo, name, role, and optional email and LinkedIn links."
+msgid "One person: photo, name, role, optional short bio and email and LinkedIn links."
 msgstr ""
 
 #: blocks/team/block.json

@@ -9,7 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$chargenet_items = chargenet_post_grid_items( $attributes );
+$chargenet_pages = 1;
+$chargenet_items = chargenet_post_grid_items( $attributes, $chargenet_pages );
 
 // Empty state: no posts yet, nothing to show.
 if ( ! $chargenet_items ) {
@@ -86,6 +87,20 @@ chargenet_section_open(
 			</li>
 		<?php endforeach; ?>
 	</ul>
+	<?php if ( $chargenet_pages > 1 ) : ?>
+		<nav class="post-grid__pages" aria-label="<?php esc_attr_e( 'Pages', 'chargenet' ); ?>">
+			<?php
+			echo paginate_links( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes.
+				array(
+					'total'     => $chargenet_pages,
+					'current'   => max( 1, (int) get_query_var( 'paged' ) ),
+					'prev_text' => esc_html__( 'Previous', 'chargenet' ),
+					'next_text' => esc_html__( 'Next', 'chargenet' ),
+				)
+			);
+			?>
+		</nav>
+	<?php endif; ?>
 	<?php if ( '' !== $chargenet_label && '' !== $chargenet_more_url ) : ?>
 		<p class="post-grid__more"><a class="btn btn--secondary" href="<?php echo esc_url( $chargenet_more_url ); ?>"><?php echo esc_html( $chargenet_label ); ?></a></p>
 	<?php endif; ?>

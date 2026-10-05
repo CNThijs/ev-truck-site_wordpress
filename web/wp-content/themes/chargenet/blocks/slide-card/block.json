@@ -15,7 +15,8 @@
     "title": { "type": "string", "default": "" },
     "text": { "type": "string", "default": "" },
     "url": { "type": "string", "default": "" },
-    "linkLabel": { "type": "string", "default": "" }
+    "linkLabel": { "type": "string", "default": "" },
+    "tags": { "type": "string", "default": "" }
   },
   "usesContext": ["chargenet/headingLevel", "chargenet/sliderVariant"],
   "supports": { "html": false, "reusable": false, "customClassName": false },

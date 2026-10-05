@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InspectorControls, RichText, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, TextControl } from '@wordpress/components';
+import { PanelBody, TextControl, TextareaControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 import { ImagePanel } from '../_shared/media.js';
@@ -15,7 +15,7 @@ const initials = (name) =>
 
 registerBlockType(metadata, {
 	edit({ attributes, setAttributes, context }) {
-		const { imageId, imageUrl, imageAlt, name, role, email, linkedin } = attributes;
+		const { imageId, imageUrl, imageAlt, name, role, bio, email, linkedin } = attributes;
 		const level = Math.max(3, Math.min(4, (context['chargenet/headingLevel'] ?? 2) + 1));
 		const blockProps = useBlockProps({ className: 'person' });
 
@@ -35,6 +35,14 @@ registerBlockType(metadata, {
 					)}
 				/>
 				<InspectorControls>
+					<PanelBody title={__('Short bio', 'chargenet')}>
+						<TextareaControl
+							label={__('Bio', 'chargenet')}
+							help={__('One paragraph per line. Optional.', 'chargenet')}
+							value={bio}
+							onChange={(value) => setAttributes({ bio: value })}
+						/>
+					</PanelBody>
 					<PanelBody title={__('Contact links', 'chargenet')}>
 						<TextControl
 							label={__('Email', 'chargenet')}
@@ -76,6 +84,16 @@ registerBlockType(metadata, {
 						placeholder={__('Role', 'chargenet')}
 						allowedFormats={[]}
 					/>
+					{bio.trim() && (
+						<div className="person__bio stack">
+							{bio
+								.split(/\r?\n+/)
+								.filter(Boolean)
+								.map((line) => (
+									<p key={line}>{line}</p>
+								))}
+						</div>
+					)}
 				</div>
 			</>
 		);

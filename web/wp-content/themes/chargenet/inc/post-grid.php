@@ -14,12 +14,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Posts for a Post Grid section: newest first, in the current language (Polylang filters the query),
  * optionally limited to one category.
  *
- * @param array<string, mixed> $attributes Block attributes (count, categoryId).
+ * With the "paginate" attribute (the News page) the query follows the page being viewed, and the number of pages
+ * is returned through $total_pages.
+ *
+ * @param array<string, mixed> $attributes  Block attributes (count, categoryId, paginate).
+ * @param int                  $total_pages Number of result pages (set when paginating).
  * @return array<int, array{title: string, url: string, date: string, date_label: string, category: string, excerpt: string, image_id: int, source_url: string, source_host: string}>
  */
-function chargenet_post_grid_items( array $attributes ): array {
+function chargenet_post_grid_items( array $attributes, int &$total_pages = 1 ): array {
 	$count    = max( 1, min( 12, (int) ( $attributes['count'] ?? 3 ) ) );
 	$category = (int) ( $attributes['categoryId'] ?? 0 );
+	$paginate = ! empty( $attributes['paginate'] );
 
 	$query = new WP_Query(
 		array(
@@ -28,9 +33,12 @@ function chargenet_post_grid_items( array $attributes ): array {
 			'posts_per_page'      => $count,
 			'cat'                 => $category > 0 ? $category : 0,
 			'ignore_sticky_posts' => true,
-			'no_found_rows'       => true,
+			'paged'               => $paginate ? max( 1, (int) get_query_var( 'paged' ) ) : 1,
+			'no_found_rows'       => ! $paginate,
 		)
 	);
+
+	$total_pages = $paginate ? (int) $query->max_num_pages : 1;
 
 	$items = array();
 	foreach ( $query->posts as $post ) {

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-05T10:14:24+02:00\n"
+"POT-Creation-Date: 2026-10-05T16:22:04+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -43,40 +43,52 @@ msgid "Back to home"
 msgstr "Terug naar home"
 
 #: blocks/button/render.php:24 blocks/logo-item/render.php:33
-#: blocks/post-grid/render.php:81 build/blocks/button/render.php:24
-#: build/blocks/logo-item/render.php:33 build/blocks/post-grid/render.php:81
+#: blocks/post-grid/render.php:82 build/blocks/button/render.php:24
+#: build/blocks/logo-item/render.php:33 build/blocks/post-grid/render.php:82
 #: footer.php:43 inc/post-source.php:125
 msgid "(opens in a new tab)"
 msgstr "(opent in een nieuw tabblad)"
 
-#: blocks/card-slider/render.php:45 build/blocks/card-slider/render.php:45
+#: blocks/card-slider/render.php:46 build/blocks/card-slider/render.php:46
 #: blocks/feature-grid/index.js:31 build/blocks/feature-grid/index.js:1
 msgid "Cards"
 msgstr "Kaarten"
 
-#: blocks/card-slider/render.php:53 build/blocks/card-slider/render.php:53
+#: blocks/card-slider/render.php:54 build/blocks/card-slider/render.php:54
 msgid "Previous cards"
 msgstr "Vorige kaarten"
 
-#: blocks/card-slider/render.php:57 build/blocks/card-slider/render.php:57
+#: blocks/card-slider/render.php:58 build/blocks/card-slider/render.php:58
 msgid "Next cards"
 msgstr "Volgende kaarten"
 
 #. translators: %s: website of the original source, for example linkedin.com.
-#: blocks/post-grid/render.php:79 build/blocks/post-grid/render.php:79
+#: blocks/post-grid/render.php:80 build/blocks/post-grid/render.php:80
 #: inc/post-source.php:123
 #, php-format
 msgid "Read the original on %s"
 msgstr "Lees het origineel op %s"
 
+#: blocks/post-grid/render.php:91 build/blocks/post-grid/render.php:91
+msgid "Pages"
+msgstr "Pagina’s"
+
+#: blocks/post-grid/render.php:97 build/blocks/post-grid/render.php:97
+msgid "Previous"
+msgstr "Vorige"
+
+#: blocks/post-grid/render.php:98 build/blocks/post-grid/render.php:98
+msgid "Next"
+msgstr "Volgende"
+
 #. translators: %s: person's name.
-#: blocks/team-member/render.php:62 build/blocks/team-member/render.php:62
+#: blocks/team-member/render.php:70 build/blocks/team-member/render.php:70
 #, php-format
 msgid "Email %s"
 msgstr "E-mail %s"
 
 #. translators: %s: person's name.
-#: blocks/team-member/render.php:75 build/blocks/team-member/render.php:75
+#: blocks/team-member/render.php:83 build/blocks/team-member/render.php:83
 #, php-format
 msgid "%s on LinkedIn (opens in a new tab)"
 msgstr "%s op LinkedIn (opent in een nieuw tabblad)"
@@ -193,19 +205,19 @@ msgstr ""
 "Link naar het artikel, bericht of rapport waarop dit nieuwsbericht is "
 "gebaseerd. Lezers zien dit onder het bericht als ‘Lees het origineel op …’."
 
-#: inc/setup.php:26
+#: inc/setup.php:27
 msgid "Primary menu"
 msgstr "Hoofdmenu"
 
-#: inc/setup.php:27
+#: inc/setup.php:28
 msgid "Header utility menu (Login)"
 msgstr "Hulpmenu in header (Login)"
 
-#: inc/setup.php:28
+#: inc/setup.php:29
 msgid "Footer menu"
 msgstr "Menu in voettekst"
 
-#: inc/setup.php:29
+#: inc/setup.php:30
 msgid "Footer legal menu"
 msgstr "Juridisch menu in voettekst"
 
@@ -286,6 +298,10 @@ msgstr "Zoeken"
 #: template-parts/content-none.php:13
 msgid "Nothing found"
 msgstr "Niets gevonden"
+
+#: template-parts/content-single.php:48
+msgid "Back to news"
+msgstr "Terug naar nieuws"
 
 #: blocks/accordion-item/index.js:18 build/blocks/accordion-item/index.js:1
 msgid "Question"
@@ -464,13 +480,13 @@ msgid "Item"
 msgstr "Item"
 
 #: blocks/feature-grid-item/index.js:23 blocks/logo-item/index.js:34
-#: blocks/post-grid/index.js:94 blocks/slide-card/index.js:33
+#: blocks/post-grid/index.js:94 blocks/slide-card/index.js:41
 #: build/blocks/feature-grid-item/index.js:1 build/blocks/logo-item/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/slide-card/index.js:1
 msgid "Link URL (optional)"
 msgstr "Link-URL (optioneel)"
 
-#: blocks/feature-grid-item/index.js:29 blocks/slide-card/index.js:39
+#: blocks/feature-grid-item/index.js:29 blocks/slide-card/index.js:47
 #: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
 msgid "Link label (optional)"
 msgstr "Linklabel (optioneel)"
@@ -489,7 +505,7 @@ msgstr ""
 msgid "Title"
 msgstr "Titel"
 
-#: blocks/feature-grid-item/index.js:58 blocks/slide-card/index.js:69
+#: blocks/feature-grid-item/index.js:58 blocks/slide-card/index.js:77
 #: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
 msgid "Short text"
 msgstr "Korte tekst"
@@ -566,7 +582,7 @@ msgstr "Logo-afbeelding"
 msgid "Organisation"
 msgstr "Organisatie"
 
-#: blocks/logo-item/index.js:25 blocks/team-member/index.js:68
+#: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
 #: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
 msgid "Name"
 msgstr "Naam"
@@ -680,7 +696,7 @@ msgstr ""
 "Laat leeg om de alternatieve tekst van het mediabibliotheek-item te "
 "gebruiken. Vul dit per taal in."
 
-#: blocks/rich-text-image/index.js:91 blocks/rich-text/index.js:43
+#: blocks/rich-text-image/index.js:91 blocks/rich-text/index.js:44
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
 msgid "Write the text…"
 msgstr "Schrijf de tekst…"
@@ -694,17 +710,29 @@ msgstr ""
 "decoratie."
 
 #: blocks/slide-card/index.js:31 build/blocks/slide-card/index.js:1
+msgid "Tags"
+msgstr "Labels"
+
+#: blocks/slide-card/index.js:33 build/blocks/slide-card/index.js:1
+msgid "Tags (comma separated)"
+msgstr "Labels (gescheiden door komma’s)"
+
+#: blocks/slide-card/index.js:34 build/blocks/slide-card/index.js:1
+msgid "Small labels under the text, for example partner names."
+msgstr "Kleine labels onder de tekst, bijvoorbeeld namen van partners."
+
+#: blocks/slide-card/index.js:39 build/blocks/slide-card/index.js:1
 msgid "Card link"
 msgstr "Kaartlink"
 
-#: blocks/slide-card/index.js:40 build/blocks/slide-card/index.js:1
+#: blocks/slide-card/index.js:48 build/blocks/slide-card/index.js:1
 msgid ""
 "Shown as a visual cue, for example \"Read more\". The title is the link."
 msgstr ""
 "Getoond als visuele aanwijzing, bijvoorbeeld ‘Lees meer’. De titel is de "
 "link."
 
-#: blocks/slide-card/index.js:61 build/blocks/slide-card/index.js:1
+#: blocks/slide-card/index.js:69 build/blocks/slide-card/index.js:1
 msgid "Card title"
 msgstr "Kaarttitel"
 
@@ -789,18 +817,30 @@ msgstr ""
 "Laat leeg: de naam staat naast de foto, dus de foto geldt als decoratie."
 
 #: blocks/team-member/index.js:38 build/blocks/team-member/index.js:1
+msgid "Short bio"
+msgstr "Korte tekst"
+
+#: blocks/team-member/index.js:40 build/blocks/team-member/index.js:1
+msgid "Bio"
+msgstr "Bio"
+
+#: blocks/team-member/index.js:41 build/blocks/team-member/index.js:1
+msgid "One paragraph per line. Optional."
+msgstr "Eén alinea per regel. Optioneel."
+
+#: blocks/team-member/index.js:46 build/blocks/team-member/index.js:1
 msgid "Contact links"
 msgstr "Contactlinks"
 
-#: blocks/team-member/index.js:40 build/blocks/team-member/index.js:1
+#: blocks/team-member/index.js:48 build/blocks/team-member/index.js:1
 msgid "Email"
 msgstr "E-mail"
 
-#: blocks/team-member/index.js:46 build/blocks/team-member/index.js:1
+#: blocks/team-member/index.js:54 build/blocks/team-member/index.js:1
 msgid "LinkedIn URL"
 msgstr "LinkedIn-URL"
 
-#: blocks/team-member/index.js:76 build/blocks/team-member/index.js:1
+#: blocks/team-member/index.js:84 build/blocks/team-member/index.js:1
 msgid "Role"
 msgstr "Functie"
 
@@ -1640,9 +1680,12 @@ msgstr "Teamlid"
 
 #: blocks/team-member/block.json build/blocks/team-member/block.json
 msgctxt "block description"
-msgid "One person: photo, name, role, and optional email and LinkedIn links."
+msgid ""
+"One person: photo, name, role, optional short bio and email and LinkedIn "
+"links."
 msgstr ""
-"Eén persoon: foto, naam, functie en optionele e-mail- en LinkedIn-links."
+"Eén persoon: foto, naam, functie, optioneel een korte bio en e-mail- en "
+"LinkedIn-links."
 
 #: blocks/team/block.json build/blocks/team/block.json
 msgctxt "block title"

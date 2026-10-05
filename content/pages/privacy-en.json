@@ -1,0 +1,330 @@
+{
+  "intro": "This privacy statement contains important information as it sets out how ChargeNet handles personal data of app users (“user” or “you”). Please read this privacy statement carefully before you use our services. If you have any questions, please feel free to contact us.",
+  "updated": "Last Updated: November 6th, 2024",
+  "sections": [
+    {
+      "title": "About us",
+      "nodes": [
+        {
+          "p": "Chargenet B.V. (“ChargeNet”, \"we\", \"us\" or \"our\") attaches great importance to the protection of its users privacy and personal data. We collect and use your personal data when you use our services. This privacy statement explains to you how we collect, use, save, share, transfer or otherwise process your personal data when you, or in the case of business users any individuals acting on your behalf (your “personnel”), use(s) our services."
+        },
+        {
+          "p": "References to personnel below are relevant only to business users’ use. Any references to “your” personal data shall be read as references to personnel personal data for business users."
+        }
+      ]
+    },
+    {
+      "title": "Scope us",
+      "nodes": [
+        {
+          "p": "The scope of this privacy statement is limited to processing activities to which the General Data Protection Regulation (“GDPR”) and its national implementation acts apply."
+        }
+      ]
+    },
+    {
+      "title": "Responsibility",
+      "nodes": [
+        {
+          "p": "We will only process personal data in accordance with applicable data protection legislation and as described in this privacy statement."
+        },
+        {
+          "p": "Our app may include links to website of third parties. We are not responsible for the content of these websites, services provided by these third parties, or their compliance with applicable privacy legislation."
+        }
+      ]
+    },
+    {
+      "title": "How we obtain your personal data",
+      "nodes": [
+        {
+          "p": "We obtain your personal data in various ways:"
+        },
+        {
+          "ul": [
+            "We obtain information actively provided by you. For example, if you contact us, if you sign up or if you provide information to us in the course of our services.",
+            "We obtain some information automatically when you use our app. For example, we automatically obtain information about you via cookies when you use the app.",
+            "We also obtain information from third parties. For example, we may request information about your company from the Trade Register of the Chamber of Commerce.",
+            "We may perform analysis on personal data about you. The resulting data can also qualify as personal data about you. For example, we may analyze which pages are visited most frequently."
+          ]
+        },
+        {
+          "p": "It may be that providing certain personal data to us is a statutory or contractual requirement, a requirement necessary to enter into a contract, or that you are otherwise obliged to provide the data to us. If that is the case, we will inform you thereof separately, and will also explain the possible consequences if you fail to provide such personal data to us."
+        }
+      ]
+    },
+    {
+      "title": "Details of processing",
+      "nodes": [
+        {
+          "p": "It depends on the processing activity, which personal data we process about you, for which purposes and based on which legal ground. Please find an overview below."
+        },
+        {
+          "table": {
+            "headers": [
+              "Activity",
+              "Categories of personal data processed",
+              "Legal ground(s) for processing and purposes for processing"
+            ],
+            "rows": [
+              [
+                "Accessing our app",
+                "IP address, Browsing history, Cookie preferences, Movements on our app, Jointly referred to as “cookie information”, For detailed information about our use of cookies, we refer to Article 6.",
+                {
+                  "p": [
+                    "We collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.",
+                    "We process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience."
+                  ]
+                }
+              ],
+              [
+                "Using our app",
+                {
+                  "ul": [
+                    "Login information such as username and password",
+                    "Contact details such as your name",
+                    "e-mail address and telephone number",
+                    "License plate numbers",
+                    "Information with regard to your use of private charge points",
+                    "Payment information",
+                    "Information provided through reviews"
+                  ]
+                },
+                {
+                  "p": [
+                    "We collect these personal data on the basis of your consent or, in case we are not legally required to obtain consent, on the basis of our legitimate interests, namely improving our online services. This is the case with regard to technical cookies necessary for the functioning of the app and several analytic cookies that are not used to treat you differently from other users.",
+                    "We process your personal data for purposes of (i) improving our app, (ii) being able to show you the services that fit your preferences, (iii) being able to provide you with consistent service across all your devices, (iv) enhancing our security and protecting your information and (v) enhancing your user experience."
+                  ]
+                }
+              ],
+              [
+                "Customer service or otherwise corresponding with you",
+                {
+                  "ul": [
+                    "Your name, e-mail address and telephone number",
+                    "Content of your message, for instance a complaint or pictures of a damaged product",
+                    "Details with regard to the follow-up"
+                  ]
+                },
+                {
+                  "p": [
+                    "We collect these personal data as this is necessary for the performance of a contract or on the basis of our legitimate interests, namely verifying your identity for reasons of security, improving our services and providing customer service.",
+                    "We process your personal data for the purposes of (i) following up on your questions, complaints and claims, (ii) providing information with regard to services that are relevant to you, and (iii) enhancing our security and protecting your information."
+                  ]
+                }
+              ],
+              [
+                "Other general purposes",
+                {
+                  "ul": [
+                    "Any information we possibly have of you that is necessary for the relevant purpose of processing."
+                  ]
+                },
+                {
+                  "p": [
+                    "We collect these personal data as this might be necessary for compliance with a legal obligation that is applicable to us as a data controller or for purposes of our legitimate interests, namely carrying out our regular business activities and protecting our interests.",
+                    "We process your personal data for purposes of (i) following requests of public authorities, (ii) conducting criminal investigations, prosecutions, trails and the execution of judgments, (iii) protecting rights of third parties, (iv) conducting statistical or academic researches, or (v) other circumstances as stipulated by relevant laws and regulations."
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "p": "If and insofar your personal data is processed on the basis of legitimate interests, information can be obtained by you as to the so-called balancing test that was carried out to allow us to rely on this processing ground. This test shows why our legitimate interests outweigh your right to privacy in those specific cases. Please find our contact details below"
+        },
+        {
+          "p": "It may be that we intend to further process your personal data for a purpose other than those for which the personal data have been collected. In such case, we will provide you with information about the(se) other purpose(s) and all relevant further information prior to that further processing."
+        }
+      ]
+    },
+    {
+      "title": "Cookies",
+      "nodes": [
+        {
+          "p": "Please see below an overview of the cookies that we use:"
+        },
+        {
+          "table": {
+            "headers": [
+              "",
+              "Name cookie",
+              "Purpose of the cookie",
+              "Is this cookie placed by a third-party or is the cookie information shared with third parties?",
+              "Validity period",
+              "Consent required?"
+            ],
+            "rows": [
+              ["Functional cookies", "", "", "", "", ""],
+              ["Analytical cookies", "", "", "", "", ""],
+              ["Affiliate cookies", "", "", "", "", ""],
+              ["Tracking cookies", "", "", "", "", ""]
+            ]
+          }
+        },
+        {
+          "p": "You can change your cookie settings in general – for all apps or websites you visit – via your device settings. If differs per operating system which sort of choices you can make, such as denying all third-party cookies. For further information on how you can change your settings, please be referred to: https://allaboutcookies.org/how-to-manage-cookies."
+        },
+        {
+          "p": "Please note that if you refuse certain cookies, this may reduce the functionality of some parts of our app."
+        }
+      ]
+    },
+    {
+      "title": "Sharing with third parties",
+      "nodes": [
+        {
+          "p": "For the provision of our services, we share your personal data on a strictly need-to-know-basis with:"
+        },
+        {
+          "table": {
+            "headers": ["Activity", "Recipients", "Location"],
+            "rows": [
+              [
+                "Accessing our app",
+                {
+                  "ul": ["Data processors engaged by us, such as hosting providers."]
+                },
+                "EU"
+              ],
+              [
+                "Using our app",
+                {
+                  "ul": [
+                    "Charge point providers;",
+                    "Subcontractors or service providers such as, consulting and law firms, insurance companies and payment providers;",
+                    "Data processors engaged by us, such as payroll companies and hosting providers."
+                  ]
+                },
+                "EU"
+              ],
+              [
+                "Customer service or otherwise corresponding with you",
+                {
+                  "ul": ["Data processors engaged by us, such as hosting providers."]
+                },
+                "EU"
+              ],
+              ["Other general purposes", "Depends on the purpose for processing.", "EU"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Transfer to countries outside the EEA",
+      "nodes": [
+        {
+          "p": "We do not involve parties that are located outside the European Economic Area (“EEA”) for the processing of your personal data. If this will be the case in the future, we will duly inform you of that matter and the procedure as explained below will apply."
+        },
+        {
+          "p": "Transfers of your personal data to a country outside the EEA may in the first place be legitimized on the basis of a so-called adequacy decision. This is a decision in which the European Commission states that e.g. a certain country offers a level of data protection similar to the GDPR. See this link for the current list of adequacy decisions. If and insofar as we transfer personal data with parties in countries outside the EEA to which no adequacy decision applies, we will agree with these parties to data protection provisions set by the European Commission, so called standard contractual clauses (‘SCC’s’). These SCC’s guarantee appropriate data protection safeguards for transfers. A copy of the agreed standard contractual clauses can be requested by you."
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "nodes": [
+        {
+          "p": "We take appropriate organizational and technical security measures to protect your personal data and to prevent misuse, loss or alteration thereof. In addition, we limit access to personal data to those employees, agents, contractors and other third parties who need to have access in view of their work/services. Also, the aforementioned persons involved are bound by a confidentiality obligation, either in their employment agreements or (data processing) agreements."
+        },
+        {
+          "p": "We have internal security policies in place in which it is further described how we ensure an appropriate level of technical and organizational security measures. We also have a data breach policy in place in which it is described how we deal with a (possible) data breach."
+        }
+      ]
+    },
+    {
+      "title": "Retention periods",
+      "nodes": [
+        {
+          "p": "We have the following retention terms in place:"
+        },
+        {
+          "table": {
+            "headers": ["Activity", "Retention term"],
+            "rows": [
+              ["Accessing our app", "365 days"],
+              ["Using our app", "365 days"],
+              ["Customer service or otherwise corresponding with you", "365 days"],
+              ["Other general purposes", "Depends on the purpose for processing."]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Your rights (incl. the right to object)",
+      "nodes": [
+        {
+          "p": "In relation to our processing of your personal data, you have the below privacy rights. For more information on your privacy rights, please be referred to this webpage of the European Commission."
+        },
+        {
+          "ul": [
+            "Right to withdraw consent: In so far as our processing of your personal data is based on your consent (see above), you have the right to withdraw consent at any time.",
+            "Right of access: You have the right to request access to your personal data. This enables you to receive a copy of the personal data we hold about you (but not necessarily the documents themselves). We will then also provide you with further specifics of our processing of your personal data.",
+            "Right to rectification: You have the right to request rectification of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected.",
+            "Right to erasure: You have the right to request erasure of your personal data. This enables you to ask us to delete or remove personal data where: (i) the personal data are no longer necessary, (ii) you have withdrawn your consent, (iii) you have objected to the processing activities, (iv) the personal data have been unlawfully processed, (v) the personal data have to be erased on the basis of a legal requirement, or (vi) where the personal data have been collected in relation to the offer of information society services. We do not have to honour your request to the extent that the processing is necessary: (i) for exercising the right of freedom of expression and information, (ii) for compliance with a legal obligation which requires processing, (iii) for reasons of public interest in the area of public health, (iv) for archiving purposes, or (v) for the establishment, exercise or defence of legal claims.",
+            "Right to object: You have the right to object to processing of your personal data where we are relying on legitimate interests as processing ground (see above). Insofar as the processing of your personal data takes place for direct marketing purposes, we will always honour your request. For processing for other purposes, we will also cease and desist processing, unless we have compelling legitimate grounds for the processing which override your interests, rights and freedoms or that are related to the institution, exercise or substantiation of a legal claim.",
+            "Right to restriction: You have the right to request restriction of processing of your personal data in case: (i) the accuracy of the personal data is contested by you, during the period we verify your request, (ii) the processing is unlawful and restriction is requested by you instead of erasure, (iii) we no longer need the personal data but they are required by you for the establishment, exercise or defence of legal claims, or (iv) in case you have objected to processing, during the period we verify your request. If we have restricted the processing of your personal data, this means that we will only store them and no longer process them in any other way, unless: (i) with your consent, (ii) for the establishment, exercise or defence of legal claims, (iii) for the protection of the rights of another natural or legal person, (iv) or for reasons of important public interest",
+            "Right to data portability: You have the right to request to transfer of your personal data to you or to a third party of your choice (right to data portability). We will provide to you, or such third, your personal data in a structured, commonly used, machine-readable format. Please note that this right only applies if it concerns processing that is carried out by us by automated means, and only if the ground for such processing is your consent or the performance of a contract to which you are a party (see above).",
+            "Automated decision-making: You have the right not to be subject to a decision based solely on automated processing, which significantly impacts you (“which produces legal effects concerning you or similarly significantly affects you”). In this respect, please be informed that when processing your personal data, we do not make use of automated decision-making.",
+            "Right to complaint: In addition to the above mentioned rights you have the right to lodge a complaint with a supervisory authority, in particular in the EU Member State of your habitual residence, place of work or of an alleged infringement of the GDPR at all times. Please be referred to this webpage for an overview of the supervisory authorities and their contact details. However, we would appreciate the chance to deal with your concerns before you approach the supervisory authority so please contact us beforehand."
+          ]
+        },
+        {
+          "p": "The exercise of the above mentioned rights is free of charge and can be carried out by phone or by e-mail via the contact details displayed below. If requests are manifestly unfounded or excessive, in particular because of the repetitive character, we will either charge you a reasonable fee or refuse to comply with the request."
+        },
+        {
+          "p": "We may request specific information from you to help us confirm your identity before we comply with a request from you concerning one of your rights."
+        },
+        {
+          "p": "We will provide you with information about the follow-up to the request without undue delay and in principle within one month of receipt of the request. Depending on the complexity of the request and on the number of requests, this period can be extended by another two months. We will notify you of such an extension within one month of receipt of the request. The applicable privacy legislation may allow or require us to refuse your request. If we cannot comply with your request, we will inform you of the reasons why, subject to any legal or regulatory restrictions."
+        }
+      ]
+    },
+    {
+      "title": "Contact details",
+      "nodes": [
+        {
+          "p": "For any questions, comments or requests on how we handle your personal data, please contact us at privacy@chargenet.energy."
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "nodes": [
+        {
+          "p": "We are entitled at all times to delete your personal data without notice. In such a case, we owe no compensation to you as a result of the termination of the account."
+        },
+        {
+          "p": "If provisions from this privacy statement are in conflict with the law, they will be replaced by provisions of the same purport that reflects the original intention of the provision, all this to the extent legally permissible. In that case, the remaining provisions remain applicable unchanged."
+        },
+        {
+          "p": "We reserve the right to change this privacy statement on a regular basis. Where required, we will inform you of updates made to this privacy statement. The current version is always available on our app. This privacy policy was last amended and revised in November 2024."
+        }
+      ]
+    },
+    {
+      "title": "Definitions",
+      "nodes": [
+        {
+          "p": "In this privacy statement, the following definitions apply:"
+        },
+        {
+          "table": {
+            "headers": ["Definition", "Meaning"],
+            "rows": [
+              ["App", "ChargeNet Driver app, developed by ChargeNet B.V."],
+              [
+                "Applicable privacy legislation",
+                "All applicable privacy legislation, including the General Data Protection Regulation (“GDPR”) and the relevant national implementation acts."
+              ],
+              ["Privacy statement", "This present privacy statement."]
+            ]
+          }
+        },
+        {
+          "p": "Other terms that are defined in the Applicable privacy legislation, such as personal data, (joint) controller, processor, data subject and processing will have the meaning as described in the applicable privacy legislation."
+        }
+      ]
+    }
+  ]
+}

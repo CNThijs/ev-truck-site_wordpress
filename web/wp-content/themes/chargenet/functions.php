@@ -19,6 +19,7 @@ require_once CHARGENET_DIR . '/inc/fonts.php';
 require_once CHARGENET_DIR . '/inc/head.php';
 require_once CHARGENET_DIR . '/inc/nav.php';
 require_once CHARGENET_DIR . '/inc/hreflang.php';
+require_once CHARGENET_DIR . '/inc/redirects.php';
 require_once CHARGENET_DIR . '/inc/style-guide.php';
 require_once CHARGENET_DIR . '/inc/image.php';
 require_once CHARGENET_DIR . '/inc/icons.php';

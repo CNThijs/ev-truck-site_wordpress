@@ -38,6 +38,7 @@ registerBlockType(metadata, {
 									'core/heading',
 									'core/list',
 									'core/quote',
+									'core/table',
 									'chargenet/button',
 								]}
 								template={[['core/paragraph', { placeholder: __('Write the text…', 'chargenet') }]]}

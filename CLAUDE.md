@@ -62,6 +62,10 @@ Not committed: WordPress core, uploads, vendor plugins, `vendor/`, `node_modules
 
 Every page section is a dynamic block in `web/wp-content/themes/chargenet/blocks/<name>/` (block.json apiVersion 3, `render.php`, `index.js`, `style.scss`), built by `@wordpress/scripts` into `build/blocks/` (git-ignored). Vite builds only the global theme assets. Shared settings, the PHP wrapper (`chargenet_section_open/close`), page restrictions and Polylang notes: `docs/sections.md`. New section: `npm run make:section <name>`. Keep `render.php` and the editor `edit()` markup identical. Library (hero, feature grid and columns, stats, steps, accordion, team, logo strip, card slider, post grid, plus the Epic 3 sections): fields and variants in `docs/sections.md`. Admin-only Section Gallery at `/section-gallery/` renders every variant with sample content: add a section's variants to `inc/gallery-samples.php`. Images go through `chargenet_image()`, icons through `chargenet_the_icon()`. Posts can carry an original source URL (`inc/post-source.php`).
 
+## Content
+
+Pages, media and menus are code: `content/` (copy of both languages side by side, media in `content/media/`) built by `bin/seed-content.php` (run by `ddev start`). Rules, how to add a page and the app-badge files: `docs/content.md`. Dutch texts that were added or translated are listed in `docs/translation-review.md`: update it with every page.
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.
