@@ -66,6 +66,10 @@ Every page section is a dynamic block in `web/wp-content/themes/chargenet/blocks
 
 Pages, media and menus are code: `content/` (copy of both languages side by side, media in `content/media/`) built by `bin/seed-content.php` (run by `ddev start`). Rules, how to add a page and the app-badge files: `docs/content.md`. Dutch texts that were added or translated are listed in `docs/translation-review.md`: update it with every page.
 
+## Forms and email
+
+Contact form and trend report form: handler, private submissions post type, report codes table (CSV import), emails through Microsoft 365 (OAuth SMTP, secrets only as constants in wp-config.php), privacy exporter/eraser and 12-month retention. All in the theme (`inc/forms/`); how it works, DNS, setup and checks: `docs/integrations.md`. `npm run test:forms`. Never put credentials in the repository; never write a BCC address into a visible header.
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.

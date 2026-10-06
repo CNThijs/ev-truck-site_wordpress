@@ -80,11 +80,13 @@ function chargenet_language_switcher( string $label = '' ): void {
 }
 
 /**
- * Header call-to-action. Scrolls to the contact block in the footer.
+ * Header call-to-action: the contact page, or the contact block in the footer while that page does not exist.
  */
 function chargenet_header_cta(): void {
+	$contact = chargenet_seeded_page_url( 'contact' );
 	printf(
-		'<a class="btn btn--primary btn--sm" href="#contact">%s</a>',
+		'<a class="btn btn--primary btn--sm" href="%s">%s</a>',
+		esc_url( '' !== $contact ? $contact : '#contact' ),
 		esc_html__( 'Contact Us', 'chargenet' )
 	);
 }

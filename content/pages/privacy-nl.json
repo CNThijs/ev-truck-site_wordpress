@@ -1,6 +1,6 @@
 {
   "intro": "Deze privacyverklaring bevat belangrijke informatie, omdat hierin staat hoe ChargeNet omgaat met persoonsgegevens van app-gebruikers (“gebruiker” of “u”). Lees deze privacyverklaring zorgvuldig door voordat u onze diensten gebruikt. Als u vragen heeft, neem dan gerust contact met ons op.",
-  "updated": "Laatst bijgewerkt: 6 november 2024",
+  "updated": "Laatst bijgewerkt: 6 oktober 2026",
   "sections": [
     {
       "title": "Over ons",
@@ -112,6 +112,26 @@
                 }
               ],
               [
+                "Gebruik van onze websiteformulieren (contactformulier en aanvraag trendrapport)",
+                {
+                  "ul": [
+                    "Naam",
+                    "E-mailadres",
+                    "Bedrijfsnaam (aanvraag trendrapport zonder code)",
+                    "Uw bericht (contactformulier)",
+                    "De rapportcode die u heeft ingevuld (aanvraag trendrapport)",
+                    "Uw toestemming voor deze privacyverklaring en het moment waarop u die gaf",
+                    "Campagne-informatie uit de link die u volgde (bijvoorbeeld utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens op basis van uw toestemming, die u geeft door het vakje op het formulier aan te vinken.",
+                    "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het beantwoorden van uw bericht of verzoek, (ii) u het gevraagde rapport toesturen en één keer contact opnemen, (iii) het bijhouden van verzoeken en van het gebruik van rapportcodes en (iv) het verbeteren van onze beveiliging en het voorkomen van misbruik van de formulieren."
+                  ]
+                }
+              ],
+              [
                 "Overige algemene doeleinden",
                 {
                   "ul": [
@@ -203,6 +223,16 @@
                 },
                 "EU"
               ],
+              [
+                "Gebruik van onze websiteformulieren (contactformulier en aanvraag trendrapport)",
+                {
+                  "ul": [
+                    "Onze e-mailaanbieder (Microsoft 365), die de e-mails bezorgt die wij u sturen en de berichten ontvangt die u ons stuurt.",
+                    "Door ons ingeschakelde verwerkers, zoals hostingproviders."
+                  ]
+                },
+                "EU"
+              ],
               ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"]
             ]
           }
@@ -244,6 +274,10 @@
               ["Toegang tot onze app", "365 dagen"],
               ["Gebruik van onze app", "365 dagen"],
               ["Klantenservice of anderszins met u corresponderen", "365 dagen"],
+              [
+                "Gebruik van onze websiteformulieren (contactformulier en aanvraag trendrapport)",
+                "365 dagen"
+              ],
               ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking."]
             ]
           }
@@ -298,7 +332,7 @@
           "p": "Indien bepalingen uit deze privacyverklaring in strijd zijn met de wet, worden zij vervangen door bepalingen van dezelfde strekking die de oorspronkelijke bedoeling van de bepaling weerspiegelen, een en ander voor zover wettelijk toegestaan. De overige bepalingen blijven in dat geval ongewijzigd van toepassing."
         },
         {
-          "p": "Wij behouden ons het recht voor deze privacyverklaring regelmatig te wijzigen. Waar nodig informeren wij u over aanpassingen van deze privacyverklaring. De actuele versie is altijd beschikbaar in onze app. Dit privacybeleid is voor het laatst gewijzigd en herzien in november 2024."
+          "p": "Wij behouden ons het recht voor deze privacyverklaring regelmatig te wijzigen. Waar nodig informeren wij u over aanpassingen van deze privacyverklaring. De actuele versie is altijd beschikbaar in onze app. Dit privacybeleid is voor het laatst gewijzigd en herzien in oktober 2026."
         }
       ]
     },

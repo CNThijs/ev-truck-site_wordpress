@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/trend-report-form",
+  "title": "Trend report form",
+  "category": "chargenet-sections",
+  "icon": "download",
+  "description": "Request form for the trend report: code and email, or name, company and email without a code. Sends the report link by email. Works without JavaScript.",
+  "keywords": ["form", "report", "download", "code"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "headingLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "intro": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "align": false,
+    "customClassName": false
+  },
+  "example": {
+    "attributes": {
+      "heading": "Trend report form"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

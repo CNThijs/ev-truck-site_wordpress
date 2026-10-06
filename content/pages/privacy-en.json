@@ -1,6 +1,6 @@
 {
   "intro": "This privacy statement contains important information as it sets out how ChargeNet handles personal data of app users (“user” or “you”). Please read this privacy statement carefully before you use our services. If you have any questions, please feel free to contact us.",
-  "updated": "Last Updated: November 6th, 2024",
+  "updated": "Last Updated: October 6th, 2026",
   "sections": [
     {
       "title": "About us",
@@ -112,6 +112,26 @@
                 }
               ],
               [
+                "Using our website forms (contact form and trend report request)",
+                {
+                  "ul": [
+                    "Name",
+                    "Email address",
+                    "Company name (trend report request without a code)",
+                    "Your message (contact form)",
+                    "The report code you entered (trend report request)",
+                    "Your consent to this privacy statement, and when you gave it",
+                    "Campaign information from the link you followed (for example utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "We collect these personal data on the basis of your consent, which you give by ticking the box on the form.",
+                    "We process your personal data for purposes of (i) answering your message or request, (ii) sending you the report you asked for and following up once, (iii) keeping a record of requests and of the use of report codes, and (iv) enhancing our security and preventing abuse of the forms."
+                  ]
+                }
+              ],
+              [
                 "Other general purposes",
                 {
                   "ul": [
@@ -203,6 +223,16 @@
                 },
                 "EU"
               ],
+              [
+                "Using our website forms (contact form and trend report request)",
+                {
+                  "ul": [
+                    "Our email provider (Microsoft 365), which delivers the emails we send you and receives the messages you send us.",
+                    "Data processors engaged by us, such as hosting providers."
+                  ]
+                },
+                "EU"
+              ],
               ["Other general purposes", "Depends on the purpose for processing.", "EU"]
             ]
           }
@@ -244,6 +274,7 @@
               ["Accessing our app", "365 days"],
               ["Using our app", "365 days"],
               ["Customer service or otherwise corresponding with you", "365 days"],
+              ["Using our website forms (contact form and trend report request)", "365 days"],
               ["Other general purposes", "Depends on the purpose for processing."]
             ]
           }
@@ -298,7 +329,7 @@
           "p": "If provisions from this privacy statement are in conflict with the law, they will be replaced by provisions of the same purport that reflects the original intention of the provision, all this to the extent legally permissible. In that case, the remaining provisions remain applicable unchanged."
         },
         {
-          "p": "We reserve the right to change this privacy statement on a regular basis. Where required, we will inform you of updates made to this privacy statement. The current version is always available on our app. This privacy policy was last amended and revised in November 2024."
+          "p": "We reserve the right to change this privacy statement on a regular basis. Where required, we will inform you of updates made to this privacy statement. The current version is always available on our app. This privacy policy was last amended and revised in October 2026."
         }
       ]
     },

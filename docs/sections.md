@@ -87,6 +87,9 @@ Built in batches; each section is in the [Section Gallery](#section-gallery) wit
 | `rich-text`             | heading, text blocks (paragraph, heading, list, quote, table)                                                                     |                                                                                        |                                        |
 | `rich-text-image`       | eyebrow, heading, text blocks, image + alt override, image position                                                               | image left or right                                                                    |                                        |
 | `cta-band`              | heading, text, buttons                                                                                                            | background dark (default), light, paper                                                |                                        |
+| `contact-form`          | eyebrow, heading, intro; fields name, email, message, consent (fixed)                                                             |                                                                                        | The form always prints                 |
+| `trend-report-form`     | eyebrow, heading, intro; code + email, or (no code) name + company + email; consent (fixed)                                       |                                                                                        | The form always prints                 |
+| `locations-list`        | eyebrow, heading, intro, maximum number; the entries come from Locations in the admin menu                                        |                                                                                        | No locations: nothing is printed       |
 
 Every section also has the shared settings above. Items with `data-reveal`, lists with `data-reveal-group` and numbers with `data-count` are hooks for the animation epic: nothing depends on them.
 
@@ -100,6 +103,9 @@ Every section also has the shared settings above. Items with `data-reveal`, list
 - **Post grid:** dynamic. `chargenet_post_grid_items()` (`inc/post-grid.php`) turns the newest posts of the current language into a plain array, and `render.php` only prints that array; the Section Gallery swaps in sample posts through the `chargenet_post_grid_items` filter. Categories belong to one language, so pick the Dutch category on the Dutch page. The editor preview is the real server output. The cards always link to the post itself; the original source is shown on the post (see below).
 - **Post grid paging:** with the `paginate` attribute (set on the News page, no editor control) the grid follows the page being viewed (`/blog/page/2/`) and prints page links.
 - **Section intro:** new sections print their eyebrow, heading and introduction through `chargenet_section_header()` (PHP) and `SectionHeaderFields` (`blocks/_shared/header.js`, editor), so the two stay identical.
+
+- **Forms:** the two form sections are dynamic and print real forms (the editor preview is not clickable). How they work, the spam protection, emails, storage and privacy: `docs/integrations.md`.
+- **Locations list:** dynamic; `chargenet_locations_items()` (`inc/locations.php`) turns the Locations of the current language into a plain array.
 
 ### Heading levels
 

@@ -1,8 +1,8 @@
 <?php
 /**
  * Campaign landing page for the trend report. The live page is Dutch only; the English version is a translation
- * (listed in docs/translation-review.md). The live page has a lead form that emails the report; where leads are
- * stored is not decided yet, so this page has no form: the call to action asks to get in touch by email.
+ * (listed in docs/translation-review.md). The request form is the Trend Report Form section (code and email, or name,
+ * company and email): submissions are stored in WordPress and the report link is emailed (docs/integrations.md).
  */
 return array(
 	'key'    => 'rapport2027',
@@ -33,10 +33,8 @@ return array(
 				),
 				'dl_e'     => 'Gratis rapport',
 				'dl_h'     => 'Ontvang het Trendrapport 2027',
-				'dl_t'     => 'Wilt u het Trendrapport 2027 ontvangen? Stuur ons een e-mail, dan sturen wij het rapport naar uw mailbox.',
-				'dl_b'     => 'Vraag het rapport aan',
-				'mail_sub' => 'Trendrapport 2027',
-			),
+				'dl_t'     => 'Vul uw gegevens in, dan sturen wij het Trendrapport 2027 direct naar uw mailbox. Eén rapport, geen nieuwsbrief-abonnement, geen vervolgmailings zonder uw instemming. Wij gebruiken uw gegevens alleen voor de toezending van dit rapport en één opvolgend contactmoment.',
+							),
 			'en' => array(
 				'h1'       => 'The numbers behind the e-transition in Dutch road transport',
 				'intro'    => 'Truck toll, ETS 2, zero-emission zones, grid congestion: how the calculation of your cost per kilometre tips over the next 24 months. Built from ING, ElaadNL, Milence and RVO. No wishful thinking.',
@@ -54,10 +52,8 @@ return array(
 				),
 				'dl_e'     => 'Free report',
 				'dl_h'     => 'Get the Trend Report 2027',
-				'dl_t'     => 'Would you like to receive the Trend Report 2027? Send us an email and we will send the report to your inbox.',
-				'dl_b'     => 'Request the report',
-				'mail_sub' => 'Trend Report 2027',
-			),
+				'dl_t'     => 'Fill in your details and we will send the Trend Report 2027 straight to your inbox. One report, no newsletter subscription, no follow-up mailings without your consent. We only use your details to send this report and for one follow-up contact.',
+							),
 		)[ $lang ];
 
 		$out = cn_block(
@@ -99,16 +95,15 @@ return array(
 		);
 
 		$out .= cn_block(
-			'chargenet/rich-text-image',
+			'chargenet/trend-report-form',
 			array(
 				'sectionBackground' => 'paper',
 				'animation'         => 'fade-rise',
 				'anchor'            => 'download',
 				'eyebrow'           => $c['dl_e'],
 				'heading'           => $c['dl_h'],
-				'imageId'           => $media( 'report-holding' ),
-			),
-			cn_p( $c['dl_t'] ) . cn_button( $c['dl_b'], 'mailto:info@chargenet.energy?subject=' . rawurlencode( $c['mail_sub'] ) )
+				'intro'             => $c['dl_t'],
+			)
 		);
 
 		return $out;

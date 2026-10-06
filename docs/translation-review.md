@@ -66,12 +66,13 @@ The live Dutch copy is final and was used as is. This file lists every Dutch tex
 
 ## Privacy policy
 
-| Where                        | Now                                                                                                                     | Why                                                                                                                                                              |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dutch page: whole text       | Full Dutch translation (`content/pages/privacy-nl.json`), "u/uw", GDPR terms as AVG, verwerkingsverantwoordelijke, etc. | The live Dutch page shows the English text. **This is a legal text: have it checked by someone qualified before you rely on it.** The English text is unchanged. |
-| Lists under "How we obtain…" | Shown                                                                                                                   | The live page has a bug and drops these four bullet points; they are part of the policy.                                                                         |
-| Tables                       | Real tables (core table block); list cells show their items as lines starting with a dash                               | The live page tables are kept in structure. The cookie table is empty on the live page and stays empty (four cookie categories, no cookies listed).              |
-| "this link" / "this webpage" | Plain text, no link                                                                                                     | The live text has no URL for them (adequacy decisions, EU privacy rights, supervisory authorities). Add the URLs if you want them linked.                        |
+| Where                                       | Now                                                                                                                     | Why                                                                                                                                                              |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dutch page: whole text                      | Full Dutch translation (`content/pages/privacy-nl.json`), "u/uw", GDPR terms as AVG, verwerkingsverantwoordelijke, etc. | The live Dutch page shows the English text. **This is a legal text: have it checked by someone qualified before you rely on it.** The English text is unchanged. |
+| Lists under "How we obtain…"                | Shown                                                                                                                   | The live page has a bug and drops these four bullet points; they are part of the policy.                                                                         |
+| Tables                                      | Real tables (core table block); list cells show their items as lines starting with a dash                               | The live page tables are kept in structure. The cookie table is empty on the live page and stays empty (four cookie categories, no cookies listed).              |
+| New form rows (details, sharing, retention) | Dutch translation of the new rows and the new date (6 oktober 2026)                                                     | Added for the website forms; legal text, check before use.                                                                                                       |
+| "this link" / "this webpage"                | Plain text, no link                                                                                                     | The live text has no URL for them (adequacy decisions, EU privacy rights, supervisory authorities). Add the URLs if you want them linked.                        |
 
 ## Projects
 
@@ -94,6 +95,16 @@ The live Dutch copy is final and was used as is. This file lists every Dutch tex
 | All posts                                     | The backtick used as an apostrophe is now ’        | Typo in the old text (English and Dutch).                     |
 
 Other English left in the Dutch posts is a slogan ("Keep charging ahead!") and a fund name (Vroegefasefonds Gelderland); both kept.
+
+## Contact page and forms
+
+| Where                                        | Dutch now                                                                                                                                               | Why                                                                                           |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Contact page title, intro                    | "Neem contact met ons op" / "Heeft u een vraag over ChargeNet? Stuur ons een bericht, dan nemen wij contact met u op. U ontvangt een kopie per e-mail." | New page; the old site had no contact page.                                                   |
+| Form labels, hints, errors, messages         | e.g. "Uw unieke code", "Zakelijk e-mailadres", "Ik heb geen code", "Deze code is niet geldig. Controleer de code of vraag het rapport aan zonder code." | New text (the old Dutch form texts were only in the unused contact form; those were English). |
+| Consent sentence                             | "Ik ga ermee akkoord dat ChargeNet mijn gegevens verwerkt om dit verzoek af te handelen, zoals beschreven in het privacybeleid."                        | New text. Stored with each submission.                                                        |
+| Email texts (trend report and contact)       | Default Dutch subjects and bodies, e.g. "Uw Trendrapport 2027", "Bedankt voor uw interesse in het ChargeNet Trendrapport 2027…"                         | New text (the old template was inside EmailJS). Editors can change them in the admin.         |
+| Admin screens (submissions, codes, settings) | Dutch, in the `.po` file                                                                                                                                | Editor interface.                                                                             |
 
 ## Statistics on Home (decided: keep as is)
 

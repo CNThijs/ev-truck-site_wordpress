@@ -67,3 +67,7 @@ Single posts: `template-parts/content-single.php` (title band with category and 
 ## Redirects from the old site
 
 `inc/redirects.php` (in the theme) sends the old URLs to the new ones with a 301: the paired slugs (`/locations`, `/locaties`, `/about`, `/over-ons`, `/faq`, `/privacy`, ...) go to the language they were written in, `/blog/<slug>` goes to the English post (when it exists), the project pages to the new project pages, and the campaign shortlinks (`/rapport2027`, `/rapport2027/<code>`, `/rapport2027/download`, `/routecheck`, `/opbrengst`) go to the Dutch pages with the same tracking parameters as the old site. Old URLs that never worked (the Terms page, the old mobile menu links) are not redirected. Add a line to the map when you add a page that the old site had.
+
+## Contact page, report PDF and downloads
+
+The Contact page (`content/pages/contact.php`, slugs `contact` / `contact-opnemen`) holds the contact form; the header's "Contact Us" button goes to it. The trend report page holds the trend report form (see `docs/integrations.md`). Files that are too big for git go in `content/downloads/` (ignored by git); the seeder copies them to `wp-content/uploads/chargenet-downloads/`, and the theme serves the report at `/downloads/ChargeNet-TR2027.pdf`. On a fresh server put the PDF there by hand (or copy the folder and run the seeder).

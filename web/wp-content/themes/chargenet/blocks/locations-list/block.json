@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/locations-list",
+  "title": "Locations list",
+  "category": "chargenet-sections",
+  "icon": "location",
+  "description": "The charging locations (Locations in the admin menu) of the page's language as an accessible list. Prints nothing while there are no locations.",
+  "keywords": ["locations", "map", "charging", "addresses"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "headingLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "intro": {
+      "type": "string",
+      "default": ""
+    },
+    "count": {
+      "type": "number",
+      "default": 50
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "align": false,
+    "customClassName": false
+  },
+  "example": {
+    "attributes": {
+      "heading": "Our charging locations"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-05T16:22:04+02:00\n"
+"POT-Creation-Date: 2026-10-05T22:02:23+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -62,6 +62,16 @@ msgstr "Vorige kaarten"
 msgid "Next cards"
 msgstr "Volgende kaarten"
 
+#: blocks/locations-list/render.php:47
+#: build/blocks/locations-list/render.php:47
+msgid "Access"
+msgstr "Toegang"
+
+#: blocks/locations-list/render.php:50
+#: build/blocks/locations-list/render.php:50
+msgid "Charge points"
+msgstr "Laadpunten"
+
 #. translators: %s: website of the original source, for example linkedin.com.
 #: blocks/post-grid/render.php:80 build/blocks/post-grid/render.php:80
 #: inc/post-source.php:123
@@ -117,7 +127,7 @@ msgstr "6827 AV, Arnhem, Nederland"
 msgid "Footer"
 msgstr "Voettekst"
 
-#: footer.php:28
+#: footer.php:28 inc/forms/privacy.php:58 inc/forms/storage.php:405
 msgid "Company"
 msgstr "Bedrijf"
 
@@ -175,17 +185,505 @@ msgstr ""
 "De ChargeNet-sectieblokken zijn niet gebouwd. Voer npm run build (of npm run "
 "dev) uit in de repository."
 
+#: inc/forms/codes.php:191 inc/forms/codes.php:192 inc/forms/codes.php:267
+msgid "Report codes"
+msgstr "Rapportcodes"
+
+#: inc/forms/codes.php:205 inc/forms/codes.php:239 inc/forms/settings.php:78
+#: inc/forms/settings.php:118 inc/forms/storage.php:331
+#: inc/forms/storage.php:444
+msgid "You are not allowed to do this."
+msgstr "U heeft hier geen toestemming voor."
+
+#. translators: 1: added, 2: updated, 3: removed, 4: skipped invalid lines, 5: skipped duplicate lines.
+#: inc/forms/codes.php:273
+#, php-format
+msgid ""
+"Import done: %1$d added, %2$d updated, %3$d removed. Skipped: %4$d invalid "
+"and %5$d duplicate lines."
+msgstr "Import klaar: %1$d toegevoegd, %2$d bijgewerkt, %3$d verwijderd. Overgeslagen: %4$d ongeldige en %5$d dubbele regels."
+
+#: inc/forms/codes.php:283
+msgid "The file could not be read. Use a CSV file of at most 2 MB."
+msgstr "Het bestand kon niet worden gelezen. Gebruik een CSV-bestand van maximaal 2 MB."
+
+#. translators: 1: number of codes, 2: number of codes used at least once.
+#: inc/forms/codes.php:290
+#, php-format
+msgid ""
+"%1$d codes on the list, %2$d used at least once. Codes are reusable: each "
+"use is recorded, the code stays valid."
+msgstr "%1$d codes op de lijst, %2$d minstens één keer gebruikt. Codes zijn herbruikbaar: elk gebruik wordt vastgelegd, de code blijft geldig."
+
+#: inc/forms/codes.php:299
+msgid "CSV file"
+msgstr "CSV-bestand"
+
+#: inc/forms/codes.php:300
+msgid ""
+"One code per line, or a header row with a column called code (and optionally "
+"label, company or name). Case and spaces are ignored."
+msgstr "Eén code per regel, of een kopregel met een kolom code (en eventueel label, company of name). Hoofdletters en spaties worden genegeerd."
+
+#: inc/forms/codes.php:302
+msgid "Add to the list (keep existing codes)"
+msgstr "Toevoegen aan de lijst (bestaande codes blijven)"
+
+#: inc/forms/codes.php:303
+msgid "Replace the list (remove codes that are not in the file)"
+msgstr "De lijst vervangen (codes die niet in het bestand staan worden verwijderd)"
+
+#: inc/forms/codes.php:305
+msgid "Import"
+msgstr "Importeren"
+
+#: inc/forms/codes.php:307
+msgid "Download the list with use counts"
+msgstr "Download de lijst met aantal keer gebruikt"
+
+#: inc/forms/handler.php:122
+msgid ""
+"I agree that ChargeNet processes my details to handle this request, as "
+"described in the privacy policy."
+msgstr "Ik ga ermee akkoord dat ChargeNet mijn gegevens verwerkt om dit verzoek af te handelen, zoals beschreven in het privacybeleid."
+
+#: inc/forms/handler.php:178
+msgid "Enter a valid email address."
+msgstr "Vul een geldig e-mailadres in."
+
+#: inc/forms/handler.php:183
+msgid "Enter your name (at least 2 characters)."
+msgstr "Vul uw naam in (minimaal 2 tekens)."
+
+#: inc/forms/handler.php:189
+msgid "Enter a message (at least 10 characters)."
+msgstr "Vul een bericht in (minimaal 10 tekens)."
+
+#: inc/forms/handler.php:195
+msgid "Enter your company name (at least 2 characters)."
+msgstr "Vul uw bedrijfsnaam in (minimaal 2 tekens)."
+
+#: inc/forms/handler.php:201
+msgid "Enter your code."
+msgstr "Vul uw code in."
+
+#: inc/forms/handler.php:205
+msgid "Please agree to the privacy statement to continue."
+msgstr "Ga akkoord met de privacyverklaring om door te gaan."
+
+#: inc/forms/handler.php:252
+msgid "Thank you."
+msgstr "Dank u wel."
+
+#: inc/forms/handler.php:257
+msgid "That was very fast. Please wait a moment and send the form again."
+msgstr "Dat ging erg snel. Wacht even en verstuur het formulier opnieuw."
+
+#: inc/forms/handler.php:260
+msgid ""
+"We could not verify that you are not a robot. Reload the page and try again."
+msgstr "We konden niet controleren of u geen robot bent. Laad de pagina opnieuw en probeer het nog eens."
+
+#: inc/forms/handler.php:263
+msgid "Too many requests. Please try again in an hour."
+msgstr "Te veel verzoeken. Probeer het over een uur opnieuw."
+
+#: inc/forms/handler.php:268 inc/forms/handler.php:279
+msgid "Please check the fields marked below."
+msgstr "Controleer de hieronder gemarkeerde velden."
+
+#: inc/forms/handler.php:274
+msgid ""
+"Too many attempts with a code that is not valid. Try again later, or request "
+"the report without a code."
+msgstr "Te veel pogingen met een ongeldige code. Probeer het later opnieuw, of vraag het rapport aan zonder code."
+
+#: inc/forms/handler.php:280
+msgid ""
+"This code is not valid. Check the code or request the report without one."
+msgstr "Deze code is niet geldig. Controleer de code of vraag het rapport aan zonder code."
+
+#: inc/forms/handler.php:304
+msgid ""
+"Something went wrong on our side. Please try again later or email "
+"info@chargenet.energy."
+msgstr "Er ging iets mis aan onze kant. Probeer het later opnieuw of mail naar info@chargenet.energy."
+
+#: inc/forms/handler.php:318
+msgid ""
+"Thank you for your message. We have sent a copy to your email address and "
+"will get back to you soon."
+msgstr "Bedankt voor uw bericht. Wij hebben een kopie naar uw e-mailadres gestuurd en nemen snel contact met u op."
+
+#: inc/forms/handler.php:319
+msgid ""
+"Thank you. We are sending the Trend Report 2027 to your email address. If "
+"you do not see it within a few minutes, check your spam folder."
+msgstr "Bedankt. Wij sturen het Trendrapport 2027 naar uw e-mailadres. Ziet u het binnen enkele minuten niet, kijk dan in uw spammap."
+
+#: inc/forms/handler.php:347
+msgid "This page has expired. Reload the page and send the form again."
+msgstr "Deze pagina is verlopen. Laad de pagina opnieuw en verstuur het formulier opnieuw."
+
+#: inc/forms/privacy.php:21 inc/forms/privacy.php:36
+msgid "ChargeNet form submissions"
+msgstr "ChargeNet-formulierinzendingen"
+
+#: inc/forms/privacy.php:54 inc/forms/storage.php:152 inc/forms/storage.php:401
+msgid "Form"
+msgstr "Formulier"
+
+#: inc/forms/privacy.php:55 inc/forms/storage.php:153 inc/forms/storage.php:402
+#: inc/nav.php:53
+msgid "Language"
+msgstr "Taal"
+
+#: inc/forms/privacy.php:56 inc/forms/render.php:188 inc/forms/render.php:269
+#: inc/forms/storage.php:150 inc/forms/storage.php:403
+#: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
+#: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
+msgid "Name"
+msgstr "Naam"
+
+#: inc/forms/privacy.php:57 inc/forms/storage.php:151 inc/forms/storage.php:155
+#: inc/forms/storage.php:404 blocks/team-member/index.js:48
+#: build/blocks/team-member/index.js:1
+msgid "Email"
+msgstr "E-mail"
+
+#: inc/forms/privacy.php:59 inc/forms/render.php:209 inc/forms/storage.php:406
+msgid "Message"
+msgstr "Bericht"
+
+#: inc/forms/privacy.php:60 inc/forms/storage.php:407
+msgid "Code used"
+msgstr "Gebruikte code"
+
+#: inc/forms/privacy.php:61
+msgid "Consent given to"
+msgstr "Toestemming gegeven voor"
+
+#: inc/forms/privacy.php:72 inc/forms/storage.php:156
+msgid "Date"
+msgstr "Datum"
+
+#: inc/forms/privacy.php:77 inc/forms/storage.php:25 inc/forms/storage.php:27
+msgid "Form submissions"
+msgstr "Formulierinzendingen"
+
+#: inc/forms/render.php:59
+msgid "The form could not be sent. Check your connection and try again."
+msgstr "Het formulier kon niet worden verstuurd. Controleer uw verbinding en probeer het opnieuw."
+
+#: inc/forms/render.php:139
+msgid "Read the privacy policy"
+msgstr "Lees het privacybeleid"
+
+#: inc/forms/render.php:156
+msgid "Please turn on JavaScript to send this form."
+msgstr "Zet JavaScript aan om dit formulier te versturen."
+
+#: inc/forms/render.php:159
+msgid "Fields marked * are required."
+msgstr "Velden met * zijn verplicht."
+
+#: inc/forms/render.php:198
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: inc/forms/render.php:212
+msgid "At least 10 characters."
+msgstr "Minimaal 10 tekens."
+
+#: inc/forms/render.php:218
+msgid "Send message"
+msgstr "Bericht versturen"
+
+#: inc/forms/render.php:240
+msgid "Your unique code"
+msgstr "Uw unieke code"
+
+#: inc/forms/render.php:242
+msgid "You find the code on the card you received from us."
+msgstr "U vindt de code op de kaart die u van ons heeft ontvangen."
+
+#: inc/forms/render.php:251 inc/forms/render.php:289
+msgid "Business email address"
+msgstr "Zakelijk e-mailadres"
+
+#: inc/forms/render.php:260 inc/forms/render.php:298
+msgid "Send me the report"
+msgstr "Stuur mij het rapport"
+
+#: inc/forms/render.php:264
+msgid "I do not have a code"
+msgstr "Ik heb geen code"
+
+#: inc/forms/render.php:279
+msgid "Company name"
+msgstr "Bedrijfsnaam"
+
+#: inc/forms/settings.php:64 inc/forms/settings.php:153
+msgid "Form settings and emails"
+msgstr "Formulierinstellingen en e-mails"
+
+#: inc/forms/settings.php:65
+msgid "Settings and emails"
+msgstr "Instellingen en e-mails"
+
+#: inc/forms/settings.php:148
+msgid "Contact form email (to the team, the visitor in BCC)"
+msgstr "E-mail contactformulier (naar het team, de bezoeker in BCC)"
+
+#: inc/forms/settings.php:149
+msgid "Trend report email (to the visitor, the team in BCC)"
+msgstr "E-mail trendrapport (naar de bezoeker, het team in BCC)"
+
+#: inc/forms/settings.php:155
+msgid "Saved."
+msgstr "Opgeslagen."
+
+#: inc/forms/settings.php:158
+msgid "Test email sent."
+msgstr "Testmail verstuurd."
+
+#: inc/forms/settings.php:158
+msgid "Test email failed. Check the mail settings (docs/integrations.md)."
+msgstr "Testmail mislukt. Controleer de e-mailinstellingen (docs/integrations.md)."
+
+#: inc/forms/settings.php:165
+msgid "Addresses"
+msgstr "Adressen"
+
+#: inc/forms/settings.php:169
+msgid "Contact form: team address (receives the message)"
+msgstr "Contactformulier: adres van het team (ontvangt het bericht)"
+
+#: inc/forms/settings.php:170
+msgid ""
+"Contact form: sending address (must be an authenticated chargenet.energy "
+"mailbox)"
+msgstr "Contactformulier: verzendadres (moet een geauthenticeerde chargenet.energy-mailbox zijn)"
+
+#: inc/forms/settings.php:171
+msgid "Trend report email: sending address"
+msgstr "E-mail trendrapport: verzendadres"
+
+#: inc/forms/settings.php:172
+msgid "Trend report email: team copy (BCC)"
+msgstr "E-mail trendrapport: kopie voor het team (BCC)"
+
+#: inc/forms/settings.php:179
+msgid "Report link in the trend report email"
+msgstr "Link naar het rapport in de e-mail"
+
+#: inc/forms/settings.php:181
+msgid "Empty: the fixed address of the report on this site."
+msgstr "Leeg: het vaste adres van het rapport op deze site."
+
+#: inc/forms/settings.php:184
+msgid "Privacy and spam protection"
+msgstr "Privacy en spambeveiliging"
+
+#: inc/forms/settings.php:186
+msgid "Keep submissions (months)"
+msgstr "Inzendingen bewaren (maanden)"
+
+#: inc/forms/settings.php:188
+msgid "Older submissions are deleted every day."
+msgstr "Oudere inzendingen worden dagelijks verwijderd."
+
+#: inc/forms/settings.php:189
+msgid "Cloudflare Turnstile site key"
+msgstr "Cloudflare Turnstile-sitesleutel"
+
+#: inc/forms/settings.php:195
+msgid ""
+"Turnstile is on. The secret key comes from the constant "
+"CHARGENET_TURNSTILE_SECRET in wp-config.php."
+msgstr "Turnstile staat aan. De geheime sleutel komt uit de constante CHARGENET_TURNSTILE_SECRET in wp-config.php."
+
+#: inc/forms/settings.php:196
+msgid ""
+"Turnstile is off. Turn it on by entering the site key here and defining "
+"CHARGENET_TURNSTILE_SECRET in wp-config.php."
+msgstr "Turnstile staat uit. Zet het aan door hier de sitesleutel in te vullen en CHARGENET_TURNSTILE_SECRET te definiëren in wp-config.php."
+
+#: inc/forms/settings.php:202
+msgid "Email texts"
+msgstr "E-mailteksten"
+
+#: inc/forms/settings.php:203
+msgid ""
+"Leave a field empty to use the default text. Placeholders: {name} {email} "
+"{company} {message} {code} {report_url} {site_name} {date}. The plain-text "
+"version is made from the same text."
+msgstr "Laat een veld leeg om de standaardtekst te gebruiken. Plaatshouders: {name} {email} {company} {message} {code} {report_url} {site_name} {date} {greeting}. De platte-tekstversie wordt van dezelfde tekst gemaakt."
+
+#: inc/forms/settings.php:215
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: inc/forms/settings.php:231
+msgid "Save"
+msgstr "Opslaan"
+
+#: inc/forms/settings.php:234
+msgid "Send a test email"
+msgstr "Een testmail versturen"
+
+#: inc/forms/settings.php:239
+msgid "Trend report email"
+msgstr "E-mail trendrapport"
+
+#: inc/forms/settings.php:239
+msgid "Contact form email"
+msgstr "E-mail contactformulier"
+
+#: inc/forms/settings.php:242
+msgid "Send test"
+msgstr "Testmail versturen"
+
+#: inc/forms/settings.php:244
+msgid "Sends the email with sample data to this address only (no team copy)."
+msgstr "Verstuurt de e-mail met voorbeeldgegevens alleen naar dit adres (geen kopie voor het team)."
+
+#: inc/forms/storage.php:26
+msgid "Form submission"
+msgstr "Formulierinzending"
+
+#: inc/forms/storage.php:28
+msgid "Search submissions"
+msgstr "Inzendingen zoeken"
+
+#: inc/forms/storage.php:29
+msgid "No submissions yet."
+msgstr "Nog geen inzendingen."
+
+#: inc/forms/storage.php:154
+msgid "Code"
+msgstr "Code"
+
+#: inc/forms/storage.php:167
+msgid "Contact"
+msgstr "Contact"
+
+#: inc/forms/storage.php:167
+msgid "Trend report"
+msgstr "Trendrapport"
+
+#: inc/forms/storage.php:206
+msgid "Pending"
+msgstr "In behandeling"
+
+#: inc/forms/storage.php:207
+msgid "Sent"
+msgstr "Verstuurd"
+
+#: inc/forms/storage.php:208
+msgid "Failed, will retry"
+msgstr "Mislukt, wordt opnieuw geprobeerd"
+
+#: inc/forms/storage.php:209
+msgid "Failed"
+msgstr "Mislukt"
+
+#: inc/forms/storage.php:225
+msgid "All forms"
+msgstr "Alle formulieren"
+
+#: inc/forms/storage.php:229
+msgid "All email statuses"
+msgstr "Alle e-mailstatussen"
+
+#: inc/forms/storage.php:312
+msgid "Export CSV"
+msgstr "CSV exporteren"
+
+#: inc/forms/storage.php:387
+msgid "Submission"
+msgstr "Inzending"
+
+#: inc/forms/storage.php:407
+msgid "No code (name and company given)"
+msgstr "Geen code (naam en bedrijf opgegeven)"
+
+#: inc/forms/storage.php:408
+msgid "Consent"
+msgstr "Toestemming"
+
+#: inc/forms/storage.php:409
+msgid "Campaign"
+msgstr "Campagne"
+
+#: inc/forms/storage.php:410
+msgid "Email status"
+msgstr "E-mailstatus"
+
+#: inc/forms/storage.php:410
+msgid "attempts"
+msgstr "pogingen"
+
+#: inc/forms/storage.php:411
+msgid "Last error"
+msgstr "Laatste fout"
+
+#: inc/forms/storage.php:434
+msgid "Send the email again"
+msgstr "E-mail opnieuw versturen"
+
+#: inc/locations.php:24 blocks/locations-list/index.js:21
+#: build/blocks/locations-list/index.js:1
+msgid "Locations"
+msgstr "Locaties"
+
+#: inc/locations.php:25
+msgid "Location"
+msgstr "Locatie"
+
+#: inc/locations.php:26
+msgid "Add location"
+msgstr "Locatie toevoegen"
+
+#: inc/locations.php:27
+msgid "Edit location"
+msgstr "Locatie bewerken"
+
+#: inc/locations.php:28
+msgid "No locations yet."
+msgstr "Nog geen locaties."
+
+#: inc/locations.php:66
+msgid "Street and number"
+msgstr "Straat en huisnummer"
+
+#: inc/locations.php:67
+msgid "Postal code"
+msgstr "Postcode"
+
+#: inc/locations.php:68
+msgid "City"
+msgstr "Plaats"
+
+#: inc/locations.php:69
+msgid "Access (for example private, semi-public, public)"
+msgstr "Toegang (bijvoorbeeld privé, semi-publiek, publiek)"
+
+#: inc/locations.php:70
+msgid "Charge points (for example 4 × 150 kW CCS2)"
+msgstr "Laadpunten (bijvoorbeeld 4 × 150 kW CCS2)"
+
+#: inc/locations.php:78
+msgid "Location details"
+msgstr "Locatiegegevens"
+
 #. translators: %s: menu item title.
 #: inc/nav.php:42
 #, php-format
 msgid "Show submenu for %s"
 msgstr "Submenu van %s tonen"
 
-#: inc/nav.php:53
-msgid "Language"
-msgstr "Taal"
-
-#: inc/nav.php:88
+#: inc/nav.php:90
 msgid "Contact Us"
 msgstr "Contact"
 
@@ -443,34 +941,40 @@ msgid "Sub-heading"
 msgstr "Subkop"
 
 #: blocks/feature-columns/index.js:33 blocks/feature-grid/index.js:55
-#: blocks/hero/index.js:83 blocks/post-grid/index.js:71
-#: blocks/rich-text-image/index.js:77 blocks/stats/index.js:62
-#: blocks/_shared/header.js:14 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/feature-columns/index.js:1
+#: blocks/hero/index.js:83 blocks/locations-list/index.js:33
+#: blocks/post-grid/index.js:71 blocks/rich-text-image/index.js:77
+#: blocks/stats/index.js:62 blocks/_shared/header.js:14
+#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/feature-columns/index.js:1
 #: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/stats/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Eyebrow (optional)"
 msgstr "Bovenkopje (optioneel)"
 
 #: blocks/feature-columns/index.js:40 blocks/feature-grid/index.js:62
-#: blocks/post-grid/index.js:76 blocks/rich-text-image/index.js:84
-#: blocks/rich-text/index.js:32 blocks/_shared/header.js:21
-#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: blocks/locations-list/index.js:38 blocks/post-grid/index.js:76
+#: blocks/rich-text-image/index.js:84 blocks/rich-text/index.js:32
+#: blocks/_shared/header.js:21 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/rich-text/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Section heading"
 msgstr "Sectiekop"
 
 #: blocks/feature-columns/index.js:48 blocks/feature-grid/index.js:70
-#: blocks/post-grid/index.js:81 blocks/_shared/header.js:29
-#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: blocks/locations-list/index.js:43 blocks/post-grid/index.js:81
+#: blocks/_shared/header.js:29 build/blocks/accordion/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/post-grid/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Introduction (optional)"
 msgstr "Inleiding (optioneel)"
 
@@ -574,6 +1078,24 @@ msgstr "Korte inleiding (optioneel)"
 msgid "Choose a cover image"
 msgstr "Kies een omslagafbeelding"
 
+#: blocks/locations-list/index.js:23 build/blocks/locations-list/index.js:1
+msgid "Maximum number of locations"
+msgstr "Maximaal aantal locaties"
+
+#: blocks/locations-list/index.js:29 build/blocks/locations-list/index.js:1
+msgid "Add and edit the locations under Locations in the admin menu."
+msgstr "Voeg locaties toe en bewerk ze onder Locaties in het beheermenu."
+
+#: blocks/locations-list/index.js:31 build/blocks/locations-list/index.js:1
+msgid "Text above the list"
+msgstr "Tekst boven de lijst"
+
+#: blocks/locations-list/index.js:55 build/blocks/locations-list/index.js:1
+msgid ""
+"No locations yet in this language. Add them under Locations in the admin "
+"menu."
+msgstr "Nog geen locaties in deze taal. Voeg ze toe onder Locaties in het beheermenu."
+
 #: blocks/logo-item/index.js:16 build/blocks/logo-item/index.js:1
 msgid "Logo image"
 msgstr "Logo-afbeelding"
@@ -581,11 +1103,6 @@ msgstr "Logo-afbeelding"
 #: blocks/logo-item/index.js:23 build/blocks/logo-item/index.js:1
 msgid "Organisation"
 msgstr "Organisatie"
-
-#: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
-#: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
-msgid "Name"
-msgstr "Naam"
 
 #: blocks/logo-item/index.js:26 build/blocks/logo-item/index.js:1
 msgid "Used as the alt text of the logo. Required for a linked logo."
@@ -832,10 +1349,6 @@ msgstr "Eén alinea per regel. Optioneel."
 msgid "Contact links"
 msgstr "Contactlinks"
 
-#: blocks/team-member/index.js:48 build/blocks/team-member/index.js:1
-msgid "Email"
-msgstr "E-mail"
-
 #: blocks/team-member/index.js:54 build/blocks/team-member/index.js:1
 msgid "LinkedIn URL"
 msgstr "LinkedIn-URL"
@@ -883,243 +1396,290 @@ msgid "Remove"
 msgstr "Verwijderen"
 
 #: blocks/_shared/section.js:11 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Light (white)"
 msgstr "Licht (wit)"
 
 #: blocks/_shared/section.js:12 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Paper (warm off-white)"
 msgstr "Papier (warm gebroken wit)"
 
 #: blocks/_shared/section.js:13 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Dark (forest green)"
 msgstr "Donker (bosgroen)"
 
 #: blocks/_shared/section.js:17 blocks/_shared/section.js:32
 #: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
 #: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "None"
 msgstr "Geen"
 
 #: blocks/_shared/section.js:18 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Small"
 msgstr "Klein"
 
 #: blocks/_shared/section.js:19 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Medium"
 msgstr "Middel"
 
 #: blocks/_shared/section.js:20 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Large (default)"
 msgstr "Groot (standaard)"
 
 #: blocks/_shared/section.js:24 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Show everywhere"
 msgstr "Overal tonen"
 
 #: blocks/_shared/section.js:25 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Hide on mobile"
 msgstr "Verbergen op mobiel"
 
 #: blocks/_shared/section.js:26 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Hide on desktop"
 msgstr "Verbergen op desktop"
 
 #: blocks/_shared/section.js:33 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Fade and rise on enter"
 msgstr "Infaden en omhoog bij binnenkomst"
 
 #: blocks/_shared/section.js:34 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Staggered reveal of items"
 msgstr "Items na elkaar tonen"
 
 #: blocks/_shared/section.js:35 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Headline line reveal"
 msgstr "Kop regel voor regel tonen"
 
 #: blocks/_shared/section.js:36 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Counting numbers (Statistics)"
 msgstr "Tellende getallen (Statistieken)"
 
 #: blocks/_shared/section.js:37 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Parallax background image"
 msgstr "Parallax-achtergrondafbeelding"
 
 #: blocks/_shared/section.js:38 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Line drawing (Steps connector)"
 msgstr "Lijn tekenen (verbindingslijn bij Stappen)"
 
 #: blocks/_shared/section.js:39 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Horizontal scroll (Card Slider)"
 msgstr "Horizontaal scrollen (Kaartenslider)"
 
 #: blocks/_shared/section.js:59 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Section settings"
 msgstr "Sectie-instellingen"
 
 #: blocks/_shared/section.js:61 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Background"
 msgstr "Achtergrond"
 
 #: blocks/_shared/section.js:67 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Space above"
 msgstr "Ruimte boven"
 
 #: blocks/_shared/section.js:73 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Space below"
 msgstr "Ruimte onder"
 
 #: blocks/_shared/section.js:79 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Visibility"
 msgstr "Zichtbaarheid"
 
 #: blocks/_shared/section.js:85 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Animation"
 msgstr "Animatie"
 
 #: blocks/_shared/section.js:86 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/hero/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
 #: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
 #: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
 #: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid ""
 "The first section of a page is never animated, except parallax. Parallax "
 "needs a background image, counting needs Statistics, line drawing needs "
@@ -1131,22 +1691,24 @@ msgstr ""
 "Kaartenslider."
 
 #: blocks/_shared/section.js:103 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/locations-list/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
 #: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Heading"
 msgstr "Kop"
 
 #: blocks/_shared/section.js:105 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/cta-band/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/locations-list/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
 #: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Heading level"
 msgstr "Kopniveau"
 
@@ -1253,6 +1815,37 @@ msgctxt "block keyword"
 msgid "cases"
 msgstr "cases"
 
+#: blocks/contact-form/block.json build/blocks/contact-form/block.json
+msgctxt "block title"
+msgid "Contact form"
+msgstr "Contactformulier"
+
+#: blocks/contact-form/block.json build/blocks/contact-form/block.json
+msgctxt "block description"
+msgid ""
+"A contact form (name, email, message, consent). Every message is stored and "
+"emailed to the team; the visitor gets a copy. Works without JavaScript."
+msgstr "Een contactformulier (naam, e-mail, bericht, toestemming). Elk bericht wordt opgeslagen en naar het team gemaild; de bezoeker krijgt een kopie. Werkt zonder JavaScript."
+
+#: blocks/contact-form/block.json blocks/trend-report-form/block.json
+#: build/blocks/contact-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulier"
+
+#: blocks/contact-form/block.json blocks/cta-band/block.json
+#: blocks/team/block.json build/blocks/contact-form/block.json
+#: build/blocks/cta-band/block.json build/blocks/team/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr "contact"
+
+#: blocks/contact-form/block.json build/blocks/contact-form/block.json
+msgctxt "block keyword"
+msgid "email"
+msgstr "e-mail"
+
 #: blocks/cta-band/block.json build/blocks/cta-band/block.json
 msgctxt "block title"
 msgid "Call To Action Band"
@@ -1282,12 +1875,6 @@ msgstr "call-to-action"
 msgctxt "block keyword"
 msgid "banner"
 msgstr "banner"
-
-#: blocks/cta-band/block.json blocks/team/block.json
-#: build/blocks/cta-band/block.json build/blocks/team/block.json
-msgctxt "block keyword"
-msgid "contact"
-msgstr "contact"
 
 #: blocks/feature-column/block.json build/blocks/feature-column/block.json
 msgctxt "block title"
@@ -1421,6 +2008,38 @@ msgstr "titel"
 msgctxt "block keyword"
 msgid "campaign"
 msgstr "campagne"
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block title"
+msgid "Locations list"
+msgstr "Locatielijst"
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block description"
+msgid ""
+"The charging locations (Locations in the admin menu) of the page's language "
+"as an accessible list. Prints nothing while there are no locations."
+msgstr "De laadlocaties (Locaties in het beheermenu) in de taal van de pagina als toegankelijke lijst. Toont niets zolang er geen locaties zijn."
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block keyword"
+msgid "locations"
+msgstr "locaties"
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block keyword"
+msgid "map"
+msgstr "kaart"
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block keyword"
+msgid "charging"
+msgstr "laden"
+
+#: blocks/locations-list/block.json build/blocks/locations-list/block.json
+msgctxt "block keyword"
+msgid "addresses"
+msgstr "adressen"
 
 #: blocks/logo-item/block.json build/blocks/logo-item/block.json
 msgctxt "block title"
@@ -1720,6 +2339,39 @@ msgstr "medewerkers"
 msgctxt "block keyword"
 msgid "advisors"
 msgstr "adviseurs"
+
+#: blocks/trend-report-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block title"
+msgid "Trend report form"
+msgstr "Trendrapportformulier"
+
+#: blocks/trend-report-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block description"
+msgid ""
+"Request form for the trend report: code and email, or name, company and "
+"email without a code. Sends the report link by email. Works without "
+"JavaScript."
+msgstr "Aanvraagformulier voor het trendrapport: code en e-mail, of zonder code naam, bedrijf en e-mail. Stuurt de link naar het rapport per e-mail. Werkt zonder JavaScript."
+
+#: blocks/trend-report-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block keyword"
+msgid "report"
+msgstr "rapport"
+
+#: blocks/trend-report-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block keyword"
+msgid "download"
+msgstr "download"
+
+#: blocks/trend-report-form/block.json
+#: build/blocks/trend-report-form/block.json
+msgctxt "block keyword"
+msgid "code"
+msgstr "code"
 
 #: theme.json
 msgctxt "Color name"

@@ -1,0 +1,90 @@
+@use '../mixins' as *;
+
+// The contact and trend report forms (inc/forms/render.php, enhanced by blocks/_shared/form.js).
+.cn-form {
+	display: grid;
+	gap: var(--space-5);
+	max-width: 40rem;
+
+	// Honeypot: out of sight and out of the accessibility tree (aria-hidden, tabindex -1).
+	&__trap {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	&__alert {
+		margin: 0;
+		padding: var(--space-3) var(--space-4);
+		border: 2px solid var(--color-error-700);
+		border-radius: var(--radius-md);
+		background: var(--color-white);
+		color: var(--color-error-700);
+		font-weight: var(--weight-semibold);
+
+		&[hidden] {
+			display: none;
+		}
+	}
+
+	&__actions,
+	&__note {
+		margin: 0;
+	}
+
+	&__note {
+		color: var(--fg-muted);
+		font-size: var(--text-sm);
+	}
+
+	&__success {
+		max-width: 40rem;
+		padding: var(--space-5);
+		border: 2px solid var(--accent);
+		border-radius: var(--radius-lg);
+		background: var(--surface);
+
+		p {
+			margin: 0;
+		}
+
+		&:focus-visible {
+			@include focus-ring;
+		}
+	}
+
+	&[aria-busy='true'] {
+		opacity: 0.7;
+	}
+}
+
+.cn-field__req {
+	color: var(--color-error-700);
+}
+
+.cn-field__error[hidden],
+.field__error[hidden] {
+	display: none;
+}
+
+// "I do not have a code": a disclosure that works without JavaScript, its summary looks like the secondary button.
+.cn-nocode {
+	margin-top: var(--space-6);
+	max-width: 40rem;
+
+	> summary {
+		display: inline-flex;
+		cursor: pointer;
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+	}
+
+	&[open] > summary {
+		margin-bottom: var(--space-5);
+	}
+}

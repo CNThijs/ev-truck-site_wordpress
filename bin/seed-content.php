@@ -232,6 +232,14 @@ if ( isset( $chargenet_pages['blog']['en'] ) ) {
 	update_option( 'page_for_posts', $chargenet_pages['blog']['en'] ); // The News page; Polylang serves the Dutch one.
 }
 
+// Downloads: files kept out of git (content/downloads/) are copied to uploads/chargenet-downloads/, where the theme
+// serves them at /downloads/<file>. Missing files are skipped.
+foreach ( glob( $chargenet_root . '/content/downloads/*.pdf' ) ?: array() as $chargenet_file ) {
+	$chargenet_dir = trailingslashit( wp_upload_dir()['basedir'] ) . 'chargenet-downloads';
+	wp_mkdir_p( $chargenet_dir );
+	copy( $chargenet_file, $chargenet_dir . '/' . basename( $chargenet_file ) );
+}
+
 // News posts (the old site's 18 posts, both languages).
 require_once $chargenet_root . '/content/blog.php';
 chargenet_seed_blog( $chargenet_langs, $chargenet_force );

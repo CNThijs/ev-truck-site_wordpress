@@ -18,4 +18,5 @@ return array(
 	'project-ijmondaanzet',
 	'project-bouw-pow',
 	'rapport2027',
+	'contact',
 );

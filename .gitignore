@@ -15,6 +15,9 @@ node_modules/
 /web/wp-content/themes/chargenet/build/
 /web/wp-content/themes/chargenet/hot
 
+# Files too big or private for git (see docs/content.md)
+/content/downloads/
+
 # Secrets and local config
 .env
 .env.*
