@@ -92,7 +92,7 @@ function chargenet_forms_settings_save(): void {
 	update_option( CHARGENET_FORMS_OPTION, $settings, false );
 
 	$templates = array();
-	foreach ( array( 'contact', 'trend_report' ) as $form ) {
+	foreach ( array( 'contact', 'trend_report', 'newsletter' ) as $form ) {
 		foreach ( array( 'en', 'nl' ) as $lang ) {
 			$subject = sanitize_text_field( (string) ( $post['tpl'][ $form ][ $lang ]['subject'] ?? '' ) );
 			$body    = wp_kses_post( (string) ( $post['tpl'][ $form ][ $lang ]['body'] ?? '' ) );
@@ -118,7 +118,7 @@ function chargenet_forms_send_test(): void {
 		wp_die( esc_html__( 'You are not allowed to do this.', 'chargenet' ), 403 );
 	}
 	check_admin_referer( 'chargenet_forms_test' );
-	$form  = isset( $_POST['form'] ) && 'contact' === $_POST['form'] ? 'contact' : 'trend_report';
+	$form  = isset( $_POST['form'] ) && in_array( $_POST['form'], array( 'contact', 'newsletter' ), true ) ? sanitize_key( wp_unslash( $_POST['form'] ) ) : 'trend_report';
 	$lang  = isset( $_POST['lang'] ) && 'nl' === $_POST['lang'] ? 'nl' : 'en';
 	$email = isset( $_POST['to'] ) ? sanitize_email( wp_unslash( $_POST['to'] ) ) : '';
 	$ok    = is_email( $email ) && chargenet_mail_send(
@@ -147,6 +147,7 @@ function chargenet_forms_settings_page(): void {
 	$forms     = array(
 		'contact'      => __( 'Contact form email (to the team, the visitor in BCC)', 'chargenet' ),
 		'trend_report' => __( 'Trend report email (to the visitor, the team in BCC)', 'chargenet' ),
+		'newsletter'   => __( 'Newsletter confirmation email (to the subscriber)', 'chargenet' ),
 	);
 	?>
 	<div class="wrap">
@@ -236,7 +237,7 @@ function chargenet_forms_settings_page(): void {
 			<input type="hidden" name="action" value="chargenet_forms_test">
 			<?php wp_nonce_field( 'chargenet_forms_test' ); ?>
 			<p>
-				<select name="form"><option value="trend_report"><?php esc_html_e( 'Trend report email', 'chargenet' ); ?></option><option value="contact"><?php esc_html_e( 'Contact form email', 'chargenet' ); ?></option></select>
+				<select name="form"><option value="trend_report"><?php esc_html_e( 'Trend report email', 'chargenet' ); ?></option><option value="contact"><?php esc_html_e( 'Contact form email', 'chargenet' ); ?></option><option value="newsletter"><?php esc_html_e( 'Newsletter confirmation email', 'chargenet' ); ?></option></select>
 				<select name="lang"><option value="en">English</option><option value="nl">Nederlands</option></select>
 				<input type="email" name="to" required placeholder="you@example.com">
 				<button class="button"><?php esc_html_e( 'Send test', 'chargenet' ); ?></button>

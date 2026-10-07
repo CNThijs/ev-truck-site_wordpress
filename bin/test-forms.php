@@ -61,7 +61,7 @@ $base = static fn( array $extra ): array => array_merge(
 );
 $reset = static function () use ( $ip ): void {
 	foreach ( array( $ip, '203.0.113.99' ) as $address ) {
-		foreach ( array( 'codefail', 'submit:contact', 'submit:trend_report' ) as $bucket ) {
+		foreach ( array( 'codefail', 'submit:contact', 'submit:trend_report', 'submit:newsletter' ) as $bucket ) {
 			delete_transient( chargenet_rate_key( $bucket, $address ) );
 		}
 	}
@@ -157,6 +157,31 @@ $r = chargenet_form_process( $base( array( 'cn_form' => 'contact', 'cn_lang' => 
 $created[] = $r['id'];
 cn_check( $r['ok'] && 0 === strpos( $r['message'], 'Bedankt voor uw bericht' ), 'success message is in the language of the form' );
 cn_check( 0 === strpos( (string) chargenet_submission_get( $r['id'], 'consent_text' ), 'Ik ga ermee akkoord' ), 'consent text is stored in the language of the form' );
+$reset();
+
+// Newsletter sign-up.
+$mails = array();
+remove_all_filters( 'pre_wp_mail' );
+add_filter( 'pre_wp_mail', static function ( $short, array $atts ) use ( &$mails ) {
+	$mails[] = $atts;
+	return true;
+}, 10, 2 );
+$r = chargenet_form_process( $base( array( 'cn_form' => 'newsletter', 'email' => 'sub@example.com', 'cn_lang' => 'nl' ) ), $ip );
+$created[] = $r['id'];
+cn_check( $r['ok'] && $r['id'] > 0 && 'newsletter' === chargenet_submission_get( $r['id'], 'form' ), 'newsletter: stored' );
+cn_check( 1 === count( $mails ) && false !== strpos( implode( "\n", (array) $mails[0]['headers'] ), 'noreply@chargenet.energy' ) && false === stripos( implode( "\n", (array) $mails[0]['headers'] ), 'bcc' ), 'newsletter: one confirmation from noreply, no team copy' );
+cn_check( 0 === strpos( $r['message'], 'Bedankt voor uw aanmelding' ), 'newsletter: its own Dutch message' );
+cn_check( false !== strpos( (string) chargenet_submission_get( $r['id'], 'consent_text' ), 'nieuwsbrief' ), 'newsletter: its own consent sentence' );
+$mails = array();
+$r2    = chargenet_form_process( $base( array( 'cn_form' => 'newsletter', 'email' => 'sub@example.com' ) ), $ip );
+cn_check( $r2['ok'] && 0 === $r2['id'] && ! $mails && 1 === count( chargenet_submissions_by_email( 'sub@example.com', 'newsletter' ) ), 'newsletter: subscribing twice stores and sends nothing again' );
+$r3 = chargenet_form_process( $base( array( 'cn_form' => 'newsletter', 'email' => 'nope', 'consent' => '' ) ), $ip );
+cn_check( ! $r3['ok'] && isset( $r3['errors']['email'], $r3['errors']['consent'] ), 'newsletter: email and consent are required' );
+$old_sub = $r['id'];
+wp_update_post( array( 'ID' => $old_sub, 'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( '-3 years' ) ), 'post_date_gmt' => gmdate( 'Y-m-d H:i:s', strtotime( '-3 years' ) ) ) );
+chargenet_forms_purge();
+cn_check( null !== get_post( $old_sub ), 'newsletter: subscriptions are kept when other submissions expire' );
+remove_all_filters( 'pre_wp_mail' );
 $reset();
 
 // Emails ----------------------------------------------------------------------------------------------------------.

@@ -14,7 +14,8 @@
   ],
   "require": {
     "composer/installers": "^2.3",
-    "wpackagist-plugin/polylang": "^3.8"
+    "wpackagist-plugin/polylang": "^3.8",
+    "wpackagist-plugin/seo-by-rank-math": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.10",

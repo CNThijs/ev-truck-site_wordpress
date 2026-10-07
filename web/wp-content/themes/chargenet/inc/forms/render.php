@@ -127,14 +127,15 @@ function chargenet_form_field( array $f, array $state, string $form_id ): void {
  *
  * @param array<string, mixed> $state   Earlier result.
  * @param string               $form_id Id of the form.
+ * @param string               $form    Form (the newsletter has its own sentence).
  */
-function chargenet_form_consent( array $state, string $form_id ): void {
+function chargenet_form_consent( array $state, string $form_id, string $form = '' ): void {
 	$id      = $form_id . '-consent';
 	$error   = (string) ( $state['errors']['consent'] ?? '' );
 	$privacy = chargenet_seeded_page_url( 'privacy' );
 	echo '<div class="field cn-field cn-field--check' . ( '' !== $error ? ' has-error' : '' ) . '"><div class="choice">';
 	printf( '<input type="checkbox" id="%1$s" name="consent" value="1" required aria-required="true" aria-describedby="%1$s-error"%2$s>', esc_attr( $id ), '' !== $error ? ' aria-invalid="true"' : '' );
-	printf( '<label for="%s">%s', esc_attr( $id ), esc_html( chargenet_form_consent_text( chargenet_current_lang() ) ) );
+	printf( '<label for="%s">%s', esc_attr( $id ), esc_html( chargenet_form_consent_text( chargenet_current_lang(), $form ) ) );
 	if ( '' !== $privacy ) {
 		printf( ' <a href="%s">%s</a>', esc_url( $privacy ), esc_html__( 'Read the privacy policy', 'chargenet' ) );
 	}
@@ -297,4 +298,32 @@ function chargenet_render_trend_report_form(): void {
 	chargenet_form_consent( $nocode_state, $id );
 	chargenet_form_close( __( 'Send me the report', 'chargenet' ), 'secondary' );
 	echo '</details>';
+}
+
+/**
+ * Print the newsletter sign-up: email and consent. Subscriptions are stored in WordPress (Form submissions) until a
+ * newsletter platform is connected.
+ */
+function chargenet_render_newsletter_form(): void {
+	$state = chargenet_form_state();
+	$state = is_array( $state ) && 'newsletter' === ( $state['form'] ?? '' ) ? $state : array();
+	$id    = 'cn-newsletter';
+	if ( ! empty( $state['ok'] ) ) {
+		chargenet_form_success( (string) $state['message'], $id );
+		return;
+	}
+	chargenet_form_open( 'newsletter', '', $state );
+	chargenet_form_field(
+		array(
+			'name'         => 'email',
+			'label'        => __( 'Email address', 'chargenet' ),
+			'type'         => 'email',
+			'required'     => true,
+			'autocomplete' => 'email',
+		),
+		$state,
+		$id
+	);
+	chargenet_form_consent( $state, $id, 'newsletter' );
+	chargenet_form_close( __( 'Subscribe', 'chargenet' ) );
 }

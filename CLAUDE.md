@@ -6,7 +6,7 @@ New WordPress site for https://chargenet.energy replacing a React SPA. Audit of 
 
 - WordPress + custom theme `chargenet`. No page-builder plugin. No ACF.
 - Sections are native Gutenberg blocks rendered in PHP (server-side).
-- English + Dutch with free Polylang. Rank Math (free) for SEO. A free cookie-consent plugin. GSAP + ScrollTrigger for animation.
+- English + Dutch with free Polylang. Rank Math (free, installed, no account) for SEO. A free cookie-consent plugin. GSAP + ScrollTrigger for animation.
 - Free plugins only. No paid plugin or licence anywhere.
 - Language URLs: `/en/` (default) and `/nl/`, both prefixed; `/` redirects to `/en/`; no browser-language redirect. Settings live in `bin/setup-polylang.php`. Dutch uses u/uw.
 - Local env: DDEV (Docker). CSS: SCSS, component partials. Bundler: Vite. Node 22, PHP 8.4 target, code compatible with 8.2+.
@@ -65,6 +65,10 @@ Every page section is a dynamic block in `web/wp-content/themes/chargenet/blocks
 ## Content
 
 Pages, media and menus are code: `content/` (copy of both languages side by side, media in `content/media/`) built by `bin/seed-content.php` (run by `ddev start`). Rules, how to add a page and the app-badge files: `docs/content.md`. Dutch texts that were added or translated are listed in `docs/translation-review.md`: update it with every page.
+
+## News (blog)
+
+18 posts in both languages, six categories, an author reference per post (default ChargeNet), no comments, newsletter sign-up stored in WordPress, Rank Math (free, no account) for SEO and structured data. URLs, templates, patterns, checks: `docs/blog.md`. `npm run test:blog`, `npm run check:blog-urls`.
 
 ## Forms and email
 

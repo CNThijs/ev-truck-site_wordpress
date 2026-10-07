@@ -1,6 +1,7 @@
 <?php
 /**
- * News: the posts page. Its content is printed by the theme's home.php: a title band and the post grid with paging.
+ * News: the posts page. Its content is printed by the theme's home.php: a title band, the filter (categories and
+ * search) and the post grid with paging.
  */
 return array(
 	'key'    => 'blog',
@@ -33,11 +34,19 @@ return array(
 			)
 		)
 		. cn_block(
+			'chargenet/post-filter',
+			array(
+				'spaceTop'    => 'md',
+				'spaceBottom' => 'none',
+			)
+		)
+		. cn_block(
 			'chargenet/post-grid',
 			array(
 				'variant'  => 'featured-grid',
 				'count'    => 9,
 				'paginate' => true,
+				'spaceTop' => 'sm',
 			)
 		);
 	},

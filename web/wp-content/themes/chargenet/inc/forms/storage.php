@@ -118,9 +118,22 @@ function chargenet_submission_get( int $id, string $key ) {
  * Submissions of an email address (for the privacy tools).
  *
  * @param string $email Address.
+ * @param string $form  Only this form (default: all).
  * @return int[]
  */
-function chargenet_submissions_by_email( string $email ): array {
+function chargenet_submissions_by_email( string $email, string $form = '' ): array {
+	$meta = array(
+		array(
+			'key'   => '_cn_email',
+			'value' => $email,
+		),
+	);
+	if ( '' !== $form ) {
+		$meta[] = array(
+			'key'   => '_cn_form',
+			'value' => $form,
+		);
+	}
 	return array_map(
 		'intval',
 		get_posts(
@@ -129,8 +142,7 @@ function chargenet_submissions_by_email( string $email ): array {
 				'post_status'    => 'any',
 				'posts_per_page' => -1,
 				'fields'         => 'ids',
-				'meta_key'       => '_cn_email', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-				'meta_value'     => $email, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
+				'meta_query'     => $meta, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
 			)
 		)
 	);
@@ -164,7 +176,12 @@ add_filter( 'manage_' . CHARGENET_SUBMISSION . '_posts_columns', 'chargenet_subm
  * @param string $form Form id.
  */
 function chargenet_form_label( string $form ): string {
-	return 'contact' === $form ? __( 'Contact', 'chargenet' ) : __( 'Trend report', 'chargenet' );
+	$labels = array(
+		'contact'      => __( 'Contact', 'chargenet' ),
+		'newsletter'   => __( 'Newsletter', 'chargenet' ),
+		'trend_report' => __( 'Trend report', 'chargenet' ),
+	);
+	return $labels[ $form ] ?? $form;
 }
 
 /**
@@ -223,7 +240,7 @@ function chargenet_submission_filters( string $post_type ): void {
 	$form   = isset( $_GET['cn_form'] ) ? sanitize_key( wp_unslash( $_GET['cn_form'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 	$status = isset( $_GET['cn_status'] ) ? sanitize_key( wp_unslash( $_GET['cn_status'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 	echo '<select name="cn_form"><option value="">' . esc_html__( 'All forms', 'chargenet' ) . '</option>';
-	foreach ( array( 'contact', 'trend_report' ) as $value ) {
+	foreach ( array( 'contact', 'trend_report', 'newsletter' ) as $value ) {
 		printf( '<option value="%s"%s>%s</option>', esc_attr( $value ), selected( $form, $value, false ), esc_html( chargenet_form_label( $value ) ) );
 	}
 	echo '</select><select name="cn_status"><option value="">' . esc_html__( 'All email statuses', 'chargenet' ) . '</option>';

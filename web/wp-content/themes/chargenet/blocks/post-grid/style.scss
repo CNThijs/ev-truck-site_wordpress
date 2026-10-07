@@ -18,6 +18,11 @@
 		}
 	}
 
+	// Search results mix news and pages: cards keep their own height.
+	&__list--search {
+		align-items: start;
+	}
+
 	// Featured: the first post spans the row, image beside the text.
 	&--featured-grid &__list .post-card:first-child {
 		@include up(md) {

@@ -24,7 +24,9 @@
     "translations": "node bin/build-translations.mjs",
     "check:hreflang": "node bin/check-hreflang.mjs",
     "check:budget": "node bin/check-budget.mjs",
-    "test:forms": "ddev wp eval-file bin/test-forms.php"
+    "test:forms": "ddev wp eval-file bin/test-forms.php",
+    "test:blog": "ddev wp eval-file bin/test-blog.php",
+    "check:blog-urls": "node bin/check-blog-urls.mjs"
   },
   "lint-staged": {
     "*.php": "vendor/bin/phpcs",

@@ -26,13 +26,13 @@ Or upload the extracted `chargenet/` folder to `wp-content/themes/` over SFTP.
 
 ## Plugins to install (free)
 
-| Plugin                       | When       | Notes                       |
-| ---------------------------- | ---------- | --------------------------- |
-| Polylang                     | now        | Languages and translations. |
-| Rank Math SEO (free)         | later epic | SEO.                        |
-| A free cookie-consent plugin | later epic | Not chosen yet.             |
+| Plugin                       | When       | Notes                                                                                                                                                                                                         |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Polylang                     | now        | Languages and translations.                                                                                                                                                                                   |
+| Rank Math SEO (free)         | Epic 9     | SEO: titles, descriptions, Open Graph, Twitter cards, article structured data, sitemap. No Rank Math account needed: `bin/setup-rankmath.php` skips the registration step and switches off the other modules. |
+| A free cookie-consent plugin | later epic | Not chosen yet.                                                                                                                                                                                               |
 
-Install from Plugins → Add New (search the name) and activate.
+Install from Plugins → Add New (search the name) and activate. After activating Rank Math run `wp eval-file bin/setup-rankmath.php` (settings, no Rank Math account, the extra modules off).
 
 ## Settings to apply
 

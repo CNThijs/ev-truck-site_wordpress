@@ -20,6 +20,7 @@ require_once CHARGENET_DIR . '/inc/head.php';
 require_once CHARGENET_DIR . '/inc/nav.php';
 require_once CHARGENET_DIR . '/inc/hreflang.php';
 require_once CHARGENET_DIR . '/inc/redirects.php';
+require_once CHARGENET_DIR . '/inc/blog.php';
 require_once CHARGENET_DIR . '/inc/forms.php';
 require_once CHARGENET_DIR . '/inc/locations.php';
 require_once CHARGENET_DIR . '/inc/style-guide.php';

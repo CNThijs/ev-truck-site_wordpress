@@ -107,6 +107,10 @@ function chargenet_pattern_category(): void {
 		'chargenet-pages',
 		array( 'label' => __( 'ChargeNet pages', 'chargenet' ) )
 	);
+	register_block_pattern_category(
+		'chargenet-posts',
+		array( 'label' => __( 'ChargeNet news posts', 'chargenet' ) )
+	);
 }
 add_action( 'init', 'chargenet_pattern_category' );
 

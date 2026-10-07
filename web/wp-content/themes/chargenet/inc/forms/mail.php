@@ -20,7 +20,7 @@ const CHARGENET_MAIL_MAX_ATTEMPTS = 5;
 /**
  * Default template of a form in a language.
  *
- * @param string $form contact or trend_report.
+ * @param string $form contact, newsletter or trend_report.
  * @param string $lang en or nl.
  * @return array{subject: string, body: string}
  */
@@ -34,6 +34,16 @@ function chargenet_mail_default_template( string $form, string $lang ): array {
 			'nl' => array(
 				'subject' => 'Uw Trendrapport 2027',
 				'body'    => '<p>{greeting}</p><p>Bedankt voor uw interesse in het ChargeNet Trendrapport 2027. U kunt het rapport hier downloaden:</p><p><a href="{report_url}">Download het Trendrapport 2027</a></p><p>Heeft u vragen? Antwoord gerust op deze e-mail.</p><p>Met vriendelijke groet,<br>Het ChargeNet-team</p>',
+			),
+		),
+		'newsletter'   => array(
+			'en' => array(
+				'subject' => 'You are subscribed to the ChargeNet newsletter',
+				'body'    => '<p>Hello,</p><p>Thank you for subscribing to the ChargeNet newsletter. We will send you news about charging for electric trucks and heavy machinery.</p><p>Do you no longer want to receive it? Reply to this email and we will remove you.</p><p>Kind regards,<br>The ChargeNet team</p>',
+			),
+			'nl' => array(
+				'subject' => 'U bent aangemeld voor de ChargeNet-nieuwsbrief',
+				'body'    => '<p>Goedendag,</p><p>Bedankt voor uw aanmelding voor de ChargeNet-nieuwsbrief. Wij sturen u nieuws over laden voor elektrische vrachtwagens en zwaar materieel.</p><p>Wilt u de nieuwsbrief niet meer ontvangen? Antwoord op deze e-mail, dan verwijderen wij u.</p><p>Met vriendelijke groet,<br>Het ChargeNet-team</p>',
 			),
 		),
 		'contact'      => array(
@@ -191,7 +201,8 @@ function chargenet_mail_envelope( string $form, array $v, bool $test = false ): 
 		$to        = chargenet_mail_address( $visitor, $name );
 		$headers[] = 'From: ' . chargenet_mail_address( (string) chargenet_forms_setting( 'trend_from' ), 'ChargeNet' );
 		$headers[] = 'Reply-To: ' . chargenet_mail_address( (string) chargenet_forms_setting( 'contact_to' ), 'ChargeNet' );
-		$bcc       = $test ? '' : (string) chargenet_forms_setting( 'trend_bcc' );
+		// The team sees newsletter subscriptions in the admin: no copy by email.
+		$bcc = $test || 'newsletter' === $form ? '' : (string) chargenet_forms_setting( 'trend_bcc' );
 	}
 	return array(
 		'to'      => $to,

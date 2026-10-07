@@ -1,6 +1,6 @@
 # Forms, emails and integrations
 
-Two forms: the **contact form** and the **trend report form**. Every submission is stored in WordPress and the visitor gets an email. Free plugins only: all of this is theme code (`inc/forms/`, `inc/locations.php`, the blocks `contact-form`, `trend-report-form` and `locations-list`). The old site sent its mail from the browser through EmailJS with hard-coded IDs; none of that was reused (revoke the old EmailJS key when the new site is live).
+Three forms: the **contact form**, the **trend report form** and the **newsletter sign-up** (`docs/blog.md`). Every submission is stored in WordPress and the visitor gets an email. Free plugins only: all of this is theme code (`inc/forms/`, `inc/locations.php`, the blocks `contact-form`, `trend-report-form` and `locations-list`). The old site sent its mail from the browser through EmailJS with hard-coded IDs; none of that was reused (revoke the old EmailJS key when the new site is live).
 
 ```
 visitor ──► form (HTML, works without JavaScript; view.js sends it with fetch)
@@ -50,6 +50,7 @@ The IP address is **not** stored. Rate limiting uses a hashed address in a trans
 - **Spam protection:** nonce, a hidden honeypot field, a signed timestamp (a form sent within 3 seconds is refused), the rate limits above, and **Cloudflare Turnstile** when switched on (below). A bot that fills the honeypot is told it worked; nothing is stored.
 - **Turnstile:** create a free site in Cloudflare, enter the site key under Settings and emails, and add the secret to `wp-config.php`: `define( 'CHARGENET_TURNSTILE_SECRET', '…' );`. Turnstile needs JavaScript and loads a script from Cloudflare: add it to the cookie consent plugin when that is installed (Epic 11). Without both keys it is off.
 - **Report link:** `https://chargenet.energy/downloads/ChargeNet-TR2027.pdf`, the same address as on the old site. The file is **not in git** (10 MB): keep it in `content/downloads/` (the seeder copies it) or upload it to `wp-content/uploads/chargenet-downloads/ChargeNet-TR2027.pdf`; the theme serves it at the fixed address (`inc/forms/download.php`). The address can be changed under Settings and emails.
+- **Newsletter:** email + consent, stored as a submission of the form "Newsletter" (kept until the person unsubscribes, not deleted by the retention period), one confirmation email from noreply@ (no team copy), a repeat sign-up stores and sends nothing.
 - **Consent:** a required checkbox with the sentence "I agree that ChargeNet processes my details to handle this request, as described in the privacy policy" and a link to the privacy policy. No marketing opt-in: no marketing is planned. The sentence is stored with the submission.
 
 ## Emails

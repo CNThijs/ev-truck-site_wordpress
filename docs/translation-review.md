@@ -106,6 +106,17 @@ Other English left in the Dutch posts is a slogan ("Keep charging ahead!") and a
 | Email texts (trend report and contact)       | Default Dutch subjects and bodies, e.g. "Uw Trendrapport 2027", "Bedankt voor uw interesse in het ChargeNet Trendrapport 2027…"                         | New text (the old template was inside EmailJS). Editors can change them in the admin.         |
 | Admin screens (submissions, codes, settings) | Dutch, in the `.po` file                                                                                                                                | Editor interface.                                                                             |
 
+## News (blog)
+
+| Where                      | Dutch now                                                                                                                                   | Why                                                        |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Categories                 | Partnerschappen, Financiering & programma’s, Evenementen, Product & netwerk, Markt & media, Bedrijfsnieuws                                  | New categories (the old ones were mixed).                  |
+| Post templates and filter  | "Door ChargeNet", "min leestijd", "In dit artikel", "Deel dit artikel", "Gerelateerd nieuws", "Al het nieuws", "Zoek op de site"            | New interface text.                                        |
+| Newsletter                 | Sign-up heading "Nieuws over laden voor elektrische vrachtwagens in uw inbox", the consent sentence, the confirmation email and its subject | New text. Check the wording.                               |
+| End-of-post call to action | "Wilt u uw wagenpark tegen de juiste prijs laden, of uw laadpunten openstellen?" / "Neem contact op"                                        | New text.                                                  |
+| Post patterns              | Dutch twins of the five patterns (uitgelicht citaat, aandachtspunt, kerngegevens, afbeelding met bijschrift, call-to-action)                | New text.                                                  |
+| Excerpts of two posts      | The office-move post and the Move East post had the same excerpt (copied); both now start with the first paragraph of their own text        | The old excerpt of the office move described another post. |
+
 ## Statistics on Home (decided: keep as is)
 
 The captions of three statistics do not match their figures (3.8Bn tonne CO₂ with a NOx caption; two "80%" with captions that contain no percentage). By your decision they are kept word for word.

@@ -105,7 +105,7 @@ function chargenet_privacy_erase( string $email ): array {
 }
 
 /**
- * Delete submissions older than the retention period.
+ * Delete submissions older than the retention period (not newsletter subscriptions).
  *
  * @return int Number deleted.
  */
@@ -117,6 +117,14 @@ function chargenet_forms_purge(): int {
 			'post_status'    => 'any',
 			'posts_per_page' => 500, // phpcs:ignore WordPress.WP.PostsPerPage.posts_per_page_posts_per_page -- a daily job.
 			'fields'         => 'ids',
+			// Newsletter subscriptions stay until the person unsubscribes (or is erased).
+			'meta_query'     => array( // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+				array(
+					'key'     => '_cn_form',
+					'value'   => 'newsletter',
+					'compare' => '!=',
+				),
+			),
 			'date_query'     => array(
 				array(
 					'before' => gmdate( 'Y-m-d H:i:s', strtotime( "-{$months} months" ) ),

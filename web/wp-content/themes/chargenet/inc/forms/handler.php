@@ -115,11 +115,14 @@ function chargenet_forms_in_lang( string $lang, callable $callback ) {
  * The consent sentence shown next to the checkbox (and stored with the submission), without the link.
  *
  * @param string $lang en or nl.
+ * @param string $form Form id (the newsletter has its own sentence).
  */
-function chargenet_form_consent_text( string $lang ): string {
+function chargenet_form_consent_text( string $lang, string $form = '' ): string {
 	return (string) chargenet_forms_in_lang(
 		$lang,
-		static fn() => __( 'I agree that ChargeNet processes my details to handle this request, as described in the privacy policy.', 'chargenet' )
+		static fn() => 'newsletter' === $form
+			? __( 'I agree that ChargeNet sends me its newsletter and processes my email address for that, as described in the privacy policy.', 'chargenet' )
+			: __( 'I agree that ChargeNet processes my details to handle this request, as described in the privacy policy.', 'chargenet' )
 	);
 }
 
@@ -211,6 +214,16 @@ function chargenet_form_validate( array $post, string $form, string $mode ): arr
 }
 
 /**
+ * The form a request is for: contact, newsletter or trend_report.
+ *
+ * @param array<string, mixed> $post Request values.
+ */
+function chargenet_form_id( array $post ): string {
+	$form = (string) ( $post['cn_form'] ?? '' );
+	return in_array( $form, array( 'contact', 'newsletter' ), true ) ? $form : 'trend_report';
+}
+
+/**
  * Process a submission. Returns what to show; stores the submission and sends the email on success.
  *
  * @param array<string, mixed> $post Request values (unslashed).
@@ -218,7 +231,7 @@ function chargenet_form_validate( array $post, string $form, string $mode ): arr
  * @return array{ok: bool, errors: array<string, string>, message: string, form: string, mode: string, id: int}
  */
 function chargenet_form_process( array $post, string $ip ): array {
-	$form = isset( $post['cn_form'] ) && 'contact' === $post['cn_form'] ? 'contact' : 'trend_report';
+	$form = chargenet_form_id( $post );
 	$mode = 'trend_report' === $form && isset( $post['cn_mode'] ) && 'nocode' === $post['cn_mode'] ? 'nocode' : 'code';
 	$lang = isset( $post['cn_lang'] ) && 'nl' === $post['cn_lang'] ? 'nl' : 'en';
 	$out  = array(
@@ -283,10 +296,25 @@ function chargenet_form_process( array $post, string $ip ): array {
 			}
 
 			// Worded before the submission is stored and sent: sending mail can reset the loaded texts.
-			$success    = 'contact' === $form
-				? __( 'Thank you for your message. We have sent a copy to your email address and will get back to you soon.', 'chargenet' )
-				: __( 'Thank you. We are sending the Trend Report 2027 to your email address. If you do not see it within a few minutes, check your spam folder.', 'chargenet' );
+			if ( 'contact' === $form ) {
+				$success = __( 'Thank you for your message. We have sent a copy to your email address and will get back to you soon.', 'chargenet' );
+			} elseif ( 'newsletter' === $form ) {
+				$success = __( 'Thank you for subscribing. We have sent a confirmation to your email address.', 'chargenet' );
+			} else {
+				$success = __( 'Thank you. We are sending the Trend Report 2027 to your email address. If you do not see it within a few minutes, check your spam folder.', 'chargenet' );
+			}
 			$error_save = __( 'Something went wrong on our side. Please try again later or email info@chargenet.energy.', 'chargenet' );
+
+			// Already subscribed: the same answer, nothing stored or sent again.
+			if ( 'newsletter' === $form && chargenet_submissions_by_email( (string) $clean['email'], 'newsletter' ) ) {
+				return array_merge(
+					$out,
+					array(
+						'ok'      => true,
+						'message' => $success,
+					)
+				);
+			}
 
 			$utm = array();
 			foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term' ) as $key ) {
@@ -301,7 +329,7 @@ function chargenet_form_process( array $post, string $ip ): array {
 					array(
 						'form'         => $form,
 						'lang'         => $lang,
-						'consent_text' => chargenet_form_consent_text( $lang ),
+						'consent_text' => chargenet_form_consent_text( $lang, $form ),
 						'utm'          => $utm,
 					)
 				)
@@ -349,7 +377,7 @@ function chargenet_form_handle(): void {
 			'ok'      => false,
 			'errors'  => array(),
 			'message' => (string) chargenet_forms_in_lang( $lang, static fn() => __( 'This page has expired. Reload the page and send the form again.', 'chargenet' ) ),
-			'form'    => isset( $post['cn_form'] ) && 'contact' === $post['cn_form'] ? 'contact' : 'trend_report',
+			'form'    => chargenet_form_id( $post ),
 			'mode'    => isset( $post['cn_mode'] ) && 'nocode' === $post['cn_mode'] ? 'nocode' : 'code',
 			'id'      => 0,
 		);

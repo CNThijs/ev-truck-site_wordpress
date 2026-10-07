@@ -4,10 +4,10 @@
  * body.nl.html and the images), as English and Dutch posts linked with Polylang. Called by bin/seed-content.php,
  * which provides chargenet_seed_find() and the language list.
  *
- * Per post: title, slug (the Dutch one with a -nl suffix), date, excerpt, category, featured image, text as blocks and the
- * original source (post meta _chargenet_source_url, shown as "Read the original on ..."). The SEO title and
- * description go into the Rank Math meta keys, ready for when that plugin is installed. Not imported: the "author"
- * label, and the keyword list (no tags on the new site).
+ * Per post: title, slug (the Dutch one with a -nl suffix), date, excerpt, category (content/blog/_categories.php), author
+ * reference, featured image, text as blocks and the original source (post meta _chargenet_source_url, shown as "Read the original on ..."). The SEO title and
+ * description go into the Rank Math meta keys (a description that two posts share is replaced by the excerpt). Not
+ * imported: the keyword list (no tags on the new site).
  */
 
 /**
@@ -148,6 +148,30 @@ function chargenet_blog_media( string $file, string $dir, string $lang, string $
 }
 
 /**
+ * The first paragraph of a body as plain text, cut at a word after $max characters (for a description or excerpt).
+ *
+ * @param string $html Body HTML.
+ * @param int    $max  Maximum length.
+ */
+function chargenet_blog_first_text( string $html, int $max = 155 ): string {
+	if ( ! preg_match( '#<p[^>]*>(.*?)</p>#is', $html, $m ) ) {
+		return '';
+	}
+	$text = trim( (string) preg_replace( '/\s+/u', ' ', html_entity_decode( wp_strip_all_tags( $m[1] ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) ) );
+	return mb_strlen( $text ) <= $max ? $text : rtrim( mb_substr( $text, 0, (int) mb_strrpos( mb_substr( $text, 0, $max ), ' ' ) ), " ,;:.-" ) . '…';
+}
+
+/**
+ * Author reference of a post: the old label without the "External: " prefix; "Connectr3" was a typo for Connectr.
+ *
+ * @param string $label Label from post.json.
+ */
+function chargenet_blog_author( string $label ): string {
+	$label = trim( (string) preg_replace( '/^External:\s*/i', '', $label ) );
+	return 'Connectr3' === $label ? 'Connectr' : $label;
+}
+
+/**
  * Category of a language, created on first use; the two languages are linked as translations.
  *
  * @param array<string, string> $names Name per language.
@@ -156,6 +180,7 @@ function chargenet_blog_media( string $file, string $dir, string $lang, string $
 function chargenet_blog_category( array $names ): array {
 	$ids = array();
 	foreach ( $names as $lang => $name ) {
+		$name = (string) $name;
 		$found = get_terms(
 			array(
 				'taxonomy'   => 'category',
@@ -168,7 +193,10 @@ function chargenet_blog_category( array $names ): array {
 			$ids[ $lang ] = (int) $found[0]->term_id;
 			continue;
 		}
-		$term = wp_insert_term( $name, 'category', array( 'slug' => sanitize_title( $name ) . '-' . $lang ) );
+		$term = wp_insert_term( $name, 'category', array( 'slug' => sanitize_title( $name ) ) );
+		if ( is_wp_error( $term ) ) { // The same name in the other language.
+			$term = wp_insert_term( $name, 'category', array( 'slug' => sanitize_title( $name ) . '-' . $lang ) );
+		}
 		if ( is_wp_error( $term ) ) {
 			WP_CLI::warning( "Category {$name} ({$lang}): " . $term->get_error_message() );
 			continue;
@@ -190,30 +218,49 @@ function chargenet_blog_category( array $names ): array {
  */
 function chargenet_seed_blog( array $langs, bool $force ): void {
 	global $chargenet_root;
-	$count = 0;
+	$count   = 0;
+	$map     = require $chargenet_root . '/content/blog/_categories.php';
+	$posts   = array();
+	$described = array();
 	foreach ( glob( $chargenet_root . '/content/blog/*', GLOB_ONLYDIR ) ?: array() as $dir ) {
-		$data = json_decode( (string) file_get_contents( $dir . '/post.json' ), true );
+		$data                 = json_decode( (string) file_get_contents( $dir . '/post.json' ), true );
+		$posts[ $dir ]        = $data;
+		foreach ( $langs as $lang ) {
+			$key               = $lang . '|' . trim( (string) $data['metaDescription'][ $lang ] );
+			$described[ $key ] = ( $described[ $key ] ?? 0 ) + 1;
+			$key               = 'x' . $lang . '|' . trim( (string) $data['excerpt'][ $lang ] );
+			$described[ $key ] = ( $described[ $key ] ?? 0 ) + 1;
+		}
+	}
+	foreach ( $posts as $dir => $data ) {
 		$slug = $data['slug'];
 		$when = date_create( str_replace( 'Sept ', 'Sep ', $data['date'] ) . ' 09:00:00' );
 		if ( ! $when ) {
 			WP_CLI::warning( "Post {$slug}: date '{$data['date']}' not understood, skipped." );
 			continue;
 		}
-		$cats  = chargenet_blog_category( $data['category'] );
+		$cats  = chargenet_blog_category( $map['categories'][ $map['posts'][ $slug ] ?? '' ] ?? $data['category'] );
 		$group = array();
 
 		foreach ( $langs as $lang ) {
 			$import  = static fn( string $file, string $alt ): int => chargenet_blog_media( $file, $dir, $lang, $alt );
 			$content = chargenet_blog_blocks( str_replace( '`', '’', (string) file_get_contents( "{$dir}/body.{$lang}.html" ) ), $import ); // The old text has backticks for apostrophes.
+			// An excerpt that two old posts share was copied from the other post: take the first paragraph instead.
+			$excerpt = (string) $data['excerpt'][ $lang ];
+			if ( ( $described[ 'x' . $lang . '|' . trim( $excerpt ) ] ?? 0 ) > 1 || '' === trim( $excerpt ) ) {
+				$excerpt = chargenet_blog_first_text( (string) file_get_contents( "{$dir}/body.{$lang}.html" ) );
+			}
 			$id      = chargenet_seed_find( '_chargenet_seed_key', 'post:' . $slug, $lang );
 			$postarr = array(
 				'post_type'     => 'post',
 				'post_status'   => 'publish',
 				'post_title'    => str_replace( '`', '’', $data['title'][ $lang ] ),
-				'post_excerpt'  => str_replace( '`', '’', $data['excerpt'][ $lang ] ),
+				'post_excerpt'  => str_replace( '`', '’', $excerpt ),
 				'post_date'     => $when->format( 'Y-m-d H:i:s' ),
 				'post_date_gmt' => get_gmt_from_date( $when->format( 'Y-m-d H:i:s' ) ),
 				'post_content'  => wp_slash( $content ),
+				'comment_status' => 'closed',
+				'ping_status'    => 'closed',
 			);
 			if ( $id ) {
 				$stored = (string) get_post_meta( $id, '_chargenet_seed_hash', true );
@@ -243,12 +290,50 @@ function chargenet_seed_blog( array $langs, bool $force ): void {
 				update_post_meta( $id, '_chargenet_source_url', esc_url_raw( $data['externalUrl'] ) );
 			}
 			update_post_meta( $id, 'rank_math_title', $data['metaTitle'][ $lang ] );
-			update_post_meta( $id, 'rank_math_description', $data['metaDescription'][ $lang ] );
+			// Several old posts share one description (copied from another post): use the excerpt for those.
+			$description = trim( (string) $data['metaDescription'][ $lang ] );
+			if ( ( $described[ $lang . '|' . $description ] ?? 0 ) > 1 || '' === $description ) {
+				$description = $excerpt;
+			}
+			update_post_meta( $id, 'rank_math_description', str_replace( '`', '’', $description ) );
+			$author = chargenet_blog_author( (string) ( $data['author'] ?? '' ) );
+			if ( '' !== $author && 'ChargeNet' !== $author ) {
+				update_post_meta( $id, '_chargenet_author', $author );
+			} else {
+				delete_post_meta( $id, '_chargenet_author' );
+			}
 			update_post_meta( $id, '_chargenet_seed_key', 'post:' . $slug );
 			update_post_meta( $id, '_chargenet_seed_hash', md5( (string) get_post_field( 'post_content', $id ) ) );
 			$group[ $lang ] = $id;
 		}
 		pll_save_post_translations( $group );
 	}
+	chargenet_blog_remove_old_categories( $map );
 	echo "News posts: {$count} created.\n";
+}
+
+/**
+ * Delete the categories of the old import that are empty now (everything but the default and the current ones).
+ *
+ * @param array<string, mixed> $map Content of content/blog/_categories.php.
+ */
+function chargenet_blog_remove_old_categories( array $map ): void {
+	$keep    = array();
+	foreach ( $map['categories'] as $names ) {
+		foreach ( $names as $name ) {
+			$keep[] = (string) $name;
+		}
+	}
+	$default = (int) get_option( 'default_category' );
+	foreach ( get_terms(
+		array(
+			'taxonomy'   => 'category',
+			'hide_empty' => false,
+			'lang'       => '',
+		)
+	) as $term ) {
+		if ( $term->term_id !== $default && 0 === (int) $term->count && ! in_array( $term->name, $keep, true ) && 'uncategorized' !== substr( $term->slug, 0, 13 ) ) {
+			wp_delete_term( $term->term_id, 'category' );
+		}
+	}
 }

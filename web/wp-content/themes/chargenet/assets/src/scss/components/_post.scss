@@ -52,3 +52,141 @@
 		}
 	}
 }
+
+// Byline, table of contents and share links of a news post.
+.post-single {
+	&__byline {
+		margin: 0;
+		color: var(--fg-muted);
+		font-size: var(--text-sm);
+		font-weight: var(--weight-semibold);
+	}
+}
+
+.post-toc {
+	padding: var(--space-5);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-lg);
+	background: var(--surface);
+
+	&__title {
+		margin: 0 0 var(--space-3);
+		font-weight: var(--weight-bold);
+	}
+
+	&__list {
+		display: grid;
+		gap: var(--space-2);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item--h3 {
+		padding-left: var(--space-5);
+		font-size: var(--text-sm);
+	}
+}
+
+.post-share {
+	display: grid;
+	gap: var(--space-3);
+	margin-top: var(--space-5);
+	padding-top: var(--space-5);
+	border-top: 1px solid var(--border);
+
+	&__title {
+		margin: 0;
+		font-size: var(--text-lg);
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		[hidden] {
+			display: none;
+		}
+	}
+}
+
+// Headings of the text keep clear of a sticky header when they are linked from the table of contents.
+.post-single__content :is(h2, h3) {
+	scroll-margin-top: var(--space-8);
+}
+
+// Block styles for posts (patterns in patterns/post-*.php): pull quote, callout, key facts, call to action.
+.wp-block-quote.is-style-pull-quote {
+	margin: var(--space-6) 0;
+	padding: var(--space-5) 0 var(--space-5) var(--space-6);
+	border-left: 6px solid var(--accent);
+	font-size: var(--text-2xl);
+	font-weight: var(--weight-semibold);
+	line-height: 1.3;
+
+	p {
+		margin: 0;
+	}
+
+	cite {
+		display: block;
+		margin-top: var(--space-3);
+		color: var(--fg-muted);
+		font-size: var(--text-base);
+		font-style: normal;
+		font-weight: var(--weight-regular, 400);
+	}
+}
+
+.wp-block-group.is-style-callout,
+.wp-block-group.is-style-key-facts,
+.wp-block-group.is-style-post-cta {
+	display: grid;
+	gap: var(--space-3);
+	margin: var(--space-6) 0;
+	padding: var(--space-5) var(--space-6);
+	border-radius: var(--radius-lg);
+
+	> * {
+		margin: 0;
+	}
+}
+
+.wp-block-group.is-style-callout {
+	border-left: 6px solid var(--accent);
+	background: color-mix(in srgb, var(--accent) 10%, var(--bg));
+}
+
+.wp-block-group.is-style-key-facts {
+	border: 1px solid var(--border);
+	background: var(--surface);
+
+	ul {
+		display: grid;
+		gap: var(--space-2);
+		padding-left: var(--space-5);
+	}
+
+	li::marker {
+		color: var(--accent);
+	}
+}
+
+.wp-block-group.is-style-post-cta {
+	background: var(--color-forest-900);
+	color: var(--color-white);
+
+	a:not(.wp-block-button__link) {
+		color: var(--color-volt-400);
+	}
+
+	.wp-block-button__link {
+		background: var(--color-volt-400);
+		color: var(--color-ink-900);
+		font-weight: var(--weight-semibold);
+	}
+}

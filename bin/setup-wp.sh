@@ -21,6 +21,12 @@ fi
 wp rewrite structure '/blog/%postname%/' --path=web >/dev/null
 wp theme activate chargenet --path=web
 wp plugin activate polylang --path=web
+wp plugin activate seo-by-rank-math --path=web
+
+# No comments anywhere; Rank Math without an account (settings: bin/setup-rankmath.php).
+wp option update default_comment_status closed --path=web
+wp option update default_ping_status closed --path=web
+wp eval-file bin/setup-rankmath.php --path=web
 
 # Polylang languages and settings (en default, nl; /en/ and /nl/ URLs), then media, pages, front page and menus.
 wp eval-file bin/setup-polylang.php --path=web

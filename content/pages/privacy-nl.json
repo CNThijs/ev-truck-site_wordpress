@@ -132,6 +132,22 @@
                 }
               ],
               [
+                "Aanmelding voor de nieuwsbrief op onze website",
+                {
+                  "ul": [
+                    "E-mailadres",
+                    "Uw toestemming om de nieuwsbrief te ontvangen en het moment waarop u die gaf",
+                    "Campagne-informatie uit de link die u volgde (bijvoorbeeld utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verzamelen deze persoonsgegevens op basis van uw toestemming, die u geeft door het vakje op het aanmeldformulier aan te vinken. U kunt uw toestemming op elk moment intrekken door te antwoorden op een e-mail van ons of door contact met ons op te nemen via privacy@chargenet.energy.",
+                    "Wij verwerken uw e-mailadres om u onze nieuwsbrief te sturen en om uw aanmelding bij te houden."
+                  ]
+                }
+              ],
+              [
                 "Overige algemene doeleinden",
                 {
                   "ul": [
@@ -233,6 +249,16 @@
                 },
                 "EU"
               ],
+              [
+                "Aanmelding voor de nieuwsbrief op onze website",
+                {
+                  "ul": [
+                    "Onze e-mailaanbieder (Microsoft 365), die de bevestigingsmail bezorgt die wij u sturen.",
+                    "Door ons ingeschakelde verwerkers, zoals hostingproviders."
+                  ]
+                },
+                "EU"
+              ],
               ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"]
             ]
           }
@@ -278,6 +304,7 @@
                 "Gebruik van onze websiteformulieren (contactformulier en aanvraag trendrapport)",
                 "365 dagen"
               ],
+              ["Aanmelding voor de nieuwsbrief op onze website", "Tot u zich afmeldt"],
               ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking."]
             ]
           }

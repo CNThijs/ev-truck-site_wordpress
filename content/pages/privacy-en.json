@@ -132,6 +132,22 @@
                 }
               ],
               [
+                "Newsletter sign-up on our website",
+                {
+                  "ul": [
+                    "Email address",
+                    "Your consent to receive the newsletter, and when you gave it",
+                    "Campaign information from the link you followed (for example utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "We collect these personal data on the basis of your consent, which you give by ticking the box on the sign-up form. You can withdraw your consent at any time by replying to any email from us or by contacting us at privacy@chargenet.energy.",
+                    "We process your email address for the purpose of sending you our newsletter and keeping a record of your subscription."
+                  ]
+                }
+              ],
+              [
                 "Other general purposes",
                 {
                   "ul": [
@@ -233,6 +249,16 @@
                 },
                 "EU"
               ],
+              [
+                "Newsletter sign-up on our website",
+                {
+                  "ul": [
+                    "Our email provider (Microsoft 365), which delivers the confirmation email we send you.",
+                    "Data processors engaged by us, such as hosting providers."
+                  ]
+                },
+                "EU"
+              ],
               ["Other general purposes", "Depends on the purpose for processing.", "EU"]
             ]
           }
@@ -275,6 +301,7 @@
               ["Using our app", "365 days"],
               ["Customer service or otherwise corresponding with you", "365 days"],
               ["Using our website forms (contact form and trend report request)", "365 days"],
+              ["Newsletter sign-up on our website", "Until you unsubscribe"],
               ["Other general purposes", "Depends on the purpose for processing."]
             ]
           }
