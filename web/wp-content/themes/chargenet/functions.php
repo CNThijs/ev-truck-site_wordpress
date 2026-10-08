@@ -21,6 +21,8 @@ require_once CHARGENET_DIR . '/inc/nav.php';
 require_once CHARGENET_DIR . '/inc/hreflang.php';
 require_once CHARGENET_DIR . '/inc/redirects.php';
 require_once CHARGENET_DIR . '/inc/seo.php';
+require_once CHARGENET_DIR . '/inc/consent.php';
+require_once CHARGENET_DIR . '/inc/tracking.php';
 require_once CHARGENET_DIR . '/inc/sitemap.php';
 require_once CHARGENET_DIR . '/inc/blog.php';
 require_once CHARGENET_DIR . '/inc/editor-checks.php';

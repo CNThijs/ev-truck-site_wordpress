@@ -67,6 +67,10 @@ return array(
 				'label' => 'Privacy Policy',
 			),
 			array(
+				'key'   => 'cookie-policy',
+				'label' => 'Cookie Policy',
+			),
+			array(
 				'key'   => 'security',
 				'label' => 'Security',
 			),
@@ -137,6 +141,10 @@ return array(
 			array(
 				'key'   => 'privacy',
 				'label' => 'Privacybeleid',
+			),
+			array(
+				'key'   => 'cookie-policy',
+				'label' => 'Cookiebeleid',
 			),
 			array(
 				'key'   => 'security',

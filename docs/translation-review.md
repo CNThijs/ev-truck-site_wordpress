@@ -136,3 +136,7 @@ The captions of three statistics do not match their figures (3.8Bn tonne CO₂ w
 ## Typo fixes in English (for reference)
 
 accelorate → accelerate; constrution → construction; Monitization → Monetization; destionation / "on you destination" → destination / "on your destination"; "have build" → "have built"; "find find" → "find"; recieve → receive; invioces → invoices; Immidiately → Immediately.
+
+## Cookie banner and policy (Epic 11)
+
+Banner, panel, categories, cookie descriptions and the cookie policy page (`nl/cookiebeleid`) were translated to Dutch (u/uw). Please review: "Alles accepteren / Alles weigeren / Instellingen", the Statistieken and Marketing category texts, and the consent record paragraph in the cookie policy.

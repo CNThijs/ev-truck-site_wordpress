@@ -12,6 +12,7 @@ return array(
 	'faq',
 	'security',
 	'privacy',
+	'cookie-policy',
 	'blog',
 	'project-destination-charging',
 	'project-chargebase',

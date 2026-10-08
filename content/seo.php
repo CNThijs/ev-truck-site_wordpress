@@ -86,6 +86,16 @@ return array(
 			'description' => 'Hoe ChargeNet B.V. omgaat met persoonsgegevens op deze website, in de app en in het platform, en welke rechten u heeft.',
 		),
 	),
+	'cookie-policy'                => array(
+		'en' => array(
+			'title'       => 'Cookie policy',
+			'description' => 'Which cookies chargenet.energy uses, why, and how you change or withdraw your choice at any time.',
+		),
+		'nl' => array(
+			'title'       => 'Cookiebeleid',
+			'description' => 'Welke cookies chargenet.energy gebruikt, waarom, en hoe u uw keuze op elk moment wijzigt of intrekt.',
+		),
+	),
 	'blog'                         => array(
 		'en' => array(
 			'title'       => 'News',

@@ -37,6 +37,8 @@ jobs:
       - run: npm run build
       - uses: ddev/github-action-setup-ddev@v1
       - run: ddev start
+      # The site redirects to https with DDEV's local certificate: let Node trust its CA.
+      - run: echo "NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem" >> "$GITHUB_ENV"
       - run: npm run check:seo -- http://chargenet.ddev.site --production
       - run: npm run check:hreflang
       - run: npm run check:redirects

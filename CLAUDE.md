@@ -78,6 +78,10 @@ Rank Math free (structured data, breadcrumbs, 404 monitor; the sitemaps are them
 
 Contact form and trend report form: handler, private submissions post type, report codes table (CSV import), emails through Microsoft 365 (OAuth SMTP, secrets only as constants in wp-config.php), privacy exporter/eraser and 12-month retention. All in the theme (`inc/forms/`); how it works, DNS, setup and checks: `docs/integrations.md`. `npm run test:forms`. Never put credentials in the repository; never write a BCC address into a visible header.
 
+## Consent and tracking
+
+WPConsent (free) banner, texts in `inc/consent.php`, settings in `bin/setup-wpconsent.php`. Tag Manager loads only after statistics consent (`CHARGENET_GTM_ID` in wp-config.php), campaign cookie and a 36-month consent log in `inc/tracking.php`. Details and checks: `docs/tracking.md`.
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.

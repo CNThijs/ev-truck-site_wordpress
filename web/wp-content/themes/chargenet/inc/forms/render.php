@@ -65,9 +65,12 @@ function chargenet_form_open( string $form, string $mode, array $state ): void {
 	printf( '<input type="hidden" name="cn_lang" value="%s">', esc_attr( chargenet_current_lang() ) );
 	printf( '<input type="hidden" name="cn_ts" value="%s">', esc_attr( chargenet_form_token() ) );
 	printf( '<input type="hidden" name="cn_return" value="%s">', esc_url( $return ) );
+	$remembered = chargenet_campaign_cookie(); // Set only after the visitor accepted statistics.
 	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term' ) as $param ) {
 		if ( isset( $_GET[ $param ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			printf( '<input type="hidden" name="cn_%s" value="%s">', esc_attr( $param ), esc_attr( chargenet_form_clean( wp_unslash( $_GET[ $param ] ), 100 ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		} elseif ( isset( $remembered[ $param ] ) ) {
+			printf( '<input type="hidden" name="cn_%s" value="%s">', esc_attr( $param ), esc_attr( chargenet_form_clean( $remembered[ $param ], 100 ) ) );
 		}
 	}
 	// Honeypot: invisible to people (and to assistive technology), filled in by bots.

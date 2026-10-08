@@ -70,4 +70,20 @@
 			color: var(--fg-muted);
 		}
 	}
+
+	// "Cookie settings": a button that looks like the links next to it (WPConsent opens its panel on click).
+	&__consent {
+		padding: var(--space-1) 0;
+		border: 0;
+		background: none;
+		color: var(--fg-muted);
+		font: inherit;
+		text-decoration: underline;
+		text-underline-offset: 0.2em;
+		cursor: pointer;
+
+		&:hover {
+			color: var(--fg);
+		}
+	}
 }

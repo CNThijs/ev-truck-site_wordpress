@@ -62,6 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				);
 				?>
 			</nav>
+			<button class="site-footer__consent wpconsent-open-preferences" type="button"><?php esc_html_e( 'Cookie settings', 'chargenet' ); ?></button>
 			<?php chargenet_language_switcher( __( 'Footer language', 'chargenet' ) ); ?>
 		</div>
 	</div>

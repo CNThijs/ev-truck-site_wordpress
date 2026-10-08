@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-08T11:04:51+02:00\n"
+"POT-Creation-Date: 2026-10-08T15:19:25+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -171,7 +171,11 @@ msgstr "© %s ChargeNet. Alle rechten voorbehouden."
 msgid "Legal"
 msgstr "Juridisch"
 
-#: footer.php:65
+#: footer.php:65 inc/consent.php:25
+msgid "Cookie settings"
+msgstr "Cookie-instellingen"
+
+#: footer.php:66
 msgid "Footer language"
 msgstr "Taal (voettekst)"
 
@@ -242,6 +246,141 @@ msgstr "Kerngegevens"
 #: inc/blog.php:331
 msgid "Call to action"
 msgstr "Call-to-action"
+
+#: inc/consent.php:21
+msgid ""
+"We use cookies to measure how our website is used and to improve it. These "
+"statistics cookies are only placed if you accept. You can change your choice "
+"at any time."
+msgstr "Wij gebruiken cookies om te meten hoe onze website wordt gebruikt en om hem te verbeteren. Deze statistiekcookies plaatsen wij alleen als u akkoord gaat. U kunt uw keuze op elk moment wijzigen."
+
+#: inc/consent.php:22
+msgid "Accept all"
+msgstr "Alles accepteren"
+
+#: inc/consent.php:23
+msgid "Reject all"
+msgstr "Alles weigeren"
+
+#: inc/consent.php:24
+msgid "Settings"
+msgstr "Instellingen"
+
+#: inc/consent.php:26
+msgid ""
+"Choose which cookies we may use. Essential cookies are always on, because "
+"the site needs them."
+msgstr "Kies welke cookies wij mogen gebruiken. Essentiële cookies staan altijd aan, omdat de site ze nodig heeft."
+
+#: inc/consent.php:27
+msgid "Cookie policy"
+msgstr "Cookiebeleid"
+
+#: inc/consent.php:28
+msgid "Read more in our {cookie_policy} and {privacy_policy}."
+msgstr "Lees meer in ons {cookie_policy} en {privacy_policy}."
+
+#: inc/consent.php:29
+msgid "Save my choice"
+msgstr "Mijn keuze opslaan"
+
+#: inc/consent.php:30
+msgid "Close"
+msgstr "Sluiten"
+
+#: inc/consent.php:31 inc/forms/privacy.php:56 inc/forms/render.php:192
+#: inc/forms/render.php:273 inc/forms/storage.php:162 inc/forms/storage.php:421
+#: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
+#: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
+msgid "Name"
+msgstr "Naam"
+
+#: inc/consent.php:32
+msgid "Description"
+msgstr "Omschrijving"
+
+#: inc/consent.php:33
+msgid "Duration"
+msgstr "Bewaartermijn"
+
+#: inc/consent.php:34
+msgid "Service URL"
+msgstr "Url van de dienst"
+
+#: inc/consent.php:35
+msgid "Click here to accept {category} cookies and load this content"
+msgstr "Klik hier om {category}-cookies te accepteren en deze inhoud te laden"
+
+#: inc/consent.php:80
+msgid "Essential"
+msgstr "Essentieel"
+
+#: inc/consent.php:81
+msgid ""
+"Essential cookies make the site work, for example by remembering your cookie "
+"choice. They cannot be switched off."
+msgstr "Essentiële cookies zorgen dat de site werkt, bijvoorbeeld door uw cookiekeuze te onthouden. Ze kunnen niet worden uitgezet."
+
+#: inc/consent.php:84 blocks/stats/index.js:28 build/blocks/stats/index.js:1
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: inc/consent.php:85
+msgid ""
+"Statistics cookies help us understand how visitors use the site and which "
+"campaigns bring them here. We do not use them for advertising."
+msgstr "Statistiekcookies helpen ons te begrijpen hoe bezoekers de site gebruiken en welke campagnes hen hier brengen. Wij gebruiken ze niet voor advertenties."
+
+#: inc/consent.php:88
+msgid "Marketing"
+msgstr "Marketing"
+
+#: inc/consent.php:89
+msgid ""
+"Marketing cookies follow visitors across websites to show relevant "
+"advertisements. ChargeNet does not use them at the moment."
+msgstr "Marketingcookies volgen bezoekers over websites heen om relevante advertenties te tonen. ChargeNet gebruikt ze op dit moment niet."
+
+#: inc/consent.php:108
+msgid ""
+"Used by Google Analytics to tell visitors apart without identifying them."
+msgstr "Wordt door Google Analytics gebruikt om bezoekers van elkaar te onderscheiden zonder hen te identificeren."
+
+#: inc/consent.php:108 inc/consent.php:109
+msgid "2 years"
+msgstr "2 jaar"
+
+#: inc/consent.php:109
+msgid "Used by Google Analytics to keep the state of a visit."
+msgstr "Wordt door Google Analytics gebruikt om de status van een bezoek bij te houden."
+
+#: inc/consent.php:110
+msgid ""
+"Remembers the campaign link (UTM parameters) that brought you here, so that "
+"a request you send can be linked to it."
+msgstr "Onthoudt de campagnelink (UTM-parameters) waarmee u hier kwam, zodat een aanvraag die u verstuurt eraan gekoppeld kan worden."
+
+#: inc/consent.php:110
+msgid "30 days"
+msgstr "30 dagen"
+
+#: inc/consent.php:111
+msgid "Remembers your cookie choice."
+msgstr "Onthoudt uw cookiekeuze."
+
+#: inc/consent.php:111
+msgid "6 months"
+msgstr "6 maanden"
+
+#: inc/consent.php:131
+msgid "Loads our analytics tags, only after you accept statistics cookies."
+msgstr "Laadt onze analyse-tags, pas nadat u statistiekcookies accepteert."
+
+#: inc/consent.php:133
+msgid ""
+"Measures visits and clicks (page views, buttons, forms) without advertising "
+"features."
+msgstr "Meet bezoeken en klikken (paginaweergaven, knoppen, formulieren) zonder advertentiefuncties."
 
 #. translators: %d: number of images.
 #: inc/editor-checks.php:22 inc/editor-checks.php:24
@@ -477,20 +616,13 @@ msgstr "Formulier"
 msgid "Language"
 msgstr "Taal"
 
-#: inc/forms/privacy.php:56 inc/forms/render.php:189 inc/forms/render.php:270
-#: inc/forms/storage.php:162 inc/forms/storage.php:421
-#: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
-#: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
-msgid "Name"
-msgstr "Naam"
-
 #: inc/forms/privacy.php:57 inc/forms/storage.php:163 inc/forms/storage.php:167
 #: inc/forms/storage.php:422 template-parts/content-single.php:67
 #: blocks/team-member/index.js:48 build/blocks/team-member/index.js:1
 msgid "Email"
 msgstr "E-mail"
 
-#: inc/forms/privacy.php:59 inc/forms/render.php:210 inc/forms/storage.php:424
+#: inc/forms/privacy.php:59 inc/forms/render.php:213 inc/forms/storage.php:424
 msgid "Message"
 msgstr "Bericht"
 
@@ -516,55 +648,55 @@ msgstr ""
 "Het formulier kon niet worden verstuurd. Controleer uw verbinding en probeer "
 "het opnieuw."
 
-#: inc/forms/render.php:140
+#: inc/forms/render.php:143
 msgid "Read the privacy policy"
 msgstr "Lees het privacybeleid"
 
-#: inc/forms/render.php:157
+#: inc/forms/render.php:160
 msgid "Please turn on JavaScript to send this form."
 msgstr "Zet JavaScript aan om dit formulier te versturen."
 
-#: inc/forms/render.php:160
+#: inc/forms/render.php:163
 msgid "Fields marked * are required."
 msgstr "Velden met * zijn verplicht."
 
-#: inc/forms/render.php:199 inc/forms/render.php:319
+#: inc/forms/render.php:202 inc/forms/render.php:322
 msgid "Email address"
 msgstr "E-mailadres"
 
-#: inc/forms/render.php:213
+#: inc/forms/render.php:216
 msgid "At least 10 characters."
 msgstr "Minimaal 10 tekens."
 
-#: inc/forms/render.php:219
+#: inc/forms/render.php:222
 msgid "Send message"
 msgstr "Bericht versturen"
 
-#: inc/forms/render.php:241
+#: inc/forms/render.php:244
 msgid "Your unique code"
 msgstr "Uw unieke code"
 
-#: inc/forms/render.php:243
+#: inc/forms/render.php:246
 msgid "You find the code on the card you received from us."
 msgstr "U vindt de code op de kaart die u van ons heeft ontvangen."
 
-#: inc/forms/render.php:252 inc/forms/render.php:290
+#: inc/forms/render.php:255 inc/forms/render.php:293
 msgid "Business email address"
 msgstr "Zakelijk e-mailadres"
 
-#: inc/forms/render.php:261 inc/forms/render.php:299
+#: inc/forms/render.php:264 inc/forms/render.php:302
 msgid "Send me the report"
 msgstr "Stuur mij het rapport"
 
-#: inc/forms/render.php:265
+#: inc/forms/render.php:268
 msgid "I do not have a code"
 msgstr "Ik heb geen code"
 
-#: inc/forms/render.php:280
+#: inc/forms/render.php:283
 msgid "Company name"
 msgstr "Bedrijfsnaam"
 
-#: inc/forms/render.php:328
+#: inc/forms/render.php:331
 msgid "Subscribe"
 msgstr "Aanmelden"
 
@@ -1639,10 +1771,6 @@ msgstr "Bijvoorbeeld % of mld."
 #: blocks/stat-item/index.js:46 build/blocks/stat-item/index.js:1
 msgid "Label"
 msgstr "Label"
-
-#: blocks/stats/index.js:28 build/blocks/stats/index.js:1
-msgid "Statistics"
-msgstr "Statistieken"
 
 #: blocks/stats/index.js:33 build/blocks/stats/index.js:1
 msgid "Row (heading above)"

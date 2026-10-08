@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-08T11:04:51+02:00\n"
+"POT-Creation-Date: 2026-10-08T15:19:25+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: chargenet\n"
@@ -185,6 +185,11 @@ msgid "Legal"
 msgstr ""
 
 #: footer.php:65
+#: inc/consent.php:25
+msgid "Cookie settings"
+msgstr ""
+
+#: footer.php:66
 msgid "Footer language"
 msgstr ""
 
@@ -252,6 +257,134 @@ msgstr ""
 
 #: inc/blog.php:331
 msgid "Call to action"
+msgstr ""
+
+#: inc/consent.php:21
+msgid "We use cookies to measure how our website is used and to improve it. These statistics cookies are only placed if you accept. You can change your choice at any time."
+msgstr ""
+
+#: inc/consent.php:22
+msgid "Accept all"
+msgstr ""
+
+#: inc/consent.php:23
+msgid "Reject all"
+msgstr ""
+
+#: inc/consent.php:24
+msgid "Settings"
+msgstr ""
+
+#: inc/consent.php:26
+msgid "Choose which cookies we may use. Essential cookies are always on, because the site needs them."
+msgstr ""
+
+#: inc/consent.php:27
+msgid "Cookie policy"
+msgstr ""
+
+#: inc/consent.php:28
+msgid "Read more in our {cookie_policy} and {privacy_policy}."
+msgstr ""
+
+#: inc/consent.php:29
+msgid "Save my choice"
+msgstr ""
+
+#: inc/consent.php:30
+msgid "Close"
+msgstr ""
+
+#: inc/consent.php:31
+#: inc/forms/privacy.php:56
+#: inc/forms/render.php:192
+#: inc/forms/render.php:273
+#: inc/forms/storage.php:162
+#: inc/forms/storage.php:421
+#: blocks/logo-item/index.js:25
+#: blocks/team-member/index.js:76
+#: build/blocks/logo-item/index.js:1
+#: build/blocks/team-member/index.js:1
+msgid "Name"
+msgstr ""
+
+#: inc/consent.php:32
+msgid "Description"
+msgstr ""
+
+#: inc/consent.php:33
+msgid "Duration"
+msgstr ""
+
+#: inc/consent.php:34
+msgid "Service URL"
+msgstr ""
+
+#: inc/consent.php:35
+msgid "Click here to accept {category} cookies and load this content"
+msgstr ""
+
+#: inc/consent.php:80
+msgid "Essential"
+msgstr ""
+
+#: inc/consent.php:81
+msgid "Essential cookies make the site work, for example by remembering your cookie choice. They cannot be switched off."
+msgstr ""
+
+#: inc/consent.php:84
+#: blocks/stats/index.js:28
+#: build/blocks/stats/index.js:1
+msgid "Statistics"
+msgstr ""
+
+#: inc/consent.php:85
+msgid "Statistics cookies help us understand how visitors use the site and which campaigns bring them here. We do not use them for advertising."
+msgstr ""
+
+#: inc/consent.php:88
+msgid "Marketing"
+msgstr ""
+
+#: inc/consent.php:89
+msgid "Marketing cookies follow visitors across websites to show relevant advertisements. ChargeNet does not use them at the moment."
+msgstr ""
+
+#: inc/consent.php:108
+msgid "Used by Google Analytics to tell visitors apart without identifying them."
+msgstr ""
+
+#: inc/consent.php:108
+#: inc/consent.php:109
+msgid "2 years"
+msgstr ""
+
+#: inc/consent.php:109
+msgid "Used by Google Analytics to keep the state of a visit."
+msgstr ""
+
+#: inc/consent.php:110
+msgid "Remembers the campaign link (UTM parameters) that brought you here, so that a request you send can be linked to it."
+msgstr ""
+
+#: inc/consent.php:110
+msgid "30 days"
+msgstr ""
+
+#: inc/consent.php:111
+msgid "Remembers your cookie choice."
+msgstr ""
+
+#: inc/consent.php:111
+msgid "6 months"
+msgstr ""
+
+#: inc/consent.php:131
+msgid "Loads our analytics tags, only after you accept statistics cookies."
+msgstr ""
+
+#: inc/consent.php:133
+msgid "Measures visits and clicks (page views, buttons, forms) without advertising features."
 msgstr ""
 
 #. translators: %d: number of images.
@@ -429,18 +562,6 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: inc/forms/privacy.php:56
-#: inc/forms/render.php:189
-#: inc/forms/render.php:270
-#: inc/forms/storage.php:162
-#: inc/forms/storage.php:421
-#: blocks/logo-item/index.js:25
-#: blocks/team-member/index.js:76
-#: build/blocks/logo-item/index.js:1
-#: build/blocks/team-member/index.js:1
-msgid "Name"
-msgstr ""
-
 #: inc/forms/privacy.php:57
 #: inc/forms/storage.php:163
 #: inc/forms/storage.php:167
@@ -452,7 +573,7 @@ msgid "Email"
 msgstr ""
 
 #: inc/forms/privacy.php:59
-#: inc/forms/render.php:210
+#: inc/forms/render.php:213
 #: inc/forms/storage.php:424
 msgid "Message"
 msgstr ""
@@ -481,58 +602,58 @@ msgstr ""
 msgid "The form could not be sent. Check your connection and try again."
 msgstr ""
 
-#: inc/forms/render.php:140
+#: inc/forms/render.php:143
 msgid "Read the privacy policy"
 msgstr ""
 
-#: inc/forms/render.php:157
+#: inc/forms/render.php:160
 msgid "Please turn on JavaScript to send this form."
 msgstr ""
 
-#: inc/forms/render.php:160
+#: inc/forms/render.php:163
 msgid "Fields marked * are required."
 msgstr ""
 
-#: inc/forms/render.php:199
-#: inc/forms/render.php:319
+#: inc/forms/render.php:202
+#: inc/forms/render.php:322
 msgid "Email address"
 msgstr ""
 
-#: inc/forms/render.php:213
+#: inc/forms/render.php:216
 msgid "At least 10 characters."
 msgstr ""
 
-#: inc/forms/render.php:219
+#: inc/forms/render.php:222
 msgid "Send message"
 msgstr ""
 
-#: inc/forms/render.php:241
+#: inc/forms/render.php:244
 msgid "Your unique code"
 msgstr ""
 
-#: inc/forms/render.php:243
+#: inc/forms/render.php:246
 msgid "You find the code on the card you received from us."
 msgstr ""
 
-#: inc/forms/render.php:252
-#: inc/forms/render.php:290
+#: inc/forms/render.php:255
+#: inc/forms/render.php:293
 msgid "Business email address"
 msgstr ""
 
-#: inc/forms/render.php:261
-#: inc/forms/render.php:299
+#: inc/forms/render.php:264
+#: inc/forms/render.php:302
 msgid "Send me the report"
 msgstr ""
 
-#: inc/forms/render.php:265
+#: inc/forms/render.php:268
 msgid "I do not have a code"
 msgstr ""
 
-#: inc/forms/render.php:280
+#: inc/forms/render.php:283
 msgid "Company name"
 msgstr ""
 
-#: inc/forms/render.php:328
+#: inc/forms/render.php:331
 msgid "Subscribe"
 msgstr ""
 
@@ -1678,11 +1799,6 @@ msgstr ""
 #: blocks/stat-item/index.js:46
 #: build/blocks/stat-item/index.js:1
 msgid "Label"
-msgstr ""
-
-#: blocks/stats/index.js:28
-#: build/blocks/stats/index.js:1
-msgid "Statistics"
 msgstr ""
 
 #: blocks/stats/index.js:33
