@@ -43,10 +43,11 @@ return array(
 		. cn_block(
 			'chargenet/post-grid',
 			array(
-				'variant'  => 'featured-grid',
-				'count'    => 9,
-				'paginate' => true,
-				'spaceTop' => 'sm',
+				'variant'      => 'featured-grid',
+				'headingLevel' => 1, // The cards are the page's h2 headings under the title band's h1.
+				'count'        => 9,
+				'paginate'     => true,
+				'spaceTop'     => 'sm',
 			)
 		);
 	},

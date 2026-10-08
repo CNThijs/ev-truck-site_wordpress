@@ -73,6 +73,8 @@ cn_check( $names === $wanted, 'only the six new categories exist (in both langua
 cn_check( 1 === chargenet_reading_minutes( 'two words' ) && 3 === chargenet_reading_minutes( str_repeat( 'word ', 450 ) ), 'reading time' );
 $share = chargenet_share_links( 'https://example.com/a b', 'A & B' );
 cn_check( 0 === strpos( $share['linkedin'], 'https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.com%2Fa%20b' ) && 0 === strpos( $share['email'], 'mailto:?subject=A%20%26%20B' ), 'share links are encoded' );
+$cn_problems = chargenet_content_problems( '<h2>A</h2><h4>B</h4><h1>C</h1><p><a href="/x">Read more</a> <a href="/y">Charging prices</a></p>' );
+cn_check( 1 === $cn_problems['h1'] && 1 === $cn_problems['skip'] && 1 === $cn_problems['link'], 'heading and link text check' );
 cn_check( 0 === chargenet_images_without_alt( '<img src="a.jpg" alt="A truck">' ) && 2 === chargenet_images_without_alt( '<img src="a.jpg"><img src="b.jpg" alt="">' ), 'alt text check' );
 
 // Table of contents: only in the main text of a single post, from three h2 headings.

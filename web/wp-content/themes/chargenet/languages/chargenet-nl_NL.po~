@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-08T11:04:51+02:00\n"
+"POT-Creation-Date: 2026-10-07T22:22:55+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -227,24 +227,8 @@ msgstr "Getoond onder de titel en in de gestructureerde data. Leeg: ChargeNet."
 msgid "In this article"
 msgstr "In dit artikel"
 
-#: inc/blog.php:325
-msgid "Pull quote"
-msgstr "Uitgelicht citaat"
-
-#: inc/blog.php:329
-msgid "Callout"
-msgstr "Aandachtspunt"
-
-#: inc/blog.php:330
-msgid "Key facts"
-msgstr "Kerngegevens"
-
-#: inc/blog.php:331
-msgid "Call to action"
-msgstr "Call-to-action"
-
 #. translators: %d: number of images.
-#: inc/editor-checks.php:22 inc/editor-checks.php:24
+#: inc/blog.php:330
 #, php-format
 msgid ""
 "%d image in this text has no alt text. Add a short description of the image, "
@@ -252,37 +236,42 @@ msgid ""
 msgid_plural ""
 "%d images in this text have no alt text. Add a short description of each "
 "image, or choose \"decorative\" if it only decorates."
-msgstr[0] ""
-"%d afbeelding in deze tekst heeft geen alternatieve tekst. Voeg een korte "
-"beschrijving van de afbeelding toe, of kies \"decoratief\" als de afbeelding "
-"alleen versiert."
-msgstr[1] ""
-"%d afbeeldingen in deze tekst hebben geen alternatieve tekst. Voeg bij elke "
-"afbeelding een korte beschrijving toe, of kies \"decoratief\" als de "
-"afbeelding alleen versiert."
+msgstr[0] "%d afbeelding in deze tekst heeft geen alternatieve tekst. Voeg een korte beschrijving van de afbeelding toe, of kies \"decoratief\" als de afbeelding alleen versiert."
+msgstr[1] "%d afbeeldingen in deze tekst hebben geen alternatieve tekst. Voeg bij elke afbeelding een korte beschrijving toe, of kies \"decoratief\" als de afbeelding alleen versiert."
 
-#: inc/editor-checks.php:25
+#: inc/blog.php:336
 msgid ""
 "The text contains a Heading 1. The page title already is the h1: use Heading "
 "2 and lower."
-msgstr ""
-"De tekst bevat een Kop 1. De paginatitel is al de h1: gebruik Kop 2 en lager."
+msgstr "De tekst bevat een Kop 1. De paginatitel is al de h1: gebruik Kop 2 en lager."
 
-#: inc/editor-checks.php:26
+#: inc/blog.php:339
 msgid ""
 "A heading skips a level (for example Heading 2 followed by Heading 4). Keep "
 "the levels in order."
-msgstr ""
-"Een kop slaat een niveau over (bijvoorbeeld Kop 2 gevolgd door Kop 4). Houd "
-"de niveaus in volgorde."
+msgstr "Een kop slaat een niveau over (bijvoorbeeld Kop 2 gevolgd door Kop 4). Houd de niveaus in volgorde."
 
-#: inc/editor-checks.php:27
+#: inc/blog.php:342
 msgid ""
 "A link says only \"here\" or \"read more\". Use words that describe where "
 "the link goes."
-msgstr ""
-"Een link zegt alleen \"hier\" of \"lees meer\". Gebruik woorden die "
-"beschrijven waar de link naartoe gaat."
+msgstr "Een link zegt alleen \"hier\" of \"lees meer\". Gebruik woorden die beschrijven waar de link naartoe gaat."
+
+#: inc/blog.php:361
+msgid "Pull quote"
+msgstr "Uitgelicht citaat"
+
+#: inc/blog.php:365
+msgid "Callout"
+msgstr "Aandachtspunt"
+
+#: inc/blog.php:366
+msgid "Key facts"
+msgstr "Kerngegevens"
+
+#: inc/blog.php:367
+msgid "Call to action"
+msgstr "Call-to-action"
 
 #: inc/forms/codes.php:191 inc/forms/codes.php:192 inc/forms/codes.php:271
 msgid "Report codes"
@@ -878,12 +867,12 @@ msgstr ""
 msgid "Read the original on %s"
 msgstr "Lees het origineel op %s"
 
-#: inc/seo.php:145
+#: inc/seo.php:144
 msgid "Home"
 msgstr "Home"
 
 #. translators: %s: category name.
-#: inc/seo.php:170
+#: inc/seo.php:168
 #, php-format
 msgid "News about %s from ChargeNet."
 msgstr "Nieuws over %s van ChargeNet."

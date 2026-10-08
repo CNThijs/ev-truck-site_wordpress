@@ -10,7 +10,7 @@ const norm = (url) => url.replace(/#.*$/, '');
 async function sitemapUrls() {
 	const urls = [];
 	try {
-		const index = await get(`${base}/wp-sitemap.xml`);
+		const index = await get(`${base}/sitemap_index.xml`);
 		for (const [, sitemap] of index.matchAll(/<loc>([^<]+)<\/loc>/g)) {
 			const xml = await get(sitemap);
 			for (const [, loc] of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {

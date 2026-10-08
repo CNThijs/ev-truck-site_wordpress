@@ -156,6 +156,7 @@ foreach ( require $chargenet_root . '/content/pages/index.php' as $chargenet_nam
 	$chargenet_defs[] = require $chargenet_root . '/content/pages/' . $chargenet_name . '.php';
 }
 $chargenet_pages = array(); // key => lang => id.
+$chargenet_seo   = require $chargenet_root . '/content/seo.php';
 
 $chargenet_link = static function ( string $key, string $lang ) use ( &$chargenet_pages ): string {
 	$id = $chargenet_pages[ $key ][ $lang ] ?? 0;
@@ -219,6 +220,22 @@ foreach ( array( 1, 2 ) as $chargenet_pass ) {
 			chargenet_seed_set_slug( $id, $chargenet_def['slugs'][ $chargenet_lang ] );
 			update_post_meta( $id, '_chargenet_seed_key', $chargenet_key );
 			update_post_meta( $id, '_chargenet_seed_hash', md5( (string) get_post_field( 'post_content', $id ) ) );
+
+			// SEO title and description (content/seo.php): an editor's own value in Rank Math wins.
+			$seo = $chargenet_seo[ $chargenet_key ][ $chargenet_lang ] ?? null;
+			if ( $seo ) {
+				$seo_fields = array(
+					'rank_math_title'       => 'home' === $chargenet_key ? $seo['title'] : $seo['title'] . ' %sep% %sitename%',
+					'rank_math_description' => $seo['description'],
+				);
+				foreach ( $seo_fields as $seo_meta => $seo_value ) {
+					$seo_current = (string) get_post_meta( $id, $seo_meta, true );
+					if ( '' === $seo_current || get_post_meta( $id, '_chargenet_seed_' . $seo_meta, true ) === $seo_current || $chargenet_force ) {
+						update_post_meta( $id, $seo_meta, $seo_value );
+						update_post_meta( $id, '_chargenet_seed_' . $seo_meta, $seo_value );
+					}
+				}
+			}
 			$chargenet_pages[ $chargenet_key ][ $chargenet_lang ] = $id;
 		}
 		pll_save_post_translations( $chargenet_pages[ $chargenet_key ] );

@@ -76,6 +76,7 @@ return array(
 			'chargenet/accordion',
 			array(
 				'variant'      => 'with-aside',
+				'headingLevel' => 1, // The questions are the page's h2 headings under the title band's h1.
 				'faqSchema'    => true,
 				'asideHeading' => $c['aside_h'],
 				'asideText'    => $c['aside_t'],

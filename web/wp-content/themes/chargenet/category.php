@@ -29,10 +29,11 @@ echo do_blocks( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	) . ' /-->' .
 	'<!-- wp:chargenet/post-grid ' . wp_json_encode(
 		array(
-			'count'      => 9,
-			'paginate'   => true,
-			'categoryId' => $chargenet_term instanceof WP_Term ? (int) $chargenet_term->term_id : 0,
-			'spaceTop'   => 'sm',
+			'count'        => 9,
+			'headingLevel' => 1, // The cards are the page's h2 headings under the title band's h1.
+			'paginate'     => true,
+			'categoryId'   => $chargenet_term instanceof WP_Term ? (int) $chargenet_term->term_id : 0,
+			'spaceTop'     => 'sm',
 		)
 	) . ' /-->'
 );

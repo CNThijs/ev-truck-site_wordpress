@@ -57,7 +57,16 @@ function chargenet_blog_blocks( string $html, callable $import ): string {
 	libxml_clear_errors();
 	$body = $dom->getElementsByTagName( 'body' )->item( 0 );
 
-	$convert = static function ( DOMNode $parent ) use ( &$convert, $import, $dom ): string {
+	// The old posts start at h3 under the page's h1: shift by the first heading's level so it becomes h2 (never above h2).
+	$shift = 0;
+	foreach ( $body->getElementsByTagName( '*' ) as $el ) {
+		if ( preg_match( '/^h([2-4])$/', $el->nodeName, $m ) ) {
+			$shift = (int) $m[1] - 2;
+			break;
+		}
+	}
+
+	$convert = static function ( DOMNode $parent ) use ( &$convert, $import, $dom, $shift ): string {
 		$out = '';
 		foreach ( $parent->childNodes as $node ) {
 			if ( ! $node instanceof DOMElement ) {
@@ -71,7 +80,7 @@ function chargenet_blog_blocks( string $html, callable $import ): string {
 				case 'h2':
 				case 'h3':
 				case 'h4':
-					$out .= cn_h( $inner, (int) substr( $node->nodeName, 1 ) );
+					$out .= cn_h( $inner, max( 2, (int) substr( $node->nodeName, 1 ) - $shift ) );
 					break;
 				case 'ul':
 				case 'ol':

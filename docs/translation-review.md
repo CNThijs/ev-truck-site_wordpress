@@ -117,6 +117,10 @@ Other English left in the Dutch posts is a slogan ("Keep charging ahead!") and a
 | Post patterns              | Dutch twins of the five patterns (uitgelicht citaat, aandachtspunt, kerngegevens, afbeelding met bijschrift, call-to-action)                | New text.                                                  |
 | Excerpts of two posts      | The office-move post and the Move East post had the same excerpt (copied); both now start with the first paragraph of their own text        | The old excerpt of the office move described another post. |
 
+## SEO titles and descriptions (Epic 10)
+
+New text, both languages, in `content/seo.php` (written into Rank Math by the seeder; an editor's own value in Rank Math wins). Check the Dutch wording and the keywords: the home title "ChargeNet - Laadinfrastructuur delen voor elektrische vrachtwagens", "Laden voor vervoerders", "Laden voor locatie-eigenaren", "Werken bij ChargeNet" (the page itself says "Carrière"), "Veelgestelde vragen voor chauffeurs". Descriptions reuse each page's own intro text. Also new: the category description "Nieuws over %s van ChargeNet." and the editor warnings about headings, links and alt text.
+
 ## Statistics on Home (decided: keep as is)
 
 The captions of three statistics do not match their figures (3.8Bn tonne CO₂ with a NOx caption; two "80%" with captions that contain no percentage). By your decision they are kept word for word.

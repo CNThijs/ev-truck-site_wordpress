@@ -23,3 +23,20 @@ jobs:
       - run: npm run check:budget
       # Generated token files must be committed in sync with tokens.json.
       - run: git diff --exit-code -- web/wp-content/themes/chargenet/theme.json web/wp-content/themes/chargenet/assets/src/scss/_tokens.generated.scss web/wp-content/themes/chargenet/assets/src/scss/_breakpoints.generated.scss
+
+  seo:
+    # Starts the site with DDEV and crawls it: bin/check-seo.mjs, hreflang and redirects (docs/seo.md).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: ddev/github-action-setup-ddev@v1
+      - run: ddev start
+      - run: npm run check:seo -- http://chargenet.ddev.site --production
+      - run: npm run check:hreflang
+      - run: npm run check:redirects

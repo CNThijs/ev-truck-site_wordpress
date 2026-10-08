@@ -58,7 +58,7 @@ The RSS feed has the full text with the featured image first; the comments feeds
 
 ## Images and speed
 
-Featured images and images in the text carry `width`, `height` and `srcset` (no layout shift); only the first image is eager. The only JavaScript on a post is the newsletter form's module and a 300-byte inline script for "Copy link". Images in the text without alt text are listed in a notice when an editor opens the post; `bin/test-blog.php` checks the helper.
+Featured images and images in the text carry `width`, `height` and `srcset` (no layout shift); only the first image is eager. The only JavaScript on a post is the newsletter form's module and a 300-byte inline script for "Copy link". While an editor writes a post or page, the block editor shows warnings at the top (images without alt text, a Heading 1, a skipped heading level, link texts like "read more"); they update as the text changes (`inc/editor-checks.php`; PHP admin notices are hidden in the block editor). `bin/test-blog.php` checks the same rules in PHP.
 
 ## Checks
 

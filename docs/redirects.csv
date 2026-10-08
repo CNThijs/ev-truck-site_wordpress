@@ -1,5 +1,5 @@
 old_path,new_path,status,note
-/,/en/,301,Root. No browser-language redirect.
+/,/en/,302,Root. Polylang sends it before the theme loads; a 301 needs a server rule (docs/seo.md). No browser-language redirect.
 /about,/en/about/,301,
 /over-ons,/nl/over-ons/,301,Old NL alias; page was identical to /about
 /locations,/en/locations/,301,
@@ -33,9 +33,9 @@ old_path,new_path,status,note
 /blog/move-east-2025,/en/blog/move-east-2025/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/move-east-2025/
 /blog/chargenet-moves-to-the-connectr-office-in-arnhem,/en/blog/chargenet-moves-to-the-connectr-office-in-arnhem/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-moves-to-the-connectr-office-in-arnhem/
 /rapport2027,/nl/rapport2027/,301,PROVISIONAL: campaign URL undecided (audit question 2); report is Dutch only. Keep UTM query string.
-/routecheck,/en/carriers/,301,PROVISIONAL: old shortlink went to /carriers with UTMs; confirm in campaign epic
-/opbrengst,/en/locations/,301,PROVISIONAL: old shortlink went to /locations with UTMs; confirm in campaign epic
-/terms-and-conditions,/en/,301,Soft 404 on old site; page not rebuilt. Better a 410 if never built
-/trend2026,/nl/rapport2027/,301,PROVISIONAL: soft 404 on old site; brief calls campaign /trend2026
-/location-owners,/en/locations/,301,Linked from old mobile menu but was a 404; confirm target
-/fleet-managers,/en/carriers/,301,Linked from old mobile menu but was a 404; confirm target
+/routecheck,/nl/vervoerders/,301,Dutch campaign page; UTM parameters added
+/opbrengst,/nl/locaties/,301,Dutch campaign page; UTM parameters added
+/terms-and-conditions,/en/,301,Soft 404 on old site; page never rebuilt, so the home page (decided)
+/trend2026,/nl/rapport2027/,301,Soft 404 on old site; early campaign name (decided)
+/location-owners,/en/locations/,301,Linked from old mobile menu but was a 404 (decided)
+/fleet-managers,/en/carriers/,301,Linked from old mobile menu but was a 404 (decided)

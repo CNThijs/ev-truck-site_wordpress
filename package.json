@@ -23,6 +23,8 @@
     "build:blocks": "wp-scripts build --webpack-src-dir=web/wp-content/themes/chargenet/blocks --output-path=web/wp-content/themes/chargenet/build/blocks --webpack-copy-php --experimental-modules",
     "translations": "node bin/build-translations.mjs",
     "check:hreflang": "node bin/check-hreflang.mjs",
+    "check:seo": "node bin/check-seo.mjs",
+    "check:redirects": "node bin/check-redirects.mjs",
     "check:budget": "node bin/check-budget.mjs",
     "test:forms": "ddev wp eval-file bin/test-forms.php",
     "test:blog": "ddev wp eval-file bin/test-blog.php",

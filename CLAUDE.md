@@ -70,6 +70,10 @@ Pages, media and menus are code: `content/` (copy of both languages side by side
 
 18 posts in both languages, six categories, an author reference per post (default ChargeNet), no comments, newsletter sign-up stored in WordPress, Rank Math (free, no account) for SEO and structured data. URLs, templates, patterns, checks: `docs/blog.md`. `npm run test:blog`, `npm run check:blog-urls`.
 
+## SEO
+
+Rank Math free (structured data, breadcrumbs, 404 monitor; the sitemaps are theme code, `inc/sitemap.php`, one per language; its redirect manager has no CSV import, so redirects are theme code in `inc/redirects.php`) plus `inc/seo.php`: canonical fix for News, noindex for paged lists and search, staging protection through `WP_ENVIRONMENT_TYPE` (anything but `production` and `local` is noindex and `Disallow: /`), Organization details, default share image. Page titles and descriptions: `content/seo.php`. Setup, structured data, checks and the Search Console / Bing launch checklist: `docs/seo.md`. `npm run check:seo -- <url> --production`, `npm run check:redirects`, `npm run check:hreflang`.
+
 ## Forms and email
 
 Contact form and trend report form: handler, private submissions post type, report codes table (CSV import), emails through Microsoft 365 (OAuth SMTP, secrets only as constants in wp-config.php), privacy exporter/eraser and 12-month retention. All in the theme (`inc/forms/`); how it works, DNS, setup and checks: `docs/integrations.md`. `npm run test:forms`. Never put credentials in the repository; never write a BCC address into a visible header.

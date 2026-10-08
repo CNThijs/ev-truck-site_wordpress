@@ -33,6 +33,10 @@ function chargenet_legacy_target( string $path, string $query ): string {
 		'privacy'                       => '/en/privacy-policy/',
 		'privacy-policy'                => '/en/privacy-policy/',
 		'blog'                          => '/en/blog/',
+		'terms-and-conditions'          => '/en/', // Soft 404 on the old site, page never rebuilt.
+		'location-owners'               => '/en/locations/', // Linked from the old mobile menu, was a 404.
+		'fleet-managers'                => '/en/carriers/', // Same.
+		'trend2026'                     => '/nl/rapport2027/', // Early campaign name, soft 404 on the old site.
 		'projects/destination-charging' => '/en/destination-charging/',
 		'projects/chargebase'           => '/en/chargebase-project/',
 		'projects/ijmondaanzet'         => '/en/ijmond-aan-zet-project/',

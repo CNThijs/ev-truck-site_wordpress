@@ -59,4 +59,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 </header>
+<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <main id="main" class="site-main">

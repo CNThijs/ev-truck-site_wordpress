@@ -275,32 +275,41 @@ function chargenet_images_without_alt( string $html ): int {
 }
 
 /**
- * Warn editors about images without alt text in the post they are editing.
+ * Heading and link problems in a text: an h1 (the page title is the h1), a heading level that skips one, and link
+ * texts that say nothing out of context ("click here", "read more").
+ *
+ * @param string $html Post content.
+ * @return array<string,int> Problem key => count (h1, skip, link).
  */
-function chargenet_alt_notice(): void {
-	$screen = get_current_screen();
-	if ( ! $screen || 'post' !== $screen->post_type || 'post' !== $screen->base ) {
-		return;
+function chargenet_content_problems( string $html ): array {
+	$problems = array(
+		'h1'   => 0,
+		'skip' => 0,
+		'link' => 0,
+	);
+	$previous = 1; // The title is the h1.
+	if ( preg_match_all( '#<h([1-6])\b#i', $html, $levels ) ) {
+		foreach ( $levels[1] as $level ) {
+			$level = (int) $level;
+			if ( 1 === $level ) {
+				++$problems['h1'];
+			} elseif ( $level > $previous + 1 ) {
+				++$problems['skip'];
+			}
+			$previous = max( 2, $level );
+		}
 	}
-	$id = (int) get_the_ID();
-	if ( ! $id ) {
-		return;
+	if ( preg_match_all( '#<a\b[^>]*>(.*?)</a>#is', $html, $links ) ) {
+		foreach ( $links[1] as $text ) {
+			if ( preg_match( '/^(click here|here|read more|more|lees meer|klik hier|hier|meer)$/i', trim( wp_strip_all_tags( $text ) ) ) ) {
+				++$problems['link'];
+			}
+		}
 	}
-	$missing = chargenet_images_without_alt( (string) get_post_field( 'post_content', $id ) );
-	if ( $missing > 0 ) {
-		printf(
-			'<div class="notice notice-warning"><p>%s</p></div>',
-			esc_html(
-				sprintf(
-					/* translators: %d: number of images. */
-					_n( '%d image in this post has no alt text. Add a short description of the image, or choose "decorative" if it only decorates.', '%d images in this post have no alt text. Add a short description of each image, or choose "decorative" if it only decorates.', $missing, 'chargenet' ),
-					$missing
-				)
-			)
-		);
-	}
+	return $problems;
 }
-add_action( 'admin_notices', 'chargenet_alt_notice' );
+
+// The warnings themselves are shown inside the block editor: inc/editor-checks.php.
 
 // Block styles and patterns for posts ---------------------------------------------------------------------------.
 
@@ -331,3 +340,17 @@ function chargenet_register_post_block_styles(): void {
 	}
 }
 add_action( 'init', 'chargenet_register_post_block_styles' );
+
+/**
+ * Drop the emoji detection script and styles: unused JavaScript on every page.
+ */
+function chargenet_disable_emoji(): void {
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+}
+add_action( 'init', 'chargenet_disable_emoji' );
