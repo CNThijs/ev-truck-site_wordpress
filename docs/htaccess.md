@@ -57,6 +57,38 @@ Put the block **above** the `# BEGIN WordPress` line in the `.htaccess` in the W
 # END ChargeNet performance
 ```
 
+## Protection and security headers (Epic 13)
+
+Two more blocks for the same file, above `# BEGIN WordPress`. Same rule: keep a copy of the old `.htaccess`, apply, run `npm run check:security -- https://chargenet.energy --production` and `wp eval-file check-hardening.php production`.
+
+**Protection** (closed files, no PHP in uploads, no directory listing, no dot-folders except `.well-known`):
+
+```apache
+# BEGIN ChargeNet protection
+Options -Indexes
+<IfModule mod_authz_core.c>
+	<FilesMatch "^(readme\.html|readme\.txt|license\.txt|changelog\.txt|wp-config\.php|wp-config-sample\.php|xmlrpc\.php|composer\.(json|lock)|check-(host|hardening)\.php|.*\.(sql|bak|old|log|sh))$">
+		Require all denied
+	</FilesMatch>
+</IfModule>
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^wp-content/uploads/.*\.(php[0-9]?|phtml|phar)$ - [F,L]
+	RewriteRule (^|/)\.(?!well-known/) - [F,L]
+</IfModule>
+# END ChargeNet protection
+```
+
+`wp-config.php` is blocked only against direct requests; PHP still reads it. If a plugin needs one of its own `readme.txt` files over HTTP (none of ours do), narrow the first line.
+
+**Security headers:** one list for all environments lives in `inc/security-headers.php`. Pages served from the cache never reach PHP, so on the server print the block from the live site and paste it in:
+
+```
+wp eval 'echo chargenet_security_headers_htaccess();'
+```
+
+Then add `define( 'CHARGENET_HEADERS_AT_SERVER', true );` to `wp-config.php` so PHP does not send them a second time. The Content Security Policy starts as `Content-Security-Policy-Report-Only`; violations are written to the PHP error log as `CSP violation: …`. Details and the switch to enforcing: `docs/security.md`.
+
 ## Why these choices
 
 - **Hashed files for a year, `immutable`:** the theme build names files `main-<hash>.css` (8 characters including a digit or capital letter), so a new build is a new URL. Other CSS and JS also get a year, which is safe because WordPress adds `?ver=` to their URLs. Images and fonts are also safe for a year; if you replace an uploaded image, upload it under a new name.

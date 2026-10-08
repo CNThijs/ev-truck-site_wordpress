@@ -140,3 +140,7 @@ accelorate → accelerate; constrution → construction; Monitization → Moneti
 ## Cookie banner and policy (Epic 11)
 
 Banner, panel, categories, cookie descriptions and the cookie policy page (`nl/cookiebeleid`) were translated to Dutch (u/uw). Please review: "Alles accepteren / Alles weigeren / Instellingen", the Statistieken and Marketing category texts, and the consent record paragraph in the cookie policy.
+
+## Privacy policy update (Epic 13, 8 October 2026)
+
+New Dutch rows and sentences in `content/pages/privacy-nl.json`: Google Tag Manager/Analytics (statistics, consent), cookie banner choice / "toestemmingsregistratie", hosting and server logs, the recipients rows (Google "EU en VS", STRATO), the exception in the transfer section ("Op één uitzondering na…"), the retention rows, the filled cookie table and the sentence linking to the cookiebeleid. Also the English heading change on the home page: "What ChargeNet Means for You" (Dutch counterpart unchanged: "Wat ChargeNet voor u betekent"), and the Dutch UI strings for two-factor authentication, the generic login error and "Tabel %d". Legal review of both languages: `docs/privacy.md`.

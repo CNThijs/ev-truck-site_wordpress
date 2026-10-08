@@ -43,7 +43,7 @@ chargenet_section_open(
 ?>
 <div class="card-slider card-slider--<?php echo esc_attr( $chargenet_variant ); ?> stack" data-card-slider>
 	<?php chargenet_section_header( $attributes, $chargenet_title_id ); ?>
-	<div class="card-slider__viewport" tabindex="0" role="region"<?php echo '' !== $chargenet_title_id ? ' aria-labelledby="' . esc_attr( $chargenet_title_id ) . '"' : ' aria-label="' . esc_attr__( 'Cards', 'chargenet' ) . '"'; ?>>
+	<div class="card-slider__viewport" tabindex="0" role="group"<?php echo '' !== $chargenet_title_id ? ' aria-labelledby="' . esc_attr( $chargenet_title_id ) . '"' : ' aria-label="' . esc_attr__( 'Cards', 'chargenet' ) . '"'; ?>>
 		<ul class="card-slider__track" role="list" data-reveal-group>
 			<?php echo $chargenet_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered inner blocks. ?>
 		</ul>

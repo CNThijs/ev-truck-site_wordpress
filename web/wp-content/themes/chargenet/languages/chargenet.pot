@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-08T15:19:25+02:00\n"
+"POT-Creation-Date: 2026-10-08T22:57:48+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: chargenet\n"
@@ -211,6 +211,18 @@ msgstr ""
 msgid "Account"
 msgstr ""
 
+#. translators: %d: number of the table on the page.
+#: inc/accessibility.php:30
+#, php-format
+msgid "Table %d"
+msgstr ""
+
+#: inc/accessibility.php:34
+#: blocks/feature-grid-item/index.js:20
+#: build/blocks/feature-grid-item/index.js:1
+msgid "Item"
+msgstr ""
+
 #: inc/blocks.php:27
 msgid "ChargeNet Sections"
 msgstr ""
@@ -297,8 +309,8 @@ msgstr ""
 
 #: inc/consent.php:31
 #: inc/forms/privacy.php:56
-#: inc/forms/render.php:192
-#: inc/forms/render.php:273
+#: inc/forms/render.php:190
+#: inc/forms/render.php:271
 #: inc/forms/storage.php:162
 #: inc/forms/storage.php:421
 #: blocks/logo-item/index.js:25
@@ -463,84 +475,84 @@ msgstr ""
 msgid "Download the list with use counts"
 msgstr ""
 
-#: inc/forms/handler.php:124
+#: inc/forms/handler.php:151
 msgid "I agree that ChargeNet sends me its newsletter and processes my email address for that, as described in the privacy policy."
 msgstr ""
 
-#: inc/forms/handler.php:125
+#: inc/forms/handler.php:152
 msgid "I agree that ChargeNet processes my details to handle this request, as described in the privacy policy."
 msgstr ""
 
-#: inc/forms/handler.php:181
+#: inc/forms/handler.php:208
 msgid "Enter a valid email address."
 msgstr ""
 
-#: inc/forms/handler.php:186
+#: inc/forms/handler.php:213
 msgid "Enter your name (at least 2 characters)."
 msgstr ""
 
-#: inc/forms/handler.php:192
+#: inc/forms/handler.php:219
 msgid "Enter a message (at least 10 characters)."
 msgstr ""
 
-#: inc/forms/handler.php:198
+#: inc/forms/handler.php:225
 msgid "Enter your company name (at least 2 characters)."
 msgstr ""
 
-#: inc/forms/handler.php:204
+#: inc/forms/handler.php:231
 msgid "Enter your code."
 msgstr ""
 
-#: inc/forms/handler.php:208
+#: inc/forms/handler.php:235
 msgid "Please agree to the privacy statement to continue."
 msgstr ""
 
-#: inc/forms/handler.php:265
+#: inc/forms/handler.php:292
 msgid "Thank you."
 msgstr ""
 
-#: inc/forms/handler.php:270
+#: inc/forms/handler.php:297
 msgid "That was very fast. Please wait a moment and send the form again."
 msgstr ""
 
-#: inc/forms/handler.php:273
+#: inc/forms/handler.php:300
 msgid "We could not verify that you are not a robot. Reload the page and try again."
 msgstr ""
 
-#: inc/forms/handler.php:276
+#: inc/forms/handler.php:303
 msgid "Too many requests. Please try again in an hour."
 msgstr ""
 
-#: inc/forms/handler.php:281
-#: inc/forms/handler.php:292
+#: inc/forms/handler.php:308
+#: inc/forms/handler.php:319
 msgid "Please check the fields marked below."
 msgstr ""
 
-#: inc/forms/handler.php:287
+#: inc/forms/handler.php:314
 msgid "Too many attempts with a code that is not valid. Try again later, or request the report without a code."
 msgstr ""
 
-#: inc/forms/handler.php:293
+#: inc/forms/handler.php:320
 msgid "This code is not valid. Check the code or request the report without one."
 msgstr ""
 
-#: inc/forms/handler.php:300
+#: inc/forms/handler.php:327
 msgid "Thank you for your message. We have sent a copy to your email address and will get back to you soon."
 msgstr ""
 
-#: inc/forms/handler.php:302
+#: inc/forms/handler.php:329
 msgid "Thank you for subscribing. We have sent a confirmation to your email address."
 msgstr ""
 
-#: inc/forms/handler.php:304
+#: inc/forms/handler.php:331
 msgid "Thank you. We are sending the Trend Report 2027 to your email address. If you do not see it within a few minutes, check your spam folder."
 msgstr ""
 
-#: inc/forms/handler.php:306
+#: inc/forms/handler.php:333
 msgid "Something went wrong on our side. Please try again later or email info@chargenet.energy."
 msgstr ""
 
-#: inc/forms/handler.php:379
+#: inc/forms/handler.php:406
 msgid "This page has expired. Reload the page and send the form again."
 msgstr ""
 
@@ -573,7 +585,7 @@ msgid "Email"
 msgstr ""
 
 #: inc/forms/privacy.php:59
-#: inc/forms/render.php:213
+#: inc/forms/render.php:211
 #: inc/forms/storage.php:424
 msgid "Message"
 msgstr ""
@@ -602,58 +614,58 @@ msgstr ""
 msgid "The form could not be sent. Check your connection and try again."
 msgstr ""
 
-#: inc/forms/render.php:143
+#: inc/forms/render.php:141
 msgid "Read the privacy policy"
 msgstr ""
 
-#: inc/forms/render.php:160
+#: inc/forms/render.php:158
 msgid "Please turn on JavaScript to send this form."
 msgstr ""
 
-#: inc/forms/render.php:163
+#: inc/forms/render.php:161
 msgid "Fields marked * are required."
 msgstr ""
 
-#: inc/forms/render.php:202
-#: inc/forms/render.php:322
+#: inc/forms/render.php:200
+#: inc/forms/render.php:320
 msgid "Email address"
 msgstr ""
 
-#: inc/forms/render.php:216
+#: inc/forms/render.php:214
 msgid "At least 10 characters."
 msgstr ""
 
-#: inc/forms/render.php:222
+#: inc/forms/render.php:220
 msgid "Send message"
 msgstr ""
 
-#: inc/forms/render.php:244
+#: inc/forms/render.php:242
 msgid "Your unique code"
 msgstr ""
 
-#: inc/forms/render.php:246
+#: inc/forms/render.php:244
 msgid "You find the code on the card you received from us."
 msgstr ""
 
-#: inc/forms/render.php:255
-#: inc/forms/render.php:293
+#: inc/forms/render.php:253
+#: inc/forms/render.php:291
 msgid "Business email address"
 msgstr ""
 
-#: inc/forms/render.php:264
-#: inc/forms/render.php:302
+#: inc/forms/render.php:262
+#: inc/forms/render.php:300
 msgid "Send me the report"
 msgstr ""
 
-#: inc/forms/render.php:268
+#: inc/forms/render.php:266
 msgid "I do not have a code"
 msgstr ""
 
-#: inc/forms/render.php:283
+#: inc/forms/render.php:281
 msgid "Company name"
 msgstr ""
 
-#: inc/forms/render.php:331
+#: inc/forms/render.php:329
 msgid "Subscribe"
 msgstr ""
 
@@ -945,6 +957,18 @@ msgstr ""
 #: template-parts/post-card.php:57
 #, php-format
 msgid "Read the original on %s"
+msgstr ""
+
+#: inc/security-2fa.php:70
+msgid "Two-factor authentication is required."
+msgstr ""
+
+#: inc/security-2fa.php:71
+msgid "Scroll to \"Two-Factor Options\", set up an authenticator app and save backup codes. Until then you can only use this page."
+msgstr ""
+
+#: inc/security.php:86
+msgid "The login details are not correct, or login is temporarily blocked. Try again later."
 msgstr ""
 
 #: inc/seo.php:145
@@ -1431,11 +1455,6 @@ msgstr ""
 #: build/blocks/team/index.js:1
 #: build/blocks/trend-report-form/index.js:1
 msgid "Introduction (optional)"
-msgstr ""
-
-#: blocks/feature-grid-item/index.js:20
-#: build/blocks/feature-grid-item/index.js:1
-msgid "Item"
 msgstr ""
 
 #: blocks/feature-grid-item/index.js:23

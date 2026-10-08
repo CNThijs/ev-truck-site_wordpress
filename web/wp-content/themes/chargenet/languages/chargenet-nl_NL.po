@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-08T15:19:25+02:00\n"
+"POT-Creation-Date: 2026-10-08T22:57:48+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -195,6 +195,17 @@ msgstr "Primair"
 msgid "Account"
 msgstr "Account"
 
+#. translators: %d: number of the table on the page.
+#: inc/accessibility.php:30
+#, php-format
+msgid "Table %d"
+msgstr "Tabel %d"
+
+#: inc/accessibility.php:34 blocks/feature-grid-item/index.js:20
+#: build/blocks/feature-grid-item/index.js:1
+msgid "Item"
+msgstr "Item"
+
 #: inc/blocks.php:27
 msgid "ChargeNet Sections"
 msgstr "ChargeNet-secties"
@@ -252,7 +263,10 @@ msgid ""
 "We use cookies to measure how our website is used and to improve it. These "
 "statistics cookies are only placed if you accept. You can change your choice "
 "at any time."
-msgstr "Wij gebruiken cookies om te meten hoe onze website wordt gebruikt en om hem te verbeteren. Deze statistiekcookies plaatsen wij alleen als u akkoord gaat. U kunt uw keuze op elk moment wijzigen."
+msgstr ""
+"Wij gebruiken cookies om te meten hoe onze website wordt gebruikt en om hem "
+"te verbeteren. Deze statistiekcookies plaatsen wij alleen als u akkoord "
+"gaat. U kunt uw keuze op elk moment wijzigen."
 
 #: inc/consent.php:22
 msgid "Accept all"
@@ -270,7 +284,9 @@ msgstr "Instellingen"
 msgid ""
 "Choose which cookies we may use. Essential cookies are always on, because "
 "the site needs them."
-msgstr "Kies welke cookies wij mogen gebruiken. Essentiële cookies staan altijd aan, omdat de site ze nodig heeft."
+msgstr ""
+"Kies welke cookies wij mogen gebruiken. Essentiële cookies staan altijd aan, "
+"omdat de site ze nodig heeft."
 
 #: inc/consent.php:27
 msgid "Cookie policy"
@@ -288,8 +304,8 @@ msgstr "Mijn keuze opslaan"
 msgid "Close"
 msgstr "Sluiten"
 
-#: inc/consent.php:31 inc/forms/privacy.php:56 inc/forms/render.php:192
-#: inc/forms/render.php:273 inc/forms/storage.php:162 inc/forms/storage.php:421
+#: inc/consent.php:31 inc/forms/privacy.php:56 inc/forms/render.php:190
+#: inc/forms/render.php:271 inc/forms/storage.php:162 inc/forms/storage.php:421
 #: blocks/logo-item/index.js:25 blocks/team-member/index.js:76
 #: build/blocks/logo-item/index.js:1 build/blocks/team-member/index.js:1
 msgid "Name"
@@ -319,7 +335,9 @@ msgstr "Essentieel"
 msgid ""
 "Essential cookies make the site work, for example by remembering your cookie "
 "choice. They cannot be switched off."
-msgstr "Essentiële cookies zorgen dat de site werkt, bijvoorbeeld door uw cookiekeuze te onthouden. Ze kunnen niet worden uitgezet."
+msgstr ""
+"Essentiële cookies zorgen dat de site werkt, bijvoorbeeld door uw "
+"cookiekeuze te onthouden. Ze kunnen niet worden uitgezet."
 
 #: inc/consent.php:84 blocks/stats/index.js:28 build/blocks/stats/index.js:1
 msgid "Statistics"
@@ -329,7 +347,9 @@ msgstr "Statistieken"
 msgid ""
 "Statistics cookies help us understand how visitors use the site and which "
 "campaigns bring them here. We do not use them for advertising."
-msgstr "Statistiekcookies helpen ons te begrijpen hoe bezoekers de site gebruiken en welke campagnes hen hier brengen. Wij gebruiken ze niet voor advertenties."
+msgstr ""
+"Statistiekcookies helpen ons te begrijpen hoe bezoekers de site gebruiken en "
+"welke campagnes hen hier brengen. Wij gebruiken ze niet voor advertenties."
 
 #: inc/consent.php:88
 msgid "Marketing"
@@ -339,12 +359,16 @@ msgstr "Marketing"
 msgid ""
 "Marketing cookies follow visitors across websites to show relevant "
 "advertisements. ChargeNet does not use them at the moment."
-msgstr "Marketingcookies volgen bezoekers over websites heen om relevante advertenties te tonen. ChargeNet gebruikt ze op dit moment niet."
+msgstr ""
+"Marketingcookies volgen bezoekers over websites heen om relevante "
+"advertenties te tonen. ChargeNet gebruikt ze op dit moment niet."
 
 #: inc/consent.php:108
 msgid ""
 "Used by Google Analytics to tell visitors apart without identifying them."
-msgstr "Wordt door Google Analytics gebruikt om bezoekers van elkaar te onderscheiden zonder hen te identificeren."
+msgstr ""
+"Wordt door Google Analytics gebruikt om bezoekers van elkaar te "
+"onderscheiden zonder hen te identificeren."
 
 #: inc/consent.php:108 inc/consent.php:109
 msgid "2 years"
@@ -352,13 +376,17 @@ msgstr "2 jaar"
 
 #: inc/consent.php:109
 msgid "Used by Google Analytics to keep the state of a visit."
-msgstr "Wordt door Google Analytics gebruikt om de status van een bezoek bij te houden."
+msgstr ""
+"Wordt door Google Analytics gebruikt om de status van een bezoek bij te "
+"houden."
 
 #: inc/consent.php:110
 msgid ""
 "Remembers the campaign link (UTM parameters) that brought you here, so that "
 "a request you send can be linked to it."
-msgstr "Onthoudt de campagnelink (UTM-parameters) waarmee u hier kwam, zodat een aanvraag die u verstuurt eraan gekoppeld kan worden."
+msgstr ""
+"Onthoudt de campagnelink (UTM-parameters) waarmee u hier kwam, zodat een "
+"aanvraag die u verstuurt eraan gekoppeld kan worden."
 
 #: inc/consent.php:110
 msgid "30 days"
@@ -380,7 +408,9 @@ msgstr "Laadt onze analyse-tags, pas nadat u statistiekcookies accepteert."
 msgid ""
 "Measures visits and clicks (page views, buttons, forms) without advertising "
 "features."
-msgstr "Meet bezoeken en klikken (paginaweergaven, knoppen, formulieren) zonder advertentiefuncties."
+msgstr ""
+"Meet bezoeken en klikken (paginaweergaven, knoppen, formulieren) zonder "
+"advertentiefuncties."
 
 #. translators: %d: number of images.
 #: inc/editor-checks.php:22 inc/editor-checks.php:24
@@ -488,7 +518,7 @@ msgstr "Importeren"
 msgid "Download the list with use counts"
 msgstr "Download de lijst met aantal keer gebruikt"
 
-#: inc/forms/handler.php:124
+#: inc/forms/handler.php:151
 msgid ""
 "I agree that ChargeNet sends me its newsletter and processes my email "
 "address for that, as described in the privacy policy."
@@ -496,7 +526,7 @@ msgstr ""
 "Ik ga ermee akkoord dat ChargeNet mij de nieuwsbrief stuurt en mijn e-"
 "mailadres daarvoor verwerkt, zoals beschreven in het privacybeleid."
 
-#: inc/forms/handler.php:125
+#: inc/forms/handler.php:152
 msgid ""
 "I agree that ChargeNet processes my details to handle this request, as "
 "described in the privacy policy."
@@ -504,54 +534,54 @@ msgstr ""
 "Ik ga ermee akkoord dat ChargeNet mijn gegevens verwerkt om dit verzoek af "
 "te handelen, zoals beschreven in het privacybeleid."
 
-#: inc/forms/handler.php:181
+#: inc/forms/handler.php:208
 msgid "Enter a valid email address."
 msgstr "Vul een geldig e-mailadres in."
 
-#: inc/forms/handler.php:186
+#: inc/forms/handler.php:213
 msgid "Enter your name (at least 2 characters)."
 msgstr "Vul uw naam in (minimaal 2 tekens)."
 
-#: inc/forms/handler.php:192
+#: inc/forms/handler.php:219
 msgid "Enter a message (at least 10 characters)."
 msgstr "Vul een bericht in (minimaal 10 tekens)."
 
-#: inc/forms/handler.php:198
+#: inc/forms/handler.php:225
 msgid "Enter your company name (at least 2 characters)."
 msgstr "Vul uw bedrijfsnaam in (minimaal 2 tekens)."
 
-#: inc/forms/handler.php:204
+#: inc/forms/handler.php:231
 msgid "Enter your code."
 msgstr "Vul uw code in."
 
-#: inc/forms/handler.php:208
+#: inc/forms/handler.php:235
 msgid "Please agree to the privacy statement to continue."
 msgstr "Ga akkoord met de privacyverklaring om door te gaan."
 
-#: inc/forms/handler.php:265
+#: inc/forms/handler.php:292
 msgid "Thank you."
 msgstr "Dank u wel."
 
-#: inc/forms/handler.php:270
+#: inc/forms/handler.php:297
 msgid "That was very fast. Please wait a moment and send the form again."
 msgstr "Dat ging erg snel. Wacht even en verstuur het formulier opnieuw."
 
-#: inc/forms/handler.php:273
+#: inc/forms/handler.php:300
 msgid ""
 "We could not verify that you are not a robot. Reload the page and try again."
 msgstr ""
 "We konden niet controleren of u geen robot bent. Laad de pagina opnieuw en "
 "probeer het nog eens."
 
-#: inc/forms/handler.php:276
+#: inc/forms/handler.php:303
 msgid "Too many requests. Please try again in an hour."
 msgstr "Te veel verzoeken. Probeer het over een uur opnieuw."
 
-#: inc/forms/handler.php:281 inc/forms/handler.php:292
+#: inc/forms/handler.php:308 inc/forms/handler.php:319
 msgid "Please check the fields marked below."
 msgstr "Controleer de hieronder gemarkeerde velden."
 
-#: inc/forms/handler.php:287
+#: inc/forms/handler.php:314
 msgid ""
 "Too many attempts with a code that is not valid. Try again later, or request "
 "the report without a code."
@@ -559,14 +589,14 @@ msgstr ""
 "Te veel pogingen met een ongeldige code. Probeer het later opnieuw, of vraag "
 "het rapport aan zonder code."
 
-#: inc/forms/handler.php:293
+#: inc/forms/handler.php:320
 msgid ""
 "This code is not valid. Check the code or request the report without one."
 msgstr ""
 "Deze code is niet geldig. Controleer de code of vraag het rapport aan zonder "
 "code."
 
-#: inc/forms/handler.php:300
+#: inc/forms/handler.php:327
 msgid ""
 "Thank you for your message. We have sent a copy to your email address and "
 "will get back to you soon."
@@ -574,14 +604,14 @@ msgstr ""
 "Bedankt voor uw bericht. Wij hebben een kopie naar uw e-mailadres gestuurd "
 "en nemen snel contact met u op."
 
-#: inc/forms/handler.php:302
+#: inc/forms/handler.php:329
 msgid ""
 "Thank you for subscribing. We have sent a confirmation to your email address."
 msgstr ""
 "Bedankt voor uw aanmelding. Wij hebben een bevestiging naar uw e-mailadres "
 "gestuurd."
 
-#: inc/forms/handler.php:304
+#: inc/forms/handler.php:331
 msgid ""
 "Thank you. We are sending the Trend Report 2027 to your email address. If "
 "you do not see it within a few minutes, check your spam folder."
@@ -589,7 +619,7 @@ msgstr ""
 "Bedankt. Wij sturen het Trendrapport 2027 naar uw e-mailadres. Ziet u het "
 "binnen enkele minuten niet, kijk dan in uw spammap."
 
-#: inc/forms/handler.php:306
+#: inc/forms/handler.php:333
 msgid ""
 "Something went wrong on our side. Please try again later or email "
 "info@chargenet.energy."
@@ -597,7 +627,7 @@ msgstr ""
 "Er ging iets mis aan onze kant. Probeer het later opnieuw of mail naar "
 "info@chargenet.energy."
 
-#: inc/forms/handler.php:379
+#: inc/forms/handler.php:406
 msgid "This page has expired. Reload the page and send the form again."
 msgstr ""
 "Deze pagina is verlopen. Laad de pagina opnieuw en verstuur het formulier "
@@ -622,7 +652,7 @@ msgstr "Taal"
 msgid "Email"
 msgstr "E-mail"
 
-#: inc/forms/privacy.php:59 inc/forms/render.php:213 inc/forms/storage.php:424
+#: inc/forms/privacy.php:59 inc/forms/render.php:211 inc/forms/storage.php:424
 msgid "Message"
 msgstr "Bericht"
 
@@ -648,55 +678,55 @@ msgstr ""
 "Het formulier kon niet worden verstuurd. Controleer uw verbinding en probeer "
 "het opnieuw."
 
-#: inc/forms/render.php:143
+#: inc/forms/render.php:141
 msgid "Read the privacy policy"
 msgstr "Lees het privacybeleid"
 
-#: inc/forms/render.php:160
+#: inc/forms/render.php:158
 msgid "Please turn on JavaScript to send this form."
 msgstr "Zet JavaScript aan om dit formulier te versturen."
 
-#: inc/forms/render.php:163
+#: inc/forms/render.php:161
 msgid "Fields marked * are required."
 msgstr "Velden met * zijn verplicht."
 
-#: inc/forms/render.php:202 inc/forms/render.php:322
+#: inc/forms/render.php:200 inc/forms/render.php:320
 msgid "Email address"
 msgstr "E-mailadres"
 
-#: inc/forms/render.php:216
+#: inc/forms/render.php:214
 msgid "At least 10 characters."
 msgstr "Minimaal 10 tekens."
 
-#: inc/forms/render.php:222
+#: inc/forms/render.php:220
 msgid "Send message"
 msgstr "Bericht versturen"
 
-#: inc/forms/render.php:244
+#: inc/forms/render.php:242
 msgid "Your unique code"
 msgstr "Uw unieke code"
 
-#: inc/forms/render.php:246
+#: inc/forms/render.php:244
 msgid "You find the code on the card you received from us."
 msgstr "U vindt de code op de kaart die u van ons heeft ontvangen."
 
-#: inc/forms/render.php:255 inc/forms/render.php:293
+#: inc/forms/render.php:253 inc/forms/render.php:291
 msgid "Business email address"
 msgstr "Zakelijk e-mailadres"
 
-#: inc/forms/render.php:264 inc/forms/render.php:302
+#: inc/forms/render.php:262 inc/forms/render.php:300
 msgid "Send me the report"
 msgstr "Stuur mij het rapport"
 
-#: inc/forms/render.php:268
+#: inc/forms/render.php:266
 msgid "I do not have a code"
 msgstr "Ik heb geen code"
 
-#: inc/forms/render.php:283
+#: inc/forms/render.php:281
 msgid "Company name"
 msgstr "Bedrijfsnaam"
 
-#: inc/forms/render.php:331
+#: inc/forms/render.php:329
 msgid "Subscribe"
 msgstr "Aanmelden"
 
@@ -1009,6 +1039,22 @@ msgstr ""
 #, php-format
 msgid "Read the original on %s"
 msgstr "Lees het origineel op %s"
+
+#: inc/security-2fa.php:70
+msgid "Two-factor authentication is required."
+msgstr "Tweestapsverificatie is verplicht."
+
+#: inc/security-2fa.php:71
+msgid ""
+"Scroll to \"Two-Factor Options\", set up an authenticator app and save "
+"backup codes. Until then you can only use this page."
+msgstr "Ga naar \"Two-Factor Options\", stel een authenticator-app in en bewaar de back-upcodes. Tot die tijd kunt u alleen deze pagina gebruiken."
+
+#: inc/security.php:86
+msgid ""
+"The login details are not correct, or login is temporarily blocked. Try "
+"again later."
+msgstr "De inloggegevens zijn niet juist, of inloggen is tijdelijk geblokkeerd. Probeer het later opnieuw."
 
 #: inc/seo.php:145
 msgid "Home"
@@ -1458,11 +1504,6 @@ msgstr "Sectiekop"
 #: build/blocks/trend-report-form/index.js:1
 msgid "Introduction (optional)"
 msgstr "Inleiding (optioneel)"
-
-#: blocks/feature-grid-item/index.js:20
-#: build/blocks/feature-grid-item/index.js:1
-msgid "Item"
-msgstr "Item"
 
 #: blocks/feature-grid-item/index.js:23 blocks/logo-item/index.js:34
 #: blocks/post-grid/index.js:94 blocks/slide-card/index.js:41

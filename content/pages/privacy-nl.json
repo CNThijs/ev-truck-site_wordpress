@@ -1,6 +1,6 @@
 {
   "intro": "Deze privacyverklaring bevat belangrijke informatie, omdat hierin staat hoe ChargeNet omgaat met persoonsgegevens van app-gebruikers (“gebruiker” of “u”). Lees deze privacyverklaring zorgvuldig door voordat u onze diensten gebruikt. Als u vragen heeft, neem dan gerust contact met ons op.",
-  "updated": "Laatst bijgewerkt: 6 oktober 2026",
+  "updated": "Laatst bijgewerkt: 8 oktober 2026",
   "sections": [
     {
       "title": "Over ons",
@@ -160,6 +160,53 @@
                     "Wij verwerken uw persoonsgegevens voor de volgende doeleinden: (i) het opvolgen van verzoeken van overheidsinstanties, (ii) het voeren van strafrechtelijke onderzoeken, vervolgingen, processen en de tenuitvoerlegging van vonnissen, (iii) het beschermen van de rechten van derden, (iv) het verrichten van statistisch of wetenschappelijk onderzoek, of (v) andere omstandigheden zoals bepaald in de relevante wet- en regelgeving."
                   ]
                 }
+              ],
+              [
+                "Bezoek aan onze website (statistieken, alleen nadat u statistiekcookies accepteert)",
+                {
+                  "ul": [
+                    "Gepseudonimiseerde identificatiegegevens in cookies (Google Analytics)",
+                    "Bekeken pagina’s, klikken op knoppen en links en formuliergebeurtenissen (nooit de inhoud die u invult)",
+                    "Geschatte locatie, apparaat- en browserinformatie die Google afleidt",
+                    "Campagne-informatie uit de link die u volgde (bijvoorbeeld utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verwerken deze gegevens op basis van uw toestemming, die u geeft of weigert in onze cookiebanner. U kunt uw toestemming op elk moment intrekken met “Cookie-instellingen” onderaan elke pagina.",
+                    "Wij verwerken deze gegevens om te begrijpen hoe onze website wordt gebruikt en welke campagnes bezoekers bereiken, zodat wij de website en onze communicatie kunnen verbeteren. Wij gebruiken ze niet voor advertenties."
+                  ]
+                }
+              ],
+              [
+                "Uw cookiekeuze op onze website (toestemmingsregistratie)",
+                {
+                  "ul": [
+                    "Een willekeurig ID dat niet aan uw naam of e-mailadres is gekoppeld",
+                    "Het tijdstip van uw keuze",
+                    "Uw keuzes (statistieken, marketing)",
+                    "De taal en de versie van de bannertekst die u zag"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij bewaren deze registratie om te kunnen aantonen dat en wanneer u toestemming gaf of weigerde, wat de AVG van ons vraagt.",
+                    "Zij bevat geen IP-adres en geen gegevens over uw browser of apparaat."
+                  ]
+                }
+              ],
+              [
+                "Bezoek aan onze website (hosting)",
+                {
+                  "ul": [
+                    "IP-adres, datum en tijd, opgevraagde pagina en browserinformatie, in de serverlogs van onze hostingprovider"
+                  ]
+                },
+                {
+                  "p": [
+                    "Wij verwerken deze gegevens op basis van onze gerechtvaardigde belangen, namelijk het veilig en betrouwbaar laten draaien van de website."
+                  ]
+                }
               ]
             ]
           }
@@ -179,6 +226,9 @@
           "p": "Hieronder vindt u een overzicht van de cookies die wij gebruiken:"
         },
         {
+          "p": "Dezelfde lijst ziet u, en uw keuze wijzigt u op elk moment, in ons {cookie_policy}."
+        },
+        {
           "table": {
             "headers": [
               "",
@@ -189,10 +239,55 @@
               "Toestemming vereist?"
             ],
             "rows": [
-              ["Functionele cookies", "", "", "", "", ""],
-              ["Analytische cookies", "", "", "", "", ""],
-              ["Affiliate-cookies", "", "", "", "", ""],
-              ["Trackingcookies", "", "", "", "", ""]
+              [
+                "Functionele cookies",
+                "wpconsent_preferences",
+                "Onthoudt uw cookiekeuze.",
+                "Nee, door ons geplaatst",
+                "180 dagen",
+                "Nee"
+              ],
+              [
+                "Functionele cookies",
+                "cn_consent_id (opslag in de browser)",
+                "Koppelt uw keuze aan de registratie die laat zien dat u toestemming gaf of weigerde.",
+                "Nee, door ons geplaatst",
+                "Tot u uw browsergegevens wist",
+                "Nee"
+              ],
+              [
+                "Functionele cookies",
+                "pll_language",
+                "Onthoudt de taal van de website die u koos.",
+                "Nee, door ons geplaatst",
+                "1 jaar",
+                "Nee"
+              ],
+              [
+                "Analytische cookies",
+                "_ga, _ga_*",
+                "Onderscheiden bezoekers zonder hen te identificeren en houden de status van een bezoek bij (Google Analytics).",
+                "Ja, Google",
+                "2 jaar",
+                "Ja"
+              ],
+              [
+                "Analytische cookies",
+                "cn_campaign",
+                "Onthoudt de campagnelink (UTM-parameters) waarmee u hier kwam, zodat een aanvraag die u verstuurt eraan gekoppeld kan worden.",
+                "Nee, door ons geplaatst",
+                "30 dagen",
+                "Ja"
+              ],
+              ["Affiliate-cookies", "Geen", "Wij gebruiken deze niet.", "–", "–", "–"],
+              [
+                "Trackingcookies",
+                "Geen",
+                "Wij gebruiken deze niet (geen advertentie- of marketingcookies).",
+                "–",
+                "–",
+                "–"
+              ]
             ]
           }
         },
@@ -259,7 +354,25 @@
                 },
                 "EU"
               ],
-              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"]
+              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"],
+              [
+                "Bezoek aan onze website (statistieken, alleen met uw toestemming)",
+                {
+                  "ul": [
+                    "Google (Google Tag Manager en Google Analytics), dat meet hoe de website wordt gebruikt."
+                  ]
+                },
+                "EU en VS"
+              ],
+              [
+                "Bezoek aan onze website (hosting)",
+                {
+                  "ul": [
+                    "Onze hostingprovider STRATO (Duitsland), die de website host en de serverlogs bijhoudt."
+                  ]
+                },
+                "EU"
+              ]
             ]
           }
         }
@@ -269,7 +382,7 @@
       "title": "Doorgifte naar landen buiten de EER",
       "nodes": [
         {
-          "p": "Wij schakelen voor de verwerking van uw persoonsgegevens geen partijen in die buiten de Europese Economische Ruimte (“EER”) zijn gevestigd. Mocht dit in de toekomst wel het geval zijn, dan informeren wij u daar naar behoren over en is de hieronder beschreven procedure van toepassing."
+          "p": "Op één uitzondering na schakelen wij voor de verwerking van uw persoonsgegevens geen partijen in die buiten de Europese Economische Ruimte (“EER”) zijn gevestigd. De uitzondering is Google (Google Tag Manager en Google Analytics), dat wij op onze website alleen gebruiken als u statistiekcookies accepteert. Google kan deze gegevens verwerken in de Verenigde Staten. Mochten in de toekomst andere partijen buiten de EER worden ingeschakeld, dan informeren wij u daar naar behoren over en is de hieronder beschreven procedure van toepassing."
         },
         {
           "p": "Doorgifte van uw persoonsgegevens naar een land buiten de EER kan in de eerste plaats worden gelegitimeerd op basis van een zogenoemd adequaatheidsbesluit. Dit is een besluit waarin de Europese Commissie vaststelt dat bijvoorbeeld een bepaald land een niveau van gegevensbescherming biedt dat vergelijkbaar is met de AVG. Zie deze link voor de actuele lijst van adequaatheidsbesluiten. Als en voor zover wij persoonsgegevens delen met partijen in landen buiten de EER waarvoor geen adequaatheidsbesluit geldt, spreken wij met deze partijen de door de Europese Commissie vastgestelde gegevensbeschermingsbepalingen af, de zogenoemde standaardcontractbepalingen (“SCC’s”). Deze SCC’s waarborgen passende beschermingsmaatregelen voor de doorgifte. U kunt een kopie van de overeengekomen standaardcontractbepalingen bij ons opvragen."
@@ -305,6 +418,11 @@
                 "365 dagen"
               ],
               ["Aanmelding voor de nieuwsbrief op onze website", "Tot u zich afmeldt"],
+              [
+                "Bezoek aan onze website (statistieken)",
+                "Zoals ingesteld in onze Google Analytics-instellingen, met een maximum van 14 maanden"
+              ],
+              ["Keuze in de cookiebanner (toestemmingsregistratie)", "36 maanden"],
               ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking."]
             ]
           }

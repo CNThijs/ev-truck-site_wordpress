@@ -86,6 +86,10 @@ WPConsent (free) banner, texts in `inc/consent.php`, settings in `bin/setup-wpco
 
 Lighthouse mobile baseline, measured changes, budgets and Search Console/CrUX guide: `docs/performance.md`. `npm run perf` (per-template numbers, `--check` against `bin/perf-budget.json`, run in CI), `npm run check:budget`. Production page cache: Cache Enabler (`bin/setup-cache.php`), server rules in `docs/htaccess.md`; neither is active in DDEV. Pages must stay cacheable: nothing visitor-specific in server-rendered HTML (forms get campaign fields and a fresh token from JavaScript).
 
+## Security, privacy and accessibility
+
+Hardening, headers and CSP: `docs/security.md` (`inc/security*.php`, checks `npm run check:security`, `bin/check-hardening.php`). Plugin policy and update owner: `docs/plugins.md`. Backups, restore test and update/rollback: `docs/backups.md`. Data map, retention, requests and legal flags: `docs/privacy.md`. WCAG 2.2 AA target, axe in CI (`npm run check:a11y`) and the manual test script: `docs/accessibility.md`. Never change the Security page claims or the privacy policy wording without the owner; flag instead.
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.

@@ -52,7 +52,7 @@ return array(
 					array( '80', '%', 'Fuel costs are rising and becoming more volatile' ),
 					array( '80', '%', 'Fossil fuel trucks are cheapest to buy, but have higher maintenance and running costs during their life-cycle.' ),
 				),
-				'd_h'         => 'What ChargeNet Does for You',
+				'd_h'         => 'What ChargeNet Means for You',
 				'd_t'         => 'We link fleets of EV trucks to nearby locations with private charging infrastructure on their destination.',
 				'does'        => array(
 					array( 'euro', 'Reduce charging costs', 'Reduce up to 60% of your charging costs compared to roaming or public charging.' ),

@@ -49,3 +49,5 @@ jobs:
           if-no-files-found: ignore
       - run: npm run check:hreflang
       - run: npm run check:redirects
+      - run: npm run check:security
+      - run: npm run check:a11y

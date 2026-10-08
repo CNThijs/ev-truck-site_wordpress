@@ -17,6 +17,7 @@
     "wpackagist-plugin/cache-enabler": "^1.8",
     "wpackagist-plugin/polylang": "^3.8",
     "wpackagist-plugin/seo-by-rank-math": "^1.0",
+    "wpackagist-plugin/two-factor": "^0.17.0",
     "wpackagist-plugin/wpconsent-cookies-banner-privacy-suite": "^1.1"
   },
   "require-dev": {

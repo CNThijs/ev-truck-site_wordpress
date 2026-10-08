@@ -54,6 +54,8 @@ return array(
 			),
 		)[ $lang ];
 
+		$cookie_link = '<a href="' . esc_url( $link( 'cookie-policy' ) ) . '">' . ( 'nl' === $lang ? 'cookiebeleid' : 'Cookie Policy' ) . '</a>';
+
 		$out = cn_block(
 			'chargenet/hero',
 			array(
@@ -69,7 +71,7 @@ return array(
 			$body = '';
 			foreach ( $section['nodes'] as $node ) {
 				if ( isset( $node['p'] ) ) {
-					$body .= cn_p( cn_privacy_inline( $node['p'] ) );
+					$body .= cn_p( str_replace( '{cookie_policy}', $cookie_link, cn_privacy_inline( $node['p'] ) ) );
 				} elseif ( isset( $node['table'] ) ) {
 					$body .= cn_table(
 						array_map( 'cn_privacy_inline', $node['table']['headers'] ),

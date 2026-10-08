@@ -32,6 +32,7 @@ Or upload the extracted `chargenet/` folder to `wp-content/themes/` over SFTP.
 | Rank Math SEO (free) | Epic 9  | SEO: titles, descriptions, Open Graph, Twitter cards, article structured data, sitemap. No Rank Math account needed: `bin/setup-rankmath.php` skips the registration step and switches off the other modules. |
 | WPConsent (free)     | Epic 11 | Cookie banner and cookie list. After activating run `wp eval-file bin/setup-wpconsent.php` (after the content is seeded). Details: `docs/tracking.md`.                                                        |
 | Cache Enabler (free) | Epic 12 | Page cache, **production only** (leave it inactive in DDEV). Steps below.                                                                                                                                     |
+| Two Factor (free)    | Epic 13 | Authenticator-app login; the theme requires it for administrators and editors. Activate on production only (DDEV keeps it off). Each user sets it up under Users → Profile. `docs/security.md`.               |
 
 Install from Plugins → Add New (search the name) and activate. After activating Rank Math run `wp eval-file bin/setup-rankmath.php` (settings, no Rank Math account, the extra modules off).
 

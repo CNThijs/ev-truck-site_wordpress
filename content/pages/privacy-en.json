@@ -1,6 +1,6 @@
 {
   "intro": "This privacy statement contains important information as it sets out how ChargeNet handles personal data of app users (“user” or “you”). Please read this privacy statement carefully before you use our services. If you have any questions, please feel free to contact us.",
-  "updated": "Last Updated: October 6th, 2026",
+  "updated": "Last Updated: October 8th, 2026",
   "sections": [
     {
       "title": "About us",
@@ -160,6 +160,53 @@
                     "We process your personal data for purposes of (i) following requests of public authorities, (ii) conducting criminal investigations, prosecutions, trails and the execution of judgments, (iii) protecting rights of third parties, (iv) conducting statistical or academic researches, or (v) other circumstances as stipulated by relevant laws and regulations."
                   ]
                 }
+              ],
+              [
+                "Visiting our website (statistics, only after you accept statistics cookies)",
+                {
+                  "ul": [
+                    "Pseudonymous identifiers in cookies (Google Analytics)",
+                    "Pages viewed, clicks on buttons and links, and form events (never the content you enter)",
+                    "Approximate location, device and browser information derived by Google",
+                    "Campaign information from the link you followed (for example utm_source)"
+                  ]
+                },
+                {
+                  "p": [
+                    "We process these data on the basis of your consent, which you give or refuse in our cookie banner. You can withdraw your consent at any time with “Cookie settings” in the footer of every page.",
+                    "We process these data to understand how our website is used and which campaigns reach visitors, so that we can improve the website and our communication. We do not use them for advertising."
+                  ]
+                }
+              ],
+              [
+                "Your cookie choice on our website (consent record)",
+                {
+                  "ul": [
+                    "A random identifier that is not linked to your name or email address",
+                    "The time of your choice",
+                    "Your choices (statistics, marketing)",
+                    "The language and the version of the banner text you saw"
+                  ]
+                },
+                {
+                  "p": [
+                    "We keep this record to be able to demonstrate that, and when, you gave or refused consent, which the GDPR requires of us.",
+                    "It does not contain your IP address or details about your browser or device."
+                  ]
+                }
+              ],
+              [
+                "Visiting our website (hosting)",
+                {
+                  "ul": [
+                    "IP address, date and time, requested page and browser information, in the server logs of our hosting provider"
+                  ]
+                },
+                {
+                  "p": [
+                    "We process these data on the basis of our legitimate interests, namely running the website securely and reliably."
+                  ]
+                }
               ]
             ]
           }
@@ -179,6 +226,9 @@
           "p": "Please see below an overview of the cookies that we use:"
         },
         {
+          "p": "You can see the same list, and change your choice at any time, in our {cookie_policy}."
+        },
+        {
           "table": {
             "headers": [
               "",
@@ -189,10 +239,55 @@
               "Consent required?"
             ],
             "rows": [
-              ["Functional cookies", "", "", "", "", ""],
-              ["Analytical cookies", "", "", "", "", ""],
-              ["Affiliate cookies", "", "", "", "", ""],
-              ["Tracking cookies", "", "", "", "", ""]
+              [
+                "Functional cookies",
+                "wpconsent_preferences",
+                "Remembers your cookie choice.",
+                "No, placed by us",
+                "180 days",
+                "No"
+              ],
+              [
+                "Functional cookies",
+                "cn_consent_id (browser storage)",
+                "Links your choice to the record that shows you gave or refused consent.",
+                "No, placed by us",
+                "Until you clear your browser data",
+                "No"
+              ],
+              [
+                "Functional cookies",
+                "pll_language",
+                "Remembers the language of the website that you chose.",
+                "No, placed by us",
+                "1 year",
+                "No"
+              ],
+              [
+                "Analytical cookies",
+                "_ga, _ga_*",
+                "Tell visitors apart without identifying them and keep the state of a visit (Google Analytics).",
+                "Yes, Google",
+                "2 years",
+                "Yes"
+              ],
+              [
+                "Analytical cookies",
+                "cn_campaign",
+                "Remembers the campaign link (UTM parameters) that brought you here, so that a request you send can be linked to it.",
+                "No, placed by us",
+                "30 days",
+                "Yes"
+              ],
+              ["Affiliate cookies", "None", "We do not use these.", "–", "–", "–"],
+              [
+                "Tracking cookies",
+                "None",
+                "We do not use these (no advertising or marketing cookies).",
+                "–",
+                "–",
+                "–"
+              ]
             ]
           }
         },
@@ -259,7 +354,25 @@
                 },
                 "EU"
               ],
-              ["Other general purposes", "Depends on the purpose for processing.", "EU"]
+              ["Other general purposes", "Depends on the purpose for processing.", "EU"],
+              [
+                "Visiting our website (statistics, only with your consent)",
+                {
+                  "ul": [
+                    "Google (Google Tag Manager and Google Analytics), which measures how the website is used."
+                  ]
+                },
+                "EU and USA"
+              ],
+              [
+                "Visiting our website (hosting)",
+                {
+                  "ul": [
+                    "Our hosting provider STRATO (Germany), which hosts the website and keeps its server logs."
+                  ]
+                },
+                "EU"
+              ]
             ]
           }
         }
@@ -269,7 +382,7 @@
       "title": "Transfer to countries outside the EEA",
       "nodes": [
         {
-          "p": "We do not involve parties that are located outside the European Economic Area (“EEA”) for the processing of your personal data. If this will be the case in the future, we will duly inform you of that matter and the procedure as explained below will apply."
+          "p": "With one exception, we do not involve parties that are located outside the European Economic Area (“EEA”) for the processing of your personal data. The exception is Google (Google Tag Manager and Google Analytics), which we use on our website only if you accept statistics cookies. Google may process these data in the United States. If other parties outside the EEA are involved in the future, we will duly inform you of that matter and the procedure as explained below will apply."
         },
         {
           "p": "Transfers of your personal data to a country outside the EEA may in the first place be legitimized on the basis of a so-called adequacy decision. This is a decision in which the European Commission states that e.g. a certain country offers a level of data protection similar to the GDPR. See this link for the current list of adequacy decisions. If and insofar as we transfer personal data with parties in countries outside the EEA to which no adequacy decision applies, we will agree with these parties to data protection provisions set by the European Commission, so called standard contractual clauses (‘SCC’s’). These SCC’s guarantee appropriate data protection safeguards for transfers. A copy of the agreed standard contractual clauses can be requested by you."
@@ -302,6 +415,11 @@
               ["Customer service or otherwise corresponding with you", "365 days"],
               ["Using our website forms (contact form and trend report request)", "365 days"],
               ["Newsletter sign-up on our website", "Until you unsubscribe"],
+              [
+                "Visiting our website (statistics)",
+                "As set in our Google Analytics settings, with a maximum of 14 months"
+              ],
+              ["Cookie banner choice (consent record)", "36 months"],
               ["Other general purposes", "Depends on the purpose for processing."]
             ]
           }
