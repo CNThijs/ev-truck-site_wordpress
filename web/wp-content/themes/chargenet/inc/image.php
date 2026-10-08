@@ -27,6 +27,18 @@ function chargenet_image_output_formats( array $formats ): array {
 add_filter( 'image_editor_output_format', 'chargenet_image_output_formats' );
 
 /**
+ * Compression quality of generated images. WordPress' default (82) gives files about twice the size of quality 70
+ * with no visible difference on photos (measured on the hero background: 56 KB to 26 KB). Applies to newly generated sizes.
+ *
+ * @param int    $quality Default quality.
+ * @param string $mime    Mime type of the output.
+ */
+function chargenet_image_quality( int $quality, string $mime ): int {
+	return 'image/avif' === $mime ? 60 : 70;
+}
+add_filter( 'wp_editor_set_quality', 'chargenet_image_quality', 10, 2 );
+
+/**
  * Whether the section being rendered is the first one on the page (its images are in the first viewport).
  */
 function chargenet_in_first_section(): bool {
@@ -70,3 +82,30 @@ function chargenet_image( int $attachment_id, array $args = array() ): string {
 
 	return wp_get_attachment_image( $attachment_id, (string) ( $args['size'] ?? 'large' ), false, $attr );
 }
+
+/**
+ * Preload the hero background image so it downloads in parallel with the CSS instead of after it. Must name the same
+ * source, srcset and sizes as the <img> that blocks/hero/render.php prints (size full, sizes 100vw).
+ */
+function chargenet_preload_hero_image(): void {
+	if ( ! is_singular() ) {
+		return;
+	}
+	$blocks = parse_blocks( (string) get_post_field( 'post_content', get_queried_object_id() ) );
+	foreach ( $blocks as $block ) {
+		if ( empty( $block['blockName'] ) ) {
+			continue;
+		}
+		$id  = 'chargenet/hero' === $block['blockName'] && 'title-band' !== ( $block['attrs']['variant'] ?? '' ) ? (int) ( $block['attrs']['imageId'] ?? 0 ) : 0;
+		$src = $id ? wp_get_attachment_image_src( $id, 'full' ) : false;
+		if ( $src ) {
+			printf(
+				'<link rel="preload" as="image" href="%s" imagesrcset="%s" imagesizes="100vw" fetchpriority="high">' . "\n",
+				esc_url( $src[0] ),
+				esc_attr( (string) wp_get_attachment_image_srcset( $id, 'full' ) )
+			);
+		}
+		return; // Only the first real block can be in the first viewport.
+	}
+}
+add_action( 'wp_head', 'chargenet_preload_hero_image', 3 );

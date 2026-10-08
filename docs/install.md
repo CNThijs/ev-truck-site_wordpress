@@ -26,13 +26,16 @@ Or upload the extracted `chargenet/` folder to `wp-content/themes/` over SFTP.
 
 ## Plugins to install (free)
 
-| Plugin                       | When       | Notes                                                                                                                                                                                                         |
-| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Polylang                     | now        | Languages and translations.                                                                                                                                                                                   |
-| Rank Math SEO (free)         | Epic 9     | SEO: titles, descriptions, Open Graph, Twitter cards, article structured data, sitemap. No Rank Math account needed: `bin/setup-rankmath.php` skips the registration step and switches off the other modules. |
-| A free cookie-consent plugin | later epic | Not chosen yet.                                                                                                                                                                                               |
+| Plugin               | When    | Notes                                                                                                                                                                                                         |
+| -------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Polylang             | now     | Languages and translations.                                                                                                                                                                                   |
+| Rank Math SEO (free) | Epic 9  | SEO: titles, descriptions, Open Graph, Twitter cards, article structured data, sitemap. No Rank Math account needed: `bin/setup-rankmath.php` skips the registration step and switches off the other modules. |
+| WPConsent (free)     | Epic 11 | Cookie banner and cookie list. After activating run `wp eval-file bin/setup-wpconsent.php` (after the content is seeded). Details: `docs/tracking.md`.                                                        |
+| Cache Enabler (free) | Epic 12 | Page cache, **production only** (leave it inactive in DDEV). Steps below.                                                                                                                                     |
 
 Install from Plugins → Add New (search the name) and activate. After activating Rank Math run `wp eval-file bin/setup-rankmath.php` (settings, no Rank Math account, the extra modules off).
+
+**Page cache (production, after the site works):** 1) add the rules from `docs/htaccess.md` to `.htaccess` and run its checks; 2) install and activate Cache Enabler; 3) add `define( 'WP_CACHE', true );` to `wp-config.php` above the "stop editing" line; 4) run `wp eval-file bin/setup-cache.php` (10-hour lifetime, cache cleared on every save). Also add the Tag Manager ID constant described in `docs/tracking.md`. Check the server first with `bin/check-host.php` (`docs/performance.md`).
 
 ## Settings to apply
 

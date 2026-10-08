@@ -48,15 +48,16 @@ function chargenet_seeded_page_url( string $key ): string {
  */
 function chargenet_form_open( string $form, string $mode, array $state ): void {
 	$id     = 'cn-' . $form . ( '' !== $mode ? '-' . $mode : '' );
-	$return = remove_query_arg( 'cn_k', home_url( add_query_arg( array() ) ) );
+	$return = home_url( wp_parse_url( add_query_arg( array() ), PHP_URL_PATH ) ); // No query string: the page may come from the cache.
 	printf(
-		'<form id="%1$s" class="cn-form" method="post" action="%2$s" data-cn-form="%3$s" data-cn-mode="%4$s" data-cn-lang="%5$s" data-cn-network="%6$s" novalidate>',
+		'<form id="%1$s" class="cn-form" method="post" action="%2$s" data-cn-form="%3$s" data-cn-mode="%4$s" data-cn-lang="%5$s" data-cn-network="%6$s" data-cn-token="%7$s" novalidate>',
 		esc_attr( $id ),
 		esc_url( admin_url( 'admin-post.php', 'relative' ) ), // Relative: always the origin of the page itself.
 		esc_attr( $form ),
 		esc_attr( $mode ),
 		esc_attr( chargenet_current_lang() ),
-		esc_attr__( 'The form could not be sent. Check your connection and try again.', 'chargenet' )
+		esc_attr__( 'The form could not be sent. Check your connection and try again.', 'chargenet' ),
+		esc_url( rest_url( 'chargenet/v1/form-token' ) )
 	);
 	echo '<input type="hidden" name="action" value="chargenet_form">';
 	wp_nonce_field( 'chargenet_form', '_wpnonce', false );
@@ -65,13 +66,10 @@ function chargenet_form_open( string $form, string $mode, array $state ): void {
 	printf( '<input type="hidden" name="cn_lang" value="%s">', esc_attr( chargenet_current_lang() ) );
 	printf( '<input type="hidden" name="cn_ts" value="%s">', esc_attr( chargenet_form_token() ) );
 	printf( '<input type="hidden" name="cn_return" value="%s">', esc_url( $return ) );
-	$remembered = chargenet_campaign_cookie(); // Set only after the visitor accepted statistics.
+	// Campaign parameters are filled in by JavaScript (URL, else the cn_campaign cookie): the HTML must be the same for
+	// every visitor so that the page cache can serve it.
 	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term' ) as $param ) {
-		if ( isset( $_GET[ $param ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-			printf( '<input type="hidden" name="cn_%s" value="%s">', esc_attr( $param ), esc_attr( chargenet_form_clean( wp_unslash( $_GET[ $param ] ), 100 ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-		} elseif ( isset( $remembered[ $param ] ) ) {
-			printf( '<input type="hidden" name="cn_%s" value="%s">', esc_attr( $param ), esc_attr( chargenet_form_clean( $remembered[ $param ], 100 ) ) );
-		}
+		printf( '<input type="hidden" name="cn_%s" value="">', esc_attr( $param ) );
 	}
 	// Honeypot: invisible to people (and to assistive technology), filled in by bots.
 	echo '<div class="cn-form__trap" aria-hidden="true"><label>Website <input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label></div>';

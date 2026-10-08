@@ -74,6 +74,33 @@ function chargenet_form_token(): string {
 }
 
 /**
+ * Fresh nonce and signed time for a form on a cached page (the HTML of the page may be hours old).
+ */
+add_action(
+	'rest_api_init',
+	static function (): void {
+		register_rest_route(
+			'chargenet/v1',
+			'/form-token',
+			array(
+				'methods'             => 'GET',
+				'permission_callback' => '__return_true', // Public by design: the values are the same any visitor gets in the page.
+				'callback'            => static function (): WP_REST_Response {
+					$response = new WP_REST_Response(
+						array(
+							'nonce' => wp_create_nonce( 'chargenet_form' ),
+							'ts'    => chargenet_form_token(),
+						)
+					);
+					$response->header( 'Cache-Control', 'no-store' );
+					return $response;
+				},
+			)
+		);
+	}
+);
+
+/**
  * Seconds since the token was made, or -1 when it is not valid.
  *
  * @param string $token Token from the form.

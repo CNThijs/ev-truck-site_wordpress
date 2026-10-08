@@ -82,6 +82,10 @@ Contact form and trend report form: handler, private submissions post type, repo
 
 WPConsent (free) banner, texts in `inc/consent.php`, settings in `bin/setup-wpconsent.php`. Tag Manager loads only after statistics consent (`CHARGENET_GTM_ID` in wp-config.php), campaign cookie and a 36-month consent log in `inc/tracking.php`. Details and checks: `docs/tracking.md`.
 
+## Performance
+
+Lighthouse mobile baseline, measured changes, budgets and Search Console/CrUX guide: `docs/performance.md`. `npm run perf` (per-template numbers, `--check` against `bin/perf-budget.json`, run in CI), `npm run check:budget`. Production page cache: Cache Enabler (`bin/setup-cache.php`), server rules in `docs/htaccess.md`; neither is active in DDEV. Pages must stay cacheable: nothing visitor-specific in server-rendered HTML (forms get campaign fields and a fresh token from JavaScript).
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.

@@ -40,5 +40,12 @@ jobs:
       # The site redirects to https with DDEV's local certificate: let Node trust its CA.
       - run: echo "NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem" >> "$GITHUB_ENV"
       - run: npm run check:seo -- http://chargenet.ddev.site --production
+      - run: npm run perf -- --check --out perf-result.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: perf-result
+          path: perf-result.json
+          if-no-files-found: ignore
       - run: npm run check:hreflang
       - run: npm run check:redirects

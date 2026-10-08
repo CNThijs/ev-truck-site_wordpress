@@ -109,6 +109,30 @@ function init(form) {
 	});
 }
 
+// The page may come from the page cache: take campaign parameters from the URL (else the cookie that exists only after
+// statistics consent) and a fresh nonce and time token from the server.
+async function refresh(form) {
+	const saved = document.cookie.match(/(?:^|; )cn_campaign=([^;]*)/);
+	const sources = [
+		new URLSearchParams(location.search),
+		new URLSearchParams(saved ? decodeURIComponent(saved[1]) : ''),
+	];
+	for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term']) {
+		const value = sources.map((params) => params.get(key)).find(Boolean);
+		if (value && form.elements[`cn_${key}`]) form.elements[`cn_${key}`].value = value.slice(0, 100);
+	}
+	try {
+		const token = await (await fetch(form.dataset.cnToken, { credentials: 'omit' })).json();
+		form.elements._wpnonce.value = token.nonce;
+		form.elements.cn_ts.value = token.ts;
+	} catch {
+		// Keep the values from the page; they are valid for at least 12 hours.
+	}
+}
+
 export function enhanceForms(root) {
-	root.querySelectorAll('form[data-cn-form]').forEach(init);
+	root.querySelectorAll('form[data-cn-form]').forEach((form) => {
+		init(form);
+		refresh(form);
+	});
 }

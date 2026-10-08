@@ -14,7 +14,7 @@ Without the constant nothing is added. The loader is printed as `type="text/plai
 
 ## Campaign cookie
 
-After statistics are accepted, the UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`) of a landing URL are stored in the cookie `cn_campaign` for 30 days. Forms add them to the hidden fields when the current URL has none (`chargenet_campaign_cookie()`), so a request sent after browsing is linked to the campaign. `/rapport2027` and the DM shortlinks already redirect with UTM parameters (`inc/redirects.php`).
+After statistics are accepted, the UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`) of a landing URL are stored in the cookie `cn_campaign` for 30 days. The form script (`blocks/_shared/form.js`) fills the hidden `cn_utm_*` fields from the URL, else from this cookie, so a request sent after browsing is linked to the campaign. The server renders the fields empty, because the page may come from the page cache. `/rapport2027` and the DM shortlinks already redirect with UTM parameters (`inc/redirects.php`).
 
 ## Consent log
 

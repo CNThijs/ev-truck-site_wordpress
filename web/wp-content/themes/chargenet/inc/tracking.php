@@ -47,7 +47,7 @@ function chargenet_consent_version(): string {
 
 /**
  * Inline script on every page: sends each saved choice to the consent log, and keeps the campaign cookie while
- * statistics are accepted (UTM parameters of the landing URL, 30 days; forms read it, inc/forms/render.php).
+ * statistics are accepted (UTM parameters of the landing URL, 30 days; the form script fills the hidden fields from it, blocks/_shared/form.js).
  */
 function chargenet_tracking_script(): void {
 	$config = array(
@@ -67,25 +67,6 @@ function chargenet_tracking_script(): void {
 	wp_print_inline_script_tag( $js );
 }
 add_action( 'wp_head', 'chargenet_tracking_script', 2 );
-
-/**
- * Campaign parameters remembered by the cookie (empty when the visitor did not accept statistics).
- *
- * @return array<string,string>
- */
-function chargenet_campaign_cookie(): array {
-	$out = array();
-	if ( empty( $_COOKIE['cn_campaign'] ) ) {
-		return $out;
-	}
-	parse_str( sanitize_text_field( wp_unslash( $_COOKIE['cn_campaign'] ) ), $parsed );
-	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term' ) as $key ) {
-		if ( isset( $parsed[ $key ] ) && is_string( $parsed[ $key ] ) ) {
-			$out[ $key ] = mb_substr( $parsed[ $key ], 0, 100 );
-		}
-	}
-	return $out;
-}
 
 /**
  * Name of the consent log table.

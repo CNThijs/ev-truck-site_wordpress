@@ -71,3 +71,10 @@ Single posts: `template-parts/content-single.php` (title band with category and 
 ## Contact page, report PDF and downloads
 
 The Contact page (`content/pages/contact.php`, slugs `contact` / `contact-opnemen`) holds the contact form; the header's "Contact Us" button goes to it. The trend report page holds the trend report form (see `docs/integrations.md`). Files that are too big for git go in `content/downloads/` (ignored by git); the seeder copies them to `wp-content/uploads/chargenet-downloads/`, and the theme serves the report at `/downloads/ChargeNet-TR2027.pdf`. On a fresh server put the PDF there by hand (or copy the folder and run the seeder).
+
+## Changing the hero background image
+
+- **In the editor (live site):** open the page, select the Hero block, and in the block's sidebar use **Background image → Replace**. Pick or upload the new image and update the page. The image is resized and converted automatically (WebP, or AVIF when the server supports it), with all `srcset` sizes up to 2048 px, and it is preloaded in the page head. No code change is needed.
+- **In the repository (seeded content):** replace the file in `content/media/` (for example `bg-truck.png`) and run `bin/seed-content.php`. The seeder skips pages edited in the editor unless you pass `force`.
+- **Which image:** landscape, about 2400 × 1350 px (at least 1600 px wide), JPEG or PNG, preferably under 1.5 MB before upload. Keep the subject away from the left side, where the text sits, and leave room at the top and bottom: the photo is cropped to fill the section (and drifts slightly with the parallax animation). A dark overlay covers it; choose "Strong" for busy photos. The background is decorative, so it needs no alt text.
+- After a change, `npm run perf` should keep the home page LCP under 2500 ms; the original upload stays in the media library, so delete unused originals to save disk space.

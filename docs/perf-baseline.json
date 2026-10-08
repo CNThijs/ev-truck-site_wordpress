@@ -1,0 +1,107 @@
+{
+  "home": {
+    "path": "/en/",
+    "score": 95,
+    "fcp": 1932.1139,
+    "lcp": 2760.5933499999996,
+    "tbt": 0,
+    "cls": 0,
+    "si": 1932.1139,
+    "ttfb": 67,
+    "weightKb": 201.5,
+    "requests": 17,
+    "jsKb": 58.4,
+    "cssKb": 10.8,
+    "imageKb": 78,
+    "fontKb": 28.3,
+    "lcpElement": "<img width=\\\"800\\\" height=\\\"800\\\" src=\\\"http://chargenet.ddev.site/wp-content/uploads/2026/10/bg-truck-768x768.webp\\\" class=\\\"hero__bg-img\\\" alt=\\\"\\\" loading=\\\"eager\\\" decoding=\\\"sync\\\" fetchpriority=\\\"high\\\" sizes=\\\"100vw\\\" srcset=\\\"http://chargenet.ddev.site/wp-content/uploads/2026/10/bg-truck.webp 800w, …\\\">",
+    "renderBlocking": [
+      "http://chargenet.ddev.site/wp-content/themes/chargenet/assets/dist/assets/main-B_aIENhp.css",
+      "http://chargenet.ddev.site/wp-content/plugins/wpconsent-cookies-banner-privacy-suite/build/placeholders.css.css?ver=006769a976c36c21fb8a"
+    ]
+  },
+  "carriers": {
+    "path": "/en/carriers/",
+    "score": 99,
+    "fcp": 966.8105,
+    "lcp": 1957.2356,
+    "tbt": 0,
+    "cls": 0,
+    "si": 966.8105,
+    "ttfb": 84,
+    "weightKb": 267.8,
+    "requests": 14,
+    "jsKb": 55.4,
+    "cssKb": 10,
+    "imageKb": 152,
+    "fontKb": 28.1,
+    "lcpElement": "<h1 id=\\\"hero-title-1\\\" class=\\\"hero__title\\\">",
+    "renderBlocking": [
+      "/wp-content/themes/chargenet/assets/dist/assets/main-B_aIENhp.css",
+      "/wp-content/plugins/wpconsent-cookies-banner-privacy-suite/build/placeholders.css.css?ver=006769a976c36c21fb8a"
+    ]
+  },
+  "locations": {
+    "path": "/en/locations/",
+    "score": 99,
+    "fcp": 961.6122,
+    "lcp": 2109.6122,
+    "tbt": 0,
+    "cls": 0,
+    "si": 961.6122,
+    "ttfb": 70,
+    "weightKb": 267.9,
+    "requests": 14,
+    "jsKb": 55.4,
+    "cssKb": 10,
+    "imageKb": 152,
+    "fontKb": 28.1,
+    "lcpElement": "<p class=\\\"t-lead hero__intro\\\">",
+    "renderBlocking": [
+      "/wp-content/plugins/wpconsent-cookies-banner-privacy-suite/build/placeholders.css.css?ver=006769a976c36c21fb8a",
+      "/wp-content/themes/chargenet/assets/dist/assets/main-B_aIENhp.css"
+    ]
+  },
+  "blog-post": {
+    "path": "/en/blog/chargenet-and-maxem-announce-ev-truck-charging-partnership/",
+    "score": 100,
+    "fcp": 957.3544,
+    "lcp": 1353.5221000000001,
+    "tbt": 0,
+    "cls": 0,
+    "si": 957.3544,
+    "ttfb": 76,
+    "weightKb": 88,
+    "requests": 11,
+    "jsKb": 10,
+    "cssKb": 10,
+    "imageKb": 16.6,
+    "fontKb": 28.1,
+    "lcpElement": "<h1 id=\\\"hero-title-1\\\" class=\\\"hero__title\\\">",
+    "renderBlocking": [
+      "/wp-content/themes/chargenet/assets/dist/assets/main-B_aIENhp.css",
+      "/wp-content/plugins/wpconsent-cookies-banner-privacy-suite/build/placeholders.css.css?ver=006769a976c36c21fb8a"
+    ]
+  },
+  "landing-nl": {
+    "path": "/nl/rapport2027/",
+    "score": 98,
+    "fcp": 1119.0517,
+    "lcp": 2254.7009,
+    "tbt": 0,
+    "cls": 0,
+    "si": 1119.0517,
+    "ttfb": 75,
+    "weightKb": 243.3,
+    "requests": 16,
+    "jsKb": 56.4,
+    "cssKb": 10,
+    "imageKb": 127.7,
+    "fontKb": 28.1,
+    "lcpElement": "<img width=\\\"800\\\" height=\\\"800\\\" src=\\\"https://chargenet.ddev.site/wp-content/uploads/2026/10/bg-truck-1-768x768.…\\\" class=\\\"hero__bg-img\\\" alt=\\\"\\\" loading=\\\"eager\\\" decoding=\\\"sync\\\" fetchpriority=\\\"high\\\" sizes=\\\"100vw\\\" srcset=\\\"https://chargenet.ddev.site/wp-content/uploads/2026/10/bg-truck-1.webp 800…\\\">",
+    "renderBlocking": [
+      "/wp-content/plugins/wpconsent-cookies-banner-privacy-suite/build/placeholders.css.css?ver=006769a976c36c21fb8a",
+      "/wp-content/themes/chargenet/assets/dist/assets/main-B_aIENhp.css"
+    ]
+  }
+}

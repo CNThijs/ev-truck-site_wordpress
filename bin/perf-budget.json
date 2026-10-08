@@ -1,0 +1,9 @@
+{
+  "_comment": "Per-template limits for bin/perf.mjs --check (Lighthouse mobile profile; relative numbers, see docs/performance.md). CI checks these absolute limits. _tolerance: allowed regression with --compare file (local use: lab noise between machines is too big for CI).",
+  "_tolerance": 0.15,
+  "lcp": 2500,
+  "cls": 0.1,
+  "tbt": 200,
+  "weightKb": 400,
+  "jsKb": 70
+}
