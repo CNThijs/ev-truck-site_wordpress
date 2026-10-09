@@ -73,7 +73,7 @@
     "sass": "^1.105.1",
     "stylelint": "^17.15.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "vite": "^8.3.1"
+    "vite": "^8.3.3"
   },
   "version": "1.0.0",
   "description": "WordPress with a custom theme (`chargenet`). See `CLAUDE.md` for the full project context and commands.",
