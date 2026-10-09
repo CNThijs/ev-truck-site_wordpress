@@ -32,3 +32,27 @@
 		margin-top: var(--space-2);
 	}
 }
+
+// The cookie list printed by the consent plugin (cookie policy page): three narrow columns that wrap instead of
+// pushing the page wider than a phone.
+.wpconsent-cookie-policy-table {
+	width: 100%;
+	margin-block-end: var(--space-6);
+	border-collapse: collapse;
+	font-size: var(--text-sm);
+	table-layout: fixed;
+
+	th,
+	td {
+		padding: var(--space-2) var(--space-3);
+		border: 1px solid var(--border);
+		overflow-wrap: anywhere;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	th {
+		background: color-mix(in srgb, var(--accent) 10%, transparent);
+		font-weight: var(--weight-semibold);
+	}
+}

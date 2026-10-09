@@ -108,7 +108,9 @@ function chargenet_consent_cookie( $data ) {
 		'_ga'                   => array( __( 'Used by Google Analytics to tell visitors apart without identifying them.', 'chargenet' ), __( '2 years', 'chargenet' ) ),
 		'_ga_*'                 => array( __( 'Used by Google Analytics to keep the state of a visit.', 'chargenet' ), __( '2 years', 'chargenet' ) ),
 		'cn_campaign'           => array( __( 'Remembers the campaign link (UTM parameters) that brought you here, so that a request you send can be linked to it.', 'chargenet' ), __( '30 days', 'chargenet' ) ),
-		'wpconsent_preferences' => array( __( 'Remembers your cookie choice.', 'chargenet' ), __( '6 months', 'chargenet' ) ),
+		'wpconsent_preferences' => array( __( 'Remembers your cookie choice.', 'chargenet' ), __( '180 days', 'chargenet' ) ),
+		'cn_consent_id'         => array( __( 'Links your choice to the record that shows you gave or refused consent (browser storage).', 'chargenet' ), __( 'Until you clear your browser data', 'chargenet' ) ),
+		'pll_language'          => array( __( 'Remembers the language of the website that you chose.', 'chargenet' ), __( '1 year', 'chargenet' ) ),
 	);
 	$id   = (string) ( $data['cookie_id'] ?? '' );
 	if ( isset( $text[ $id ] ) ) {

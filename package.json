@@ -10,7 +10,7 @@
     "build": "npm run tokens && npm run build:blocks && vite build",
     "lint": "npm run lint:php && npm run lint:js && npm run lint:css && npm run format:check",
     "lint:php": "vendor/bin/phpcs",
-    "lint:js": "eslint web/wp-content/themes/chargenet/assets/src web/wp-content/themes/chargenet/blocks bin/*.mjs vite.config.js eslint.config.js",
+    "lint:js": "eslint web/wp-content/themes/chargenet/assets/src web/wp-content/themes/chargenet/blocks bin/*.mjs tests playwright.config.mjs vite.config.js eslint.config.js",
     "lint:css": "stylelint \"web/wp-content/themes/chargenet/assets/src/**/*.scss\" \"web/wp-content/themes/chargenet/blocks/**/*.scss\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -32,7 +32,14 @@
     "check:blog-urls": "node bin/check-blog-urls.mjs",
     "check:security": "node bin/check-security.mjs",
     "check:a11y": "node bin/check-a11y.mjs",
-    "check:hardening": "ddev wp eval-file bin/check-hardening.php"
+    "check:hardening": "ddev wp eval-file bin/check-hardening.php",
+    "test:e2e": "playwright test --grep-invert \"visual \" --project=\"chromium-*\" --project=\"webkit-*\"",
+    "test:e2e:visual": "playwright test visual.spec.mjs --project=chromium-mobile --project=chromium-tablet --project=chromium-desktop",
+    "test:redirect-rules": "bash bin/test-redirect-rules.sh",
+    "build:redirects-htaccess": "node bin/build-redirects-htaccess.mjs",
+    "test:e2e:all": "playwright test --grep-invert \"visual \"",
+    "package:setup": "bash bin/package-setup.sh",
+    "test:maintenance-gate": "bash bin/test-maintenance-gate.sh"
   },
   "lint-staged": {
     "*.php": "vendor/bin/phpcs",
@@ -52,6 +59,7 @@
   "devDependencies": {
     "@axe-core/puppeteer": "^4.13.0",
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.0",
     "@wordpress/scripts": "^36.0.0",
     "axe-core": "^4.14.0",
     "chrome-launcher": "^1.2.2",

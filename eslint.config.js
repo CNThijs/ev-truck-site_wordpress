@@ -9,6 +9,8 @@ export default [
 			'node_modules/**',
 			'tools/**',
 			'docs/**',
+			'playwright-report/**',
+			'test-results/**',
 			'web/wp-content/plugins/**',
 		],
 	},
@@ -23,6 +25,11 @@ export default [
 			globals: globals.browser,
 			parserOptions: { ecmaFeatures: { jsx: true } },
 		},
+	},
+	{
+		files: ['tests/**/*.mjs', 'playwright.config.mjs'],
+		languageOptions: { globals: { ...globals.node, ...globals.browser } },
+		rules: { 'no-unused-vars': ['error', { argsIgnorePattern: '^_|^(page|context|request)$' }] },
 	},
 	{
 		files: ['vite.config.js', 'eslint.config.js', 'bin/**/*.mjs'],

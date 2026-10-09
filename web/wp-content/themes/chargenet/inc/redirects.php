@@ -24,6 +24,7 @@ function chargenet_legacy_target( string $path, string $query ): string {
 	$code_path = $path; // Campaign codes keep their case.
 	$path      = strtolower( $path );
 	$pages     = array(
+		'sitemap.xml'                   => '/sitemap_index.xml', // Old sitemap address, named in the old robots.txt.
 		'locations'                     => '/en/locations/',
 		'carriers'                      => '/en/carriers/',
 		'about'                         => '/en/about/',
@@ -66,7 +67,7 @@ function chargenet_legacy_target( string $path, string $query ): string {
 	if ( 'rapport2027' === $path ) {
 		return '/nl/rapport2027/?' . ( '' !== $query ? $query : "{$utm}&utm_term=form-access" );
 	}
-	if ( preg_match( '#^rapport2027/([A-Za-z0-9]+)$#i', $code_path, $m ) ) {
+	if ( preg_match( '#^rapport2027/([A-Za-z0-9_-]+)$#i', $code_path, $m ) ) {
 		return "/nl/rapport2027/?{$utm}&utm_term=" . rawurlencode( $m[1] );
 	}
 

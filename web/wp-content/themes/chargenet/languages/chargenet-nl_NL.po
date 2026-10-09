@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-08T22:57:48+02:00\n"
+"POT-Creation-Date: 2026-10-09T05:01:37+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -242,19 +242,19 @@ msgstr "Getoond onder de titel en in de gestructureerde data. Leeg: ChargeNet."
 msgid "In this article"
 msgstr "In dit artikel"
 
-#: inc/blog.php:325
+#: inc/blog.php:326
 msgid "Pull quote"
 msgstr "Uitgelicht citaat"
 
-#: inc/blog.php:329
+#: inc/blog.php:330
 msgid "Callout"
 msgstr "Aandachtspunt"
 
-#: inc/blog.php:330
+#: inc/blog.php:331
 msgid "Key facts"
 msgstr "Kerngegevens"
 
-#: inc/blog.php:331
+#: inc/blog.php:332
 msgid "Call to action"
 msgstr "Call-to-action"
 
@@ -397,14 +397,32 @@ msgid "Remembers your cookie choice."
 msgstr "Onthoudt uw cookiekeuze."
 
 #: inc/consent.php:111
-msgid "6 months"
-msgstr "6 maanden"
+msgid "180 days"
+msgstr "180 dagen"
 
-#: inc/consent.php:131
+#: inc/consent.php:112
+msgid ""
+"Links your choice to the record that shows you gave or refused consent "
+"(browser storage)."
+msgstr "Koppelt uw keuze aan de registratie die laat zien dat u toestemming gaf of weigerde (opslag in de browser)."
+
+#: inc/consent.php:112
+msgid "Until you clear your browser data"
+msgstr "Tot u uw browsergegevens wist"
+
+#: inc/consent.php:113
+msgid "Remembers the language of the website that you chose."
+msgstr "Onthoudt de taal van de website die u koos."
+
+#: inc/consent.php:113
+msgid "1 year"
+msgstr "1 jaar"
+
+#: inc/consent.php:133
 msgid "Loads our analytics tags, only after you accept statistics cookies."
 msgstr "Laadt onze analyse-tags, pas nadat u statistiekcookies accepteert."
 
-#: inc/consent.php:133
+#: inc/consent.php:135
 msgid ""
 "Measures visits and clicks (page views, buttons, forms) without advertising "
 "features."
@@ -1048,13 +1066,17 @@ msgstr "Tweestapsverificatie is verplicht."
 msgid ""
 "Scroll to \"Two-Factor Options\", set up an authenticator app and save "
 "backup codes. Until then you can only use this page."
-msgstr "Ga naar \"Two-Factor Options\", stel een authenticator-app in en bewaar de back-upcodes. Tot die tijd kunt u alleen deze pagina gebruiken."
+msgstr ""
+"Ga naar \"Two-Factor Options\", stel een authenticator-app in en bewaar de "
+"back-upcodes. Tot die tijd kunt u alleen deze pagina gebruiken."
 
 #: inc/security.php:86
 msgid ""
 "The login details are not correct, or login is temporarily blocked. Try "
 "again later."
-msgstr "De inloggegevens zijn niet juist, of inloggen is tijdelijk geblokkeerd. Probeer het later opnieuw."
+msgstr ""
+"De inloggegevens zijn niet juist, of inloggen is tijdelijk geblokkeerd. "
+"Probeer het later opnieuw."
 
 #: inc/seo.php:145
 msgid "Home"
@@ -3208,6 +3230,9 @@ msgstr ""
 msgctxt "Shadow name"
 msgid "lg"
 msgstr ""
+
+#~ msgid "6 months"
+#~ msgstr "6 maanden"
 
 #~ msgctxt "Pattern description"
 #~ msgid ""

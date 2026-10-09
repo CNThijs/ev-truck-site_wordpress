@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-08T22:57:48+02:00\n"
+"POT-Creation-Date: 2026-10-09T05:01:37+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: chargenet\n"
@@ -255,19 +255,19 @@ msgstr ""
 msgid "In this article"
 msgstr ""
 
-#: inc/blog.php:325
+#: inc/blog.php:326
 msgid "Pull quote"
 msgstr ""
 
-#: inc/blog.php:329
+#: inc/blog.php:330
 msgid "Callout"
 msgstr ""
 
-#: inc/blog.php:330
+#: inc/blog.php:331
 msgid "Key facts"
 msgstr ""
 
-#: inc/blog.php:331
+#: inc/blog.php:332
 msgid "Call to action"
 msgstr ""
 
@@ -388,14 +388,30 @@ msgid "Remembers your cookie choice."
 msgstr ""
 
 #: inc/consent.php:111
-msgid "6 months"
+msgid "180 days"
 msgstr ""
 
-#: inc/consent.php:131
-msgid "Loads our analytics tags, only after you accept statistics cookies."
+#: inc/consent.php:112
+msgid "Links your choice to the record that shows you gave or refused consent (browser storage)."
+msgstr ""
+
+#: inc/consent.php:112
+msgid "Until you clear your browser data"
+msgstr ""
+
+#: inc/consent.php:113
+msgid "Remembers the language of the website that you chose."
+msgstr ""
+
+#: inc/consent.php:113
+msgid "1 year"
 msgstr ""
 
 #: inc/consent.php:133
+msgid "Loads our analytics tags, only after you accept statistics cookies."
+msgstr ""
+
+#: inc/consent.php:135
 msgid "Measures visits and clicks (page views, buttons, forms) without advertising features."
 msgstr ""
 

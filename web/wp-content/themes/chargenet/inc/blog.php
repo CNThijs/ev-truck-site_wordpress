@@ -205,6 +205,7 @@ add_filter( 'the_content', 'chargenet_post_toc', 9 );
  * @return array{linkedin: string, email: string}
  */
 function chargenet_share_links( string $url, string $title ): array {
+	$title = html_entity_decode( $title, ENT_QUOTES, 'UTF-8' ); // The title may hold &#038; and the like; the mail needs plain text.
 	return array(
 		'linkedin' => 'https://www.linkedin.com/sharing/share-offsite/?url=' . rawurlencode( $url ),
 		'email'    => 'mailto:?subject=' . rawurlencode( $title ) . '&body=' . rawurlencode( $title . "\n" . $url ),

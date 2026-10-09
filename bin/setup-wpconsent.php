@@ -98,6 +98,9 @@ $cn_register = static function ( string $id, string $name, string $description, 
 };
 $cn_register( '_ga', '_ga', 'Used by Google Analytics to tell visitors apart.', $cn_ga, '2 years' );
 $cn_register( '_ga_*', '_ga_*', 'Used by Google Analytics to keep the state of a visit.', $cn_ga, '2 years' );
+$cn_essential = (int) $cn_cookies->get_categories()['essential']['id'];
+$cn_register( 'cn_consent_id', 'cn_consent_id', 'Links your choice to the record that shows you gave or refused consent.', $cn_essential, 'Until you clear your browser data' );
+$cn_register( 'pll_language', 'pll_language', 'Remembers the language of the website that you chose.', $cn_essential, '1 year' );
 $cn_register( 'cn_campaign', 'cn_campaign', 'Remembers the campaign link that brought you here.', $cn_stat, '30 days' );
 delete_transient( 'wpconsent_needs_google_consent' );
 delete_transient( 'wpconsent_preference_slugs' );

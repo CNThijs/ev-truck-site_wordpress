@@ -1,5 +1,5 @@
 old_path,new_path,status,note
-/,/en/,302,Root. Polylang sends it before the theme loads; a 301 needs a server rule (docs/seo.md). No browser-language redirect.
+/,/en/,301,Root. A 301 needs the .htaccess rule (docs/launch-runbook.md); locally Polylang answers 302 and the check accepts it on .ddev.site.
 /about,/en/about/,301,
 /over-ons,/nl/over-ons/,301,Old NL alias; page was identical to /about
 /locations,/en/locations/,301,
@@ -32,10 +32,25 @@ old_path,new_path,status,note
 /blog/kick-off-jtf-ijmond-aan-zet,/en/blog/kick-off-jtf-ijmond-aan-zet/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/kick-off-jtf-ijmond-aan-zet/
 /blog/move-east-2025,/en/blog/move-east-2025/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/move-east-2025/
 /blog/chargenet-moves-to-the-connectr-office-in-arnhem,/en/blog/chargenet-moves-to-the-connectr-office-in-arnhem/,301,Old URL served EN and NL; crawlers saw EN. NL twin: /nl/blog/chargenet-moves-to-the-connectr-office-in-arnhem/
-/rapport2027,/nl/rapport2027/,301,PROVISIONAL: campaign URL undecided (audit question 2); report is Dutch only. Keep UTM query string.
-/routecheck,/nl/vervoerders/,301,Dutch campaign page; UTM parameters added
-/opbrengst,/nl/locaties/,301,Dutch campaign page; UTM parameters added
-/terms-and-conditions,/en/,301,Soft 404 on old site; page never rebuilt, so the home page (decided)
-/trend2026,/nl/rapport2027/,301,Soft 404 on old site; early campaign name (decided)
+/rapport2027,/nl/rapport2027/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=form-access,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Campaign page (decided). Bare URL gets the default parameters; with its own query string that query is kept.
+/routecheck,/nl/vervoerders/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=laders,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Dutch campaign page; UTM parameters added
+/opbrengst,/nl/locaties/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=locaties,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Dutch campaign page; UTM parameters added
+/terms-and-conditions,/en/,301,"Soft 404 on old site; page never rebuilt, so the home page (decided)"
+/trend2026,/nl/rapport2027/,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Soft 404 on old site; early campaign name (decided)
 /location-owners,/en/locations/,301,Linked from old mobile menu but was a 404 (decided)
 /fleet-managers,/en/carriers/,301,Linked from old mobile menu but was a 404 (decided)
+/rapport2027/download,/nl/rapport2027/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=download,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Campaign shortlink (DM mailing).
+/rapport2027/{code},/nl/rapport2027/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term={code},301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Personal report code from the DM mailing; the code becomes utm_term. The check uses the sample code AB12cd.
+/sitemap.xml,/sitemap_index.xml,301,"Old sitemap address, still named in the old robots.txt."
+/projects/destination-charging,/en/destination-charging/,301,"Old project route (disabled on the old site, linked from the home page)."
+/projects/chargebase,/en/chargebase-project/,301,Same.
+/projects/ijmondaanzet,/en/ijmond-aan-zet-project/,301,Same.
+/projects/bouw-pow,/en/bouw-pow-project/,301,Same.
+/projecten/laden-op-bestemming,/nl/laden-op-bestemming/,301,Dutch twin of the project route.
+/projecten/chargebase,/nl/chargebase/,301,Same.
+/projecten/ijmondaanzet,/nl/ijmond-aan-zet/,301,Same.
+/projecten/bouw-pow,/nl/bouw-pow/,301,Same.
+/about/,/en/about/,301,Trailing slash and capitals must also give one hop.
+/About,/en/about/,301,Same.
+/rapport2027/,/nl/rapport2027/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=form-access,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Trailing slash variant of the campaign page.
+/rapport2027/AB-12_cd,/nl/rapport2027/?utm_source=trend_report&utm_medium=DM&utm_campaign=tr2027&utm_term=AB-12_cd,301,PRINTED IN NEWSLETTERS AND EMAILS: never remove. Codes may contain hyphens and underscores.

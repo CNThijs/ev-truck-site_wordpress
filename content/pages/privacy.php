@@ -27,8 +27,18 @@ function cn_privacy_cell( $cell ): string {
 function cn_privacy_inline( string $text ): string {
 	$html = str_replace( array( '&lt;strong&gt;', '&lt;/strong&gt;' ), array( '<strong>', '</strong>' ), esc_html( $text ) );
 	$html = str_replace( 'privacy@chargenet.energy', '<a href="mailto:privacy@chargenet.energy">privacy@chargenet.energy</a>', $html );
-	// The live text points to a list, a page and a page without giving URLs: placeholders until they are filled in.
-	return preg_replace( '/\b(this link|this webpage|deze link|deze webpagina)\b/', '<a href="#">$1</a>', $html );
+	// Links the live text mentioned without giving an address (European Commission and EDPB pages).
+	$adequacy    = 'https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en';
+	$rights      = 'https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en';
+	$authorities = 'https://www.edpb.europa.eu/about-edpb/our-members_en';
+	return preg_replace_callback(
+		'/\b(this link|this webpage|deze link|deze webpagina)\b( of the European Commission| van de Europese Commissie)?/',
+		static function ( $m ) use ( $adequacy, $rights, $authorities ) {
+			$url = in_array( $m[1], array( 'this link', 'deze link' ), true ) ? $adequacy : ( isset( $m[2] ) && '' !== $m[2] ? $rights : $authorities );
+			return '<a href="' . $url . '" rel="noopener">' . $m[1] . '</a>' . ( $m[2] ?? '' );
+		},
+		$html
+	);
 }
 
 return array(

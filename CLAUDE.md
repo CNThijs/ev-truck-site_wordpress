@@ -90,6 +90,10 @@ Lighthouse mobile baseline, measured changes, budgets and Search Console/CrUX gu
 
 Hardening, headers and CSP: `docs/security.md` (`inc/security*.php`, checks `npm run check:security`, `bin/check-hardening.php`). Plugin policy and update owner: `docs/plugins.md`. Backups, restore test and update/rollback: `docs/backups.md`. Data map, retention, requests and legal flags: `docs/privacy.md`. WCAG 2.2 AA target, axe in CI (`npm run check:a11y`) and the manual test script: `docs/accessibility.md`. Never change the Security page claims or the privacy policy wording without the owner; flag instead.
 
+## QA, redirects and launch
+
+`docs/redirects.csv` is the single list of old addresses; `npm run check:redirects -- <url>` (one 301 hop to the right final URL), `bin/build-redirects-htaccess.mjs` (server rules for `.htaccess`, tested on a real Apache with `npm run test:redirect-rules`) and the theme fallback `inc/redirects.php` must all agree. Playwright suite: `npm run test:e2e` (Chromium + WebKit locally; Firefox runs in CI because the bundled build does not start on this Mac), visual references are local only. Owner checklists: `docs/qa-checklist.md`, `docs/launch-runbook.md` (direct install on the main domain behind a maintenance gate, `bin/build-maintenance.mjs`; three gates; never deploy or change domains yourself), `docs/editor-guide.md`. Post-launch: `bin/monitor.mjs`, `bin/monitor-server.php`.
+
 ## Languages
 
 English is the default content language and Dutch is always provided; more languages will follow. Every user-facing string, pattern and default text needs an English and a Dutch version. UI strings use gettext (`chargenet` domain); `npm run translations` compiles `.po` to `.mo` and editor `.json`. Workflow: `docs/translations.md`.

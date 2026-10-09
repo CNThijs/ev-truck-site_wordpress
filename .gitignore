@@ -27,3 +27,8 @@ node_modules/
 .ddev/db_snapshots/
 
 .DS_Store
+
+# Playwright
+playwright-report/
+test-results/
+tests/e2e/__snapshots__/

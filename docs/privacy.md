@@ -59,3 +59,7 @@ Checked against `content/pages/privacy-en.json` / `privacy-nl.json` and `content
 7. **Retention periods:** 12 months for form data and 36 months for the consent record are code defaults chosen for this project, not legal advice (`retention_months` setting, `CHARGENET_CONSENT_MONTHS` constant).
 8. **App text:** the policy still describes the ChargeNet app (login, license plates, payments). That text comes from the old site and is untouched.
 9. **Dutch policy:** the Dutch text is a translation I wrote for the new rows (u/uw); it needs your read, listed in `docs/translation-review.md`.
+
+## Placeholder links filled in (Epic 14)
+
+The three links in the policy that the old site left as `#` now point to the European Commission's list of adequacy decisions, the Commission's page on individuals' rights and the EDPB list of supervisory authorities (`content/pages/privacy.php`). Check that you are happy with those pages as references (LEGAL).
