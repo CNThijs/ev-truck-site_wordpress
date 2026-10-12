@@ -16,7 +16,7 @@ if ( '' === trim( $content ) ) {
 	return;
 }
 
-$chargenet_variant  = in_array( $attributes['variant'] ?? '', array( 'cards', 'plain', 'numbered' ), true ) ? $attributes['variant'] : 'cards';
+$chargenet_variant  = in_array( $attributes['variant'] ?? '', array( 'cards', 'plain', 'numbered', 'split' ), true ) ? $attributes['variant'] : 'cards';
 $chargenet_columns  = max( 2, min( 4, (int) ( $attributes['columns'] ?? 3 ) ) );
 $chargenet_heading  = (string) ( $attributes['heading'] ?? '' );
 $chargenet_title_id = '' !== trim( wp_strip_all_tags( $chargenet_heading ) ) ? wp_unique_id( 'section-title-' ) : '';

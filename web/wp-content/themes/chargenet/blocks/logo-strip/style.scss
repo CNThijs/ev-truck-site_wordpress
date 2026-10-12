@@ -70,3 +70,72 @@
 	opacity: 0.85;
 	filter: brightness(0) invert(1);
 }
+
+// Marquee: two identical tracks side by side move left by their own width, so the loop has no seam. Stops while pointed at or
+// focused inside, and with reduced motion it becomes a normal wrapping row (the copy is hidden).
+.logo-strip--marquee {
+	.logo-strip__marquee {
+		display: flex;
+		overflow: hidden;
+		mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+	}
+
+	.logo-strip__track {
+		flex: none;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: var(--space-8);
+		min-width: 100%;
+		padding-inline-end: var(--space-8);
+		animation: logo-marquee 38s linear infinite;
+	}
+
+	&:hover .logo-strip__track,
+	&:focus-within .logo-strip__track {
+		animation-play-state: paused;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.logo-strip__marquee {
+			mask-image: none;
+		}
+
+		.logo-strip__track {
+			flex-wrap: wrap;
+			justify-content: center;
+			animation: none;
+		}
+
+		.logo-strip__track--copy {
+			display: none;
+		}
+	}
+}
+
+@keyframes logo-marquee {
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.logo-item__name {
+	color: var(--fg);
+	font-size: clamp(1.5rem, 1rem + 1.8vw, 2.5rem);
+	font-weight: var(--weight-bold);
+	letter-spacing: -0.03em;
+	white-space: nowrap;
+	opacity: 0.85;
+}
+
+// In the marquee the heading is a quiet lead-in, not a section title.
+.logo-strip--marquee .section-intro {
+	margin-bottom: var(--space-5);
+
+	h2,
+	h3 {
+		color: var(--fg-muted);
+		font-size: var(--text-lg);
+		font-weight: var(--weight-semibold);
+		letter-spacing: 0;
+	}
+}

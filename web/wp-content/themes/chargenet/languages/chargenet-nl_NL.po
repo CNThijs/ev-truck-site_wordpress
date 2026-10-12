@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChargeNet\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/chargenet\n"
-"POT-Creation-Date: 2026-10-09T05:01:37+02:00\n"
+"POT-Creation-Date: 2026-10-09T13:48:59+02:00\n"
 "PO-Revision-Date: 2026-10-05 12:00+0000\n"
 "Last-Translator: ChargeNet\n"
 "Language-Team: ChargeNet\n"
@@ -42,9 +42,9 @@ msgstr "De pagina die u zoekt bestaat niet."
 msgid "Back to home"
 msgstr "Terug naar home"
 
-#: blocks/button/render.php:24 blocks/logo-item/render.php:33
-#: build/blocks/button/render.php:24 build/blocks/logo-item/render.php:33
-#: footer.php:43 inc/post-source.php:125 template-parts/content-single.php:66
+#: blocks/button/render.php:24 blocks/logo-item/render.php:37
+#: build/blocks/button/render.php:24 build/blocks/logo-item/render.php:37
+#: footer.php:20 inc/post-source.php:125 template-parts/content-single.php:66
 #: template-parts/post-card.php:59
 msgid "(opens in a new tab)"
 msgstr "(opent in een nieuw tabblad)"
@@ -109,6 +109,13 @@ msgstr "Vorige"
 msgid "Next"
 msgstr "Volgende"
 
+#: blocks/team-member/render.php:65 build/blocks/team-member/render.php:65
+#: inc/forms/privacy.php:57 inc/forms/storage.php:163 inc/forms/storage.php:167
+#: inc/forms/storage.php:422 template-parts/content-single.php:67
+#: blocks/team-member/index.js:48 build/blocks/team-member/index.js:1
+msgid "Email"
+msgstr "E-mail"
+
 #. translators: %s: person's name.
 #: blocks/team-member/render.php:70 build/blocks/team-member/render.php:70
 #, php-format
@@ -126,6 +133,10 @@ msgid "News"
 msgstr "Nieuws"
 
 #: footer.php:20
+msgid "Connect with Us"
+msgstr "Connect with Us"
+
+#: footer.php:28
 msgid ""
 "ChargeNet is the platform for shippers & transport companies to collaborate "
 "on decarbonisation of road logistics by sharing charging infrastructure at "
@@ -137,45 +148,41 @@ msgstr ""
 "laadinfrastructuur op bestemmingen. Met ChargeNet kan u laden voor de juiste "
 "prijs, op de juiste plaats, op het juiste moment."
 
-#: footer.php:22
-msgid "Industrial Park Kleefsewaard"
-msgstr "Industrieterrein Kleefsewaard"
-
-#: footer.php:24
-msgid "6827 AV, Arnhem, The Netherlands"
-msgstr "6827 AV, Arnhem, Nederland"
-
-#: footer.php:27
+#: footer.php:30
 msgid "Footer"
 msgstr "Voettekst"
 
-#: footer.php:28 inc/forms/privacy.php:58 inc/forms/storage.php:423
+#: footer.php:31 inc/forms/privacy.php:58 inc/forms/storage.php:423
 msgid "Company"
 msgstr "Bedrijf"
 
-#: footer.php:41
+#: footer.php:44
 msgid "Get in Touch"
 msgstr "Neem contact op"
 
-#: footer.php:43
-msgid "Connect with Us"
-msgstr "Connect with Us"
+#: footer.php:48
+msgid "Industrial Park Kleefsewaard"
+msgstr "Industrieterrein Kleefsewaard"
+
+#: footer.php:50
+msgid "6827 AV, Arnhem, The Netherlands"
+msgstr "6827 AV, Arnhem, Nederland"
 
 #. translators: %s: year.
-#: footer.php:50
+#: footer.php:59
 #, php-format
 msgid "© %s ChargeNet. All rights reserved."
 msgstr "© %s ChargeNet. Alle rechten voorbehouden."
 
-#: footer.php:53
+#: footer.php:62
 msgid "Legal"
 msgstr "Juridisch"
 
-#: footer.php:65 inc/consent.php:25
+#: footer.php:74 inc/consent.php:25
 msgid "Cookie settings"
 msgstr "Cookie-instellingen"
 
-#: footer.php:66
+#: footer.php:75
 msgid "Footer language"
 msgstr "Taal (voettekst)"
 
@@ -202,7 +209,8 @@ msgid "Table %d"
 msgstr "Tabel %d"
 
 #: inc/accessibility.php:34 blocks/feature-grid-item/index.js:20
-#: build/blocks/feature-grid-item/index.js:1
+#: blocks/icon-list-item/index.js:18 build/blocks/feature-grid-item/index.js:1
+#: build/blocks/icon-list-item/index.js:1
 msgid "Item"
 msgstr "Item"
 
@@ -404,7 +412,9 @@ msgstr "180 dagen"
 msgid ""
 "Links your choice to the record that shows you gave or refused consent "
 "(browser storage)."
-msgstr "Koppelt uw keuze aan de registratie die laat zien dat u toestemming gaf of weigerde (opslag in de browser)."
+msgstr ""
+"Koppelt uw keuze aan de registratie die laat zien dat u toestemming gaf of "
+"weigerde (opslag in de browser)."
 
 #: inc/consent.php:112
 msgid "Until you clear your browser data"
@@ -663,12 +673,6 @@ msgstr "Formulier"
 #: inc/nav.php:53
 msgid "Language"
 msgstr "Taal"
-
-#: inc/forms/privacy.php:57 inc/forms/storage.php:163 inc/forms/storage.php:167
-#: inc/forms/storage.php:422 template-parts/content-single.php:67
-#: blocks/team-member/index.js:48 build/blocks/team-member/index.js:1
-msgid "Email"
-msgstr "E-mail"
 
 #: inc/forms/privacy.php:59 inc/forms/render.php:211 inc/forms/storage.php:424
 msgid "Message"
@@ -1412,14 +1416,111 @@ msgstr "Kop in hulpvak"
 msgid "Help box text"
 msgstr "Tekst in hulpvak"
 
-#: blocks/button/index.js:13 build/blocks/button/index.js:1
-msgid "Button"
-msgstr "Knop"
+#: blocks/bento-item/index.js:18 build/blocks/bento-item/index.js:1
+msgid "Card"
+msgstr "Kaart"
 
-#: blocks/button/index.js:15 blocks/feature-column/index.js:18
+#: blocks/bento-item/index.js:20 blocks/icon-list/index.js:20
+#: build/blocks/bento-item/index.js:1 build/blocks/icon-list/index.js:1
+msgid "Look"
+msgstr "Uiterlijk"
+
+#: blocks/bento-item/index.js:23 build/blocks/bento-item/index.js:1
+msgid "Light"
+msgstr "Licht"
+
+#: blocks/bento-item/index.js:24 build/blocks/bento-item/index.js:1
+msgid "Dark green"
+msgstr "Donkergroen"
+
+#: blocks/bento-item/index.js:25 build/blocks/bento-item/index.js:1
+msgid "Yellow accent"
+msgstr "Gele accentkleur"
+
+#: blocks/bento-item/index.js:26 build/blocks/bento-item/index.js:1
+msgid "Photo background"
+msgstr "Foto als achtergrond"
+
+#: blocks/bento-item/index.js:32 blocks/slide-card/index.js:39
+#: build/blocks/bento-item/index.js:1 build/blocks/slide-card/index.js:1
+msgid "Card link"
+msgstr "Kaartlink"
+
+#: blocks/bento-item/index.js:34 blocks/button/index.js:15
+#: blocks/feature-column/index.js:18 build/blocks/bento-item/index.js:1
 #: build/blocks/button/index.js:1 build/blocks/feature-column/index.js:1
 msgid "Link URL"
 msgstr "Link-URL"
+
+#: blocks/bento-item/index.js:40 blocks/feature-column/index.js:24
+#: blocks/post-grid/index.js:88 build/blocks/bento-item/index.js:1
+#: build/blocks/feature-column/index.js:1 build/blocks/post-grid/index.js:1
+msgid "Link label"
+msgstr "Linklabel"
+
+#: blocks/bento-item/index.js:48 blocks/team-member/index.js:25
+#: build/blocks/bento-item/index.js:1 build/blocks/team-member/index.js:1
+msgid "Photo"
+msgstr "Foto"
+
+#: blocks/bento-item/index.js:72 blocks/feature-column/index.js:36
+#: build/blocks/bento-item/index.js:1 build/blocks/feature-column/index.js:1
+msgid "Column title"
+msgstr "Kolomtitel"
+
+#: blocks/bento-item/index.js:83 blocks/feature-grid-item/index.js:58
+#: blocks/slide-card/index.js:77 build/blocks/bento-item/index.js:1
+#: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
+msgid "Short text"
+msgstr "Korte tekst"
+
+#: blocks/bento/index.js:33 blocks/feature-columns/index.js:33
+#: blocks/feature-grid/index.js:59 blocks/hero/index.js:84
+#: blocks/locations-list/index.js:39 blocks/post-grid/index.js:71
+#: blocks/rich-text-image/index.js:77 blocks/stats/index.js:62
+#: blocks/_shared/header.js:14 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Eyebrow (optional)"
+msgstr "Bovenkopje (optioneel)"
+
+#: blocks/bento/index.js:40 blocks/feature-columns/index.js:40
+#: blocks/feature-grid/index.js:66 blocks/locations-list/index.js:44
+#: blocks/post-grid/index.js:76 blocks/rich-text-image/index.js:84
+#: blocks/rich-text/index.js:32 blocks/_shared/header.js:21
+#: build/blocks/accordion/index.js:1 build/blocks/bento/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Section heading"
+msgstr "Sectiekop"
+
+#: blocks/bento/index.js:48 blocks/feature-columns/index.js:48
+#: blocks/feature-grid/index.js:74 blocks/locations-list/index.js:49
+#: blocks/post-grid/index.js:81 blocks/_shared/header.js:29
+#: build/blocks/accordion/index.js:1 build/blocks/bento/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Introduction (optional)"
+msgstr "Inleiding (optioneel)"
+
+#: blocks/button/index.js:13 build/blocks/button/index.js:1
+msgid "Button"
+msgstr "Knop"
 
 #: blocks/button/index.js:19 build/blocks/button/index.js:1
 msgid "Buttons without a URL are not shown on the site."
@@ -1473,59 +1574,9 @@ msgstr "Korte ondersteunende tekst (optioneel)"
 msgid "Column link"
 msgstr "Kolomlink"
 
-#: blocks/feature-column/index.js:24 blocks/post-grid/index.js:88
-#: build/blocks/feature-column/index.js:1 build/blocks/post-grid/index.js:1
-msgid "Link label"
-msgstr "Linklabel"
-
-#: blocks/feature-column/index.js:36 build/blocks/feature-column/index.js:1
-msgid "Column title"
-msgstr "Kolomtitel"
-
 #: blocks/feature-column/index.js:43 build/blocks/feature-column/index.js:1
 msgid "Sub-heading"
 msgstr "Subkop"
-
-#: blocks/feature-columns/index.js:33 blocks/feature-grid/index.js:55
-#: blocks/hero/index.js:83 blocks/locations-list/index.js:39
-#: blocks/post-grid/index.js:71 blocks/rich-text-image/index.js:77
-#: blocks/stats/index.js:62 blocks/_shared/header.js:14
-#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
-#: build/blocks/contact-form/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/stats/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
-#: build/blocks/trend-report-form/index.js:1
-msgid "Eyebrow (optional)"
-msgstr "Bovenkopje (optioneel)"
-
-#: blocks/feature-columns/index.js:40 blocks/feature-grid/index.js:62
-#: blocks/locations-list/index.js:44 blocks/post-grid/index.js:76
-#: blocks/rich-text-image/index.js:84 blocks/rich-text/index.js:32
-#: blocks/_shared/header.js:21 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
-#: build/blocks/trend-report-form/index.js:1
-msgid "Section heading"
-msgstr "Sectiekop"
-
-#: blocks/feature-columns/index.js:48 blocks/feature-grid/index.js:70
-#: blocks/locations-list/index.js:49 blocks/post-grid/index.js:81
-#: blocks/_shared/header.js:29 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
-#: build/blocks/trend-report-form/index.js:1
-msgid "Introduction (optional)"
-msgstr "Inleiding (optioneel)"
 
 #: blocks/feature-grid-item/index.js:23 blocks/logo-item/index.js:34
 #: blocks/post-grid/index.js:94 blocks/slide-card/index.js:41
@@ -1548,15 +1599,11 @@ msgstr ""
 "Leeg: de titel is de link. Ingevuld: een aparte ‘lees meer’-link onder de "
 "tekst."
 
-#: blocks/feature-grid-item/index.js:50
+#: blocks/feature-grid-item/index.js:50 blocks/icon-list-item/index.js:34
 #: build/blocks/feature-grid-item/index.js:1
+#: build/blocks/icon-list-item/index.js:1
 msgid "Title"
 msgstr "Titel"
-
-#: blocks/feature-grid-item/index.js:58 blocks/slide-card/index.js:77
-#: build/blocks/feature-grid-item/index.js:1 build/blocks/slide-card/index.js:1
-msgid "Short text"
-msgstr "Korte tekst"
 
 #: blocks/feature-grid/index.js:26 build/blocks/feature-grid/index.js:1
 msgid "Grid"
@@ -1570,7 +1617,11 @@ msgstr "Eenvoudig (zonder kaders)"
 msgid "Numbered"
 msgstr "Genummerd"
 
-#: blocks/feature-grid/index.js:38 build/blocks/feature-grid/index.js:1
+#: blocks/feature-grid/index.js:36 build/blocks/feature-grid/index.js:1
+msgid "Split (heading stays while cards scroll)"
+msgstr "Gesplitst (kop blijft staan terwijl de kaarten scrollen)"
+
+#: blocks/feature-grid/index.js:42 build/blocks/feature-grid/index.js:1
 msgid "Columns (wide screens)"
 msgstr "Kolommen (brede schermen)"
 
@@ -1590,37 +1641,65 @@ msgstr "Titelbalk (kort)"
 msgid "Campaign (cover image)"
 msgstr "Campagne (omslagafbeelding)"
 
-#: blocks/hero/index.js:37 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:32 build/blocks/hero/index.js:1
+msgid "Cinematic (centred, full photo)"
+msgstr "Filmisch (gecentreerd, volledige foto)"
+
+#: blocks/hero/index.js:38 build/blocks/hero/index.js:1
 msgid "Image overlay"
 msgstr "Overlay op afbeelding"
 
-#: blocks/hero/index.js:40 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:41 build/blocks/hero/index.js:1
 msgid "Standard"
 msgstr "Standaard"
 
-#: blocks/hero/index.js:41 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:42 build/blocks/hero/index.js:1
 msgid "Strong (busy photos)"
 msgstr "Sterk (drukke foto’s)"
 
-#: blocks/hero/index.js:50 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:51 build/blocks/hero/index.js:1
 msgid "Background image"
 msgstr "Achtergrondafbeelding"
 
-#: blocks/hero/index.js:59 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:60 build/blocks/hero/index.js:1
 msgid "Cover image"
 msgstr "Omslagafbeelding"
 
-#: blocks/hero/index.js:91 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:92 build/blocks/hero/index.js:1
 msgid "Page heading (h1)"
 msgstr "Paginakop (h1)"
 
-#: blocks/hero/index.js:99 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:100 build/blocks/hero/index.js:1
 msgid "Short introduction (optional)"
 msgstr "Korte inleiding (optioneel)"
 
-#: blocks/hero/index.js:117 build/blocks/hero/index.js:1
+#: blocks/hero/index.js:118 build/blocks/hero/index.js:1
 msgid "Choose a cover image"
 msgstr "Kies een omslagafbeelding"
+
+#: blocks/icon-list-item/index.js:42 build/blocks/icon-list-item/index.js:1
+msgid "Short text (optional)"
+msgstr "Korte tekst (optioneel)"
+
+#: blocks/icon-list/index.js:18 build/blocks/icon-list/index.js:1
+msgid "Icon list"
+msgstr "Icoonlijst"
+
+#: blocks/icon-list/index.js:23 build/blocks/icon-list/index.js:1
+msgid "Tiles (icon, title, text)"
+msgstr "Tegels (icoon, titel, tekst)"
+
+#: blocks/icon-list/index.js:24 build/blocks/icon-list/index.js:1
+msgid "Chips (icon and short label)"
+msgstr "Chips (icoon en kort label)"
+
+#: blocks/icon-list/index.js:27 build/blocks/icon-list/index.js:1
+msgid "Journey (numbered steps with a line)"
+msgstr "Route (genummerde stappen met een lijn)"
+
+#: blocks/icon-list/index.js:40 build/blocks/icon-list/index.js:1
+msgid "Heading (optional)"
+msgstr "Kop (optioneel)"
 
 #: blocks/locations-list/index.js:27 build/blocks/locations-list/index.js:1
 msgid "Maximum number of locations"
@@ -1668,6 +1747,10 @@ msgid "Grayscale (colour on hover)"
 msgstr "Grijstinten (kleur bij aanwijzen)"
 
 #: blocks/logo-strip/index.js:33 build/blocks/logo-strip/index.js:1
+msgid "Marquee (moving row)"
+msgstr "Lopende band (bewegende rij)"
+
+#: blocks/logo-strip/index.js:34 build/blocks/logo-strip/index.js:1
 msgid "Colour"
 msgstr "Kleur"
 
@@ -1753,16 +1836,18 @@ msgid "Left"
 msgstr "Links"
 
 #: blocks/rich-text-image/index.js:47 blocks/_shared/media.js:36
-#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/slide-card/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+#: build/blocks/bento-item/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/logo-item/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/slide-card/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/team-member/index.js:1
 msgid "Alt text override"
 msgstr "Alternatieve tekst overschrijven"
 
 #: blocks/rich-text-image/index.js:48 blocks/_shared/media.js:39
-#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/slide-card/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+#: build/blocks/bento-item/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/logo-item/index.js:1 build/blocks/rich-text-image/index.js:1
+#: build/blocks/slide-card/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/team-member/index.js:1
 msgid ""
 "Leave empty to use the alt text of the media library item. Fill it in per "
 "language."
@@ -1794,10 +1879,6 @@ msgstr "Labels (gescheiden door komma’s)"
 #: blocks/slide-card/index.js:34 build/blocks/slide-card/index.js:1
 msgid "Small labels under the text, for example partner names."
 msgstr "Kleine labels onder de tekst, bijvoorbeeld namen van partners."
-
-#: blocks/slide-card/index.js:39 build/blocks/slide-card/index.js:1
-msgid "Card link"
-msgstr "Kaartlink"
 
 #: blocks/slide-card/index.js:48 build/blocks/slide-card/index.js:1
 msgid ""
@@ -1834,6 +1915,10 @@ msgstr "Bijvoorbeeld % of mld."
 #: blocks/stat-item/index.js:46 build/blocks/stat-item/index.js:1
 msgid "Label"
 msgstr "Label"
+
+#: blocks/statement/index.js:25 build/blocks/statement/index.js:1
+msgid "One large sentence…"
+msgstr "Eén grote zin…"
 
 #: blocks/stats/index.js:33 build/blocks/stats/index.js:1
 msgid "Row (heading above)"
@@ -1874,10 +1959,6 @@ msgstr "Horizontaal"
 #: blocks/steps/index.js:33 build/blocks/steps/index.js:1
 msgid "Vertical (timeline)"
 msgstr "Verticaal (tijdlijn)"
-
-#: blocks/team-member/index.js:25 build/blocks/team-member/index.js:1
-msgid "Photo"
-msgstr "Foto"
 
 #: blocks/team-member/index.js:32 build/blocks/team-member/index.js:1
 msgid ""
@@ -1922,372 +2003,434 @@ msgstr "Kaarten (staande foto’s)"
 msgid "Compact (small round photos)"
 msgstr "Compact (kleine ronde foto’s)"
 
-#: blocks/_shared/icons.js:36 build/blocks/feature-grid-item/index.js:1
+#: blocks/_shared/icons.js:36 build/blocks/bento-item/index.js:1
+#: build/blocks/feature-grid-item/index.js:1
+#: build/blocks/icon-list-item/index.js:1
 msgid "Icon"
 msgstr "Pictogram"
 
-#: blocks/_shared/icons.js:39 build/blocks/feature-grid-item/index.js:1
+#: blocks/_shared/icons.js:39 build/blocks/bento-item/index.js:1
+#: build/blocks/feature-grid-item/index.js:1
+#: build/blocks/icon-list-item/index.js:1
 msgid "No icon"
 msgstr "Geen pictogram"
 
-#: blocks/_shared/media.js:19 build/blocks/hero/index.js:1
-#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+#: blocks/_shared/media.js:19 build/blocks/bento-item/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/slide-card/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/team-member/index.js:1
 msgid "Replace image"
 msgstr "Afbeelding vervangen"
 
-#: blocks/_shared/media.js:19 build/blocks/hero/index.js:1
-#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+#: blocks/_shared/media.js:19 build/blocks/bento-item/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/slide-card/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/team-member/index.js:1
 msgid "Choose image"
 msgstr "Afbeelding kiezen"
 
-#: blocks/_shared/media.js:31 build/blocks/hero/index.js:1
-#: build/blocks/logo-item/index.js:1 build/blocks/slide-card/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/team-member/index.js:1
+#: blocks/_shared/media.js:31 build/blocks/bento-item/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/logo-item/index.js:1
+#: build/blocks/slide-card/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/team-member/index.js:1
 msgid "Remove"
 msgstr "Verwijderen"
 
 #: blocks/_shared/section.js:11 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
-#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
-msgid "Light (white)"
-msgstr "Licht (wit)"
-
-#: blocks/_shared/section.js:12 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
-#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
-msgid "Paper (warm off-white)"
-msgstr "Papier (warm gebroken wit)"
-
-#: blocks/_shared/section.js:13 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
-#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
-#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
-msgid "Dark (forest green)"
-msgstr "Donker (bosgroen)"
-
-#: blocks/_shared/section.js:17 blocks/_shared/section.js:32
-#: build/blocks/accordion/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
 #: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
 #: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
 #: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
 #: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Light (white)"
+msgstr "Licht (wit)"
+
+#: blocks/_shared/section.js:12 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
+#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Paper (warm off-white)"
+msgstr "Papier (warm gebroken wit)"
+
+#: blocks/_shared/section.js:13 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
+#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Dark (forest green)"
+msgstr "Donker (bosgroen)"
+
+#: blocks/_shared/section.js:17 blocks/_shared/section.js:32
+#: build/blocks/accordion/index.js:1 build/blocks/bento/index.js:1
+#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
+#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
+#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "None"
 msgstr "Geen"
 
 #: blocks/_shared/section.js:18 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Small"
 msgstr "Klein"
 
 #: blocks/_shared/section.js:19 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Medium"
 msgstr "Middel"
 
 #: blocks/_shared/section.js:20 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Large (default)"
 msgstr "Groot (standaard)"
 
 #: blocks/_shared/section.js:24 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Show everywhere"
 msgstr "Overal tonen"
 
 #: blocks/_shared/section.js:25 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Hide on mobile"
 msgstr "Verbergen op mobiel"
 
 #: blocks/_shared/section.js:26 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Hide on desktop"
 msgstr "Verbergen op desktop"
 
 #: blocks/_shared/section.js:33 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Fade and rise on enter"
 msgstr "Infaden en omhoog bij binnenkomst"
 
 #: blocks/_shared/section.js:34 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Staggered reveal of items"
 msgstr "Items na elkaar tonen"
 
 #: blocks/_shared/section.js:35 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Headline line reveal"
 msgstr "Kop regel voor regel tonen"
 
 #: blocks/_shared/section.js:36 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Words light up while scrolling (Statement)"
+msgstr "Woorden lichten op tijdens het scrollen (Statement)"
+
+#: blocks/_shared/section.js:37 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
+#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+msgid "Photos settle in while scrolling (Bento photo cards)"
+msgstr "Foto's zakken in tijdens het scrollen (Bento-fotokaarten)"
+
+#: blocks/_shared/section.js:38 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
+#: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Counting numbers (Statistics)"
 msgstr "Tellende getallen (Statistieken)"
 
-#: blocks/_shared/section.js:37 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:39 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Parallax background image"
 msgstr "Parallax-achtergrondafbeelding"
 
-#: blocks/_shared/section.js:38 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:40 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Line drawing (Steps connector)"
 msgstr "Lijn tekenen (verbindingslijn bij Stappen)"
 
-#: blocks/_shared/section.js:39 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:41 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Horizontal scroll (Card Slider)"
 msgstr "Horizontaal scrollen (Kaartenslider)"
 
-#: blocks/_shared/section.js:59 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:61 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Section settings"
 msgstr "Sectie-instellingen"
 
-#: blocks/_shared/section.js:61 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:63 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Background"
 msgstr "Achtergrond"
 
-#: blocks/_shared/section.js:67 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:69 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Space above"
 msgstr "Ruimte boven"
 
-#: blocks/_shared/section.js:73 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:75 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Space below"
 msgstr "Ruimte onder"
 
-#: blocks/_shared/section.js:79 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:81 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Visibility"
 msgstr "Zichtbaarheid"
 
-#: blocks/_shared/section.js:85 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:87 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
 msgid "Animation"
 msgstr "Animatie"
 
-#: blocks/_shared/section.js:86 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/hero/index.js:1
-#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
-#: build/blocks/newsletter-signup/index.js:1
+#: blocks/_shared/section.js:88 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/hero/index.js:1 build/blocks/locations-list/index.js:1
+#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
 #: build/blocks/post-filter/index.js:1 build/blocks/post-grid/index.js:1
 #: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
-#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
-#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
+#: build/blocks/statement/index.js:1 build/blocks/stats/index.js:1
+#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
+#: build/blocks/trend-report-form/index.js:1
+#, fuzzy
 msgid ""
 "The first section of a page is never animated, except parallax. Parallax "
-"needs a background image, counting needs Statistics, line drawing needs "
-"Steps and horizontal scroll needs a Card Slider."
+"needs a background image, counting needs Statistics, the word scrub needs a "
+"Statement, line drawing needs Steps and horizontal scroll needs a Card "
+"Slider."
 msgstr ""
 "De eerste sectie van een pagina wordt nooit geanimeerd, behalve met "
 "parallax. Parallax heeft een achtergrondafbeelding nodig, tellen werkt met "
 "Statistieken, lijn tekenen met Stappen en horizontaal scrollen met een "
 "Kaartenslider."
 
-#: blocks/_shared/section.js:103 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/locations-list/index.js:1
-#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
-#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
-#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
-#: build/blocks/trend-report-form/index.js:1
+#: blocks/_shared/section.js:105 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Heading"
 msgstr "Kop"
 
-#: blocks/_shared/section.js:105 build/blocks/accordion/index.js:1
-#: build/blocks/card-slider/index.js:1 build/blocks/contact-form/index.js:1
-#: build/blocks/cta-band/index.js:1 build/blocks/feature-columns/index.js:1
-#: build/blocks/feature-grid/index.js:1 build/blocks/locations-list/index.js:1
-#: build/blocks/logo-strip/index.js:1 build/blocks/newsletter-signup/index.js:1
-#: build/blocks/post-grid/index.js:1 build/blocks/rich-text-image/index.js:1
-#: build/blocks/rich-text/index.js:1 build/blocks/stats/index.js:1
-#: build/blocks/steps/index.js:1 build/blocks/team/index.js:1
-#: build/blocks/trend-report-form/index.js:1
+#: blocks/_shared/section.js:107 build/blocks/accordion/index.js:1
+#: build/blocks/bento/index.js:1 build/blocks/card-slider/index.js:1
+#: build/blocks/contact-form/index.js:1 build/blocks/cta-band/index.js:1
+#: build/blocks/feature-columns/index.js:1 build/blocks/feature-grid/index.js:1
+#: build/blocks/locations-list/index.js:1 build/blocks/logo-strip/index.js:1
+#: build/blocks/newsletter-signup/index.js:1 build/blocks/post-grid/index.js:1
+#: build/blocks/rich-text-image/index.js:1 build/blocks/rich-text/index.js:1
+#: build/blocks/stats/index.js:1 build/blocks/steps/index.js:1
+#: build/blocks/team/index.js:1 build/blocks/trend-report-form/index.js:1
 msgid "Heading level"
 msgstr "Kopniveau"
 
@@ -2342,6 +2485,66 @@ msgctxt "block keyword"
 msgid "collapse"
 msgstr "inklappen"
 
+#: blocks/bento-item/block.json build/blocks/bento-item/block.json
+msgctxt "block title"
+msgid "Bento Card"
+msgstr "Bento-kaart"
+
+#: blocks/bento-item/block.json build/blocks/bento-item/block.json
+msgctxt "block description"
+msgid ""
+"One card of the mosaic: title, text or list, optional link and photo. The "
+"first card is the largest."
+msgstr ""
+"Eén kaart van het mozaïek: titel, tekst of lijst, optioneel een link en "
+"foto. De eerste kaart is de grootste."
+
+#: blocks/bento/block.json build/blocks/bento/block.json
+msgctxt "block title"
+msgid "Bento"
+msgstr "Bento"
+
+#: blocks/bento/block.json build/blocks/bento/block.json
+msgctxt "block description"
+msgid ""
+"A mosaic of 3 to 6 cards of different sizes that always fills the grid "
+"without gaps: one large card, smaller ones around it. Each card has a title, "
+"text or a short list, an optional link and an optional photo."
+msgstr ""
+"Een mozaïek van 3 tot 6 kaarten van verschillende grootte dat het raster "
+"altijd zonder gaten vult: één grote kaart met kleinere eromheen. Elke kaart "
+"heeft een titel, tekst of een korte lijst, een optionele link en een "
+"optionele foto."
+
+#: blocks/bento/block.json build/blocks/bento/block.json
+msgctxt "block keyword"
+msgid "bento"
+msgstr "bento"
+
+#: blocks/bento/block.json blocks/feature-grid/block.json
+#: build/blocks/bento/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr "raster"
+
+#: blocks/bento/block.json blocks/card-slider/block.json
+#: blocks/feature-grid/block.json build/blocks/bento/block.json
+#: build/blocks/card-slider/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "cards"
+msgstr "kaarten"
+
+#: blocks/bento/block.json build/blocks/bento/block.json
+msgctxt "block keyword"
+msgid "mosaic"
+msgstr "mozaïek"
+
+#: blocks/bento/block.json blocks/feature-grid/block.json
+#: build/blocks/bento/block.json build/blocks/feature-grid/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr "kenmerken"
+
 #: blocks/button/block.json build/blocks/button/block.json
 msgctxt "block title"
 msgid "Button"
@@ -2377,12 +2580,6 @@ msgstr "slider"
 msgctxt "block keyword"
 msgid "carousel"
 msgstr "carrousel"
-
-#: blocks/card-slider/block.json blocks/feature-grid/block.json
-#: build/blocks/card-slider/block.json build/blocks/feature-grid/block.json
-msgctxt "block keyword"
-msgid "cards"
-msgstr "kaarten"
 
 #: blocks/card-slider/block.json build/blocks/card-slider/block.json
 msgctxt "block keyword"
@@ -2532,23 +2729,15 @@ msgid "Feature Grid"
 msgstr "Kenmerkenraster"
 
 #: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
+#, fuzzy
 msgctxt "block description"
 msgid ""
 "A heading and a grid of items with icon, title and text. Variants: cards, "
-"plain, numbered."
+"plain, numbered, split (heading stays in view on the left while the cards "
+"scroll on the right)."
 msgstr ""
 "Een kop en een raster van items met pictogram, titel en tekst. Varianten: "
 "kaarten, eenvoudig, genummerd."
-
-#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
-msgctxt "block keyword"
-msgid "features"
-msgstr "kenmerken"
-
-#: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
-msgctxt "block keyword"
-msgid "grid"
-msgstr "raster"
 
 #: blocks/feature-grid/block.json build/blocks/feature-grid/block.json
 msgctxt "block keyword"
@@ -2566,10 +2755,12 @@ msgid "Hero"
 msgstr "Hero"
 
 #: blocks/hero/block.json build/blocks/hero/block.json
+#, fuzzy
 msgctxt "block description"
 msgid ""
 "Opening section of a page and the only place for its h1. Variants: banner "
-"with background image, short title band, campaign with cover image."
+"with background image, short title band, campaign with cover image, "
+"cinematic (centred, full-bleed photo)."
 msgstr ""
 "Openingssectie van een pagina en de enige plek voor de h1. Varianten: banner "
 "met achtergrondafbeelding, korte titelbalk, campagne met omslagafbeelding."
@@ -2593,6 +2784,31 @@ msgstr "titel"
 msgctxt "block keyword"
 msgid "campaign"
 msgstr "campagne"
+
+#: blocks/icon-list-item/block.json build/blocks/icon-list-item/block.json
+msgctxt "block title"
+msgid "Icon List Item"
+msgstr "Icoonlijst-item"
+
+#: blocks/icon-list-item/block.json build/blocks/icon-list-item/block.json
+msgctxt "block description"
+msgid "One item of an icon list: icon, title and optional text."
+msgstr "Eén item van een icoonlijst: icoon, titel en optionele tekst."
+
+#: blocks/icon-list/block.json build/blocks/icon-list/block.json
+msgctxt "block title"
+msgid "Icon List"
+msgstr "Icoonlijst"
+
+#: blocks/icon-list/block.json build/blocks/icon-list/block.json
+msgctxt "block description"
+msgid ""
+"A graphic list for inside a card: tiles (icon, title, text), chips (icon and "
+"short label) or a journey (numbered steps joined by a line)."
+msgstr ""
+"Een grafische lijst voor in een kaart: tegels (icoon, titel, tekst), chips "
+"(icoon en kort label) of een route (genummerde stappen verbonden door een "
+"lijn)."
 
 #: blocks/locations-list/block.json build/blocks/locations-list/block.json
 msgctxt "block title"
@@ -2644,10 +2860,12 @@ msgid "Logo Strip"
 msgstr "Logostrook"
 
 #: blocks/logo-strip/block.json build/blocks/logo-strip/block.json
+#, fuzzy
 msgctxt "block description"
 msgid ""
 "A row of partner, funder or customer logos, each optionally linked. "
-"Variants: grayscale and colour."
+"Variants: grayscale, colour and marquee (a slowly moving row; items without "
+"a logo show their name in large type)."
 msgstr ""
 "Een rij logo’s van partners, financiers of klanten, elk eventueel met een "
 "link. Varianten: grijstinten en kleur."
@@ -2848,6 +3066,42 @@ msgid ""
 msgstr ""
 "Eén getal met een label, bijvoorbeeld 80 % van de trucks laadt op de "
 "bestemming."
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block title"
+msgid "Statement"
+msgstr "Statement"
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block description"
+msgid ""
+"One large sentence in wide type. With the animation \"Words light up while "
+"scrolling\" the words go from faint to full strength as the reader scrolls. "
+"Keep it to about 30 words."
+msgstr ""
+"Eén grote zin in groot lettertype. Met de animatie \"Woorden lichten op "
+"tijdens het scrollen\" gaan de woorden van gedempt naar volle sterkte "
+"terwijl de lezer scrolt. Houd het bij ongeveer 30 woorden."
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block keyword"
+msgid "statement"
+msgstr "statement"
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block keyword"
+msgid "mission"
+msgstr "missie"
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr "citaat"
+
+#: blocks/statement/block.json build/blocks/statement/block.json
+msgctxt "block keyword"
+msgid "big text"
+msgstr "grote tekst"
 
 #: blocks/stats/block.json build/blocks/stats/block.json
 msgctxt "block title"
@@ -3249,3 +3503,11 @@ msgstr ""
 #~ "Infaden en omhoog slaat de eerste sectie van een pagina over. Parallax "
 #~ "heeft een achtergrondafbeelding nodig; lijn tekenen werkt met de sectie "
 #~ "Stappen."
+
+#: blocks/team-member/render.php
+msgid "Read bio"
+msgstr "Lees meer"
+
+#: blocks/team/index.js
+msgid "Roster (one line per person, for 8 or more)"
+msgstr "Lijst (een regel per persoon, voor 8 of meer)"

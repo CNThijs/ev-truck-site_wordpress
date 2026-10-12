@@ -4,8 +4,9 @@
 	color: var(--fg);
 	font-size: var(--text-sm);
 
+	// The floating header pill covers the top 4.75rem of the page: the trail starts below it.
 	.container {
-		padding-block: var(--space-3);
+		padding-block: 5rem var(--space-3);
 	}
 
 	.rank-math-breadcrumb p {
@@ -30,4 +31,10 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+}
+
+// Inside the title band hero: no surface of its own, so the band's background (and map) shows through.
+.breadcrumbs--in-hero {
+	padding-block: 5rem var(--space-3);
+	background: transparent;
 }

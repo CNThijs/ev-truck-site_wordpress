@@ -1,4 +1,87 @@
+@use '../../assets/src/scss/mixins' as *;
+
 // Styles of the form fields are shared: ../_shared/form.scss.
 .form-section--contact-form {
 	min-width: 0;
+}
+
+// Direct contact details beside the form on wide screens, above it on small ones.
+.contact-split {
+	display: grid;
+	gap: var(--space-7);
+
+	@include up(lg) {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+		gap: var(--space-8);
+		align-items: start;
+	}
+}
+
+.contact-aside {
+	@include up(lg) {
+		position: sticky;
+		top: calc(var(--space-9) + var(--space-3));
+	}
+
+	&__title {
+		font-size: var(--text-2xl);
+	}
+
+	&__list {
+		display: grid;
+		gap: var(--space-5);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: flex;
+			gap: var(--space-3);
+			align-items: center;
+		}
+
+		a {
+			color: var(--fg);
+			font-weight: var(--weight-semibold);
+			text-underline-offset: 0.2em;
+		}
+
+		address {
+			font-style: normal;
+		}
+	}
+
+	&__icon {
+		display: inline-flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		width: 2.75rem;
+		height: 2.75rem;
+		border-radius: var(--radius-pill);
+		background: color-mix(in srgb, var(--accent) 14%, transparent);
+		color: var(--accent);
+
+		svg {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+	}
+}
+
+// The form sits on a raised white card.
+.contact-card {
+	padding: var(--space-6);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-xl);
+	background: var(--color-white);
+	box-shadow: var(--shadow-lg);
+
+	@include up(md) {
+		padding: var(--space-8);
+	}
+
+	.cn-form {
+		max-width: none;
+	}
 }

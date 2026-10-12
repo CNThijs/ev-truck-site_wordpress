@@ -24,8 +24,12 @@ $chargenet_logo = chargenet_image(
 		'priority' => false,
 	)
 );
-if ( '' === $chargenet_logo ) {
+// A name without a logo is shown as text (large type in the marquee); with neither there is nothing to show.
+if ( '' === $chargenet_logo && '' === $chargenet_name ) {
 	return;
+}
+if ( '' === $chargenet_logo ) {
+	$chargenet_logo = '<span class="logo-item__name">' . esc_html( $chargenet_name ) . '</span>';
 }
 ?>
 <li class="logo-item" data-reveal>

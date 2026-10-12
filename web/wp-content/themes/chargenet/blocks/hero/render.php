@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$chargenet_variant = in_array( $attributes['variant'] ?? '', array( 'banner', 'title-band', 'campaign' ), true ) ? $attributes['variant'] : 'banner';
+$chargenet_variant = in_array( $attributes['variant'] ?? '', array( 'banner', 'title-band', 'campaign', 'cinematic' ), true ) ? $attributes['variant'] : 'banner';
 $chargenet_heading = (string) ( $attributes['heading'] ?? '' );
 $chargenet_intro   = (string) ( $attributes['intro'] ?? '' );
 $chargenet_eyebrow = trim( wp_strip_all_tags( (string) ( $attributes['eyebrow'] ?? '' ) ) );
@@ -33,13 +33,15 @@ if ( '' === trim( wp_strip_all_tags( $chargenet_heading ) ) ) {
 }
 
 $chargenet_title_id = wp_unique_id( 'hero-title-' );
+$chargenet_crumbs   = 0 === chargenet_section_counter() && chargenet_breadcrumbs_in_hero(); // Only the hero that opens the page.
 
 chargenet_section_open(
 	$attributes,
 	array(
 		'name'       => 'hero',
 		'labelledby' => $chargenet_title_id,
-		'class'      => 'hero hero--' . $chargenet_variant,
+		'class'      => 'hero hero--' . $chargenet_variant . ( $chargenet_crumbs ? ' hero--crumbs' : '' ),
+		'container'  => 'cinematic' === $chargenet_variant ? 'wide' : '',
 	)
 );
 ?>
@@ -60,6 +62,15 @@ chargenet_section_open(
 		<span class="hero__overlay" data-overlay="<?php echo 'strong' === ( $attributes['overlay'] ?? '' ) ? 'strong' : 'standard'; ?>"></span>
 	</div>
 <?php endif; ?>
+<?php if ( 'title-band' === $chargenet_variant ) : ?>
+	<?php // Decorative network map, partly transparent, over the whole green band. Low priority: the text is what must paint first. ?>
+	<img class="hero__map" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/map-connectr.webp' ) ); ?>" alt="" width="1600" height="909" loading="lazy" decoding="async" fetchpriority="low" aria-hidden="true">
+<?php endif; ?>
+<?php
+if ( $chargenet_crumbs ) {
+	get_template_part( 'template-parts/breadcrumbs', null, array( 'inline' => true ) );
+}
+?>
 <div class="hero__inner">
 	<div class="hero__body stack">
 		<?php if ( '' !== $chargenet_eyebrow ) : ?>

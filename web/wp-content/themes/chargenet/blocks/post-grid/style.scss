@@ -112,10 +112,23 @@
 		background: color-mix(in srgb, var(--accent) 14%, transparent);
 	}
 
+	&__media {
+		overflow: hidden;
+	}
+
 	&__img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+
+		@include motion(transform);
+
+		transition-duration: 700ms;
+	}
+
+	&:hover &__img,
+	&:focus-within &__img {
+		transform: scale(1.05);
 	}
 
 	&__body {

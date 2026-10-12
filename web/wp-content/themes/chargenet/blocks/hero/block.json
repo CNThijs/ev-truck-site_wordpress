@@ -5,7 +5,7 @@
   "title": "Hero",
   "category": "chargenet-sections",
   "icon": "cover-image",
-  "description": "Opening section of a page and the only place for its h1. Variants: banner with background image, short title band, campaign with cover image.",
+  "description": "Opening section of a page and the only place for its h1. Variants: banner with background image, short title band, campaign with cover image, cinematic (centred, full-bleed photo).",
   "keywords": ["hero", "banner", "header", "title", "campaign"],
   "textdomain": "chargenet",
   "attributes": {
@@ -16,7 +16,7 @@
     },
     "variant": {
       "type": "string",
-      "enum": ["banner", "title-band", "campaign"],
+      "enum": ["banner", "title-band", "campaign", "cinematic"],
       "default": "banner"
     },
     "eyebrow": { "type": "string", "default": "" },

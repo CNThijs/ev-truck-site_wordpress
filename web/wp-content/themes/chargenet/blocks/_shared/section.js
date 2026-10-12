@@ -33,6 +33,11 @@ const animations = [
 	{ value: 'fade-rise', label: __('Fade and rise on enter', 'chargenet') },
 	{ value: 'stagger', label: __('Staggered reveal of items', 'chargenet') },
 	{ value: 'text-lines', label: __('Headline line reveal', 'chargenet') },
+	{ value: 'scrub-words', label: __('Words light up while scrolling (Statement)', 'chargenet') },
+	{
+		value: 'image-scale',
+		label: __('Photos settle in while scrolling (Bento photo cards)', 'chargenet'),
+	},
 	{ value: 'counters', label: __('Counting numbers (Statistics)', 'chargenet') },
 	{ value: 'parallax', label: __('Parallax background image', 'chargenet') },
 	{ value: 'draw', label: __('Line drawing (Steps connector)', 'chargenet') },
@@ -84,7 +89,7 @@ export function SectionInspector({ attributes, setAttributes }) {
 				<SelectControl
 					label={__('Animation', 'chargenet')}
 					help={__(
-						'The first section of a page is never animated, except parallax. Parallax needs a background image, counting needs Statistics, line drawing needs Steps and horizontal scroll needs a Card Slider.',
+						'The first section of a page is never animated, except parallax. Parallax needs a background image, counting needs Statistics, the word scrub needs a Statement, line drawing needs Steps and horizontal scroll needs a Card Slider.',
 						'chargenet',
 					)}
 					value={attributes.animation}

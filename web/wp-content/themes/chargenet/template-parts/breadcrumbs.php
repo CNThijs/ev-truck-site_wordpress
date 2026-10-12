@@ -13,9 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! function_exists( 'rank_math_the_breadcrumbs' ) || is_front_page() || is_404() || is_page_template( array( 'page-templates/style-guide.php' ) ) ) {
 	return;
 }
+$chargenet_inline = ! empty( $args['inline'] );
+if ( ! $chargenet_inline && chargenet_breadcrumbs_in_hero() ) {
+	return; // Printed inside the title band hero instead.
+}
 ?>
-<div class="breadcrumbs is-dark">
-	<div class="container">
+<?php if ( $chargenet_inline ) : ?>
+	<div class="breadcrumbs breadcrumbs--in-hero">
 		<?php rank_math_the_breadcrumbs(); ?>
 	</div>
-</div>
+<?php else : ?>
+	<div class="breadcrumbs is-dark">
+		<div class="container">
+			<?php rank_math_the_breadcrumbs(); ?>
+		</div>
+	</div>
+<?php endif; ?>

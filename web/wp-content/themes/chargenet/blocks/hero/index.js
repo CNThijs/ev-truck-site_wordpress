@@ -29,6 +29,7 @@ registerBlockType(metadata, {
 								{ value: 'banner', label: __('Banner (background image)', 'chargenet') },
 								{ value: 'title-band', label: __('Title band (short)', 'chargenet') },
 								{ value: 'campaign', label: __('Campaign (cover image)', 'chargenet') },
+								{ value: 'cinematic', label: __('Cinematic (centred, full photo)', 'chargenet') },
 							]}
 							onChange={(value) => setAttributes({ variant: value })}
 						/>
@@ -66,7 +67,7 @@ registerBlockType(metadata, {
 					/>
 				)}
 				<section {...blockProps}>
-					<div className="container">
+					<div className={`container${variant === 'cinematic' ? ' container--wide' : ''}`}>
 						{hasBg && (
 							<div className="hero__bg">
 								<img className="hero__bg-img" src={imageUrl} alt="" />

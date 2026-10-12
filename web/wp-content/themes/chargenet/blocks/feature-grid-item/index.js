@@ -9,7 +9,7 @@ registerBlockType(metadata, {
 	edit({ attributes, setAttributes, context }) {
 		const { icon, title, text, url, linkLabel } = attributes;
 		const level = Math.max(3, Math.min(4, (context['chargenet/headingLevel'] ?? 2) + 1));
-		const cards = (context['chargenet/gridVariant'] ?? 'cards') === 'cards';
+		const cards = ['cards', 'split'].includes(context['chargenet/gridVariant'] ?? 'cards');
 		const blockProps = useBlockProps({
 			className: `feature-grid__item${cards ? ' card' : ''}${url ? ' has-link' : ''}`,
 		});

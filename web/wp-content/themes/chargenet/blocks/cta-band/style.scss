@@ -1,5 +1,7 @@
+@use '../../assets/src/scss/mixins' as *;
+
 .cta-band {
-	max-width: var(--container-narrow);
+	max-width: 64rem;
 	margin-inline: auto;
 	text-align: center;
 
@@ -9,5 +11,62 @@
 
 	.t-lead {
 		margin-inline: auto;
+	}
+}
+
+// A closing call to action is display type: large, tight, with room around it.
+.cta-band h2 {
+	font-size: clamp(2.25rem, 1rem + 4.2vw, 4.5rem);
+	letter-spacing: -0.035em;
+	line-height: 1.04;
+}
+
+.cta-band .btn {
+	min-height: 3.25rem;
+	padding-inline: var(--space-6);
+	font-size: var(--text-lg);
+}
+
+// Charging rings behind the heading: concentric lines that pulse slowly, fading out towards the edges.
+.cta-band {
+	position: relative;
+	isolation: isolate;
+	overflow: clip;
+	padding-block: var(--space-8);
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: repeating-radial-gradient(
+			circle at 50% 50%,
+			transparent 0 4.5rem,
+			color-mix(in srgb, var(--accent) 45%, transparent) 4.5rem calc(4.5rem + 1px)
+		);
+		mask-image: radial-gradient(closest-side, #000 20%, transparent 95%);
+		pointer-events: none;
+	}
+}
+
+.cta-band .btn {
+	@include motion(box-shadow, transform);
+
+	&:hover {
+		box-shadow: 0 0 0 0.4rem color-mix(in srgb, var(--accent) 30%, transparent);
+		transform: translateY(-2px);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes cta-band-pulse {
+		to {
+			opacity: 0.45;
+			transform: scale(1.12);
+		}
+	}
+
+	.cta-band::before {
+		animation: cta-band-pulse 5s ease-in-out infinite alternate;
 	}
 }

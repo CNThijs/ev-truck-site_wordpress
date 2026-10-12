@@ -143,4 +143,18 @@ Banner, panel, categories, cookie descriptions and the cookie policy page (`nl/c
 
 ## Privacy policy update (Epic 13, 8 October 2026)
 
-New Dutch rows and sentences in `content/pages/privacy-nl.json`: Google Tag Manager/Analytics (statistics, consent), cookie banner choice / "toestemmingsregistratie", hosting and server logs, the recipients rows (Google "EU en VS", STRATO), the exception in the transfer section ("Op één uitzondering na…"), the retention rows, the filled cookie table and the sentence linking to the cookiebeleid. Also the English heading change on the home page: "What ChargeNet Means for You" (Dutch counterpart unchanged: "Wat ChargeNet voor u betekent"), and the Dutch UI strings for two-factor authentication, the generic login error and "Tabel %d". Legal review of both languages: `docs/privacy.md`.
+New Dutch rows and sentences in `content/pages/privacy-nl.json`: Google Tag Manager/Analytics (statistics, consent), cookie banner choice / "toestemmingsregistratie", hosting and server logs, the recipients rows (Google "EU", STRATO), the exception in the transfer section ("Op één uitzondering na…"), the retention rows, the filled cookie table and the sentence linking to the cookiebeleid. Also the English heading change on the home page: "What ChargeNet Means for You" (Dutch counterpart unchanged: "Wat ChargeNet voor u betekent"), and the Dutch UI strings for two-factor authentication, the generic login error and "Tabel %d". Legal review of both languages: `docs/privacy.md`.
+
+## Modern look (home page and editor, Epic 14 follow-up)
+
+New Dutch texts: marquee lead-in "Samen bouwen aan het netwerk met", closing call to action "Laad voor de juiste prijs, op de juiste plaats, op het juiste moment." (the English one reads "Charge at the right price, in the right place, at the right time."), the Dutch editor labels of the Bento and Statement sections and variants (Gele accentkleur, Foto als achtergrond, Filmisch, Lopende band, Woorden lichten op tijdens het scrollen). Removed from the home page: the small eyebrow labels (Projects, Getting started, News, Get in touch) and the button "Learn More About Our Platform" (the Locations and Carriers pages stay linked from the two audience cards); the second English heading "What ChargeNet Means for You" is unchanged.
+
+## Graphic sections and footer (9 October 2026)
+
+New Dutch editor labels for the icon list (Icoonlijst, Tegels, Chips, Route) and the "Email" button label on contact cards ("E-mail"). Home content: the benefit texts, platform features and the steps of "Hoe begint u?" are the existing texts, now shown as tiles, chips and numbered journeys. The footer tagline "Keep charging ahead." stays English on Dutch pages on purpose (it is the brand line under the logo).
+
+## Team cards (about page)
+
+| Text                                    | Dutch     | Note                                                            |
+| --------------------------------------- | --------- | --------------------------------------------------------------- |
+| Read bio (disclosure on each team card) | Lees meer | New UI string; the person's name follows it for screen readers. |

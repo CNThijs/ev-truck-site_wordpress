@@ -1,0 +1,5 @@
+// Editor-only tweaks. Front-end styles (style.scss) also load in the editor.
+.icon-list__items > .block-editor-inner-blocks,
+.icon-list__items > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: contents;
+}

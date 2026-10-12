@@ -16,7 +16,7 @@ if ( '' === trim( $content ) ) {
 	return;
 }
 
-$chargenet_variant  = 'compact' === ( $attributes['variant'] ?? '' ) ? 'compact' : 'cards';
+$chargenet_variant  = in_array( $attributes['variant'] ?? '', array( 'compact', 'roster' ), true ) ? $attributes['variant'] : 'cards';
 $chargenet_title_id = chargenet_section_title_id( $attributes );
 
 chargenet_section_open(

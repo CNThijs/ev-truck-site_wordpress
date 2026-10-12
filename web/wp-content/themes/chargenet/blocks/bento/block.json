@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/bento",
+  "title": "Bento",
+  "category": "chargenet-sections",
+  "icon": "grid-view",
+  "description": "A mosaic of 3 to 6 cards of different sizes that always fills the grid without gaps: one large card, smaller ones around it. Each card has a title, text or a short list, an optional link and an optional photo.",
+  "keywords": ["bento", "grid", "cards", "mosaic", "features"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "headingLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "intro": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "providesContext": {
+    "chargenet/headingLevel": "headingLevel"
+  },
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "align": false,
+    "customClassName": false
+  },
+  "example": {
+    "attributes": {
+      "heading": "One platform for both sides"
+    },
+    "innerBlocks": [
+      {
+        "name": "chargenet/bento-item",
+        "attributes": {
+          "title": "Location owners",
+          "tone": "dark"
+        }
+      },
+      {
+        "name": "chargenet/bento-item",
+        "attributes": {
+          "title": "Fleet managers",
+          "tone": "accent"
+        }
+      },
+      {
+        "name": "chargenet/bento-item",
+        "attributes": {
+          "title": "One platform",
+          "tone": "light"
+        }
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

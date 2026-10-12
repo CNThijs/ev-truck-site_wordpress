@@ -10,7 +10,7 @@
 - `prefers-reduced-motion`: animations collapse to instant states; content is never hidden without JavaScript (`html.js` gates the start states). The card slider never moves by itself: it is a scrolling row with buttons and arrow keys.
 - Forms: labels tied to inputs, hints and errors linked with `aria-describedby`, errors announced (`role="alert"`) in a message above the form, focus moves to the first invalid field, nothing relies on colour alone, the same fields work without JavaScript, autocomplete attributes on name and email.
 - `lang`: `<html lang="en-US">` / `lang="nl-NL"` follows the page (Polylang). A passage in the other language inside a page must be wrapped in `lang="en"` or `lang="nl"` (use the HTML view of the block: `<span lang="en">…</span>`).
-- Tables from the editor are focusable regions with unique names and no empty header cells (`inc/accessibility.php`).
+- Tables from the editor wrap their text and never scroll sideways (no focusable scroll region needed) and have no empty header cells (`inc/accessibility.php`).
 - Tables, sliders and the cookie banner/panel are tested by axe in both states.
 - Target size: buttons and header controls are at least 44 px high (`2.75rem`); the WCAG 2.2 minimum is 24 × 24 px. Inline text links are smaller and rely on the 24 px spacing exception; verify on a phone (manual test 5).
 

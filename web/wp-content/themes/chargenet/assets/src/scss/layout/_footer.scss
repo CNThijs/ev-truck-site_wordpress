@@ -1,16 +1,101 @@
 @use '../mixins' as *;
 
 .site-footer {
-	padding-block: var(--space-section) var(--space-6);
-	background: var(--bg);
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+	padding-block: var(--space-section) 0;
+	background:
+		radial-gradient(60% 50% at 85% 0%, rgb(15 95 26 / 55%) 0%, transparent 70%), var(--bg);
 	color: var(--fg);
+
+	// A closing call to action in display type, above the columns.
+	&__cta {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-6);
+		align-items: flex-start;
+		margin-bottom: var(--space-9);
+		padding-bottom: var(--space-8);
+		border-bottom: 1px solid var(--border);
+	}
+
+	&__tagline {
+		max-width: none;
+		font-size: clamp(2.75rem, 1rem + 6.4vw, 7rem);
+		font-weight: var(--weight-bold);
+		letter-spacing: -0.045em;
+		line-height: 0.98;
+
+		span {
+			color: var(--accent);
+		}
+	}
+
+	&__cta .btn svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+
+	&__address {
+		display: flex;
+		gap: var(--space-3);
+		align-items: flex-start;
+	}
+
+	&__icon {
+		display: inline-flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: var(--radius-pill);
+		background: color-mix(in srgb, var(--accent) 16%, transparent);
+		color: var(--accent);
+
+		svg {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+	}
+
+	// The name in outline type along the bottom edge: decoration only.
+	&__mark {
+		max-width: none;
+		margin: var(--space-6) 0 -0.2em;
+		color: transparent;
+		font-size: clamp(4rem, 19vw, 22rem);
+		font-weight: var(--weight-bold);
+		letter-spacing: -0.06em;
+		line-height: 0.8;
+		text-align: center;
+		-webkit-text-stroke: 1px rgb(255 255 255 / 16%);
+		user-select: none;
+		pointer-events: none;
+
+		// Charges up from the bottom as the footer scrolls into view, like a battery filling.
+		@media (prefers-reduced-motion: no-preference) {
+			@supports (animation-timeline: view()) {
+				background: linear-gradient(
+					0deg,
+					var(--accent) var(--charge, 0%),
+					transparent var(--charge, 0%)
+				);
+				background-clip: text;
+				animation: footer-charge linear both;
+				animation-timeline: view();
+				animation-range: entry 10% cover 60%;
+			}
+		}
+	}
 
 	&__grid {
 		display: grid;
 		gap: var(--space-8) var(--space-7);
 
 		@include up(md) {
-			grid-template-columns: 1.4fr 1fr 1fr;
+			grid-template-columns: 1.6fr 1fr 1.2fr;
 		}
 	}
 
@@ -85,5 +170,17 @@
 		&:hover {
 			color: var(--fg);
 		}
+	}
+}
+
+@property --charge {
+	syntax: '<percentage>';
+	inherits: false;
+	initial-value: 0%;
+}
+
+@keyframes footer-charge {
+	to {
+		--charge: 100%;
 	}
 }

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/bento-item",
+  "title": "Bento Card",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/bento"],
+  "icon": "index-card",
+  "description": "One card of the mosaic: title, text or list, optional link and photo. The first card is the largest.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "tone": {
+      "type": "string",
+      "enum": ["light", "dark", "accent", "photo"],
+      "default": "light"
+    },
+    "icon": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "linkLabel": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "usesContext": ["chargenet/headingLevel"],
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

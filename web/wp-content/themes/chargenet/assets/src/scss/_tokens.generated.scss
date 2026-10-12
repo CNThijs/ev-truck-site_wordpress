@@ -45,13 +45,14 @@
 	--space-10: 8rem;
 	--space-gutter: clamp(1rem, 0.6667rem + 1.4815vw, 2rem);
 	--space-block: clamp(2rem, 1.3333rem + 2.963vw, 4rem);
-	--space-section: clamp(4rem, 2.6667rem + 5.9259vw, 8rem);
+	--space-section: clamp(8rem, 7.3333rem + 2.963vw, 10rem);
 	--container-narrow: 48rem;
 	--container-default: 75rem;
 	--container-wide: 90rem;
 	--radius-sm: 0.25rem;
 	--radius-md: 0.5rem;
 	--radius-lg: 1rem;
+	--radius-xl: 1.5rem;
 	--radius-pill: 9999px;
 	--shadow-sm: 0 1px 2px rgb(8 58 11 / 0.08);
 	--shadow-md: 0 4px 12px rgb(8 58 11 / 0.1);

@@ -18,7 +18,7 @@ if ( '' === $chargenet_title && '' === trim( wp_strip_all_tags( $chargenet_text 
 }
 
 $chargenet_level = max( 3, min( 4, (int) ( $block->context['chargenet/headingLevel'] ?? 2 ) + 1 ) );
-$chargenet_cards = 'cards' === ( $block->context['chargenet/gridVariant'] ?? 'cards' );
+$chargenet_cards = in_array( $block->context['chargenet/gridVariant'] ?? 'cards', array( 'cards', 'split' ), true );
 $chargenet_url   = (string) ( $attributes['url'] ?? '' );
 $chargenet_arrow = trim( wp_strip_all_tags( (string) ( $attributes['linkLabel'] ?? '' ) ) );
 $chargenet_class = 'feature-grid__item' . ( $chargenet_cards ? ' card' : '' ) . ( '' !== $chargenet_url ? ' has-link' : '' );

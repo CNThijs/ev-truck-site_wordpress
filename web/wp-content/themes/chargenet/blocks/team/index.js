@@ -31,6 +31,10 @@ registerBlockType(metadata, {
 							options={[
 								{ value: 'cards', label: __('Cards (portrait photos)', 'chargenet') },
 								{ value: 'compact', label: __('Compact (small round photos)', 'chargenet') },
+								{
+									value: 'roster',
+									label: __('Roster (one line per person, for 8 or more)', 'chargenet'),
+								},
 							]}
 							onChange={(value) => setAttributes({ variant: value })}
 						/>

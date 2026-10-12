@@ -136,6 +136,16 @@ function chargenet_gallery_sections(): array {
 					),
 					chargenet_gallery_button( 'Explore use cases' ) . chargenet_gallery_button( 'Contact us', 'secondary' )
 				),
+				'Cinematic, centred'              => $b(
+					'chargenet/hero',
+					array(
+						'variant' => 'cinematic',
+						'heading' => 'Affordable and reliable EV truck charging at your destination',
+						'intro'   => 'One platform for location owners and carriers: charge at the right price, in the right place, at the right time.',
+						'imageId' => $img[1] ?? 0,
+					),
+					chargenet_gallery_button( 'Explore use cases' ) . chargenet_gallery_button( 'Contact us', 'secondary' )
+				),
 				'Banner, strong overlay'          => $b(
 					'chargenet/hero',
 					array(
@@ -183,7 +193,7 @@ function chargenet_gallery_sections(): array {
 			'title'       => 'Feature Grid',
 			'description' => 'Icon, title and text items. Items with a link make the whole item clickable.',
 			'variants'    => array(
-				'Cards, 3 columns'            => $b(
+				'Cards, 3 columns'              => $b(
 					'chargenet/feature-grid',
 					array(
 						'sectionBackground' => 'paper',
@@ -193,7 +203,7 @@ function chargenet_gallery_sections(): array {
 					),
 					$benefits()
 				),
-				'Cards with links, 2 columns' => $b(
+				'Cards with links, 2 columns'   => $b(
 					'chargenet/feature-grid',
 					array(
 						'columns' => 2,
@@ -202,7 +212,7 @@ function chargenet_gallery_sections(): array {
 					$grid_item( 'building', 'For location owners', 'Sell unused charging capacity.', array( 'url' => '#' ) )
 					. $grid_item( 'truck', 'For carriers', 'Charge where your trucks already stop.', array( 'url' => '#' ) )
 				),
-				'Plain, 4 columns'            => $b(
+				'Plain, 4 columns'              => $b(
 					'chargenet/feature-grid',
 					array(
 						'variant' => 'plain',
@@ -214,7 +224,7 @@ function chargenet_gallery_sections(): array {
 					. $grid_item( 'trending-up', 'Growth', 'We grow with our partners.' )
 					. $grid_item( 'heart', 'Care', 'We look after sites and drivers.' )
 				),
-				'Numbered, dark'              => $b(
+				'Numbered, dark'                => $b(
 					'chargenet/feature-grid',
 					array(
 						'variant'           => 'numbered',
@@ -225,7 +235,253 @@ function chargenet_gallery_sections(): array {
 					. $grid_item( '', 'Excise duty', 'Diesel gets more expensive.' )
 					. $grid_item( '', 'ETS 2', 'A carbon price reaches road fuel.' )
 				),
-				'Empty (renders nothing)'     => $b( 'chargenet/feature-grid', array( 'heading' => 'No items' ) ),
+				'Split (heading stays in view)' => $b(
+					'chargenet/feature-grid',
+					array(
+						'variant' => 'split',
+						'heading' => 'What it means for you',
+						'intro'   => 'The heading stays on the left while the cards scroll on the right (wide screens).',
+					),
+					$benefits()
+				),
+				'Empty (renders nothing)'       => $b( 'chargenet/feature-grid', array( 'heading' => 'No items' ) ),
+			),
+		),
+		array(
+			'id'          => 'bento',
+			'title'       => 'Bento',
+			'description' => 'A mosaic of 3 to 6 cards that always fills the grid without gaps (2 cards sit side by side). The first card is the largest. Looks: light, dark green, yellow accent, photo.',
+			'variants'    => array(
+				'Five cards'                => $b(
+					'chargenet/bento',
+					array(
+						'sectionBackground' => 'paper',
+						'heading'           => 'Five cards, no gaps',
+					),
+					$b(
+						'chargenet/bento-item',
+						array(
+							'title'     => 'The large card',
+							'tone'      => 'photo',
+							'imageId'   => $img[1] ?? 0,
+							'url'       => '#',
+							'linkLabel' => 'Read more',
+						),
+						$p( 'The first card is the largest: a photo with text on a dark wash.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Dark card',
+							'tone'  => 'dark',
+						),
+						$p( 'Dark green with a yellow accent.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Accent card',
+							'tone'  => 'accent',
+						),
+						$p( 'Yellow, for one thing that must stand out.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Light card',
+							'tone'  => 'light',
+							'icon'  => 'zap',
+						),
+						$p( 'White with an icon.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Another light card',
+							'tone'  => 'light',
+							'icon'  => 'lock',
+						),
+						$p( 'The last two cards share the bottom row.' )
+					)
+				),
+				'Four cards'                => $b(
+					'chargenet/bento',
+					array( 'heading' => 'Four cards' ),
+					$b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'One',
+							'tone'  => 'dark',
+						),
+						$p( 'Large.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Two',
+							'tone'  => 'accent',
+						),
+						$p( 'Small.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Three',
+							'tone'  => 'light',
+						),
+						$p( 'Small.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Four',
+							'tone'  => 'light',
+						),
+						$p( 'The last card runs along the whole bottom.' )
+					)
+				),
+				'Two cards'                 => $b(
+					'chargenet/bento',
+					array(
+						'sectionBackground' => 'paper',
+						'heading'           => 'Two audiences',
+					),
+					$b(
+						'chargenet/bento-item',
+						array(
+							'title'   => 'Location managers',
+							'tone'    => 'photo',
+							'imageId' => $img[2] ?? 0,
+						),
+						$p( 'Two cards side by side, each as tall as its text.' )
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Fleet managers',
+							'tone'  => 'dark',
+						),
+						$p( 'The second card.' )
+					)
+				),
+				'Two cards with icon lists' => $b(
+					'chargenet/bento',
+					array(
+						'sectionBackground' => 'paper',
+						'heading'           => 'Tiles, chips and a journey',
+					),
+					$b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'Tiles and chips',
+							'tone'  => 'dark',
+						),
+						$b(
+							'chargenet/icon-list',
+							array(
+								'variant' => 'tiles',
+								'title'   => 'Key benefits',
+							),
+							$b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'key',
+									'title' => 'Access',
+									'text'  => 'Give partners access to your private charge points.',
+								)
+							)
+							. $b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'euro',
+									'title' => 'Pricing',
+									'text'  => 'Agree a price per kWh.',
+								)
+							)
+						)
+						. $b(
+							'chargenet/icon-list',
+							array(
+								'variant' => 'chips',
+								'title'   => 'Platform features',
+							),
+							$b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'bar-chart',
+									'title' => 'Dashboard',
+								)
+							)
+							. $b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'file-text',
+									'title' => 'Invoices',
+								)
+							)
+							. $b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'lock',
+									'title' => 'Access management',
+								)
+							)
+						)
+					)
+					. $b(
+						'chargenet/bento-item',
+						array(
+							'title' => 'A journey',
+							'tone'  => 'light',
+						),
+						$b(
+							'chargenet/icon-list',
+							array( 'variant' => 'journey' ),
+							$b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'users',
+									'title' => 'Register',
+									'text'  => 'Sign up and register your locations.',
+								)
+							)
+							. $b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'sliders',
+									'title' => 'Configure',
+									'text'  => 'Set up your charge points.',
+								)
+							)
+							. $b(
+								'chargenet/icon-list-item',
+								array(
+									'icon'  => 'euro',
+									'title' => 'Earn',
+									'text'  => 'Start earning.',
+								)
+							)
+						)
+					)
+				),
+				'Empty (renders nothing)'   => $b( 'chargenet/bento', array( 'heading' => 'No cards' ) ),
+			),
+		),
+		array(
+			'id'          => 'statement',
+			'title'       => 'Statement',
+			'description' => 'One large sentence. With the animation "Words light up while scrolling" the words go from 55% to full strength as the reader scrolls (AA contrast at every moment).',
+			'variants'    => array(
+				'Dark, scrubbed words'    => $b(
+					'chargenet/statement',
+					array(
+						'sectionBackground' => 'dark',
+						'animation'         => 'scrub-words',
+						'text'              => 'We bring locations with private charging infrastructure and EV fleets together on one platform.',
+					)
+				),
+				'Light'                   => $b( 'chargenet/statement', array( 'text' => 'A single sentence says it all: <strong>charge where you already stop.</strong>' ) ),
+				'Empty (renders nothing)' => $b( 'chargenet/statement' ),
 			),
 		),
 		array(
@@ -382,6 +638,39 @@ function chargenet_gallery_sections(): array {
 					. $person( 'Sam Sample', 'Support', array( 'email' => 'info@example.com' ) )
 					. $person( 'Robin Voorbeeld', 'Partnerships', array( 'email' => 'info@example.com' ) )
 				),
+				'Roster, eight advisors'  => $b(
+					'chargenet/team',
+					array(
+						'variant'           => 'roster',
+						'sectionBackground' => 'paper',
+						'heading'           => 'Our Board of Advisors',
+						'intro'             => 'Experienced people from logistics, energy and technology.',
+					),
+					implode(
+						'',
+						array_map(
+							static fn( array $a ): string => $person(
+								$a[0],
+								$a[1],
+								array(
+									'imageId'  => $a[2] ? ( $img[3] ?? 0 ) : 0,
+									'linkedin' => 'https://www.linkedin.com/',
+									'bio'      => $a[3],
+								)
+							),
+							array(
+								array( 'Alex Example', 'Former COO, Logistics Co', true, '' ),
+								array( 'Sam Sample', 'Director, Energy Partners', false, '' ),
+								array( 'Robin Voorbeeld', 'Partner, Mobility Fund', true, "Twenty years in fleet finance.\nAdvises on financing models." ),
+								array( 'Kim Testpersoon', 'CTO, Charge Systems', false, '' ),
+								array( 'Jan Proefpersoon', 'Chair, Transport Association', true, '' ),
+								array( 'Lotte Monster', 'Head of Sustainability, Retail Group', false, '' ),
+								array( 'Pim Voorbeeld', 'Investor', true, '' ),
+								array( 'Eva Sample', 'Professor, Smart Grids', false, '' ),
+							)
+						)
+					)
+				),
 				'Empty (renders nothing)' => $b( 'chargenet/team', array( 'heading' => 'No people' ) ),
 			),
 		),
@@ -390,12 +679,20 @@ function chargenet_gallery_sections(): array {
 			'title'       => 'Logo Strip',
 			'description' => 'Logos use the organisation name as alt text; a linked logo opens in a new tab. Empty until logos are added.',
 			'variants'    => array(
-				'Grayscale, light'        => $b(
+				'Grayscale, light'              => $b(
 					'chargenet/logo-strip',
 					array( 'heading' => 'Our partners' ),
 					$logo( 4, 'Partner one', array( 'url' => '#' ) ) . $logo( 5, 'Partner two', array( 'url' => '#' ) ) . $logo( 6, 'Partner three' ) . $logo( 4, 'Partner four' )
 				),
-				'Grayscale, dark'         => $b(
+				'Marquee (names in large type)' => $b(
+					'chargenet/logo-strip',
+					array(
+						'variant' => 'marquee',
+						'heading' => 'Building the network together with',
+					),
+					$b( 'chargenet/logo-item', array( 'name' => 'Partner one' ) ) . $b( 'chargenet/logo-item', array( 'name' => 'Partner two' ) ) . $b( 'chargenet/logo-item', array( 'name' => 'Partner three' ) ) . $b( 'chargenet/logo-item', array( 'name' => 'Partner four' ) ) . $b( 'chargenet/logo-item', array( 'name' => 'Partner five' ) )
+				),
+				'Grayscale, dark'               => $b(
 					'chargenet/logo-strip',
 					array(
 						'sectionBackground' => 'dark',
@@ -403,7 +700,7 @@ function chargenet_gallery_sections(): array {
 					),
 					$logo( 4, 'Funder one' ) . $logo( 5, 'Funder two' )
 				),
-				'Colour'                  => $b(
+				'Colour'                        => $b(
 					'chargenet/logo-strip',
 					array(
 						'variant'           => 'colour',
@@ -411,7 +708,7 @@ function chargenet_gallery_sections(): array {
 					),
 					$logo( 4, 'Partner one' ) . $logo( 5, 'Partner two' ) . $logo( 6, 'Partner three' )
 				),
-				'Empty (renders nothing)' => $b( 'chargenet/logo-strip', array( 'heading' => 'No logos yet' ) ),
+				'Empty (renders nothing)'       => $b( 'chargenet/logo-strip', array( 'heading' => 'No logos yet' ) ),
 			),
 		),
 		array(

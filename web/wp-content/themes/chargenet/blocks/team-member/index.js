@@ -85,14 +85,17 @@ registerBlockType(metadata, {
 						allowedFormats={[]}
 					/>
 					{bio.trim() && (
-						<div className="person__bio stack">
-							{bio
-								.split(/\r?\n+/)
-								.filter(Boolean)
-								.map((line) => (
-									<p key={line}>{line}</p>
-								))}
-						</div>
+						<details className="person__more" open>
+							<summary>{__('Read bio', 'chargenet')}</summary>
+							<div className="person__bio stack">
+								{bio
+									.split(/\r?\n+/)
+									.filter(Boolean)
+									.map((line) => (
+										<p key={line}>{line}</p>
+									))}
+							</div>
+						</details>
 					)}
 				</div>
 			</>

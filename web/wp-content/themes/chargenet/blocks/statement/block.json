@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/statement",
+  "title": "Statement",
+  "category": "chargenet-sections",
+  "icon": "format-quote",
+  "description": "One large sentence in wide type. With the animation \"Words light up while scrolling\" the words go from faint to full strength as the reader scrolls. Keep it to about 30 words.",
+  "keywords": ["statement", "mission", "quote", "big text"],
+  "textdomain": "chargenet",
+  "attributes": {
+    "text": { "type": "string", "default": "" }
+  },
+  "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
+  "example": {
+    "attributes": {
+      "sectionBackground": "dark",
+      "text": "We bring locations with private charging infrastructure and EV fleets together on one platform."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

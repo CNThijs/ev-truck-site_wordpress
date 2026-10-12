@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/icon-list-item",
+  "title": "Icon List Item",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/icon-list"],
+  "icon": "star-filled",
+  "description": "One item of an icon list: icon, title and optional text.",
+  "textdomain": "chargenet",
+  "attributes": {
+    "icon": { "type": "string", "default": "" },
+    "title": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" }
+  },
+  "usesContext": ["chargenet/headingLevel", "chargenet/iconListVariant"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

@@ -30,7 +30,7 @@ echo do_blocks( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 );
 ?>
 <article <?php post_class( 'section is-light post-single' ); ?>>
-	<div class="container container--narrow stack">
+	<div class="container stack">
 		<p class="post-single__byline">
 			<?php
 			/* translators: %s: author of the post, for example ChargeNet. */
@@ -42,22 +42,35 @@ echo do_blocks( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			echo esc_html( sprintf( __( '%d min read', 'chargenet' ), $chargenet_minutes ) );
 			?>
 		</p>
-		<?php if ( has_post_thumbnail() ) : ?>
-			<figure class="post-single__image">
-				<?php
-				echo chargenet_image( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes.
-					(int) get_post_thumbnail_id(),
-					array(
-						'size'       => 'large',
-						'sizes'      => '(min-width: 48rem) 48rem, 100vw',
-						'decorative' => true,
-					)
-				);
-				?>
-			</figure>
+		<?php
+		// The table of contents (added to the text by inc/blog.php) sits beside the featured image in one row.
+		ob_start();
+		the_content();
+		$chargenet_text = (string) ob_get_clean();
+		$chargenet_toc  = '';
+		if ( preg_match( '#^\s*(<nav class="post-toc".*?</nav>)#s', $chargenet_text, $chargenet_match ) ) {
+			$chargenet_toc  = $chargenet_match[1];
+			$chargenet_text = substr( $chargenet_text, strlen( $chargenet_match[0] ) );
+		}
+		$chargenet_image = '';
+		if ( has_post_thumbnail() ) {
+			$chargenet_image = '<figure class="post-single__image">' . chargenet_image(
+				(int) get_post_thumbnail_id(),
+				array(
+					'size'       => 'large',
+					'sizes'      => '(min-width: 48rem) 60vw, 100vw',
+					'decorative' => true,
+				)
+			) . '</figure>';
+		}
+		if ( '' !== $chargenet_image || '' !== $chargenet_toc ) :
+			?>
+			<div class="post-single__top<?php echo '' !== $chargenet_image && '' !== $chargenet_toc ? ' post-single__top--split' : ''; ?>">
+				<?php echo $chargenet_image . $chargenet_toc; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes; built above. ?>
+			</div>
 		<?php endif; ?>
 		<div class="post-single__content stack">
-			<?php the_content(); ?>
+			<?php echo $chargenet_text; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- the_content output. ?>
 		</div>
 		<?php chargenet_the_post_source(); ?>
 		<aside class="post-share" aria-labelledby="post-share-title">

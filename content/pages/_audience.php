@@ -28,19 +28,23 @@ function cn_audience_page( string $lang, array $c, callable $media ): string {
 		implode( '', array_map( 'cn_p', $c['pitch'] ) )
 	);
 
+	// Benefits: six cards that tile the grid, the large one on a photo.
+	$tones    = array( 'photo', 'light', 'accent', 'dark', 'light', 'light' );
 	$benefits = '';
-	foreach ( $c['benefits'] as $b ) {
+	foreach ( $c['benefits'] as $i => $b ) {
 		$benefits .= cn_block(
-			'chargenet/feature-grid-item',
+			'chargenet/bento-item',
 			array(
-				'icon'  => $b[0],
-				'title' => $b[1],
-				'text'  => $b[2],
-			)
+				'title'   => $b[1],
+				'tone'    => $tones[ $i ] ?? 'light',
+				'icon'    => $b[0],
+				'imageId' => 0 === $i ? $media( 'ccs2' ) : 0,
+			),
+			cn_p( $b[2] )
 		);
 	}
 	$out .= cn_block(
-		'chargenet/feature-grid',
+		'chargenet/bento',
 		array(
 			'animation' => 'stagger',
 			'heading'   => $c['benefits_h'],
@@ -81,11 +85,10 @@ function cn_audience_page( string $lang, array $c, callable $media ): string {
 	$out .= cn_block(
 		'chargenet/feature-grid',
 		array(
-			'variant'     => 'plain',
-			'columns'     => count( $c['claims'] ),
-			'animation'   => 'stagger',
-			'spaceBottom' => 'sm',
-			'heading'     => $c['cta_h'],
+			'variant'           => 'split',
+			'sectionBackground' => 'paper',
+			'animation'         => 'stagger',
+			'heading'           => $c['cta_h'],
 			'intro'       => $c['cta_t'],
 		),
 		$claims

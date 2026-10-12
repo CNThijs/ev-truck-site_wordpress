@@ -162,3 +162,39 @@ function chargenet_section_header( array $attributes, string $title_id ): void {
 	}
 	echo '</header>';
 }
+
+/**
+ * Whether the current page opens with a hero. Then the breadcrumb trail is printed inside that hero, so the
+ * background of the hero (the network map of a title band, or the photo) also runs behind the trail (see blocks/hero/render.php, template-parts/breadcrumbs.php).
+ *
+ * @return bool
+ */
+function chargenet_breadcrumbs_in_hero(): bool {
+	static $result = null;
+	if ( null !== $result ) {
+		return $result;
+	}
+	$result = false;
+	if ( is_singular( 'post' ) || is_category() || is_search() ) {
+		// These templates always open with a hero (content-single.php, category.php, search.php).
+		$result = true;
+		return $result;
+	}
+	$post = null;
+	if ( is_singular() ) {
+		$post = get_queried_object();
+	} elseif ( is_home() && (int) get_option( 'page_for_posts' ) ) {
+		$post = get_post( (int) get_option( 'page_for_posts' ) ); // The News page: its sections are that page's content.
+	}
+	if ( $post instanceof WP_Post ) {
+		foreach ( parse_blocks( $post->post_content ) as $block ) {
+			if ( empty( $block['blockName'] ) ) {
+				continue; // Whitespace between blocks.
+			}
+			$result = 'chargenet/hero' === $block['blockName']
+				&& '' !== trim( wp_strip_all_tags( (string) ( $block['attrs']['heading'] ?? '' ) ) );
+			break;
+		}
+	}
+	return $result;
+}

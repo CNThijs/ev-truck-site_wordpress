@@ -94,29 +94,37 @@ return array(
 			)
 		);
 
-		$out .= cn_block( 'chargenet/rich-text', array( 'animation' => 'fade-rise', 'heading' => $c['story_h'] ), implode( '', array_map( 'cn_p', $c['story'] ) ) );
-		$out .= cn_block( 'chargenet/rich-text', array( 'sectionBackground' => 'paper', 'animation' => 'fade-rise', 'heading' => $c['mission_h'] ), implode( '', array_map( 'cn_p', $c['mission'] ) ) );
+		// Our Story: the text beside a photo of the road it is about.
+		$out .= cn_block(
+			'chargenet/rich-text-image',
+			array(
+				'animation' => 'fade-rise',
+				'heading'   => $c['story_h'],
+				'imageId'   => $media( 'hero-highway' ),
+			),
+			implode( '', array_map( 'cn_p', $c['story'] ) )
+		);
 
+		// Our Mission: the mission itself as one large sentence, the how below it.
+		$out .= cn_block( 'chargenet/statement', array( 'sectionBackground' => 'dark', 'animation' => 'scrub-words', 'text' => $c['mission'][0] ) );
+		$out .= cn_block( 'chargenet/rich-text', array( 'sectionBackground' => 'paper', 'animation' => 'fade-rise', 'heading' => $c['mission_h'] ), cn_p( $c['mission'][1] ) );
+
+		// Our Values: five cards that tile the grid, the large one on a photo.
+		$tones  = array( 'photo', 'light', 'accent', 'light', 'dark' );
 		$values = '';
-		foreach ( $c['values'] as $v ) {
+		foreach ( $c['values'] as $i => $v ) {
 			$values .= cn_block(
-				'chargenet/feature-grid-item',
+				'chargenet/bento-item',
 				array(
-					'icon'  => $v[0],
-					'title' => $v[1],
-					'text'  => $v[2],
-				)
+					'title'   => $v[1],
+					'tone'    => $tones[ $i ],
+					'icon'    => $v[0],
+					'imageId' => 0 === $i ? $media( 'ccs2' ) : 0,
+				),
+				cn_p( $v[2] )
 			);
 		}
-		$out .= cn_block(
-			'chargenet/feature-grid',
-			array(
-				'animation' => 'stagger',
-				'columns'   => 3,
-				'heading'   => $c['values_h'],
-			),
-			$values
-		);
+		$out .= cn_block( 'chargenet/bento', array( 'animation' => 'stagger', 'heading' => $c['values_h'] ), $values );
 
 		$people = array(
 			array( 'Sebastiaan de Vries', 'CEO & CoFounder', 'person-seb', 'https://www.linkedin.com/in/sebastiaan-de-vries-chargenet/' ),
@@ -147,7 +155,34 @@ return array(
 			$cards
 		);
 
-		$out .= cn_block( 'chargenet/rich-text', array( 'animation' => 'fade-rise', 'heading' => $c['board_h'] ), cn_p( $c['board'] ) );
+		// Board of Advisors: the intro, then one slim row per advisor (eight fit in two rows). Add advisors here as
+		// array( name, role, LinkedIn URL, media key or '' ); nothing is printed until there is at least one.
+		$advisors = array();
+		$roster   = '';
+		foreach ( $advisors as $a ) {
+			$roster .= cn_block(
+				'chargenet/team-member',
+				array(
+					'name'     => $a[0],
+					'role'     => $a[1],
+					'linkedin' => $a[2],
+					'imageId'  => '' !== $a[3] ? $media( $a[3] ) : 0,
+				)
+			);
+		}
+		$out .= cn_block(
+			'chargenet/team',
+			array(
+				'variant'   => 'roster',
+				'animation' => 'stagger',
+				'heading'   => $c['board_h'],
+				'intro'     => $c['board'],
+			),
+			$roster
+		);
+		if ( '' === $roster ) {
+			$out .= cn_block( 'chargenet/rich-text', array( 'animation' => 'fade-rise', 'heading' => $c['board_h'] ), cn_p( $c['board'] ) );
+		}
 		$out .= cn_block(
 			'chargenet/cta-band',
 			array(

@@ -229,7 +229,7 @@
 				{
 					"slug": "section",
 					"name": "section",
-					"size": "clamp(4rem, 2.6667rem + 5.9259vw, 8rem)"
+					"size": "clamp(8rem, 7.3333rem + 2.963vw, 10rem)"
 				}
 			]
 		},
@@ -258,6 +258,7 @@
 				"sm": "0.25rem",
 				"md": "0.5rem",
 				"lg": "1rem",
+				"xl": "1.5rem",
 				"pill": "9999px"
 			},
 			"duration": {

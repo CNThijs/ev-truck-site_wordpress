@@ -1,19 +1,21 @@
-// Tables from the editor's table block (long legal text, news posts): scroll sideways inside the figure on narrow screens.
+// Tables from the editor's table block (long legal text, news posts): they always fit the column and wrap their text,
+// so there is never a sideways scrollbar.
 .wp-block-table {
-	overflow-x: auto;
 	margin: 0;
 
 	table {
 		width: 100%;
-		min-width: 36rem;
 		border-collapse: collapse;
 		font-size: var(--text-sm);
+		table-layout: auto;
 	}
 
 	th,
 	td {
 		padding: var(--space-2) var(--space-3);
 		border: 1px solid var(--border);
+		hyphens: auto;
+		overflow-wrap: anywhere;
 		text-align: left;
 		vertical-align: top;
 	}

@@ -30,6 +30,7 @@ registerBlockType(metadata, {
 							value={variant}
 							options={[
 								{ value: 'grayscale', label: __('Grayscale (colour on hover)', 'chargenet') },
+								{ value: 'marquee', label: __('Marquee (moving row)', 'chargenet') },
 								{ value: 'colour', label: __('Colour', 'chargenet') },
 							]}
 							onChange={(value) => setAttributes({ variant: value })}

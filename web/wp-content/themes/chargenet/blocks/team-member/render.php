@@ -17,6 +17,7 @@ if ( '' === $chargenet_name ) {
 	return;
 }
 
+$chargenet_variant  = (string) ( $block->context['chargenet/teamVariant'] ?? 'cards' );
 $chargenet_level    = max( 3, min( 4, (int) ( $block->context['chargenet/headingLevel'] ?? 2 ) + 1 ) );
 $chargenet_role     = trim( wp_strip_all_tags( (string) ( $attributes['role'] ?? '' ) ) );
 $chargenet_bio      = preg_split( '/\R+/', trim( (string) ( $attributes['bio'] ?? '' ) ), -1, PREG_SPLIT_NO_EMPTY );
@@ -47,22 +48,46 @@ foreach ( array_slice( false === $chargenet_words ? array() : $chargenet_words, 
 			<span class="person__initials" aria-hidden="true"><?php echo esc_html( $chargenet_initials ); ?></span>
 		<?php endif; ?>
 	</figure>
-	<h<?php echo (int) $chargenet_level; ?> class="person__name"><?php echo esc_html( $chargenet_name ); ?></h<?php echo (int) $chargenet_level; ?>>
+	<?php
+	// First name above the rest of the name: the text is cut at the first space (the space stays in the markup, so the
+	// accessible name still reads as one name).
+	$chargenet_name_parts = preg_split( '/\s+/', $chargenet_name, 2 );
+	?>
+	<h<?php echo (int) $chargenet_level; ?> class="person__name">
+		<span class="person__first"><?php echo esc_html( (string) $chargenet_name_parts[0] ); ?></span>
+		<?php if ( isset( $chargenet_name_parts[1] ) && '' !== $chargenet_name_parts[1] ) : ?>
+			<span class="person__last"><?php echo esc_html( $chargenet_name_parts[1] ); ?></span>
+		<?php endif; ?>
+	</h<?php echo (int) $chargenet_level; ?>>
 	<?php if ( '' !== $chargenet_role ) : ?>
 		<p class="person__role"><?php echo esc_html( $chargenet_role ); ?></p>
 	<?php endif; ?>
 	<?php if ( $chargenet_bio ) : ?>
-		<div class="person__bio stack">
-			<?php foreach ( $chargenet_bio as $chargenet_line ) : ?>
-				<p><?php echo esc_html( $chargenet_line ); ?></p>
-			<?php endforeach; ?>
-		</div>
+		<?php if ( 'compact' === $chargenet_variant ) : ?>
+			<div class="person__bio stack">
+				<?php foreach ( $chargenet_bio as $chargenet_line ) : ?>
+					<p><?php echo esc_html( $chargenet_line ); ?></p>
+				<?php endforeach; ?>
+			</div>
+		<?php else : ?>
+			<details class="person__more">
+				<summary>
+					<?php esc_html_e( 'Read bio', 'chargenet' ); ?>
+					<span class="visually-hidden"><?php echo esc_html( $chargenet_name ); ?></span>
+				</summary>
+				<div class="person__bio stack">
+					<?php foreach ( $chargenet_bio as $chargenet_line ) : ?>
+						<p><?php echo esc_html( $chargenet_line ); ?></p>
+					<?php endforeach; ?>
+				</div>
+			</details>
+		<?php endif; ?>
 	<?php endif; ?>
 	<?php if ( '' !== $chargenet_email || '' !== $chargenet_linkedin ) : ?>
 		<ul class="person__links" role="list">
 			<?php if ( '' !== $chargenet_email ) : ?>
 				<li>
-					<a class="person__link" href="<?php echo esc_url( 'mailto:' . $chargenet_email ); ?>">
+					<a class="person__link person__link--mail" data-label="<?php echo esc_attr__( 'Email', 'chargenet' ); ?>" href="<?php echo esc_url( 'mailto:' . $chargenet_email ); ?>">
 						<?php chargenet_the_icon( 'mail' ); ?>
 						<span class="visually-hidden">
 							<?php

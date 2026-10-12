@@ -14,6 +14,8 @@ const presets = {
 	draw: () => import('./presets/draw.js'),
 	counters: () => import('./presets/counters.js'),
 	'text-lines': () => import('./presets/text-lines.js'),
+	'scrub-words': () => import('./presets/scrub-words.js'),
+	'image-scale': () => import('./presets/image-scale.js'),
 	horizontal: () => import('./presets/horizontal.js'),
 };
 
@@ -69,7 +71,18 @@ async function start() {
 	}
 }
 
-start();
+// Start once the page has loaded and the browser is idle, so that the animation code (GSAP and the presets, about 46 KB)
+// never competes with the first paint and the hero image. Content below the first screen stays visible meanwhile
+// (html:not([data-motion]) hides only reveal targets that are not in the first section, and head.php releases them after 4 s).
+const begin = () =>
+	'requestIdleCallback' in window
+		? window.requestIdleCallback(start, { timeout: 1500 })
+		: setTimeout(start, 200);
+if (document.readyState === 'complete') {
+	begin();
+} else {
+	window.addEventListener('load', begin, { once: true });
+}
 
 // Re-run when the OS setting changes or when the Motion Lab asks (replay, simulated reduced motion).
 window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', start);

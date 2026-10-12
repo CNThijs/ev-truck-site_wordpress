@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "chargenet/icon-list",
+  "title": "Icon List",
+  "category": "chargenet-sections",
+  "parent": ["chargenet/bento-item", "chargenet/feature-column"],
+  "icon": "screenoptions",
+  "description": "A graphic list for inside a card: tiles (icon, title, text), chips (icon and short label) or a journey (numbered steps joined by a line).",
+  "textdomain": "chargenet",
+  "attributes": {
+    "variant": { "type": "string", "enum": ["tiles", "chips", "journey"], "default": "tiles" },
+    "title": { "type": "string", "default": "" }
+  },
+  "providesContext": { "chargenet/iconListVariant": "variant" },
+  "usesContext": ["chargenet/headingLevel"],
+  "supports": { "html": false, "reusable": false, "customClassName": false },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

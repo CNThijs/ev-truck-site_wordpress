@@ -189,40 +189,104 @@ return array(
 		$out = cn_block(
 			'chargenet/hero',
 			array(
-				'variant'   => 'campaign',
+				'variant'   => 'cinematic',
 				'animation' => 'parallax',
 				'heading'   => $c['hero_h'],
 				'intro'     => $c['hero_t'],
-				'imageId'   => $media( 'hero-bg' ),
-				'coverId'   => $media( 'hero-app' ),
-				'coverAlt'  => 'en' === $lang ? 'ChargeNet Driver App' : 'ChargeNet Driver App',
+				'imageId'   => $media( 'hero-truck' ),
 			),
 			cn_button( $c['hero_b1'], '#features' ) . cn_button( $c['hero_b2'], '#contact', 'secondary' )
 		);
 
-		// What ChargeNet does for you: the two audiences side by side.
-		$column = static fn( array $c, string $t, string $tag, array $b, array $f, string $l, string $url ): string => cn_block(
-			'chargenet/feature-column',
+		// Partners that appear on the site (project cards and news): a slow typographic marquee under the hero.
+		$partners = array( 'Millenaar van Schaik', 'Schiphol', 'Volta Energy', 'AVIA Volt', 'Brankenhoff', 'Unitial', 'Maxem', 'Den Hartog', 'Equans E-Mobility', 'LEAP24' );
+		$names    = '';
+		foreach ( $partners as $partner ) {
+			$names .= cn_block( 'chargenet/logo-item', array( 'name' => $partner ) );
+		}
+		$out .= cn_block(
+			'chargenet/logo-strip',
+			array(
+				'variant'     => 'marquee',
+				'spaceTop'    => 'md',
+				'spaceBottom' => 'md',
+				'heading'     => 'en' === $lang ? 'Building the network together with' : 'Samen bouwen aan het netwerk met',
+				'headingLevel' => 2,
+			),
+			$names
+		);
+
+		// One sentence in display type; the words light up while scrolling.
+		$out .= cn_block(
+			'chargenet/statement',
+			array(
+				'sectionBackground' => 'dark',
+				'animation'         => 'scrub-words',
+				'text'              => $c['f_t'],
+			)
+		);
+
+		// Graphic building blocks for inside the cards: tiles with an icon, chips with an icon, and a numbered journey.
+		$tiles   = static function ( string $title, array $items, array $icons ): string {
+			$out = '';
+			foreach ( $items as $i => $item ) {
+				$out .= cn_block(
+					'chargenet/icon-list-item',
+					array(
+						'icon'  => $icons[ $i ] ?? '',
+						'title' => $item[0],
+						'text'  => $item[1] ?? '',
+					)
+				);
+			}
+			return cn_block( 'chargenet/icon-list', array( 'variant' => 'tiles', 'title' => $title ), $out );
+		};
+		$chips   = static function ( string $title, array $items, array $icons ): string {
+			$out = '';
+			foreach ( $items as $i => $item ) {
+				$out .= cn_block( 'chargenet/icon-list-item', array( 'icon' => $icons[ $i ] ?? '', 'title' => $item ) );
+			}
+			return cn_block( 'chargenet/icon-list', array( 'variant' => 'chips', 'title' => $title ), $out );
+		};
+		$journey = static function ( array $steps, array $icons ): string {
+			$out = '';
+			foreach ( $steps as $i => $step ) {
+				$out .= cn_block(
+					'chargenet/icon-list-item',
+					array(
+						'icon'  => $icons[ $i ] ?? '',
+						'title' => $step[0],
+						'text'  => $step[1],
+					)
+				);
+			}
+			return cn_block( 'chargenet/icon-list', array( 'variant' => 'journey' ), $out );
+		};
+
+		// What ChargeNet does for you: the two audiences as two large cards (a photo card and a dark card).
+		$audience = static fn( array $c, string $t, string $tag, array $b, array $f, string $l, string $url, string $tone, int $image, array $bi, array $fi ): string => cn_block(
+			'chargenet/bento-item',
 			array(
 				'title'     => $t,
+				'tone'      => $tone,
+				'imageId'   => $image,
 				'url'       => $url,
 				'linkLabel' => '' !== $url ? $l : '',
 			),
-			cn_p( $tag )
-			. cn_h( $c['benefits'] ) . cn_list( array_map( static fn( array $i ): string => cn_lead( $i[0], $i[1] ), $b ) )
-			. cn_h( $c['features'] ) . cn_list( $f )
+			cn_p( '<strong>' . $tag . '</strong>' )
+			. $tiles( $c['benefits'], $b, $bi )
+			. $chips( $c['features'], $f, $fi )
 		);
 		$out .= cn_block(
-			'chargenet/feature-columns',
+			'chargenet/bento',
 			array(
 				'sectionBackground' => 'paper',
 				'animation'         => 'fade-rise',
 				'anchor'            => 'features',
 				'heading'           => $c['f_h'],
-				'intro'             => $c['f_t'],
 			),
-			$column( $c, $c['loc_t'], $c['loc_tag'], $c['loc_b'], $c['loc_f'], $c['loc_l'], $link( 'locations' ) )
-			. $column( $c, $c['fleet_t'], $c['fleet_tag'], $c['fleet_b'], $c['fleet_f'], $c['fleet_l'], $link( 'carriers' ) )
+			$audience( $c, $c['loc_t'], $c['loc_tag'], $c['loc_b'], $c['loc_f'], $c['loc_l'], $link( 'locations' ), 'photo', $media( 'mvs-testing' ), array( 'key', 'lock', 'euro', 'file-text' ), array( 'layers', 'key', 'trending-up', 'euro', 'bar-chart', 'file-text' ) )
+			. $audience( $c, $c['fleet_t'], $c['fleet_tag'], $c['fleet_b'], $c['fleet_f'], $c['fleet_l'], $link( 'carriers' ), 'photo', $media( 'project-destination' ), array( 'plug', 'wallet', 'euro', 'file-text' ), array( 'truck', 'smartphone', 'bar-chart', 'euro', 'file-text', 'check-circle' ) )
 		);
 
 		// Why ChargeNet: four facts that count up, then what the platform does.
@@ -261,69 +325,62 @@ return array(
 		$out .= cn_block(
 			'chargenet/feature-grid',
 			array(
+				'variant'     => 'split',
 				'animation'   => 'stagger',
-				'spaceBottom' => '' !== $link( 'locations' ) ? 'sm' : 'lg',
-				'heading'     => $c['d_h'],
+								'heading'     => $c['d_h'],
 				'intro'       => $c['d_t'],
 			),
 			$does
 		);
-		if ( '' !== $link( 'locations' ) ) {
-			$out .= cn_block( 'chargenet/rich-text', array( 'spaceTop' => 'none' ), cn_button( $c['platform_l'], $link( 'locations' ), 'secondary' ) );
-		}
 
-		// Projects: cards link to the project pages once those pages exist.
+		// Projects: a bento of four photo cards; each links to its project page once that page exists.
 		$cards = '';
-		foreach ( $c['projects'] as $p ) {
+		foreach ( $c['projects'] as $i => $p ) {
 			$url    = $link( $p[1] );
 			$cards .= cn_block(
-				'chargenet/slide-card',
+				'chargenet/bento-item',
 				array(
-					'imageId'   => $media( $p[0] ),
 					'title'     => $p[2],
-					'text'      => $p[3],
-					'tags'      => $p[4],
+					'tone'      => 'photo',
+					'imageId'   => $media( $p[0] ),
 					'url'       => $url,
 					'linkLabel' => '' !== $url ? $c['more'] : '',
-				)
+				),
+				cn_p( $p[3] ) . ( 0 === $i ? cn_p( '<small>' . esc_html( $p[4] ) . '</small>' ) : '' )
 			);
 		}
 		$out .= cn_block(
-			'chargenet/card-slider',
+			'chargenet/bento',
 			array(
-				'sectionBackground' => 'paper',
-				'anchor'            => 'projects',
-				'eyebrow'           => $c['p_e'],
-				'heading'           => $c['p_h'],
-				'intro'             => $c['p_t'],
+				'animation' => 'image-scale',
+				'anchor'    => 'projects',
+				'heading'   => $c['p_h'],
+				'intro'   => $c['p_t'],
 			),
 			$cards
 		);
 
-		// How to get started: one column per audience, steps as a numbered list, then the app badges.
-		$start = static function ( array $g, string $url, string $label ): string {
-			$steps = array_map( static fn( array $s ): string => '<strong>' . $s[0] . '</strong><br>' . $s[1], $g[2] );
-			return cn_block(
-				'chargenet/feature-column',
-				array(
-					'title'     => $g[0],
-					'url'       => $url,
-					'linkLabel' => '' !== $url ? $label : '',
-				),
-				cn_p( $g[1] ) . cn_list( $steps, true )
-			);
-		};
-		$out .= cn_block(
-			'chargenet/feature-columns',
+		// How to get started: one card per audience with a numbered journey, then the app badges.
+		$start = static fn( array $g, string $url, string $label, string $tone, array $icons ) => cn_block(
+			'chargenet/bento-item',
 			array(
-				'animation'   => 'fade-rise',
-				'anchor'      => 'getStarted',
-				'spaceBottom' => 'sm',
-				'eyebrow'     => $c['g_e'],
-				'heading'     => $c['g_h'],
-				'intro'       => $c['g_t'],
+				'title'     => $g[0],
+				'tone'      => $tone,
+				'url'       => $url,
+				'linkLabel' => '' !== $url ? $label : '',
 			),
-			$start( $c['g_loc'], $link( 'locations' ), $c['loc_l'] ) . $start( $c['g_car'], $link( 'carriers' ), $c['fleet_l'] )
+			cn_p( '<strong>' . $g[1] . '</strong>' ) . $journey( $g[2], $icons )
+		);
+		$out .= cn_block(
+			'chargenet/bento',
+			array(
+				'animation' => 'fade-rise',
+				'anchor'    => 'getStarted',
+				'heading'   => $c['g_h'],
+				'intro'     => $c['g_t'],
+			),
+			$start( $c['g_loc'], $link( 'locations' ), $c['loc_l'], 'light', array( 'users', 'sliders', 'euro' ) )
+			. $start( $c['g_car'], $link( 'carriers' ), $c['fleet_l'], 'dark', array( 'link', 'map-pin', 'zap' ) )
 		);
 		$out .= cn_app_badges( $lang, $media );
 
@@ -333,11 +390,20 @@ return array(
 			array(
 				'animation' => 'stagger',
 				'anchor'    => 'blog',
-				'eyebrow'   => $c['n_e'],
 				'heading'   => $c['n_h'],
 				'intro'     => $c['n_t'],
 				'linkLabel' => $c['n_l'],
 			)
+		);
+
+		// Closing call to action in display type, then the contact cards.
+		$out .= cn_block(
+			'chargenet/cta-band',
+			array(
+				'heading' => 'en' === $lang ? 'Charge at the right price, in the right place, at the right time.' : 'Laad voor de juiste prijs, op de juiste plaats, op het juiste moment.',
+				'anchor'  => 'contact',
+			),
+			cn_button( $c['hero_b2'], $link( 'contact' ) !== '' ? $link( 'contact' ) : '#contact-info' )
 		);
 
 		return $out . cn_contact_team( $lang, $media );

@@ -54,7 +54,7 @@ $chargenet_image = chargenet_image(
 				<a class="link-arrow" href="<?php echo esc_url( $chargenet_item['source_url'] ); ?>" target="_blank" rel="noopener">
 					<?php
 					/* translators: %s: website of the original source, for example linkedin.com. */
-					echo esc_html( sprintf( __( 'Read the original on %s', 'chargenet' ), $chargenet_item['source_host'] ) );
+					echo esc_html( sprintf( __( 'Read more on %s', 'chargenet' ), $chargenet_item['source_host'] ) );
 					?>
 					<span class="visually-hidden"><?php esc_html_e( '(opens in a new tab)', 'chargenet' ); ?></span>
 				</a>

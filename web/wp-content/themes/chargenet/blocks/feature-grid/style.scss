@@ -4,6 +4,17 @@
 .section-intro {
 	max-width: var(--container-narrow);
 	margin-bottom: var(--space-block);
+
+	// Section titles are display type: larger, tighter.
+	h2 {
+		font-size: clamp(2rem, 1.2rem + 2.4vw, 3.25rem);
+		letter-spacing: -0.03em;
+		line-height: 1.08;
+	}
+
+	.t-lead {
+		font-size: var(--text-lg);
+	}
 }
 
 .feature-grid {
@@ -121,5 +132,36 @@
 		font-size: var(--text-3xl);
 		font-weight: var(--weight-light);
 		line-height: 1;
+	}
+}
+
+// Split: on wide screens the heading stays in view on the left (position: sticky, no JavaScript) while the cards scroll on the
+// right. Below that it is the normal stacked grid.
+.feature-grid--split {
+	@include up(lg) {
+		display: grid;
+		grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+		gap: var(--space-8);
+		align-items: start;
+
+		> * + * {
+			margin-top: 0;
+		}
+
+		.section-intro {
+			position: sticky;
+			top: 7rem;
+			margin-bottom: 0;
+		}
+
+		.section-intro h2,
+		.section-intro h3 {
+			font-size: var(--text-4xl);
+		}
+
+		.feature-grid__list {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: var(--space-5);
+		}
 	}
 }

@@ -108,12 +108,10 @@ function cn_lead( string $lead, string $text ): string {
 function cn_contact_team( string $lang, callable $media ): string {
 	$t      = array(
 		'en' => array(
-			'eyebrow' => 'Get In Touch',
 			'heading' => 'Contact Us Today',
 			'intro'   => 'Have questions about our ChargeNet network? Reach out to our team and let us discuss how we can help you to electrify your logistics.',
 		),
 		'nl' => array(
-			'eyebrow' => 'Neem Contact Op',
 			'heading' => 'Neem vandaag contact op',
 			'intro'   => 'Of u nu een locatiemanager bent die zijn laadinfrastructuur wil geldelijker maken of een wagenpark manager die op zoek is naar betrouwbare laadoplossingen: wij maken het u gemakkelijk om aan de slag te gaan.',
 		),
@@ -142,7 +140,6 @@ function cn_contact_team( string $lang, callable $media ): string {
 			'sectionBackground' => 'paper',
 			'animation'         => 'fade-rise',
 			'anchor'            => 'contact-info',
-			'eyebrow'           => $t['eyebrow'],
 			'heading'           => $t['heading'],
 			'intro'             => $t['intro'],
 		),

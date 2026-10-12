@@ -5,11 +5,15 @@
   "title": "Logo Strip",
   "category": "chargenet-sections",
   "icon": "images-alt2",
-  "description": "A row of partner, funder or customer logos, each optionally linked. Variants: grayscale and colour.",
+  "description": "A row of partner, funder or customer logos, each optionally linked. Variants: grayscale, colour and marquee (a slowly moving row; items without a logo show their name in large type).",
   "keywords": ["logos", "partners", "clients", "funders", "brands"],
   "textdomain": "chargenet",
   "attributes": {
-    "variant": { "type": "string", "enum": ["grayscale", "colour"], "default": "grayscale" },
+    "variant": {
+      "type": "string",
+      "enum": ["grayscale", "colour", "marquee"],
+      "default": "grayscale"
+    },
     "eyebrow": { "type": "string", "default": "" },
     "heading": { "type": "string", "default": "" },
     "headingLevel": { "type": "number", "default": 2 },

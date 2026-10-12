@@ -12,6 +12,22 @@ return array(
 			'nl' => '',
 		),
 	),
+	'hero-truck'          => array(
+		'file'  => 'bg-truck-HD-hero.jpg',
+		'title' => 'Truck on a motorway (hero background, cut from the original image with the truck in the lower third)',
+		'alt'   => array(
+			'en' => '',
+			'nl' => '',
+		),
+	),
+	'hero-highway'        => array(
+		'file'  => 'hero-highway.jpg',
+		'title' => 'Aerial view of a truck on a forest highway (hero background)',
+		'alt'   => array(
+			'en' => '',
+			'nl' => '',
+		),
+	),
 	'hero-app'            => array(
 		'file'  => 'ChargeNet-Driver-App.png',
 		'title' => 'ChargeNet Driver App',
@@ -63,6 +79,14 @@ return array(
 	'project-destination' => array(
 		'file'  => 'ChargeNetMvS.jpg',
 		'title' => 'Project: destination charging',
+		'alt'   => array(
+			'en' => '',
+			'nl' => '',
+		),
+	),
+	'mvs-testing'         => array(
+		'file'  => 'MvStesting01.jpg',
+		'title' => 'Pilot testing at MvS',
 		'alt'   => array(
 			'en' => '',
 			'nl' => '',

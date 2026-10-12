@@ -90,6 +90,15 @@ Run `bin/check-host.php` on STRATO over SSH (`wp eval-file check-host.php`, see 
 - **Rules:** `docs/htaccess.md` (compression, browser caching, AVIF type, direct serving of cached pages). Not yet tested on STRATO.
 - **Images:** STRATO serves `.avif` when the file type is known; the rules add `AddType image/avif .avif`. Whether WordPress can also _create_ AVIF there depends on the server's image library: `bin/check-host.php` shows it. If not, the existing filter in `inc/image.php` falls back to WebP by itself, no change needed.
 
+## Modern look (9 October 2026): measured effect
+
+The modern redesign (floating header, cinematic hero, bento mosaics, statement, marquee) was measured against the budget, with these results (median of 5, same method, `docs/perf-after-modern.json`): Home LCP 2148 ms (was 2286), Carriers 1971, Locations 1959, Blog post 1358, Landing 1659; CLS 0 and TBT 0 everywhere; Home weighs 154 KB (hero photo as 20 KB AVIF at phone size).
+
+Two things were needed to stay under the 2500 ms budget, and both stay:
+
+- **Animation code starts after the page has loaded and the browser is idle** (`motion/core.js`, `requestIdleCallback`, at most 1.5 s). Before, the 46 KB GSAP runtime competed with the first paint; in the lab simulation this added about 500 ms to Home LCP (the real browser painted at the same time, so the effect was in the simulation, but it is a free improvement for slow phones). Reveal targets below the first screen stay hidden by CSS until it starts; the 4-second safety net in `head.php` is unchanged.
+- **Bento photo cards load their photo 300 px before it scrolls into view** (`assets/src/js/lazy.js`, `data-lazy-*` attributes, `<noscript>` copy without JavaScript). Native lazy loading fetched them with the page on tall phone screens (+380 ms LCP in the simulation).
+
 ## Still to do
 
 Page cache, compression and cache headers (waiting for the hosting answers: memory limit, cron, `.htaccess`, Brotli, WebP/AVIF in `phpinfo()`). Facades for video and maps: the site has none yet; add them with the first embed.

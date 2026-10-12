@@ -18,7 +18,6 @@ chargenet_section_open(
 	$attributes,
 	array(
 		'name'       => 'rich-text',
-		'container'  => 'narrow',
 		'labelledby' => $chargenet_title_id,
 	)
 );

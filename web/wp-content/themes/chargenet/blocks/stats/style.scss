@@ -62,7 +62,7 @@
 
 	&__value {
 		color: var(--accent);
-		font-size: var(--text-5xl);
+		font-size: clamp(3.25rem, 1.5rem + 5vw, 6rem);
 		font-variant-numeric: tabular-nums;
 		font-weight: var(--weight-light);
 		letter-spacing: -0.03em;

@@ -43,7 +43,10 @@ chargenet_section_open(
 		<form class="post-filter__search" role="search" method="get" action="<?php echo esc_url( function_exists( 'pll_home_url' ) ? pll_home_url() : home_url( '/' ) ); ?>">
 			<label class="visually-hidden" for="<?php echo esc_attr( $chargenet_input_id ); ?>"><?php esc_html_e( 'Search the site', 'chargenet' ); ?></label>
 			<input class="input" type="search" id="<?php echo esc_attr( $chargenet_input_id ); ?>" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php esc_attr_e( 'Search the site', 'chargenet' ); ?>">
-			<button type="submit" class="btn btn--secondary"><?php esc_html_e( 'Search', 'chargenet' ); ?></button>
+			<button type="submit" class="post-filter__submit">
+				<?php chargenet_the_icon( 'search' ); ?>
+				<span class="visually-hidden"><?php esc_html_e( 'Search', 'chargenet' ); ?></span>
+			</button>
 		</form>
 	<?php endif; ?>
 </div>

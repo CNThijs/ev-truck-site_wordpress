@@ -31,6 +31,10 @@ registerBlockType(metadata, {
 								{ value: 'cards', label: __('Cards', 'chargenet') },
 								{ value: 'plain', label: __('Plain (no boxes)', 'chargenet') },
 								{ value: 'numbered', label: __('Numbered', 'chargenet') },
+								{
+									value: 'split',
+									label: __('Split (heading stays while cards scroll)', 'chargenet'),
+								},
 							]}
 							onChange={(value) => setAttributes({ variant: value })}
 						/>

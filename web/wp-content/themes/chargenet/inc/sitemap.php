@@ -72,7 +72,7 @@ function chargenet_sitemap_entries( string $lang ): array {
 		)
 	);
 	foreach ( is_wp_error( $terms ) ? array() : $terms as $term ) {
-		$newest     = get_posts(
+		$newest = get_posts(
 			array(
 				'cat'              => $term->term_id,
 				'lang'             => $lang,
@@ -82,6 +82,9 @@ function chargenet_sitemap_entries( string $lang ): array {
 				'suppress_filters' => false,
 			)
 		);
+		if ( ! $newest ) {
+			continue; // No published post in this language: empty archive, no lastmod, not for the sitemap.
+		}
 		$alternates = array();
 		foreach ( pll_get_term_translations( $term->term_id ) as $code => $id ) {
 			$link = get_term_link( (int) $id, 'category' );
@@ -91,7 +94,7 @@ function chargenet_sitemap_entries( string $lang ): array {
 		}
 		$entries[] = array(
 			'loc'        => (string) get_term_link( $term ),
-			'lastmod'    => $newest ? mysql2date( 'c', $newest[0]->post_modified_gmt . ' +0000', false ) : '',
+			'lastmod'    => mysql2date( 'c', $newest[0]->post_modified_gmt . ' +0000', false ),
 			'alternates' => $alternates,
 			'default'    => $default,
 		);

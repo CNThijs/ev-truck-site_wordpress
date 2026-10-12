@@ -1,0 +1,273 @@
+@use '../../assets/src/scss/mixins' as *;
+
+// Graphic lists for inside cards. Colours come from the card (currentcolor, --accent, --fg-muted), so the same list reads
+// on a light, dark, accent or photo card.
+.icon-list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+
+	&__title {
+		margin-top: var(--space-3);
+		color: var(--fg);
+		font-size: var(--text-lg);
+	}
+
+	&__items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.icon-item {
+	min-width: 0;
+
+	&__icon {
+		display: inline-flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: var(--radius-pill);
+		background: color-mix(in srgb, var(--accent) 18%, transparent);
+		color: var(--accent);
+
+		svg {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+	}
+
+	&__title {
+		color: var(--fg);
+		font-size: var(--text-base);
+		font-weight: var(--weight-bold);
+		letter-spacing: -0.005em;
+		line-height: 1.25;
+	}
+
+	&__text {
+		margin: 0;
+		color: var(--fg-muted);
+		font-size: var(--text-sm);
+		line-height: 1.5;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
+		min-width: 0;
+	}
+}
+
+// Tiles: a small card per item, icon on top.
+.icon-list--tiles .icon-list__items {
+	display: grid;
+	gap: var(--space-3);
+
+	@include up(sm) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+.icon-list--tiles .icon-item {
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-3);
+	padding: var(--space-4);
+	border: 1px solid color-mix(in srgb, currentcolor 16%, transparent);
+	border-radius: var(--radius-lg);
+	background: color-mix(in srgb, currentcolor 7%, transparent);
+
+	@include motion(transform, border-color, background-color);
+
+	&:hover {
+		border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+		background: color-mix(in srgb, currentcolor 11%, transparent);
+		transform: translateY(-3px);
+	}
+
+	// Two columns of tiles: the icon sits on top. On a phone (one column) it sits beside the text, which keeps the card short.
+	@include up(sm) {
+		flex-direction: column;
+	}
+}
+
+// Chips: pills with a small icon.
+.icon-list--chips .icon-list__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2);
+}
+
+.icon-list--chips .icon-item {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2);
+	padding: var(--space-1) var(--space-4) var(--space-1) var(--space-1);
+	border: 1px solid color-mix(in srgb, currentcolor 18%, transparent);
+	border-radius: var(--radius-pill);
+	background: color-mix(in srgb, currentcolor 7%, transparent);
+
+	@include motion(transform, border-color);
+
+	&:hover {
+		border-color: var(--accent);
+		transform: translateY(-2px);
+	}
+
+	.icon-item__icon {
+		width: 2rem;
+		height: 2rem;
+
+		svg {
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+
+	.icon-item__title {
+		font-size: var(--text-sm);
+		font-weight: var(--weight-semibold);
+	}
+}
+
+// Journey: numbered steps on a vertical line. The number is a CSS counter on a real ordered list.
+.icon-list--journey .icon-list__items {
+	display: grid;
+	gap: var(--space-5);
+	counter-reset: journey;
+}
+
+.icon-list--journey .icon-item {
+	position: relative;
+	display: grid;
+	grid-template-columns: 3.5rem minmax(0, 1fr);
+	gap: var(--space-4);
+	counter-increment: journey;
+
+	// The line that joins a step to the next one.
+	&:not(:last-child)::before {
+		content: '';
+		position: absolute;
+		top: 3.5rem;
+		bottom: calc(-1 * var(--space-5));
+		left: 1.75rem;
+		width: 2px;
+		margin-left: -1px;
+		background: repeating-linear-gradient(180deg, var(--accent) 0 6px, transparent 6px 12px);
+		opacity: 0.7;
+	}
+
+	.icon-item__icon {
+		position: relative;
+		width: 3.5rem;
+		height: 3.5rem;
+		border: 2px solid var(--accent);
+		background: color-mix(in srgb, var(--accent) 14%, transparent);
+
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		// The step number, as a small badge on the circle.
+		&::after {
+			content: counter(journey);
+			position: absolute;
+			top: -0.35rem;
+			right: -0.35rem;
+			display: grid;
+			place-items: center;
+			width: 1.4rem;
+			height: 1.4rem;
+			border-radius: var(--radius-pill);
+			background: var(--accent);
+			color: var(--on-accent);
+			font-size: 0.75rem;
+			font-weight: var(--weight-bold);
+			line-height: 1;
+		}
+	}
+
+	.icon-item__body {
+		padding-top: var(--space-2);
+	}
+
+	.icon-item__title {
+		font-size: var(--text-lg);
+	}
+
+	.icon-item__text {
+		font-size: var(--text-base);
+	}
+}
+
+// Hover: the icon of a tile fills with the accent, like a connector clicking in.
+.icon-list--tiles .icon-item__icon {
+	@include motion(background-color, color, transform);
+}
+
+.icon-list--tiles .icon-item:hover .icon-item__icon {
+	background: var(--accent);
+	color: var(--on-accent);
+	transform: rotate(-6deg) scale(1.08);
+}
+
+// Scroll-driven enhancement, no JavaScript: tiles rise in one by one, the journey line charges up as you scroll and each
+// number pops in. Without support or with reduced motion the list is simply static.
+@media (prefers-reduced-motion: no-preference) {
+	@supports (animation-timeline: view()) {
+		@keyframes icon-list-rise {
+			from {
+				opacity: 0;
+				transform: translateY(1.25rem);
+			}
+		}
+
+		@keyframes icon-list-charge {
+			from {
+				transform: scaleY(0);
+			}
+		}
+
+		@keyframes icon-list-pop {
+			from {
+				transform: scale(0.6);
+			}
+		}
+
+		.icon-list--tiles .icon-item,
+		.icon-list--chips .icon-item {
+			animation: icon-list-rise linear both;
+			animation-timeline: view();
+			animation-range: entry 0% entry 70%;
+		}
+
+		.icon-list--journey .icon-item:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			top: 3.5rem;
+			bottom: calc(-1 * var(--space-5));
+			left: 1.75rem;
+			width: 4px;
+			margin-left: -2px;
+			border-radius: 2px;
+			background: var(--accent);
+			box-shadow: 0 0 0.75rem color-mix(in srgb, var(--accent) 60%, transparent);
+			transform-origin: top;
+			animation: icon-list-charge linear both;
+			animation-timeline: view();
+			animation-range: entry 40% cover 60%;
+		}
+
+		.icon-list--journey .icon-item__icon {
+			animation: icon-list-pop linear both;
+			animation-timeline: view();
+			animation-range: entry 0% entry 60%;
+		}
+	}
+}

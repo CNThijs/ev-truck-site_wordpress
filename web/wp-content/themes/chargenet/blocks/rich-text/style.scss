@@ -1,4 +1,15 @@
 .rich-text {
+	// Headings, paragraphs, lists and tables all use the full width of the container, left-aligned with the page
+	// header and hero. The global 68ch limit on paragraphs does not apply inside rich text.
+	p {
+		max-width: none;
+	}
+
+	.wp-block-table,
+	.wpconsent-cookie-policy-table {
+		width: 100%;
+	}
+
 	ul,
 	ol {
 		margin: 0;
@@ -10,6 +21,13 @@
 		padding-left: var(--space-5);
 		border-left: 4px solid var(--accent);
 		font-size: var(--text-lg);
+	}
+
+	h2,
+	h3,
+	h4 {
+		hyphens: auto;
+		overflow-wrap: break-word;
 	}
 
 	h3,

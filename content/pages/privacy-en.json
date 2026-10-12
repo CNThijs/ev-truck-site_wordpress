@@ -279,7 +279,14 @@
                 "30 days",
                 "Yes"
               ],
-              ["Affiliate cookies", "None", "We do not use these.", "–", "–", "–"],
+              [
+                "Affiliate cookies",
+                "None",
+                "We do not use these.",
+                "–",
+                "–",
+                "–"
+              ],
               [
                 "Tracking cookies",
                 "None",
@@ -307,12 +314,18 @@
         },
         {
           "table": {
-            "headers": ["Activity", "Recipients", "Location"],
+            "headers": [
+              "Activity",
+              "Recipients",
+              "Location"
+            ],
             "rows": [
               [
                 "Accessing our app",
                 {
-                  "ul": ["Data processors engaged by us, such as hosting providers."]
+                  "ul": [
+                    "Data processors engaged by us, such as hosting providers."
+                  ]
                 },
                 "EU"
               ],
@@ -330,7 +343,9 @@
               [
                 "Customer service or otherwise corresponding with you",
                 {
-                  "ul": ["Data processors engaged by us, such as hosting providers."]
+                  "ul": [
+                    "Data processors engaged by us, such as hosting providers."
+                  ]
                 },
                 "EU"
               ],
@@ -354,7 +369,11 @@
                 },
                 "EU"
               ],
-              ["Other general purposes", "Depends on the purpose for processing.", "EU"],
+              [
+                "Other general purposes",
+                "Depends on the purpose for processing.",
+                "EU"
+              ],
               [
                 "Visiting our website (statistics, only with your consent)",
                 {
@@ -362,7 +381,7 @@
                     "Google (Google Tag Manager and Google Analytics), which measures how the website is used."
                   ]
                 },
-                "EU and USA"
+                "EU"
               ],
               [
                 "Visiting our website (hosting)",
@@ -408,19 +427,43 @@
         },
         {
           "table": {
-            "headers": ["Activity", "Retention term"],
+            "headers": [
+              "Activity",
+              "Retention term"
+            ],
             "rows": [
-              ["Accessing our app", "365 days"],
-              ["Using our app", "365 days"],
-              ["Customer service or otherwise corresponding with you", "365 days"],
-              ["Using our website forms (contact form and trend report request)", "365 days"],
-              ["Newsletter sign-up on our website", "Until you unsubscribe"],
+              [
+                "Accessing our app",
+                "365 days"
+              ],
+              [
+                "Using our app",
+                "365 days"
+              ],
+              [
+                "Customer service or otherwise corresponding with you",
+                "365 days"
+              ],
+              [
+                "Using our website forms (contact form and trend report request)",
+                "365 days"
+              ],
+              [
+                "Newsletter sign-up on our website",
+                "Until you unsubscribe"
+              ],
               [
                 "Visiting our website (statistics)",
                 "As set in our Google Analytics settings, with a maximum of 14 months"
               ],
-              ["Cookie banner choice (consent record)", "36 months"],
-              ["Other general purposes", "Depends on the purpose for processing."]
+              [
+                "Cookie banner choice (consent record)",
+                "36 months"
+              ],
+              [
+                "Other general purposes",
+                "Depends on the purpose for processing."
+              ]
             ]
           }
         }
@@ -486,14 +529,23 @@
         },
         {
           "table": {
-            "headers": ["Definition", "Meaning"],
+            "headers": [
+              "Definition",
+              "Meaning"
+            ],
             "rows": [
-              ["App", "ChargeNet Driver app, developed by ChargeNet B.V."],
+              [
+                "App",
+                "ChargeNet Driver app, developed by ChargeNet B.V."
+              ],
               [
                 "Applicable privacy legislation",
                 "All applicable privacy legislation, including the General Data Protection Regulation (“GDPR”) and the relevant national implementation acts."
               ],
-              ["Privacy statement", "This present privacy statement."]
+              [
+                "Privacy statement",
+                "This present privacy statement."
+              ]
             ]
           }
         },

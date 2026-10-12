@@ -58,6 +58,10 @@ Not committed: WordPress core, uploads, vendor plugins, `vendor/`, `node_modules
 - Style guide: `/style-guide/`, administrators only (everyone else gets 404, noindex). Update `page-templates/style-guide.php` when adding a component.
 - Menus: locations `primary`, `utility` (Login), `footer`, `legal`. `bin/setup-wp.sh` seeds English starter menus with placeholder URLs.
 
+## Look and feel
+
+Modern tech-startup direction on the same Deep Green system (decided 9 October 2026): floating glass pill header, cinematic centred hero, bento mosaics (`bento`), large-type statement with scrubbed words (`statement`), typographic marquee, sticky split feature grid. Same tokens, fonts and contrast rules; stock photos are downloaded and self-hosted with credit in `docs/credits.md`. Never load images or fonts from another site. Details: `docs/sections.md`, `docs/motion.md`.
+
 ## Sections (blocks)
 
 Every page section is a dynamic block in `web/wp-content/themes/chargenet/blocks/<name>/` (block.json apiVersion 3, `render.php`, `index.js`, `style.scss`), built by `@wordpress/scripts` into `build/blocks/` (git-ignored). Vite builds only the global theme assets. Shared settings, the PHP wrapper (`chargenet_section_open/close`), page restrictions and Polylang notes: `docs/sections.md`. New section: `npm run make:section <name>`. Keep `render.php` and the editor `edit()` markup identical. Library (hero, feature grid and columns, stats, steps, accordion, team, logo strip, card slider, post grid, plus the Epic 3 sections): fields and variants in `docs/sections.md`. Admin-only Section Gallery at `/section-gallery/` renders every variant with sample content: add a section's variants to `inc/gallery-samples.php`. Images go through `chargenet_image()`, icons through `chargenet_the_icon()`. Posts can carry an original source URL (`inc/post-source.php`).

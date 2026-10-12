@@ -9,7 +9,7 @@
   "keywords": ["team", "people", "contact", "staff", "advisors"],
   "textdomain": "chargenet",
   "attributes": {
-    "variant": { "type": "string", "enum": ["cards", "compact"], "default": "cards" },
+    "variant": { "type": "string", "enum": ["cards", "compact", "roster"], "default": "cards" },
     "eyebrow": { "type": "string", "default": "" },
     "heading": { "type": "string", "default": "" },
     "headingLevel": { "type": "number", "default": 2 },

@@ -1,35 +1,51 @@
 @use '../mixins' as *;
 
+// Floating glass pill. The header element itself takes no space (the page starts under it) and sticks to the top; the pill
+// is dark in every section so the logo, which is only readable on dark, always has its background.
 .site-header {
 	position: sticky;
-	top: 0;
+	top: var(--space-3);
 	z-index: 100;
-	background: var(--bg);
+	height: 0;
 	color: var(--fg);
 
-	@include motion(box-shadow, transform);
-
-	&.is-scrolled {
-		box-shadow: var(--shadow-md);
-	}
-
-	// Slides away while reading down the page, returns on scroll up (header.js).
-	&.is-hidden {
-		transform: translateY(-100%);
-	}
-
 	&__inner {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: var(--space-5);
-		padding-block: var(--space-4);
+		width: calc(100% - 2 * var(--space-3));
+		max-width: 80rem;
+		margin: 0 auto;
+		padding: var(--space-2) var(--space-3) var(--space-2) var(--space-5);
+		border: 1px solid rgb(255 255 255 / 14%);
+		border-radius: var(--radius-pill);
+		background: rgb(8 58 11 / 78%);
+		box-shadow: var(--shadow-lg);
 
-		@include motion(padding);
+		// Safari before 18 only knows the prefixed name.
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-backdrop-filter: blur(16px) saturate(140%);
+		backdrop-filter: blur(16px) saturate(140%);
 
-		.is-scrolled & {
-			padding-block: var(--space-2);
+		@include motion(transform, background-color, box-shadow);
+
+		@media (prefers-reduced-transparency: reduce) {
+			background: var(--color-forest-900);
+			/* stylelint-disable-next-line property-no-vendor-prefix */
+			-webkit-backdrop-filter: none;
+			backdrop-filter: none;
 		}
+	}
+
+	&.is-scrolled &__inner {
+		background: rgb(8 58 11 / 90%);
+	}
+
+	// Slides away while reading down the page, returns on scroll up (header.js).
+	&.is-hidden &__inner {
+		transform: translateY(calc(-100% - var(--space-4)));
 	}
 
 	&__logo {
@@ -39,21 +55,23 @@
 
 		img {
 			width: auto;
-			height: 2.25rem;
+			height: 2rem;
 		}
 	}
 
 	&__panel {
 		display: none;
 		position: absolute;
-		top: 100%;
+		top: calc(100% + var(--space-2));
 		right: 0;
 		left: 0;
-		max-height: calc(100dvh - 4.5rem);
-		padding: var(--space-5) var(--space-gutter) var(--space-7);
+		max-height: calc(100dvh - 6rem);
+		padding: var(--space-5) var(--space-5) var(--space-6);
 		overflow-y: auto;
-		background: var(--bg);
-		border-top: 1px solid var(--border);
+		border: 1px solid rgb(255 255 255 / 14%);
+		border-radius: var(--radius-lg);
+		background: var(--color-forest-900);
+		box-shadow: var(--shadow-lg);
 
 		&.is-open,
 		html:not(.js) & {
@@ -71,7 +89,9 @@
 			padding: 0;
 			overflow: visible;
 			border: 0;
+			border-radius: 0;
 			background: transparent;
+			box-shadow: none;
 		}
 	}
 
@@ -241,10 +261,6 @@ button.nav-link.submenu-toggle {
 	flex-basis: 100%;
 	padding-left: var(--space-4);
 
-	.is-open > & {
-		display: block;
-	}
-
 	@include up(lg) {
 		position: absolute;
 		top: 100%;
@@ -261,6 +277,10 @@ button.nav-link.submenu-toggle {
 		display: flex;
 		width: 100%;
 	}
+}
+
+.primary-nav .menu-item-has-children.is-open > .sub-menu {
+	display: block;
 }
 
 .lang-switch {

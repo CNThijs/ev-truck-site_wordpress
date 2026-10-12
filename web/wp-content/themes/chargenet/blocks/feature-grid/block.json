@@ -5,11 +5,15 @@
   "title": "Feature Grid",
   "category": "chargenet-sections",
   "icon": "grid-view",
-  "description": "A heading and a grid of items with icon, title and text. Variants: cards, plain, numbered.",
+  "description": "A heading and a grid of items with icon, title and text. Variants: cards, plain, numbered, split (heading stays in view on the left while the cards scroll on the right).",
   "keywords": ["features", "benefits", "grid", "cards", "icons", "values"],
   "textdomain": "chargenet",
   "attributes": {
-    "variant": { "type": "string", "enum": ["cards", "plain", "numbered"], "default": "cards" },
+    "variant": {
+      "type": "string",
+      "enum": ["cards", "plain", "numbered", "split"],
+      "default": "cards"
+    },
     "columns": { "type": "number", "default": 3 },
     "eyebrow": { "type": "string", "default": "" },
     "heading": { "type": "string", "default": "" },
