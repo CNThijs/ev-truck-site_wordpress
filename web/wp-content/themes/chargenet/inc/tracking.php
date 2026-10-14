@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 const CHARGENET_CONSENT_DB_VERSION = '1';
 const CHARGENET_CONSENT_MONTHS     = 36;
+const CHARGENET_CONSENT_PER_HOUR   = 60;
 
 /**
  * Container ID from wp-config.php, or empty.
@@ -112,12 +113,23 @@ add_action( 'init', 'chargenet_consent_install', 5 );
  */
 function chargenet_consent_record( WP_REST_Request $request ): WP_REST_Response {
 	global $wpdb;
+	// Capped per address (hashed, never stored): a script cannot flood the table.
+	$ip = chargenet_form_ip();
+	if ( chargenet_rate_count( 'consent', $ip ) >= CHARGENET_CONSENT_PER_HOUR ) {
+		return new WP_REST_Response( array( 'id' => '' ), 429 );
+	}
+	chargenet_rate_add( 'consent', $ip, HOUR_IN_SECONDS );
+
+	// A supplied ID is only reused when it is already in the log (a visitor changing the choice); an unknown ID gets a
+	// new one, so nobody can write records under an ID that was never issued.
 	$visitor = (string) $request->get_param( 'id' );
-	if ( ! preg_match( '/^[a-f0-9]{32}$/', $visitor ) ) {
+	$table   = chargenet_consent_table();
+	$known   = preg_match( '/^[a-f0-9]{32}$/', $visitor ) && $wpdb->get_var( $wpdb->prepare( "SELECT 1 FROM {$table} WHERE visitor = %s LIMIT 1", $visitor ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery,WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+	if ( ! $known ) {
 		$visitor = bin2hex( random_bytes( 16 ) );
 	}
 	$wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
-		chargenet_consent_table(),
+		$table,
 		array(
 			'visitor'    => $visitor,
 			'created_at' => current_time( 'mysql', true ),
