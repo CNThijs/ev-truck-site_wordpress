@@ -35,6 +35,8 @@ async function once(chrome, url) {
 		onlyCategories: ['performance'],
 		logLevel: 'error',
 	});
+	if (lhr.runtimeError)
+		throw new Error(`${url}: ${lhr.runtimeError.code} ${lhr.runtimeError.message}`.slice(0, 300));
 	const a = lhr.audits;
 	const byType = Object.fromEntries(
 		(a['resource-summary'].details?.items ?? []).map((i) => [i.resourceType, i]),
@@ -70,12 +72,26 @@ const chrome = await launch({
 	chromeFlags: ['--headless=new', '--ignore-certificate-errors', '--no-sandbox'],
 });
 const result = {};
+const errors = {};
 try {
 	for (const [name, path] of Object.entries(pages).filter(
 		([n]) => !opt('only') || opt('only').split(',').includes(n),
 	)) {
+		// A run that Lighthouse could not complete (no paint, timeout) is retried; a template with no good run at all
+		// is reported as a failure with Lighthouse's own message instead of crashing the whole table.
 		const samples = [];
-		for (let i = 0; i < runs; i++) samples.push(await once(chrome, base + path));
+		let lastError = '';
+		for (let tries = 0; samples.length < runs && tries < runs + 2; tries++) {
+			try {
+				samples.push(await once(chrome, base + path));
+			} catch (e) {
+				lastError = e.message;
+			}
+		}
+		if (!samples.length) {
+			errors[name] = lastError || 'no result';
+			continue;
+		}
 		const pick = [...samples].sort((x, y) => x.lcp - y.lcp)[Math.floor(samples.length / 2)];
 		result[name] = { path, ...pick };
 		for (const k of ['score', 'fcp', 'lcp', 'tbt', 'cls', 'si', 'ttfb'])
@@ -85,7 +101,9 @@ try {
 	await chrome.kill();
 }
 
-const failures = [];
+const failures = Object.entries(errors).map(
+	([name, message]) => `${name}: Lighthouse failed: ${message}`,
+);
 const baseline = opt('compare') ? JSON.parse(readFileSync(opt('compare'), 'utf8')) : null;
 console.log('template      score  LCP ms  FCP ms  TBT ms   CLS   weight KB  JS KB  req');
 for (const [name, r] of Object.entries(result)) {
