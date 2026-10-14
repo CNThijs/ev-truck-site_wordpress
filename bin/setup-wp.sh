@@ -14,8 +14,9 @@ fi
 if ! wp core is-installed --path=web 2>/dev/null; then
 	wp core install --path=web --url="$DDEV_PRIMARY_URL" --title=ChargeNet \
 		--admin_user=admin --admin_password=admin --admin_email=admin@chargenet.test --skip-email
-	# WordPress sample page and draft privacy page (their slugs would clash with the seeded pages).
-	wp post delete 2 3 --force --path=web
+	# WordPress sample post, sample page and draft privacy page (the slugs would clash with the seeded pages, and the
+	# sample post would make the empty "Uncategorized" archive appear in the sitemap).
+	wp post delete 1 2 3 --force --path=web
 fi
 
 wp rewrite structure '/blog/%postname%/' --path=web >/dev/null

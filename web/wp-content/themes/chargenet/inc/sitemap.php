@@ -85,6 +85,10 @@ function chargenet_sitemap_entries( string $lang ): array {
 		if ( ! $newest ) {
 			continue; // No published post in this language: empty archive, no lastmod, not for the sitemap.
 		}
+		$lastmod = mysql2date( 'c', $newest[0]->post_modified_gmt . ' +0000', false );
+		if ( ! $lastmod ) {
+			continue; // Not a real modification date: leave the archive out rather than list it without lastmod.
+		}
 		$alternates = array();
 		foreach ( pll_get_term_translations( $term->term_id ) as $code => $id ) {
 			$link = get_term_link( (int) $id, 'category' );
@@ -94,7 +98,7 @@ function chargenet_sitemap_entries( string $lang ): array {
 		}
 		$entries[] = array(
 			'loc'        => (string) get_term_link( $term ),
-			'lastmod'    => mysql2date( 'c', $newest[0]->post_modified_gmt . ' +0000', false ),
+			'lastmod'    => $lastmod,
 			'alternates' => $alternates,
 			'default'    => $default,
 		);
