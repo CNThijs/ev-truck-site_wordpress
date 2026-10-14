@@ -13,6 +13,7 @@ return array(
 	'security',
 	'privacy',
 	'cookie-policy',
+	'accessibility',
 	'blog',
 	'project-destination-charging',
 	'project-chargebase',

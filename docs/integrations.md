@@ -163,3 +163,8 @@ Personal data stored per submission: name, email address, company, message, the 
 - **Report PDF:** is `ChargeNet-TR2027.pdf` (copied from the old site, dated 25 September) still the file to send?
 - **Locations data:** no locations were added; add them in the admin when you have them, or send a list and I will import it.
 - **Turnstile:** switch it on when a Cloudflare site and keys exist, and add it to the cookie consent list.
+
+## Newsletter unsubscribe and delivery alert
+
+- The newsletter confirmation email has an **unsubscribe link** (`{unsubscribe_url}`, `inc/forms/unsubscribe.php`) to `/newsletter/unsubscribe/`. The link is signed (HMAC of submission id and address). Opening it only shows a confirm button; the button deletes every newsletter subscription stored for that address. Contact and report requests are not touched. Texts that were edited in Settings before this change need `{unsubscribe_url}` added by hand. The site still sends no newsletter: when a sending tool is chosen, export the list and unsubscribe handling must be synced both ways.
+- When a submission stays undelivered after all retries, the team address (`contact_to`) gets an email with the submission link and the error, no personal data. It uses the same mail transport, so a total outage is still seen in the submissions list and the monitoring report.

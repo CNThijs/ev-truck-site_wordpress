@@ -1,0 +1,41 @@
+// Print: content only, black on white, link addresses after the text.
+@media print {
+	.site-header,
+	.site-footer,
+	#wpconsent-container,
+	.wpconsent-banner-holder,
+	.cn-form {
+		display: none !important;
+	}
+
+	*,
+	*::before,
+	*::after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		opacity: 1 !important;
+		transform: none !important;
+	}
+
+	body {
+		font-size: 11pt;
+	}
+
+	a[href^='http']:not([href*='chargenet.energy'])::after {
+		content: ' (' attr(href) ')';
+		font-size: 9pt;
+		word-break: break-all;
+	}
+
+	img,
+	figure,
+	blockquote {
+		break-inside: avoid;
+	}
+
+	h2,
+	h3 {
+		break-after: avoid;
+	}
+}

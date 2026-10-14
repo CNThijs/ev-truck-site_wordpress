@@ -71,6 +71,10 @@ return array(
 				'label' => 'Cookie Policy',
 			),
 			array(
+				'key'   => 'accessibility',
+				'label' => 'Accessibility',
+			),
+			array(
 				'key'   => 'security',
 				'label' => 'Security',
 			),
@@ -145,6 +149,10 @@ return array(
 			array(
 				'key'   => 'cookie-policy',
 				'label' => 'Cookiebeleid',
+			),
+			array(
+				'key'   => 'accessibility',
+				'label' => 'Toegankelijkheid',
 			),
 			array(
 				'key'   => 'security',

@@ -3511,3 +3511,31 @@ msgstr "Lees meer"
 #: blocks/team/index.js
 msgid "Roster (one line per person, for 8 or more)"
 msgstr "Lijst (een regel per persoon, voor 8 of meer)"
+
+#: inc/forms/unsubscribe.php
+msgid "You are unsubscribed"
+msgstr "U bent afgemeld"
+
+#: inc/forms/unsubscribe.php
+msgid "We removed your email address from the newsletter list. You will not receive the newsletter again."
+msgstr "Wij hebben uw e-mailadres van de nieuwsbrieflijst verwijderd. U ontvangt de nieuwsbrief niet meer."
+
+#: inc/forms/unsubscribe.php
+msgid "Unsubscribe from the newsletter"
+msgstr "Afmelden voor de nieuwsbrief"
+
+#: inc/forms/unsubscribe.php
+msgid "Confirm that you no longer want to receive the ChargeNet newsletter."
+msgstr "Bevestig dat u de ChargeNet-nieuwsbrief niet meer wilt ontvangen."
+
+#: inc/forms/unsubscribe.php
+msgid "Unsubscribe"
+msgstr "Afmelden"
+
+#: inc/forms/unsubscribe.php
+msgid "This link is not valid"
+msgstr "Deze link is niet geldig"
+
+#: inc/forms/unsubscribe.php
+msgid "The link is incorrect or you are already unsubscribed. Email info@chargenet.energy and we will remove you."
+msgstr "De link is onjuist of u bent al afgemeld. Mail naar info@chargenet.energy, dan verwijderen wij u."

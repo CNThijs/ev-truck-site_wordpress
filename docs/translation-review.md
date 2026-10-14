@@ -158,3 +158,11 @@ New Dutch editor labels for the icon list (Icoonlijst, Tegels, Chips, Route) and
 | Text                                    | Dutch     | Note                                                            |
 | --------------------------------------- | --------- | --------------------------------------------------------------- |
 | Read bio (disclosure on each team card) | Lees meer | New UI string; the person's name follows it for screen readers. |
+
+## Accessibility statement and newsletter unsubscribe (added 14 October 2026)
+
+| Where                         | Dutch now                                                                                         | Why                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Page `/nl/toegankelijkheid/`  | Whole page (title, four sections, "Laatst bijgewerkt")                                            | New page; the commitment of five working days needs your approval. |
+| Newsletter confirmation email | "Meld u af voor de nieuwsbrief als u hem niet meer wilt ontvangen."                               | Replaces "antwoord op deze e-mail".                                |
+| Unsubscribe page              | "U bent afgemeld", "Afmelden voor de nieuwsbrief", "Deze link is niet geldig" and their sentences | New page.                                                          |

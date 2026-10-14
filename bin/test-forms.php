@@ -175,6 +175,11 @@ cn_check( false !== strpos( (string) chargenet_submission_get( $r['id'], 'consen
 $mails = array();
 $r2    = chargenet_form_process( $base( array( 'cn_form' => 'newsletter', 'email' => 'sub@example.com' ) ), $ip );
 cn_check( $r2['ok'] && 0 === $r2['id'] && ! $mails && 1 === count( chargenet_submissions_by_email( 'sub@example.com', 'newsletter' ) ), 'newsletter: subscribing twice stores and sends nothing again' );
+$sub_id = (int) $r['id'];
+$link   = chargenet_unsubscribe_url( $sub_id, 'sub@example.com', 'nl' );
+parse_str( (string) wp_parse_url( $link, PHP_URL_QUERY ), $q );
+cn_check( hash_equals( chargenet_unsubscribe_token( $sub_id, 'sub@example.com' ), (string) $q['t'] ) && ! hash_equals( chargenet_unsubscribe_token( $sub_id, 'other@example.com' ), (string) $q['t'] ), 'unsubscribe: token is tied to the address' );
+cn_check( false !== strpos( chargenet_mail_render( 'newsletter', 'nl', array( 'email' => 'sub@example.com', 'id' => $sub_id ) )['html'], rawurlencode( (string) $q['t'] ) ), 'unsubscribe: link is in the confirmation email' );
 $r3 = chargenet_form_process( $base( array( 'cn_form' => 'newsletter', 'email' => 'nope', 'consent' => '' ) ), $ip );
 cn_check( ! $r3['ok'] && isset( $r3['errors']['email'], $r3['errors']['consent'] ), 'newsletter: email and consent are required' );
 $old_sub = $r['id'];
@@ -257,6 +262,34 @@ $old = chargenet_submission_create( array( 'form' => 'contact', 'lang' => 'en', 
 wp_update_post( array( 'ID' => $old, 'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( '-2 years' ) ), 'post_date_gmt' => gmdate( 'Y-m-d H:i:s', strtotime( '-2 years' ) ) ) );
 chargenet_forms_purge();
 cn_check( null === get_post( $old ), 'retention: submissions older than the retention period are deleted' );
+
+// Consent log: capped per address, IDs are only reused when issued. -------------------------------------------------.
+$old_addr               = $_SERVER['REMOTE_ADDR'] ?? null;
+$_SERVER['REMOTE_ADDR'] = '203.0.113.77';
+$consent                = static function ( string $id ): WP_REST_Response {
+	$request = new WP_REST_Request( 'POST', '/chargenet/v1/consent' );
+	$request->set_param( 'id', $id );
+	$request->set_param( 'statistics', true );
+	$request->set_param( 'lang', 'en' );
+	$request->set_param( 'version', 'abcdef12' );
+	return chargenet_consent_record( $request );
+};
+$forged = str_repeat( 'a', 32 );
+$first  = $consent( $forged )->get_data()['id'];
+cn_check( preg_match( '/^[a-f0-9]{32}$/', $first ) && $first !== $forged, 'consent: an ID that was never issued is replaced' );
+cn_check( $consent( $first )->get_data()['id'] === $first, 'consent: an issued ID is reused' );
+$status = 200;
+for ( $i = 0; $i < CHARGENET_CONSENT_PER_HOUR; $i++ ) {
+	$status = $consent( $first )->get_status();
+}
+cn_check( 429 === $status, 'consent: more than the hourly cap from one address is refused' );
+$wpdb->query( $wpdb->prepare( 'DELETE FROM ' . chargenet_consent_table() . ' WHERE visitor = %s', $first ) ); // phpcs:ignore WordPress.DB
+delete_transient( chargenet_rate_key( 'consent', '203.0.113.77' ) );
+if ( null === $old_addr ) {
+	unset( $_SERVER['REMOTE_ADDR'] );
+} else {
+	$_SERVER['REMOTE_ADDR'] = $old_addr;
+}
 
 // Clean up --------------------------------------------------------------------------------------------------------.
 foreach ( $created as $id ) {

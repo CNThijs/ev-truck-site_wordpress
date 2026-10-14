@@ -79,3 +79,7 @@ On a phone: all buttons and links can be hit without zooming (at least 24 × 24 
 - No human screen-reader test has been done yet.
 - Accessibility statement: not published (see the top of this file).
 - Any English passage inside a Dutch page (and the other way round) must be marked with `lang`; no automated check can find these. Review when content is added.
+
+## Accessibility statement
+
+Public page `/en/accessibility/` and `/nl/toegankelijkheid/` (`content/pages/accessibility.php`, linked in the legal menu). It states the WCAG 2.2 AA aim, what is checked, known limits (older posts, report PDF) and the contact route with a five-working-day reply. Update it when the manual test script has been run, and the date when anything changes. A complaint route to a supervisory body is deliberately not named: add it if your legal advisor wants it.

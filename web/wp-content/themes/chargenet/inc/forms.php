@@ -18,3 +18,4 @@ require_once __DIR__ . '/forms/handler.php';
 require_once __DIR__ . '/forms/render.php';
 require_once __DIR__ . '/forms/privacy.php';
 require_once __DIR__ . '/forms/download.php';
+require_once __DIR__ . '/forms/unsubscribe.php';

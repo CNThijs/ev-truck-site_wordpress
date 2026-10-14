@@ -201,7 +201,7 @@ function chargenet_forms_settings_page(): void {
 			</table>
 
 			<h2><?php esc_html_e( 'Email texts', 'chargenet' ); ?></h2>
-			<p><?php esc_html_e( 'Leave a field empty to use the default text. Placeholders: {name} {email} {company} {message} {code} {report_url} {site_name} {date}. The plain-text version is made from the same text.', 'chargenet' ); ?></p>
+			<p><?php esc_html_e( 'Leave a field empty to use the default text. Placeholders: {name} {email} {company} {message} {code} {report_url} {unsubscribe_url} {site_name} {date}. The plain-text version is made from the same text.', 'chargenet' ); ?></p>
 			<?php foreach ( $forms as $form => $title ) : ?>
 				<h3><?php echo esc_html( $title ); ?></h3>
 				<?php

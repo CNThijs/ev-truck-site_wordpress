@@ -96,6 +96,16 @@ return array(
 			'description' => 'Welke cookies chargenet.energy gebruikt, waarom, en hoe u uw keuze op elk moment wijzigt of intrekt.',
 		),
 	),
+	'accessibility'                => array(
+		'en' => array(
+			'title'       => 'Accessibility statement',
+			'description' => 'How accessible chargenet.energy is, what we checked, known limitations and how to report a problem.',
+		),
+		'nl' => array(
+			'title'       => 'Toegankelijkheidsverklaring',
+			'description' => 'Hoe toegankelijk chargenet.energy is, wat wij hebben gecontroleerd, bekende beperkingen en hoe u een probleem meldt.',
+		),
+	),
 	'blog'                         => array(
 		'en' => array(
 			'title'       => 'News',

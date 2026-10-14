@@ -39,11 +39,11 @@ function chargenet_mail_default_template( string $form, string $lang ): array {
 		'newsletter'   => array(
 			'en' => array(
 				'subject' => 'You are subscribed to the ChargeNet newsletter',
-				'body'    => '<p>Hello,</p><p>Thank you for subscribing to the ChargeNet newsletter. We will send you news about charging for electric trucks and heavy machinery.</p><p>Do you no longer want to receive it? Reply to this email and we will remove you.</p><p>Kind regards,<br>The ChargeNet team</p>',
+				'body'    => '<p>Hello,</p><p>Thank you for subscribing to the ChargeNet newsletter. We will send you news about charging for electric trucks and heavy machinery.</p><p><a href="{unsubscribe_url}">Unsubscribe from the newsletter</a> if you no longer want to receive it.</p><p>Kind regards,<br>The ChargeNet team</p>',
 			),
 			'nl' => array(
 				'subject' => 'U bent aangemeld voor de ChargeNet-nieuwsbrief',
-				'body'    => '<p>Goedendag,</p><p>Bedankt voor uw aanmelding voor de ChargeNet-nieuwsbrief. Wij sturen u nieuws over laden voor elektrische vrachtwagens en zwaar materieel.</p><p>Wilt u de nieuwsbrief niet meer ontvangen? Antwoord op deze e-mail, dan verwijderen wij u.</p><p>Met vriendelijke groet,<br>Het ChargeNet-team</p>',
+				'body'    => '<p>Goedendag,</p><p>Bedankt voor uw aanmelding voor de ChargeNet-nieuwsbrief. Wij sturen u nieuws over laden voor elektrische vrachtwagens en zwaar materieel.</p><p><a href="{unsubscribe_url}">Meld u af voor de nieuwsbrief</a> als u hem niet meer wilt ontvangen.</p><p>Met vriendelijke groet,<br>Het ChargeNet-team</p>',
 			),
 		),
 		'contact'      => array(
@@ -103,7 +103,7 @@ function chargenet_mail_render( string $form, string $lang, array $v ): array {
 	$greeting = 'nl' === $lang ? ( '' !== $name ? 'Beste ' . $name . ',' : 'Goedendag,' ) : ( '' !== $name ? 'Hello ' . $name . ',' : 'Hello,' );
 	$date     = wp_date( 'nl' === $lang ? 'j F Y, H:i' : 'F j, Y, H:i' );
 
-	$plain                       = array(
+	$plain                            = array(
 		'{name}'      => $name,
 		'{email}'     => (string) ( $v['email'] ?? '' ),
 		'{company}'   => (string) ( $v['company'] ?? '' ),
@@ -112,11 +112,14 @@ function chargenet_mail_render( string $form, string $lang, array $v ): array {
 		'{date}'      => $date,
 		'{greeting}'  => $greeting,
 	);
-	$html_values                 = array_map( 'esc_html', $plain );
-	$html_values['{message}']    = nl2br( esc_html( (string) ( $v['message'] ?? '' ) ) );
-	$html_values['{report_url}'] = esc_url( (string) chargenet_forms_setting( 'report_url' ) );
-	$plain['{message}']          = (string) ( $v['message'] ?? '' );
-	$plain['{report_url}']       = (string) chargenet_forms_setting( 'report_url' );
+	$html_values                      = array_map( 'esc_html', $plain );
+	$html_values['{message}']         = nl2br( esc_html( (string) ( $v['message'] ?? '' ) ) );
+	$html_values['{report_url}']      = esc_url( (string) chargenet_forms_setting( 'report_url' ) );
+	$unsubscribe                      = ! empty( $v['id'] ) ? chargenet_unsubscribe_url( (int) $v['id'], (string) ( $v['email'] ?? '' ), $lang ) : home_url( '/newsletter/unsubscribe/' );
+	$html_values['{unsubscribe_url}'] = esc_url( $unsubscribe );
+	$plain['{message}']               = (string) ( $v['message'] ?? '' );
+	$plain['{report_url}']            = (string) chargenet_forms_setting( 'report_url' );
+	$plain['{unsubscribe_url}']       = $unsubscribe;
 
 	$subject = trim( (string) preg_replace( '/\s+/', ' ', strtr( $tpl['subject'], $plain ) ) );
 	$body    = wp_kses_post( strtr( $tpl['body'], $html_values ) );
@@ -309,8 +312,9 @@ function chargenet_mail_attempt( int $id ): bool {
 	foreach ( array( 'name', 'email', 'company', 'message', 'code' ) as $key ) {
 		$values[ $key ] = (string) chargenet_submission_get( $id, $key );
 	}
-	$attempts = (int) chargenet_submission_get( $id, 'email_attempts' ) + 1;
-	$sent     = chargenet_mail_send( (string) chargenet_submission_get( $id, 'form' ), (string) chargenet_submission_get( $id, 'lang' ), $values );
+	$values['id'] = $id;
+	$attempts     = (int) chargenet_submission_get( $id, 'email_attempts' ) + 1;
+	$sent         = chargenet_mail_send( (string) chargenet_submission_get( $id, 'form' ), (string) chargenet_submission_get( $id, 'lang' ), $values );
 
 	update_post_meta( $id, '_cn_email_attempts', $attempts );
 	if ( $sent ) {
@@ -326,8 +330,33 @@ function chargenet_mail_attempt( int $id ): bool {
 		wp_schedule_single_event( time() + $wait, 'chargenet_mail_retry', array( $id ) );
 	} else {
 		update_post_meta( $id, '_cn_email_status', 'failed' );
+		chargenet_mail_alert( $id, $attempts );
 	}
 	return false;
+}
+
+/**
+ * Tell the team that a submission could not be emailed. No personal data in the message: only the admin link and the
+ * error. It goes through the same transport, so a total mail outage is still caught by the admin list and the
+ * monitoring report.
+ *
+ * @param int $id       Submission id.
+ * @param int $attempts Attempts made.
+ */
+function chargenet_mail_alert( int $id, int $attempts ): void {
+	$to = (string) chargenet_forms_setting( 'contact_to' );
+	if ( '' === $to ) {
+		return;
+	}
+	$body = sprintf(
+		/* translators: 1: submission id, 2: attempts, 3: error, 4: admin URL */
+		__( "A form submission (#%1\$d) could not be emailed after %2\$d attempts.\n\nError: %3\$s\n\nOpen it in the admin and contact the sender from there:\n%4\$s", 'chargenet' ),
+		$id,
+		$attempts,
+		(string) ( $GLOBALS['chargenet_mail_err'] ?? 'Unknown error' ),
+		admin_url( 'post.php?post=' . $id . '&action=edit' )
+	);
+	wp_mail( $to, __( '[ChargeNet] A form submission was not delivered', 'chargenet' ), $body );
 }
 
 /**
