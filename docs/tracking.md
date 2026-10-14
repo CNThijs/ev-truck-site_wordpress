@@ -10,7 +10,7 @@ Nothing loads from Google until the visitor accepts statistics. Set the containe
 define( 'CHARGENET_GTM_ID', 'GTM-XXXXXXX' );
 ```
 
-Without the constant nothing is added. The loader is printed as `type="text/plain"` with WPConsent attributes; WPConsent turns it into a real script after consent and sends Google Consent Mode v2 state (default denied). Build the GA4 tags inside GTM: page views, and triggers on the `form_start`, `form_submit` and `form_error` dataLayer events (`docs/integrations.md`). Turnstile (Cloudflare) is a security service on the contact forms only; it is not a tracking cookie.
+Without the constant (or an environment variable of the same name, which CI uses with a placeholder ID so the consent tests can run) nothing is added. The loader is printed as `type="text/plain"` with WPConsent attributes; WPConsent turns it into a real script after consent and sends Google Consent Mode v2 state (default denied). Build the GA4 tags inside GTM: page views, and triggers on the `form_start`, `form_submit` and `form_error` dataLayer events (`docs/integrations.md`). Turnstile (Cloudflare) is a security service on the contact forms only; it is not a tracking cookie.
 
 ## Campaign cookie
 

@@ -39,6 +39,8 @@ jobs:
       - run: npm ci
       - run: npm run build
       - uses: ddev/github-action-setup-ddev@v1
+      # A placeholder Tag Manager ID so that the consent tests see the loader (nothing is requested before consent).
+      - run: ddev config --web-environment-add=CHARGENET_GTM_ID=GTM-CITEST1
       - run: ddev start
       # The site redirects to https with DDEV's local certificate: let Node trust its CA.
       - run: echo "NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem" >> "$GITHUB_ENV"

@@ -18,10 +18,10 @@ const CHARGENET_CONSENT_MONTHS     = 36;
 const CHARGENET_CONSENT_PER_HOUR   = 60;
 
 /**
- * Container ID from wp-config.php, or empty.
+ * Container ID from wp-config.php (or the environment variable of the same name, used by CI), or empty.
  */
 function chargenet_gtm_id(): string {
-	$id = defined( 'CHARGENET_GTM_ID' ) ? (string) CHARGENET_GTM_ID : '';
+	$id = defined( 'CHARGENET_GTM_ID' ) ? (string) CHARGENET_GTM_ID : (string) getenv( 'CHARGENET_GTM_ID' );
 	return preg_match( '/^GTM-[A-Z0-9]{4,12}$/', $id ) ? $id : '';
 }
 
