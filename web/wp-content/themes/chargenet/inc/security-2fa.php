@@ -44,21 +44,49 @@ function chargenet_2fa_missing( WP_User $user ): bool {
 }
 
 /**
- * Keep such a user on the profile page.
+ * Keep such a user on the profile page. The same applies to admin-ajax.php and admin-post.php (both run admin_init and
+ * were a way around the gate: an administrator's export action is reachable through admin-post.php) and, below, to the
+ * REST API. Only the public contact form handler is let through, so a logged-in tester can still send a form.
  */
 function chargenet_2fa_gate(): void {
 	$user = wp_get_current_user();
-	if ( ! $user->exists() || wp_doing_ajax() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) || ! chargenet_2fa_missing( $user ) ) {
+	if ( ! $user->exists() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) || ! chargenet_2fa_missing( $user ) ) {
 		return;
 	}
 	global $pagenow;
-	if ( in_array( $pagenow, array( 'profile.php', 'admin-post.php', 'async-upload.php' ), true ) ) {
+	$action = isset( $_REQUEST['action'] ) ? sanitize_key( wp_unslash( $_REQUEST['action'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only compared with a fixed value.
+	if ( 'profile.php' === $pagenow || 'async-upload.php' === $pagenow || ( 'admin-post.php' === $pagenow && 'chargenet_form' === $action ) ) {
 		return;
+	}
+	if ( wp_doing_ajax() ) {
+		wp_send_json_error( array( 'message' => __( 'Two-factor authentication is required.', 'chargenet' ) ), 403 );
 	}
 	wp_safe_redirect( admin_url( 'profile.php#two-factor-options' ) );
 	exit;
 }
 add_action( 'admin_init', 'chargenet_2fa_gate' );
+
+/**
+ * The REST API takes cookie logins too, so the gate has to cover it: such a user could otherwise edit content or read
+ * submissions without ever setting up a second factor. The Two Factor plugin's own routes (needed to set it up) and
+ * the public routes of this theme stay open.
+ *
+ * @param mixed           $result  Response so far.
+ * @param WP_REST_Server  $server  Server.
+ * @param WP_REST_Request $request Request.
+ * @return mixed
+ */
+function chargenet_2fa_rest_gate( $result, $server, $request ) {
+	$user = wp_get_current_user();
+	if ( $user->exists() && chargenet_2fa_missing( $user ) ) {
+		$route = (string) $request->get_route();
+		if ( 0 !== strpos( $route, '/two-factor/' ) && 0 !== strpos( $route, '/chargenet/v1/' ) ) {
+			return new WP_Error( 'chargenet_2fa_required', __( 'Two-factor authentication is required.', 'chargenet' ), array( 'status' => 403 ) );
+		}
+	}
+	return $result;
+}
+add_filter( 'rest_pre_dispatch', 'chargenet_2fa_rest_gate', 10, 3 );
 
 /**
  * Tell the user why.

@@ -62,3 +62,7 @@ All 8 keys and salts must be unique and long; generate new ones at https://api.w
 1. Report arrives at `security@chargenet.energy`: acknowledge within 2 working days, fix, tell the reporter.
 2. Suspected compromise: restore from backup (`docs/backups.md`), change the salts and all administrator passwords, reset two-factor, review users and plugins, check `check-hardening` and `check:security`.
 3. Personal data involved: the GDPR clock (72 hours to the authority, if the risk requires it) starts when you become aware. **LEGAL:** the decision to notify is yours, not the scripts'.
+
+## Two-factor gate covers every entry point (14 October 2026)
+
+A user in a required role (administrator, editor) without a second factor used to be kept off the admin pages only. The gate now also covers `admin-ajax.php`, `admin-post.php` (only the public contact form handler is let through) and the REST API (only the Two Factor plugin's own routes and the theme's public `chargenet/v1` routes are let through), so a stolen password alone cannot edit content or export submissions through those paths. Code: `inc/security-2fa.php`. It only acts when the Two Factor plugin is active (production), so it cannot be exercised in DDEV; check it once on the server by logging in with a test editor that has no second factor and requesting `/wp-json/wp/v2/posts` (expect 403).
