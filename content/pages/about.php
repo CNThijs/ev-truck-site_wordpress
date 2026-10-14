@@ -32,7 +32,7 @@ return array(
 				'values_h'  => 'Our Values',
 				'values'    => array(
 					array( 'target', 'Practical Impact', 'We build solutions that work in the real world; fast, scalable, and easy to adopt.' ),
-					array( 'users', 'Collaboration', 'We believe the only way to decarbonize road logistics is together—with location owners, fleet operators, and industry partners.' ),
+					array( 'users', 'Collaboration', 'We believe the only way to decarbonize road logistics is together; with location owners, fleet operators and industry partners.' ),
 					array( 'leaf', 'Sustainability', 'Every decision we make is rooted in our commitment to a cleaner, greener future for transport.' ),
 					array( 'shield-check', 'Integrity', 'We are transparent, responsible, and mission-driven. Trust is the foundation of every partnership we form.' ),
 					array( 'lightbulb', 'Innovation', 'We challenge the status quo to create smart infrastructure that works harder for people and planet.' ),

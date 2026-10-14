@@ -279,7 +279,14 @@
                 "30 dagen",
                 "Ja"
               ],
-              ["Affiliate-cookies", "Geen", "Wij gebruiken deze niet.", "–", "–", "–"],
+              [
+                "Affiliate-cookies",
+                "Geen",
+                "Wij gebruiken deze niet.",
+                "–",
+                "–",
+                "–"
+              ],
               [
                 "Trackingcookies",
                 "Geen",
@@ -307,12 +314,18 @@
         },
         {
           "table": {
-            "headers": ["Activiteit", "Ontvangers", "Locatie"],
+            "headers": [
+              "Activiteit",
+              "Ontvangers",
+              "Locatie"
+            ],
             "rows": [
               [
                 "Toegang tot onze app",
                 {
-                  "ul": ["Door ons ingeschakelde verwerkers, zoals hostingproviders."]
+                  "ul": [
+                    "Door ons ingeschakelde verwerkers, zoals hostingproviders."
+                  ]
                 },
                 "EU"
               ],
@@ -330,7 +343,9 @@
               [
                 "Klantenservice of anderszins met u corresponderen",
                 {
-                  "ul": ["Door ons ingeschakelde verwerkers, zoals hostingproviders."]
+                  "ul": [
+                    "Door ons ingeschakelde verwerkers, zoals hostingproviders."
+                  ]
                 },
                 "EU"
               ],
@@ -354,7 +369,11 @@
                 },
                 "EU"
               ],
-              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking.", "EU"],
+              [
+                "Overige algemene doeleinden",
+                "Afhankelijk van het doel van de verwerking.",
+                "EU"
+              ],
               [
                 "Bezoek aan onze website (statistieken, alleen met uw toestemming)",
                 {
@@ -362,7 +381,7 @@
                     "Google (Google Tag Manager en Google Analytics), dat meet hoe de website wordt gebruikt."
                   ]
                 },
-                "EU en VS"
+                "EU"
               ],
               [
                 "Bezoek aan onze website (hosting)",
@@ -408,22 +427,43 @@
         },
         {
           "table": {
-            "headers": ["Activiteit", "Bewaartermijn"],
+            "headers": [
+              "Activiteit",
+              "Bewaartermijn"
+            ],
             "rows": [
-              ["Toegang tot onze app", "365 dagen"],
-              ["Gebruik van onze app", "365 dagen"],
-              ["Klantenservice of anderszins met u corresponderen", "365 dagen"],
+              [
+                "Toegang tot onze app",
+                "365 dagen"
+              ],
+              [
+                "Gebruik van onze app",
+                "365 dagen"
+              ],
+              [
+                "Klantenservice of anderszins met u corresponderen",
+                "365 dagen"
+              ],
               [
                 "Gebruik van onze websiteformulieren (contactformulier en aanvraag trendrapport)",
                 "365 dagen"
               ],
-              ["Aanmelding voor de nieuwsbrief op onze website", "Tot u zich afmeldt"],
+              [
+                "Aanmelding voor de nieuwsbrief op onze website",
+                "Tot u zich afmeldt"
+              ],
               [
                 "Bezoek aan onze website (statistieken)",
                 "Zoals ingesteld in onze Google Analytics-instellingen, met een maximum van 14 maanden"
               ],
-              ["Keuze in de cookiebanner (toestemmingsregistratie)", "36 maanden"],
-              ["Overige algemene doeleinden", "Afhankelijk van het doel van de verwerking."]
+              [
+                "Keuze in de cookiebanner (toestemmingsregistratie)",
+                "36 maanden"
+              ],
+              [
+                "Overige algemene doeleinden",
+                "Afhankelijk van het doel van de verwerking."
+              ]
             ]
           }
         }
@@ -489,14 +529,23 @@
         },
         {
           "table": {
-            "headers": ["Definitie", "Betekenis"],
+            "headers": [
+              "Definitie",
+              "Betekenis"
+            ],
             "rows": [
-              ["App", "ChargeNet Driver-app, ontwikkeld door ChargeNet B.V."],
+              [
+                "App",
+                "ChargeNet Driver-app, ontwikkeld door ChargeNet B.V."
+              ],
               [
                 "Toepasselijke privacywetgeving",
                 "Alle toepasselijke privacywetgeving, waaronder de Algemene Verordening Gegevensbescherming (“AVG”) en de relevante nationale uitvoeringswetten."
               ],
-              ["Privacyverklaring", "Deze privacyverklaring."]
+              [
+                "Privacyverklaring",
+                "Deze privacyverklaring."
+              ]
             ]
           }
         },

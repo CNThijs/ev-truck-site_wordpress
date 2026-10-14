@@ -31,7 +31,7 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>ChargeNet — back soon</title>
+<title>ChargeNet - back soon</title>
 <style>
 body{margin:0;min-height:100vh;display:grid;place-items:center;background:#083a0b;color:#fff;font:400 18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
 main{max-width:34rem;padding:2rem}

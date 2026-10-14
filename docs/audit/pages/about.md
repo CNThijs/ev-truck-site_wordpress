@@ -64,7 +64,7 @@ Shared blocks (navbar, footer, contact cards) are documented in `_shared-layout.
 > By empowering private location owners to open up their charging infrastructure to logistic fleets, we are removing one of the biggest barriers to electrification; access to affordable and convenient charging where it`s needed most, while circumventing the current netcongestion issues.
 > Our Values
 > Practical Impact: We build solutions that work in the real world; fast, scalable, and easy to adopt.
-> Collaboration: We believe the only way to decarbonize road logistics is together—with location owners, fleet operators, and industry partners.
+> Collaboration: We believe the only way to decarbonize road logistics is together; with location owners, fleet operators and industry partners.
 > Sustainability: Every decision we make is rooted in our commitment to a cleaner, greener future for transport.
 > Integrity: We are transparent, responsible, and mission-driven. Trust is the foundation of every partnership we form.
 > Innovation: We challenge the status quo to create smart infrastructure that works harder for people and planet.

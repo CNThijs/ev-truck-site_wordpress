@@ -63,7 +63,7 @@ Shared blocks (navbar, footer, contact cards) are documented in `_shared-layout.
 **Copy (EN)**
 
 > What ChargeNet does for You
-> We bring locations with charging infrastructure and EV fleets together on one platform.
+> We bring private locations with charging infrastructure and EV fleets together on one platform.
 > Location Managers
 > Monetize your charging infrastructure efficiently
 > Key Benefits
@@ -106,7 +106,7 @@ Shared blocks (navbar, footer, contact cards) are documented in `_shared-layout.
 **Copy (NL)**
 
 > Wat ChargeNet voor u doet
-> Wij brengen locaties met laadinfrastructuur en EV-vloten samen op één platform.
+> Wij brengen private locaties met laadinfrastructuur en EV-vloten samen op één platform.
 > Locaties
 > Monetariseer uw laadinfrastructuur efficiënt
 > Key Benefits
