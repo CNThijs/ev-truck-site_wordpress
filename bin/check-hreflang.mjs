@@ -4,7 +4,13 @@
 const base = (process.argv[2] ?? 'http://chargenet.ddev.site').replace(/\/$/, '');
 const defaultLang = 'en';
 
-const get = async (url) => (await fetch(url, { redirect: 'follow' })).text();
+// Pages are keyed by the address they end up at: CI starts from http:// and DDEV redirects to https://, the same
+// address the alternates use.
+const fetched = async (url) => {
+	const response = await fetch(url, { redirect: 'follow' });
+	return { text: await response.text(), url: response.url };
+};
+const get = async (url) => (await fetched(url)).text;
 const norm = (url) => url.replace(/#.*$/, '');
 
 async function sitemapUrls() {
@@ -38,8 +44,10 @@ function parse(html) {
 const queue = new Set([`${base}/en/`, `${base}/nl/`, ...(await sitemapUrls())].map(norm));
 const pages = new Map();
 for (const url of queue) {
-	pages.set(url, parse(await get(url)));
-	for (const alt of Object.values(pages.get(url).alternates)) {
+	const page = await fetched(url);
+	const final = norm(page.url);
+	pages.set(final, parse(page.text));
+	for (const alt of Object.values(pages.get(final).alternates)) {
 		queue.add(alt);
 	}
 }
