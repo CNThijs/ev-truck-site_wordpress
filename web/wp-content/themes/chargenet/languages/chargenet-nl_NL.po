@@ -3539,3 +3539,19 @@ msgstr "Deze link is niet geldig"
 #: inc/forms/unsubscribe.php
 msgid "The link is incorrect or you are already unsubscribed. Email info@chargenet.energy and we will remove you."
 msgstr "De link is onjuist of u bent al afgemeld. Mail naar info@chargenet.energy, dan verwijderen wij u."
+
+#: footer.php
+msgid "Driver App"
+msgstr "Driver App"
+
+#: footer.php
+msgid "Download on the App Store"
+msgstr "Download in de App Store"
+
+#: footer.php
+msgid "Get it on Google Play"
+msgstr "Ontdek het op Google Play"
+
+#: blocks/rich-text-image/index.js
+msgid "Show in a phone frame (app screenshot)"
+msgstr "Toon in een telefoonframe (app-screenshot)"

@@ -17,11 +17,11 @@ $chargenet_heading = (string) ( $attributes['heading'] ?? '' );
 $chargenet_intro   = (string) ( $attributes['intro'] ?? '' );
 $chargenet_eyebrow = trim( wp_strip_all_tags( (string) ( $attributes['eyebrow'] ?? '' ) ) );
 $chargenet_has_bg  = 'title-band' !== $chargenet_variant && (int) ( $attributes['imageId'] ?? 0 ) > 0;
-$chargenet_cover   = 'campaign' === $chargenet_variant ? chargenet_image(
+$chargenet_cover   = in_array( $chargenet_variant, array( 'campaign', 'cinematic' ), true ) ? chargenet_image(
 	(int) ( $attributes['coverId'] ?? 0 ),
 	array(
 		'size'  => 'large',
-		'sizes' => '(min-width: 48rem) 40vw, 100vw',
+		'sizes' => 'cinematic' === $chargenet_variant ? '16rem' : '(min-width: 48rem) 40vw, 100vw',
 		'class' => 'hero__cover-img',
 		'alt'   => (string) ( $attributes['coverAlt'] ?? '' ),
 	)
@@ -85,7 +85,7 @@ if ( $chargenet_crumbs ) {
 		<?php endif; ?>
 	</div>
 	<?php if ( '' !== $chargenet_cover ) : ?>
-		<figure class="hero__cover" data-reveal><?php echo $chargenet_cover; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes. ?></figure>
+		<figure class="hero__cover"<?php echo 'cinematic' === $chargenet_variant ? ' data-hero-phone' : ' data-reveal'; ?>><?php echo $chargenet_cover; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes. ?></figure>
 	<?php endif; ?>
 </div>
 <?php

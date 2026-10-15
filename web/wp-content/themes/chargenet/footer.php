@@ -50,6 +50,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<?php esc_html_e( '6827 AV, Arnhem, The Netherlands', 'chargenet' ); ?>
 					</span>
 				</address>
+				<?php // Same store addresses as cn_app_badges() in content/lib.php. ?>
+				<h2 class="site-footer__title"><?php esc_html_e( 'Driver App', 'chargenet' ); ?></h2>
+				<p class="site-footer__apps">
+					<a href="https://apps.apple.com/us/app/chargenet-driver/id6745788861"><img src="<?php echo esc_url( CHARGENET_URI . '/assets/img/app-store-badge.svg' ); ?>" alt="<?php esc_attr_e( 'Download on the App Store', 'chargenet' ); ?>" width="135" height="40" loading="lazy"></a>
+					<a href="https://play.google.com/store/apps/details?id=energy.chargenet.app"><img src="<?php echo esc_url( CHARGENET_URI . '/assets/img/google-play-badge.svg' ); ?>" alt="<?php esc_attr_e( 'Get it on Google Play', 'chargenet' ); ?>" width="135" height="40" loading="lazy"></a>
+				</p>
 			</div>
 		</div>
 		<div class="site-footer__bottom">

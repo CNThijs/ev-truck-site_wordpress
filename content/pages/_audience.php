@@ -52,6 +52,21 @@ function cn_audience_page( string $lang, array $c, callable $media ): string {
 		$benefits
 	);
 
+	// Pages that carry the driver app copy (Carriers) show the app in a phone before the steps.
+	if ( isset( $c['app_h'] ) ) {
+		$out .= cn_block(
+			'chargenet/rich-text-image',
+			array(
+				'animation'     => 'fade-rise',
+				'heading'       => $c['app_h'],
+				'imageId'       => $media( 'hero-app' ),
+				'imagePosition' => 'left',
+				'device'        => true,
+			),
+			cn_p( $c['app_t'] ) . cn_list( $c['app_list'] )
+		);
+	}
+
 	$steps = '';
 	foreach ( $c['steps'] as $s ) {
 		$steps .= cn_block(

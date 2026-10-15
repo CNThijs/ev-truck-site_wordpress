@@ -138,6 +138,18 @@
 // Split: on wide screens the heading stays in view on the left (position: sticky, no JavaScript) while the cards scroll on the
 // right. Below that it is the normal stacked grid.
 .feature-grid--split {
+	// Below the side-by-side layout the cards sit two to a row.
+	.feature-grid__list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--space-3);
+	}
+
+	// Narrow cards: a long (Dutch) word wraps instead of pushing the page wider.
+	.feature-grid__title {
+		overflow-wrap: anywhere;
+		hyphens: auto;
+	}
+
 	@include up(lg) {
 		display: grid;
 		grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);

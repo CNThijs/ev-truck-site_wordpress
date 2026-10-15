@@ -132,6 +132,14 @@ return array(
 			'nl' => 'Trendrapport 2027 cover preview',
 		),
 	),
+	'app-charger'         => array(
+		'file'  => 'ChargeNet-Driver-App_charger.png',
+		'title' => 'ChargeNet Driver App, charge point with connectors and start charging',
+		'alt'   => array(
+			'en' => 'The ChargeNet Driver App showing a charge point with its connectors and a Start Charging button',
+			'nl' => 'De ChargeNet Driver App met een laadpunt, de connectors en een knop om te starten met laden',
+		),
+	),
 	'badge-app-store'     => array(
 		'file'  => 'app-store-badge.svg',
 		'title' => 'Download on the App Store',
@@ -141,7 +149,7 @@ return array(
 		),
 	),
 	'badge-google-play'   => array(
-		'file'  => 'google-play-badge.png',
+		'file'  => 'google-play-badge.svg',
 		'title' => 'Get it on Google Play',
 		'alt'   => array(
 			'en' => 'Get it on Google Play',

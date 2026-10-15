@@ -20,6 +20,10 @@ return array(
 				'hero_t'      => 'ChargeNet is the platform for location owners & carrier managers to collaborate on decarbonisation of road logistics by sharing charging infrastructure at destination.<br>With ChargeNet you can charge at the right price, at the right place, at the right time.',
 				'hero_b1'     => 'Explore Use Cases',
 				'hero_b2'     => 'Contact Us',
+				'hero_b3'     => 'Get the Driver App',
+				'app_h'       => 'Your charging session, in one app',
+				'app_t'       => 'Drivers see the available charge points at their destination, with the price per kWh and the live availability, and start charging with one tap.',
+				'app_list'    => array( 'Find charge points at your destination', 'See the price per kWh before you arrive', 'Start and stop charging from the app' ),
 				'f_h'         => 'What ChargeNet does for You',
 				'f_t'         => 'We bring private locations with charging infrastructure and EV fleets together on one platform.',
 				'benefits'    => 'Key Benefits',
@@ -104,6 +108,10 @@ return array(
 				'hero_t'      => 'ChargeNet is het platform voor locatie-eigenaren & vervoerders om samen te werken aan decarbonisatie van wegtransport door het delen van laadinfrastructuur op bestemming.<br>Met ChargeNet kunt u laden voor de juiste prijs, op de juiste plaats, op het juiste moment.',
 				'hero_b1'     => 'Meer weten',
 				'hero_b2'     => 'Neem Contact Op',
+				'hero_b3'     => 'Download de Driver App',
+				'app_h'       => 'Uw laadsessie, in één app',
+				'app_t'       => 'Chauffeurs zien de beschikbare laadpunten op hun bestemming, met de prijs per kWh en de actuele beschikbaarheid, en starten met één tik met laden.',
+				'app_list'    => array( 'Vind laadpunten op uw bestemming', 'Zie de prijs per kWh voordat u aankomt', 'Start en stop het laden vanuit de app' ),
 				'f_h'         => 'Wat ChargeNet voor u doet',
 				'f_t'         => 'Wij brengen private locaties met laadinfrastructuur en EV-vloten samen op één platform.',
 				'benefits'    => 'Belangrijkste voordelen',
@@ -194,6 +202,8 @@ return array(
 				'heading'   => $c['hero_h'],
 				'intro'     => $c['hero_t'],
 				'imageId'   => $media( 'hero-truck' ),
+				'coverId'   => $media( 'hero-app' ),
+				'coverAlt'  => 'en' === $lang ? 'The ChargeNet Driver App showing charging locations' : 'De ChargeNet Driver App met laadlocaties',
 			),
 			cn_button( $c['hero_b1'], '#features' ) . cn_button( $c['hero_b2'], '#contact', 'secondary' )
 		);
@@ -360,6 +370,19 @@ return array(
 			$cards
 		);
 
+		// The driver app: the second screen (a charge point with its connectors) in a phone, next to what it does.
+		$out .= cn_block(
+			'chargenet/rich-text-image',
+			array(
+				'sectionBackground' => 'light',
+				'animation'         => 'fade-rise',
+				'heading'           => $c['app_h'],
+				'imageId'           => $media( 'app-charger' ),
+				'device'            => true,
+			),
+			cn_p( $c['app_t'] ) . cn_list( $c['app_list'] ) . cn_button( $c['hero_b3'], '#getStarted' )
+		);
+
 		// How to get started: one card per audience with a numbered journey, then the app badges.
 		$start = static fn( array $g, string $url, string $label, string $tone, array $icons ) => cn_block(
 			'chargenet/bento-item',
@@ -374,8 +397,9 @@ return array(
 		$out .= cn_block(
 			'chargenet/bento',
 			array(
-				'animation' => 'fade-rise',
-				'anchor'    => 'getStarted',
+				'animation'   => 'fade-rise',
+				'anchor'      => 'getStarted',
+				'spaceBottom' => 'none',
 				'heading'   => $c['g_h'],
 				'intro'     => $c['g_t'],
 			),

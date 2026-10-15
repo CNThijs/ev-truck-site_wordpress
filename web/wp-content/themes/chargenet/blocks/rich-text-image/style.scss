@@ -28,11 +28,66 @@
 
 	&__content ul,
 	&__content ol {
-		margin: 0;
+		margin: var(--space-2) 0 0;
 		padding-left: 1.25em;
 	}
 
 	&__content .btn {
-		margin-top: var(--space-2);
+		margin-top: var(--space-4);
+	}
+
+	// With a phone the whole row becomes a dark card like the audience and project cards of the home page (same
+	// gradient and network drawing); `is-dark` sets the text, accent and button colours.
+	&--device {
+		position: relative;
+		overflow: hidden;
+		padding: clamp(var(--space-6), 4vw, var(--space-9));
+		background: radial-gradient(
+			120% 90% at 0% 0%,
+			var(--color-forest-700) 0%,
+			var(--color-forest-800) 45%,
+			var(--color-forest-900) 100%
+		);
+		border-radius: var(--radius-xl);
+		color: var(--fg);
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: -2rem;
+			bottom: -3rem;
+			width: 28rem;
+			height: 28rem;
+			background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23FAE104' stroke-width='1.5'%3E%3Cpath d='M60 330 150 250 230 290 310 190 360 90M150 250 140 150 240 110 310 190M240 110 330 40M140 150 70 90M230 290 300 360'/%3E%3Cg fill='%23083A0B'%3E%3Ccircle cx='60' cy='330' r='9'/%3E%3Ccircle cx='150' cy='250' r='12'/%3E%3Ccircle cx='230' cy='290' r='9'/%3E%3Ccircle cx='310' cy='190' r='13'/%3E%3Ccircle cx='360' cy='90' r='9'/%3E%3Ccircle cx='140' cy='150' r='9'/%3E%3Ccircle cx='240' cy='110' r='12'/%3E%3Ccircle cx='330' cy='40' r='8'/%3E%3Ccircle cx='70' cy='90' r='8'/%3E%3Ccircle cx='300' cy='360' r='8'/%3E%3C/g%3E%3C/svg%3E")
+				no-repeat center / contain;
+			opacity: 0.14;
+			pointer-events: none;
+		}
+
+		.rti__body,
+		.rti__media {
+			position: relative;
+		}
+
+		.rti__content li::marker {
+			color: var(--accent);
+		}
+	}
+
+	// App screenshot in a phone: dark bezel, rounded screen, soft shadow. Narrow, so the text keeps the room.
+	&--device &__media {
+		justify-self: center;
+		width: min(17rem, 72vw);
+		padding: 0.5rem;
+		background: color-mix(in srgb, var(--color-forest-900) 55%, #000);
+		border-radius: 2.75rem;
+		box-shadow:
+			inset 0 0 0 1px rgb(255 255 255 / 16%),
+			0 1.5rem 3rem rgb(8 58 11 / 30%);
+
+		img {
+			display: block;
+			border-radius: 2.25rem;
+		}
 	}
 }

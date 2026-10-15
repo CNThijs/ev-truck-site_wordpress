@@ -34,7 +34,13 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+
+		// Four facts: two per row, or all four on one row on wide screens; never three and one.
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+
+		@include up(lg) {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
 	}
 
 	&--with-text .stats__layout {

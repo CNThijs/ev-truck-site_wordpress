@@ -180,7 +180,7 @@ function cn_app_badges( string $lang, callable $media ): string {
 		array(
 			'variant'     => 'colour',
 			'spaceTop'    => 'none',
-			'spaceBottom' => 'md',
+			'spaceBottom' => 'none',
 		),
 		$items
 	);

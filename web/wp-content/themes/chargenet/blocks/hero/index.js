@@ -55,7 +55,7 @@ registerBlockType(metadata, {
 						onRemove={() => setAttributes({ imageId: 0, imageUrl: '' })}
 					/>
 				)}
-				{variant === 'campaign' && (
+				{(variant === 'campaign' || variant === 'cinematic') && (
 					<ImagePanel
 						title={__('Cover image', 'chargenet')}
 						id={coverId}
@@ -110,15 +110,16 @@ registerBlockType(metadata, {
 									</div>
 								)}
 							</div>
-							{variant === 'campaign' && (
-								<figure className="hero__cover">
-									{coverUrl ? (
-										<img className="hero__cover-img" src={coverUrl} alt={coverAlt} />
-									) : (
-										<p className="hero__cover-empty">{__('Choose a cover image', 'chargenet')}</p>
-									)}
-								</figure>
-							)}
+							{(variant === 'campaign' || variant === 'cinematic') &&
+								(coverUrl || variant === 'campaign') && (
+									<figure className="hero__cover">
+										{coverUrl ? (
+											<img className="hero__cover-img" src={coverUrl} alt={coverAlt} />
+										) : (
+											<p className="hero__cover-empty">{__('Choose a cover image', 'chargenet')}</p>
+										)}
+									</figure>
+								)}
 						</div>
 					</div>
 				</section>

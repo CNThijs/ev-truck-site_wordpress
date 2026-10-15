@@ -16,6 +16,7 @@ $chargenet_title_id = '' !== trim( wp_strip_all_tags( $chargenet_heading ) ) ? w
 $chargenet_position = 'left' === ( $attributes['imagePosition'] ?? '' ) ? 'left' : 'right';
 $chargenet_image_id = (int) ( $attributes['imageId'] ?? 0 );
 $chargenet_alt      = trim( (string) ( $attributes['imageAlt'] ?? '' ) );
+$chargenet_device   = ! empty( $attributes['device'] );
 $chargenet_eyebrow  = trim( wp_strip_all_tags( (string) ( $attributes['eyebrow'] ?? '' ) ) );
 
 chargenet_section_open(
@@ -26,7 +27,7 @@ chargenet_section_open(
 	)
 );
 ?>
-<div class="rti rti--image-<?php echo esc_attr( $chargenet_position ); ?>" data-reveal>
+<div class="rti rti--image-<?php echo esc_attr( $chargenet_position ); ?><?php echo $chargenet_device ? ' rti--device is-dark' : ''; ?>" data-reveal>
 	<div class="rti__body stack">
 		<?php if ( '' !== $chargenet_eyebrow ) : ?>
 			<p class="t-eyebrow"><?php echo esc_html( $chargenet_eyebrow ); ?></p>

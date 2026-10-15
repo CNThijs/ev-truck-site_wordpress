@@ -46,6 +46,13 @@
 		@include motion(filter, opacity);
 	}
 
+	// App store badges are wide SVGs: size them by width, not by the square box the media library reports for an SVG.
+	&__link[href*='apps.apple.com'] &__img,
+	&__link[href*='play.google.com'] &__img {
+		width: 10rem;
+		height: auto;
+	}
+
 	&__placeholder {
 		padding: var(--space-3) var(--space-4);
 		border: 2px dashed var(--border);

@@ -15,7 +15,8 @@
     "imageId": { "type": "number", "default": 0 },
     "imageUrl": { "type": "string", "default": "" },
     "imageAlt": { "type": "string", "default": "" },
-    "imagePosition": { "type": "string", "enum": ["left", "right"], "default": "right" }
+    "imagePosition": { "type": "string", "enum": ["left", "right"], "default": "right" },
+    "device": { "type": "boolean", "default": false }
   },
   "supports": { "anchor": true, "html": false, "align": false, "customClassName": false },
   "example": {

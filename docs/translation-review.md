@@ -166,3 +166,11 @@ New Dutch editor labels for the icon list (Icoonlijst, Tegels, Chips, Route) and
 | Page `/nl/toegankelijkheid/`  | Whole page (title, four sections, "Laatst bijgewerkt")                                            | New page; the commitment of five working days needs your approval. |
 | Newsletter confirmation email | "Meld u af voor de nieuwsbrief als u hem niet meer wilt ontvangen."                               | Replaces "antwoord op deze e-mail".                                |
 | Unsubscribe page              | "U bent afgemeld", "Afmelden voor de nieuwsbrief", "Deze link is niet geldig" and their sentences | New page.                                                          |
+
+## Driver App sections (home, carriers) and footer badges
+
+Dutch texts added with the app references; please check the wording.
+
+- Home: "Uw laadsessie, in één app" with its intro and three points ("Vind laadpunten op uw bestemming", "Zie de prijs per kWh voordat u aankomt", "Start en stop het laden vanuit de app"), button "Download de Driver App".
+- Carriers: "Uw chauffeurs laden via de app" with its intro and three points.
+- Footer: "Driver App" and the store badge alt texts.

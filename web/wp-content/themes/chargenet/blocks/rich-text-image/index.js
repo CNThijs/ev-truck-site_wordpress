@@ -8,7 +8,7 @@ import {
 	RichText,
 	useBlockProps,
 } from '@wordpress/block-editor';
-import { PanelBody, SelectControl, TextControl } from '@wordpress/components';
+import { PanelBody, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 import {
@@ -23,7 +23,7 @@ import './editor.scss';
 registerBlockType(metadata, {
 	attributes: withSectionAttributes(metadata),
 	edit({ attributes, setAttributes }) {
-		const { eyebrow, heading, headingLevel, imageId, imageUrl, imageAlt, imagePosition } =
+		const { eyebrow, heading, headingLevel, imageId, imageUrl, imageAlt, imagePosition, device } =
 			attributes;
 		const blockProps = useBlockProps(sectionProps(attributes, 'rich-text-image'));
 		const onSelect = (media) => setAttributes({ imageId: media.id, imageUrl: media.url });
@@ -42,6 +42,11 @@ registerBlockType(metadata, {
 								{ value: 'left', label: __('Left', 'chargenet') },
 							]}
 							onChange={(value) => setAttributes({ imagePosition: value })}
+						/>
+						<ToggleControl
+							label={__('Show in a phone frame (app screenshot)', 'chargenet')}
+							checked={device}
+							onChange={(value) => setAttributes({ device: value })}
 						/>
 						<TextControl
 							label={__('Alt text override', 'chargenet')}
@@ -67,7 +72,9 @@ registerBlockType(metadata, {
 				)}
 				<section {...blockProps}>
 					<div className="container">
-						<div className={`rti rti--image-${imagePosition}`}>
+						<div
+							className={`rti rti--image-${imagePosition}${device ? ' rti--device is-dark' : ''}`}
+						>
 							<div className="rti__body stack">
 								<RichText
 									tagName="p"

@@ -55,6 +55,9 @@ return array(
 				),
 				'join_h'     => 'Join today & start charging on your destination!',
 				'join_b'     => 'Contact us',
+				'app_h'      => 'Your drivers charge from the app',
+				'app_t'      => 'Each driver finds the charging locations at their destination in the ChargeNet app and starts charging with the push of a button.',
+				'app_list'   => array( 'Find charging locations on your destination', 'Start charging with a push of a button', 'Sessions flow into your automated reporting and invoicing' ),
 			),
 			'nl' => array(
 				'h1'         => 'Breid vandaag uw laadmogelijkheden uit',
@@ -94,6 +97,9 @@ return array(
 				),
 				'join_h'     => 'Word vandaag nog lid en begin met laden op uw bestemming!',
 				'join_b'     => 'Neem contact op',
+				'app_h'      => 'Uw chauffeurs laden via de app',
+				'app_t'      => 'Elke chauffeur vindt de laadlocaties op zijn of haar bestemming in de ChargeNet-app en start met één druk op de knop met laden.',
+				'app_list'   => array( 'Vind laadlocaties op uw bestemming', 'Start met laden met één druk op de knop', 'Sessies komen terecht in uw geautomatiseerde rapportage en facturatie' ),
 			),
 		)[ $lang ];
 

@@ -10,16 +10,23 @@
 		grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
 	}
 
-	// Contact cards sit on a fixed four-column grid: one card is a quarter of the width, never the full row.
+	// Contact cards have a fixed width per breakpoint and left-align: three per row where three fit (the three
+	// founders), otherwise two per row and the third wraps.
 	&--compact &__list {
-		grid-template-columns: minmax(0, 1fr);
+		--card-w: 8.5rem;
+
+		grid-template-columns: repeat(auto-fill, var(--card-w));
+		justify-content: start;
+		gap: var(--space-2);
 
 		@include up(sm) {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+			--card-w: 11.5rem;
+
+			gap: var(--space-6) var(--space-5);
 		}
 
 		@include up(lg) {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
+			--card-w: 18rem;
 		}
 	}
 
@@ -125,6 +132,51 @@
 	background: color-mix(in srgb, currentcolor 6%, transparent);
 
 	@include motion(transform, border-color, background-color);
+
+	// Three cards in a row, also on a phone: smaller padding, photo, type and email pill.
+	@media (width <= 39.99rem) {
+		padding: var(--space-3);
+		border-radius: var(--radius-lg);
+
+		.person__photo {
+			width: 3.5rem;
+			margin-bottom: var(--space-1);
+			border-width: 2px;
+			box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+		}
+
+		.person__name {
+			font-size: var(--text-base);
+			overflow-wrap: anywhere;
+		}
+
+		.person__role {
+			font-size: var(--text-xs);
+			overflow-wrap: anywhere;
+		}
+
+		.person__links {
+			margin-top: var(--space-2);
+		}
+
+		.person__link--mail {
+			padding-inline: var(--space-2);
+			gap: var(--space-1);
+		}
+	}
+
+	// Very narrow phones (320 to 360px): the names still fit on their lines.
+	@media (width <= 22.5rem) {
+		padding: var(--space-2);
+
+		.person__name {
+			font-size: 0.8125rem;
+		}
+
+		.person__role {
+			font-size: 0.6875rem;
+		}
+	}
 
 	&:hover,
 	&:focus-within {
