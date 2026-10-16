@@ -46,7 +46,7 @@ jobs:
       - run: echo "NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem" >> "$GITHUB_ENV"
       - run: npm run check:seo -- http://chargenet.ddev.site --production
       - run: npm run perf -- --check --out perf-result.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: perf-result
@@ -60,7 +60,7 @@ jobs:
       # Firefox cannot run on the developer's Mac (macOS too new for the bundled build), so it is tested here.
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npx playwright test --grep-invert "visual " --project=chromium-desktop --project=firefox-desktop --project=firefox-mobile --project=webkit-mobile
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: playwright-report
