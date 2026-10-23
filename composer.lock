@@ -226,15 +226,15 @@
         },
         {
             "name": "wpackagist-plugin/wpconsent-cookies-banner-privacy-suite",
-            "version": "1.1.9",
+            "version": "1.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpconsent-cookies-banner-privacy-suite/",
-                "reference": "tags/1.1.9"
+                "reference": "tags/1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpconsent-cookies-banner-privacy-suite.1.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpconsent-cookies-banner-privacy-suite.1.2.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
