@@ -57,7 +57,7 @@
     "gsap": "^3.15.0"
   },
   "devDependencies": {
-    "@axe-core/puppeteer": "^4.13.0",
+    "@axe-core/puppeteer": "^4.14.0",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.64.0",
     "@wordpress/scripts": "^36.0.0",
